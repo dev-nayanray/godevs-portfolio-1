@@ -86,16 +86,43 @@ function godevs_onboarding_seed_default_homepage(): void {
                 return;
         }
 
+        // Seed only on a genuinely fresh install: no existing page may be the
+        // front page, no "home" page may exist, and any existing pages must be
+        // WordPress's own defaults (Sample Page / Privacy Policy).
+        if ( get_page_by_path( 'home' ) ) {
+                return;
+        }
         $existing_pages = get_posts(
                 array(
                         'post_type'      => 'page',
                         'post_status'    => array( 'publish', 'draft', 'pending', 'future' ),
-                        'posts_per_page' => 1,
+                        'posts_per_page' => 20,
                         'fields'         => 'ids',
                 )
         );
-        if ( ! empty( $existing_pages ) ) {
+        $non_default_pages = 0;
+        foreach ( $existing_pages as $page_id ) {
+                $slug = get_post_field( 'post_name', $page_id );
+                if ( ! in_array( $slug, array( 'sample-page', 'privacy-policy' ), true ) ) {
+                        ++$non_default_pages;
+                }
+        }
+        if ( $non_default_pages > 0 ) {
                 return;
+        }
+        $existing_posts = get_posts(
+                array(
+                        'post_type'      => 'post',
+                        'post_status'    => array( 'publish', 'draft', 'pending', 'future' ),
+                        'posts_per_page' => 20,
+                        'fields'         => 'ids',
+                )
+        );
+        foreach ( $existing_posts as $post_id ) {
+                $slug = get_post_field( 'post_name', $post_id );
+                if ( ! in_array( $slug, array( 'hello-world' ), true ) ) {
+                        return;
+                }
         }
 
         $home_id = wp_insert_post(
@@ -110,6 +137,7 @@ function godevs_onboarding_seed_default_homepage(): void {
         if ( is_wp_error( $home_id ) || $home_id < 1 ) {
                 return;
         }
+        update_post_meta( $home_id, '_godevs_portfolio_seed', 1 );
 
         update_option( 'show_on_front', 'page' );
         update_option( 'page_on_front', (int) $home_id );
@@ -152,6 +180,7 @@ function godevs_onboarding_seed_default_homepage(): void {
                 if ( is_wp_error( $page_id ) || $page_id < 1 ) {
                         continue;
                 }
+                update_post_meta( $page_id, '_godevs_portfolio_seed', 1 );
                 $nav_items[] = (int) $page_id;
                 if ( 'journal' === $slug ) {
                         update_option( 'page_for_posts', (int) $page_id );
