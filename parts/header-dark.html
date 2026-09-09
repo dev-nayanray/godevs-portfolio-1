@@ -2,24 +2,28 @@
 <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 <!-- /wp:html -->
 
-<!-- wp:group {"tagName":"header","className":"site-header site-header-dark","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
-<header class="wp-block-group site-header site-header-dark has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+<!-- wp:group {"tagName":"header","className":"site-header site-header-dark","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
+<header class="wp-block-group site-header site-header-dark has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 		<div class="wp-block-group">
 			<!-- wp:site-logo {"width":36,"style":{"layout":{"selfStretch":"fixed","flexSize":"36px"}}} /-->
-			<!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|normal","fontWeight":"700","letterSpacing":"-0.01em"}}} /-->
+			<!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|normal","fontWeight":"700","letterSpacing":"-0.02em"}}} /-->
 		</div>
 		<!-- /wp:group -->
 
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 		<div class="wp-block-group">
-			<!-- wp:navigation {"overlayMenu":"mobile","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"typography":{"fontSize":"var:preset|font-size|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Studio journal — 2026</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"primary","overlayTextColor":"contrast","style":{"spacing":{"blockGap":"var:preset|spacing|50"},"typography":{"fontSize":"var:preset|font-size|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
-				<!-- wp:button -->
-				<div class="wp-block-button"><a href="/contact" class="wp-block-button__link wp-element-button">Get in touch</a></div>
+				<!-- wp:button {"className":"is-style-outline","style":{"border":{"radius":"999px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"typography":{"fontSize":"var:preset|font-size|small"}}} -->
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact" style="border-radius:999px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--small)">Get in touch</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
