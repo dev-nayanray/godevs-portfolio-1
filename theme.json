@@ -187,7 +187,33 @@
 				{
 					"slug": "display",
 					"name": "Display",
-					"fontFamily": "\"Inter\", \"SF Pro Display\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+					"fontFamily": "\"Inter\", \"SF Pro Display\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/inter-400.woff2"]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/inter-500.woff2"]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/inter-600.woff2"]
+						},
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/inter-700.woff2"]
+						}
+					]
 				},
 				{
 					"slug": "body",
@@ -202,7 +228,27 @@
 				{
 					"slug": "serif",
 					"name": "Serif",
-					"fontFamily": "\"Georgia\", \"Times New Roman\", \"Times\", serif"
+					"fontFamily": "\"Newsreader\", \"Georgia\", \"Times New Roman\", \"Times\", serif",
+					"fontFace": [
+						{
+							"fontFamily": "Newsreader",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/newsreader-500.woff2"]
+						},
+						{
+							"fontFamily": "Newsreader",
+							"fontWeight": "500",
+							"fontStyle": "italic",
+							"src": ["file:./assets/fonts/newsreader-500-italic.woff2"]
+						},
+						{
+							"fontFamily": "Newsreader",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"src": ["file:./assets/fonts/newsreader-600.woff2"]
+						}
+					]
 				}
 			],
 			"fontSizes": [
