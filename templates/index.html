@@ -6,11 +6,11 @@
         <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
         <div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--70)">
                 <!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                <p class="is-style-eyebrow" style="text-transform:uppercase;letter-spacing:0.1em">Journal</p>
+                <p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Journal</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.08","letterSpacing":"-0.025em","fontWeight":"700"}}} -->
-                <h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.08;letter-spacing:-0.025em;font-weight:700">Notes, writing, and work in progress.</h1>
+                <h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.08;letter-spacing:-0.025em;font-weight:700">Notes, writing, and work in <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">progress</em>.</h1>
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -27,7 +27,7 @@
                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
                                 <div class="wp-block-group">
                                         <!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"var:preset|font-size|small","textTransform":"uppercase","letterSpacing":"0.08em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} /-->
-                                        <!-- wp:post-date {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->
+                                        <!-- wp:post-date {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} /-->
                                 </div>
                                 <!-- /wp:group -->
                                 <!-- wp:post-title {"level":2,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"600"}}} /-->
@@ -41,16 +41,16 @@
                         <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical"}} -->
                         <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
                                 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"700","letterSpacing":"-0.02em"}}} -->
-                                <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:700;letter-spacing:-0.02em">No posts published yet.</h2>
+                                <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:700;letter-spacing:-0.02em">No posts published <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">yet</em>.</h2>
                                 <!-- /wp:heading -->
                                 <!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}}} -->
                                 <p class="has-text-color" style="color:var(--wp--preset--color--muted)">When posts are published, they'll appear here. In the meantime, browse the portfolio or contact me to start a conversation.</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:buttons -->
                                 <div class="wp-block-buttons">
-                                        <!-- wp:button -->
-                                        <div class="wp-block-button"><a href="/" class="wp-block-button__link wp-element-button">Browse the portfolio</a></div>
-                                        <!-- /wp:button -->
+                                <!-- wp:button {"style":{"border":{"radius":"999px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+                                <div class="wp-block-button"><a href="/" class="wp-block-button__link wp-element-button" style="border-radius:999px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)">Browse the portfolio</a></div>
+                                <!-- /wp:button -->
                                 </div>
                                 <!-- /wp:buttons -->
                         </div>

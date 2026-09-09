@@ -5,7 +5,7 @@
         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
                 <!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                <p class="is-style-eyebrow" style="text-transform:uppercase;letter-spacing:0.1em">Search</p>
+                <p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Search</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:query-title {"type":"search","showPrefix":false,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} /-->
@@ -21,7 +21,7 @@
                         <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
                                 <div class="wp-block-group">
-                                        <!-- wp:post-date {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->
+                                        <!-- wp:post-date {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} /-->
                                 </div>
                                 <!-- /wp:group -->
                                 <!-- wp:post-title {"level":2,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"600"}}} /-->
@@ -34,16 +34,16 @@
                         <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical"}} -->
                         <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
                                 <!-- wp:heading {"level":2,"style":{"typography":{"fontSize":"var:preset|font-size|x-large","fontFamily":"var:preset|font-family|display","fontWeight":"700","letterSpacing":"-0.02em"}}} -->
-                                <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:700;letter-spacing:-0.02em">No results found.</h2>
+                                <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:700;letter-spacing:-0.02em">No results <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">found</em>.</h2>
                                 <!-- /wp:heading -->
                                 <!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}}} -->
                                 <p class="has-text-color" style="color:var(--wp--preset--color--muted)">Try different keywords, or check your spelling. You can also browse the homepage or contact me directly.</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:buttons -->
                                 <div class="wp-block-buttons">
-                                        <!-- wp:button -->
-                                        <div class="wp-block-button"><a href="/" class="wp-block-button__link wp-element-button">Back to homepage</a></div>
-                                        <!-- /wp:button -->
+                                <!-- wp:button {"style":{"border":{"radius":"999px"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+                                <div class="wp-block-button"><a href="/" class="wp-block-button__link wp-element-button" style="border-radius:999px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)">Back to homepage</a></div>
+                                <!-- /wp:button -->
                                 </div>
                                 <!-- /wp:buttons -->
                         </div>
