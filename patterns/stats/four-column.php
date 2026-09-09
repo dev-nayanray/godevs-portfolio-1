@@ -28,8 +28,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">01 / Output</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--huge);line-height:1;letter-spacing:-0.03em;font-weight:700">140+</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.75rem, 4.5vw, 4.25rem)","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.75rem, 4.5vw, 4.25rem);line-height:1;letter-spacing:-0.03em;font-weight:700">140+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -42,8 +42,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">02 / Craft</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--huge);line-height:1;letter-spacing:-0.03em;font-weight:700">9</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.75rem, 4.5vw, 4.25rem)","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.75rem, 4.5vw, 4.25rem);line-height:1;letter-spacing:-0.03em;font-weight:700">9</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -56,8 +56,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">03 / Speed</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--huge);line-height:1;letter-spacing:-0.03em;font-weight:700">0.9s</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.75rem, 4.5vw, 4.25rem)","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.75rem, 4.5vw, 4.25rem);line-height:1;letter-spacing:-0.03em;font-weight:700">0.9s</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -70,8 +70,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">04 / Trust</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--huge);line-height:1;letter-spacing:-0.03em;font-weight:700">98%</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.75rem, 4.5vw, 4.25rem)","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.75rem, 4.5vw, 4.25rem);line-height:1;letter-spacing:-0.03em;font-weight:700">98%</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
