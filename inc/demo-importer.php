@@ -343,7 +343,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 $page_id = wp_insert_post(
                         array(
                                 'post_title'   => $title,
-                                'post_name'    => $page_slug . '-' . $demo_id, // unique slug.
+                                'post_name'    => $page_slug, // clean URL; WordPress uniquifies on collision.
                                 'post_status'   => 'publish',
                                 'post_type'     => 'page',
                                 'post_content'  => $content,
