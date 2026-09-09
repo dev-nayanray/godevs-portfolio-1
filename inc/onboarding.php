@@ -72,6 +72,115 @@ function godevs_onboarding_set_redirect_flag(): void {
 }
 add_action( 'after_switch_theme', 'godevs_onboarding_set_redirect_flag' );
 
+/**
+ * Seed a default homepage on fresh installs so the theme looks complete
+ * before any demo is imported.
+ *
+ * Only runs when the site has no published pages and no static front page
+ * (i.e. a brand-new WordPress install). Existing sites are never touched.
+ *
+ * @return void
+ */
+function godevs_onboarding_seed_default_homepage(): void {
+        if ( 'page' === get_option( 'show_on_front' ) && (int) get_option( 'page_on_front' ) > 0 ) {
+                return;
+        }
+
+        $existing_pages = get_posts(
+                array(
+                        'post_type'      => 'page',
+                        'post_status'    => array( 'publish', 'draft', 'pending', 'future' ),
+                        'posts_per_page' => 1,
+                        'fields'         => 'ids',
+                )
+        );
+        if ( ! empty( $existing_pages ) ) {
+                return;
+        }
+
+        $home_id = wp_insert_post(
+                array(
+                        'post_title'   => __( 'Home', 'godevs-portfolio' ),
+                        'post_name'    => 'home',
+                        'post_status'  => 'publish',
+                        'post_type'    => 'page',
+                        'post_content' => '<!-- wp:pattern {"slug":"godevs-portfolio/home"} /-->',
+                )
+        );
+        if ( is_wp_error( $home_id ) || $home_id < 1 ) {
+                return;
+        }
+
+        update_option( 'show_on_front', 'page' );
+        update_option( 'page_on_front', (int) $home_id );
+
+        // Seed the supporting pages so the site is complete out of the box.
+        $seed_pages = array(
+                'about'    => array(
+                        'title'   => __( 'About', 'godevs-portfolio' ),
+                        'content' => '<!-- wp:pattern {"slug":"godevs-portfolio/about"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/stats"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/testimonials"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/cta"} /-->',
+                ),
+                'work'     => array(
+                        'title'   => __( 'Work', 'godevs-portfolio' ),
+                        'content' => '<!-- wp:pattern {"slug":"godevs-portfolio/portfolio-grid"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/cta"} /-->',
+                ),
+                'services' => array(
+                        'title'   => __( 'Services', 'godevs-portfolio' ),
+                        'content' => '<!-- wp:pattern {"slug":"godevs-portfolio/services"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/process"} /-->' . "\n\n" . '<!-- wp:pattern {"slug":"godevs-portfolio/faq"} /-->',
+                ),
+                'journal'  => array(
+                        'title'   => __( 'Journal', 'godevs-portfolio' ),
+                        'content' => '',
+                ),
+                'contact'  => array(
+                        'title'   => __( 'Contact', 'godevs-portfolio' ),
+                        'content' => '<!-- wp:pattern {"slug":"godevs-portfolio/contact"} /-->',
+                ),
+        );
+
+        $nav_items = array( (int) $home_id );
+        foreach ( $seed_pages as $slug => $page ) {
+                $page_id = wp_insert_post(
+                        array(
+                                'post_title'   => $page['title'],
+                                'post_name'    => $slug,
+                                'post_status'  => 'publish',
+                                'post_type'    => 'page',
+                                'post_content' => $page['content'],
+                        )
+                );
+                if ( is_wp_error( $page_id ) || $page_id < 1 ) {
+                        continue;
+                }
+                $nav_items[] = (int) $page_id;
+                if ( 'journal' === $slug ) {
+                        update_option( 'page_for_posts', (int) $page_id );
+                }
+        }
+
+        // Build a primary navigation menu from the seeded pages.
+        $menu_id = wp_create_nav_menu( __( 'Primary', 'godevs-portfolio' ) );
+        if ( ! is_wp_error( $menu_id ) && $menu_id > 0 ) {
+                foreach ( $nav_items as $page_id ) {
+                        wp_update_nav_menu_item(
+                                $menu_id,
+                                0,
+                                array(
+                                        'menu-item-title'     => get_the_title( $page_id ),
+                                        'menu-item-object'    => 'page',
+                                        'menu-item-object-id' => $page_id,
+                                        'menu-item-type'      => 'post_type',
+                                        'menu-item-status'    => 'publish',
+                                )
+                        );
+                }
+                $locations            = get_theme_mod( 'nav_menu_locations', array() );
+                $locations['primary'] = $menu_id;
+                set_theme_mod( 'nav_menu_locations', $locations );
+        }
+}
+add_action( 'after_switch_theme', 'godevs_onboarding_seed_default_homepage' );
+
 // ════════════════════════════════════════════════════════════════════════════
 // 2. WELCOME NOTICE — dismissible admin notice on every admin page
 // ════════════════════════════════════════════════════════════════════════════
