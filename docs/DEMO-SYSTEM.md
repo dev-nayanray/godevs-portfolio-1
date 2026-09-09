@@ -33,11 +33,11 @@ Each demo is a single PHP file at `patterns/demos/<slug>.php`. It is registered 
 
 | Property | Benefit |
 |---|---|
-| No theme duplication | One theme update fixes bugs across all 102 demos |
+| No theme duplication | One theme update fixes bugs across all 10 demos |
 | Fully Gutenberg-editable | Users edit text, images, sections, colors, spacing |
 | Lightweight | Demos are static HTML — zero runtime cost when not inserted |
 | WordPress.org compliant | Just more patterns in the existing library — no admin UI, no importer, no telemetry |
-| No plugin required | All 102 demos work with zero plugins |
+| No plugin required | All 10 demos work with zero plugins |
 | Scalable | Adding more demos is a single PHP file per demo |
 
 ---
@@ -86,7 +86,7 @@ The demo file embeds the actual block markup inline — it does **not** referenc
 
 ---
 
-## 4. Demo Categories (11 categories, 102 demos)
+## 4. Demo Categories (11 categories, 10 importable demos)
 
 | # | Category | Count | Examples |
 |---|---|---|---|
@@ -102,7 +102,7 @@ The demo file embeds the actual block markup inline — it does **not** referenc
 | 10 | Lifestyle / Modern Professional | 9 | Minimal, Editorial, Lux, Couture, Lifestyle, Wander, Content, Modern Freelance, Magazine, Concise |
 | 11 | Specialized | 8 | Director, Producer, Curator, Copy, Journalist, PM, Technologist, Independent |
 
-**Total: 102 demos** (exceeds the 100+ target).
+**Total: 10 importable demos** (the 92 former "Coming Soon" stubs were removed in v1.2).
 
 See `docs/demo-matrix.csv` for the complete design matrix.
 
@@ -192,7 +192,7 @@ Each demo declares a recommended style variation in its PHP header:
 
 Users can switch variations freely — every demo renders correctly in all 8 variations because all colors and typography reference `var:preset|color|<slug>` and `var:preset|font-size|<slug>`.
 
-### Distribution of Variations Across 102 Demos
+### Distribution of Variations Across the 10 Demos
 
 | Variation | Demo count |
 |---|---|

@@ -7,7 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Nothing yet.
+### Removed
+- Accidental nested theme copies inside `patterns/` and `parts/`.
+- 912 orphan persona-variant patterns (`*-agency-1.php` etc.) that were never referenced by demos and only cluttered the block inserter.
+- 92 non-importable "Coming Soon" demos and their unused preview assets. The 10 importable demos remain.
+
+### Added
+- Bundled Inter and Newsreader webfonts registered as theme.json font faces (previously shipped but never loaded).
+- `godevs-portfolio/home` Homepage composition pattern.
+- Activation seeding: on a brand-new install the theme now creates Home/About/Work/Services/Journal/Contact pages, a primary nav menu, and sets the front page — publish-ready before any demo import. Existing sites are never touched.
+
+### Changed
+- All 13 core patterns redesigned in a premium editorial direction (mixed serif-accent display type, hairline structure, ghost numerals, pill meta chips, staggered reveals).
+- Demo import now creates pages with clean slugs (`/about` instead of `/about-monolith`).
+- Test suite modernized to theme.json v3 and current architecture.
 
 ## [0.2.0] — 2026-08-29
 
