@@ -2751,3 +2751,7 @@ msgstr[1] ""
 #: inc/admin/views/admin-demos.php:420, inc/admin/views/admin-demos.php:420
 msgid "All pages"
 msgstr ""
+
+#: inc/onboarding.php
+msgid "Primary"
+msgstr ""
