@@ -1,16 +1,24 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
-<footer class="wp-block-group site-footer" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<!-- wp:group {"tagName":"footer","className":"godevs-footer-compact","backgroundColor":"base","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<footer class="wp-block-group godevs-footer-compact has-contrast-color has-base-background-color has-text-color has-background" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 		<div class="wp-block-group">
-			<!-- wp:site-logo {"width":28} /-->
-			<!-- wp:site-title {"level":0,"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->
+			<!-- wp:site-logo {"width":32} /-->
+			<!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|normal","fontWeight":"700","letterSpacing":"-0.02em"}}} /-->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:paragraph {"fontSize":"small","style":{"color":{"text":"var:preset|color|muted"}}} -->
-		<p class="has-small-font-size" style="color:var(--wp--preset--color--muted)">&copy; 2024 — Built with WordPress.</p>
-		<!-- /wp:paragraph -->
+
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em"}}} -->
+			<p class="has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.12em"><a href="/work">Work</a> · <a href="/about">Studio</a> · <a href="/contact">Contact</a></p>
+			<!-- /wp:paragraph -->
+			<!-- wp:paragraph {"className":"godevs-footer-copyright","fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","letterSpacing":"0.08em"},"spacing":{"padding":{"left":"var:preset|spacing|40"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}}}} -->
+			<p class="godevs-footer-copyright has-x-small-font-size" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-left:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--mono);letter-spacing:0.08em">© 2026 GoDevs — All rights reserved.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </footer>

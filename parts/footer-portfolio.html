@@ -1,67 +1,57 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer site-footer-portfolio","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<footer class="wp-block-group site-footer site-footer-portfolio" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|70"}}}} -->
-	<div class="wp-block-columns alignwide">
+<!-- wp:group {"tagName":"footer","className":"godevs-footer-portfolio","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<footer class="wp-block-group godevs-footer-portfolio has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|80"},"padding":{"bottom":"var:preset|spacing|70"}}}} -->
+	<div class="wp-block-columns alignwide" style="padding-bottom:var(--wp--preset--spacing--70)">
 		<!-- wp:column {"width":"50%"} -->
 		<div class="wp-block-column" style="flex-basis:50%">
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-			<div class="wp-block-group">
-				<!-- wp:site-title {"level":0,"style":{"typography":{"fontSize":"var:preset|font-size|x-large"}}} /-->
-				<!-- wp:paragraph -->
-				<p>A working portfolio, kept current. Identity, editorial, and engineering.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--medium)"><a href="mailto:hello@example.com">hello@example.com</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+			<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1;letter-spacing:-0.03em;font-weight:700">GoDevs®</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|medium","lineHeight":"1.5"}}} -->
+			<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--medium);line-height:1.5">Websites with a spine.</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:site-title {"level":0,"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} /-->
 		</div>
 		<!-- /wp:column -->
-		<!-- wp:column {"width":"25%"} -->
-		<div class="wp-block-column" style="flex-basis:25%">
-			<!-- wp:heading {"level":4} -->
-			<h4 class="wp-block-heading">Work</h4>
-			<!-- /wp:heading -->
-			<!-- wp:list {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
-			<ul class="wp-block-list" style="padding-left:0">
+
+		<!-- wp:column {"width":"50%"} -->
+		<div class="wp-block-column" style="flex-basis:50%">
+			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
+			<p class="has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Selected work</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:list {"fontSize":"large","style":{"typography":{"lineHeight":"1.5","fontWeight":"600","letterSpacing":"-0.01em"}}} -->
+			<ul class="wp-block-list has-large-font-size" style="font-weight:600;letter-spacing:-0.01em;line-height:1.5">
 				<!-- wp:list-item -->
-				<li><a href="/work">Selected work</a></li>
+				<li><a href="/work/northline">Northline Studio</a></li>
 				<!-- /wp:list-item -->
 				<!-- wp:list-item -->
-				<li><a href="/case-studies">Case studies</a></li>
+				<li><a href="/work/atelier">Atelier Mora</a></li>
 				<!-- /wp:list-item -->
 				<!-- wp:list-item -->
-				<li><a href="/journal">Journal</a></li>
+				<li><a href="/work/meridian">Meridian Labs</a></li>
 				<!-- /wp:list-item -->
 			</ul>
 			<!-- /wp:list -->
-		</div>
-		<!-- /wp:column -->
-		<!-- wp:column {"width":"25%"} -->
-		<div class="wp-block-column" style="flex-basis:25%">
-			<!-- wp:heading {"level":4} -->
-			<h4 class="wp-block-heading">Elsewhere</h4>
-			<!-- /wp:heading -->
-			<!-- wp:social-icons -->
-			<ul class="wp-block-social-icons">
-				<!-- wp:social-link {"url":"https://twitter.com/example","service":"twitter"} /-->
-				<!-- wp:social-link {"url":"https://github.com/example","service":"github"} /-->
-				<!-- wp:social-link {"url":"https://linkedin.com/in/example","service":"linkedin"} /-->
-			</ul>
-			<!-- /wp:social-icons -->
+			<!-- wp:paragraph {"fontSize":"small","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic"}}} -->
+			<p class="has-small-font-size" style="font-family:var(--wp--preset--font-family--serif);font-style:italic"><a href="/work">View all projects →</a></p>
+			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
-	<!-- wp:separator {"className":"is-style-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}}} /-->
-	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--30)">
-		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size">&copy; 2024 GoDevs Portfolio.</p>
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--secondary);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40)">
+		<!-- wp:paragraph {"className":"godevs-footer-copyright","fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","letterSpacing":"0.08em"}}} -->
+		<p class="godevs-footer-copyright has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);letter-spacing:0.08em">© 2026 GoDevs — All rights reserved.</p>
 		<!-- /wp:paragraph -->
-		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size">Berlin · Worldwide</p>
-		<!-- /wp:paragraph -->
+		<!-- wp:social-icons {"iconColor":"contrast","iconColorValue":"var:preset|color|contrast","size":"has-small-icon-size","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+		<ul class="wp-block-social-links has-small-icon-size has-contrast-color">
+			<!-- wp:social-link {"url":"#","service":"x"} /-->
+			<!-- wp:social-link {"url":"#","service":"dribbble"} /-->
+			<!-- wp:social-link {"url":"#","service":"github"} /-->
+		</ul>
+		<!-- /wp:social-icons -->
 	</div>
 	<!-- /wp:group -->
 </footer>

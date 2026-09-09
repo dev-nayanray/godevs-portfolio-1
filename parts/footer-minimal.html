@@ -1,11 +1,21 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|border","width":"1px"}}},"layout":{"type":"default"}} -->
-<footer class="wp-block-group site-footer" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60);border-top-color:var(--wp--preset--color--border);border-top-width:1px">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
-	<div class="wp-block-group alignwide">
-		<!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|normal","fontWeight":"700","letterSpacing":"-0.01em"}}} /-->
+<!-- wp:group {"tagName":"footer","className":"godevs-footer-minimal","backgroundColor":"base","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<footer class="wp-block-group godevs-footer-minimal has-contrast-color has-base-background-color has-text-color has-background" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--40)">
+		<!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"700","letterSpacing":"-0.02em","lineHeight":"1"}}} /-->
+		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|small","lineHeight":"1.5"}}} -->
+		<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--small);line-height:1.5">Websites with a spine.</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
 
-		<!-- wp:paragraph {"fontSize":"small","style":{"color":{"text":"var:preset|color|muted"}}} -->
-		<p class="has-small-font-size has-text-color" style="color:var(--wp--preset--color--muted)">&copy; 2024 — All rights reserved.</p>
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30)">
+		<!-- wp:paragraph {"className":"godevs-footer-copyright","fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","letterSpacing":"0.08em"}}} -->
+		<p class="godevs-footer-copyright has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);letter-spacing:0.08em">© 2026 GoDevs — All rights reserved.</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em"}}} -->
+		<p class="has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.12em"><a href="#">X</a> · <a href="#">GitHub</a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

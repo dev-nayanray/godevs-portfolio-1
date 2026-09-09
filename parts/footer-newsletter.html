@@ -1,21 +1,47 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<footer class="wp-block-group site-footer" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"className":"is-style-card-bordered","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"center"}} -->
-	<div class="wp-block-group alignwide is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
-		<!-- wp:heading {"level":2,"textAlign":"center","style":{"typography":{"fontSize":"var:preset|font-size|large","fontFamily":"var:preset|font-family|display","fontWeight":"700"}}} -->
-		<h2 class="wp-block-heading has-text-align-center" style="font-size:var(--wp--preset--font-size--large)">Get the occasional newsletter.</h2>
-		<!-- /wp:heading -->
-		<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|muted"}}} -->
-		<p class="has-text-align-center" style="color:var(--wp--preset--color--muted)">A short note when there's something worth sharing. No more than once a quarter.</p>
-		<!-- /wp:paragraph -->
-		<!-- wp:search {"label":"Email","showLabel":false,"placeholder":"Your email address","buttonText":"Subscribe","buttonPosition":"button-inside","buttonUseIcon":false,"style":{"border":{"radius":"9999px"}}} /-->
+<!-- wp:group {"tagName":"footer","className":"godevs-footer-newsletter","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<footer class="wp-block-group godevs-footer-newsletter has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.14em","fontWeight":"600"}}} -->
+			<p class="has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.14em;font-weight:600">Newsletter</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|large","lineHeight":"1.4"}}} -->
+			<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--large);line-height:1.4">Notes on craft, shipped monthly.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:search {"label":"Email address","placeholder":"Enter your email address","buttonText":"Subscribe","style":{"border":{"radius":"999px"},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"backgroundColor":"contrast","textColor":"primary"} /-->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--50)">
-		<!-- wp:site-logo {"width":32} /-->
-		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size">&copy; 2024 GoDevs Portfolio.</p>
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--secondary);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+			<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.03em;font-weight:700">GoDevs®</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|small","lineHeight":"1.5"}}} -->
+			<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--small);line-height:1.5">Websites with a spine.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:site-logo {"width":40} /-->
+		<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em"},"border":{"radius":"999px","width":"1px","color":"var:preset|color|secondary"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|30","right":"var:preset|spacing|30"}}}} -->
+		<p class="has-x-small-font-size" style="border-radius:999px;border-color:var(--wp--preset--color--secondary);border-width:1px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.12em">No spam — ever</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+	<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--secondary);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40)">
+		<!-- wp:paragraph {"className":"godevs-footer-copyright","fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","letterSpacing":"0.08em"}}} -->
+		<p class="godevs-footer-copyright has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);letter-spacing:0.08em">© 2026 GoDevs — All rights reserved.</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","textTransform":"uppercase","letterSpacing":"0.12em"}}} -->
+		<p class="has-x-small-font-size" style="font-family:var(--wp--preset--font-family--mono);text-transform:uppercase;letter-spacing:0.12em"><a href="#">X</a> · <a href="#">GitHub</a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
