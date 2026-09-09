@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -21,7 +21,7 @@ The theme ships with:
 * A complete design system in `theme.json` — colors, typography, spacing, layout, borders, shadows
 * Thirty-one (31) WordPress templates covering every standard route
 * Twenty-three (23) template parts — twelve header variants and eleven footer variants
-* Hundreds of block patterns across 20+ portfolio-specific categories
+* 85+ curated block patterns across 20+ portfolio-specific categories, plus 10 full multi-page demos importable in one click
 * Eleven (11) style variations beyond the default
 * A custom block style system — outline / text-link / pill buttons, multiple card variants, separators, eyebrow paragraphs
 
@@ -64,6 +64,13 @@ Yes. Go to Appearance → GoDevs Settings → Colors and Typography to customize
 Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available demos, click Preview to see a live preview, then click Import to import the demo content (pages, navigation, and style variation).
 
 == Changelog ==
+
+= 1.2.0 =
+* Removed 92 non-importable "Coming Soon" demos, 912 orphan persona-variant patterns, and accidental nested theme copies — a lean, curated library.
+* Design: registered the bundled Inter and Newsreader webfonts as theme.json font faces.
+* Design: all core and category patterns redesigned in a premium editorial direction (mixed serif-accent display type, hairline structure, ghost numerals, pill meta chips, staggered reveals).
+* New: fresh installs now get a complete seeded site — Home/About/Work/Services/Journal/Contact pages, primary navigation, and front page assignment — publish-ready before any demo import.
+* Demo import creates pages with clean slugs (/about instead of /about-monolith).
 
 = 1.1.0 =
 * Design: Refined global design system in theme.json — added 9 fluid font sizes (including new 'huge' Display Hero size), 7 border radius presets, custom design tokens for shadows, transitions, and containers.
