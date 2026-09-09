@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Headless CMS Migration — Publishing</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">WP + Next.js + Vercel</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">WordPress + headless front-end</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -134,7 +134,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Payment Gateway Integration — Fintech</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">Go + Stripe + PCI-DSS</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">Go + payments + PCI-DSS</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
