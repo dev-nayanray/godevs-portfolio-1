@@ -3,143 +3,103 @@
  * Title: Timeline
  * Slug: godevs-portfolio/timeline
  * Categories: featured, about, text
- * Description: A four-event vertical timeline. Each event has a year marker, a short title, and an explanatory paragraph. Useful on about pages to show the studio's history without resorting to a generic "Our Story" block of text.
+ * Description: A vertical career timeline with mono year labels, a hairline connector, ghost index numerals, and display-font role titles. Useful on about pages to chart the studio's history.
  * Keywords: timeline, history, chronology, milestones, journey, evolution
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"godevs-timeline","layout":{"type":"constrained"}} -->
-<section class="wp-block-group godevs-timeline">
-	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}}} -->
-	<div class="wp-block-group">
-		<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-		<p class="has-caption-font-size" style="text-transform:uppercase;letter-spacing:0.1em">How we got here</p>
-		<!-- /wp:paragraph -->
+<!-- wp:group {"tagName":"section","className":"godevs-timeline","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<section class="wp-block-group godevs-timeline" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)"><!-- wp:group {"align":"wide","className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide godevs-reveal-stagger"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">The long road</p>
+<!-- /wp:paragraph -->
 
-		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"700"}}} -->
-		<h2 class="wp-block-heading">A short studio history.</h2>
-		<!-- /wp:heading -->
+<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.08","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.08;letter-spacing:-0.03em;font-weight:700">A decade, <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">deliberately</em> slow.</h2>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-		<!-- wp:paragraph {"className":"is-style-muted","fontSize":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-		<p class="is-style-muted has-large-font-size" style="margin-top:var(--wp--preset--spacing--30)">The studio started as one person in a spare bedroom and grew into three people in a small office. The dates below are the ones that mattered.</p>
-		<!-- /wp:paragraph -->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em">01</p>
+<!-- /wp:paragraph -->
 
-	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
-	<div class="wp-block-group">
-		<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-group">
-			<!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-			<div class="wp-block-columns are-vertically-aligned-top">
-				<!-- wp:column {"verticalAlignment":"top","width":"20%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:20%">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--display)","fontSize":"var(--wp--preset--font-size--x-large)","fontWeight":"500","letterSpacing":"-0.02em"}}} -->
-					<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:500;letter-spacing:-0.02em">2020</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2014 — The first desk</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-				<!-- wp:column {"verticalAlignment":"top","width":"80%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:80%">
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading">The studio opens.</h3>
-					<!-- /wp:heading -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">The studio opens its doors.</h3>
+<!-- /wp:heading -->
 
-					<!-- wp:paragraph -->
-					<p>Maya leaves her role at a brand consultancy and starts the studio with one client, one laptop, and a desk in a co-working space. The first site ships six weeks later.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
-		</div>
-		<!-- /wp:group -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65;margin-top:var(--wp--preset--spacing--20)">One designer, one borrowed desk, and a first commission for a local publisher. The site shipped in five weeks and the client still runs it today.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-		<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-group">
-			<!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-			<div class="wp-block-columns are-vertically-aligned-top">
-				<!-- wp:column {"verticalAlignment":"top","width":"20%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:20%">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--display)","fontSize":"var(--wp--preset--font-size--x-large)","fontWeight":"500","letterSpacing":"-0.02em"}}} -->
-					<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:500;letter-spacing:-0.02em">2022</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em">02</p>
+<!-- /wp:paragraph -->
 
-				<!-- wp:column {"verticalAlignment":"top","width":"80%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:80%">
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading">Tomás joins.</h3>
-					<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2018 — Engineering joins</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-					<!-- wp:paragraph -->
-					<p>The studio takes on its first project that needs real engineering — a portfolio site with structured case studies — and Tomás comes on board. The work shifts from design-only to design and build under one roof.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
-		</div>
-		<!-- /wp:group -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Design and build under one roof.</h3>
+<!-- /wp:heading -->
 
-		<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-group">
-			<!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-			<div class="wp-block-columns are-vertically-aligned-top">
-				<!-- wp:column {"verticalAlignment":"top","width":"20%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:20%">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--display)","fontSize":"var(--wp--preset--font-size--x-large)","fontWeight":"500","letterSpacing":"-0.02em"}}} -->
-					<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:500;letter-spacing:-0.02em">2024</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65;margin-top:var(--wp--preset--spacing--20)">The first engineer comes aboard and the studio stops handing off builds. Custom block development becomes the house specialty.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-				<!-- wp:column {"verticalAlignment":"top","width":"80%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:80%">
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading">Priya joins; first GoDevs release.</h3>
-					<!-- /wp:heading -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em">03</p>
+<!-- /wp:paragraph -->
 
-					<!-- wp:paragraph -->
-					<p>Priya joins to run operations and editorial content. The studio releases GoDevs Portfolio v0.1 — a block theme foundation the studio uses for its own client work and opens up for other small studios to use.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
-		</div>
-		<!-- /wp:group -->
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2022 — Recognition</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-		<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-group">
-			<!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-			<div class="wp-block-columns are-vertically-aligned-top">
-				<!-- wp:column {"verticalAlignment":"top","width":"20%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:20%">
-					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--display)","fontSize":"var(--wp--preset--font-size--x-large)","fontWeight":"500","letterSpacing":"-0.02em"}}} -->
-					<p style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);font-weight:500;letter-spacing:-0.02em">2026</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">First international award.</h3>
+<!-- /wp:heading -->
 
-				<!-- wp:column {"verticalAlignment":"top","width":"80%"} -->
-				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:80%">
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading">Six variations, thirteen patterns.</h3>
-					<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65;margin-top:var(--wp--preset--spacing--20)">An editorial platform for a photography collective takes site of the day. The studio grows to five people, still deliberately small.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-					<!-- wp:paragraph -->
-					<p>v0.2 ships four additional style variations — Creative, Corporate, Elegant, and Editorial — and five new patterns (Stats, Process, FAQ, Team, Timeline). The foundation is ready for the GoDevs Core plugin and the first batch of starter sites.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
-		</div>
-		<!-- /wp:group -->
-	</div>
-	<!-- /wp:group -->
-</section>
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em">04</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2026 — Today</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Six people, one standard.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65;margin-top:var(--wp--preset--spacing--20)">The studio now splits its time between client work and maintaining GoDevs Portfolio, the block theme this very site is built on.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
 <!-- /wp:group -->
