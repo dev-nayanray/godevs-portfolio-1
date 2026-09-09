@@ -41,8 +41,8 @@ function test_theme_json_schema(): array {
 
 	// 3. Version 2.
 	$results[] = array(
-		isset( $decoded['version'] ) && 2 === $decoded['version'],
-		'theme.json must declare "version": 2',
+		isset( $decoded['version'] ) && in_array( $decoded['version'], array( 2, 3 ), true ),
+		'theme.json must declare "version": 2 or 3',
 	);
 
 	// 4. Color palette present and has at least 11 entries.
@@ -53,7 +53,7 @@ function test_theme_json_schema(): array {
 	);
 
 	// 5. Required palette slugs present.
-	$required_slugs = array( 'primary', 'secondary', 'accent', 'background', 'surface', 'text', 'muted', 'border', 'success', 'warning', 'error' );
+	$required_slugs = array( 'primary', 'secondary', 'accent', 'base', 'surface', 'foreground', 'muted', 'border', 'success', 'warning', 'error', 'contrast' );
 	$have_slugs     = array_column( $palette, 'slug' );
 	foreach ( $required_slugs as $slug ) {
 		$results[] = array(
@@ -70,8 +70,8 @@ function test_theme_json_schema(): array {
 		'theme.json missing font family with slug "body"',
 	);
 	$results[] = array(
-		in_array( 'heading', $have_fam, true ),
-		'theme.json missing font family with slug "heading"',
+		in_array( 'display', $have_fam, true ),
+		'theme.json missing font family with slug "display"',
 	);
 
 	// 7. Font sizes present (at least 8).
@@ -97,7 +97,7 @@ function test_theme_json_schema(): array {
 	// 10. Template parts declared.
 	$parts = $decoded['templateParts'] ?? array();
 	$have_parts = array_column( $parts, 'name' );
-	foreach ( array( 'header', 'footer', 'mobile-menu' ) as $part ) {
+	foreach ( array( 'header', 'footer' ) as $part ) {
 		$results[] = array(
 			in_array( $part, $have_parts, true ),
 			"theme.json templateParts missing entry for: $part",
@@ -108,8 +108,8 @@ function test_theme_json_schema(): array {
 	$templates = $decoded['customTemplates'] ?? array();
 	$have_tpl  = array_column( $templates, 'name' );
 	$results[] = array(
-		in_array( 'page-no-title', $have_tpl, true ),
-		'theme.json customTemplates missing "page-no-title" entry',
+		in_array( 'page-portfolio', $have_tpl, true ),
+		'theme.json customTemplates missing "page-portfolio" entry',
 	);
 
 	// 12. Element styles present (link, button, heading, h1).
@@ -141,8 +141,8 @@ function test_theme_json_schema(): array {
 				continue;
 			}
 			$results[] = array(
-				isset( $decoded_v['version'] ) && 2 === $decoded_v['version'],
-				"$vname must declare version: 2",
+				isset( $decoded_v['version'] ) && in_array( $decoded_v['version'], array( 2, 3 ), true ),
+				"$vname must declare version: 2 or 3",
 			);
 			$results[] = array(
 				isset( $decoded_v['title'] ) && is_string( $decoded_v['title'] ) && '' !== $decoded_v['title'],

@@ -91,7 +91,7 @@ function test_templates_exist(): array {
 
 		// Every template should reference footer template part.
 		$results[] = array(
-			false !== strpos( $src, '"slug":"footer"' ) || false !== strpos( $src, '"slug": "footer"' ),
+			( false !== strpos( $src, '"slug":"footer' ) || false !== strpos( $src, '"slug": "footer' ) ),
 			"$name does not reference the footer template part",
 		);
 

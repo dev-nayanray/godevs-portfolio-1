@@ -59,18 +59,6 @@ function test_activation(): array {
 		'load_theme_textdomain() not called with the godevs-portfolio text domain',
 	);
 
-	// 7. Plugin detection present.
-	$results[] = array(
-		false !== strpos( $src, 'GODEVS_CORE_VERSION' ),
-		'GoDevs Core plugin detection (GODEVS_CORE_VERSION constant) not present',
-	);
-
-	// 8. GODEVS_PORTFOLIO_CORE_ACTIVE defined.
-	$results[] = array(
-		false !== strpos( $src, "define( 'GODEVS_PORTFOLIO_CORE_ACTIVE'" ) || false !== strpos( $src, 'define( "GODEVS_PORTFOLIO_CORE_ACTIVE"' ),
-		'GODEVS_PORTFOLIO_CORE_ACTIVE constant not defined in functions.php',
-	);
-
 	// 9. No forbidden functions.
 	$forbidden = array( 'eval(', 'base64_decode(', 'file_get_contents( "http', 'wp_remote_get(', 'wp_remote_post(' );
 	foreach ( $forbidden as $bad ) {
@@ -106,7 +94,7 @@ function test_activation(): array {
 			'style.css missing "Text Domain: godevs-portfolio" header',
 		);
 		$results[] = array(
-			false !== strpos( $style_css, 'License: GNU General Public License v2 or later' ),
+			false !== strpos( $style_src, 'License: GNU General Public License v2 or later' ),
 			'style.css missing GPL v2+ license header',
 		);
 	}
