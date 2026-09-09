@@ -239,6 +239,27 @@ function godevs_portfolio_ajax_import_demo(): void {
                 }
         }
 
+        // Also remove the onboarding-seeded default pages + Primary menu so a
+        // demo import starts from a clean slate (prevents "about-2" slugs and
+        // a duplicated page set). Seeded pages are flagged with post meta.
+        $seeded = get_posts(
+                array(
+                        'post_type'      => 'page',
+                        'posts_per_page' => 20,
+                        'meta_key'       => '_godevs_portfolio_seed',
+                        'meta_value'     => '1',
+                        'fields'         => 'ids',
+                        'post_status'    => 'any',
+                )
+        );
+        foreach ( $seeded as $seeded_id ) {
+            wp_trash_post( $seeded_id );
+        }
+        $seeded_menu = wp_get_nav_menu_object( __( 'Primary', 'godevs-portfolio' ) );
+        if ( $seeded_menu ) {
+                wp_delete_nav_menu( $seeded_menu->term_id );
+        }
+
         // Also handle re-import of the SAME demo — remove its old pages first
         // so we don't get duplicate pages with suffix slugs (home-director-2).
         if ( isset( $previous_imports[ $demo_id ] ) ) {
