@@ -88,7 +88,7 @@
 				{
 					"slug": "display",
 					"name": "Display",
-					"fontFamily": "\"Georgia\", \"Times New Roman\", \"Times\", serif"
+					"fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
 				},
 				{
 					"slug": "body",
@@ -103,7 +103,7 @@
 				{
 					"slug": "serif",
 					"name": "Serif",
-					"fontFamily": "\"Georgia\", \"Times New Roman\", \"Times\", serif"
+					"fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
 				}
 			]
 		}

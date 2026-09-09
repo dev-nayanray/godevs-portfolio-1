@@ -88,7 +88,7 @@
 				{
 					"slug": "display",
 					"name": "Display",
-					"fontFamily": "\"Cormorant Garamond\", \"Garamond\", \"Times New Roman\", serif"
+					"fontFamily": "\"Times New Roman\", serif"
 				},
 				{
 					"slug": "body",
@@ -103,7 +103,7 @@
 				{
 					"slug": "serif",
 					"name": "Serif",
-					"fontFamily": "\"Cormorant Garamond\", \"Garamond\", \"Times New Roman\", serif"
+					"fontFamily": "\"Times New Roman\", serif"
 				}
 			],
 			"fontSizes": [
@@ -165,6 +165,15 @@
 					"fluid": {
 						"min": "3rem",
 						"max": "6rem"
+					}
+				},
+				{
+					"slug": "huge",
+					"size": "5.5rem",
+					"name": "Display Hero",
+					"fluid": {
+						"min": "3.25rem",
+						"max": "6.5rem"
 					}
 				}
 			]

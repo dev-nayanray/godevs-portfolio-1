@@ -144,6 +144,15 @@
 						"min": "3rem",
 						"max": "7rem"
 					}
+				},
+				{
+					"slug": "huge",
+					"size": "5.5rem",
+					"name": "Display Hero",
+					"fluid": {
+						"min": "3.25rem",
+						"max": "6.5rem"
+					}
 				}
 			]
 		}
