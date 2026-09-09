@@ -2,7 +2,7 @@
 /**
  * Title: Experience — Resume
  * Slug: godevs-portfolio/experience-resume
- * Description: A traditional résumé-style experience section with role, organization, dates, and one-line summary per entry. Distinct from Vertical Timeline in its compact, list-led composition.
+ * Description: A compact résumé ledger — tight hairline rows pairing role and employer with right-aligned mono dates and one-line summaries, closing on an outline CV button. Distinct from Vertical Timeline in its compact, list-led composition.
  * Categories: godevs-portfolio-experience
  * Keywords: experience, resume, roles, history, compact
  * Viewport Width: 1280
@@ -11,82 +11,90 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<!-- wp:group {"tagName":"section","className":"wp-block-godevs-experience-resume godevs-reveal","layout":{"type":"default"}} -->
-<section class="wp-block-group wp-block-godevs-experience-resume alignfull">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-		<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|80"}}},"className":"godevs-reveal-stagger"} -->
-		<div class="wp-block-columns">
-			<!-- wp:column {"width":"33.33%"} -->
-			<div class="wp-block-column" style="flex-basis:33.33%">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group">
-					<!-- wp:paragraph {"className":"is-style-eyebrow"} -->
-					<p class="is-style-eyebrow">Experience</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":2} -->
-					<h2 class="wp-block-heading">Where I've worked.</h2>
-					<!-- /wp:heading -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-			<!-- wp:column {"width":"66.66%"} -->
-			<div class="wp-block-column" style="flex-basis:66.66%">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
-				<div class="wp-block-group">
-					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
-					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large)">Independent Practice — Designer &amp; Developer</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"},"typography":{"fontSize":"var:preset|font-size|small"}}} -->
-						<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2022 — Now</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-					<!-- wp:paragraph -->
-					<p>Working with founders and editorial teams on portfolio, product, and publication sites. Design through build.</p>
-					<!-- /wp:paragraph -->
+<!-- wp:group {"tagName":"section","className":"godevs-experience-resume","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<section class="wp-block-group godevs-experience-resume" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)"><!-- wp:group {"align":"wide","className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide godevs-reveal-stagger"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Curriculum vitae</p>
+<!-- /wp:paragraph -->
 
-					<!-- wp:separator {"className":"is-style-thin"} /-->
+<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.08","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.08;letter-spacing:-0.03em;font-weight:700">The short <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">version</em>.</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
 
-					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
-					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large)">Studio Field — Senior Designer</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"},"typography":{"fontSize":"var:preset|font-size|small"}}} -->
-						<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2019 — 2022</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-					<!-- wp:paragraph -->
-					<p>Led brand and product design for editorial and SaaS clients. Built and maintained the studio's design system.</p>
-					<!-- /wp:paragraph -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="gap:0px"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"baseline","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"baseline"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Founding partner</h3>
+<!-- /wp:heading -->
 
-					<!-- wp:separator {"className":"is-style-thin"} /-->
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">GoDevs</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
-					<div class="wp-block-group">
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large)">Foundry Co. — Designer</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"},"typography":{"fontSize":"var:preset|font-size|small"}}} -->
-						<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2016 — 2019</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-					<!-- wp:paragraph -->
-					<p>Shipped identity and web work for early-stage companies. First introduction to design systems and component libraries.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
-	</div>
-	<!-- /wp:group -->
-</section>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2022 — Now</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.6;margin-top:var(--wp--preset--spacing--20)">Runs the studio and the GoDevs Portfolio block theme; six staff, distributed, editor-first.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"baseline","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"baseline"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Lead engineer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Fieldnote Studio</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2018 — 2022</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.6;margin-top:var(--wp--preset--spacing--20)">Led decoupled WordPress builds for museums; grew the team from two to five engineers.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"baseline","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"baseline"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Product designer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Northline Press</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2014 — 2018</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.6;margin-top:var(--wp--preset--spacing--20)">Newsroom product design; shipped the publisher's first responsive reading platform.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:button {"className":"is-style-outline","style":{"border":{"radius":"999px","color":"var:preset|color|primary","width":"1px"}}} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-border-color wp-element-button" href="#" style="border-color:var(--wp--preset--color--primary);border-width:1px;border-radius:999px">Download full CV</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></section>
 <!-- /wp:group -->
