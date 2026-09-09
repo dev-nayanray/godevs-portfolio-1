@@ -133,7 +133,7 @@ function godevs_portfolio_register_post_types(): void {
                                 'menu_position'       => 6,
                                 'menu_icon'           => 'dashicons-admin-tools',
                                 'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'custom-fields' ),
-                                'rewrite'             => array( 'slug' => 'services' ),
+                                'rewrite'             => array( 'slug' => 'service' ),
                                 'hierarchical'        => false,
                         )
                 );

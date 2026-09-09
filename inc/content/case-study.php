@@ -58,7 +58,7 @@ function godevs_portfolio_register_case_study_cpt(): void {
                         'menu_position'       => 13,
                         'menu_icon'           => 'dashicons-portfolio',
                         'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'custom-fields' ),
-                        'rewrite'             => array( 'slug' => 'case-studies' ),
+                        'rewrite'             => array( 'slug' => 'case-study' ),
                         'hierarchical'        => false,
                 )
         );
