@@ -2,7 +2,7 @@
 /**
  * Title: Services — Numbered Features
  * Slug: godevs-portfolio/services-numbered-features
- * Description: A four-up services grid where each card uses a large numerical label as the primary visual element. Distinct in its numerical-led visual hierarchy.
+ * Description: A four-up services grid led by oversized mono ghost numerals 01–04 over hairline-topped columns, each with a display title, one-liner, and accent arrow.
  * Categories: godevs-portfolio-services
  * Keywords: services, numbered, features, grid, large-numerals
  * Viewport Width: 1280
@@ -11,94 +11,107 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<!-- wp:group {"tagName":"section","className":"wp-block-godevs-services-numbered-features godevs-reveal","layout":{"type":"default"}} -->
-<section class="wp-block-group wp-block-godevs-services-numbered-features alignfull">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)">
-			<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-eyebrow">Services</p>
-			<!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"700"}}} -->
-			<h2 class="wp-block-heading">Four areas of practice, often combined.</h2>
-			<!-- /wp:heading -->
-		</div>
-		<!-- /wp:group -->
-
-		<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50","top":"var:preset|spacing|50"}}},"className":"godevs-reveal-stagger"} -->
-		<div class="wp-block-columns">
-			<!-- wp:column -->
-			<div class="wp-block-column">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","width":"1px"},"right":{"color":"var:preset|color|border","width":"1px"},"bottom":{"color":"var:preset|color|border","width":"1px"},"left":{"color":"var:preset|color|border","width":"1px"}},"layout":{"type":"default"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group" style="border-color:var(--wp--preset--color--border);border-width:1px;border-style:solid;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|xxx-large","fontFamily":"var:preset|font-family|display","fontWeight":"700","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
-					<p style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xxx-large);font-weight:700;line-height:1">01</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--medium)">Brand Strategy</h3>
-					<!-- /wp:heading -->
-					<!-- wp:paragraph -->
-					<p>Positioning, voice, and the framework behind a coherent identity.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-			<!-- wp:column -->
-			<div class="wp-block-column">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","width":"1px"},"right":{"color":"var:preset|color|border","width":"1px"},"bottom":{"color":"var:preset|color|border","width":"1px"},"left":{"color":"var:preset|color|border","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-width:1px;border-right-color:var(--wp--preset--color--border);border-right-width:1px;border-bottom-color:var(--wp--preset--color--border);border-bottom-width:1px;border-left-color:var(--wp--preset--color--border);border-left-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|xxx-large","fontFamily":"var:preset|font-family|display","fontWeight":"700","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
-					<p style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xxx-large);font-weight:700;line-height:1">02</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--medium)">Visual Identity</h3>
-					<!-- /wp:heading -->
-					<!-- wp:paragraph -->
-					<p>Logo systems, typography pairings, color, and visual vocabularies.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-			<!-- wp:column -->
-			<div class="wp-block-column">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","width":"1px"},"right":{"color":"var:preset|color|border","width":"1px"},"bottom":{"color":"var:preset|color|border","width":"1px"},"left":{"color":"var:preset|color|border","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-width:1px;border-right-color:var(--wp--preset--color--border);border-right-width:1px;border-bottom-color:var(--wp--preset--color--border);border-bottom-width:1px;border-left-color:var(--wp--preset--color--border);border-left-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|xxx-large","fontFamily":"var:preset|font-family|display","fontWeight":"700","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
-					<p style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xxx-large);font-weight:700;line-height:1">03</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--medium)">Web Design</h3>
-					<!-- /wp:heading -->
-					<!-- wp:paragraph -->
-					<p>Editorial layouts, magazine systems, Gutenberg-native component libraries.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-			<!-- wp:column -->
-			<div class="wp-block-column">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","width":"1px"},"right":{"color":"var:preset|color|border","width":"1px"},"bottom":{"color":"var:preset|color|border","width":"1px"},"left":{"color":"var:preset|color|border","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-width:1px;border-right-color:var(--wp--preset--color--border);border-right-width:1px;border-bottom-color:var(--wp--preset--color--border);border-bottom-width:1px;border-left-color:var(--wp--preset--color--border);border-left-width:1px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|xxx-large","fontFamily":"var:preset|font-family|display","fontWeight":"700","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
-					<p style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xxx-large);font-weight:700;line-height:1">04</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--medium)">Engineering</h3>
-					<!-- /wp:heading -->
-					<!-- wp:paragraph -->
-					<p>Performance budgets, accessibility passes, progressive enhancement.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
+<!-- wp:group {"tagName":"section","className":"godevs-services-numbered-features","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|90"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<section class="wp-block-group godevs-services-numbered-features" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--90)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+		<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">How we work</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+		<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.05;letter-spacing:-0.03em;font-weight:700">Count the ways we <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">deliver</em>.</h2>
+		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
+
+	<!-- wp:columns {"align":"wide","className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50","top":"var:preset|spacing|50"}}}} -->
+	<div class="wp-block-columns alignwide godevs-reveal-stagger">
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--30)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|xx-large","fontWeight":"500","lineHeight":"1","letterSpacing":"-0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--xx-large);font-weight:500;line-height:1;letter-spacing:-0.04em">01</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|medium","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--medium);line-height:1.2;letter-spacing:-0.01em;font-weight:700"><a href="/services/strategy">Strategy</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A written brief that names the pages that matter.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:500">→</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--30)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|xx-large","fontWeight":"500","lineHeight":"1","letterSpacing":"-0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--xx-large);font-weight:500;line-height:1;letter-spacing:-0.04em">02</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|medium","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--medium);line-height:1.2;letter-spacing:-0.01em;font-weight:700"><a href="/services/brand-identity">Brand identity</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Tokens and rules that stay coherent everywhere.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:500">→</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--30)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|xx-large","fontWeight":"500","lineHeight":"1","letterSpacing":"-0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--xx-large);font-weight:500;line-height:1;letter-spacing:-0.04em">03</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|medium","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--medium);line-height:1.2;letter-spacing:-0.01em;font-weight:700"><a href="/services/web-design">Web design</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Patterns composed in the editor, reviewed live.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:500">→</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--30)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|xx-large","fontWeight":"500","lineHeight":"1","letterSpacing":"-0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--xx-large);font-weight:500;line-height:1;letter-spacing:-0.04em">04</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|medium","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
+				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--medium);line-height:1.2;letter-spacing:-0.01em;font-weight:700"><a href="/services/development">Development</a></h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Block-native builds under a one-second budget.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:500">→</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+	</div>
+	<!-- /wp:columns -->
 </section>
 <!-- /wp:group -->

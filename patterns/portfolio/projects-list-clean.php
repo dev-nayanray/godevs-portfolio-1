@@ -2,53 +2,56 @@
 /**
  * Title: Projects — Clean List
  * Slug: godevs-portfolio/projects-list-clean
- * Description: Minimal list view with year, title, and category in each row. Perfect for editorial portfolios with many projects.
+ * Description: A clean editorial index of projects — year, display title, pill category chip, and accent arrow per hairline row. Ideal for portfolios with many projects.
  * Categories: godevs-portfolio-portfolio
  * Keywords: projects, list, clean, minimal, editorial, rows
  * Viewport Width: 1280
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
-<!-- wp:group {"tagName":"section","className":"godevs-reveal","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull">
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group">
-<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"letterSpacing":"0.15em","textTransform":"uppercase"}}} -->
-<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);letter-spacing:0.15em;text-transform:uppercase">Portfolio</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading {"level":2,"style":{"typography":{"fontSize":"var:preset|font-size|xx-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-<h2 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xx-large);letter-spacing:-0.02em;font-weight:600">Project index.</h2>
-<!-- /wp:heading -->
-</div>
-<!-- /wp:group -->
+<!-- wp:group {"tagName":"section","className":"godevs-projects-list-clean","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|90"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<section class="wp-block-group godevs-projects-list-clean" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--90)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--60)">
+		<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+		<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Projects</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+		<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.05;letter-spacing:-0.03em;font-weight:700">Everything, in <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">order</em>.</h2>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
 
-<!-- wp:query {"queryId":103,"query":{"perPage":12,"postType":"godevs_project","order":"desc","orderBy":"date"}} -->
-<!-- wp:post-template {"className":"godevs-list-clean"} -->
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-<div class="wp-block-group">
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)"><!-- wp:post-date {"format":"Y"} /--> · <!-- wp:post-terms {"term":"godevs_project_category"} /--></p>
-<!-- /wp:paragraph -->
-<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"600"}}} /-->
-</div>
-<!-- /wp:group -->
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} -->
-<p style="font-size:var(--wp--preset--font-size--small)"><a href="#">View →</a></p>
-<!-- /wp:paragraph -->
-</div>
-<!-- /wp:group -->
-<!-- /wp:post-template -->
-<!-- wp:query-no-results -->
-<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted)">No projects yet.</p>
-<!-- /wp:paragraph -->
-<!-- /wp:query-no-results -->
-<!-- /wp:query -->
-</div>
-<!-- /wp:group -->
+	<!-- wp:query {"queryId":37,"query":{"perPage":6,"postType":"godevs_project","order":"desc","orderBy":"date","inherit":false}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"className":"godevs-reveal-stagger"} -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","verticalAlignment":"center","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="border-bottom:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+				<!-- wp:post-date {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"right":"var:preset|spacing|50"}}}} /-->
+				<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} /-->
+				<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500","textTransform":"uppercase"},"color":{"text":"var:preset|color|secondary"},"border":{"radius":"999px","width":"1px","color":"var:preset|color|border","style":"solid"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"},"margin":{"left":"var:preset|spacing|30"}}}} -->
+				<p class="has-x-small-font-size has-text-color has-border-color" style="border-color:var(--wp--preset--color--border);border-style:solid;border-width:1px;border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);margin-left:var(--wp--preset--spacing--30);color:var(--wp--preset--color--secondary);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">Case study</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"align":"right","style":{"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"500"},"color":{"text":"var:preset|color|accent"},"spacing":{"margin":{"left":"var:preset|spacing|50"}}}} -->
+				<p class="has-text-align-right has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--large);font-weight:500;margin-left:var(--wp--preset--spacing--50)">→</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+				<!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|large"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--large)">A clean list, waiting for entries.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted)">Publish your first GoDevs project and it will lead this list.</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
 </section>
 <!-- /wp:group -->

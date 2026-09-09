@@ -2,55 +2,75 @@
 /**
  * Title: Portfolio — Editorial
  * Slug: godevs-portfolio/portfolio-editorial
- * Description: An editorial portfolio list with full-width project images stacked vertically, each with year, title, and a one-line description below. Magazine-style composition.
+ * Description: A magazine-style vertical stack of full-width 21/9 project covers with hairline meta rows, display titles, and hover-reveal — fed by the Query block.
  * Categories: godevs-portfolio-portfolio
  * Keywords: portfolio, editorial, magazine, list, full-width, vertical
  * Viewport Width: 1280
  */
 if ( ! defined( 'ABSPATH' ) ) {
-        exit;
+	exit;
 }
 ?>
-<!-- wp:group {"tagName":"section","className":"wp-block-godevs-portfolio-editorial godevs-reveal","layout":{"type":"default"}} -->
-<section class="wp-block-group wp-block-godevs-portfolio-editorial alignfull">
-        <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"default"}} -->
-        <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-                <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|80"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
-                <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--80)">
-                        <!-- wp:paragraph {"className":"is-style-eyebrow"} -->
-                        <p class="is-style-eyebrow">Selected work</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:heading {"level":2,"style":{"typography":{"fontSize":"var:preset|font-size|xx-large"}}} -->
-                        <h2 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xx-large)">Recent projects, in order.</h2>
-                        <!-- /wp:heading -->
-                </div>
-                <!-- /wp:group -->
+<!-- wp:group {"tagName":"section","className":"godevs-portfolio-editorial","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|90"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<section class="wp-block-group godevs-portfolio-editorial" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--90)">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--70)">
+		<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+		<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">The archive</p>
+		<!-- /wp:paragraph -->
+		<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
+		<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.05;letter-spacing:-0.03em;font-weight:700">Every project, read like a <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">spread</em>.</h2>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
 
-                <!-- wp:query {"queryId":25,"query":{"perPage":5,"postType":"godevs_project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]}} -->
-                <div class="wp-block-query">
-                        <!-- wp:post-template -->
-                                <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
-                                <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)">
-                                        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"21/9"} /-->
-                                        <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"top":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-                                        <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--40)">
-                                                <!-- wp:post-date /-->
-                                                <!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|x-large"}}} /-->
-                                                <!-- wp:post-excerpt {"excerptLength":30} /-->
-                                        </div>
-                                        <!-- /wp:group -->
-                                </div>
-                                <!-- /wp:group -->
-                        <!-- /wp:post-template -->
+	<!-- wp:query {"queryId":32,"query":{"perPage":6,"postType":"godevs_project","order":"desc","orderBy":"date","inherit":false}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"className":"godevs-reveal-stagger","layout":{"type":"default"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)">
+				<!-- wp:group {"className":"godevs-hover-reveal is-style-card-media","layout":{"type":"default"}} -->
+				<div class="wp-block-group godevs-hover-reveal is-style-card-media">
+					<!-- wp:post-featured-image {"aspectRatio":"21/9","scale":"cover","isLink":true,"style":{"border":{"radius":"var(--wp--custom--radius--lg, 12px)"}}} /-->
+				</div>
+				<!-- /wp:group -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+					<div class="wp-block-group">
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+						<div class="wp-block-group">
+							<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500","textTransform":"uppercase"},"color":{"text":"var:preset|color|secondary"},"border":{"radius":"999px","width":"1px","color":"var:preset|color|border","style":"solid"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
+							<p class="has-x-small-font-size has-text-color has-border-color" style="border-color:var(--wp--preset--color--border);border-style:solid;border-width:1px;border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);color:var(--wp--preset--color--secondary);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">2026 — Case study</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} /-->
+						<!-- wp:post-excerpt {"excerptLength":30,"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} /-->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|x-large","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--x-large);font-weight:500">→</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
 
-                        <!-- wp:query-no-results -->
-                                <!-- wp:paragraph -->
-                                <p>No projects found yet.</p>
-                                <!-- /wp:paragraph -->
-                        <!-- /wp:query-no-results -->
-                </div>
-                <!-- /wp:query -->
-        </div>
-        <!-- /wp:group -->
+		<!-- wp:query-no-results -->
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+				<!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|large"},"color":{"text":"var:preset|color|secondary"}}} -->
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--large)">The archive is empty — for now.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted)">Publish a GoDevs project and it will open this editorial stack.</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
 </section>
 <!-- /wp:group -->
