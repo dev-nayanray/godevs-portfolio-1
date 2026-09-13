@@ -5,7 +5,16 @@ All notable changes to GoDevs Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.5.1] - 2026-09-13
+
+### Fixed
+- Core templates (single, date, category, tag, author, index, page, and all CPT archive/single variants): replaced 190 references to the non-existent `--wp--style--root--content-size` / `root--wide-size` CSS variables with the correct `--wp--style--global--*` equivalents. The root variants are never defined by WordPress, so every constrained group silently lost its max-width and post titles, archive headers, and text sprawled across the full page width instead of the 680px text column.
+- All 26 templates using a `layout:default` `<main>`: added left/right root padding — main content previously rendered flush to the screen edges because nested `alignwide` groups receive neither a width cap nor the root side padding.
+- All 12 header parts: same edge-flush fix — the site logo sat at the viewport edge (x=0) on every page.
+- Archive/blog listings: the post-grid wrapper is now constrained to the wide size so cards align with the wide content axis instead of spanning edge to edge.
+- Stray trailing `}` in 17 block attribute objects across the Monolith demo inner-page patterns (invalid attribute JSON).
+
+## [1.5.0] - 2026-09-13
 
 ### Added
 - All 41 demo inner pages upgraded to match homepage quality: eyebrow + H1 + intro heroes, 3+ substantial sections per page using each demo's signature components, closing CTA bands. Representative screenshots added to docs/demo-report.

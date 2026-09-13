@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -64,6 +64,13 @@ Yes. Go to Appearance → GoDevs Settings → Colors and Typography to customize
 Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available demos, click Preview to see a live preview, then click Import to import the demo content (pages, navigation, and style variation).
 
 == Changelog ==
+
+= 1.5.1 =
+
+* Fix: constrained groups referenced non-existent `--wp--style--root--content-size` / `root--wide-size` CSS variables (190 occurrences), so post titles, archive headers, and text columns sprawled across the full page width — replaced with the correct `--wp--style--global--*` variables.
+* Fix: content in all core templates (single, archives, index, page, CPT variants) and all header parts rendered flush to the screen edges — added root side padding to `layout:default` mains and headers.
+* Fix: archive/blog post grids now align to the wide content axis.
+* Fix: stripped stray trailing `}` from 17 invalid block attribute objects in the Monolith demo patterns.
 
 = 1.5.0 =
 * New: all 41 demo inner pages upgraded to homepage-grade design (eyebrow+H1 heroes, 3+ sections per page in each demo's signature components, closing CTAs).

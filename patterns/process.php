@@ -8,7 +8,7 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"godevs-process","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}},"color":{"background":"var:preset|color|surface-muted"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<!-- wp:group {"tagName":"section","className":"godevs-process","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}},"color":{"background":"var:preset|color|surface-muted"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
 <section class="wp-block-group godevs-process has-background" style="background-color:var(--wp--preset--color--surface-muted);padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">

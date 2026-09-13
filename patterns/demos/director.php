@@ -259,7 +259,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- ═══ PRESS QUOTES ═══ -->
 	<!-- wp:group {"tagName":"section","layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull">
-		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
+		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--content-size)"}} -->
 		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
 			<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"letterSpacing":"0.25em","textTransform":"uppercase","fontWeight":"600"}}} -->
 			<p class="is-style-eyebrow" style="letter-spacing:0.25em;text-transform:uppercase">Press</p>
@@ -281,7 +281,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- ═══ CTA — Cinematic close ═══ -->
 	<!-- wp:group {"tagName":"section","style":{"color":{"background":"var:preset|color|primary"},"textColor":"contrast"},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull has-contrast-color has-primary-background-color has-text-color has-background" id="contact">
-		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
+		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--content-size)"}} -->
 		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
 			<!-- wp:paragraph {"className":"is-style-eyebrow","align":"center","textColor":"contrast","style":{"typography":{"letterSpacing":"0.3em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
 			<p class="is-style-eyebrow has-text-align-center has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.3em;text-transform:uppercase">Available 2025</p>

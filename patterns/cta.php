@@ -8,7 +8,7 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"tagName":"section","className":"godevs-cta","align":"full","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}},"dimensions":{"overflow":"hidden"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<!-- wp:group {"tagName":"section","className":"godevs-cta","align":"full","backgroundColor":"primary","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"}},"dimensions":{"overflow":"hidden"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
 <section class="wp-block-group alignfull godevs-cta has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);overflow:hidden"><!-- wp:paragraph {"align":"wide","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(6rem, 18vw, 14rem)","lineHeight":"0.8","letterSpacing":"-0.04em","fontWeight":"700"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}}} -->
 <p class="alignwide has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--display);font-size:clamp(6rem, 18vw, 14rem);line-height:0.8;letter-spacing:-0.04em;font-weight:700;margin-bottom:var(--wp--preset--spacing--70)">Let’s talk</p>
 <!-- /wp:paragraph -->
