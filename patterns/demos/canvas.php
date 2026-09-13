@@ -21,10 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- wp:cover {"useFeaturedImage":false,"dimRatio":40,"overlayColor":"primary","minHeight":560,"isDark":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
 	<div class="wp-block-cover" style="min-height:560px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
 		<span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-40 has-background-dim"></span>
-		<img class="wp-block-cover__image-background wp-image-0" alt="Featured UI design work — dashboard interface" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" style="object-fit:cover;object-position:center"/>
+			<img class="wp-block-cover__image-background" alt="Featured UI design work — dashboard interface" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" style="object-fit:cover;object-position:center"/>
 		<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70","left":"var:preset|spacing|70","right":"var:preset|spacing|70","top":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)">
-			<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"600"}}} -->
+			<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"letterSpacing":"0.2em","textTransform":"uppercase","fontWeight":"600"}}} -->
 			<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.2em">UI / Product Designer</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|contrast"}}} -->
@@ -54,19 +54,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-around","verticalAlignment":"center"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"700"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:700">FIELD</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:700">ORBIT</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"400","fontStyle":"italic"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:400;font-style:italic">Long-form</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:400;font-style:italic">Haven</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:600">FOUNDRY</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:600">PAPERKIT</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"500","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:500;letter-spacing:0.1em">NORTH</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:500;letter-spacing:0.1em">LUMEN</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"700"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:700">Atelier</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:700">DRAFT&amp;CO</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -101,11 +101,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
 				<div class="wp-block-column" style="flex-basis:45%">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"},"typography":{"fontWeight":"600"}}} -->
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600">2024 · Brand Identity</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Studio Field — Identity System</h3>
+					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Orbit — Identity System</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"440px"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);max-width:440px">Complete visual identity — wordmark, type pairing, color system, and editorial templates. Built to scale from business card to full site.</p>
@@ -118,34 +118,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<!-- /wp:columns -->
 
-			<!-- Featured project 2 — reversed -->
-			<!-- wp:columns {"verticalAlignment":"center","className":"godevs-reveal","style":{"spacing":{"blockGap":"var:preset|spacing|60","margin":{"bottom":"var:preset|spacing|70"}}}} -->
-			<div class="wp-block-columns godevs-reveal are-vertically-aligned-center" style="margin-bottom:var(--wp--preset--spacing--70)">
-				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
-				<div class="wp-block-column" style="flex-basis:45%">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"},"typography":{"fontWeight":"600"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600">2024 · Product Design</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Foundry Co. — Component Library</h3>
-					<!-- /wp:heading -->
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"440px"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);max-width:440px">A design system and component library for a B2B analytics platform. 60+ components, full documentation, and the design tokens that hold it together.</p>
-					<!-- /wp:paragraph -->
-					<!-- wp:button {"className":"is-style-text-link"} -->
-					<div class="wp-block-button is-style-text-link"><a href="#work" class="wp-block-button__link wp-element-button">View case study →</a></div>
-					<!-- /wp:button -->
+			<!-- Featured project 2 — full-bleed image with caption band -->
+			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>","dimRatio":30,"overlayColor":"primary","minHeight":520,"align":"wide","className":"godevs-reveal","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"default"}} -->
+			<div class="wp-block-cover alignwide godevs-reveal" style="min-height:520px;margin-bottom:var(--wp--preset--spacing--70)">
+				<span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-30 has-background-dim"></span>
+				<img class="wp-block-cover__image-background" alt="Component Library — design system for a B2B analytics platform" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" style="object-fit:cover;object-position:center"/>
+				<div class="wp-block-cover__inner-container">
+					<!-- wp:group {"align":"wide","style":{"color":{"background":"var:preset|color|primary","text":"var:preset|color|contrast"},"border":{"radius":"var(--wp--custom--radius--md, 8px)"},"spacing":{"margin":{"top":"auto"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+					<div class="wp-block-group alignwide has-contrast-color has-primary-background-color has-text-color has-background" style="border-radius:var(--wp--custom--radius--md, 8px);margin-top:auto;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)">
+						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">2024 · Product Design</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
+						<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">PaperKit — Component Library</h3>
+						<!-- /wp:heading -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"640px"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);max-width:640px">A design system and component library for a B2B analytics platform. 60+ components, full documentation, and the design tokens that hold it together.</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:button {"className":"is-style-text-link"} -->
+						<div class="wp-block-button is-style-text-link"><a href="#work" class="wp-block-button__link wp-element-button">View case study →</a></div>
+						<!-- /wp:button -->
+					</div>
+					<!-- /wp:group -->
 				</div>
-				<!-- /wp:column -->
-				<!-- wp:column {"width":"55%","verticalAlignment":"center"} -->
-				<div class="wp-block-column" style="flex-basis:55%">
-					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"var(--wp--custom--radius--lg, 12px)"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" alt="Component Library — design system for a B2B analytics platform" style="border-radius:12px;aspect-ratio:16/10;object-fit:cover"/></figure>
-					<!-- /wp:image -->
-				</div>
-				<!-- /wp:column -->
 			</div>
-			<!-- /wp:columns -->
+			<!-- /wp:cover -->
 
 			<!-- Featured project 3 — large -->
 			<!-- wp:columns {"verticalAlignment":"center","className":"godevs-reveal","style":{"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
@@ -159,11 +156,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
 				<div class="wp-block-column" style="flex-basis:45%">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"},"typography":{"fontWeight":"600"}}} -->
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600">2023 · Editorial Design</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Long-form Journal — Redesign</h3>
+					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Haven Journal — Redesign</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"440px"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);max-width:440px">Magazine-style editorial redesign for a long-form journalism site. Doubled reader retention and reduced bounce rate by 30%.</p>
@@ -264,8 +261,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:heading {"level":2,"textAlign":"center","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
 			<h2 class="wp-block-heading has-text-align-center" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Have a product that needs designing?</h2>
 			<!-- /wp:heading -->
-			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium)">I take on two design engagements per quarter. Tell me about your product and I'll send a proposal within a week.</p>
+			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|contrast"}}} -->
+			<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium)">I take on two design engagements per quarter. Tell me about your product and I'll send a proposal within a week.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">

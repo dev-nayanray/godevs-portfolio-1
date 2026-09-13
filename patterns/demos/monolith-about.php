@@ -19,16 +19,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
 
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ cat about.md</code></p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ cat about.md</code></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
 <h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Backend engineer, systems thinker, Berlin-based.</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|large);line-height:1.6;max-width:560px">Twelve years of building systems that stay up. Started in agencies, moved to infrastructure, now independent. I work on the parts users never see — APIs, databases, and the 3am pages that make everything else possible.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1.6"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);line-height:1.6;max-width:560px">Twelve years of building systems that stay up. Started in agencies, moved to infrastructure, now independent. I work on the parts users never see — APIs, databases, and the 3am pages that make everything else possible.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}}} -->
@@ -36,8 +36,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:separator -->
 
 <!-- ═══ Skills readout ═══ -->
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ skills --list</code></p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ skills --list</code></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|40"}}}} -->
@@ -45,8 +45,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// languages</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// languages</p>
 <!-- /wp:paragraph -->
 <!-- wp:list {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"}} -->
 <ul class="wp-block-list" style="font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">
@@ -69,8 +69,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// infrastructure</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// infrastructure</p>
 <!-- /wp:paragraph -->
 <!-- wp:list {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"}} -->
 <ul class="wp-block-list" style="font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">
@@ -93,8 +93,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// practices</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">// practices</p>
 <!-- /wp:paragraph -->
 <!-- wp:list {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"}} -->
 <ul class="wp-block-list" style="font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">
@@ -123,8 +123,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:separator -->
 
 <!-- ═══ Experience timeline ═══ -->
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ git log --oneline --career</code></p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ git log --oneline --career</code></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|40"}}}} -->
@@ -134,14 +134,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)">
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2022 — present</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2022 — present</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
 <h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Independent Practice · Berlin</h3>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Backend architecture for selected clients. Two engagements at a time, shipped on schedule.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Backend architecture for selected clients. Two engagements at a time, shipped on schedule.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -152,14 +152,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--40)">
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2018 — 2022</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2018 — 2022</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
 <h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Senior Backend Engineer · Foundry Co.</h3>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Built the event-driven order processing pipeline still running today. Led the migration from monolith to microservices.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Built the event-driven order processing pipeline still running today. Led the migration from monolith to microservices.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -168,14 +168,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
-<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2012 — 2018</p>
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2012 — 2018</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
 <h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Backend Developer · Studio Field</h3>
 <!-- /wp:heading -->
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">First engineering role. Learned the craft on live systems — payment processing, CMS builds, and the occasional 3am incident.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">First engineering role. Learned the craft on live systems — payment processing, CMS builds, and the occasional 3am incident.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

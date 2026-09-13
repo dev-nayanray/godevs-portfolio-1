@@ -2,7 +2,7 @@
 /**
  * Title: Portfolio Grid
  * Slug: godevs-portfolio/portfolio-grid
- * Categories: featured, portfolio, query
+ * Categories: featured, godevs-portfolio-portfolio, query
  * Description: An editorial three-column portfolio grid with hover-reveal 4:3 covers, mono meta rows, and display-face project titles fed by the Query block.
  * Keywords: portfolio, work, grid, projects, case studies, query
  * Viewport Width: 1280

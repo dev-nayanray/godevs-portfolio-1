@@ -2,7 +2,7 @@
 /**
  * Title: Services
  * Slug: godevs-portfolio/services
- * Categories: featured, services
+ * Categories: featured, godevs-portfolio-services
  * Description: An editorial index of four services as hairline-bordered rows — mono ghost numbers, display titles, and arrow links. Use on studio and agency portfolios.
  * Keywords: services, what-we-do, capabilities, offering, list
  * Viewport Width: 1280

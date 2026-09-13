@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Demo importer: page sets are now derived from the pattern files that actually exist, so no demo can import blank pages (previously Aperture and Signature advertised pages with no content).
+- Demo importer: a missing inner-page pattern now skips that page with a recorded error instead of publishing an empty page; the import fails loudly if no pages could be created.
+- Demo importer: the concurrency lock is acquired before the destructive cleanup phase, and is released by a shutdown handler if a fatal error occurs mid-import.
+- Demo importer: navigation menu items use proper page titles ("Case Studies", not "Case-studies").
+- Demo registry: the demo title parser now handles multi-byte em dashes (the `u` flag), which previously made every demo categorize as "Specialized" and broke the category filter and recommended-page mapping.
+- Demo preview renderer: multi-line pattern docblocks are stripped correctly (raw PHP header no longer leaks into iframe previews).
+- Pattern registration: sub-directory patterns register with rendered content instead of `filePath`, so PHP-templated patterns are insertable in the editor on all supported WordPress versions.
+- Demo re-imports no longer produce "home-2" slugs — tracked demo pages are hard-deleted on removal (importer-generated content only).
+- Accessibility: `muted` text inside `primary`-background CTA/band sections across demos now uses the `contrast` token — muted-on-primary failed WCAG AA contrast in several palettes.
+- Broken heading close tag in the `timeline` pattern; duplicate `typography` JSON keys and attribute/inline-style mismatches in demo patterns (Canvas, Plan, Director).
+
+### Removed
+- Stale v1.0.0 duplicate of the whole theme accidentally nested inside `styles/`.
+- 12 duplicate/weak patterns (near-identical portfolio grids, services lists, testimonials, and dynamic variants).
+- `patterns/dynamic/` folder (the unique query-based team grid moved to `patterns/team/team-query-grid.php`).
+
+### Changed
+- Root patterns re-tagged with the theme's registered `godevs-portfolio-*` inserter categories (several used unregistered categories that WordPress silently dropped).
+- Demo differentiation pass — each of the 10 demos now has a distinctive signature section: Monolith gained a faux-terminal stats block; Canvas a full-bleed case-study interlude with its own client set; Aperture a photography packages & rates list; Northbound a numbered index services list plus testimonials and a metrics strip; Meridian a before/after results section and insights preview; Plan a compact project index; Signature a numbered editorial services list; Scholar a selected-publications list with a CV download; Minimal a hero CTA and magazine category row; Director unified section heading scale and a lighter hero overlay.
+- Recommended style variations rebalanced: Minimal demo → Editorial, Plan → Monochrome (four demos no longer share one variation).
+- `skills/progress` redesigned from generic progress bars to accessible mono dot-scale indicators; `cta/minimal`, `stats/minimal`, and `hero/minimal` upgraded to complete sections.
+- Demo importer admin UI strings are now translatable (i18n data passed to the admin JS; hardcoded alerts routed through it).
+- `readme.txt` asset counts corrected.
+
 ### Removed
 - Accidental nested theme copies inside `patterns/` and `parts/`.
 - 912 orphan persona-variant patterns (`*-agency-1.php` etc.) that were never referenced by demos and only cluttered the block inserter.

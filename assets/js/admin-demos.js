@@ -359,7 +359,7 @@
                 post( 'godevs_portfolio_get_import_details', { demo_id: demoId } )
                         .then( function ( resp ) {
                                 if ( ! resp || ! resp.success ) {
-                                        var msg = ( resp && resp.data && resp.data.message ) || 'Could not load demo details.';
+                                        var msg = ( resp && resp.data && resp.data.message ) || I18N.loadDetailsFailed || 'Could not load demo details.';
                                         window.alert( msg );
                                         return;
                                 }
@@ -367,7 +367,7 @@
                                 showImportConfirmation( data );
                         } )
                         .catch( function () {
-                                window.alert( 'Network error while loading demo details.' );
+                                window.alert( I18N.networkErrorDetails || 'Network error while loading demo details.' );
                         } );
         }
 
@@ -528,7 +528,7 @@
                                         showProgress( resp.data.steps );
                                 }
                                 if ( ! resp || ! resp.success ) {
-                                        var msg = ( resp && resp.data && resp.data.message ) || 'Import failed.';
+                                        var msg = ( resp && resp.data && resp.data.message ) || I18N.importFailed || 'Import failed.';
                                         window.alert( msg );
                                         hideProgress();
                                         return;
@@ -551,9 +551,9 @@
                                                 data.replaced_demos.map( escapeHTML ).join( ', ' ) +
                                                 ' — their pages were moved to trash.</p>';
                                 }
-                                var successMsg = 'Import complete!';
+                                var successMsg = I18N.importComplete || 'Import complete!';
                                 if ( data.viewSiteUrl ) {
-                                        successMsg += ' Redirecting to your live site…';
+                                        successMsg += ' ' + ( I18N.redirecting || 'Redirecting to your live site…' );
                                 }
                                 setTimeout( function () {
                                         hideProgress();
@@ -571,7 +571,7 @@
                                         btn.disabled = false;
                                         btn.style.opacity = '';
                                 } );
-                                window.alert( 'Network error during import.' );
+                                window.alert( I18N.networkErrorImport || 'Network error during import.' );
                                 hideProgress();
                         } );
         }
@@ -602,14 +602,14 @@
                 post( 'godevs_portfolio_remove_demo', { demo_id: demoId } )
                         .then( function ( resp ) {
                                 if ( ! resp || ! resp.success ) {
-                                        var msg = ( resp && resp.data && resp.data.message ) || 'Could not remove demo.';
+                                        var msg = ( resp && resp.data && resp.data.message ) || I18N.removeFailed || 'Could not remove demo.';
                                         window.alert( msg );
                                         return;
                                 }
                                 window.location.reload();
                         } )
                         .catch( function () {
-                                window.alert( 'Network error during removal.' );
+                                window.alert( I18N.networkErrorRemoval || 'Network error during removal.' );
                         } );
         }
 

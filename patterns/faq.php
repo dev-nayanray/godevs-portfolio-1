@@ -2,7 +2,7 @@
 /**
  * Title: FAQ
  * Slug: godevs-portfolio/faq
- * Categories: featured, faq, text
+ * Categories: featured, godevs-portfolio-faq, text
  * Description: An editorial FAQ — mixed-serif heading, hairline-divided native core/details accordions with display-font summaries, and a closing contact link. No JS required.
  * Keywords: faq, questions, answers, accordion, help, support
  * Viewport Width: 820

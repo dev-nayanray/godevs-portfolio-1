@@ -2,7 +2,7 @@
 /**
  * Title: Process
  * Slug: godevs-portfolio/process
- * Categories: featured, services, text
+ * Categories: featured, godevs-portfolio-services, text
  * Description: A four-step horizontal process on a muted band — oversized mono numerals, display titles, and hairline-connected columns. Useful on services and about pages to explain how the studio works.
  * Keywords: process, workflow, how-we-work, methodology, steps, approach
  * Viewport Width: 1280

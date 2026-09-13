@@ -85,6 +85,21 @@ function godevs_portfolio_enqueue_admin_assets( string $hook ): void {
                         'ajaxUrl'   => admin_url( 'admin-ajax.php' ),
                         'ajaxNonce' => wp_create_nonce( 'godevs_demo_admin' ),
                         'previewUrl' => add_query_arg( array( 'godevs_preview' => '1' ), home_url( '/' ) ),
+                        'i18n'      => array(
+                                'cancel'                => __( 'Cancel', 'godevs-portfolio' ),
+                                'importDemo'            => __( 'Import Demo', 'godevs-portfolio' ),
+                                'removeDemo'            => __( 'Remove Demo', 'godevs-portfolio' ),
+                                'confirmRemove'         => __( 'Confirm Removal', 'godevs-portfolio' ),
+                                'confirmSafeTitle'      => __( 'Import Demo', 'godevs-portfolio' ),
+                                'importFailed'          => __( 'Import failed.', 'godevs-portfolio' ),
+                                'importComplete'        => __( 'Import complete!', 'godevs-portfolio' ),
+                                'loadDetailsFailed'     => __( 'Could not load demo details.', 'godevs-portfolio' ),
+                                'removeFailed'          => __( 'Could not remove demo.', 'godevs-portfolio' ),
+                                'networkErrorDetails'   => __( 'Network error while loading demo details.', 'godevs-portfolio' ),
+                                'networkErrorImport'    => __( 'Network error during import.', 'godevs-portfolio' ),
+                                'networkErrorRemoval'   => __( 'Network error during removal.', 'godevs-portfolio' ),
+                                'redirecting'           => __( 'Redirecting to your live site…', 'godevs-portfolio' ),
+                        ),
                 )
         );
 }
@@ -176,6 +191,24 @@ function godevs_portfolio_ajax_import_demo(): void {
         if ( empty( $demo['is_ready'] ) ) {
                 wp_send_json_error( array( 'message' => __( 'This demo is coming soon and cannot be imported yet.', 'godevs-portfolio' ) ), 403 );
         }
+
+        // ═══ CONCURRENCY LOCK ═══
+        // Prevent duplicate imports from concurrent admin requests. Acquired
+        // BEFORE the destructive cleanup phase so two overlapping requests
+        // can never both trash pages/menus.
+        if ( get_transient( 'godevs_import_lock' ) ) {
+                wp_send_json_error(
+                        array(
+                                'message' => __( 'Another import is in progress. Please wait a moment and try again.', 'godevs-portfolio' ),
+                        ),
+                        409
+                );
+        }
+        set_transient( 'godevs_import_lock', 1, 60 );
+        // Safety net: release the lock even if a fatal error occurs mid-import.
+        register_shutdown_function( function () {
+                delete_transient( 'godevs_import_lock' );
+        } );
 
         $steps = array(
                 array( 'id' => 'prepare', 'label' => __( 'Preparing demo', 'godevs-portfolio' ) ),
@@ -278,18 +311,6 @@ function godevs_portfolio_ajax_import_demo(): void {
                 godevs_portfolio_reset_style_variation();
         }
 
-        // ═══ CONCURRENCY LOCK ═══
-        // Prevent duplicate imports from concurrent admin requests.
-        if ( get_transient( 'godevs_import_lock' ) ) {
-                wp_send_json_error(
-                        array(
-                                'message' => __( 'Another import is in progress. Please wait a moment and try again.', 'godevs-portfolio' ),
-                        ),
-                        409
-                );
-        }
-        set_transient( 'godevs_import_lock', 1, 60 );
-
         // 1. Read the demo pattern markup (the homepage content).
         $homepage_markup = godevs_portfolio_render_demo_markup( $demo );
         if ( '' === $homepage_markup ) {
@@ -341,8 +362,16 @@ function godevs_portfolio_ajax_import_demo(): void {
                                 include $page_file; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern file output is HTML block markup.
                                 $content = (string) ob_get_clean();
                         } else {
-                                // Fallback: empty content if no pattern file exists.
-                                $content = '';
+                                // No pattern file for this page — skip it entirely
+                                // rather than publishing a blank page (and a nav
+                                // item pointing at it). The registry already filters
+                                // pages to existing files; this is a safety net.
+                                $errors[] = sprintf(
+                                        /* translators: %s: page slug. */
+                                        __( 'Skipped "%1$s" — no demo content found.', 'godevs-portfolio' ),
+                                        $page_slug
+                                );
+                                continue;
                         }
                 }
 
@@ -390,6 +419,21 @@ function godevs_portfolio_ajax_import_demo(): void {
                 }
         }
 
+        // If not a single page could be created, the import failed — report
+        // it instead of recording a "successful" import with zero pages.
+        if ( empty( $created_pages ) ) {
+                delete_transient( 'godevs_import_lock' );
+                wp_send_json_error(
+                        array(
+                                'message' => $errors
+                                        ? implode( ' ', $errors )
+                                        : __( 'No pages could be created for this demo.', 'godevs-portfolio' ),
+                                'errors'  => $errors,
+                        ),
+                        500
+                );
+        }
+
         // 3. Create the navigation menu.
         $menu_name = sprintf(
                 /* translators: %s: demo name. */
@@ -420,7 +464,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                                 $nav_menu_id,
                                 0,
                                 array(
-                                        'menu-item-title'     => ucfirst( $page_slug ),
+                                        'menu-item-title'     => $page_titles[ $page_slug ] ?? ucfirst( $page_slug ),
                                         'menu-item-object'    => 'page',
                                         'menu-item-object-id' => $page_id,
                                         'menu-item-type'      => 'post_type',

@@ -138,21 +138,23 @@ function godevs_portfolio_tracker_remove( string $demo_id, bool $delete_content 
 	$deleted = array( 'pages' => 0, 'nav_menu' => 0, 'homepage_reset' => false );
 	$errors  = array();
 
-	if ( $delete_content ) {
-		// Delete imported pages.
-		foreach ( $record['page_ids'] as $page_id ) {
-			$page_id = absint( $page_id );
-			if ( $page_id && get_post( $page_id ) ) {
-				// Use wp_trash_post instead of wp_delete_post to be safe —
-				// user can restore from trash if needed.
-				$result = wp_trash_post( $page_id );
-				if ( false === $result ) {
-					$errors[] = sprintf(
-						/* translators: %d: page ID. */
-						__( 'Could not trash page ID %d.', 'godevs-portfolio' ),
-						$page_id
-					);
-				} else {
+		if ( $delete_content ) {
+			// Delete imported pages.
+			foreach ( $record['page_ids'] as $page_id ) {
+				$page_id = absint( $page_id );
+				if ( $page_id && get_post( $page_id ) ) {
+					// Hard-delete importer-generated pages. Trashing leaves the
+					// slug reserved, so a re-import would create "home-2" etc.
+					// Only tracked demo pages (created by the importer) ever
+					// reach this loop, so no user content is destroyed.
+					$result = wp_delete_post( $page_id, true );
+					if ( null === $result || false === $result ) {
+						$errors[] = sprintf(
+							/* translators: %d: page ID. */
+							__( 'Could not delete page ID %d.', 'godevs-portfolio' ),
+							$page_id
+						);
+					} else {
 					++$deleted['pages'];
 				}
 			}

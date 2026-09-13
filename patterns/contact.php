@@ -2,7 +2,7 @@
 /**
  * Title: Contact
  * Slug: godevs-portfolio/contact
- * Categories: featured, contact, call-to-action
+ * Categories: featured, godevs-portfolio-contact, call-to-action
  * Description: An editorial 40/60 contact split — oversized mailto headline and hairline meta rows beside a bordered inquiry card with form-style fields. Designed for a light background.
  * Keywords: contact, get-in-touch, hire, brief, email
  * Viewport Width: 1280

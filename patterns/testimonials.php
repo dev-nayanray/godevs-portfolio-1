@@ -2,7 +2,7 @@
 /**
  * Title: Testimonials
  * Slug: godevs-portfolio/testimonials
- * Categories: featured, testimonials, text
+ * Categories: featured, godevs-portfolio-testimonials, text
  * Description: Two editorial testimonial cards with card-quote styling, initial-letter avatar circles, and role micro-labels on a muted surface band. Ideal for social proof sections.
  * Keywords: testimonial, quote, review, social-proof
  * Viewport Width: 1280

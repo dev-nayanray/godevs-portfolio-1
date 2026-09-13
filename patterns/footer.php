@@ -2,7 +2,7 @@
 /**
  * Title: Minimal Footer
  * Slug: godevs-portfolio/footer
- * Categories: footer
+ * Categories: footer, godevs-portfolio-footer
  * Description: A full-bleed editorial footer on dark primary — oversized display wordmark with serif tagline, micro-label link columns, and a mono copyright hairline row.
  * Keywords: footer, minimal, copyright, navigation
  * Viewport Width: 1280

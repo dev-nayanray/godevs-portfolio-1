@@ -2,7 +2,7 @@
 /**
  * Title: Stats
  * Slug: godevs-portfolio/stats
- * Categories: featured, stats, text
+ * Categories: featured, godevs-portfolio-stats, text
  * Description: A four-column stat row with huge accent display numbers, hairline vertical dividers, and small-caps micro-labels. Sits well after the hero or before the footer.
  * Keywords: stats, numbers, metrics, achievements, kpis, results
  * Viewport Width: 1280

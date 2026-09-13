@@ -2,7 +2,7 @@
 /**
  * Title: Demo — Minimal (Lifestyle)
  * Slug: godevs-portfolio/demo-minimal
- * Description: Image-first lifestyle magazine. Editorial typography hero, magazine portfolio grid, photo-led journal, social footer. Warm, considered, restrained. Recommended style variation: Minimal.
+ * Description: Image-first lifestyle magazine. Editorial typography hero, magazine portfolio grid, photo-led journal, social footer. Warm, considered, restrained. Recommended style variation: Editorial.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, lifestyle, minimal, magazine, editorial, warm
  * Viewport Width: 1280
@@ -32,6 +32,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
 					<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 7vw, 5rem);line-height:1;letter-spacing:-0.03em;font-weight:600">A considered life, documented honestly.</h1>
 					<!-- /wp:heading -->
+					<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
+					<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--40)">
+						<!-- wp:button {"className":"is-style-outline","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"radius":"var(--wp--custom--radius--pill, 9999px)"}}} -->
+						<div class="wp-block-button is-style-outline"><a href="#journal" class="wp-block-button__link wp-element-button" style="border-radius:var(--wp--custom--radius--pill, 9999px);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--50)">Read the latest issue</a></div>
+						<!-- /wp:button -->
+					</div>
+					<!-- /wp:buttons -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"30%","verticalAlignment":"bottom"} -->
@@ -106,6 +113,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
+
+			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.08em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--40)">Home · Objects · Practice · Travel</p>
+			<!-- /wp:paragraph -->
 
 			<!-- wp:columns {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"top":"var:preset|spacing|40"}}}} -->
 			<div class="wp-block-columns godevs-reveal-stagger" style="margin-top:var(--wp--preset--spacing--40)">

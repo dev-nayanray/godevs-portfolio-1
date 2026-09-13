@@ -29,13 +29,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"55%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
 				<div class="wp-block-column" style="flex-basis:55%">
 					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--muted)">Agency / Creative</p>
+					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast)">Agency / Creative</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
 					<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 4rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">We make brands impossible to ignore.</h1>
 					<!-- /wp:heading -->
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"480px"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);max-width:480px">A creative agency for teams who want to be remembered. Strategy, identity, and the production work that brings it to life.</p>
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"480px"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);max-width:480px">A creative agency for teams who want to be remembered. Strategy, identity, and the production work that brings it to life.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
@@ -50,29 +50,44 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<!-- /wp:column -->
 
-				<!-- Right: logo cloud -->
-				<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
+				<!-- Right: metrics strip -->
+				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 				<div class="wp-block-column" style="flex-basis:45%">
-					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--muted);margin-bottom:var(--wp--preset--spacing--40)">Trusted by</p>
+					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|contrast"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
+					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast);margin-bottom:var(--wp--preset--spacing--30)">By the numbers</p>
 					<!-- /wp:paragraph -->
-					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"center"}} -->
-					<div class="wp-block-group">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"700","letterSpacing":"0.05em"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|large);font-weight:700;letter-spacing:0.05em">FIELD</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"500","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|large);font-weight:500;letter-spacing:0.1em">FOUNDRY</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"400","fontStyle":"italic","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|large);font-weight:400;font-style:italic;letter-spacing:0.02em">Long-form</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"600","letterSpacing":"0.15em"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|large);font-weight:600;letter-spacing:0.15em">NORTH</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"700"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|large);font-weight:700">Atelier</p>
-						<!-- /wp:paragraph -->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
+					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--secondary);border-top-style:solid;border-top-width:1px;border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+						<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"},"border":{"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
+						<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">120+</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Projects shipped</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"},"border":{"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
+						<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">14</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Industry awards</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
+						<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">9</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Countries</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
 					</div>
 					<!-- /wp:group -->
 				</div>
@@ -101,61 +116,87 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:columns {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-			<div class="wp-block-columns godevs-reveal-stagger">
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-bordered","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}}} -->
-					<div class="wp-block-group is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"600","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:600">01</p>
+			<!-- wp:group {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"0"}}} -->
+				<div class="wp-block-group godevs-reveal-stagger">
+					<!-- Index row 01 -->
+					<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
+						<div class="wp-block-group">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.08em;font-weight:600">01</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
+							<div class="wp-block-group">
+								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Brand Strategy</h3>
+								<!-- /wp:heading -->
+								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Positioning, messaging, and the strategic foundation that makes everything else work.</p>
+								<!-- /wp:paragraph -->
+							</div>
+							<!-- /wp:group -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1"},"color":{"text":"var:preset|color|foreground"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--large);line-height:1">→</p>
 						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Brand Strategy</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Positioning, messaging, and the strategic foundation that makes everything else work.</p>
+					</div>
+					<!-- /wp:group -->
+
+					<!-- Index row 02 -->
+					<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
+						<div class="wp-block-group">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.08em;font-weight:600">02</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
+							<div class="wp-block-group">
+								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Identity Design</h3>
+								<!-- /wp:heading -->
+								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Logos, type systems, color palettes, and the visual language that makes a brand recognizable.</p>
+								<!-- /wp:paragraph -->
+							</div>
+							<!-- /wp:group -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1"},"color":{"text":"var:preset|color|foreground"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--large);line-height:1">→</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- Index row 03 -->
+					<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top"}} -->
+						<div class="wp-block-group">
+							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+							<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.08em;font-weight:600">03</p>
+							<!-- /wp:paragraph -->
+							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
+							<div class="wp-block-group">
+								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Digital Production</h3>
+								<!-- /wp:heading -->
+								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Websites, campaigns, and the build work that takes the identity from deck to production.</p>
+								<!-- /wp:paragraph -->
+							</div>
+							<!-- /wp:group -->
+						</div>
+						<!-- /wp:group -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1"},"color":{"text":"var:preset|color|foreground"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--large);line-height:1">→</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
 				</div>
-				<!-- /wp:column -->
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-bordered","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}}} -->
-					<div class="wp-block-group is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"600","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:600">02</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Identity Design</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Logos, type systems, color palettes, and the visual language that makes a brand recognizable.</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-				</div>
-				<!-- /wp:column -->
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-bordered","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}}} -->
-					<div class="wp-block-group is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"600","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:600">03</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Digital Production</h3>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Websites, campaigns, and the build work that takes the identity from deck to production.</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
+				<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</section>
@@ -182,44 +223,90 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" alt="Brand Launch Campaign — Field Studio identity" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" alt="Brand Launch Campaign — Kettle &amp; Bone identity" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Brand Identity</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Field Studio — Brand Launch</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Kettle &amp; Bone — Brand Launch</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" alt="Digital Product — Foundry Co. platform redesign" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" alt="Digital Product — Odd Harbor platform redesign" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Digital Product</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Foundry Co. — Platform</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Odd Harbor — Platform</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-studio.png' ); ?>" alt="Website Redesign — Long-form Journal" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-studio.png' ); ?>" alt="Website Redesign — Marrow &amp; Co journal" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2023 · Website</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Long-form Journal</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Marrow &amp; Co — Editorial</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
 			</div>
 			<!-- /wp:columns -->
+		</div>
+		<!-- /wp:group -->
+	</section>
+	<!-- /wp:group -->
+
+	<!-- ═══ TESTIMONIALS ═══ -->
+	<!-- wp:group {"tagName":"section","layout":{"type":"default"}} -->
+	<section class="wp-block-group alignfull">
+		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained","contentSize":"820px"}} -->
+		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
+			<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
+			<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">Testimonials</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--50)">
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|xxx-large","lineHeight":"1.25","letterSpacing":"-0.01em","fontWeight":"500","fontStyle":"italic"}}} -->
+				<p style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--xxx-large);line-height:1.25;letter-spacing:-0.01em;font-weight:500;font-style:italic">"Northbound didn't just give us a new identity — they changed how our whole company talks about itself."</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+				<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)">
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|foreground"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--small)"><strong>Sofia Lindqvist</strong></p>
+					<!-- /wp:paragraph -->
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">CMO · Kettle &amp; Bone</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
+				<!-- wp:separator {"className":"is-style-thin"} -->
+				<hr class="wp-block-separator has-alpha-channel-opacity is-style-thin"/>
+				<!-- /wp:separator -->
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|large","lineHeight":"1.5","fontWeight":"500","fontStyle":"italic"},"color":{"text":"var:preset|color|muted"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--large);line-height:1.5;font-weight:500;font-style:italic">"The rare studio that argues with you — politely, and usually correctly. The platform they shipped doubled our trial signups."</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+				<div class="wp-block-group">
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|foreground"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--small)"><strong>Jonah Park</strong></p>
+					<!-- /wp:paragraph -->
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Founder · Odd Harbor</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</section>
@@ -232,11 +319,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">120+</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Brands launched</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
+				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">180+</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Campaigns produced</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -245,11 +332,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:separator -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">8 yrs</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Of practice</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
+					<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">8 yrs</p>
+					<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Of practice</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -258,11 +345,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:separator -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">12</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Awards won</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
+				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">4</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Projects per quarter</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

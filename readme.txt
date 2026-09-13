@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -19,9 +19,9 @@ Visit the theme homepage at https://godevs.net/ for demos, documentation, and su
 The theme ships with:
 
 * A complete design system in `theme.json` — colors, typography, spacing, layout, borders, shadows
-* Thirty-one (31) WordPress templates covering every standard route
-* Twenty-three (23) template parts — twelve header variants and eleven footer variants
-* 85+ curated block patterns across 20+ portfolio-specific categories, plus 10 full multi-page demos importable in one click
+* Thirty-two (32) WordPress templates covering every standard route
+* Twenty-four (24) template parts — twelve header variants, eleven footer variants, and a mobile menu
+* 120+ curated block patterns across 20+ portfolio-specific categories, plus 10 full multi-page demos importable in one click
 * Eleven (11) style variations beyond the default
 * A custom block style system — outline / text-link / pill buttons, multiple card variants, separators, eyebrow paragraphs
 
@@ -65,6 +65,15 @@ Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available 
 
 == Changelog ==
 
+= 1.3.0 =
+* Fixed: demo importer derives each demo's page set from the pattern files that exist — no more blank imported pages (Aperture and Signature were affected).
+* Fixed: demo registry title parser now handles multi-byte dashes; every demo previously categorized as "Specialized", breaking filters and page mapping.
+* Fixed: muted text on primary-color CTA bands failed WCAG AA contrast — now uses the contrast token across demos.
+* Fixed: pattern registration, preview renderer docblock stripping, import locking, menu titles, and clean slugs on re-import.
+* Changed: every demo homepage now has a distinct signature section (terminal stats, full-bleed case interlude, pricing list, index lists, publications, project index, and more).
+* Changed: style-variation recommendations rebalanced across the 10 demos; weak patterns (progress bars, minimal CTA/stats/hero) redesigned.
+* Removed: stale nested theme copy inside styles/, 12 duplicate/weak patterns, and the dynamic/ pattern folder.
+
 = 1.2.0 =
 * Removed 92 non-importable "Coming Soon" demos, 912 orphan persona-variant patterns, and accidental nested theme copies — a lean, curated library.
 * Design: registered the bundled Inter and Newsreader webfonts as theme.json font faces.
@@ -102,7 +111,7 @@ Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available 
 = 1.0.0 =
 * Initial release.
 * Complete design system in theme.json with 14 colors, 4 font families, 12 spacing sizes, 4 shadow presets, and motion tokens.
-* Thirty-one (31) block templates and twenty-three (23) template parts.
+* Thirty-two (32) block templates and twenty-four (24) template parts.
 * Hundreds of block patterns across 20+ categories including hero, portfolio, services, team, testimonials, FAQ, blog, CTA, contact, stats, and more.
 * Eleven (11) style variations (Dark, Minimal, Editorial, Modern, Monochrome, Creative, Portfolio, Neo, Studio, Elegant, Corporate).
 * Ten (10) complete production-ready demo sites with full home + inner page designs.

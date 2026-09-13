@@ -80,7 +80,7 @@ function godevs_portfolio_render_demo_html( string $demo_id, string $page ): str
  * Strip the PHP docblock + ABSPATH exit guard at the top of demo files.
  */
 function godevs_portfolio_render_strip_php_header( string $text ): string {
-        $pattern = '/^<\?php\s*\/\*\*.?\*\/\s*if\s*\(\s*!\s*defined\(\s*[\'"]ABSPATH[\'"]\s*\)\s*\)\s*\{[^}]*\}\s*\?>\s*/s';
+        $pattern = '/^<\?php\s*\/\*\*.*?\*\/\s*if\s*\(\s*!\s*defined\(\s*[\'"]ABSPATH[\'"]\s*\)\s*\)\s*\{[^}]*\}\s*\?>\s*/s';
         return preg_replace( $pattern, '', $text, 1 );
 }
 

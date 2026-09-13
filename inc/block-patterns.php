@@ -248,8 +248,13 @@ function godevs_portfolio_register_subdirectory_patterns(): void {
                         }
                 }
 
-                // Set the file path so the pattern can be loaded on demand.
-                $pattern['filePath'] = $file_path;
+                // Render the pattern file to capture its markup. The files are
+                // PHP (they echo asset URLs), so the content must be executed
+                // at registration time — a raw filePath would ship un-executed
+                // PHP fragments inside the block JSON.
+                ob_start();
+                include $file_path; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern files output block markup only.
+                $pattern['content'] = (string) ob_get_clean();
 
                 // Translate title and description.
                 $pattern['title'] = translate_with_gettext_context( $pattern['title'], 'Pattern title', $text_domain );

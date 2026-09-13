@@ -2,7 +2,7 @@
 /**
  * Title: Timeline
  * Slug: godevs-portfolio/timeline
- * Categories: featured, about, text
+ * Categories: featured, godevs-portfolio-experience, text
  * Description: A vertical career timeline with mono year labels, a hairline connector, ghost index numerals, and display-font role titles. Useful on about pages to chart the studio's history.
  * Keywords: timeline, history, chronology, milestones, journey, evolution
  * Viewport Width: 1280
@@ -17,7 +17,7 @@
 
 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.08","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
 <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--xx-large);line-height:1.08;letter-spacing:-0.03em;font-weight:700">A decade, <em style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500">deliberately</em> slow.</h2>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->

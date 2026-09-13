@@ -2,7 +2,7 @@
 /**
  * Title: Hero
  * Slug: godevs-portfolio/hero
- * Categories: featured, header
+ * Categories: featured, godevs-portfolio-hero
  * Description: A premium editorial hero with oversized mixed-serif headline, availability pill, dual CTAs, and a hairline meta row. Use on portfolio homepages.
  * Keywords: hero, landing, intro, masthead, headline
  * Viewport Width: 1280

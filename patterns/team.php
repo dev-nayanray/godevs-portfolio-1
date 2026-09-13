@@ -2,7 +2,7 @@
 /**
  * Title: Team
  * Slug: godevs-portfolio/team
- * Categories: featured, about, team
+ * Categories: featured, godevs-portfolio-team
  * Description: A three-up team grid of pro cards with circle initial avatars, role micro-labels, one-line bios, and muted social rows. For agency and studio about pages.
  * Keywords: team, people, staff, members, agency, studio, about
  * Viewport Width: 1280

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Demo — Signature (Brand)
+ * Title: Demo — Signature (Personal)
  * Slug: godevs-portfolio/demo-signature
  * Description: Personal brand site. Split hero with portrait, selected work, services, testimonials. Elegant tone. Recommended style variation: Elegant.
  * Categories: godevs-portfolio-demos
@@ -146,61 +146,61 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:columns {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-			<div class="wp-block-columns godevs-reveal-stagger">
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-default","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}},"backgroundColor":"surface"} -->
-					<div class="wp-block-group is-style-card-default has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"700","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:700">01</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Personal Brand Identity</h3>
+			<!-- wp:group {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|0"},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}}} -->
+			<div class="wp-block-group godevs-reveal-stagger" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+				<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"top"}} -->
+				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|x-large","fontStyle":"italic","fontWeight":"500","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--x-large);font-style:italic;font-weight:500;line-height:1">01</p>
+					<!-- /wp:paragraph -->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+					<div class="wp-block-group">
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Personal Brand Identity</h3>
 						<!-- /wp:heading -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Visual identity, bio, positioning, and the voice guide that makes you sound like you across every platform.</p>
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Visual identity, bio, positioning, and a voice guide that makes you sound like you.</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
 				</div>
-				<!-- /wp:column -->
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-default","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}},"backgroundColor":"surface"} -->
-					<div class="wp-block-group is-style-card-default has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"700","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:700">02</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Content Strategy</h3>
+				<!-- /wp:group -->
+				<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"top"}} -->
+				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|x-large","fontStyle":"italic","fontWeight":"500","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--x-large);font-style:italic;font-weight:500;line-height:1">02</p>
+					<!-- /wp:paragraph -->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+					<div class="wp-block-group">
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Content Strategy</h3>
 						<!-- /wp:heading -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Editorial calendar, content pillars, and the writing framework that keeps your brand consistent.</p>
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Editorial calendar, content pillars, and a writing framework that keeps you consistent.</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
 				</div>
-				<!-- /wp:column -->
-				<!-- wp:column -->
-				<div class="wp-block-column">
-					<!-- wp:group {"className":"is-style-card-default","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}},"backgroundColor":"surface"} -->
-					<div class="wp-block-group is-style-card-default has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
-						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","fontWeight":"700","color":"var:preset|color|accent"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);font-weight:700">03</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Digital Presence</h3>
+				<!-- /wp:group -->
+				<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"top"}} -->
+				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|x-large","fontStyle":"italic","fontWeight":"500","lineHeight":"1"},"color":{"text":"var:preset|color|accent"}}} -->
+					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--x-large);font-style:italic;font-weight:500;line-height:1">03</p>
+					<!-- /wp:paragraph -->
+					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained"}} -->
+					<div class="wp-block-group">
+						<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+						<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Digital Presence</h3>
 						<!-- /wp:heading -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Website, social profiles, and the digital touchpoints that make your brand findable and memorable.</p>
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Website, social profiles, and the touchpoints that make your brand findable and memorable.</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
 				</div>
-				<!-- /wp:column -->
+				<!-- /wp:group -->
 			</div>
-			<!-- /wp:columns -->
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</section>
@@ -214,12 +214,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"clamp(1.5rem, 3vw, 2.25rem)","lineHeight":"1.5","fontStyle":"italic"},"color":{"text":"var:preset|color|contrast"},"textAlign":"center"}} -->
 			<p class="has-text-color has-text-align-center" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--serif);font-size:clamp(1.5rem, 3vw, 2.25rem);line-height:1.5;font-style:italic;text-align:center">"Signature helped me build a brand that finally feels like me — not a version of someone else. The identity system still works three years later."</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:separator {"className":"is-style-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<hr class="wp-block-separator has-alpha-channel-opacity is-style-thin" style="margin-top:var(--wp--preset--spacing--40)"/>
-			<!-- /wp:separator -->
-			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|medium)"><strong>Maya Okonkwo</strong> · Founder at Studio Field</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)">
+				<!-- wp:group {"style":{"dimensions":{"width":"var:preset|spacing|70"},"border":{"top":{"color":"var:preset|color|contrast","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--contrast);border-top-style:solid;border-top-width:1px;width:var(--wp--preset--spacing--70)"></div>
+				<!-- /wp:group -->
+				<!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.08em;text-transform:uppercase;font-weight:500"><strong>Maya Okonkwo</strong> · Founder at Studio Field</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</section>

@@ -2755,3 +2755,67 @@ msgstr ""
 #: inc/onboarding.php
 msgid "Primary"
 msgstr ""
+
+#: inc/demo-importer.php
+msgid "Import failed."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Import complete!"
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Could not load demo details."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Network error while loading demo details."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Network error during import."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Network error during removal."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Redirecting to your live site…"
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Skipped \"%1$s\" — no demo content found."
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "Page \"%1$s\": %2$s"
+msgstr ""
+
+#: inc/demo-importer.php
+msgid "No pages could be created for this demo."
+msgstr ""
+
+#: inc/demo-tracker.php
+msgid "Could not delete page ID %d."
+msgstr ""
+
+#: inc/front-forms.php
+msgid "Booking request sent! We'll get back to you shortly."
+msgstr ""
+
+#: inc/front-forms.php
+msgid "Proposal sent! We'll review and respond within 48 hours."
+msgstr ""
+
+#: inc/onboarding.php
+msgid "A premium Gutenberg-first block theme. Here's how to get your site live in three steps."
+msgstr ""
+
+#: inc/onboarding.php
+msgid "Your homepage is ready, header and footer are applied, and a navigation menu is created automatically."
+msgstr ""
+
+#: inc/theme-settings.php
+msgid "Add loading=\"lazy\" to all images."
+msgstr ""

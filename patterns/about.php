@@ -2,7 +2,7 @@
 /**
  * Title: About
  * Slug: godevs-portfolio/about
- * Categories: featured, about
+ * Categories: featured, godevs-portfolio-about
  * Description: A 60/40 editorial about section — mixed-serif display headline, pill stat chips, and an overlapping status card offset onto a 4:5 portrait image. Use on studio and personal portfolio pages.
  * Keywords: about, bio, profile, studio, person
  * Viewport Width: 1280

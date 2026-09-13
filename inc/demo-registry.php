@@ -416,7 +416,7 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
         $title   = $meta['Title'];
         $name    = $title;
         $cat_raw = '';
-        if ( preg_match( '/^Demo\s+[-—]\s+(.+?)\s*\(([^)]+)\)\s*$/', $title, $m ) ) {
+        if ( preg_match( '/^Demo\s+[-—]\s+(.+?)\s*\(([^)]+)\)\s*$/u', $title, $m ) ) {
                 $name    = $m[1];
                 $cat_raw = $m[2];
         }
@@ -450,16 +450,32 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 $style = ucfirst( strtolower( $m[1] ) );
         }
 
-        // Recommended pages — based on the canonical category slug.
+        // Recommended pages — based on the canonical category slug,
+        // filtered down to the pages that actually have a pattern file
+        // (patterns/demos/<demo>-<page>.php). This keeps the importer, the
+        // preview navigation, and the filesystem in sync: a demo can never
+        // advertise a page whose content does not exist.
         $pages          = array( 'home', 'about', 'work', 'contact' ); // default
+        $basename       = basename( $file, '.php' );
         $cat_to_pages   = godevs_portfolio_demo_pages_per_category();
         if ( isset( $cat_to_pages[ $category_slug ] ) ) {
                 $pages = $cat_to_pages[ $category_slug ];
         }
+        $pages = array_values(
+                array_filter(
+                        $pages,
+                        static function ( string $page ) use ( $basename ) {
+                                // The homepage is the demo file itself — always present.
+                                if ( 'home' === $page ) {
+                                        return true;
+                                }
+                                return file_exists( get_template_directory() . '/patterns/demos/' . $basename . '-' . $page . '.php' );
+                        }
+                )
+        );
 
         // Preview URL — uses the WordPress pattern preview endpoint.
-        $slug     = $meta['Slug'];
-        $basename = basename( $file, '.php' );
+        $slug = $meta['Slug'];
 
         // Preview image — looks for a screenshot in assets/images/demo-previews/.
         // Priority: <demo-slug>.jpg → <demo-slug>.png → category-based preview → fallback.

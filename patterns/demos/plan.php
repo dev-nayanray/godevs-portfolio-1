@@ -2,7 +2,7 @@
 /**
  * Title: Demo — Plan (Architect)
  * Slug: godevs-portfolio/demo-plan
- * Description: Architect portfolio. Minimal typography hero, asymmetric portfolio, studio philosophy, services. Recommended style variation: Minimal.
+ * Description: Architect portfolio. Minimal typography hero, asymmetric portfolio, project index, studio philosophy, services. Recommended style variation: Monochrome.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, architecture, architect, minimal, portfolio
  * Viewport Width: 1280
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
 				<div class="wp-block-column" style="flex-basis:45%">
-					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"},"typography":{"fontWeight":"600"}}} -->
+					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size|small);font-weight:600">2024 · Residential</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
@@ -68,6 +68,83 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- /wp:column -->
 			</div>
 			<!-- /wp:columns -->
+
+			<!-- ═══ PROJECT INDEX ═══ -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+			<div class="wp-block-group">
+				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">Project index</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|0"},"border":{"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}}}} -->
+				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+					<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500">01</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","fontWeight":"500"}}} -->
+						<p style="font-size:var(--wp--preset--font-size--normal);font-weight:500">House on the Hill</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"320px"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);max-width:320px">Bavaria, Germany</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"textAlign":"right","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|primary"}}} -->
+						<p class="has-text-align-right has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;text-align:right">2024</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500">02</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","fontWeight":"500"}}} -->
+						<p style="font-size:var(--wp--preset--font-size--normal);font-weight:500">Kantine Nord</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"320px"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);max-width:320px">Copenhagen, Denmark</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"textAlign":"right","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|primary"}}} -->
+						<p class="has-text-align-right has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;text-align:right">2022</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500">03</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","fontWeight":"500"}}} -->
+						<p style="font-size:var(--wp--preset--font-size--normal);font-weight:500">Riverview Studios</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"320px"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);max-width:320px">Hamburg, Germany</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"textAlign":"right","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|primary"}}} -->
+						<p class="has-text-align-right has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;text-align:right">2019</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+					<!-- wp:group {"style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","verticalAlignment":"center"}} -->
+					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+						<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500">04</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","fontWeight":"500"}}} -->
+						<p style="font-size:var(--wp--preset--font-size--normal);font-weight:500">Courtyard Housing</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"320px"}}} -->
+						<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);max-width:320px">Berlin, Germany</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"textAlign":"right","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500"},"color":{"text":"var:preset|color|primary"}}} -->
+						<p class="has-text-align-right has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;text-align:right">2016</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</section>
