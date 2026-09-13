@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)"><code>$ cat about.md</code></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
-<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Backend engineer, systems thinker, Berlin-based.</h1>
+<!-- wp:heading {"level":1,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
+<h1 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Backend engineer, systems thinker, Berlin-based.</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|large","lineHeight":"1.6"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
@@ -137,8 +137,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2022 — present</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Independent Practice · Berlin</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Independent Practice · Berlin</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Backend architecture for selected clients. Two engagements at a time, shipped on schedule.</p>
@@ -155,8 +155,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2018 — 2022</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Senior Backend Engineer · Foundry Co.</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Senior Backend Engineer · Foundry Co.</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Built the event-driven order processing pipeline still running today. Led the migration from monolith to microservices.</p>
@@ -171,8 +171,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size|small)">2012 — 2018</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Backend Developer · Studio Field</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Backend Developer · Studio Field</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">First engineering role. Learned the craft on live systems — payment processing, CMS builds, and the occasional 3am incident.</p>

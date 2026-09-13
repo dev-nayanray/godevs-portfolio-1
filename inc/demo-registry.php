@@ -474,6 +474,23 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 )
         );
 
+        // Append any inner-page pattern files that exist on disk but are not
+        // part of the category's recommended set (e.g., a "work" page for a
+        // demo whose category normally recommends "insights"). Files present
+        // in patterns/demos/ are intentional content — never orphan them.
+        foreach ( glob( get_template_directory() . '/patterns/demos/' . $basename . '-*.php' ) as $inner ) {
+                $page_slug = substr( basename( $inner, '.php' ), strlen( $basename ) + 1 );
+                if ( $page_slug && ! in_array( $page_slug, $pages, true ) ) {
+                        // Keep "contact" last in the navigation order.
+                        $contact_pos = array_search( 'contact', $pages, true );
+                        if ( false !== $contact_pos ) {
+                                array_splice( $pages, $contact_pos, 0, $page_slug );
+                        } else {
+                                $pages[] = $page_slug;
+                        }
+                }
+        }
+
         // Preview URL — uses the WordPress pattern preview endpoint.
         $slug = $meta['Slug'];
 

@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Northbound demo reframed from a creative agency to an independent strategy & delivery consultant (persona, metrics, engagements, testimonials, inner pages).
+- Meridian demo reframed from a business consultant to a senior product designer / UX portfolio (evidence-led hero, process section, before/after results, case-study preview).
+
+### Fixed
+- Accessibility: removed the hardcoded `!important` muted-text override in theme.css (2.6:1 in the Dark variation); muted contrast is palette-governed again.
+- Accessibility: headings inside primary-background bands no longer inherit the global `primary` heading color (invisible-on-primary); they now carry explicit `contrast` color across demos and parts.
+- Accessibility: accent-colored links/text-link/outline buttons inside primary bands switch to `contrast`; current/hover nav items inherit text color instead of forced accent.
+- Accessibility: accent tokens failing AA on their own base darkened — Creative `#A16207`, Modern/Portfolio `#0369A1`, Neo `#C2410C`; Monochrome muted `#525252`.
+- Demo registry: page sets include every inner-page pattern file on disk (contact ordered last) — a demo's own pages can never be orphaned by category mapping.
+
+### Added
+- `docs/demo-report/` — 10-demo design & QA report with final desktop/mobile screenshots.
+
+
 ### Fixed
 - Demo importer: page sets are now derived from the pattern files that actually exist, so no demo can import blank pages (previously Aperture and Signature advertised pages with no content).
 - Demo importer: a missing inner-page pattern now skips that page with a recorded error instead of publishing an empty page; the import fails loudly if no pages could be created.

@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -64,6 +64,12 @@ Yes. Go to Appearance → GoDevs Settings → Colors and Typography to customize
 Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available demos, click Preview to see a live preview, then click Import to import the demo content (pages, navigation, and style variation).
 
 == Changelog ==
+
+= 1.4.0 =
+* New: Northbound demo reframed to an independent strategy & delivery consultant; Meridian reframed to a senior product designer / UX portfolio (process, metrics, before/after results).
+* Accessibility: removed a hardcoded muted-text CSS override that broke WCAG AA contrast in style variations; headings and accent links inside primary-color CTA bands now use the contrast token; current/hover nav items inherit text color; failing accent tokens darkened in Creative, Modern, Neo, and Portfolio variations; Monochrome muted darkened.
+* Demo importer: page sets now include every on-disk inner page (contact stays last), so no demo content is orphaned.
+* QA: all 10 demos audited on desktop and mobile for overflow, heading order, broken images, and WCAG contrast — full report in docs/demo-report/.
 
 = 1.3.0 =
 * Fixed: demo importer derives each demo's page set from the pattern files that exist — no more blank imported pages (Aperture and Signature were affected).

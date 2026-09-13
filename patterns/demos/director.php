@@ -64,7 +64,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:paragraph {"className":"is-style-eyebrow","textColor":"contrast","style":{"typography":{"letterSpacing":"0.25em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
 				<p class="is-style-eyebrow has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.25em;text-transform:uppercase">Featured · 2024</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":2,"textColor":"contrast","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
+				<!-- wp:heading {"level":2,"textColor":"contrast","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
 				<h2 class="wp-block-heading has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4vw, 2.75rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">"Last Light" — feature film.</h2>
 				<!-- /wp:heading -->
 			</div>
@@ -201,7 +201,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:paragraph {"className":"is-style-eyebrow","textColor":"contrast","style":{"typography":{"letterSpacing":"0.25em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
 				<p class="is-style-eyebrow has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.25em;text-transform:uppercase">Awards &amp; Recognition</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":2,"textColor":"contrast","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
+				<!-- wp:heading {"level":2,"textColor":"contrast","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
 				<h2 class="wp-block-heading has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4vw, 2.75rem);line-height:1.1;letter-spacing:-0.02em;font-weight:600">Selected honors.</h2>
 				<!-- /wp:heading -->
 			</div>
@@ -286,7 +286,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:paragraph {"className":"is-style-eyebrow","align":"center","textColor":"contrast","style":{"typography":{"letterSpacing":"0.3em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
 			<p class="is-style-eyebrow has-text-align-center has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.3em;text-transform:uppercase">Available 2025</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2,"textAlign":"center","textColor":"contrast","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
+			<!-- wp:heading {"level":2,"textAlign":"center","textColor":"contrast","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
 			<h2 class="wp-block-heading has-text-align-center has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4vw, 2.75rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Currently developing two features and open to representation.</h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"align":"center","textColor":"contrast","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"layout":{"selfStretch":"fit","flexSize":"600px"}}} -->

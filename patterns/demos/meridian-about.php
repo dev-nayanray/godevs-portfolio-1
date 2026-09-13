@@ -2,9 +2,9 @@
 /**
  * Title: Demo — Meridian (About)
  * Slug: godevs-portfolio/demo-meridian-about
- * Description: About page for the Meridian demo. Bio, experience timeline, credentials. Uses the Corporate style variation.
+ * Description: About page for the Meridian product designer demo. Designer story, process summary, and experience timeline. Recommended style variation: Corporate.
  * Categories: godevs-portfolio-demos
- * Keywords: demo, meridian, about, consultant, bio
+ * Keywords: demo, meridian, about, product designer, ux, bio
  * Viewport Width: 1280
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,10 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">About</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
-<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">A decade of helping teams decide.</h1>
+<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Eight years of designing products people actually use.</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
-<p style="font-size:var(--wp--preset--font-size|medium);line-height:1.7;max-width:560px">Twelve years of consulting — from early-stage startups to established enterprises. I work on the decisions that shape products, processes, and the teams that build them. No frameworks, no buzzwords — just clear thinking and honest advice.</p>
+<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.7;max-width:560px">I'm Mara Ellison, a senior product designer working from first user interview to post-launch metric. I've designed for fintech, B2B SaaS, and early-stage startups — always the same loop: discover, define, design, deliver, measure. No decoration for its own sake — just interfaces that work and the evidence to prove it.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="is-style-eyebrow">Experience</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|x-large);letter-spacing:-0.02em;font-weight:600">Work history.</h2>
+<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);letter-spacing:-0.02em;font-weight:600">Work history.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|50"}}}} -->
@@ -50,13 +50,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2022 — Present</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2022 — Present</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Independent Consulting Practice</h3>
+<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Independent Product Designer</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Strategy and operations consulting for selected clients. Two engagements at a time, shipped on schedule.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Embedded design partner for selected product teams. Two engagements at a time, from discovery research to shipped, measured releases.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -68,13 +68,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2017 — 2022</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2017 — 2022</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">VP Strategy · Foundry Co.</h3>
+<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Senior Product Designer · Cardinal Labs</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">Led corporate strategy and the operational transformation that doubled team throughput.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Led the design system rebuild and the checkout redesign that lifted completion from 62% to 84%. Grew the design practice from one to five.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -84,13 +84,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":"480px"}} -->
 <div class="wp-block-group">
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2012 — 2017</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">2014 — 2017</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Senior Analyst · Studio Field</h3>
+<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">UX Designer · Fieldnote</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">First consulting role. Learned the craft on live engagements — market analysis, due diligence, and the occasional board presentation.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">First product design role at a five-person startup. Learned the craft live — wireframes at 9am, usability sessions by lunch, shipping by Friday.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

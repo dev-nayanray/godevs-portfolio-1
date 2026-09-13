@@ -22,8 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)"><code>$ git log --oneline --journal</code></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
-<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Notes from the system.</h1>
+<!-- wp:heading {"level":1,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.1","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
+<h1 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.1;letter-spacing:-0.025em;font-weight:600">Notes from the system.</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"520px"}}} -->
@@ -42,8 +42,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2024-03-15 · commit a3f2b1c</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">On Reading Briefs Twice</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">On Reading Briefs Twice</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">A note on the discipline of re-reading a brief before opening the IDE — and what changes the second time through.</p>
@@ -64,8 +64,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2024-02-28 · commit 7d9e0a2</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">The Component Library Tax</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">The Component Library Tax</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Why most component libraries fail, and what a small team can do differently. A working hypothesis, not a framework.</p>
@@ -86,8 +86,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2024-01-12 · commit 4c1b8f3</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Shipping Imperfect Things</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Shipping Imperfect Things</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">A shipped imperfect thing teaches more than a perfect unshipped one. A working principle, with examples.</p>
@@ -108,8 +108,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2023-12-05 · commit 9e2a7d1</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Archive Honestly</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">Archive Honestly</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Old work stays visible, even when I'd do it differently now. Here's why — and what it costs.</p>
@@ -130,8 +130,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small)">2023-11-20 · commit 1b5c3e8</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">The 30-Day Defect Window</h3>
+<!-- wp:heading {"level":3,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
+<h3 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|large);letter-spacing:-0.01em">The 30-Day Defect Window</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Why every contract should have one, and what it actually covers when a client calls at 3am.</p>

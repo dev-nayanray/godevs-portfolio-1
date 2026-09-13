@@ -2809,11 +2809,11 @@ msgid "Proposal sent! We'll review and respond within 48 hours."
 msgstr ""
 
 #: inc/onboarding.php
-msgid "A premium Gutenberg-first block theme. Here's how to get your site live in three steps."
+msgid "A premium Gutenberg-first block theme. Here's how to get your site live in 5 minutes."
 msgstr ""
 
 #: inc/onboarding.php
-msgid "Your homepage is ready, header and footer are applied, and a navigation menu is created automatically."
+msgid "Your homepage is ready, header and footer are applied, and a navigation menu has been created. Here's what to do next:"
 msgstr ""
 
 #: inc/theme-settings.php

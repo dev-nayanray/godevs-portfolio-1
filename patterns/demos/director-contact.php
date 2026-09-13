@@ -18,10 +18,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section class="wp-block-group alignfull has-contrast-color has-primary-background-color has-text-color has-background">
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80)">
-<!-- wp:paragraph {"className":"is-style-eyebrow","textColor":"contrast","style":{"typography":{"letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
+<!-- wp:paragraph {"className":"is-style-eyebrow","textColor":"contrast","style":{"typography":{"letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
 <p class="is-style-eyebrow has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);letter-spacing:0.25em;text-transform:uppercase">Contact</p>
 <!-- /wp:paragraph -->
-<!-- wp:heading {"level":1,"textColor":"contrast","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
+<!-- wp:heading {"level":1,"textColor":"contrast","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
 <h1 class="wp-block-heading has-contrast-color has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 6vw, 4rem);line-height:1;letter-spacing:-0.03em;font-weight:600">For new work, festival programming, and press.</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"textColor":"contrast","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"layout":{"selfStretch":"fit","flexSize":"640px"}}} -->

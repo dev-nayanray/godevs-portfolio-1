@@ -80,7 +80,17 @@
 }
 
 .wp-block-button.is-style-text-link .wp-block-button__link:hover {
-        text-decoration-thickness: 2px;
+	text-decoration-thickness: 2px;
+}
+
+/* Accent-colored links/buttons fail WCAG AA on primary-colored band
+ * backgrounds in several palettes (accent is tuned for the base color).
+ * Inside primary bands they switch to the contrast token, which is
+ * defined as the readable-on-primary color in every palette. */
+.has-primary-background-color a,
+.has-primary-background-color .wp-block-button.is-style-text-link .wp-block-button__link,
+.has-primary-background-color .wp-block-button.is-style-outline .wp-block-button__link {
+	color: var(--wp--preset--color--contrast);
 }
 
 /* Pill button — fully rounded. */
@@ -481,13 +491,15 @@ a {
 }
 
 .wp-block-navigation .wp-block-navigation-item__content:hover {
-        color: var(--wp--preset--color--accent, currentColor);
+	color: inherit;
+	opacity: 0.75;
 }
 
-/* Current nav item — underline indicator */
+/* Current nav item — underline indicator. Color stays inherited so it
+ * passes contrast on primary-colored header bands in every palette. */
 .wp-block-navigation .current-menu-item .wp-block-navigation-item__content {
-        color: var(--wp--preset--color--accent, currentColor);
-        font-weight: 600;
+	color: inherit;
+	font-weight: 600;
 }
 
 /* Quote — refined styling (merged with Phase 10 enhancements) */
@@ -1367,27 +1379,13 @@ p > a[href^="/"]:only-child,
         padding-top: 0.25rem;
 }
 
-/* ─── 3. Improved contrast for muted text ───────────────────────────
- * The original #6B7280 muted color was failing WCAG AA on the off-white
- * base (#FAFAF7) — contrast ratio 4.43:1 (just under the 4.5:1 minimum).
- * Override to a slightly darker #4B5563 (6.43:1 on base, 6.92:1 on white)
- * for body-text use. The theme.json palette keeps the lighter #6B7280
- * for decorative labels where contrast is not critical.
+/* ─── 3. Muted text contrast ────────────────────────────────────────
+ * Governed entirely by theme.json and each style variation's palette.
+ * A previous hardcoded !important hex override passed on the light
+ * default palette but broke WCAG AA in the Dark variation (2.6:1),
+ * so it was removed. Each palette's muted token is verified >=4.5:1
+ * on its own base color.
  */
-
-.has-text-color.has-muted-color,
-.has-muted-color,
-.wp-block-paragraph.has-text-color[style*="muted"] {
-        color: #4B5563 !important;
-}
-
-/* But restore the lighter muted for very small labels (eyebrows, captions)
- * where #4B5563 would feel too heavy.
- */
-.is-style-eyebrow.has-text-color[style*="muted"],
-.wp-block-paragraph.is-style-eyebrow {
-        color: var(--wp--preset--color--muted, #6B7280) !important;
-}
 
 /* ─── 4. Body line-height refinement ────────────────────────────────
  * Slightly increase line-height for long-form body copy. 1.7 was

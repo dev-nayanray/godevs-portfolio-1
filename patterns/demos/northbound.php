@@ -1,10 +1,10 @@
 <?php
 /**
- * Title: Demo — Northbound (Creative)
+ * Title: Demo — Northbound (Consultant)
  * Slug: godevs-portfolio/demo-northbound
- * Description: Creative agency site. Dark split hero with logo cloud, services, portfolio showcase, stats, testimonials. Recommended style variation: Dark.
+ * Description: Independent consultant site for a senior strategy & delivery consultant. Dark split hero with credibility metrics, engagement index, selected client outcomes, stats band, testimonials. Recommended style variation: Dark.
  * Categories: godevs-portfolio-demos
- * Keywords: demo, agency, creative, studio, dark
+ * Keywords: demo, consultant, freelancer, strategy, delivery, dark
  * Viewport Width: 1280
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,25 +25,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
 			<div class="wp-block-columns are-vertically-aligned-center">
 
-				<!-- Left: agency statement -->
+				<!-- Left: consultant positioning -->
 				<!-- wp:column {"width":"55%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
 				<div class="wp-block-column" style="flex-basis:55%">
-					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast)">Agency / Creative</p>
+					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|contrast"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
+					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast)">Consulting / Strategy &amp; Delivery</p>
 					<!-- /wp:paragraph -->
-					<!-- wp:heading {"level":1,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
-					<h1 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 4rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">We make brands impossible to ignore.</h1>
+					<!-- wp:heading {"level":1,"style":{"color":{"text":"var:preset|color|contrast"},"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|huge","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
+					<h1 class="wp-block-heading has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 4rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Clear strategy. Shipped work.</h1>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|contrast"},"layout":{"selfStretch":"fit","flexSize":"480px"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);max-width:480px">A creative agency for teams who want to be remembered. Strategy, identity, and the production work that brings it to life.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);max-width:480px">I'm Ingrid Voss, an independent strategy &amp; delivery consultant. I help teams make better decisions — and ship the work that follows from them.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons">
 						<!-- wp:button -->
-						<div class="wp-block-button"><a href="#work" class="wp-block-button__link wp-element-button">See the work</a></div>
+						<div class="wp-block-button"><a href="#work" class="wp-block-button__link wp-element-button">See engagements</a></div>
 						<!-- /wp:button -->
 						<!-- wp:button {"className":"is-style-outline","style":{"border":{"color":"var:preset|color|contrast"}}} -->
-						<div class="wp-block-button is-style-outline"><a href="#contact" class="wp-block-button__link wp-element-button">Start a project</a></div>
+						<div class="wp-block-button is-style-outline"><a href="#contact" class="wp-block-button__link wp-element-button">Book an intro call</a></div>
 						<!-- /wp:button -->
 					</div>
 					<!-- /wp:buttons -->
@@ -54,27 +54,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"45%","verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 				<div class="wp-block-column" style="flex-basis:45%">
 					<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|contrast"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast);margin-bottom:var(--wp--preset--spacing--30)">By the numbers</p>
+					<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--contrast);margin-bottom:var(--wp--preset--spacing--30)">Track record</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 					<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--secondary);border-top-style:solid;border-top-width:1px;border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 						<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"},"border":{"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
 						<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
-							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">120+</p>
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">12 yrs</p>
 							<!-- /wp:paragraph -->
 							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Projects shipped</p>
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Consulting</p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
 						<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|40"},"border":{"bottom":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
 						<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 							<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-large","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"},"color":{"text":"var:preset|color|contrast"}}} -->
-							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">14</p>
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">40+</p>
 							<!-- /wp:paragraph -->
 							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Industry awards</p>
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Engagements</p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-large);line-height:1;letter-spacing:-0.02em;font-weight:600">9</p>
 							<!-- /wp:paragraph -->
 							<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Countries</p>
+							<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--small)">Industries</p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -108,10 +108,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">Services</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">How I help</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|xx-large);letter-spacing:-0.02em;font-weight:600">What we do.</h2>
+				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|xx-large);letter-spacing:-0.02em;font-weight:600">How I help.</h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -129,10 +129,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Brand Strategy</h3>
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Strategy Sprints</h3>
 								<!-- /wp:heading -->
 								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Positioning, messaging, and the strategic foundation that makes everything else work.</p>
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Two-week sprints that turn a fuzzy mandate into a decision-ready plan your team actually backs.</p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -155,10 +155,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Identity Design</h3>
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Delivery Rescue</h3>
 								<!-- /wp:heading -->
 								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Logos, type systems, color palettes, and the visual language that makes a brand recognizable.</p>
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">When a critical initiative is off the rails, I step in, find the real blocker, and get it shipped.</p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -181,10 +181,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"layout":{"type":"constrained","contentSize":"520px"}}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Digital Production</h3>
+								<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em">Advisory Retainers</h3>
 								<!-- /wp:heading -->
 								<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Websites, campaigns, and the build work that takes the identity from deck to production.</p>
+								<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">Ongoing counsel for leadership teams: a sounding board, a second opinion, and an outside view when it counts.</p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -210,10 +210,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"},"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">Selected work</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent)">Selected engagements</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|xx-large);letter-spacing:-0.02em;font-weight:600">Recent client work.</h2>
+				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size|xx-large);letter-spacing:-0.02em;font-weight:600">Recent client outcomes.</h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -223,39 +223,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" alt="Brand Launch Campaign — Kettle &amp; Bone identity" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-brand.png' ); ?>" alt="Go-to-Market Strategy — Kettle &amp; Bone engagement" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Brand Identity</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Strategy Sprint</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Kettle &amp; Bone — Brand Launch</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Kettle &amp; Bone — Go-to-Market</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" alt="Digital Product — Odd Harbor platform redesign" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-editorial.png' ); ?>" alt="Delivery Rescue — Odd Harbor platform engagement" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Digital Product</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2024 · Delivery Rescue</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Odd Harbor — Platform</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Odd Harbor — Delivery Rescue</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-studio.png' ); ?>" alt="Website Redesign — Marrow &amp; Co journal" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-studio.png' ); ?>" alt="Advisory Retainer — Marrow &amp; Co operating plan engagement" style="aspect-ratio:16/10;object-fit:cover;border-radius:8px"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2023 · Website</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|small)">2023 · Advisory Retainer</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em","fontFamily":"var:preset|font-family|display","fontWeight":"600"}}} -->
-					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Marrow &amp; Co — Editorial</h3>
+					<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size|medium);letter-spacing:-0.01em">Marrow &amp; Co — Operating Plan</h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
@@ -277,7 +277,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|xxx-large","lineHeight":"1.25","letterSpacing":"-0.01em","fontWeight":"500","fontStyle":"italic"}}} -->
-				<p style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--xxx-large);line-height:1.25;letter-spacing:-0.01em;font-weight:500;font-style:italic">"Northbound didn't just give us a new identity — they changed how our whole company talks about itself."</p>
+				<p style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--xxx-large);line-height:1.25;letter-spacing:-0.01em;font-weight:500;font-style:italic">"Ingrid didn't just give us a plan — she changed how our whole leadership team makes decisions."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50)">
@@ -285,7 +285,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--small)"><strong>Sofia Lindqvist</strong></p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">CMO · Kettle &amp; Bone</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">CEO · Kettle &amp; Bone</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -293,7 +293,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<hr class="wp-block-separator has-alpha-channel-opacity is-style-thin"/>
 				<!-- /wp:separator -->
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|large","lineHeight":"1.5","fontWeight":"500","fontStyle":"italic"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--large);line-height:1.5;font-weight:500;font-style:italic">"The rare studio that argues with you — politely, and usually correctly. The platform they shipped doubled our trial signups."</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--large);line-height:1.5;font-weight:500;font-style:italic">"The rare consultant who argues with you — politely, and usually correctly. The roadmap she rescued doubled our trial signups."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group">
@@ -301,7 +301,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--small)"><strong>Jonah Park</strong></p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Founder · Odd Harbor</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Head of Product · Odd Harbor</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -320,10 +320,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">180+</p>
+				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">40+</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Campaigns produced</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Engagements delivered</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -336,7 +336,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">8 yrs</p>
 					<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Of practice</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Consulting, in-house &amp; independent</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -346,10 +346,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 5vw, 3.5rem)","lineHeight":"1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
-				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">4</p>
+				<p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 5vw, 3.5rem);line-height:1;letter-spacing:-0.02em;font-weight:600">9</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|contrast"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Projects per quarter</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size|small)">Industries served</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -364,18 +364,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--content-size)"}} -->
 		<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90)">
 			<!-- wp:heading {"level":2,"textAlign":"center","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
-			<h2 class="wp-block-heading has-text-align-center" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Have a brief to discuss?</h2>
+			<h2 class="wp-block-heading has-text-align-center" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Have a decision to make?</h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|medium)">We take on 4 projects per quarter. Tell us about yours and we'll send a proposal within a week.</p>
+			<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size|medium)">I take on 4 engagements per year. Tell me about your team and your deadline — I'll reply within two business days.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">
 				<!-- wp:button -->
-				<div class="wp-block-button"><a href="#contact" class="wp-block-button__link wp-element-button">Start a project</a></div>
-				<!-- /wp:button -->
-				<!-- wp:button {"className":"is-style-text-link"} -->
-				<div class="wp-block-button is-style-text-link"><a href="#work" class="wp-block-button__link wp-element-button">See more work →</a></div>
+<div class="wp-block-button"><a href="#contact" class="wp-block-button__link wp-element-button">Book an intro call</a></div>
+					<!-- /wp:button -->
+					<!-- wp:button {"className":"is-style-text-link"} -->
+					<div class="wp-block-button is-style-text-link"><a href="#work" class="wp-block-button__link wp-element-button">See engagements →</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
