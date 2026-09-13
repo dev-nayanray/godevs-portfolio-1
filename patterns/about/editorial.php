@@ -37,8 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<!-- wp:column {"width":"40%"} -->
 		<div class="wp-block-column" style="flex-basis:40%">
-			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"color":"var:preset|color|border","style":"solid","width":"1px","radius":"var(--wp--custom--radius--lg, 12px)"},"color":{"background":"var:preset|color|surface-muted"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-background" style="background-color:var(--wp--preset--color--surface-muted);border-color:var(--wp--preset--color--border);border-style:solid;border-width:1px;border-radius:var(--wp--custom--radius--lg, 12px);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"color":"var:preset|color|line","style":"solid","width":"1px","radius":"var(--wp--custom--radius--lg, 12px)"},"color":{"background":"var:preset|color|surface-muted"}},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-background" style="background-color:var(--wp--preset--color--surface-muted);border-color:var(--wp--preset--color--line);border-style:solid;border-width:1px;border-radius:var(--wp--custom--radius--lg, 12px);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 				<!-- wp:quote {"className":"is-style-default","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|large","lineHeight":"1.45","fontStyle":"italic","fontWeight":"500"}}} -->
 				<blockquote class="wp-block-quote is-style-default" style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--large);line-height:1.45;font-style:italic;font-weight:500">
 					<!-- wp:paragraph -->
@@ -50,8 +50,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</blockquote>
 				<!-- /wp:quote -->
 
-				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"padding":{"top":"var:preset|spacing|30"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);margin-top:var(--wp--preset--spacing--40)">Field note · No. 27</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"padding":{"top":"var:preset|spacing|30"}}} -->
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--30);margin-top:var(--wp--preset--spacing--40)">Field note · No. 27</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

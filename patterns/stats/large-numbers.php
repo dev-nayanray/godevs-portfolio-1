@@ -32,13 +32,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(5rem, 14vw, 12rem);line-height:0.9;letter-spacing:-0.04em;font-weight:700">140+</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}}} -->
-<p class="has-text-color" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Projects shipped — independent practice and studio years combined, across SaaS, editorial, and commerce.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}}} -->
+<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Projects shipped — independent practice and studio years combined, across SaaS, editorial, and commerce.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"bottom","width":"50%","style":{"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"left":"var:preset|spacing|80"}}}} -->
-<div class="wp-block-column is-vertically-aligned-bottom" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;flex-basis:50%;padding-left:var(--wp--preset--spacing--80)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+<!-- wp:column {"verticalAlignment":"bottom","width":"50%","style":{"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"left":"var:preset|spacing|80"}}}} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;flex-basis:50%;padding-left:var(--wp--preset--spacing--80)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
 <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">02 / Practiced</p>
 <!-- /wp:paragraph -->
 
@@ -46,8 +46,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:clamp(5rem, 14vw, 12rem);line-height:0.9;letter-spacing:-0.04em;font-weight:700">12</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}}}} -->
-<p class="has-text-color" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Years of practice across three studios and an independent practice — still shipping every week.</p>
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}}} -->
+<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Years of practice across three studios and an independent practice — still shipping every week.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

@@ -40,8 +40,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A written brief that names the three pages that actually matter — decided before anything is designed.</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
-				<p style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/strategy">Learn more →</a></p>
+				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
+				<p style="border-top:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/strategy">Learn more →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -61,8 +61,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Palette, typography, and the small set of rules that keep everything coherent — shipped as tokens.</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
-				<p style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/brand-identity">Learn more →</a></p>
+				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
+				<p style="border-top:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/brand-identity">Learn more →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -82,8 +82,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Block-native builds with performance budgets under one second and handovers your team can run with.</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
-				<p style="border-top:1px solid var(--wp--preset--color--border);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/development">Learn more →</a></p>
+				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
+				<p style="border-top:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/development">Learn more →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- All 41 demo inner pages upgraded to match homepage quality: eyebrow + H1 + intro heroes, 3+ substantial sections per page using each demo's signature components, closing CTA bands. Representative screenshots added to docs/demo-report.
+
+### Fixed
+- Demo importer assigns the `page-no-title` template to imported pages — demo patterns carry their own H1 heroes, and `page.html` previously rendered a second post-title H1 above them.
+- Renamed the `border` palette token to `line`: the `border` slug collided with WordPress core's `.has-border-color` utility class, which made core emit `.has-border-color { color: … !important }` and force-colored the text of every bordered element to the border token (visible on form fields and cards). Renamed across theme.json, 11 style variations, patterns, parts, templates, and CSS.
+- Eyebrow paragraphs whose block attributes declared a text color but whose rendered HTML lacked the inline style (the accent CSS default won on colored bands) — inline styles now synced theme-wide (41 blocks).
+- Repaired malformed block JSON introduced during the inner-page upgrade; all block markup (structure + JSON) now validates theme-wide.
+
+
 ### Changed
 - Northbound demo reframed from a creative agency to an independent strategy & delivery consultant (persona, metrics, engagements, testimonials, inner pages).
 - Meridian demo reframed from a business consultant to a senior product designer / UX portfolio (evidence-led hero, process section, before/after results, case-study preview).

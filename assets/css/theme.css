@@ -188,7 +188,7 @@
 
 /* Framed image — bordered with padding. */
 .wp-block-image.is-style-framed img {
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         padding: var(--wp--preset--spacing--20, 0.5rem);
         background-color: var(--wp--preset--color--surface, #ffffff);
         border-radius: 0.25rem;
@@ -219,7 +219,7 @@
 /* Card Default — subtle border + soft shadow. */
 .wp-block-group.is-style-card-default {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: 0.5rem;
         box-shadow: var(--wp--preset--shadow--raised, 0 4px 12px rgba(10, 10, 10, 0.06));
         padding: var(--wp--preset--spacing--60, 2rem);
@@ -227,7 +227,7 @@
 
 /* Card Bordered — 1px border, no shadow. */
 .wp-block-group.is-style-card-bordered {
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: 0.5rem;
         padding: var(--wp--preset--spacing--60, 2rem);
 }
@@ -264,7 +264,7 @@
 .wp-block-group.is-style-card-numbered {
         counter-reset: godevs-card-number;
         padding: var(--wp--preset--spacing--60, 2rem);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: 0.5rem;
         background-color: var(--wp--preset--color--surface, #ffffff);
 }
@@ -288,7 +288,7 @@
 
 .wp-block-separator.is-style-thin {
         border-top-width: 1px;
-        border-top-color: var(--wp--preset--color--border, currentColor);
+        border-top-color: var(--wp--preset--color--line, currentColor);
         border-top-style: solid;
         height: 0;
         margin-block: var(--wp--preset--spacing--70, 3rem);
@@ -382,7 +382,7 @@ a:hover {
         top: 0;
         z-index: 10;
         background-color: var(--wp--preset--color--base, #fafaf7);
-        border-bottom: 1px solid var(--wp--preset--color--border, transparent);
+        border-bottom: 1px solid var(--wp--preset--color--line, transparent);
         transition: background-color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)),
 }
 
@@ -399,7 +399,7 @@ a:hover {
 
 /* Footer subtle border-top separation. */
 .site-footer {
-        border-block-start: 1px solid var(--wp--preset--color--border, transparent);
+        border-block-start: 1px solid var(--wp--preset--color--line, transparent);
 }
 
 /* --------------------------------------------------------------
@@ -520,8 +520,8 @@ a {
 
 /* Pullquote — refined spacing */
 .wp-block-pullquote {
-        border-top: 2px solid var(--wp--preset--color--border, currentColor);
-        border-bottom: 2px solid var(--wp--preset--color--border, currentColor);
+        border-top: 2px solid var(--wp--preset--color--line, currentColor);
+        border-bottom: 2px solid var(--wp--preset--color--line, currentColor);
         border-left: none;
         border-right: none;
 }
@@ -570,7 +570,7 @@ a {
 
 /* Search — refined input styling */
 .wp-block-search__input {
-        border-color: var(--wp--preset--color--border, #e5e5e0);
+        border-color: var(--wp--preset--color--line, #e5e5e0);
         border-width: 1px;
         border-style: solid;
         border-radius: 4px;
@@ -588,7 +588,7 @@ a {
 /* Separator — refined thin style */
 .wp-block-separator.is-style-thin {
         border: none;
-        border-top: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border-top: 1px solid var(--wp--preset--color--line, #e5e5e0);
         margin-block: var(--wp--preset--spacing--70, 3rem);
 }
 
@@ -631,7 +631,7 @@ html, body {
 .wp-block-post-comment-form input[type="email"],
 .wp-block-post-comment-form textarea {
         border-radius: 4px;
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         padding: var(--wp--preset--spacing--30, 0.75rem);
         font-size: var(--wp--preset--font-size--normal, 1rem);
         width: 100%;
@@ -725,7 +725,7 @@ p {
 /* Premium separator — dotted style */
 .wp-block-separator.is-style-dots::before {
         letter-spacing: 0.8em;
-        color: var(--wp--preset--color--border, currentColor);
+        color: var(--wp--preset--color--line, currentColor);
 }
 
 /* Premium search — larger input with better focus */
@@ -765,7 +765,7 @@ input[type="tel"],
 input[type="date"],
 textarea,
 select {
-        border: 1px solid var(--wp--preset--color--border, #d0d0d0);
+        border: 1px solid var(--wp--preset--color--line, #d0d0d0);
         border-radius: 4px;
         padding: var(--wp--preset--spacing--30, 0.75rem) var(--wp--preset--spacing--40, 1rem);
         font-size: var(--wp--preset--font-size--normal, 1rem);
@@ -907,7 +907,7 @@ p {
 }
 
 .wp-block-details[open] summary {
-        border-bottom: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border-bottom: 1px solid var(--wp--preset--color--line, #e5e5e0);
         margin-bottom: var(--wp--preset--spacing--30, 0.75rem);
 }
 
@@ -931,7 +931,7 @@ p {
 /* Premium separator — better visual treatment */
 .wp-block-separator:not(.is-style-dots):not(.is-style-thin) {
         border: none;
-        border-top: 2px solid var(--wp--preset--color--border, #e5e5e0);
+        border-top: 2px solid var(--wp--preset--color--line, #e5e5e0);
         margin-block: var(--wp--preset--spacing--80, 4rem);
 }
 
@@ -995,7 +995,7 @@ p {
 
 .wp-block-query-pagination .page-numbers {
         padding: var(--wp--preset--spacing--20, 0.5rem) var(--wp--preset--spacing--40, 1rem);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: 4px;
         text-decoration: none;
         transition: background-color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)), color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
@@ -1279,8 +1279,8 @@ section.wp-block-group:nth-of-type(even) {
         flex-wrap: wrap;
         gap: var(--wp--preset--spacing--50, 1.5rem);
         padding: var(--wp--preset--spacing--60, 2rem) 0;
-        border-top: 1px solid var(--wp--preset--color--border, #e5e5e0);
-        border-bottom: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border-top: 1px solid var(--wp--preset--color--line, #e5e5e0);
+        border-bottom: 1px solid var(--wp--preset--color--line, #e5e5e0);
         margin-bottom: var(--wp--preset--spacing--70, 3rem);
 }
 
@@ -1538,7 +1538,7 @@ p > a[href^="/"]:only-child,
 /* ─── Card Pro — premium elevated card with hover lift ─────────── */
 .wp-block-group.is-style-card-pro {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         padding: var(--wp--preset--spacing--50, 1.5rem);
         transition: transform var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)),
@@ -1553,7 +1553,7 @@ p > a[href^="/"]:only-child,
 /* ─── Card Media — image-top card with content below ───────────── */
 .wp-block-group.is-style-card-media {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         overflow: hidden;
         transition: box-shadow var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
@@ -1596,7 +1596,7 @@ p > a[href^="/"]:only-child,
 
 /* ─── Card Compact — dense, scannable card for grids ──────────── */
 .wp-block-group.is-style-card-compact {
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         padding: var(--wp--preset--spacing--40, 1rem);
         transition: border-color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
@@ -1620,7 +1620,7 @@ p > a[href^="/"]:only-child,
 /* ─── Card Profile — circular avatar + info for team ───────────── */
 .wp-block-group.is-style-card-profile {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         padding: var(--wp--preset--spacing--60, 2rem);
         text-align: center;
@@ -1638,7 +1638,7 @@ p > a[href^="/"]:only-child,
 /* ─── Card Quote — large quotation mark for testimonials ──────── */
 .wp-block-group.is-style-card-quote {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         padding: var(--wp--preset--spacing--60, 2rem);
         position: relative;
@@ -1663,7 +1663,7 @@ p > a[href^="/"]:only-child,
 /* ─── Card Stats — big number + label for case study results ───── */
 .wp-block-group.is-style-card-stats {
         background-color: var(--wp--preset--color--surface, #ffffff);
-        border: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
         padding: var(--wp--preset--spacing--60, 2rem);
         text-align: center;
@@ -1693,7 +1693,7 @@ p > a[href^="/"]:only-child,
         gap: 0;
 }
 .godevs-list-clean > .wp-block-group {
-        border-bottom: 1px solid var(--wp--preset--color--border, #e5e5e0);
+        border-bottom: 1px solid var(--wp--preset--color--line, #e5e5e0);
         padding: var(--wp--preset--spacing--40, 1rem) 0;
 }
 .godevs-list-clean > .wp-block-group:last-child {

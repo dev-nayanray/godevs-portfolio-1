@@ -53,7 +53,7 @@ function test_theme_json_schema(): array {
 	);
 
 	// 5. Required palette slugs present.
-	$required_slugs = array( 'primary', 'secondary', 'accent', 'base', 'surface', 'foreground', 'muted', 'border', 'success', 'warning', 'error', 'contrast' );
+	$required_slugs = array( 'primary', 'secondary', 'accent', 'base', 'surface', 'foreground', 'muted', 'line', 'success', 'warning', 'error', 'contrast' );
 	$have_slugs     = array_column( $palette, 'slug' );
 	foreach ( $required_slugs as $slug ) {
 		$results[] = array(

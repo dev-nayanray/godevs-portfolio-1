@@ -71,9 +71,9 @@
 					"name": "Muted Foreground"
 				},
 				{
-					"slug": "border",
+					"slug": "line",
 					"color": "#E6E6E0",
-					"name": "Border"
+					"name": "Line"
 				},
 				{
 					"slug": "success",
@@ -675,7 +675,7 @@
 			},
 			"core/separator": {
 				"color": {
-					"text": "var:preset|color|border"
+					"text": "var:preset|color|line"
 				},
 				"typography": {
 					"fontSize": "var:preset|font-size|medium"
@@ -788,7 +788,7 @@
 				},
 				"border": {
 					"bottom": {
-						"color": "var:preset|color|border",
+						"color": "var:preset|color|line",
 						"width": "1px",
 						"style": "solid"
 					}

@@ -22,10 +22,10 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"className":"godevs-reveal-stagger","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
-	<div class="wp-block-group godevs-reveal-stagger" style="border-top-color:var(--wp--preset--color--border);border-top-style:solid;border-top-width:1px;border-bottom-color:var(--wp--preset--color--border);border-bottom-style:solid;border-bottom-width:1px">
+	<!-- wp:group {"className":"godevs-reveal-stagger","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group godevs-reveal-stagger" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px">
 
-		<!-- wp:details {"summary":"What is the typical project timeline?","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
+		<!-- wp:details {"summary":"What is the typical project timeline?","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
 		<details class="wp-block-details">
 			<summary>What is the typical project timeline?</summary>
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -34,7 +34,7 @@
 		</details>
 		<!-- /wp:details -->
 
-		<!-- wp:details {"summary":"Do you work with clients outside your timezone?","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
+		<!-- wp:details {"summary":"Do you work with clients outside your timezone?","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
 		<details class="wp-block-details">
 			<summary>Do you work with clients outside your timezone?</summary>
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -43,7 +43,7 @@
 		</details>
 		<!-- /wp:details -->
 
-		<!-- wp:details {"summary":"Will I be able to edit the site myself afterwards?","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
+		<!-- wp:details {"summary":"Will I be able to edit the site myself afterwards?","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
 		<details class="wp-block-details">
 			<summary>Will I be able to edit the site myself afterwards?</summary>
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
@@ -52,7 +52,7 @@
 		</details>
 		<!-- /wp:details -->
 
-		<!-- wp:details {"summary":"Do you take on rush work?","style":{"border":{"top":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
+		<!-- wp:details {"summary":"Do you take on rush work?","style":{"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"600","fontFamily":"var:preset|font-family|display","letterSpacing":"-0.01em"}}} -->
 		<details class="wp-block-details">
 			<summary>Do you take on rush work?</summary>
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->

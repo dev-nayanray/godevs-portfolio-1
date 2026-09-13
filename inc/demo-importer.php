@@ -413,6 +413,11 @@ function godevs_portfolio_ajax_import_demo(): void {
                         );
                 } else {
                         $created_pages[ $page_slug ] = (int) $page_id;
+                        // Demo patterns carry their own art-directed H1 hero, so
+                        // render them with the no-title page template to avoid a
+                        // second H1 (and the template's "Page" eyebrow + featured
+                        // image) above the demo content.
+                        update_post_meta( $page_id, '_wp_page_template', 'page-no-title' );
                         if ( 'home' === $page_slug ) {
                                 $homepage_id = (int) $page_id;
                         }

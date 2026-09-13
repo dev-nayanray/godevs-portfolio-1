@@ -3,7 +3,7 @@ Contributors: godevs
 Requires at least: 6.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -64,6 +64,12 @@ Yes. Go to Appearance → GoDevs Settings → Colors and Typography to customize
 Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available demos, click Preview to see a live preview, then click Import to import the demo content (pages, navigation, and style variation).
 
 == Changelog ==
+
+= 1.5.0 =
+* New: all 41 demo inner pages upgraded to homepage-grade design (eyebrow+H1 heroes, 3+ sections per page in each demo's signature components, closing CTAs).
+* Fixed: imported pages used the no-title template — no more double H1 above demo content.
+* Fixed: renamed the `border` palette token to `line` — the old slug collided with WordPress's `.has-border-color` utility and force-colored bordered elements' text (140 files).
+* Fixed: eyebrow paragraphs' inline colors now match their block attributes; malformed block JSON repaired and validated theme-wide.
 
 = 1.4.0 =
 * New: Northbound demo reframed to an independent strategy & delivery consultant; Meridian reframed to a senior product designer / UX portfolio (process, metrics, before/after results).

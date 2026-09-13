@@ -27,7 +27,7 @@
 .wp-block-separator.is-style-hairline {
 	border-top-width: 1px;
 	border-top-style: solid;
-	border-top-color: var(--wp--preset--color--border);
+	border-top-color: var(--wp--preset--color--line);
 	margin-top: var(--wp--preset--spacing--60);
 	margin-bottom: var(--wp--preset--spacing--60);
 }

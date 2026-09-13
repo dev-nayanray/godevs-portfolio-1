@@ -57,9 +57,9 @@
 					"name": "Muted"
 				},
 				{
-					"slug": "border",
+					"slug": "line",
 					"color": "#262626",
-					"name": "Border"
+					"name": "Line"
 				},
 				{
 					"slug": "success",

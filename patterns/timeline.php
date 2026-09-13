@@ -31,8 +31,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
-<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">The studio opens its doors.</h3>
 <!-- /wp:heading -->
 
@@ -51,8 +51,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
-<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Design and build under one roof.</h3>
 <!-- /wp:heading -->
 
@@ -71,8 +71,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
-<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">First international award.</h3>
 <!-- /wp:heading -->
 
@@ -91,8 +91,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|border","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
-<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--border);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","top":"var:preset|spacing|30","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"layout":{"type":"constrained","contentSize":"var(--wp--style--root--wide-size)"}} -->
+<div class="wp-block-group alignwide" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Six people, one standard.</h3>
 <!-- /wp:heading -->
 

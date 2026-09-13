@@ -193,3 +193,20 @@ Final screenshots: [`screenshots/`](screenshots/) — `<demo>-desktop-1..4.png` 
 - Placeholder imagery is bundled stock-art (5 files) — real demo photography would elevate Aperture/Director further.
 - Full-page screenshot capture of `vh`-based heroes can show capture artifacts (repeated hero) in Chromium; verified via viewport captures + DOM geometry that the rendered pages are correct.
 - Text over cover images relies on the 40–50% overlay for contrast (standard practice; not machine-checkable against arbitrary imagery).
+
+---
+
+## Inner-page upgrade (v1.5.0)
+
+All 41 inner pages across the 10 demos were upgraded to match their homepage's design quality. Every page now has: an eyebrow + H1 + intro hero, three or more substantial sections built from the demo's signature components (terminal frames, credit tables, pricing ledgers, publications lists, index rows, magazine grids), and a closing CTA band consistent with its homepage.
+
+Representative inner-page screenshots: `monolith-about-1..3.png`, `aperture-about-1..3.png`, `scholar-research-1..3.png`, `canvas-case-studies-1..3.png`, `northbound-work-1..3.png`, `signature-about-1..3.png`.
+
+Additional systemic fixes found while QA-ing the inner pages:
+
+1. **Double H1 on inner pages** — demo patterns carry their own H1 heroes, but the `page.html` template rendered a second post-title H1 (plus a "Page" eyebrow and forced featured image) above them. The importer now assigns the `page-no-title` template to every imported page.
+2. **Palette slug `border` collided with WordPress core** — registering a color named `border` made core emit `.has-border-color { color: … !important }`, which force-colored the text of every bordered element (form fields, cards) to the border token. The token was renamed to `line` across theme.json, all 11 style variations, patterns, parts, templates, and CSS (140 files).
+3. **Eyebrow attr/inline mismatch** — 41 eyebrow paragraphs declared a text color in their block attributes but not in the rendered HTML, so the CSS default (accent) won on colored bands. Inline styles are now synced with the attributes.
+4. **Malformed block JSON** — several upgraded pages contained missing/extra JSON braces; all block markup now validates theme-wide (structure + JSON), verified with a brace-matching parser.
+
+Inner-page QA: all 41 pages × 2 viewports (desktop 1440, mobile 390) audited — one H1 per page, zero horizontal overflow, zero off-screen elements, zero broken images, zero WCAG AA contrast failures (the only remaining checker flags are text over dimmed hero-cover images, which the checker cannot evaluate against imagery).
