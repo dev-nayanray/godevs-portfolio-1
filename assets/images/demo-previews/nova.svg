@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="NOVA — Creative Digital Agency demo preview">
+  <defs>
+    <linearGradient id="novaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F5F0"/>
+      <stop offset="1" stop-color="#EEEAE1"/>
+    </linearGradient>
+    <linearGradient id="novaInk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#novaBg)"/>
+  <!-- Subtle grain dots -->
+  <g fill="#0A0A0A" opacity="0.04">
+    <circle cx="120" cy="120" r="1.5"/><circle cx="320" cy="80" r="1.5"/><circle cx="540" cy="140" r="1.5"/>
+    <circle cx="760" cy="90" r="1.5"/><circle cx="980" cy="130" r="1.5"/><circle cx="1080" cy="60" r="1.5"/>
+    <circle cx="80" cy="300" r="1.5"/><circle cx="600" cy="280" r="1.5"/><circle cx="1120" cy="320" r="1.5"/>
+    <circle cx="160" cy="640" r="1.5"/><circle cx="420" cy="720" r="1.5"/><circle cx="880" cy="680" r="1.5"/>
+  </g>
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1200" height="72" fill="#F5F3EE"/>
+  <line x1="0" y1="72" x2="1200" y2="72" stroke="#DCD7CC" stroke-width="1"/>
+  <text x="64" y="48" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-1.5" fill="#0A0A0A">NOVA</text>
+  <text x="540" y="46" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6B6862" letter-spacing="0.5">Work</text>
+  <text x="600" y="46" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6B6862" letter-spacing="0.5">Services</text>
+  <text x="670" y="46" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6B6862" letter-spacing="0.5">About</text>
+  <text x="730" y="46" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6B6862" letter-spacing="0.5">Insights</text>
+  <text x="800" y="46" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6B6862" letter-spacing="0.5">Contact</text>
+  <rect x="1060" y="28" width="90" height="24" rx="2" fill="#0A0A0A"/>
+  <text x="1105" y="44" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#F5F3EE" text-anchor="middle">Start a Project</text>
+
+  <!-- Eyebrow -->
+  <text x="64" y="150" font-family="JetBrains Mono, Menlo, monospace" font-size="10" font-weight="500" letter-spacing="2" fill="#6B6862">NOVA — CREATIVE DIGITAL STUDIO</text>
+  <text x="1040" y="150" font-family="JetBrains Mono, Menlo, monospace" font-size="10" font-weight="500" letter-spacing="2" fill="#6B6862" text-anchor="end">● AVAILABLE Q3 2026</text>
+
+  <!-- Display heading -->
+  <text x="60" y="270" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="600" letter-spacing="-3" fill="#0A0A0A">We build digital</text>
+  <text x="60" y="350" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="600" letter-spacing="-3" fill="#0A0A0A">experiences that <tspan font-family="Newsreader, Times, serif" font-style="italic" font-weight="500" fill="#0A0A0A">matter.</tspan></text>
+
+  <!-- Supporting row -->
+  <text x="64" y="440" font-family="Inter, Arial, sans-serif" font-size="13" fill="#6B6862">A creative studio crafting brands, products and digital experiences.</text>
+  <rect x="64" y="464" width="120" height="36" rx="2" fill="#0A0A0A"/>
+  <text x="124" y="487" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#F5F3EE" text-anchor="middle">Start a Project</text>
+  <rect x="194" y="464" width="120" height="36" rx="2" fill="none" stroke="#0A0A0A" stroke-width="1"/>
+  <text x="254" y="487" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#0A0A0A" text-anchor="middle">Explore Work</text>
+
+  <!-- Hero image block (right) -->
+  <rect x="720" y="180" width="416" height="312" rx="2" fill="url(#novaInk)"/>
+  <path d="M720 492 Q820 360 920 420 T1136 380 L1136 492 Z" fill="#1F1F1F" opacity="0.6"/>
+  <circle cx="980" cy="300" r="80" fill="#FF5A30" opacity="0.18"/>
+  <circle cx="980" cy="300" r="40" fill="#FF5A30" opacity="0.35"/>
+  <path d="M760 460 Q860 380 940 420 T1100 400" stroke="#FF5A30" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Client strip -->
+  <line x1="64" y1="556" x2="1136" y2="556" stroke="#DCD7CC" stroke-width="1"/>
+  <text x="64" y="588" font-family="JetBrains Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="2" fill="#6B6862">SELECTED PARTNERSHIPS — SHOWCASE BRANDS</text>
+  <text x="180" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Nike</text>
+  <text x="290" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Google</text>
+  <text x="410" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Spotify</text>
+  <text x="540" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Airbnb</text>
+  <text x="650" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Notion</text>
+  <text x="760" y="618" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#6B6862" opacity="0.7">Stripe</text>
+  <line x1="64" y1="650" x2="1136" y2="650" stroke="#DCD7CC" stroke-width="1"/>
+
+  <!-- Selected Work section -->
+  <text x="64" y="688" font-family="JetBrains Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="2" fill="#FF5A30">SELECTED WORK — 01</text>
+  <text x="64" y="724" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" letter-spacing="-1" fill="#0A0A0A">Selected Work</text>
+
+  <!-- Project thumbnails -->
+  <rect x="64" y="740" width="160" height="40" rx="2" fill="#0A0A0A"/>
+  <text x="74" y="756" font-family="JetBrains Mono, Menlo, monospace" font-size="7" fill="#F5F3EE" opacity="0.6">2026 · BRAND</text>
+  <text x="74" y="770" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#F5F3EE">Aster →</text>
+
+  <rect x="240" y="740" width="160" height="40" rx="2" fill="#2B2B2B"/>
+  <text x="250" y="756" font-family="JetBrains Mono, Menlo, monospace" font-size="7" fill="#F5F3EE" opacity="0.6">2026 · DIGITAL</text>
+  <text x="250" y="770" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#F5F3EE">Orbit →</text>
+
+  <rect x="416" y="740" width="160" height="40" rx="2" fill="#1A1A1A"/>
+  <text x="426" y="756" font-family="JetBrains Mono, Menlo, monospace" font-size="7" fill="#F5F3EE" opacity="0.6">2025 · PRODUCT</text>
+  <text x="426" y="770" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#F5F3EE">North →</text>
+
+  <!-- Accent dot -->
+  <circle cx="1130" cy="120" r="4" fill="#FF5A30"/>
+</svg>

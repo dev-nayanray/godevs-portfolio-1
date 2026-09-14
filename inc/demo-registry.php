@@ -576,6 +576,8 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
         $ready_demos = array(
                 'monolith', 'canvas', 'aperture', 'northbound', 'meridian',
                 'plan', 'signature', 'scholar', 'minimal', 'director',
+                'nova',
+                'atelier',
         );
         $is_ready = in_array( $basename, $ready_demos, true );
 

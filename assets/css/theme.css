@@ -1828,3 +1828,835 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .is-search-match {
         animation: godevs-search-fade-in 200ms ease-out;
 }
+
+/* ════════════════════════════════════════════════════════════════════ */
+/* NOVA — Creative Digital Agency demo. Scoped under .wp-block-godevs-demo-nova */
+/* All rules are namespaced so they never leak into other demos.         */
+/* ══════════════════════════════════════════════════════════════════════ */
+
+.wp-block-godevs-demo-nova {
+	--nova-ink: #0A0A0A;
+	--nova-base: #F5F3EE;
+	--nova-accent: #FF5A30;
+	--nova-line: #DCD7CC;
+	--nova-muted: #6B6862;
+	font-feature-settings: "ss01", "cv11";
+}
+
+/* Nova eyebrow / metadata label — mono, uppercase, tracked */
+.wp-block-godevs-demo-nova .is-style-nova-label,
+.wp-block-godevs-demo-nova .nova-label {
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--nova-muted);
+	line-height: 1.4;
+}
+
+/* Nova display heading — huge, tight, ink */
+.wp-block-godevs-demo-nova .nova-display {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	letter-spacing: -0.045em;
+	line-height: 0.96;
+	font-size: clamp(2.75rem, 9vw, 8rem);
+}
+
+.wp-block-godevs-demo-nova .nova-display .nova-italic {
+	font-style: italic;
+	font-family: var(--wp--preset--font-family--serif, "Newsreader", serif);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+}
+
+/* Client strip — flex wrap of brand names */
+.wp-block-godevs-demo-nova .nova-clients {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem 2rem;
+}
+.wp-block-godevs-demo-nova .nova-clients span {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	font-size: clamp(1.125rem, 2vw, 1.625rem);
+	letter-spacing: -0.02em;
+	color: var(--nova-muted);
+	opacity: 0.7;
+	transition: opacity 0.3s ease, color 0.3s ease;
+}
+.wp-block-godevs-demo-nova .nova-clients span:hover {
+	opacity: 1;
+	color: var(--nova-ink);
+}
+
+/* Project row — asymmetric editorial rows with hover image scale */
+.wp-block-godevs-demo-nova .nova-project-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	align-items: center;
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-nova .nova-project-row {
+		grid-template-columns: var(--nova-row-split, 1fr 1fr);
+		gap: 4rem;
+	}
+}
+.wp-block-godevs-demo-nova .nova-project-row.is-reversed > :first-child {
+	order: 2;
+}
+.wp-block-godevs-demo-nova .nova-project-media {
+	overflow: hidden;
+	border-radius: 2px;
+	position: relative;
+}
+.wp-block-godevs-demo-nova .nova-project-media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	will-change: transform;
+}
+.wp-block-godevs-demo-nova .nova-project-media:hover img {
+	transform: scale(1.04);
+}
+.wp-block-godevs-demo-nova .nova-project-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 0.5rem 1.25rem;
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--nova-muted);
+}
+.wp-block-godevs-demo-nova .nova-project-title {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	letter-spacing: -0.03em;
+	line-height: 1.0;
+	font-size: clamp(1.875rem, 4vw, 3rem);
+	margin: 0.75rem 0;
+}
+
+/* Arrow link — text-link with animated arrow */
+.wp-block-godevs-demo-nova .nova-arrow-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-weight: 500;
+	font-size: 0.9375rem;
+	text-decoration: none;
+	color: var(--nova-ink);
+	border-bottom: 1px solid var(--nova-ink);
+	padding-bottom: 2px;
+	transition: gap 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+.wp-block-godevs-demo-nova .nova-arrow-link:hover,
+.wp-block-godevs-demo-nova .nova-arrow-link:focus-visible {
+	gap: 1rem;
+	color: var(--nova-accent);
+	border-bottom-color: var(--nova-accent);
+}
+.wp-block-godevs-demo-nova .nova-arrow-link .nova-arrow {
+	transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+	display: inline-block;
+}
+.wp-block-godevs-demo-nova .nova-arrow-link:hover .nova-arrow {
+	transform: translateX(2px);
+}
+
+/* Services list — numbered rows with hover reveal */
+.wp-block-godevs-demo-nova .nova-service-list {
+	border-top: 1px solid var(--nova-line);
+}
+.wp-block-godevs-demo-nova .nova-service-row {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 1.5rem;
+	align-items: center;
+	padding: 1.75rem 0;
+	border-bottom: 1px solid var(--nova-line);
+	text-decoration: none;
+	color: var(--nova-ink);
+	transition: padding 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s ease;
+}
+.wp-block-godevs-demo-nova .nova-service-row:hover,
+.wp-block-godevs-demo-nova .nova-service-row:focus-visible {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	background: rgba(255, 90, 48, 0.04);
+	outline: none;
+}
+.wp-block-godevs-demo-nova .nova-service-num {
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	color: var(--nova-muted);
+}
+.wp-block-godevs-demo-nova .nova-service-title {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
+	letter-spacing: -0.025em;
+	line-height: 1.05;
+}
+.wp-block-godevs-demo-nova .nova-service-row:hover .nova-service-title {
+	color: var(--nova-accent);
+}
+.wp-block-godevs-demo-nova .nova-service-arrow {
+	opacity: 0;
+	transform: translateX(-8px);
+	transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.wp-block-godevs-demo-nova .nova-service-row:hover .nova-service-arrow {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Stats — editorial large numbers */
+.wp-block-godevs-demo-nova .nova-stat-num {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	font-size: clamp(3rem, 8vw, 6.5rem);
+	line-height: 0.9;
+	letter-spacing: -0.05em;
+}
+.wp-block-godevs-demo-nova .nova-stat-label {
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--nova-muted);
+	margin-top: 0.75rem;
+}
+
+/* Process steps */
+.wp-block-godevs-demo-nova .nova-process-step {
+	border-top: 1px solid var(--nova-line);
+	padding-top: 1.5rem;
+}
+
+/* Marquee client strip */
+.wp-block-godevs-demo-nova .nova-marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+	-webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.wp-block-godevs-demo-nova .nova-marquee-track {
+	display: inline-flex;
+	gap: 3rem;
+	align-items: center;
+	animation: nova-marquee 38s linear infinite;
+}
+.wp-block-godevs-demo-nova .nova-marquee:hover .nova-marquee-track {
+	animation-play-state: paused;
+}
+@keyframes nova-marquee {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+}
+
+/* Dark section — ink background, contrast text */
+.wp-block-godevs-demo-nova .nova-dark {
+	background: var(--nova-ink);
+	color: var(--nova-base);
+}
+.wp-block-godevs-demo-nova .nova-dark .nova-label,
+.wp-block-godevs-demo-nova .nova-dark .is-style-nova-label { color: rgba(245, 243, 238, 0.6); }
+.wp-block-godevs-demo-nova .nova-dark h1,
+.wp-block-godevs-demo-nova .nova-dark h2,
+.wp-block-godevs-demo-nova .nova-dark h3,
+.wp-block-godevs-demo-nova .nova-dark p { color: var(--nova-base); }
+.wp-block-godevs-demo-nova .nova-dark .nova-arrow-link {
+	color: var(--nova-base);
+	border-bottom-color: var(--nova-base);
+}
+.wp-block-godevs-demo-nova .nova-dark .nova-arrow-link:hover {
+	color: var(--nova-accent);
+	border-bottom-color: var(--nova-accent);
+}
+
+/* Pill button (outline) variant for NOVA */
+.wp-block-godevs-demo-nova .is-style-nova-outline .wp-block-button__link,
+.wp-block-godevs-demo-nova .nova-button-outline {
+	background: transparent;
+	color: var(--nova-ink);
+	border: 1px solid var(--nova-ink);
+	border-radius: 2px;
+}
+.wp-block-godevs-demo-nova .is-style-nova-outline .wp-block-button__link:hover,
+.wp-block-godevs-demo-nova .nova-button-outline:hover {
+	background: var(--nova-ink);
+	color: var(--nova-base);
+}
+
+/* Big footer wordmark */
+.wp-block-godevs-demo-nova .nova-footer-wordmark {
+	font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
+	font-weight: 600;
+	letter-spacing: -0.05em;
+	line-height: 0.85;
+	font-size: clamp(4rem, 18vw, 16rem);
+}
+
+/* Availability dot */
+.wp-block-godevs-demo-nova .nova-dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #2D7A3E;
+	margin-right: 0.5rem;
+	box-shadow: 0 0 0 3px rgba(45, 122, 62, 0.18);
+	animation: nova-pulse 2.4s ease-in-out infinite;
+}
+@keyframes nova-pulse {
+	0%, 100% { box-shadow: 0 0 0 3px rgba(45, 122, 62, 0.18); }
+	50% { box-shadow: 0 0 0 6px rgba(45, 122, 62, 0.08); }
+}
+
+/* Filter chips for work archive */
+.wp-block-godevs-demo-nova .nova-filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+.wp-block-godevs-demo-nova .nova-filter a {
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 0.5rem 0.9rem;
+	border: 1px solid var(--nova-line);
+	border-radius: 2px;
+	text-decoration: none;
+	color: var(--nova-muted);
+	transition: all 0.25s ease;
+}
+.wp-block-godevs-demo-nova .nova-filter a:hover,
+.wp-block-godevs-demo-nova .nova-filter a.is-active {
+	background: var(--nova-ink);
+	color: var(--nova-base);
+	border-color: var(--nova-ink);
+}
+
+/* Two-column editorial content block */
+.wp-block-godevs-demo-nova .nova-editorial-2col {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-nova .nova-editorial-2col {
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+}
+
+/* Image caption */
+.wp-block-godevs-demo-nova .nova-caption {
+	font-family: var(--wp--preset--font-family--mono, monospace);
+	font-size: 0.75rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--nova-muted);
+	margin-top: 0.75rem;
+}
+
+/* Reduced motion — disable all NOVA animations */
+@media (prefers-reduced-motion: reduce) {
+	.wp-block-godevs-demo-nova .nova-project-media img,
+	.wp-block-godevs-demo-nova .nova-arrow-link,
+	.wp-block-godevs-demo-nova .nova-arrow-link .nova-arrow,
+	.wp-block-godevs-demo-nova .nova-service-row,
+	.wp-block-godevs-demo-nova .nova-service-arrow,
+	.wp-block-godevs-demo-nova .nova-dot {
+		transition: none !important;
+		animation: none !important;
+	}
+	.wp-block-godevs-demo-nova .nova-marquee-track {
+		animation: none !important;
+	}
+}
+
+/* Responsive spacing guard — prevent horizontal overflow on small screens */
+.wp-block-godevs-demo-nova .alignfull,
+.wp-block-godevs-demo-nova .alignwide {
+	max-width: 100vw;
+	overflow-wrap: break-word;
+}
+.wp-block-godevs-demo-nova img { max-width: 100%; height: auto; }
+
+/* ════════════════════════════════════════════════════════════════════ */
+/* ATELIER — Independent Creative Designer / Art Director demo.            */
+/* Scoped under .wp-block-godevs-demo-atelier. Editorial serif-forward,   */
+/* warm ivory paper, charcoal ink, clay accent, generous whitespace.       */
+/* All rules namespaced — never leak into other demos.                    */
+/* ══════════════════════════════════════════════════════════════════════ */
+
+.wp-block-godevs-demo-atelier {
+	--atelier-ink: #1A1814;
+	--atelier-base: #F7F4ED;
+	--atelier-surface: #FBF9F3;
+	--atelier-muted: #8C8478;
+	--atelier-line: #E0D9CC;
+	--atelier-accent: #A04A2A;
+	font-feature-settings: "ss01", "kern", "liga";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ATELIER eyebrow / metadata label — small sans, tracked, uppercase */
+.wp-block-godevs-demo-atelier .is-style-atelier-label,
+.wp-block-godevs-demo-atelier .atelier-label {
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--atelier-muted);
+	line-height: 1.5;
+}
+
+/* ATELIER display — serif, large, editorial line-height */
+.wp-block-godevs-demo-atelier .atelier-display {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	letter-spacing: -0.02em;
+	line-height: 1.02;
+	font-size: clamp(2.5rem, 8vw, 7.5rem);
+}
+
+.wp-block-godevs-demo-atelier .atelier-display .atelier-italic {
+	font-style: italic;
+	font-weight: 400;
+}
+
+/* Editorial statement — medium serif, generous measure */
+.wp-block-godevs-demo-atelier .atelier-statement {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	font-size: clamp(1.5rem, 3.2vw, 2.5rem);
+}
+
+/* Vertical text — editorial side label */
+.wp-block-godevs-demo-atelier .atelier-vertical {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.6875rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--atelier-muted);
+}
+
+/* Project row — editorial asymmetric, image with hover scale */
+.wp-block-godevs-demo-atelier .atelier-project {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	text-decoration: none;
+	color: var(--atelier-ink);
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-atelier .atelier-project {
+		grid-template-columns: var(--atelier-split, 1fr 1fr);
+		gap: 3rem;
+		align-items: start;
+	}
+}
+.wp-block-godevs-demo-atelier .atelier-project.is-featured {
+	grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-atelier .atelier-project.is-featured {
+		grid-template-columns: 1.4fr 1fr;
+		gap: 4rem;
+	}
+}
+.wp-block-godevs-demo-atelier .atelier-project.is-offset-right > :first-child {
+	order: 2;
+}
+.wp-block-godevs-demo-atelier .atelier-project-media {
+	overflow: hidden;
+	position: relative;
+	background: var(--atelier-surface);
+}
+.wp-block-godevs-demo-atelier .atelier-project-media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.8s ease;
+	will-change: transform;
+	filter: saturate(0.92);
+}
+.wp-block-godevs-demo-atelier .atelier-project:hover .atelier-project-media img {
+	transform: scale(1.03);
+	filter: saturate(1);
+}
+.wp-block-godevs-demo-atelier .atelier-project-num {
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.6875rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: var(--atelier-muted);
+}
+.wp-block-godevs-demo-atelier .atelier-project-title {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	letter-spacing: -0.015em;
+	line-height: 1.05;
+	font-size: clamp(1.875rem, 4vw, 3rem);
+	margin: 0.6rem 0 0.4rem;
+}
+.wp-block-godevs-demo-atelier .atelier-project-meta {
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.8125rem;
+	color: var(--atelier-muted);
+	line-height: 1.6;
+}
+.wp-block-godevs-demo-atelier .atelier-project-meta span + span::before {
+	content: "·";
+	margin: 0 0.5rem;
+	color: var(--atelier-line);
+}
+
+/* Arrow link — serif italic, underline animation */
+.wp-block-godevs-demo-atelier .atelier-link {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-size: 1.0625rem;
+	text-decoration: none;
+	color: var(--atelier-ink);
+	border-bottom: 1px solid var(--atelier-ink);
+	padding-bottom: 2px;
+	transition: color 0.4s ease, border-color 0.4s ease, gap 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.wp-block-godevs-demo-atelier .atelier-link:hover,
+.wp-block-godevs-demo-atelier .atelier-link:focus-visible {
+	color: var(--atelier-accent);
+	border-bottom-color: var(--atelier-accent);
+	gap: 0.9rem;
+	outline: none;
+}
+.wp-block-godevs-demo-atelier .atelier-link .atelier-arrow {
+	transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+	display: inline-block;
+}
+.wp-block-godevs-demo-atelier .atelier-link:hover .atelier-arrow {
+	transform: translateX(4px);
+}
+
+/* Expertise list — typographic, numbered, hover reveal */
+.wp-block-godevs-demo-atelier .atelier-expertise {
+	border-top: 1px solid var(--atelier-line);
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-row {
+	display: grid;
+	grid-template-columns: 2.5rem 1fr auto;
+	gap: 1.5rem;
+	align-items: baseline;
+	padding: 1.5rem 0;
+	border-bottom: 1px solid var(--atelier-line);
+	text-decoration: none;
+	color: var(--atelier-ink);
+	transition: padding 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+	position: relative;
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-row:hover,
+.wp-block-godevs-demo-atelier .atelier-expertise-row:focus-visible {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	outline: none;
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-num {
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.6875rem;
+	letter-spacing: 0.14em;
+	color: var(--atelier-muted);
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-title {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
+	letter-spacing: -0.015em;
+	line-height: 1.1;
+	transition: color 0.4s ease, font-style 0.4s ease;
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-row:hover .atelier-expertise-title,
+.wp-block-godevs-demo-atelier .atelier-expertise-row:focus-visible .atelier-expertise-title {
+	color: var(--atelier-accent);
+	font-style: italic;
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-arrow {
+	opacity: 0;
+	transform: translateX(-6px);
+	transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+	font-style: italic;
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+}
+.wp-block-godevs-demo-atelier .atelier-expertise-row:hover .atelier-expertise-arrow,
+.wp-block-godevs-demo-atelier .atelier-expertise-row:focus-visible .atelier-expertise-arrow {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Clients — minimal typographic arrangement */
+.wp-block-godevs-demo-atelier .atelier-clients {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem 2rem;
+}
+@media (min-width: 700px) {
+	.wp-block-godevs-demo-atelier .atelier-clients {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.wp-block-godevs-demo-atelier .atelier-clients span {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-weight: 400;
+	font-size: clamp(1.125rem, 1.8vw, 1.5rem);
+	color: var(--atelier-ink);
+	opacity: 0.72;
+	transition: opacity 0.4s ease, color 0.4s ease;
+	padding: 0.5rem 0;
+}
+.wp-block-godevs-demo-atelier .atelier-clients span:hover {
+	opacity: 1;
+	color: var(--atelier-accent);
+}
+
+/* Process steps — editorial, no icons */
+.wp-block-godevs-demo-atelier .atelier-process-step {
+	border-top: 1px solid var(--atelier-line);
+	padding-top: 1.25rem;
+}
+
+/* Visual gallery — irregular editorial grid */
+.wp-block-godevs-demo-atelier .atelier-gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+@media (min-width: 800px) {
+	.wp-block-godevs-demo-atelier .atelier-gallery {
+		grid-template-columns: repeat(12, 1fr);
+		grid-auto-rows: minmax(80px, auto);
+		gap: 1.25rem;
+	}
+}
+.wp-block-godevs-demo-atelier .atelier-gallery .atelier-gallery-item { overflow: hidden; background: var(--atelier-surface); }
+.wp-block-godevs-demo-atelier .atelier-gallery .atelier-gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); filter: saturate(0.92); }
+.wp-block-godevs-demo-atelier .atelier-gallery .atelier-gallery-item:hover img { transform: scale(1.03); filter: saturate(1); }
+
+@media (min-width: 800px) {
+	.wp-block-godevs-demo-atelier .atelier-gallery .gi-1 { grid-column: span 7; grid-row: span 2; }
+	.wp-block-godevs-demo-atelier .atelier-gallery .gi-2 { grid-column: span 5; grid-row: span 1; }
+	.wp-block-godevs-demo-atelier .atelier-gallery .gi-3 { grid-column: span 5; grid-row: span 1; }
+	.wp-block-godevs-demo-atelier .atelier-gallery .gi-4 { grid-column: span 4; grid-row: span 1; }
+	.wp-block-godevs-demo-atelier .atelier-gallery .gi-5 { grid-column: span 8; grid-row: span 1; }
+}
+
+/* Journal article — editorial, minimal */
+.wp-block-godevs-demo-atelier .atelier-article {
+	text-decoration: none;
+	color: var(--atelier-ink);
+	display: block;
+}
+.wp-block-godevs-demo-atelier .atelier-article-meta {
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.6875rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--atelier-muted);
+	margin-top: 0.85rem;
+}
+.wp-block-godevs-demo-atelier .atelier-article-title {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	font-size: clamp(1.25rem, 2vw, 1.75rem);
+	line-height: 1.15;
+	letter-spacing: -0.01em;
+	margin-top: 0.5rem;
+	transition: color 0.4s ease, font-style 0.4s ease;
+}
+.wp-block-godevs-demo-atelier .atelier-article:hover .atelier-article-title {
+	color: var(--atelier-accent);
+	font-style: italic;
+}
+
+/* Filter chips — editorial, no fill */
+.wp-block-godevs-demo-atelier .atelier-filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.5rem;
+}
+.wp-block-godevs-demo-atelier .atelier-filter a {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-size: 1rem;
+	text-decoration: none;
+	color: var(--atelier-muted);
+	padding: 0.25rem 0;
+	border-bottom: 1px solid transparent;
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+.wp-block-godevs-demo-atelier .atelier-filter a:hover,
+.wp-block-godevs-demo-atelier .atelier-filter a.is-active {
+	color: var(--atelier-ink);
+	border-bottom-color: var(--atelier-ink);
+}
+
+/* Pagination — editorial */
+.wp-block-godevs-demo-atelier .atelier-pagination {
+	display: flex;
+	gap: 1.25rem;
+	align-items: baseline;
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-size: 1.125rem;
+}
+.wp-block-godevs-demo-atelier .atelier-pagination a {
+	text-decoration: none;
+	color: var(--atelier-muted);
+	transition: color 0.3s ease;
+}
+.wp-block-godevs-demo-atelier .atelier-pagination a:hover,
+.wp-block-godevs-demo-atelier .atelier-pagination .is-current {
+	color: var(--atelier-ink);
+}
+
+/* Two-column editorial content */
+.wp-block-godevs-demo-atelier .atelier-2col {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-atelier .atelier-2col {
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+	}
+}
+.wp-block-godevs-demo-atelier .atelier-2col.is-wide-narrow {
+	grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+	.wp-block-godevs-demo-atelier .atelier-2col.is-wide-narrow {
+		grid-template-columns: 1.7fr 1fr;
+	}
+}
+
+/* Availability / status */
+.wp-block-godevs-demo-atelier .atelier-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
+	font-size: 0.8125rem;
+	color: var(--atelier-muted);
+}
+.wp-block-godevs-demo-atelier .atelier-dot {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--atelier-accent);
+	box-shadow: 0 0 0 3px rgba(160, 74, 42, 0.15);
+	animation: atelier-pulse 3s ease-in-out infinite;
+}
+@keyframes atelier-pulse {
+	0%, 100% { box-shadow: 0 0 0 3px rgba(160, 74, 42, 0.15); }
+	50% { box-shadow: 0 0 0 6px rgba(160, 74, 42, 0.06); }
+}
+
+/* Image caption — italic serif */
+.wp-block-godevs-demo-atelier .atelier-caption {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-size: 0.8125rem;
+	color: var(--atelier-muted);
+	margin-top: 0.85rem;
+	line-height: 1.5;
+}
+
+/* Pull quote — large serif */
+.wp-block-godevs-demo-atelier .atelier-pullquote {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-weight: 400;
+	font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+	line-height: 1.18;
+	letter-spacing: -0.015em;
+}
+.wp-block-godevs-demo-atelier .atelier-pullquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 3rem;
+	line-height: 0.5;
+	color: var(--atelier-accent);
+	margin-bottom: 0.5rem;
+}
+
+/* Big footer wordmark */
+.wp-block-godevs-demo-atelier .atelier-wordmark {
+	font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: -0.03em;
+	line-height: 0.9;
+	font-size: clamp(4rem, 16vw, 14rem);
+}
+
+/* Outline button variant for ATELIER */
+.wp-block-godevs-demo-atelier .is-style-atelier-outline .wp-block-button__link,
+.wp-block-godevs-demo-atelier .atelier-button-outline {
+	background: transparent;
+	color: var(--atelier-ink);
+	border: 1px solid var(--atelier-ink);
+	border-radius: 0;
+}
+.wp-block-godevs-demo-atelier .is-style-atelier-outline .wp-block-button__link:hover,
+.wp-block-godevs-demo-atelier .atelier-button-outline:hover {
+	background: var(--atelier-ink);
+	color: var(--atelier-base);
+}
+
+/* Reduced motion — disable all ATELIER animations */
+@media (prefers-reduced-motion: reduce) {
+	.wp-block-godevs-demo-atelier .atelier-project-media img,
+	.wp-block-godevs-demo-atelier .atelier-gallery-item img,
+	.wp-block-godevs-demo-atelier .atelier-link,
+	.wp-block-godevs-demo-atelier .atelier-link .atelier-arrow,
+	.wp-block-godevs-demo-atelier .atelier-expertise-row,
+	.wp-block-godevs-demo-atelier .atelier-expertise-title,
+	.wp-block-godevs-demo-atelier .atelier-expertise-arrow,
+	.wp-block-godevs-demo-atelier .atelier-article-title,
+	.wp-block-godevs-demo-atelier .atelier-dot {
+		transition: none !important;
+		animation: none !important;
+	}
+}
+
+/* Responsive overflow guard */
+.wp-block-godevs-demo-atelier .alignfull,
+.wp-block-godevs-demo-atelier .alignwide {
+	max-width: 100vw;
+	overflow-wrap: break-word;
+}
+.wp-block-godevs-demo-atelier img { max-width: 100%; height: auto; }
+.wp-block-godevs-demo-atelier .atelier-vertical { white-space: nowrap; }
