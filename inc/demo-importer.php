@@ -414,6 +414,13 @@ function godevs_portfolio_ajax_import_demo(): void {
                         $content = str_replace( 'href="#"', 'href="/' . $showcase_slug . '/"', $content );
                 }
 
+                // Anything still pointing at "#" after the showcase rewrite
+                // (e.g. decorative social anchors) must not lead nowhere —
+                // send it to the demo's contact page.
+                if ( in_array( 'contact', $demo['pages'], true ) && false !== strpos( $content, 'href="#"' ) ) {
+                        $content = str_replace( 'href="#"', 'href="/contact/"', $content );
+                }
+
                 $page_id = wp_insert_post(
                         array(
                                 'post_title'   => $title,

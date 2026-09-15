@@ -5,6 +5,17 @@ All notable changes to GoDevs Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-09-16
+
+### Added
+- Project proposal system: a full inquiry form ([godevs_proposal_form] shortcode) now wired into every demo contact page — name, email, company, phone/WhatsApp, project type, budget, timeline, services, reference URL, preferred contact method and description.
+- Proposals are stored as a private admin-only post type (godevs_proposal) with dedicated capabilities, an admin list showing date/name/email/type/budget/status, and a status workflow (New, Contacted, In Progress, Completed, Archived).
+- Rate limiting (5 submissions per IP per hour) and honeypot spam protection on the proposal form.
+
+### Fixed
+- All remaining dead href="#" anchors eliminated: social-link blocks in template parts and patterns now point to the contact page; the demo importer rewrites any leftover placeholder anchors to the demo showcase or contact page.
+- Proposal email now includes every submitted field and is non-fatal when no mail server is configured (submission is still stored and visible in the admin).
+
 ## [1.0.0] - 2026-09-15 — Initial release on WordPress.org
 
 ### Fixed

@@ -312,6 +312,24 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
+
+        <!-- Project proposal form -->
+        <!-- wp:group {"tagName":"section","className":"godevs-proposal-section","layout":{"type":"constrained","contentSize":"760px"}} -->
+        <section class="wp-block-group godevs-proposal-section" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+                <!-- wp:heading {"level":2} -->
+                <h2 class="wp-block-heading">Start a Build</h2>
+                <!-- /wp:heading -->
+
+                <!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
+                <p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Describe the product, the stack you love (or regret), and the deadline. We'll reply with a plan, not a pitch deck.</p>
+                <!-- /wp:paragraph -->
+
+                <!-- wp:shortcode -->
+                [godevs_proposal_form]
+                <!-- /wp:shortcode -->
+        </section>
+        <!-- /wp:group -->
+
         <!-- Footer -->
         <!-- wp:template-part {"slug":"footer-mono","theme":"godevs-portfolio","tagName":"footer"} /-->
 

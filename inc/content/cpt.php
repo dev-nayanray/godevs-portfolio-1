@@ -315,8 +315,74 @@ function godevs_portfolio_register_post_types(): void {
                         )
                 );
         }
+
+        // ── Proposals (PRIVATE — not publicly queryable) ─────────
+        if ( godevs_portfolio_module_enabled( 'proposals' ) ) {
+                register_post_type(
+                        'godevs_proposal',
+                        array(
+                                'labels'              => array(
+                                        'name'               => __( 'Proposals', 'godevs-portfolio' ),
+                                        'singular_name'      => __( 'Proposal', 'godevs-portfolio' ),
+                                        'add_new'            => __( 'Add New Proposal', 'godevs-portfolio' ),
+                                        'add_new_item'       => __( 'Add New Proposal', 'godevs-portfolio' ),
+                                        'edit_item'          => __( 'Edit Proposal', 'godevs-portfolio' ),
+                                        'all_items'          => __( 'All Proposals', 'godevs-portfolio' ),
+                                        'menu_name'          => __( 'Proposals', 'godevs-portfolio' ),
+                                ),
+                                'public'              => false,
+                                'show_ui'             => true,
+                                'show_in_menu'        => true,
+                                'show_in_rest'        => false,
+                                'has_archive'         => false,
+                                'publicly_queryable'  => false,
+                                'exclude_from_search' => true,
+                                'menu_position'       => 12,
+                                'menu_icon'           => 'dashicons-email-alt',
+                                'supports'            => array( 'title', 'editor', 'custom-fields', 'revisions' ),
+                                // Dedicated capability type so only Administrators can read
+                                // proposal data (contains PII: name, email, phone).
+                                'capability_type'     => 'proposal',
+                                'map_meta_cap'        => true,
+                        )
+                );
+        }
 }
 add_action( 'init', 'godevs_portfolio_register_post_types' );
+
+/**
+ * Grant proposal capabilities to Administrators on theme activation.
+ *
+ * Mirrors godevs_portfolio_grant_booking_caps() — the proposal CPT uses
+ * `capability_type => 'proposal'`, so no role has the caps by default.
+ *
+ * @since 1.1.0
+ */
+function godevs_portfolio_grant_proposal_caps(): void {
+        $admin = get_role( 'administrator' );
+        if ( ! $admin ) {
+                return;
+        }
+
+        $caps = array(
+                'edit_proposals',
+                'edit_others_proposals',
+                'edit_published_proposals',
+                'publish_proposals',
+                'delete_proposals',
+                'delete_others_proposals',
+                'delete_published_proposals',
+                'read_private_proposals',
+                'edit_proposal',
+                'delete_proposal',
+                'read_proposal',
+        );
+        foreach ( $caps as $cap ) {
+                $admin->add_cap( $cap );
+        }
+}
+add_action( 'after_switch_theme', 'godevs_portfolio_grant_proposal_caps' );
+add_action( 'admin_init', 'godevs_portfolio_grant_proposal_caps' );
 
 /**
  * Grant booking capabilities to Administrators on theme activation.

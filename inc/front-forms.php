@@ -218,6 +218,29 @@ function godevs_proposal_form_shortcode(): string {
                                         <input type="text" id="godevs-proposal-company" name="proposal_company" autocomplete="organization" />
                                 </div>
                                 <div class="godevs-form-field">
+                                        <label for="godevs-proposal-phone"><?php esc_html_e( 'Phone / WhatsApp', 'godevs-portfolio' ); ?></label>
+                                        <input type="tel" id="godevs-proposal-phone" name="proposal_phone" autocomplete="tel" />
+                                </div>
+                        </div>
+
+                        <div class="godevs-form-row">
+                                <div class="godevs-form-field">
+                                        <label for="godevs-proposal-type"><?php esc_html_e( 'Project Type', 'godevs-portfolio' ); ?> <span class="required">*</span></label>
+                                        <select id="godevs-proposal-type" name="proposal_type" required>
+                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Website', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Website', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Branding', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Branding', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'UI/UX Design', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'UI/UX Design', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Development', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Development', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Photography', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Photography', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Video / Film', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Video / Film', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Architecture', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Architecture', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Fashion / Creative', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Fashion / Creative', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Consulting', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Consulting', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Other', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Other', 'godevs-portfolio' ); ?></option>
+                                        </select>
+                                </div>
+                                <div class="godevs-form-field">
                                         <label for="godevs-proposal-budget"><?php esc_html_e( 'Budget Range', 'godevs-portfolio' ); ?></label>
                                         <select id="godevs-proposal-budget" name="proposal_budget">
                                                 <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
@@ -229,21 +252,42 @@ function godevs_proposal_form_shortcode(): string {
                                 </div>
                         </div>
 
-                        <div class="godevs-form-field">
-                                <label for="godevs-proposal-type"><?php esc_html_e( 'Project Type', 'godevs-portfolio' ); ?></label>
-                                <select id="godevs-proposal-type" name="proposal_type">
-                                        <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
-                                        <option value="<?php esc_attr_e( 'Website Design', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Website Design', 'godevs-portfolio' ); ?></option>
-                                        <option value="<?php esc_attr_e( 'Web Development', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Web Development', 'godevs-portfolio' ); ?></option>
-                                        <option value="<?php esc_attr_e( 'Branding / Identity', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Branding / Identity', 'godevs-portfolio' ); ?></option>
-                                        <option value="<?php esc_attr_e( 'Consulting', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Consulting', 'godevs-portfolio' ); ?></option>
-                                        <option value="<?php esc_attr_e( 'Other', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Other', 'godevs-portfolio' ); ?></option>
-                                </select>
+                        <div class="godevs-form-row">
+                                <div class="godevs-form-field">
+                                        <label for="godevs-proposal-timeline"><?php esc_html_e( 'Project Timeline', 'godevs-portfolio' ); ?></label>
+                                        <select id="godevs-proposal-timeline" name="proposal_timeline">
+                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'ASAP', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'ASAP', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( '1–3 months', 'godevs-portfolio' ); ?>"><?php esc_html_e( '1–3 months', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( '3–6 months', 'godevs-portfolio' ); ?>"><?php esc_html_e( '3–6 months', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( '6+ months', 'godevs-portfolio' ); ?>"><?php esc_html_e( '6+ months', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Flexible', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Flexible', 'godevs-portfolio' ); ?></option>
+                                        </select>
+                                </div>
+                                <div class="godevs-form-field">
+                                        <label for="godevs-proposal-contact-method"><?php esc_html_e( 'Preferred Contact Method', 'godevs-portfolio' ); ?></label>
+                                        <select id="godevs-proposal-contact-method" name="proposal_contact_method">
+                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Email', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Email', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'Phone', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Phone', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( 'WhatsApp', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'WhatsApp', 'godevs-portfolio' ); ?></option>
+                                        </select>
+                                </div>
                         </div>
 
                         <div class="godevs-form-field">
-                                <label for="godevs-proposal-message"><?php esc_html_e( 'Project Details', 'godevs-portfolio' ); ?> <span class="required">*</span></label>
-                                <textarea id="godevs-proposal-message" name="proposal_message" rows="6" required placeholder="<?php esc_attr_e( 'Tell us about your project — goals, timeline, scope, anything that helps us understand what you need.', 'godevs-portfolio' ); ?>"></textarea>
+                                <label for="godevs-proposal-services"><?php esc_html_e( 'Services Needed', 'godevs-portfolio' ); ?></label>
+                                <input type="text" id="godevs-proposal-services" name="proposal_services" placeholder="<?php esc_attr_e( 'e.g. brand identity, website design, photography', 'godevs-portfolio' ); ?>" />
+                        </div>
+
+                        <div class="godevs-form-field">
+                                <label for="godevs-proposal-url"><?php esc_html_e( 'Website / Reference URL', 'godevs-portfolio' ); ?></label>
+                                <input type="url" id="godevs-proposal-url" name="proposal_url" placeholder="https://" />
+                        </div>
+
+                        <div class="godevs-form-field">
+                                <label for="godevs-proposal-message"><?php esc_html_e( 'Project Description', 'godevs-portfolio' ); ?> <span class="required">*</span></label>
+                                <textarea id="godevs-proposal-message" name="proposal_message" rows="6" required placeholder="<?php esc_attr_e( 'Tell us about your project — goals, scope, anything that helps us understand what you need.', 'godevs-portfolio' ); ?>"></textarea>
                         </div>
 
                         <button type="submit" class="godevs-form-submit wp-element-button">
@@ -265,7 +309,7 @@ add_shortcode( 'godevs_proposal_form', 'godevs_proposal_form_shortcode' );
  * email notification to the site admin.
  */
 function godevs_ajax_submit_booking(): void {
-        check_ajax_referer( 'godevs_booking_form', 'nonce' );
+        check_ajax_referer( 'godevs_booking_form', 'godevs_booking_nonce' );
 
         // Honeypot anti-spam check — if filled, silently fail.
         // Note: we intentionally do NOT read or use the honeypot value — we only
@@ -362,11 +406,12 @@ add_action( 'wp_ajax_nopriv_godevs_submit_booking', 'godevs_ajax_submit_booking'
 /**
  * AJAX handler: Submit proposal form.
  *
- * Sends an email to the site admin with the proposal details.
- * Does NOT create a post.
+ * Stores the proposal as a private `godevs_proposal` post (visible only to
+ * administrators) and sends an email notification to the site admin.
+ * Rate-limited per IP address.
  */
 function godevs_ajax_submit_proposal(): void {
-        check_ajax_referer( 'godevs_proposal_form', 'nonce' );
+        check_ajax_referer( 'godevs_proposal_form', 'godevs_proposal_nonce' );
 
         // Honeypot anti-spam check.
         // We intentionally do NOT read or use the honeypot value — we only check
@@ -375,28 +420,80 @@ function godevs_ajax_submit_proposal(): void {
                 wp_send_json_error( array( 'message' => __( 'Spam detected.', 'godevs-portfolio' ) ), 400 );
         }
 
+        // Rate limiting — max 5 submissions per IP per hour.
+        $ip  = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : 'unknown';
+        $key = 'godevs_proposal_rl_' . md5( $ip );
+        $count = (int) get_transient( $key );
+        if ( $count >= 5 ) {
+                wp_send_json_error( array( 'message' => __( 'Too many submissions. Please try again later.', 'godevs-portfolio' ) ), 429 );
+        }
+
         // Sanitize and validate input.
         // phpcs:disable WordPress.Security.NonceVerification.Recommended -- verified above via check_ajax_referer().
         $name     = isset( $_POST['proposal_name'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_name'] ) ) : '';
         $email    = isset( $_POST['proposal_email'] ) ? sanitize_email( wp_unslash( $_POST['proposal_email'] ) ) : '';
         $company  = isset( $_POST['proposal_company'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_company'] ) ) : '';
-        $budget   = isset( $_POST['proposal_budget'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_budget'] ) ) : '';
+        $phone    = isset( $_POST['proposal_phone'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_phone'] ) ) : '';
         $type     = isset( $_POST['proposal_type'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_type'] ) ) : '';
+        $budget   = isset( $_POST['proposal_budget'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_budget'] ) ) : '';
+        $timeline = isset( $_POST['proposal_timeline'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_timeline'] ) ) : '';
+        $services = isset( $_POST['proposal_services'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_services'] ) ) : '';
+        $url      = isset( $_POST['proposal_url'] ) ? esc_url_raw( wp_unslash( $_POST['proposal_url'] ) ) : '';
+        $method   = isset( $_POST['proposal_contact_method'] ) ? sanitize_text_field( wp_unslash( $_POST['proposal_contact_method'] ) ) : '';
         $message  = isset( $_POST['proposal_message'] ) ? sanitize_textarea_field( wp_unslash( $_POST['proposal_message'] ) ) : '';
         // phpcs:enable WordPress.Security.NonceVerification.Recommended.
 
         // Validate required fields.
-        if ( empty( $name ) || empty( $email ) || empty( $message ) ) {
-                wp_send_json_error( array( 'message' => __( 'Please fill in all required fields.', 'godevs-portfolio' ) ), 400 );
+        if ( empty( $name ) || empty( $email ) || empty( $type ) || empty( $message ) ) {
+                wp_send_json_error( array( 'message' => __( 'Please fill in all required fields (name, email, project type and description).', 'godevs-portfolio' ) ), 400 );
         }
         if ( ! is_email( $email ) ) {
                 wp_send_json_error( array( 'message' => __( 'Please provide a valid email address.', 'godevs-portfolio' ) ), 400 );
         }
+        if ( '' !== $url && ! wp_http_validate_url( $url ) ) {
+                wp_send_json_error( array( 'message' => __( 'The reference URL is not valid.', 'godevs-portfolio' ) ), 400 );
+        }
 
-        // Send admin email.
+        // Store the proposal as a private post (admins only).
+        $post_id = wp_insert_post(
+                array(
+                        'post_type'    => 'godevs_proposal',
+                        'post_title'   => sprintf( '%s — %s', $name, $type ),
+                        'post_content' => $message,
+                        'post_status'  => 'private',
+                ),
+                true
+        );
+
+        if ( is_wp_error( $post_id ) ) {
+                wp_send_json_error( array( 'message' => __( 'Could not submit your proposal. Please try again.', 'godevs-portfolio' ) ), 500 );
+        }
+
+        $meta_fields = array(
+                '_godevs_proposal_name'           => $name,
+                '_godevs_proposal_email'          => $email,
+                '_godevs_proposal_company'        => $company,
+                '_godevs_proposal_phone'          => $phone,
+                '_godevs_proposal_type'           => $type,
+                '_godevs_proposal_budget'         => $budget,
+                '_godevs_proposal_timeline'       => $timeline,
+                '_godevs_proposal_services'       => $services,
+                '_godevs_proposal_url'            => $url,
+                '_godevs_proposal_contact_method' => $method,
+                '_godevs_proposal_message'        => $message,
+                '_godevs_proposal_status'         => 'new',
+        );
+        foreach ( $meta_fields as $k => $v ) {
+                update_post_meta( $post_id, $k, $v );
+        }
+
+        set_transient( $key, $count + 1, HOUR_IN_SECONDS );
+
+        // Send admin email — a failed mail (e.g. no mail server) is not fatal:
+        // the proposal is stored and visible in the admin.
         $admin_email = get_bloginfo( 'admin_email' );
         $site_name   = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
-        $subject     = sprintf( '[%s] New Proposal: %s', $site_name, $name );
+        $subject     = sprintf( '[%s] New Proposal: %s (%s)', $site_name, $name, $type );
 
         $email_body  = __( "New project proposal received:\n\n", 'godevs-portfolio' );
         $email_body .= sprintf( __( "Name: %s\n", 'godevs-portfolio' ), $name );
@@ -404,13 +501,29 @@ function godevs_ajax_submit_proposal(): void {
         if ( $company ) {
                 $email_body .= sprintf( __( "Company: %s\n", 'godevs-portfolio' ), $company );
         }
+        if ( $phone ) {
+                $email_body .= sprintf( __( "Phone / WhatsApp: %s\n", 'godevs-portfolio' ), $phone );
+        }
         if ( $type ) {
                 $email_body .= sprintf( __( "Project Type: %s\n", 'godevs-portfolio' ), $type );
         }
         if ( $budget ) {
                 $email_body .= sprintf( __( "Budget: %s\n", 'godevs-portfolio' ), $budget );
         }
-        $email_body .= sprintf( "\n" . __( "Project Details:\n%s\n", 'godevs-portfolio' ), $message );
+        if ( $timeline ) {
+                $email_body .= sprintf( __( "Timeline: %s\n", 'godevs-portfolio' ), $timeline );
+        }
+        if ( $services ) {
+                $email_body .= sprintf( __( "Services Needed: %s\n", 'godevs-portfolio' ), $services );
+        }
+        if ( $url ) {
+                $email_body .= sprintf( __( "Reference URL: %s\n", 'godevs-portfolio' ), $url );
+        }
+        if ( $method ) {
+                $email_body .= sprintf( __( "Preferred Contact: %s\n", 'godevs-portfolio' ), $method );
+        }
+        $email_body .= sprintf( "\n" . __( "Project Description:\n%s\n", 'godevs-portfolio' ), $message );
+        $email_body .= sprintf( "\n" . __( "Manage proposal: %s\n", 'godevs-portfolio' ), admin_url( 'post.php?post=' . $post_id . '&action=edit' ) );
 
         // Sanitize name for email header — strip <, >, newlines to prevent header injection.
         $reply_name = str_replace( array( '<', '>', "\r", "\n", "%0d", "%0a" ), '', $name );
@@ -421,13 +534,130 @@ function godevs_ajax_submit_proposal(): void {
                 'Reply-To: ' . $reply_name . ' <' . $email . '>',
         );
 
-        $sent = wp_mail( $admin_email, $subject, $email_body, $headers );
+        wp_mail( $admin_email, $subject, $email_body, $headers );
 
-        if ( ! $sent ) {
-                wp_send_json_error( array( 'message' => __( 'Could not send proposal. Please try again or email us directly.', 'godevs-portfolio' ) ), 500 );
-        }
-
-        wp_send_json_success( array( 'message' => __( 'Proposal sent! We\'ll review and respond within 48 hours.', 'godevs-portfolio' ) ) );
+        wp_send_json_success( array(
+                'message' => __( 'Thank you. Your project inquiry has been received. We\'ll review your proposal and get back to you shortly.', 'godevs-portfolio' ),
+        ) );
 }
 add_action( 'wp_ajax_godevs_submit_proposal', 'godevs_ajax_submit_proposal' );
 add_action( 'wp_ajax_nopriv_godevs_submit_proposal', 'godevs_ajax_submit_proposal' );
+
+/**
+ * Admin columns for the Proposals list table.
+ *
+ * Shows date, name, email, project type, budget and workflow status so the
+ * admin can triage inquiries without opening each one.
+ *
+ * @since 1.1.0
+ */
+function godevs_proposal_admin_columns( array $columns ): array {
+        $new = array();
+        foreach ( $columns as $key => $label ) {
+                if ( 'title' === $key ) {
+                        $new['godevs_proposal_name']   = __( 'Name', 'godevs-portfolio' );
+                        $new['godevs_proposal_email']  = __( 'Email', 'godevs-portfolio' );
+                        $new['godevs_proposal_type']   = __( 'Project Type', 'godevs-portfolio' );
+                        $new['godevs_proposal_budget'] = __( 'Budget', 'godevs-portfolio' );
+                        $new['godevs_proposal_status'] = __( 'Status', 'godevs-portfolio' );
+                }
+                if ( ! in_array( $key, array( 'comments', 'author' ), true ) ) {
+                        $new[ $key ] = $label;
+                }
+        }
+        return $new;
+}
+add_filter( 'manage_godevs_proposal_posts_columns', 'godevs_proposal_admin_columns' );
+
+/**
+ * Render proposal admin column content.
+ *
+ * @since 1.1.0
+ */
+function godevs_proposal_admin_column_content( string $column, int $post_id ): void {
+        $meta_key = '_godevs_proposal_' . str_replace( 'godevs_proposal_', '', $column );
+        $value    = get_post_meta( $post_id, $meta_key, true );
+        if ( 'godevs_proposal_status' === $column ) {
+                $statuses = godevs_portfolio_proposal_statuses();
+                $current  = $value ?: 'new';
+                echo '<span class="godevs-status godevs-status-' . esc_attr( $current ) . '">' . esc_html( $statuses[ $current ] ?? ucfirst( $current ) ) . '</span>';
+                return;
+        }
+        echo esc_html( $value );
+}
+add_action( 'manage_godevs_proposal_posts_custom_column', 'godevs_proposal_admin_column_content', 10, 2 );
+
+/**
+ * Proposal workflow statuses.
+ *
+ * @since 1.1.0
+ * @return array<string,string> status slug => label.
+ */
+function godevs_portfolio_proposal_statuses(): array {
+        return array(
+                'new'         => __( 'New', 'godevs-portfolio' ),
+                'contacted'   => __( 'Contacted', 'godevs-portfolio' ),
+                'in-progress' => __( 'In Progress', 'godevs-portfolio' ),
+                'completed'   => __( 'Completed', 'godevs-portfolio' ),
+                'archived'    => __( 'Archived', 'godevs-portfolio' ),
+        );
+}
+
+/**
+ * Status meta box on the proposal edit screen — a lightweight select so the
+ * workflow can be managed without a full CRM UI.
+ *
+ * @since 1.1.0
+ */
+function godevs_proposal_add_status_metabox(): void {
+        add_meta_box(
+                'godevs_proposal_status',
+                __( 'Proposal Status', 'godevs-portfolio' ),
+                'godevs_proposal_status_metabox_html',
+                'godevs_proposal',
+                'side',
+                'high'
+        );
+}
+add_action( 'add_meta_boxes', 'godevs_proposal_add_status_metabox' );
+
+/**
+ * Render the status meta box.
+ *
+ * @since 1.1.0
+ */
+function godevs_proposal_status_metabox_html( WP_Post $post ): void {
+        wp_nonce_field( 'godevs_proposal_status_save', 'godevs_proposal_status_nonce' );
+        $current   = get_post_meta( $post->ID, '_godevs_proposal_status', true ) ?: 'new';
+        $statuses  = godevs_portfolio_proposal_statuses();
+        echo '<label class="screen-reader-text" for="godevs_proposal_status">' . esc_html__( 'Proposal status', 'godevs-portfolio' ) . '</label>';
+        echo '<select name="godevs_proposal_status" id="godevs_proposal_status" style="width:100%">';
+        foreach ( $statuses as $slug => $label ) {
+                echo '<option value="' . esc_attr( $slug ) . '"' . selected( $current, $slug, false ) . '>' . esc_html( $label ) . '</option>';
+        }
+        echo '</select>';
+}
+
+/**
+ * Save the status meta box.
+ *
+ * @since 1.1.0
+ */
+function godevs_proposal_save_status( int $post_id ): void {
+        if ( ! isset( $_POST['godevs_proposal_status_nonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_POST['godevs_proposal_status_nonce'] ) ), 'godevs_proposal_status_save' ) ) {
+                return;
+        }
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+                return;
+        }
+        if ( ! current_user_can( 'edit_post', $post_id ) ) {
+                return;
+        }
+        $status    = isset( $_POST['godevs_proposal_status'] ) ? sanitize_key( wp_unslash( $_POST['godevs_proposal_status'] ) ) : 'new';
+        $statuses  = godevs_portfolio_proposal_statuses();
+        if ( ! isset( $statuses[ $status ] ) ) {
+                $status = 'new';
+        }
+        update_post_meta( $post_id, '_godevs_proposal_status', $status );
+}
+add_action( 'save_post_godevs_proposal', 'godevs_proposal_save_status' );
