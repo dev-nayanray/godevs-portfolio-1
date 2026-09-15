@@ -254,8 +254,17 @@ $imported_count = count( $imported );
 <div class="godevs-progress" id="godevs-progress" hidden role="status" aria-live="polite">
         <div class="godevs-progress-backdrop"></div>
         <div class="godevs-progress-panel">
-                <h3 class="godevs-progress-title"><?php esc_html_e( 'Importing demo…', 'godevs-portfolio' ); ?></h3>
+                <div class="godevs-progress-header">
+                        <span class="godevs-progress-demo-name" id="godevs-progress-demo-name"></span>
+                        <span class="godevs-progress-percent" id="godevs-progress-percent">0%</span>
+                </div>
+                <div class="godevs-progress-bar" aria-hidden="true">
+                        <div class="godevs-progress-bar-fill" id="godevs-progress-bar-fill"></div>
+                </div>
                 <ol class="godevs-progress-steps" id="godevs-progress-steps"></ol>
+                <p class="godevs-progress-status" id="godevs-progress-status"></p>
+                <div class="godevs-progress-result" id="godevs-progress-result" hidden></div>
+                <div class="godevs-progress-actions" id="godevs-progress-actions"></div>
         </div>
 </div>
 

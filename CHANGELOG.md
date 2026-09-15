@@ -5,6 +5,12 @@ All notable changes to GoDevs Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-09-16
+
+### Added
+- Modern import progress interface: live step-by-step phases (prepare, cleanup, pages, services, menu, style, finalize) with an animated percentage bar, per-step status, and a final "Demo Ready" success card summarizing pages created, service details, navigation, style variation and homepage — with View Site / Edit Homepage actions. Errors now surface in-panel with a clear failure state instead of an alert and silent reload.
+- Demo service details: importing a demo with a Services page now seeds three godevs_service posts with professional demo-specific copy (intro, deliverables, process, CTA) and appends a Service details query loop to the Services page, making single service pages reachable. Previous demo services are removed automatically on each import (isolation preserved).
+
 ## [1.1.0] - 2026-09-16
 
 ### Added

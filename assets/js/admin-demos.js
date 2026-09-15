@@ -535,6 +535,12 @@
                         btn.style.opacity = '0.5';
                 } );
 
+                // Show the live progress overlay immediately — the import
+                // request runs behind it and the overlay reconciles with the
+                // real result when the server responds.
+                var card = $( '.godevs-demo-card[data-demo-id="' + demoId + '"]' );
+                showImportProgress( card ? card.dataset.demoName || demoId : demoId );
+
                 post( 'godevs_portfolio_import_demo', {
                         demo_id: demoId,
                         mode: mode,
@@ -547,55 +553,19 @@
                                         btn.style.opacity = '';
                                 } );
 
-                                if ( resp && resp.data && resp.data.steps ) {
-                                        showProgress( resp.data.steps );
-                                }
                                 if ( ! resp || ! resp.success ) {
                                         var msg = ( resp && resp.data && resp.data.message ) || I18N.importFailed || 'Import failed.';
-                                        window.alert( msg );
-                                        hideProgress();
+                                        finishImportError( msg );
                                         return;
                                 }
-                                var data = resp.data;
-                                if ( data.steps ) {
-                                        data.steps.forEach( function ( s ) {
-                                                markStepComplete( s.id );
-                                        } );
-                                }
-                                var errorsHTML = '';
-                                if ( data.errors && data.errors.length > 0 ) {
-                                        errorsHTML = '<p><strong>Some steps had issues:</strong></p><ul>' +
-                                                data.errors.map( function ( e ) { return '<li>' + escapeHTML( e ) + '</li>'; } ).join( '' ) +
-                                                '</ul>';
-                                }
-                                var replacedHTML = '';
-                                if ( data.replaced_demos && data.replaced_demos.length > 0 ) {
-                                        replacedHTML = '<p><strong>Replaced demo(s):</strong> ' +
-                                                data.replaced_demos.map( escapeHTML ).join( ', ' ) +
-                                                ' — their pages were moved to trash.</p>';
-                                }
-                                var successMsg = I18N.importComplete || 'Import complete!';
-                                if ( data.viewSiteUrl ) {
-                                        successMsg += ' ' + ( I18N.redirecting || 'Redirecting to your live site…' );
-                                }
-                                setTimeout( function () {
-                                        hideProgress();
-                                        if ( data.viewSiteUrl ) {
-                                                // Redirect to the live site so the user immediately
-                                                // sees the imported demo content.
-                                                window.location.href = data.viewSiteUrl;
-                                        } else {
-                                                window.location.reload();
-                                        }
-                                }, 1200 );
+                                finishImportSuccess( resp.data || {} );
                         } )
                         .catch( function () {
                                 importBtns.forEach( function ( btn ) {
                                         btn.disabled = false;
                                         btn.style.opacity = '';
                                 } );
-                                window.alert( I18N.networkErrorImport || 'Network error during import.' );
-                                hideProgress();
+                                finishImportError( I18N.networkError || 'Network error — the import request failed. Please try again.' );
                         } );
         }
 
@@ -640,6 +610,147 @@
 
         var progressEl = $( '#godevs-progress' );
         var progressSteps = $( '#godevs-progress-steps' );
+        var progressFill = $( '#godevs-progress-bar-fill' );
+        var progressPct = $( '#godevs-progress-percent' );
+        var progressStatus = $( '#godevs-progress-status' );
+        var progressResult = $( '#godevs-progress-result' );
+        var progressActions = $( '#godevs-progress-actions' );
+        var progressDemoName = $( '#godevs-progress-demo-name' );
+        var progressTimers = [];
+        var progressTick = null;
+
+        // Import phases shown to the user. The client advances through them
+        // while the server works, then reconciles with the real result.
+        var PHASES = [
+                { id: 'prepare', label: 'Preparing import' },
+                { id: 'cleanup', label: 'Removing previous demo content' },
+                { id: 'pages', label: 'Creating pages' },
+                { id: 'services', label: 'Seeding service details' },
+                { id: 'menu', label: 'Building navigation menu' },
+                { id: 'style', label: 'Applying style variation' },
+                { id: 'finalize', label: 'Finalizing' }
+        ];
+
+        function clearProgressTimers() {
+                progressTimers.forEach( function ( t ) { clearTimeout( t ); } );
+                progressTimers = [];
+                if ( progressTick ) { clearInterval( progressTick ); progressTick = null; }
+        }
+
+        function setProgressPercent( pct ) {
+                if ( progressFill ) progressFill.style.width = pct + '%';
+                if ( progressPct ) progressPct.textContent = Math.round( pct ) + '%';
+        }
+
+        function setStepState( stepId, state ) {
+                var li = progressSteps ? progressSteps.querySelector( 'li[data-step-id="' + stepId + '"]' ) : null;
+                if ( li ) {
+                        li.classList.remove( 'is-active', 'is-complete', 'is-error' );
+                        li.classList.add( state );
+                }
+        }
+
+        function showImportProgress( demoName ) {
+                if ( ! progressEl || ! progressSteps ) return;
+                clearProgressTimers();
+                if ( progressResult ) { progressResult.hidden = true; progressResult.innerHTML = ''; }
+                if ( progressActions ) progressActions.innerHTML = '';
+                if ( progressDemoName ) progressDemoName.textContent = demoName || '';
+                if ( progressStatus ) progressStatus.textContent = '';
+                progressSteps.innerHTML = PHASES.map( function ( p ) {
+                        return '<li data-step-id="' + p.id + '">' + escapeHTML( p.label ) + '</li>';
+                } ).join( '' );
+                setProgressPercent( 0 );
+                progressEl.hidden = false;
+                document.body.style.overflow = 'hidden';
+
+                // Animate through the phases while the import request runs.
+                // Each phase gets an increasing share of the bar; the last
+                // (~90–99%) is left for the server response.
+                var phaseMs = [ 300, 900, 2600, 1200, 900, 1200, 900 ];
+                var weights = [ 6, 10, 34, 12, 12, 16, 8 ];
+                var elapsed = 0;
+                var total = phaseMs.reduce( function ( a, b ) { return a + b; }, 0 );
+                var pctSoFar = 0;
+                PHASES.forEach( function ( p, i ) {
+                        elapsed += phaseMs[ i ];
+                        pctSoFar += weights[ i ];
+                        progressTimers.push( setTimeout( function () {
+                                setStepState( p.id, 'is-complete' );
+                                var next = PHASES[ i + 1 ];
+                                if ( next ) setStepState( next.id, 'is-active' );
+                                if ( progressStatus && next ) progressStatus.textContent = next.label + '…';
+                        }, elapsed ) );
+                } );
+                setStepState( PHASES[ 0 ].id, 'is-active' );
+                if ( progressStatus ) progressStatus.textContent = PHASES[ 0 ].label + '…';
+                // Slow tail ticker creeping toward 99% while waiting.
+                var shown = 0;
+                progressTick = setInterval( function () {
+                        var target = Math.min( 99, pctSoFar + ( 99 - pctSoFar ) * 0.06 );
+                        shown = Math.max( shown, target );
+                        setProgressPercent( Math.min( 99, shown ) );
+                }, 250 );
+        }
+
+        function finishImportSuccess( data ) {
+                clearProgressTimers();
+                PHASES.forEach( function ( p ) { setStepState( p.id, 'is-complete' ); } );
+                setProgressPercent( 100 );
+                if ( progressStatus ) progressStatus.textContent = '';
+
+                var pageCount = data.pages ? Object.keys( data.pages ).length : 0;
+                var serviceCount = data.services_created || 0;
+                var rows = [
+                        { label: 'Pages created', value: pageCount },
+                        { label: 'Service details', value: serviceCount },
+                        { label: 'Navigation menu', value: data.nav_menu_id ? 'Built & assigned' : '—' },
+                        { label: 'Style variation', value: data.style_label || ( data.style_applied ? 'Applied' : '—' ) },
+                        { label: 'Homepage', value: data.homepage_id ? 'Set' : '—' }
+                ];
+                var html = '<div class="godevs-ready-badge"><span aria-hidden="true">✓</span> Demo Ready</div>';
+                html += '<p class="godevs-ready-sub">' + escapeHTML( data.demo && data.demo.name ? data.demo.name + ' is live on your site.' : 'Your demo is live.' ) + '</p>';
+                html += '<ul class="godevs-ready-summary">';
+                rows.forEach( function ( r ) {
+                        html += '<li><span>' + escapeHTML( r.label ) + '</span><strong>' + escapeHTML( String( r.value ) ) + '</strong></li>';
+                } );
+                html += '</ul>';
+                if ( data.errors && data.errors.length ) {
+                        html += '<div class="godevs-ready-warnings"><strong>Notes:</strong><ul>' +
+                                data.errors.map( function ( e ) { return '<li>' + escapeHTML( e ) + '</li>'; } ).join( '' ) + '</ul></div>';
+                }
+                if ( progressResult ) { progressResult.innerHTML = html; progressResult.hidden = false; }
+
+                if ( progressActions ) {
+                        progressActions.innerHTML =
+                                ( data.viewSiteUrl ? '<a class="button button-primary" href="' + escapeHTML( data.viewSiteUrl ) + '">View Site</a> ' : '' ) +
+                                ( data.editHomepageUrl ? '<a class="button" href="' + escapeHTML( data.editHomepageUrl ) + '">Edit Homepage</a> ' : '' ) +
+                                '<button type="button" class="button" id="godevs-progress-close">' + escapeHTML( I18N.done || 'Done' ) + '</button>';
+                        var closeBtn = $( '#godevs-progress-close' );
+                        if ( closeBtn ) closeBtn.addEventListener( 'click', function () { hideProgress(); window.location.reload(); } );
+                }
+        }
+
+        function finishImportError( message ) {
+                clearProgressTimers();
+                var activeLi = progressSteps ? progressSteps.querySelector( 'li.is-active' ) : null;
+                if ( activeLi ) { activeLi.classList.remove( 'is-active' ); activeLi.classList.add( 'is-error' ); }
+                if ( progressStatus ) progressStatus.textContent = '';
+                if ( progressResult ) {
+                        progressResult.innerHTML = '<div class="godevs-ready-badge is-error"><span aria-hidden="true">✕</span> Import Failed</div>' +
+                                '<p class="godevs-ready-sub">' + escapeHTML( message || 'The import could not be completed. Nothing on your site was changed by this attempt beyond what is listed above.' ) + '</p>';
+                        progressResult.hidden = false;
+                }
+                if ( progressActions ) {
+                        progressActions.innerHTML = '<button type="button" class="button" id="godevs-progress-close">' + escapeHTML( I18N.close || 'Close' ) + '</button>';
+                        var closeBtn = $( '#godevs-progress-close' );
+                        if ( closeBtn ) closeBtn.addEventListener( 'click', function () { hideProgress(); window.location.reload(); } );
+                }
+        }
+
+        function markStepComplete( stepId ) {
+                setStepState( stepId, 'is-complete' );
+        }
 
         function showProgress( steps ) {
                 if ( ! progressEl || ! progressSteps ) return;
@@ -650,15 +761,8 @@
                 document.body.style.overflow = 'hidden';
         }
 
-        function markStepComplete( stepId ) {
-                var li = progressSteps ? progressSteps.querySelector( 'li[data-step-id="' + stepId + '"]' ) : null;
-                if ( li ) {
-                        li.classList.remove( 'is-active' );
-                        li.classList.add( 'is-complete' );
-                }
-        }
-
         function hideProgress() {
+                clearProgressTimers();
                 if ( progressEl ) {
                         progressEl.hidden = true;
                 }

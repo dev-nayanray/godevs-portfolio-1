@@ -470,6 +470,14 @@ function godevs_portfolio_ajax_import_demo(): void {
                 );
         }
 
+        // 2b. Seed demo service details so "Services → Service Details" works
+        // as a real journey: three godevs_service posts per demo, linked from
+        // a query loop appended to the demo's Services page.
+        $services_created = 0;
+        if ( in_array( 'services', $demo['pages'], true ) && isset( $created_pages['services'] ) && post_type_exists( 'godevs_service' ) ) {
+                $services_created = godevs_portfolio_seed_demo_services( $demo_id, $created_pages['services'] );
+        }
+
         // 3. Create the navigation menu.
         $menu_name = sprintf(
                 /* translators: %s: demo name. */
@@ -608,6 +616,8 @@ function godevs_portfolio_ajax_import_demo(): void {
                         'nav_menu_id' => $nav_menu_id,
                         'homepage_id' => $homepage_id,
                         'style'       => $style_applied,
+                        'style_label' => $demo['style'] ? $demo['style'] : '',
+                        'services_created' => $services_created,
                         'errors'      => $errors,
                         'steps'       => $steps,
                         'replaced_demos' => $replaced_demos,
@@ -620,6 +630,158 @@ function godevs_portfolio_ajax_import_demo(): void {
         // phpcs:enable WordPress.Security.NonceVerification.Recommended.
 }
 add_action( 'wp_ajax_godevs_portfolio_import_demo', 'godevs_portfolio_ajax_import_demo' );
+
+/**
+ * Seed demo service detail posts and link them from the Services page.
+ *
+ * Creates three godevs_service posts with demo-specific professional copy,
+ * each flagged so the next import can clean them up (demo isolation), and
+ * appends a Query Loop block to the imported Services page so single
+ * service pages are reachable.
+ *
+ * @param string $demo_id          Demo slug (e.g. 'nova').
+ * @param int    $services_page_id Imported Services page ID.
+ * @return int Number of services created.
+ * @since 1.2.0
+ */
+function godevs_portfolio_seed_demo_services( string $demo_id, int $services_page_id ): int {
+        // Remove services seeded by ANY previous demo import.
+        $old = get_posts(
+                array(
+                        'post_type'      => 'godevs_service',
+                        'posts_per_page' => 30,
+                        'meta_key'       => '_godevs_demo_service',
+                        'fields'         => 'ids',
+                        'post_status'    => 'any',
+                )
+        );
+        foreach ( $old as $old_id ) {
+                wp_delete_post( $old_id, true );
+        }
+
+        $catalog = godevs_portfolio_demo_services_catalog();
+        if ( ! isset( $catalog[ $demo_id ] ) ) {
+                return 0;
+        }
+
+        $created = 0;
+        foreach ( $catalog[ $demo_id ] as $service ) {
+                $body = '<!-- wp:paragraph --><p class="godevs-service-intro">' . esc_html( $service['intro'] ) . '</p><!-- /wp:paragraph -->';
+                $body .= '<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">What\'s included</h2><!-- /wp:heading -->';
+                $body .= '<!-- wp:list --><ul class="wp-block-list">';
+                foreach ( $service['deliverables'] as $d ) {
+                        $body .= '<li>' . esc_html( $d ) . '</li>';
+                }
+                $body .= '</ul><!-- /wp:list -->';
+                $body .= '<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">How we work</h2><!-- /wp:heading -->';
+                $body .= '<!-- wp:paragraph --><p>' . esc_html( $service['process'] ) . '</p><!-- /wp:paragraph -->';
+                $body .= '<!-- wp:paragraph --><p><a class="wp-block-button__link wp-element-button" href="/contact/">Discuss this service</a></p><!-- /wp:paragraph -->';
+
+                $post_id = wp_insert_post(
+                        array(
+                                'post_type'    => 'godevs_service',
+                                'post_title'   => $service['title'],
+                                'post_excerpt' => $service['intro'],
+                                'post_content' => $body,
+                                'post_status'  => 'publish',
+                        ),
+                        true
+                );
+                if ( is_wp_error( $post_id ) ) {
+                        continue;
+                }
+                update_post_meta( $post_id, '_godevs_demo_service', $demo_id );
+                $created++;
+        }
+
+        if ( $created > 0 ) {
+                // Append a query loop linking the single service pages.
+                $loop  = '<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Service details</h2><!-- /wp:heading -->';
+                $loop .= '<!-- wp:query {"query":{"postType":"godevs_service","perPage":9,"orderBy":"date","order":"asc"},"layout":{"type":"default"}} -->';
+                $loop .= '<div class="wp-block-query">';
+                $loop .= '<!-- wp:post-template --><ul class="wp-block-post-template">';
+                $loop .= '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} --><div class="wp-block-group">';
+                $loop .= '<!-- wp:post-title {"isLink":true} /-->';
+                $loop .= '<!-- wp:post-excerpt {"excerptLength":24} /-->';
+                $loop .= '</div><!-- /wp:group -->';
+                $loop .= '</ul><!-- /wp:post-template -->';
+                $loop .= '</div><!-- /wp:query -->';
+
+                $page = get_post( $services_page_id );
+                if ( $page ) {
+                        wp_update_post(
+                                array(
+                                        'ID'           => $services_page_id,
+                                        'post_content' => $page->post_content . "\n" . $loop,
+                                )
+                        );
+                }
+        }
+
+        return $created;
+}
+
+/**
+ * Demo service catalog — three services per demo with professional copy.
+ *
+ * @return array<string, array<int, array<string,mixed>>>
+ * @since 1.2.0
+ */
+function godevs_portfolio_demo_services_catalog(): array {
+        return array(
+                'nova'      => array(
+                        array( 'title' => 'Brand Identity Systems', 'intro' => 'Naming, identity and design systems that give ambitious companies a voice people remember.', 'deliverables' => array( 'Brand strategy workshop', 'Logo & identity system', 'Typography and color system', 'Brand guidelines book' ), 'process' => 'We run a two-week strategy sprint, then design in weekly reviews with your team until the system is ready to ship.' ),
+                        array( 'title' => 'Digital Product Design', 'intro' => 'Websites and product interfaces designed end-to-end, from first wireframe to design system handover.', 'deliverables' => array( 'UX research & flows', 'High-fidelity UI design', 'Interactive prototype', 'Design system in Figma' ), 'process' => 'Discovery, two design iterations, prototype testing with real users, then a documented handover to engineering.' ),
+                        array( 'title' => 'Development & Launch', 'intro' => 'Fast, accessible WordPress builds that editors love and search engines reward.', 'deliverables' => array( 'WordPress build', 'Performance optimization', 'SEO foundations', 'Editor training session' ), 'process' => 'Two-week build cycles with a staging site you can watch progress on, then launch day support.' ),
+                ),
+                'atelier'   => array(
+                        array( 'title' => 'Art Direction', 'intro' => 'Direction for campaigns and editorial projects that need a considered, authored point of view.', 'deliverables' => array( 'Concept & moodboards', 'Photography direction', 'Typography direction', 'Final artwork supervision' ), 'process' => 'We begin with references and conversation, then direct production in close, small rounds.' ),
+                        array( 'title' => 'Visual Identity', 'intro' => 'Identities for studios, makers and cultural projects — quiet, confident and built to last.', 'deliverables' => array( 'Logotype & marks', 'Stationery suite', 'Packaging or signage', 'Usage guidelines' ), 'process' => 'A sketch-led process: dozens of directions on paper before anything touches a screen.' ),
+                        array( 'title' => 'Editorial Design', 'intro' => 'Books, catalogues and reports with considered grids and unhurried typography.', 'deliverables' => array( 'Grid & typographic system', 'Cover concepts', 'Full layout', 'Print-ready artwork' ), 'process' => 'Sample spreads first, then full layout in passes with proofing at every stage.' ),
+                ),
+                'pulse'     => array(
+                        array( 'title' => 'UX Research & Audits', 'intro' => 'Evidence instead of opinions — user interviews, analytics reviews and usability audits.', 'deliverables' => array( 'Research plan', '5–8 user interviews', 'Usability audit report', 'Prioritized recommendations' ), 'process' => 'One week of fieldwork, one week of synthesis, a findings workshop with your team.' ),
+                        array( 'title' => 'Product Design', 'intro' => 'End-to-end design of web and mobile products, from flows to a developer-ready system.', 'deliverables' => array( 'User flows & wireframes', 'High-fidelity screens', 'Interactive prototype', 'Component library' ), 'process' => 'Two-week design sprints with prototype testing between each sprint.' ),
+                        array( 'title' => 'Design Systems', 'intro' => 'Token-based design systems that keep growing products consistent.', 'deliverables' => array( 'Component audit', 'Token architecture', 'Documented components', 'Figma + code sync' ), 'process' => 'We audit what exists, define the tokens, and ship the system with your engineers.' ),
+                ),
+                'frame'     => array(
+                        array( 'title' => 'Editorial Photography', 'intro' => 'Commissioned photo essays and portrait sessions with a quiet, deliberate eye.', 'deliverables' => array( 'Creative brief', 'Full-day session', 'Curated image set (40+)', 'Print-ready masters' ), 'process' => 'A conversation about the story first, location scouting, then a calm, unhurried shoot day.' ),
+                        array( 'title' => 'Print Sales', 'intro' => 'Limited archival prints from the ongoing bodies of work.', 'deliverables' => array( 'Hahnemühle archival paper', 'Signed & numbered', 'Certificate of authenticity', 'Worldwide shipping' ), 'process' => 'Choose a print, we confirm the edition, and ship within two weeks.' ),
+                        array( 'title' => 'Commissions', 'intro' => 'Long-form documentary commissions for publications and institutions.', 'deliverables' => array( 'Proposal & treatment', 'Multi-day coverage', 'Edited story', 'Caption & metadata package' ), 'process' => 'We agree the story, the days and the deliverables in writing — then I disappear until the edit is ready.' ),
+                ),
+                'architect' => array(
+                        array( 'title' => 'Residential Architecture', 'intro' => 'Homes shaped around light, material and the rituals of the people who live in them.', 'deliverables' => array( 'Feasibility study', 'Concept & planning set', 'Technical documentation', 'Site supervision' ), 'process' => 'We start with the site and a brief, then develop the project through models and 1:1 material studies.' ),
+                        array( 'title' => 'Interior Design', 'intro' => 'Interiors that carry the architecture inside — calm surfaces, honest materials.', 'deliverables' => array( 'Spatial concept', 'Material & finish palette', 'Custom joinery design', 'Furniture & lighting plan' ), 'process' => 'Concept boards, then detailed drawings and samples, resolved before a single wall opens.' ),
+                        array( 'title' => 'Consultation', 'intro' => 'Focused advisory sessions for renovations, layouts and material decisions.', 'deliverables' => array( 'Pre-purchase assessment', 'Layout options study', 'Material guidance', 'Written summary' ), 'process' => 'A site visit, a working session, and a clear written recommendation within a week.' ),
+                ),
+                'noir'      => array(
+                        array( 'title' => 'Direction', 'intro' => 'Direction for films that need a cinematic instinct and a steady hand.', 'deliverables' => array( 'Treatment development', 'Casting & rehearsals', 'On-set direction', 'Editorial supervision' ), 'process' => 'Long development, short lists, precise shoots — the film is made three times: script, set and cut.' ),
+                        array( 'title' => 'Cinematography', 'intro' => 'Photography for narratives, documentaries and commercials — light first, always.', 'deliverables' => array( 'Look development', 'Camera & lens package', 'Principal photography', 'Grading supervision' ), 'process' => 'Tests before the shoot, discipline during it, and a grade I attend from first pass to final.' ),
+                        array( 'title' => 'Music Videos', 'intro' => 'Three-to-four minute worlds built around a song and its artist.', 'deliverables' => array( 'Concept & boards', 'Two-day shoot', 'Edit & grade', 'Delivery masters' ), 'process' => 'The track leads. We build one strong idea and protect it all the way to delivery.' ),
+                ),
+                'mono'      => array(
+                        array( 'title' => 'Web Application Development', 'intro' => 'Full-stack builds with boring, reliable technology and honest timelines.', 'deliverables' => array( 'Architecture document', 'Working application', 'Automated test suite', 'Deployment pipeline' ), 'process' => 'Weekly shipped increments behind feature flags — you see progress every Friday.' ),
+                        array( 'title' => 'WordPress Engineering', 'intro' => 'Block themes, custom blocks and performant builds done properly.', 'deliverables' => array( 'Block theme build', 'Custom Gutenberg blocks', 'Performance budget pass', 'CI for releases' ), 'process' => 'Design tokens in, semantic templates out, Core Web Vitals verified before launch.' ),
+                        array( 'title' => 'Technical Consulting', 'intro' => 'Second opinions, audits and rescue missions for struggling codebases.', 'deliverables' => array( 'Codebase audit', 'Risk register', 'Refactoring roadmap', 'Pairing sessions' ), 'process' => 'A week of reading and mapping, then a written plan you could execute with or without me.' ),
+                ),
+                'luxe'      => array(
+                        array( 'title' => 'Collection Development', 'intro' => 'Seasonal collections developed from concept to production-ready specification.', 'deliverables' => array( 'Concept & mood direction', 'Colour & fabric story', 'Full line drawings', 'Tech packs' ), 'process' => 'Research and draping in the studio, then fittings in three precise rounds.' ),
+                        array( 'title' => 'Styling & Art Direction', 'intro' => 'Editorial and campaign styling with a restrained, material-first sensibility.', 'deliverables' => array( 'Styling concept', 'Shoot-day styling', 'On-set art direction', 'Editorial selects' ), 'process' => 'A shared reference file, one fitting, and a shoot day that runs to the minute.' ),
+                        array( 'title' => 'Bespoke Commissions', 'intro' => 'One-of-one pieces made to measure for private clients.', 'deliverables' => array( 'Design consultation', 'Toile fittings', 'Final garment', 'Care package' ), 'process' => 'Three fittings over eight weeks; nothing leaves the atelier until it is right.' ),
+                ),
+                'journal'   => array(
+                        array( 'title' => 'Writing & Essays', 'intro' => 'Long-form essays and reported features for publications that value slow reading.', 'deliverables' => array( 'Pitch & outline', 'Reported draft', 'Final edit', 'Fact-check notes' ), 'process' => 'Weeks of reading, days of interviews, then a draft you can cut into stone.' ),
+                        array( 'title' => 'Editing', 'intro' => 'Developmental editing for book-length manuscripts and essay collections.', 'deliverables' => array( 'Manuscript read & letter', 'Structural edit', 'Line edit', 'Reader\'s report' ), 'process' => 'One full read, an editorial letter, then chapter-by-chapter collaboration.' ),
+                        array( 'title' => 'Speaking', 'intro' => 'Talks and keynotes on writing, attention and the craft of the long sentence.', 'deliverables' => array( 'Keynote (30–45 min)', 'Customized for your event', 'Q&A facilitation', 'Reading & signing' ), 'process' => 'A call about your audience, a tailored talk, and no slides with bullet points.' ),
+                ),
+                'horizon'   => array(
+                        array( 'title' => 'Editorial Assignments', 'intro' => 'Travel and documentary assignments for magazines, brands and tourism boards.', 'deliverables' => array( 'Assignment treatment', '5–10 day coverage', 'Curated story edit', 'Full caption & metadata' ), 'process' => 'We agree the story and the season; I come back with a complete, captioned edit.' ),
+                        array( 'title' => 'Commercial Campaigns', 'intro' => 'Location campaigns with cinematic light and a documentary spine.', 'deliverables' => array( 'Mood & recce report', 'Production coordination', 'Campaign stills', 'Motion capture (optional)' ), 'process' => 'Recce first, a tight shot list second, and magic hours protected on the calendar.' ),
+                        array( 'title' => 'Print Exhibitions', 'intro' => 'Curated prints and exhibitions from a decade of journeys.', 'deliverables' => array( 'Curated selection', 'Museum-grade prints', 'Exhibition text', 'Framing consultation' ), 'process' => 'We choose a theme together; I deliver framed, sequenced work ready to hang.' ),
+                ),
+                'pulse-x'   => array(),
+        );
+}
 
 /**
  * AJAX: Remove an imported demo.
