@@ -1,0 +1,254 @@
+{
+        "$schema": "https://schemas.wp.org/trunk/theme.json",
+        "version": 3,
+        "title": "Noir",
+        "description": "NOIR — Film Director / Cinematographer. Near-black cinematic base, soft warm white, restrained film-red accent, Inter at bold weights for film-title-sequence typography, uppercase cinematic metadata. Dark, immersive, emotional, premium.",
+        "settings": {
+                "color": {
+                        "palette": [
+                                { "slug": "primary", "color": "#0A0908", "name": "Primary" },
+                                { "slug": "secondary", "color": "#1A1715", "name": "Secondary" },
+                                { "slug": "accent", "color": "#C2422B", "name": "Accent" },
+                                { "slug": "accent-hover", "color": "#D8543C", "name": "Accent Hover" },
+                                { "slug": "base", "color": "#0A0908", "name": "Base" },
+                                { "slug": "surface", "color": "#121110", "name": "Surface" },
+                                { "slug": "surface-muted", "color": "#161312", "name": "Surface Muted" },
+                                { "slug": "surface-elevated", "color": "#1C1917", "name": "Surface Elevated" },
+                                { "slug": "foreground", "color": "#F0EBE3", "name": "Foreground" },
+                                { "slug": "muted", "color": "#8A8378", "name": "Muted" },
+                                { "slug": "line", "color": "#262220", "name": "Line" },
+                                { "slug": "success", "color": "#6B8A4A", "name": "Success" },
+                                { "slug": "warning", "color": "#C8862E", "name": "Warning" },
+                                { "slug": "error", "color": "#C2422B", "name": "Error" },
+                                { "slug": "contrast", "color": "#0A0908", "name": "Contrast" }
+                        ]
+                },
+                "typography": {
+                        "fontFamilies": [
+                                {
+                                        "slug": "display",
+                                        "name": "Display",
+                                        "fontFamily": "\"Inter\", \"SF Pro Display\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+                                },
+                                {
+                                        "slug": "body",
+                                        "name": "Body",
+                                        "fontFamily": "\"Inter\", \"SF Pro Text\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+                                },
+                                {
+                                        "slug": "mono",
+                                        "name": "Mono",
+                                        "fontFamily": "\"SF Mono\", \"JetBrains Mono\", \"Menlo\", \"Consolas\", monospace"
+                                },
+                                {
+                                        "slug": "serif",
+                                        "name": "Serif",
+                                        "fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
+                                }
+                        ],
+                        "fontSizes": [
+                                { "slug": "x-small", "size": "0.6875rem", "name": "Caption" },
+                                { "slug": "small", "size": "0.8125rem", "name": "Small" },
+                                { "slug": "normal", "size": "1rem", "name": "Body" },
+                                {
+                                        "slug": "medium",
+                                        "size": "1.1875rem",
+                                        "name": "Large Body",
+                                        "fluid": { "min": "1.0625rem", "max": "1.375rem" }
+                                },
+                                {
+                                        "slug": "large",
+                                        "size": "1.5rem",
+                                        "name": "H3",
+                                        "fluid": { "min": "1.25rem", "max": "1.875rem" }
+                                },
+                                {
+                                        "slug": "x-large",
+                                        "size": "2rem",
+                                        "name": "H2",
+                                        "fluid": { "min": "1.625rem", "max": "2.5rem" }
+                                },
+                                {
+                                        "slug": "xx-large",
+                                        "size": "3rem",
+                                        "name": "H1",
+                                        "fluid": { "min": "2.25rem", "max": "4.25rem" }
+                                },
+                                {
+                                        "slug": "xxx-large",
+                                        "size": "4.5rem",
+                                        "name": "Display",
+                                        "fluid": { "min": "2.75rem", "max": "6.5rem" }
+                                },
+                                {
+                                        "slug": "huge",
+                                        "size": "6.5rem",
+                                        "name": "Display Hero",
+                                        "fluid": { "min": "3.25rem", "max": "9rem" }
+                                }
+                        ]
+                }
+        },
+        "styles": {
+                "color": {
+                        "background": "#0A0908",
+                        "text": "#F0EBE3"
+                },
+                "spacing": {
+                        "padding": {
+                                "top": "0",
+                                "right": "var:preset|spacing|60",
+                                "bottom": "0",
+                                "left": "var:preset|spacing|60"
+                        },
+                        "blockGap": "var:preset|spacing|60"
+                },
+                "typography": {
+                        "fontFamily": "var:preset|font-family|body",
+                        "fontSize": "var:preset|font-size|normal",
+                        "lineHeight": "1.65",
+                        "fontWeight": "400"
+                },
+                "elements": {
+                        "link": {
+                                "color": { "text": "#F0EBE3" },
+                                "typography": { "textDecoration": "underline", "textUnderlineOffset": "3px" }
+                        },
+                        "heading": {
+                                "color": { "text": "#F0EBE3" },
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontWeight": "700",
+                                        "lineHeight": "1.02",
+                                        "letterSpacing": "-0.03em",
+                                        "textTransform": "none"
+                                }
+                        },
+                        "h1": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|huge",
+                                        "lineHeight": "0.98",
+                                        "letterSpacing": "-0.035em",
+                                        "fontWeight": "700"
+                                }
+                        },
+                        "h2": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|xxx-large",
+                                        "lineHeight": "1.0",
+                                        "letterSpacing": "-0.03em",
+                                        "fontWeight": "700"
+                                }
+                        },
+                        "h3": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|x-large",
+                                        "lineHeight": "1.1",
+                                        "letterSpacing": "-0.02em",
+                                        "fontWeight": "600"
+                                }
+                        },
+                        "h4": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|body",
+                                        "fontSize": "var:preset|font-size|medium",
+                                        "fontWeight": "600",
+                                        "letterSpacing": "0.18em",
+                                        "textTransform": "uppercase"
+                                }
+                        },
+                        "button": {
+                                "border": { "radius": "0" },
+                                "color": {
+                                        "background": "#F0EBE3",
+                                        "text": "#0A0908"
+                                },
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|body",
+                                        "fontWeight": "600",
+                                        "fontSize": "0.6875rem",
+                                        "letterSpacing": "0.2em",
+                                        "textTransform": "uppercase"
+                                },
+                                "spacing": {
+                                        "padding": {
+                                                "top": "1rem",
+                                                "right": "1.75rem",
+                                                "bottom": "1rem",
+                                                "left": "1.75rem"
+                                        }
+                                },
+                                ":hover": {
+                                        "color": { "background": "#C2422B", "text": "#F0EBE3" }
+                                },
+                                ":focus": {
+                                        "color": { "background": "#C2422B", "text": "#F0EBE3" },
+                                        "outline": { "offset": "3px" }
+                                }
+                        },
+                        "caption": {
+                                "color": { "text": "#8A8378" },
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|body",
+                                        "fontSize": "0.6875rem",
+                                        "letterSpacing": "0.14em",
+                                        "textTransform": "uppercase",
+                                        "fontWeight": "500"
+                                }
+                        }
+                },
+                "blocks": {
+                        "core/site-title": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontWeight": "700",
+                                        "letterSpacing": "0.24em",
+                                        "fontSize": "0.9375rem",
+                                        "textTransform": "uppercase"
+                                }
+                        },
+                        "core/navigation": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|body",
+                                        "fontSize": "0.75rem",
+                                        "fontWeight": "500",
+                                        "letterSpacing": "0.2em",
+                                        "textTransform": "uppercase"
+                                }
+                        },
+                        "core/post-title": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|huge",
+                                        "lineHeight": "0.98",
+                                        "letterSpacing": "-0.035em",
+                                        "fontWeight": "700"
+                                }
+                        },
+                        "core/separator": {
+                                "color": { "text": "#262220" }
+                        },
+                        "core/quote": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|x-large",
+                                        "lineHeight": "1.15",
+                                        "letterSpacing": "-0.02em",
+                                        "fontWeight": "500"
+                                }
+                        },
+                        "core/pullquote": {
+                                "typography": {
+                                        "fontFamily": "var:preset|font-family|display",
+                                        "fontSize": "var:preset|font-size|xx-large",
+                                        "lineHeight": "1.08",
+                                        "letterSpacing": "-0.025em",
+                                        "fontWeight": "500"
+                                }
+                        }
+                }
+        }
+}

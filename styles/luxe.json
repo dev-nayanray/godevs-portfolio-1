@@ -1,0 +1,255 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Luxe",
+	"description": "LUXE — Fashion Designer / Stylist / Creative Fashion Portfolio. Soft ivory base, deep charcoal, muted gold accent. Newsreader serif display + Inter UI sans + uppercase tracked metadata. Elegant, editorial, sophisticated, image-led luxury fashion.",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "primary", "color": "#1A1814", "name": "Primary" },
+				{ "slug": "secondary", "color": "#3A352E", "name": "Secondary" },
+				{ "slug": "accent", "color": "#9A7B3F", "name": "Accent" },
+				{ "slug": "accent-hover", "color": "#846830", "name": "Accent Hover" },
+				{ "slug": "base", "color": "#F4F1EA", "name": "Base" },
+				{ "slug": "surface", "color": "#FBF9F3", "name": "Surface" },
+				{ "slug": "surface-muted", "color": "#EAE5DA", "name": "Surface Muted" },
+				{ "slug": "surface-elevated", "color": "#FFFFFF", "name": "Surface Elevated" },
+				{ "slug": "foreground", "color": "#1A1814", "name": "Foreground" },
+				{ "slug": "muted", "color": "#6E685D", "name": "Muted" },
+				{ "slug": "line", "color": "#DDD6C8", "name": "Line" },
+				{ "slug": "success", "color": "#5A7A3A", "name": "Success" },
+				{ "slug": "warning", "color": "#A66A1F", "name": "Warning" },
+				{ "slug": "error", "color": "#9A3220", "name": "Error" },
+				{ "slug": "contrast", "color": "#F4F1EA", "name": "Contrast" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
+				},
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "\"Inter\", \"SF Pro Text\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+				},
+				{
+					"slug": "mono",
+					"name": "Mono",
+					"fontFamily": "\"SF Mono\", \"JetBrains Mono\", \"Menlo\", \"Consolas\", monospace"
+				},
+				{
+					"slug": "serif",
+					"name": "Serif",
+					"fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
+				}
+			],
+			"fontSizes": [
+				{ "slug": "x-small", "size": "0.6875rem", "name": "Caption" },
+				{ "slug": "small", "size": "0.8125rem", "name": "Small" },
+				{ "slug": "normal", "size": "1rem", "name": "Body" },
+				{
+					"slug": "medium",
+					"size": "1.1875rem",
+					"name": "Large Body",
+					"fluid": { "min": "1.0625rem", "max": "1.375rem" }
+				},
+				{
+					"slug": "large",
+					"size": "1.5rem",
+					"name": "H3",
+					"fluid": { "min": "1.25rem", "max": "1.875rem" }
+				},
+				{
+					"slug": "x-large",
+					"size": "2.25rem",
+					"name": "H2",
+					"fluid": { "min": "1.75rem", "max": "2.75rem" }
+				},
+				{
+					"slug": "xx-large",
+					"size": "3.25rem",
+					"name": "H1",
+					"fluid": { "min": "2.25rem", "max": "4.5rem" }
+				},
+				{
+					"slug": "xxx-large",
+					"size": "4.75rem",
+					"name": "Display",
+					"fluid": { "min": "2.875rem", "max": "6.5rem" }
+				},
+				{
+					"slug": "huge",
+					"size": "6.75rem",
+					"name": "Display Hero",
+					"fluid": { "min": "3.375rem", "max": "9rem" }
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#F4F1EA",
+			"text": "#1A1814"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "var:preset|spacing|60",
+				"bottom": "0",
+				"left": "var:preset|spacing|60"
+			},
+			"blockGap": "var:preset|spacing|60"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|normal",
+			"lineHeight": "1.75",
+			"fontWeight": "400"
+		},
+		"elements": {
+			"link": {
+				"color": { "text": "#1A1814" },
+				"typography": { "textDecoration": "underline", "textUnderlineOffset": "4px" }
+			},
+			"heading": {
+				"color": { "text": "#1A1814" },
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "400",
+					"lineHeight": "1.1",
+					"letterSpacing": "-0.015em",
+					"textTransform": "none"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|huge",
+					"lineHeight": "1.02",
+					"letterSpacing": "-0.025em",
+					"fontWeight": "400"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|xxx-large",
+					"lineHeight": "1.05",
+					"letterSpacing": "-0.02em",
+					"fontWeight": "400"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "1.12",
+					"letterSpacing": "-0.015em",
+					"fontWeight": "400"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "500",
+					"letterSpacing": "0.18em",
+					"textTransform": "uppercase"
+				}
+			},
+			"button": {
+				"border": { "radius": "0" },
+				"color": {
+					"background": "#1A1814",
+					"text": "#F4F1EA"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "500",
+					"fontSize": "0.6875rem",
+					"letterSpacing": "0.2em",
+					"textTransform": "uppercase"
+				},
+				"spacing": {
+					"padding": {
+						"top": "1rem",
+						"right": "1.75rem",
+						"bottom": "1rem",
+						"left": "1.75rem"
+					}
+				},
+				":hover": {
+					"color": { "background": "#9A7B3F", "text": "#F4F1EA" }
+				},
+				":focus": {
+					"color": { "background": "#9A7B3F" },
+					"outline": { "offset": "3px" }
+				}
+			},
+			"caption": {
+				"color": { "text": "#8A8278" },
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "0.6875rem",
+					"letterSpacing": "0.18em",
+					"textTransform": "uppercase",
+					"fontWeight": "500"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "400",
+					"letterSpacing": "0.32em",
+					"fontSize": "1.0625rem",
+					"textTransform": "uppercase"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "0.6875rem",
+					"fontWeight": "500",
+					"letterSpacing": "0.18em",
+					"textTransform": "uppercase"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|huge",
+					"lineHeight": "1.02",
+					"letterSpacing": "-0.025em",
+					"fontWeight": "400"
+				}
+			},
+			"core/separator": {
+				"color": { "text": "#DDD6C8" }
+			},
+			"core/quote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "1.2",
+					"letterSpacing": "-0.015em",
+					"fontWeight": "400",
+					"fontStyle": "italic"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|xx-large",
+					"lineHeight": "1.1",
+					"letterSpacing": "-0.02em",
+					"fontWeight": "400"
+				}
+			}
+		}
+	}
+}

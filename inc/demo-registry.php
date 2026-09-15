@@ -574,10 +574,16 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
         // Production-ready status — only these demos are fully designed and importable.
         // All other demos show "Coming Soon" in the demo browser.
         $ready_demos = array(
-                'monolith', 'canvas', 'aperture', 'northbound', 'meridian',
-                'plan', 'signature', 'scholar', 'minimal', 'director',
                 'nova',
                 'atelier',
+                'pulse',
+                'frame',
+                'architect',
+                'noir',
+                'mono',
+                'luxe',
+                'journal',
+                'horizon',
         );
         $is_ready = in_array( $basename, $ready_demos, true );
 

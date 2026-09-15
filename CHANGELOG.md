@@ -5,6 +5,15 @@ All notable changes to GoDevs Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.2] - 2026-09-15
+
+### Fixed
+- Critical: the demo-import confirmation dialog rendered an empty body, making Starter Import and the style-variation checkbox unreachable — every UI import silently ran in Safe mode (no homepage, no style).
+- Critical: the importer wrote the user global-styles JSON through wp_insert_post(), whose wp_unslash() pipeline corrupted escaped quotes in font stacks; the invalid JSON made WordPress reject the variation and print repeated WP_Theme_JSON_Resolver notices on the front end. The JSON is now written directly to the posts table.
+- Starter imports on sites with plain permalinks produced 404 CTAs; the importer now enables /%postname%/ permalinks and flushes rewrite rules.
+- Placeholder href="#" showcase CTAs in demo patterns now resolve to the demo's case-studies/work/portfolio page on import.
+- Accessibility: muted text token in the Atelier, Architect, Luxe, Journal and Horizon style variations darkened to #6E685D (>=4.8:1 contrast, WCAG AA).
+
 ## [1.5.1] - 2026-09-13
 
 ### Fixed

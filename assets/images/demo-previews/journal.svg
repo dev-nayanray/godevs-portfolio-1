@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="JOURNAL — Premium Writer / Author / Editorial Portfolio demo preview">
+  <rect width="1200" height="800" fill="#F5F1EA"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="56" fill="#F5F1EA"/>
+  <line x1="0" y1="56" x2="1200" y2="56" stroke="#D9D2C2" stroke-width="1"/>
+  <text x="64" y="36" font-family="Newsreader, Times, serif" font-size="15" font-style="italic" font-weight="400" fill="#1A1714">Journal</text>
+  <text x="540" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#3A352E">ESSAYS</text>
+  <text x="600" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#8A8278">STORIES</text>
+  <text x="660" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#8A8278">NOTES</text>
+  <text x="710" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#8A8278">ABOUT</text>
+  <text x="770" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#8A8278">ARCHIVE</text>
+  <text x="980" y="36" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="1.8" fill="#8A8278">SEARCH</text>
+  <rect x="1060" y="18" width="80" height="24" fill="#1A1714"/>
+  <text x="1100" y="34" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.5" fill="#F5F1E8" text-anchor="middle">SUBSCRIBE →</text>
+
+  <!-- Hero -->
+  <text x="64" y="110" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2.2" fill="#7A2E2E">JOURNAL / ISSUE 09</text>
+  <text x="1136" y="110" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2.2" fill="#8A8278" text-anchor="end">SEPTEMBER 2026</text>
+
+  <!-- Display heading -->
+  <text x="60" y="190" font-family="Newsreader, Times, serif" font-size="56" font-weight="400" letter-spacing="-1.4" fill="#1A1714">Ideas worth</text>
+  <text x="60" y="260" font-family="Newsreader, Times, serif" font-size="56" font-style="italic" font-weight="400" letter-spacing="-1" fill="#1A1714">spending time with.</text>
+
+  <!-- Supporting copy -->
+  <text x="60" y="310" font-family="Newsreader, Times, serif" font-size="14" fill="#8A8278">Essays, stories, observations and conversations about</text>
+  <text x="60" y="330" font-family="Newsreader, Times, serif" font-size="14" fill="#8A8278">culture, design, technology and the world around us.</text>
+
+  <!-- CTAs -->
+  <rect x="60" y="356" width="130" height="34" fill="#1A1714"/>
+  <text x="125" y="378" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.8" fill="#F5F1EA" text-anchor="middle">READ THE JOURNAL →</text>
+  <rect x="202" y="356" width="150" height="34" fill="none" stroke="#1A1714" stroke-width="1"/>
+  <text x="277" y="378" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.8" fill="#1A1714" text-anchor="middle">ABOUT THE AUTHOR →</text>
+
+  <!-- Featured story section -->
+  <line x1="0" y1="430" x2="1200" y2="430" stroke="#D9D2C2" stroke-width="1"/>
+  <text x="64" y="462" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2.2" fill="#7A2E2E">FEATURED</text>
+
+  <!-- Featured story: image left, text right -->
+  <rect x="64" y="480" width="500" height="200" fill="#EEE9DC"/>
+  <text x="74" y="500" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="600" letter-spacing="1.4" fill="#8A8278">ESSAY · SEPTEMBER 2026 · 8 MIN</text>
+  <text x="74" y="530" font-family="Newsreader, Times, serif" font-size="18" font-weight="400" letter-spacing="-0.3" fill="#1A1714">The Things We Notice</text>
+  <text x="74" y="554" font-family="Newsreader, Times, serif" font-size="18" font-style="italic" font-weight="400" fill="#1A1714">When Everything Gets Quiet</text>
+  <text x="74" y="582" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8A8278">When the noise recedes, the small details</text>
+  <text x="74" y="596" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8A8278">become visible again.</text>
+  <text x="74" y="626" font-family="Newsreader, Times, serif" font-size="11" font-style="italic" fill="#1A1714">Read article →</text>
+
+  <!-- Latest writing section -->
+  <text x="64" y="720" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="2.2" fill="#8A8278">LATEST WRITING</text>
+  <text x="64" y="754" font-family="Newsreader, Times, serif" font-size="24" font-weight="400" letter-spacing="-0.5" fill="#1A1714">Recent <tspan font-style="italic">writing.</tspan></text>
+
+  <!-- Article rows -->
+  <line x1="64" y1="770" x2="1136" y2="770" stroke="#D9D2C2" stroke-width="1"/>
+  <text x="74" y="790" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="600" letter-spacing="1.2" fill="#8A8278">ESSAY · 04.09.26 · 7 MIN</text>
+  <text x="400" y="790" font-family="Newsreader, Times, serif" font-size="13" font-weight="400" fill="#1A1714">The Architecture of Everyday Things →</text>
+</svg>

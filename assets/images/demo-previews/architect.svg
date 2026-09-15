@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="ARCHITECT — Architecture & Interior Design Studio demo preview">
+  <rect width="1200" height="800" fill="#F2EFE8"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#F2EFE8"/>
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#D8D2C4" stroke-width="1"/>
+  <text x="64" y="40" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.8" fill="#1C1A17">ARCHITECT</text>
+  <text x="520" y="40" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2" fill="#3A352E">PROJECTS</text>
+  <text x="610" y="40" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2" fill="#8A8278">STUDIO</text>
+  <text x="675" y="40" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2" fill="#8A8278">SERVICES</text>
+  <text x="745" y="40" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2" fill="#8A8278">JOURNAL</text>
+  <text x="805" y="40" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2" fill="#8A8278">CONTACT</text>
+  <text x="960" y="40" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.8" fill="#8A8278">DHAKA · LISBON</text>
+  <rect x="1066" y="22" width="86" height="24" fill="#1C1A17"/>
+  <text x="1109" y="38" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.6" fill="#F2EFE8" text-anchor="middle">LET'S TALK →</text>
+
+  <!-- Hero (full-width architectural photograph) -->
+  <rect x="0" y="60" width="1200" height="440" fill="#2A2620"/>
+  <!-- architectural structure -->
+  <rect x="0" y="60" width="1200" height="440" fill="#1A1814" opacity="0.5"/>
+  <rect x="80" y="100" width="320" height="380" fill="#3A3528" opacity="0.6"/>
+  <rect x="80" y="100" width="320" height="380" fill="none" stroke="#5A4E3A" stroke-width="1" opacity="0.4"/>
+  <rect x="440" y="160" width="280" height="320" fill="#4A4030" opacity="0.5"/>
+  <line x1="440" y1="280" x2="720" y2="280" stroke="#6A5A40" stroke-width="1" opacity="0.5"/>
+  <line x1="580" y1="160" x2="580" y2="480" stroke="#6A5A40" stroke-width="1" opacity="0.4"/>
+  <rect x="780" y="220" width="340" height="260" fill="#2A2418" opacity="0.7"/>
+  <!-- strong directional light -->
+  <polygon points="0,500 400,500 200,140" fill="#C9A06A" opacity="0.08"/>
+  <!-- Hero text (bottom-left, minimal) -->
+  <text x="64" y="430" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="2.5" fill="#C9A06A">ARCHITECTURE / INTERIORS — EST. 2008</text>
+  <text x="60" y="475" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="500" letter-spacing="-1.3" fill="#F2EFE8">Spaces shaped by light,</text>
+  <text x="60" y="475" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="500" letter-spacing="-1.3" fill="#F2EFE8" opacity="0">
+  </text>
+  <text x="60" y="500" font-family="Newsreader, Times, serif" font-size="44" font-style="italic" font-weight="400" letter-spacing="-0.7" fill="#F2EFE8">material and purpose.</text>
+
+  <!-- Selected Projects section -->
+  <text x="64" y="540" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="2.4" fill="#8A6B3F">SELECTED PROJECTS — 2023 / 2026</text>
+  <text x="64" y="572" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.8" fill="#1C1A17">Selected Projects</text>
+
+  <!-- Project thumbnails row (varied compositions) -->
+  <!-- Project 01 — full-width horizontal -->
+  <rect x="64" y="592" width="340" height="64" fill="#3A3528"/>
+  <rect x="64" y="592" width="340" height="64" fill="#1A1814" opacity="0.3"/>
+  <text x="74" y="612" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="500" letter-spacing="1.8" fill="#8A8278">PROJECT 01 · HOUSE N</text>
+  <text x="74" y="640" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="-0.2" fill="#1C1A17">Dhaka / Residential / 2026 →</text>
+
+  <!-- Project 02 — vertical -->
+  <rect x="424" y="592" width="180" height="64" fill="#4A4030"/>
+  <rect x="424" y="592" width="180" height="64" fill="#1A1814" opacity="0.3"/>
+  <text x="434" y="612" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="500" letter-spacing="1.8" fill="#8A8278">PROJECT 02 · COURTYARD HOUSE</text>
+  <text x="434" y="640" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#1C1A17">Lisbon / 2025 →</text>
+
+  <!-- Project 03 — landscape -->
+  <rect x="624" y="592" width="240" height="64" fill="#2A2618"/>
+  <rect x="624" y="592" width="240" height="64" fill="#1A1814" opacity="0.35"/>
+  <text x="634" y="612" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="500" letter-spacing="1.8" fill="#8A8278">PROJECT 03 · CONCRETE GALLERY</text>
+  <text x="634" y="640" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#1C1A17">Berlin / Cultural / 2025 →</text>
+
+  <!-- Project 06 — wide -->
+  <rect x="884" y="592" width="252" height="64" fill="#1A1814"/>
+  <text x="894" y="612" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="500" letter-spacing="1.8" fill="#8A8278">PROJECT 06 · MONOLITH</text>
+  <text x="894" y="640" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="500" fill="#F2EFE8">Tokyo / Commercial / 2023 →</text>
+
+  <!-- Services section header -->
+  <text x="64" y="690" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="2.4" fill="#8A8278">— SERVICES</text>
+  <text x="64" y="716" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" letter-spacing="-0.4" fill="#1C1A17">How we work.</text>
+
+  <!-- Services rows -->
+  <line x1="64" y1="734" x2="1136" y2="734" stroke="#D8D2C4" stroke-width="1"/>
+  <text x="74" y="754" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.6" fill="#8A8278">01</text>
+  <text x="120" y="754" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="-0.2" fill="#1C1A17">Architecture</text>
+  <text x="500" y="754" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8A8278">Residential, commercial and cultural.</text>
+  <line x1="64" y1="766" x2="1136" y2="766" stroke="#D8D2C4" stroke-width="1"/>
+  <text x="74" y="786" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="500" letter-spacing="1.6" fill="#8A8278">02</text>
+  <text x="120" y="786" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" letter-spacing="-0.2" fill="#1C1A17">Interior</text>
+  <text x="500" y="786" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8A8278">Interior environments and spatial design.</text>
+</svg>

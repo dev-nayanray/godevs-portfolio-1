@@ -469,8 +469,23 @@
                         viewport.style.margin = '24px auto';
                 }
                 if ( previewLoading ) previewLoading.style.display = 'none';
-                if ( previewContent ) previewContent.innerHTML = bodyHTML;
-                if ( previewContent ) previewContent.style.padding = '24px';
+                // The preview itself renders in an iframe; the confirmation
+                // body needs its own host inside the viewport. Without this,
+                // the mode radios and style checkbox never render and every
+                // UI import silently falls back to safe mode.
+                if ( previewIframe ) previewIframe.style.display = 'none';
+                var confirmHost = $( '#godevs-confirm-content' );
+                if ( ! confirmHost && previewViewport ) {
+                        confirmHost = document.createElement( 'div' );
+                        confirmHost.id = 'godevs-confirm-content';
+                        previewViewport.appendChild( confirmHost );
+                }
+                if ( confirmHost ) {
+                        confirmHost.innerHTML = bodyHTML;
+                        confirmHost.style.display = 'block';
+                        confirmHost.style.padding = '24px';
+                        confirmHost.style.background = '#fff';
+                }
 
                 modal.hidden = false;
                 document.body.style.overflow = 'hidden';
@@ -502,6 +517,14 @@
                         viewport.style.margin = '';
                 }
                 if ( previewContent ) previewContent.style.padding = '';
+                // Restore the iframe preview and drop the confirmation host
+                // so the next preview opens normally.
+                if ( previewIframe ) previewIframe.style.display = '';
+                var confirmHost = $( '#godevs-confirm-content' );
+                if ( confirmHost ) {
+                        confirmHost.innerHTML = '';
+                        confirmHost.style.display = 'none';
+                }
         }
 
         function performImport( demoId, mode, applyStyle ) {

@@ -27,3 +27,9 @@ languages/*.pot
 .phpunit.result.cache
 coverage/
 *.clover
+
+# QA working artifacts
+.audit/
+.qa2/
+.qa3/
+.qa-final/

@@ -311,6 +311,15 @@ function godevs_portfolio_ajax_import_demo(): void {
                 godevs_portfolio_reset_style_variation();
         }
 
+        // 0. Starter imports on a fresh site must use pretty permalinks.
+        // Demo pattern markup links to pages by path (/about/, /work/ …),
+        // which 404 under the default plain permalink structure.
+        if ( 'starter' === $mode && ! get_option( 'permalink_structure' ) ) {
+                global $wp_rewrite;
+                $wp_rewrite->set_permalink_structure( '/%postname%/' );
+                // Rules are flushed again after the pages are created below.
+        }
+
         // 1. Read the demo pattern markup (the homepage content).
         $homepage_markup = godevs_portfolio_render_demo_markup( $demo );
         if ( '' === $homepage_markup ) {
@@ -389,6 +398,21 @@ function godevs_portfolio_ajax_import_demo(): void {
                 // and footer will be used instead. The Header/Footer Builder
                 // override (if any) takes precedence via the render_block filter.
                 $content = godevs_portfolio_strip_template_parts_from_content( $content );
+
+                // Demo pattern markup uses placeholder links (href="#") for
+                // project showcases and case rows. A dead "#" link fails the
+                // "every CTA leads somewhere" requirement, so point them at
+                // the demo's showcase page (case studies, work, or portfolio).
+                $showcase_slug = '';
+                foreach ( array( 'case-studies', 'work', 'portfolio' ) as $candidate ) {
+                        if ( in_array( $candidate, $demo['pages'], true ) ) {
+                                $showcase_slug = $candidate;
+                                break;
+                        }
+                }
+                if ( $showcase_slug && false !== strpos( $content, 'href="#"' ) ) {
+                        $content = str_replace( 'href="#"', 'href="/' . $showcase_slug . '/"', $content );
+                }
 
                 $page_id = wp_insert_post(
                         array(
@@ -780,22 +804,24 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
 
         $post_content = wp_json_encode( $global_styles );
 
+        // WordPress core runs wp_insert_post()/wp_update_post() data through
+        // wp_unslash(), which strips the backslashes that escape quotes in
+        // JSON (font stacks like "Newsreader", serif) and leaves invalid JSON
+        // that WP_Theme_JSON_Resolver rejects on the front end. Write the
+        // JSON payload directly to the posts table instead.
+        global $wpdb;
+
         if ( $post_id ) {
-                // Update existing post.
-                wp_update_post(
-                        array(
-                                'ID'           => $post_id,
-                                'post_content' => $post_content,
-                        )
-                );
+                // Update existing post content directly.
+                $wpdb->update( $wpdb->posts, array( 'post_content' => $post_content ), array( 'ID' => (int) $post_id ) );
         } else {
-                // Create new post.
+                // Create new post, then write the content directly.
                 $post_id = wp_insert_post(
                         array(
                                 'post_title'   => 'Global Styles',
                                 'post_status'  => 'publish',
                                 'post_type'    => 'wp_global_styles',
-                                'post_content' => $post_content,
+                                'post_content' => '',
                                 'post_name'    => 'global-styles-' . $stylesheet,
                         )
                 );
@@ -804,9 +830,13 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
                         return false;
                 }
 
+                $wpdb->update( $wpdb->posts, array( 'post_content' => $post_content ), array( 'ID' => (int) $post_id ) );
+
                 // Assign the wp_theme taxonomy term.
                 wp_set_object_terms( $post_id, $stylesheet, 'wp_theme' );
         }
+
+        clean_post_cache( $post_id );
 
         // Clear the WP_Theme_JSON_Resolver cache.
         // This forces WordPress to re-read the global styles on the next request.
@@ -868,12 +898,11 @@ function godevs_portfolio_reset_style_variation(): bool {
                                 'settings'                    => array(),
                         )
                 );
-                wp_update_post(
-                        array(
-                                'ID'           => $post_id,
-                                'post_content' => $empty_styles,
-                        )
-                );
+                // Write directly — wp_update_post() unslashes the content and
+                // would corrupt the JSON. See apply_style_variation().
+                global $wpdb;
+                $wpdb->update( $wpdb->posts, array( 'post_content' => $empty_styles ), array( 'ID' => (int) $post_id ) );
+                clean_post_cache( $post_id );
         }
 
         // Clear the resolver cache.

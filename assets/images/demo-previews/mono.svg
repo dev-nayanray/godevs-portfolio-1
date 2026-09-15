@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="MONO — Developer / Creative Technologist demo preview">
+  <rect width="1200" height="800" fill="#FAFAF9"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="56" fill="#FAFAF9"/>
+  <line x1="0" y1="56" x2="1200" y2="56" stroke="#E4E4E1" stroke-width="1"/>
+  <text x="64" y="36" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.5" fill="#0E0E0E">Mono</text>
+  <text x="540" y="36" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#3A3A3A">Work</text>
+  <text x="590" y="36" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#71717A">About</text>
+  <text x="640" y="36" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#71717A">Stack</text>
+  <text x="690" y="36" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#71717A">Writing</text>
+  <text x="745" y="36" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#71717A">Contact</text>
+  <circle cx="940" cy="33" r="3.5" fill="#16A34A"/>
+  <text x="950" y="36" font-family="SF Mono, Menlo, monospace" font-size="10" font-weight="500" fill="#71717A">Available</text>
+  <rect x="1060" y="18" width="100" height="24" rx="4" fill="#0E0E0E"/>
+  <text x="1110" y="34" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FAFAF9" text-anchor="middle">Available for work →</text>
+
+  <!-- Eyebrow row -->
+  <text x="64" y="100" font-family="SF Mono, Menlo, monospace" font-size="10" font-weight="500" fill="#71717A">INDEPENDENT DEVELOPER / CREATIVE TECHNOLOGIST</text>
+  <text x="1136" y="100" font-family="SF Mono, Menlo, monospace" font-size="10" font-weight="500" fill="#71717A" text-anchor="end">EUROPE / ASIA · 10+ YEARS</text>
+
+  <!-- Hero display heading -->
+  <text x="60" y="180" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="600" letter-spacing="-1.7" fill="#0E0E0E">I build digital</text>
+  <text x="60" y="248" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="600" letter-spacing="-1.7" fill="#0E0E0E">products that</text>
+  <text x="60" y="316" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="600" letter-spacing="-1.7" fill="#0E0E0E">work <tspan fill="#2563EB">beautifully.</tspan></text>
+
+  <!-- Supporting copy -->
+  <text x="60" y="370" font-family="Inter, Arial, sans-serif" font-size="13" fill="#71717A">Full-stack developer focused on thoughtful interfaces,</text>
+  <text x="60" y="388" font-family="Inter, Arial, sans-serif" font-size="13" fill="#71717A">scalable systems and high-quality digital experiences.</text>
+  <circle cx="68" cy="418" r="3.5" fill="#16A34A"/>
+  <text x="80" y="422" font-family="SF Mono, Menlo, monospace" font-size="10" font-weight="500" fill="#0E0E0E">Currently available for selected projects</text>
+
+  <!-- CTAs -->
+  <rect x="60" y="440" width="120" height="36" rx="4" fill="#0E0E0E"/>
+  <text x="120" y="463" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FAFAF9" text-anchor="middle">View Work →</text>
+  <rect x="192" y="440" width="120" height="36" rx="4" fill="none" stroke="#0E0E0E" stroke-width="1"/>
+  <text x="252" y="463" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#0E0E0E" text-anchor="middle">About Me →</text>
+
+  <!-- Hero image (right) -->
+  <rect x="720" y="100" width="416" height="312" rx="6" fill="#F4F4F2" stroke="#E4E4E1" stroke-width="1"/>
+  <rect x="760" y="140" width="180" height="100" rx="4" fill="#FFFFFF"/>
+  <rect x="770" y="150" width="60" height="6" rx="2" fill="#0E0E0E" opacity="0.8"/>
+  <rect x="770" y="162" width="100" height="4" rx="2" fill="#E4E4E1"/>
+  <rect x="770" y="172" width="80" height="4" rx="2" fill="#E4E4E1"/>
+  <rect x="770" y="195" width="40" height="24" rx="3" fill="#2563EB"/>
+  <rect x="960" y="140" width="160" height="100" rx="4" fill="#FFFFFF"/>
+  <rect x="970" y="150" width="120" height="60" rx="2" fill="#E4E4E1" opacity="0.6"/>
+  <rect x="760" y="260" width="360" height="120" rx="4" fill="#FFFFFF"/>
+  <rect x="770" y="270" width="100" height="5" rx="2" fill="#0E0E0E"/>
+  <rect x="880" y="270" width="60" height="5" rx="2" fill="#2563EB" opacity="0.4"/>
+
+  <!-- Selected Work section -->
+  <line x1="0" y1="490" x2="1200" y2="490" stroke="#E4E4E1" stroke-width="1"/>
+  <text x="64" y="524" font-family="SF Mono, Menlo, monospace" font-size="10" font-weight="500" fill="#2563EB">SELECTED WORK — 2023 / 2026</text>
+  <text x="64" y="560" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="-0.7" fill="#0E0E0E">Selected Work</text>
+
+  <!-- Featured project (full-width) -->
+  <rect x="64" y="584" width="1072" height="120" rx="6" fill="#F4F4F2" stroke="#E4E4E1" stroke-width="1"/>
+  <rect x="64" y="584" width="1072" height="120" rx="6" fill="#FFFFFF" opacity="0.5"/>
+  <text x="84" y="614" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" fill="#71717A">01 — LUMA</text>
+  <text x="84" y="640" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="-0.4" fill="#0E0E0E">Luma</text>
+  <text x="84" y="660" font-family="SF Mono, Menlo, monospace" font-size="9" fill="#71717A">Product Platform · 2026</text>
+  <!-- tech chips -->
+  <rect x="84" y="676" width="50" height="16" rx="4" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="109" y="687" font-family="SF Mono, Menlo, monospace" font-size="8" fill="#0E0E0E" text-anchor="middle">Next.js</text>
+  <rect x="140" y="676" width="68" height="16" rx="4" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="174" y="687" font-family="SF Mono, Menlo, monospace" font-size="8" fill="#0E0E0E" text-anchor="middle">TypeScript</text>
+  <rect x="214" y="676" width="72" height="16" rx="4" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="250" y="687" font-family="SF Mono, Menlo, monospace" font-size="8" fill="#0E0E0E" text-anchor="middle">PostgreSQL</text>
+  <text x="1050" y="640" font-family="SF Mono, Menlo, monospace" font-size="9" fill="#71717A" text-anchor="end">View project →</text>
+
+  <!-- Services rows -->
+  <line x1="64" y1="724" x2="1136" y2="724" stroke="#E4E4E1" stroke-width="1"/>
+  <text x="84" y="744" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" fill="#71717A">01</text>
+  <text x="120" y="744" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#0E0E0E">Product Development</text>
+  <text x="500" y="744" font-family="Inter, Arial, sans-serif" font-size="9" fill="#71717A">Build scalable web products from concept to launch.</text>
+  <line x1="64" y1="756" x2="1136" y2="756" stroke="#E4E4E1" stroke-width="1"/>
+  <text x="84" y="776" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" fill="#71717A">02</text>
+  <text x="120" y="776" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#0E0E0E">Frontend Engineering</text>
+  <text x="500" y="776" font-family="Inter, Arial, sans-serif" font-size="9" fill="#71717A">High-quality responsive interfaces and design systems.</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="PULSE — UX / Product Designer demo preview">
+  <defs>
+    <linearGradient id="pulseBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFBF9"/>
+      <stop offset="1" stop-color="#F4F5F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#pulseBg)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="64" fill="#FAFAF8"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="64" y="42" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-1" fill="#0F1115">Pulse</text>
+  <text x="540" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#3F4451">Work</text>
+  <text x="590" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#3F4451">Case Studies</text>
+  <text x="680" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#3F4451">About</text>
+  <text x="730" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#3F4451">Insights</text>
+  <text x="785" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#3F4451">Contact</text>
+  <circle cx="950" cy="38" r="3.5" fill="#0D9488"/>
+  <text x="960" y="42" font-family="SF Mono, Menlo, monospace" font-size="10" fill="#6B7280">Available for projects</text>
+  <rect x="1080" y="24" width="92" height="26" rx="6" fill="#0F1115"/>
+  <text x="1126" y="41" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FAFAF8" text-anchor="middle">Start a project</text>
+
+  <!-- Eyebrow row -->
+  <text x="64" y="128" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="1.4" fill="#6B7280">UX / PRODUCT DESIGNER</text>
+  <text x="1136" y="128" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="1.4" fill="#6B7280" text-anchor="end">BERLIN · REMOTE · 12 YEARS</text>
+
+  <!-- Hero display heading -->
+  <text x="60" y="220" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="600" letter-spacing="-2.4" fill="#0F1115">I design products</text>
+  <text x="60" y="290" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="600" letter-spacing="-2.4" fill="#0F1115">people <tspan fill="#0D9488">love to use.</tspan></text>
+
+  <!-- Supporting row -->
+  <text x="60" y="350" font-family="Inter, Arial, sans-serif" font-size="13" fill="#6B7280">A product designer focused on outcomes — turning</text>
+  <text x="60" y="370" font-family="Inter, Arial, sans-serif" font-size="13" fill="#6B7280">complex problems into systems people want to use.</text>
+  <rect x="60" y="392" width="142" height="36" rx="6" fill="#0F1115"/>
+  <text x="131" y="415" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FAFAF8" text-anchor="middle">View case studies</text>
+  <rect x="212" y="392" width="110" height="36" rx="6" fill="none" stroke="#0F1115" stroke-width="1"/>
+  <text x="267" y="415" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#0F1115" text-anchor="middle">About me</text>
+
+  <!-- Hero image (right) -->
+  <rect x="720" y="160" width="416" height="312" rx="8" fill="#E8E2D5"/>
+  <rect x="760" y="200" width="180" height="120" rx="6" fill="#FFFFFF"/>
+  <rect x="770" y="210" width="80" height="8" rx="2" fill="#0D9488" opacity="0.3"/>
+  <rect x="770" y="226" width="120" height="6" rx="2" fill="#E5E7EB"/>
+  <rect x="770" y="238" width="100" height="6" rx="2" fill="#E5E7EB"/>
+  <rect x="770" y="270" width="60" height="36" rx="4" fill="#0D9488"/>
+  <rect x="960" y="200" width="160" height="80" rx="6" fill="#FFFFFF"/>
+  <rect x="970" y="210" width="140" height="60" rx="2" fill="#0D9488" opacity="0.15"/>
+  <rect x="760" y="340" width="360" height="110" rx="6" fill="#FFFFFF"/>
+  <rect x="770" y="350" width="120" height="6" rx="2" fill="#0F1115"/>
+  <rect x="770" y="364" width="80" height="4" rx="2" fill="#E5E7EB"/>
+  <rect x="860" y="364" width="60" height="4" rx="2" fill="#0D9488" opacity="0.4"/>
+
+  <!-- Featured case study (dark band) -->
+  <rect x="0" y="500" width="1200" height="160" fill="#0F1115"/>
+  <text x="64" y="540" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="1.4" fill="#0D9488">FEATURED CASE STUDY</text>
+  <text x="64" y="590" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="600" letter-spacing="-1.2" fill="#FAFAF8">Fintech App</text>
+  <text x="64" y="620" font-family="SF Mono, Menlo, monospace" font-size="9" fill="#6B7280">Mobile banking · 2026 · 16 weeks</text>
+  <text x="700" y="580" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.6" fill="#0D9488">+38%</text>
+  <text x="700" y="600" font-family="SF Mono, Menlo, monospace" font-size="9" fill="#6B7280">CONVERSION UPLIFT</text>
+  <text x="700" y="630" font-family="Inter, Arial, sans-serif" font-size="11" fill="#FAFAF8">A mobile banking experience rebuilt around clarity.</text>
+
+  <!-- Case study cards row -->
+  <text x="64" y="700" font-family="SF Mono, Menlo, monospace" font-size="9" font-weight="500" letter-spacing="1.4" fill="#0D9488">SELECTED WORK</text>
+  <text x="64" y="728" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="-0.4" fill="#0F1115">Case studies with outcomes.</text>
+
+  <rect x="64" y="744" width="340" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="74" y="762" font-family="SF Mono, Menlo, monospace" font-size="7" fill="#6B7280">SAAS · WEB · 2025</text>
+  <text x="74" y="778" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F1115">Analytics Platform</text>
+  <text x="300" y="775" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0D9488">2.1×</text>
+
+  <rect x="424" y="744" width="340" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="434" y="762" font-family="SF Mono, Menlo, monospace" font-size="7" fill="#6B7280">HEALTH · MOBILE · 2025</text>
+  <text x="434" y="778" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F1115">Health Tracker</text>
+  <text x="660" y="775" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0D9488">92%</text>
+
+  <rect x="784" y="744" width="340" height="48" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="794" y="762" font-family="SF Mono, Menlo, monospace" font-size="7" fill="#6B7280">E-COMMERCE · WEB · 2024</text>
+  <text x="794" y="778" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F1115">Commerce Admin</text>
+  <text x="1090" y="775" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#0D9488">−47%</text>
+</svg>

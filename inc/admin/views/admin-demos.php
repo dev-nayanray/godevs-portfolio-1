@@ -268,7 +268,7 @@ window.GODEVS_DEMOS = {
         imported: <?php echo wp_json_encode( array_values( $imported ) ); ?>,
         i18n: {
                 confirmStarterTitle: <?php echo wp_json_encode( __( 'Import Demo — Starter', 'godevs-portfolio' ) ); ?>,
-                confirmSafeTitle: <?php echo wp_json_encode( __( 'Import Demo — Safe', 'godevs-portfolio' ) ); ?>,
+                confirmSafeTitle: <?php echo wp_json_encode( __( 'Import Demo', 'godevs-portfolio' ) ); ?>,
                 cancel: <?php echo wp_json_encode( __( 'Cancel', 'godevs-portfolio' ) ); ?>,
                 importDemo: <?php echo wp_json_encode( __( 'Import Demo', 'godevs-portfolio' ) ); ?>,
                 importing: <?php echo wp_json_encode( __( 'Importing…', 'godevs-portfolio' ) ); ?>,

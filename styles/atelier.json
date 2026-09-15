@@ -15,7 +15,7 @@
 				{ "slug": "surface-muted", "color": "#EFEAE0", "name": "Surface Muted" },
 				{ "slug": "surface-elevated", "color": "#FFFEF8", "name": "Surface Elevated" },
 				{ "slug": "foreground", "color": "#1A1814", "name": "Foreground" },
-				{ "slug": "muted", "color": "#8C8478", "name": "Muted" },
+				{ "slug": "muted", "color": "#6E685D", "name": "Muted" },
 				{ "slug": "line", "color": "#E0D9CC", "name": "Line" },
 				{ "slug": "success", "color": "#4A6B3E", "name": "Success" },
 				{ "slug": "warning", "color": "#A66A1F", "name": "Warning" },

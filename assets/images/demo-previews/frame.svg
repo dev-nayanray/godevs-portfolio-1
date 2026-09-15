@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="FRAME — Photographer demo preview">
+  <rect width="1200" height="800" fill="#0B0B0B"/>
+
+  <!-- Minimal header (floating over hero) -->
+  <text x="64" y="48" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="2.8" fill="#F2F2F2">FRAME</text>
+  <text x="540" y="48" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="2.5" fill="#F2F2F2">WORK</text>
+  <text x="610" y="48" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="2.5" fill="#8A8A8A">ABOUT</text>
+  <text x="685" y="48" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="2.5" fill="#8A8A8A">JOURNAL</text>
+  <text x="765" y="48" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" letter-spacing="2.5" fill="#8A8A8A">CONTACT</text>
+
+  <!-- Hero photograph (almost entirely photography) -->
+  <rect x="0" y="80" width="1200" height="500" fill="#1A1A1A"/>
+  <rect x="0" y="80" width="1200" height="500" fill="#2A2520" opacity="0.6"/>
+  <!-- atmospheric horizon -->
+  <rect x="0" y="430" width="1200" height="150" fill="#1A1A1A" opacity="0.7"/>
+  <ellipse cx="600" cy="320" rx="380" ry="60" fill="#3A2A18" opacity="0.5"/>
+  <ellipse cx="600" cy="380" rx="280" ry="30" fill="#5A3A20" opacity="0.4"/>
+  <circle cx="900" cy="200" r="3" fill="#F2F2F2" opacity="0.5"/>
+  <circle cx="300" cy="180" r="2" fill="#F2F2F2" opacity="0.4"/>
+  <!-- distant figure for scale -->
+  <rect x="595" y="470" width="3" height="22" fill="#0B0B0B" opacity="0.6"/>
+
+  <!-- Hero text (tucked bottom-left, minimal) -->
+  <text x="64" y="510" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="400" letter-spacing="2.5" fill="#C9A961">PHOTOGRAPHY — LISBON / WORLDWIDE</text>
+  <text x="60" y="560" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="300" letter-spacing="-1.6" fill="#F2F2F2">Pictures that</text>
+  <text x="60" y="560" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="300" letter-spacing="-1.6" fill="#F2F2F2" opacity="0">
+  </text>
+  <text x="60" y="600" font-family="Newsreader, Times, serif" font-size="52" font-style="italic" font-weight="400" letter-spacing="-0.8" fill="#F2F2F2">hold still.</text>
+
+  <!-- Selected Stories -->
+  <text x="64" y="630" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="400" letter-spacing="2.5" fill="#8A8A8A">SELECTED STORIES — 2024 / 2026</text>
+  <text x="64" y="660" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="300" letter-spacing="-0.8" fill="#F2F2F2">Selected Stories</text>
+
+  <!-- Story thumbnails row (asymmetric) -->
+  <rect x="64" y="680" width="340" height="90" fill="#1A1A1A"/>
+  <rect x="64" y="680" width="340" height="90" fill="#3A2A20" opacity="0.4"/>
+  <ellipse cx="234" cy="725" rx="90" ry="18" fill="#5A3A20" opacity="0.5"/>
+  <text x="74" y="700" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="400" letter-spacing="1.4" fill="#8A8A8A">01 — QUIET COAST · LANDSCAPE · 2026</text>
+
+  <rect x="420" y="680" width="200" height="90" fill="#1A1A1A"/>
+  <rect x="420" y="680" width="200" height="90" fill="#2A2A2A" opacity="0.6"/>
+  <rect x="540" y="700" width="60" height="50" fill="#0B0B0B" opacity="0.5"/>
+  <text x="430" y="700" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="400" letter-spacing="1.4" fill="#8A8A8A">02 — WALL STUDY</text>
+
+  <rect x="636" y="680" width="200" height="90" fill="#1A1A1A"/>
+  <rect x="636" y="680" width="200" height="90" fill="#1C1C1C" opacity="0.7"/>
+  <ellipse cx="736" cy="725" rx="50" ry="14" fill="#3A3A3A" opacity="0.6"/>
+  <text x="646" y="700" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="400" letter-spacing="1.4" fill="#8A8A8A">03 — RAIN, PLAZA</text>
+
+  <rect x="852" y="680" width="288" height="90" fill="#1A1A1A"/>
+  <rect x="852" y="680" width="288" height="90" fill="#2A2520" opacity="0.4"/>
+  <ellipse cx="996" cy="725" rx="80" ry="16" fill="#5A3A20" opacity="0.5"/>
+  <text x="862" y="700" font-family="Inter, Arial, sans-serif" font-size="8" font-weight="400" letter-spacing="1.4" fill="#8A8A8A">04 — VESSEL · STILL LIFE · 2025</text>
+</svg>

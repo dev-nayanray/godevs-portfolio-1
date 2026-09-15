@@ -1,0 +1,248 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mono",
+	"description": "MONO — Developer / Creative Technologist. Monochrome foundation, off-white and charcoal, restrained electric accent, Inter display/body + SF Mono technical metadata. Minimal, technical, intelligent, human, premium.",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "primary", "color": "#0E0E0E", "name": "Primary" },
+				{ "slug": "secondary", "color": "#3A3A3A", "name": "Secondary" },
+				{ "slug": "accent", "color": "#2563EB", "name": "Accent" },
+				{ "slug": "accent-hover", "color": "#1D4ED8", "name": "Accent Hover" },
+				{ "slug": "base", "color": "#FAFAF9", "name": "Base" },
+				{ "slug": "surface", "color": "#FFFFFF", "name": "Surface" },
+				{ "slug": "surface-muted", "color": "#F4F4F2", "name": "Surface Muted" },
+				{ "slug": "surface-elevated", "color": "#FFFFFF", "name": "Surface Elevated" },
+				{ "slug": "foreground", "color": "#0E0E0E", "name": "Foreground" },
+				{ "slug": "muted", "color": "#71717A", "name": "Muted" },
+				{ "slug": "line", "color": "#E4E4E1", "name": "Line" },
+				{ "slug": "success", "color": "#16A34A", "name": "Success" },
+				{ "slug": "warning", "color": "#CA8A04", "name": "Warning" },
+				{ "slug": "error", "color": "#DC2626", "name": "Error" },
+				{ "slug": "contrast", "color": "#FAFAF9", "name": "Contrast" }
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Display",
+					"fontFamily": "\"Inter\", \"SF Pro Display\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+				},
+				{
+					"slug": "body",
+					"name": "Body",
+					"fontFamily": "\"Inter\", \"SF Pro Text\", \"Segoe UI\", system-ui, -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", Arial, sans-serif"
+				},
+				{
+					"slug": "mono",
+					"name": "Mono",
+					"fontFamily": "\"SF Mono\", \"JetBrains Mono\", \"Menlo\", \"Consolas\", monospace"
+				},
+				{
+					"slug": "serif",
+					"name": "Serif",
+					"fontFamily": "\"Newsreader\", \"Times New Roman\", \"Times\", serif"
+				}
+			],
+			"fontSizes": [
+				{ "slug": "x-small", "size": "0.6875rem", "name": "Caption" },
+				{ "slug": "small", "size": "0.8125rem", "name": "Small" },
+				{ "slug": "normal", "size": "1.0625rem", "name": "Body" },
+				{
+					"slug": "medium",
+					"size": "1.1875rem",
+					"name": "Large Body",
+					"fluid": { "min": "1.0625rem", "max": "1.375rem" }
+				},
+				{
+					"slug": "large",
+					"size": "1.5rem",
+					"name": "H3",
+					"fluid": { "min": "1.25rem", "max": "1.75rem" }
+				},
+				{
+					"slug": "x-large",
+					"size": "2rem",
+					"name": "H2",
+					"fluid": { "min": "1.625rem", "max": "2.5rem" }
+				},
+				{
+					"slug": "xx-large",
+					"size": "3rem",
+					"name": "H1",
+					"fluid": { "min": "2.25rem", "max": "4.25rem" }
+				},
+				{
+					"slug": "xxx-large",
+					"size": "4.5rem",
+					"name": "Display",
+					"fluid": { "min": "2.75rem", "max": "6.5rem" }
+				},
+				{
+					"slug": "huge",
+					"size": "6.5rem",
+					"name": "Display Hero",
+					"fluid": { "min": "3.25rem", "max": "9rem" }
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#FAFAF9",
+			"text": "#0E0E0E"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"right": "var:preset|spacing|60",
+				"bottom": "0",
+				"left": "var:preset|spacing|60"
+			},
+			"blockGap": "var:preset|spacing|60"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|normal",
+			"lineHeight": "1.65",
+			"fontWeight": "400"
+		},
+		"elements": {
+			"link": {
+				"color": { "text": "#0E0E0E" },
+				"typography": { "textDecoration": "underline", "textUnderlineOffset": "3px" }
+			},
+			"heading": {
+				"color": { "text": "#0E0E0E" },
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "600",
+					"lineHeight": "1.08",
+					"letterSpacing": "-0.025em",
+					"textTransform": "none"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|huge",
+					"lineHeight": "1.0",
+					"letterSpacing": "-0.03em",
+					"fontWeight": "600"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|xxx-large",
+					"lineHeight": "1.04",
+					"letterSpacing": "-0.025em",
+					"fontWeight": "600"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "1.12",
+					"letterSpacing": "-0.015em",
+					"fontWeight": "600"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "var:preset|font-size|medium",
+					"fontWeight": "600",
+					"letterSpacing": "0"
+				}
+			},
+			"button": {
+				"border": { "radius": "4px" },
+				"color": {
+					"background": "#0E0E0E",
+					"text": "#FAFAF9"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontWeight": "500",
+					"fontSize": "0.875rem",
+					"letterSpacing": "-0.005em"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.8rem",
+						"right": "1.4rem",
+						"bottom": "0.8rem",
+						"left": "1.4rem"
+					}
+				},
+				":hover": {
+					"color": { "background": "#2563EB" }
+				},
+				":focus": {
+					"color": { "background": "#2563EB" },
+					"outline": { "offset": "3px" }
+				}
+			},
+			"caption": {
+				"color": { "text": "#71717A" },
+				"typography": {
+					"fontFamily": "var:preset|font-family|mono",
+					"fontSize": "0.75rem",
+					"letterSpacing": "0.01em"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "700",
+					"letterSpacing": "-0.04em",
+					"fontSize": "1.1875rem"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|body",
+					"fontSize": "0.875rem",
+					"fontWeight": "500",
+					"letterSpacing": "-0.005em"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|huge",
+					"lineHeight": "1.0",
+					"letterSpacing": "-0.03em",
+					"fontWeight": "600"
+				}
+			},
+			"core/separator": {
+				"color": { "text": "#E4E4E1" }
+			},
+			"core/quote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|x-large",
+					"lineHeight": "1.2",
+					"letterSpacing": "-0.015em",
+					"fontWeight": "500"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|display",
+					"fontSize": "var:preset|font-size|xx-large",
+					"lineHeight": "1.1",
+					"letterSpacing": "-0.02em",
+					"fontWeight": "500"
+				}
+			}
+		}
+	}
+}
