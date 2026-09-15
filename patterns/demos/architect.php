@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":25,"overlayColor":"primary","minHeight":88,"isDark":true,"style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover" style="min-height:88vh;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-25 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Modern architectural house — minimalist concrete and glass residence at golden hour with strong shadows" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-hero.png' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+                <img class="wp-block-cover__image-background" alt="Modern architectural house — minimalist concrete and glass residence at golden hour with strong shadows" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container">
                         <div class="wp-block-group alignwide">
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
                                 <div class="wp-block-column" style="flex-basis:40%">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-studio.png' ); ?>" alt="Architecture studio interior — large table with models and drawings, concrete walls, soft natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-studio.webp' ); ?>" alt="Architecture studio interior — large table with models and drawings, concrete walls, soft natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 01 — The Studio, Dhaka</p>
@@ -109,7 +109,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="arch-project is-full" href="#" aria-label="View project — House N">
                                 <div class="arch-project-media" style="aspect-ratio: 21/9;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.png' ); ?>" alt="House N — contemporary residential architecture, minimalist concrete house with courtyard, strong directional light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.webp' ); ?>" alt="House N — contemporary residential architecture, minimalist concrete house with courtyard, strong directional light" loading="lazy">
                                 </div>
                                 <div class="arch-project-body" style="flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1.5rem; margin-top: 1.25rem;">
                                         <div>
@@ -126,7 +126,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="arch-project" href="#" style="--arch-split: 1.7fr 1fr; margin-top: 5rem;" aria-label="View project — Courtyard House">
                                 <div class="arch-project-media" style="aspect-ratio: 4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-2.png' ); ?>" alt="Courtyard House — Lisbon, Mediterranean light on white concrete walls, serene spatial composition" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-2.webp' ); ?>" alt="Courtyard House — Lisbon, Mediterranean light on white concrete walls, serene spatial composition" loading="lazy">
                                 </div>
                                 <div class="arch-project-body">
                                         <p class="arch-project-num">Project 02</p>
@@ -149,7 +149,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p class="arch-project-arrow">View project <span class="arch-arrow" aria-hidden="true">→</span></p>
                                 </div>
                                 <div class="arch-project-media" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-3.png' ); ?>" alt="Concrete Gallery — Berlin, brutalist architecture with dramatic shadow patterns, monolithic" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-3.webp' ); ?>" alt="Concrete Gallery — Berlin, brutalist architecture with dramatic shadow patterns, monolithic" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
@@ -162,7 +162,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="arch-project is-full" href="#" aria-label="View project — Terrace 07">
                                                 <div class="arch-project-media" style="aspect-ratio: 4/5;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.png' ); ?>" alt="Terrace 07 — interior architecture, terrace apartment, warm wood and concrete, soft natural light" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.webp' ); ?>" alt="Terrace 07 — interior architecture, terrace apartment, warm wood and concrete, soft natural light" loading="lazy">
                                                 </div>
                                                 <div class="arch-project-body" style="margin-top: 1.25rem;">
                                                         <p class="arch-project-num">Project 04</p>
@@ -178,7 +178,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="arch-project is-full" href="#" aria-label="View project — Museum North">
                                                 <div class="arch-project-media" style="aspect-ratio: 4/5;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-5.png' ); ?>" alt="Museum North — Copenhagen, contemporary cultural building with large glazing and concrete, reflective water" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-5.webp' ); ?>" alt="Museum North — Copenhagen, contemporary cultural building with large glazing and concrete, reflective water" loading="lazy">
                                                 </div>
                                                 <div class="arch-project-body" style="margin-top: 1.25rem;">
                                                         <p class="arch-project-num">Project 05</p>
@@ -196,7 +196,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="arch-project" href="#" style="--arch-split: 1fr 1fr; margin-top: 5rem;" aria-label="View project — Monolith">
                                 <div class="arch-project-media" style="aspect-ratio: 16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-6.png' ); ?>" alt="Monolith — Tokyo, commercial architecture, dark stone and glass facade at dusk" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-6.webp' ); ?>" alt="Monolith — Tokyo, commercial architecture, dark stone and glass facade at dusk" loading="lazy">
                                 </div>
                                 <div class="arch-project-body" style="justify-content: center;">
                                         <p class="arch-project-num">Project 06</p>
@@ -241,7 +241,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Large image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-featured.png' ); ?>" alt="House N — interior architecture, double-height concrete living space with courtyard light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-featured.webp' ); ?>" alt="House N — interior architecture, double-height concrete living space with courtyard light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Concept + facts -->
@@ -386,23 +386,23 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <figcaption class="arch-material-label">Concrete</figcaption>
                                 </figure>
                                 <figure class="arch-material">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-2.png' ); ?>" alt="Material close-up — warm wood grain surface with natural light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-2.webp' ); ?>" alt="Material close-up — warm wood grain surface with natural light" loading="lazy">
                                         <figcaption class="arch-material-label">Wood</figcaption>
                                 </figure>
                                 <figure class="arch-material">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-3.png' ); ?>" alt="Material close-up — natural stone surface with veining, travertine" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-3.webp' ); ?>" alt="Material close-up — natural stone surface with veining, travertine" loading="lazy">
                                         <figcaption class="arch-material-label">Stone</figcaption>
                                 </figure>
                                 <figure class="arch-material">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-4.png' ); ?>" alt="Material close-up — glass facade with reflection of sky" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-4.webp' ); ?>" alt="Material close-up — glass facade with reflection of sky" loading="lazy">
                                         <figcaption class="arch-material-label">Glass</figcaption>
                                 </figure>
                                 <figure class="arch-material">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-5.png' ); ?>" alt="Material close-up — blackened steel column with rivets" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-5.webp' ); ?>" alt="Material close-up — blackened steel column with rivets" loading="lazy">
                                         <figcaption class="arch-material-label">Steel</figcaption>
                                 </figure>
                                 <figure class="arch-material">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-6.png' ); ?>" alt="Material close-up — light and shadow on a concrete wall, dramatic raking light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-6.webp' ); ?>" alt="Material close-up — light and shadow on a concrete wall, dramatic raking light" loading="lazy">
                                         <figcaption class="arch-material-label">Light &amp; Shadow</figcaption>
                                 </figure>
                         </div>
@@ -493,7 +493,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="arch-team-member">
                                                 <div class="arch-team-portrait">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-1.png' ); ?>" alt="Editorial portrait of Nayan Roy, Principal Architect" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-1.webp' ); ?>" alt="Editorial portrait of Nayan Roy, Principal Architect" loading="lazy">
                                                 </div>
                                                 <figcaption>
                                                         <p class="arch-team-name">Nayan Roy</p>
@@ -508,7 +508,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="arch-team-member">
                                                 <div class="arch-team-portrait">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-2.png' ); ?>" alt="Editorial portrait of Maya Rahman, Design Director" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-2.webp' ); ?>" alt="Editorial portrait of Maya Rahman, Design Director" loading="lazy">
                                                 </div>
                                                 <figcaption>
                                                         <p class="arch-team-name">Maya Rahman</p>
@@ -523,7 +523,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="arch-team-member">
                                                 <div class="arch-team-portrait">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-3.png' ); ?>" alt="Editorial portrait of Arif Hasan, Project Architect" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-3.webp' ); ?>" alt="Editorial portrait of Arif Hasan, Project Architect" loading="lazy">
                                                 </div>
                                                 <figcaption>
                                                         <p class="arch-team-name">Arif Hasan</p>
@@ -538,7 +538,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="arch-team-member">
                                                 <div class="arch-team-portrait">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-4.png' ); ?>" alt="Editorial portrait of Sara Khan, Interior Architect" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-4.webp' ); ?>" alt="Editorial portrait of Sara Khan, Interior Architect" loading="lazy">
                                                 </div>
                                                 <figcaption>
                                                         <p class="arch-team-name">Sara Khan</p>

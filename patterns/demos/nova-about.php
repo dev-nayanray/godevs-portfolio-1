@@ -104,7 +104,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="nova-editorial-2col" style="margin-top:var(--wp--preset--spacing--70);">
 				<div>
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-studio.png' ); ?>" alt="NOVA creative studio interior — minimal designer workspace with natural light, warm wood and raw concrete" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover;width:100%;height:auto" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-studio.webp' ); ?>" alt="NOVA creative studio interior — minimal designer workspace with natural light, warm wood and raw concrete" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover;width:100%;height:auto" loading="lazy">
 					<p class="nova-caption">NOVA Studio — Reykjavík</p>
 				</div>
 				<div>
@@ -278,7 +278,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-1.png' ); ?>" alt="Portrait of Sólrún Halldórsdóttir, NOVA founder and creative director" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-1.webp' ); ?>" alt="Portrait of Sólrún Halldórsdóttir, NOVA founder and creative director" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Founder & Creative Director</p>
@@ -294,7 +294,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-2.png' ); ?>" alt="Portrait of Marco Reyes, NOVA design director" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-2.webp' ); ?>" alt="Portrait of Marco Reyes, NOVA design director" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Design Director</p>
@@ -310,7 +310,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-3.png' ); ?>" alt="Portrait of Aïcha Diop, NOVA design engineer" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-3.webp' ); ?>" alt="Portrait of Aïcha Diop, NOVA design engineer" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Design Engineer</p>
@@ -326,7 +326,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-4.png' ); ?>" alt="Portrait of Kenji Watanabe, NOVA strategy lead" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-team-4.webp' ); ?>" alt="Portrait of Kenji Watanabe, NOVA strategy lead" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Strategy Lead</p>

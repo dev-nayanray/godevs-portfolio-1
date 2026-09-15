@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":50,"overlayColor":"primary","minHeight":80,"isDark":true,"style":{"spacing":{"padding":{"top":"var:preset|spacing|120","bottom":"var:preset|spacing|120","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover" style="min-height:80vh;padding-top:var(--wp--preset--spacing--120);padding-bottom:var(--wp--preset--spacing--120);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-50 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Lost road — dramatic empty travel landscape at dusk" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.png' ); ?>" style="object-fit:cover;object-position:center" loading="lazy"/>
+                <img class="wp-block-cover__image-background" alt="Lost road — dramatic empty travel landscape at dusk" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.webp' ); ?>" style="object-fit:cover;object-position:center" loading="lazy"/>
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container">
                         <div class="wp-block-group alignwide">

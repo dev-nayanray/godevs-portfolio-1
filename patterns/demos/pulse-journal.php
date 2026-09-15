@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Featured image 16/9 -->
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-journal-1.png' ); ?>" alt="Featured journal visual — abstract editorial layout of grids, charts and typography fragments on a cool neutral field" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-journal-1.webp' ); ?>" alt="Featured journal visual — abstract editorial layout of grids, charts and typography fragments on a cool neutral field" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + excerpt row -->

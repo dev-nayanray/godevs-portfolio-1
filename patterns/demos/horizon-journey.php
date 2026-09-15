@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.png' ); ?>" alt="Patagonia — granite spires at dawn over a glacial lake, Fitz Roy range, cinematic wide" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia — granite spires at dawn over a glacial lake, Fitz Roy range, cinematic wide" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"hor-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.06em"}}} -->
 			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 01 — First light on the Fitz Roy range, El Chaltén, Argentina.</p>
@@ -146,7 +146,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.png' ); ?>" alt="Patagonia — wide vista of granite spires above low cloud, golden alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.webp' ); ?>" alt="Patagonia — wide vista of granite spires above low cloud, golden alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"hor-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.06em"}}} -->
 			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 02 — Cloud spilling over the Andes at first light, viewed from the eastern steppe.</p>
@@ -178,7 +178,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="hor-frames" aria-label="Journey gallery">
 				<figure class="hor-frame hf-1">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.png' ); ?>" alt="Patagonia — granite spire at dawn above low cloud" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.webp' ); ?>" alt="Patagonia — granite spire at dawn above low cloud" loading="lazy">
 					<figcaption class="hor-frame-caption">01 — El Chaltén, Argentina</figcaption>
 				</figure>
 				<figure class="hor-frame hf-4">

@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<!-- wp:column {"verticalAlignment":"top","width":"40%"} -->
 				<div class="wp-block-column" style="flex-basis:40%">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-portrait.png' ); ?>" alt="Editorial portrait of the product designer in a minimal studio with soft cool light" style="border-radius:8px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-portrait.webp' ); ?>" alt="Editorial portrait of the product designer in a minimal studio with soft cool light" style="border-radius:8px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"pulse-caption","style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--20);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.02em">Fig. 01 — Studio portrait, Berlin · 2026</p>
@@ -294,7 +294,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-studio.png' ); ?>" alt="Wide studio shot — minimal desk with product design artifacts, soft cool daylight" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-studio.webp' ); ?>" alt="Wide studio shot — minimal desk with product design artifacts, soft cool daylight" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"pulse-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.02em">Fig. 02 — Studio, Berlin. Where most of the research, wireframes and prototypes happen.</p>

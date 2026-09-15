@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-featured.png' ); ?>" alt="House N — double-height concrete living space with courtyard light and material warmth" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-featured.webp' ); ?>" alt="House N — double-height concrete living space with courtyard light and material warmth" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 01 — Double-height living space, courtyard elevation</p>
@@ -206,7 +206,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large image — architect-project-1.png 21/9 -->
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.png' ); ?>" alt="House N — exterior architectural photograph, minimalist concrete and glass residence at golden hour" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.webp' ); ?>" alt="House N — exterior architectural photograph, minimalist concrete and glass residence at golden hour" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 02 — Street elevation at golden hour</p>
@@ -218,7 +218,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-1.png' ); ?>" alt="House N — interior detail, concrete stair and skylight" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-1.webp' ); ?>" alt="House N — interior detail, concrete stair and skylight" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 03 — Concrete stair under the north skylight</p>
@@ -228,7 +228,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-2.png' ); ?>" alt="House N — interior detail, central courtyard with raking light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-2.webp' ); ?>" alt="House N — interior detail, central courtyard with raking light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 04 — Central court, mid-afternoon</p>
@@ -267,15 +267,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<figcaption class="arch-material-label">Concrete</figcaption>
 				</figure>
 				<figure class="arch-material">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-2.png' ); ?>" alt="House N — material close-up, warm wood joinery and door detail" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-2.webp' ); ?>" alt="House N — material close-up, warm wood joinery and door detail" loading="lazy">
 					<figcaption class="arch-material-label">Wood</figcaption>
 				</figure>
 				<figure class="arch-material">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-3.png' ); ?>" alt="House N — material close-up, travertine floor with natural veining" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-3.webp' ); ?>" alt="House N — material close-up, travertine floor with natural veining" loading="lazy">
 					<figcaption class="arch-material-label">Stone</figcaption>
 				</figure>
 				<figure class="arch-material">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-4.png' ); ?>" alt="House N — material close-up, frameless glazing capturing courtyard reflection" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-material-4.webp' ); ?>" alt="House N — material close-up, frameless glazing capturing courtyard reflection" loading="lazy">
 					<figcaption class="arch-material-label">Glass</figcaption>
 				</figure>
 			</div>
@@ -291,7 +291,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-3.png' ); ?>" alt="House N — interior detail, evening view of double-height space with warm interior light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-detail-3.webp' ); ?>" alt="House N — interior detail, evening view of double-height space with warm interior light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"arch-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="arch-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500">Fig. 05 — Living volume, evening</p>

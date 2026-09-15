@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 4/5;" aria-label="View commercial film — Afterlight">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-1.png' ); ?>" alt="Commercial direction — cinematic film still, warm golden light through a window onto a dark interior" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-1.webp' ); ?>" alt="Commercial direction — cinematic film still, warm golden light through a window onto a dark interior" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">01</p>
@@ -201,7 +201,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 4/5;" aria-label="View documentary — Between Tides">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.png' ); ?>" alt="Documentary direction — cinematic still, vast ocean and sky at dawn with a distant figure" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.webp' ); ?>" alt="Documentary direction — cinematic still, vast ocean and sky at dawn with a distant figure" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">04</p>

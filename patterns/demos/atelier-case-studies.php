@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.png' ); ?>" alt="FORMA — full-bleed hero image of the brand identity system: wordmark, typographic specimens and editorial collateral arranged on warm ivory paper" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="FORMA — full-bleed hero image of the brand identity system: wordmark, typographic specimens and editorial collateral arranged on warm ivory paper" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
                         <!-- /wp:image -->
                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 01 — The Forma identity, applied across editorial, digital and environmental surfaces.</p>
@@ -195,7 +195,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Approach detail image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide" style="margin-top:var(--wp--preset--spacing--60)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-1.png' ); ?>" alt="Forma — typographic system close-up: serif wordmark specimens, grid layout and editorial compositions on warm ivory paper" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide" style="margin-top:var(--wp--preset--spacing--60)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-1.webp' ); ?>" alt="Forma — typographic system close-up: serif wordmark specimens, grid layout and editorial compositions on warm ivory paper" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 02 — Type system: serif wordmark, sans pairing and the editorial grid that holds across formats.</p>
@@ -229,7 +229,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-2.png' ); ?>" alt="Forma — editorial collateral detail: business cards, letterhead and printed specimens on warm ivory paper" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-2.webp' ); ?>" alt="Forma — editorial collateral detail: business cards, letterhead and printed specimens on warm ivory paper" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 03 — Stationery system: debossed wordmark, ivory stock and a sans utility typeface for utility text.</p>
@@ -239,7 +239,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-3.png' ); ?>" alt="Forma — environmental application: large-format wordmark installed in a flagship interior with warm ivory surfaces and natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-forma-detail-3.webp' ); ?>" alt="Forma — environmental application: large-format wordmark installed in a flagship interior with warm ivory surfaces and natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 04 — Environmental application: the wordmark at architectural scale inside the Forma flagship.</p>

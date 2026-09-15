@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"bottom","width":"56%"} -->
 				<div class="wp-block-column" style="flex-basis:56%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-hero.png' ); ?>" alt="Abstract arrangement of floating app UI panels — PULSE product design hero" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-hero.webp' ); ?>" alt="Abstract arrangement of floating app UI panels — PULSE product design hero" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -115,7 +115,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"66%"} -->
 				<div class="wp-block-column" style="flex-basis:66%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.png' ); ?>" alt="Fintech App case study — clean mobile banking interface with charts and balance cards" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App case study — clean mobile banking interface with charts and balance cards" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -158,7 +158,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Fintech App case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.png' ); ?>" alt="Fintech App — mobile banking interface with charts and balance cards" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App — mobile banking interface with charts and balance cards" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">Fintech · Mobile · 2026</p>
@@ -178,7 +178,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View SaaS Analytics case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.png' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">SaaS · Web · 2025</p>
@@ -204,7 +204,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Health App case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.png' ); ?>" alt="Health App — clean medication tracking mobile interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health App — clean medication tracking mobile interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">Health · Mobile · 2025</p>
@@ -224,7 +224,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View E-commerce Admin case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.png' ); ?>" alt="E-commerce Admin — clean order management dashboard interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="E-commerce Admin — clean order management dashboard interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">E-commerce · Web · 2024</p>
@@ -557,7 +557,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 				<div class="wp-block-column" style="flex-basis:42%">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-portrait.png' ); ?>" alt="Editorial portrait of the product designer in a minimal studio with soft cool light" style="border-radius:8px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-portrait.webp' ); ?>" alt="Editorial portrait of the product designer in a minimal studio with soft cool light" style="border-radius:8px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->

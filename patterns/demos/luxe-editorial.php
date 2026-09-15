@@ -86,7 +86,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large 21/9 image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-1.png' ); ?>" alt="THE QUIET IMAGE editorial — model in architectural garment, soft ivory backdrop, dramatic directional light" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-1.webp' ); ?>" alt="THE QUIET IMAGE editorial — model in architectural garment, soft ivory backdrop, dramatic directional light" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + meta + description + link -->
@@ -143,7 +143,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="luxe-grid">
 				<a class="luxe-card lg-1" href="#" aria-label="View editorial — Soft Structures">
 					<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-2.png' ); ?>" alt="SOFT STRUCTURES editorial — draped fabric close-up on figure, beige tones, soft directional light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-2.webp' ); ?>" alt="SOFT STRUCTURES editorial — draped fabric close-up on figure, beige tones, soft directional light" loading="lazy">
 					</div>
 					<p class="luxe-card-num">02 — Soft Structures</p>
 					<h3 class="luxe-card-title">Soft Structures</h3>
@@ -151,7 +151,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-2" href="#" aria-label="View campaign — After Hours">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-3.png' ); ?>" alt="AFTER HOURS campaign — figure in elegant evening wear, dramatic low light, charcoal palette" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-editorial-3.webp' ); ?>" alt="AFTER HOURS campaign — figure in elegant evening wear, dramatic low light, charcoal palette" loading="lazy">
 					</div>
 					<p class="luxe-card-num">03 — After Hours</p>
 					<h3 class="luxe-card-title">After Hours</h3>
@@ -159,7 +159,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-3" href="#" aria-label="View editorial — The New Silhouette">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-1.png' ); ?>" alt="THE NEW SILHOUETTE editorial — full-length model in structured minimal garment, ivory backdrop" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-1.webp' ); ?>" alt="THE NEW SILHOUETTE editorial — full-length model in structured minimal garment, ivory backdrop" loading="lazy">
 					</div>
 					<p class="luxe-card-num">04 — The New Silhouette</p>
 					<h3 class="luxe-card-title">The New Silhouette</h3>
@@ -167,7 +167,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-4" href="#" aria-label="View editorial — Quiet Luxury">
 					<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-5.png' ); ?>" alt="QUIET LUXURY editorial — minimal garment study, soft natural light, ivory tones" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-5.webp' ); ?>" alt="QUIET LUXURY editorial — minimal garment study, soft natural light, ivory tones" loading="lazy">
 					</div>
 					<p class="luxe-card-num">05 — Quiet Luxury</p>
 					<h3 class="luxe-card-title">Quiet Luxury</h3>

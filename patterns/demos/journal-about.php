@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="jour-2col" style="grid-template-columns: 1fr; gap: 2.5rem;">
 				<div class="jour-bio-portrait">
 					<figure class="wp-block-image" style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-portrait.png' ); ?>" alt="Editorial portrait of the writer — warm natural light, neutral background, considered" style="aspect-ratio:4/5;object-fit:cover;width:100%;display:block;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-portrait.webp' ); ?>" alt="Editorial portrait of the writer — warm natural light, neutral background, considered" style="aspect-ratio:4/5;object-fit:cover;width:100%;display:block;" loading="lazy">
 					</figure>
 					<p class="jour-caption" style="margin-top:0.85rem;">Fig. 01 — In the studio, late afternoon.</p>
 				</div>
@@ -132,7 +132,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.png' ); ?>" alt="The Quiet Shape of Things — minimal hardcover book on warm paper surface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.webp' ); ?>" alt="The Quiet Shape of Things — minimal hardcover book on warm paper surface" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">The Quiet Shape of Things</p>
@@ -147,7 +147,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.png' ); ?>" alt="Ways of Looking — stack of minimal books, warm tones" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.webp' ); ?>" alt="Ways of Looking — stack of minimal books, warm tones" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">Ways of Looking</p>
@@ -162,7 +162,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.png' ); ?>" alt="Small Observations — open book pages with warm light" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.webp' ); ?>" alt="Small Observations — open book pages with warm light" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">Small Observations</p>

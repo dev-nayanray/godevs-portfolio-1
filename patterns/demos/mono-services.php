@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<div class="mono-2col">
 				<div>
 					<figure style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.png' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.webp' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" style="aspect-ratio:4/3;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
 						<p class="mono-caption">Fig. 01 — LUMA product platform, 2026.</p>
 					</figure>
 				</div>
@@ -179,7 +179,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				</div>
 				<div>
 					<figure style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.png' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" style="aspect-ratio:16/10;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.webp' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" style="aspect-ratio:16/10;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
 						<p class="mono-caption">Fig. 02 — GRID developer platform, 2023.</p>
 					</figure>
 				</div>

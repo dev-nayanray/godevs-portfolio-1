@@ -155,7 +155,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="luxe-card" href="/services" aria-label="View Creative Direction work">
 						<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-campaign.png' ); ?>" alt="Creative Direction — campaign image study in movement, light and material" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-campaign.webp' ); ?>" alt="Creative Direction — campaign image study in movement, light and material" loading="lazy">
 						</div>
 					</a>
 					<!-- /wp:html -->
@@ -219,7 +219,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="luxe-card" href="/services" aria-label="View Fashion Design work">
 						<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.png' ); ?>" alt="Fashion Design — Form collection draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.webp' ); ?>" alt="Fashion Design — Form collection draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
 						</div>
 					</a>
 					<!-- /wp:html -->

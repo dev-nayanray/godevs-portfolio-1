@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="arch-2col" style="grid-template-columns: 1fr;">
 				<div>
 					<div class="arch-project-media" style="aspect-ratio: 4/5;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-studio.png' ); ?>" alt="Architecture studio interior — long table with models and drawings, concrete walls, soft natural light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-studio.webp' ); ?>" alt="Architecture studio interior — long table with models and drawings, concrete walls, soft natural light" loading="lazy">
 					</div>
 					<p class="arch-caption">Fig. 01 — The Studio, Dhaka</p>
 				</div>
@@ -133,7 +133,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<figure class="arch-team-member">
 						<div class="arch-team-portrait">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-1.png' ); ?>" alt="Editorial portrait of Nayan Roy, Principal Architect" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-1.webp' ); ?>" alt="Editorial portrait of Nayan Roy, Principal Architect" loading="lazy">
 						</div>
 						<figcaption>
 							<p class="arch-team-name">Nayan Roy</p>
@@ -148,7 +148,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<figure class="arch-team-member">
 						<div class="arch-team-portrait">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-2.png' ); ?>" alt="Editorial portrait of Maya Rahman, Design Director" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-2.webp' ); ?>" alt="Editorial portrait of Maya Rahman, Design Director" loading="lazy">
 						</div>
 						<figcaption>
 							<p class="arch-team-name">Maya Rahman</p>
@@ -163,7 +163,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<figure class="arch-team-member">
 						<div class="arch-team-portrait">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-3.png' ); ?>" alt="Editorial portrait of Arif Hasan, Project Architect" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-3.webp' ); ?>" alt="Editorial portrait of Arif Hasan, Project Architect" loading="lazy">
 						</div>
 						<figcaption>
 							<p class="arch-team-name">Arif Hasan</p>
@@ -178,7 +178,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<figure class="arch-team-member">
 						<div class="arch-team-portrait">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-4.png' ); ?>" alt="Editorial portrait of Sara Khan, Interior Architect" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-team-4.webp' ); ?>" alt="Editorial portrait of Sara Khan, Interior Architect" loading="lazy">
 						</div>
 						<figcaption>
 							<p class="arch-team-name">Sara Khan</p>

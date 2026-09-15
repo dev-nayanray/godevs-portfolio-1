@@ -109,7 +109,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="arch-2col">
 				<div class="arch-project-media" style="aspect-ratio: 4/5;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.png' ); ?>" alt="House N — minimalist concrete residence with courtyard and strong directional light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.webp' ); ?>" alt="House N — minimalist concrete residence with courtyard and strong directional light" loading="lazy">
 				</div>
 				<div>
 					<p class="is-style-arch-label" style="color: var(--wp--preset--color--muted); font-family: var(--wp--preset--font-family--body); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; margin: 0 0 1.5rem;">Service 01</p>
@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="font-family: var(--wp--preset--font-family--body); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; margin: 1rem 0 0;"><a href="/contact">Discuss a project →</a></p>
 				</div>
 				<div class="arch-project-media" style="aspect-ratio: 4/5;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.png' ); ?>" alt="Terrace 07 — warm wood and concrete interior architecture, soft directional light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.webp' ); ?>" alt="Terrace 07 — warm wood and concrete interior architecture, soft directional light" loading="lazy">
 				</div>
 			</div>
 			<!-- /wp:html -->

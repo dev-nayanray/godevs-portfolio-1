@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<div class="wp-block-column" style="flex-basis:40%">
 				<!-- wp:html -->
 				<figure class="frame-story" style="margin:0;aspect-ratio:4/5;background:var(--frame-surface);">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-portrait.png' ); ?>" alt="Studio portrait of the photographer in low side light, against a dark textured wall — Lisbon" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-portrait.webp' ); ?>" alt="Studio portrait of the photographer in low side light, against a dark textured wall — Lisbon" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;">
 				</figure>
 				<!-- /wp:html -->
 				<!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -161,7 +161,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		<div class="wp-block-group alignwide">
 			<!-- wp:html -->
 			<a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View the studio — Lisbon">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-studio.png' ); ?>" alt="The studio interior in Lisbon — large north-facing window, single chair, textured plaster wall, soft diffused daylight" loading="lazy">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-studio.webp' ); ?>" alt="The studio interior in Lisbon — large north-facing window, single chair, textured plaster wall, soft diffused daylight" loading="lazy">
 			</a>
 			<!-- /wp:html -->
 			<!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->

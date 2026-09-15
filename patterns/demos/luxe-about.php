@@ -62,7 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <div>
                                         <figure class="luxe-card" style="display:block;">
                                                 <div class="luxe-card-media" style="aspect-ratio: 4/5;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-portrait.png' ); ?>" alt="Editorial portrait of the fashion designer, soft natural light, ivory backdrop, thoughtful" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-portrait.webp' ); ?>" alt="Editorial portrait of the fashion designer, soft natural light, ivory backdrop, thoughtful" loading="lazy">
                                                 </div>
                                                 <p class="luxe-caption" style="margin-top: 1rem;">The Designer — in studio, Paris.</p>
                                         </figure>
@@ -128,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Wide image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover","style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-                        <figure class="wp-block-image alignwide" style="margin-top:var(--wp--preset--spacing--40)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-studio.png' ); ?>" alt="The atelier interior — quiet workroom with fabric, sewing forms and natural light, ivory and warm wood tones" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide" style="margin-top:var(--wp--preset--spacing--40)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-studio.webp' ); ?>" alt="The atelier interior — quiet workroom with fabric, sewing forms and natural light, ivory and warm wood tones" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Caption -->

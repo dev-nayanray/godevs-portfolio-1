@@ -54,7 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="hor-2col hor-bio">
 				<div class="hor-bio-portrait">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-portrait.png' ); ?>" alt="Portrait of Alex Morgan — travel photographer in field clothing, soft natural light, contemplative" style="width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/5" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-portrait.webp' ); ?>" alt="Portrait of Alex Morgan — travel photographer in field clothing, soft natural light, contemplative" style="width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/5" loading="lazy">
 					<p class="hor-caption" style="margin-top:0.75rem">Fig. 01 — In the studio, Lisbon, 2026.</p>
 				</div>
 				<div class="hor-bio-body">

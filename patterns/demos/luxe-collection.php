@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large 21/9 image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.png' ); ?>" alt="FORM collection — campaign image, draped fabric and silhouette study in ivory and charcoal tones, dramatic soft light" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.webp' ); ?>" alt="FORM collection — campaign image, draped fabric and silhouette study in ivory and charcoal tones, dramatic soft light" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Caption -->
@@ -202,37 +202,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="luxe-lookbook">
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-1.png' ); ?>" alt="Look 01 — full-length minimal ivory garment, soft studio light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-1.webp' ); ?>" alt="Look 01 — full-length minimal ivory garment, soft studio light" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 01</span>
 				</figure>
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-2.png' ); ?>" alt="Look 02 — fabric and material close-up, ivory textile texture" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-2.webp' ); ?>" alt="Look 02 — fabric and material close-up, ivory textile texture" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 02</span>
 				</figure>
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-3.png' ); ?>" alt="Look 03 — accessory detail, elegant minimal jewelry on fabric" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-3.webp' ); ?>" alt="Look 03 — accessory detail, elegant minimal jewelry on fabric" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 03</span>
 				</figure>
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-4.png' ); ?>" alt="Look 04 — movement shot, garment in motion, soft light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-4.webp' ); ?>" alt="Look 04 — movement shot, garment in motion, soft light" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 04</span>
 				</figure>
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-5.png' ); ?>" alt="Look 05 — portrait with garment detail, ivory tones" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-5.webp' ); ?>" alt="Look 05 — portrait with garment detail, ivory tones" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 05</span>
 				</figure>
 				<figure class="luxe-look luxe-card">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-6.png' ); ?>" alt="Look 06 — full-length evening look, charcoal tone, dramatic light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-look-6.webp' ); ?>" alt="Look 06 — full-length evening look, charcoal tone, dramatic light" loading="lazy">
 					</div>
 					<span class="luxe-look-label">Look 06</span>
 				</figure>
@@ -268,7 +268,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"66%"} -->
 				<div class="wp-block-column" style="flex-basis:66%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-1.png' ); ?>" alt="FORM collection — full-length model in structured minimal garment, ivory backdrop, soft daylight" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-1.webp' ); ?>" alt="FORM collection — full-length model in structured minimal garment, ivory backdrop, soft daylight" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"luxe-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="luxe-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 02 — Look 03, on figure. Draped wool-silk, ivory.</p>
@@ -278,7 +278,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"34%"} -->
 				<div class="wp-block-column" style="flex-basis:34%">
 					<!-- wp:image {"aspectRatio":"3/4","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-3.png' ); ?>" alt="AFTER DARK editorial — intimate portrait with fabric detail, ivory and beige tones, fabric study" style="aspect-ratio:3/4;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-3.webp' ); ?>" alt="AFTER DARK editorial — intimate portrait with fabric detail, ivory and beige tones, fabric study" style="aspect-ratio:3/4;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"luxe-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="luxe-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 03 — Detail study, fabric fall.</p>

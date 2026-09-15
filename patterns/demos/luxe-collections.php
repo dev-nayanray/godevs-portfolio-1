@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="luxe-card" href="#" aria-label="View collection — Form" style="display:block;margin-top:1.5rem;">
 				<div class="luxe-card-media" style="aspect-ratio: 21/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.png' ); ?>" alt="FORM collection — draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.webp' ); ?>" alt="FORM collection — draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -150,7 +150,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="luxe-grid">
 				<a class="luxe-card lg-1" href="#" aria-label="View collection — Silhouette">
 					<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-2.png' ); ?>" alt="SILHOUETTE collection — silhouette study against warm charcoal backdrop" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-2.webp' ); ?>" alt="SILHOUETTE collection — silhouette study against warm charcoal backdrop" loading="lazy">
 					</div>
 					<p class="luxe-card-num">02 — Silhouette</p>
 					<h3 class="luxe-card-title">Silhouette</h3>
@@ -158,7 +158,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-2" href="#" aria-label="View editorial — After Dark">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-3.png' ); ?>" alt="AFTER DARK editorial — intimate portrait with fabric detail, ivory and beige tones" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-3.webp' ); ?>" alt="AFTER DARK editorial — intimate portrait with fabric detail, ivory and beige tones" loading="lazy">
 					</div>
 					<p class="luxe-card-num">03 — After Dark</p>
 					<h3 class="luxe-card-title">After Dark</h3>
@@ -166,7 +166,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-3" href="#" aria-label="View campaign — Object / Body">
 					<div class="luxe-card-media" style="aspect-ratio: 3/4;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-4.png' ); ?>" alt="OBJECT / BODY campaign — figure in motion with flowing garment, neutral palette" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-4.webp' ); ?>" alt="OBJECT / BODY campaign — figure in motion with flowing garment, neutral palette" loading="lazy">
 					</div>
 					<p class="luxe-card-num">04 — Object / Body</p>
 					<h3 class="luxe-card-title">Object / Body</h3>
@@ -174,7 +174,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</a>
 				<a class="luxe-card lg-4" href="#" aria-label="View collection — Quiet Luxury">
 					<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-5.png' ); ?>" alt="QUIET LUXURY collection — minimal garment study, soft natural light, ivory tones" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-5.webp' ); ?>" alt="QUIET LUXURY collection — minimal garment study, soft natural light, ivory tones" loading="lazy">
 					</div>
 					<p class="luxe-card-num">05 — Quiet Luxury</p>
 					<h3 class="luxe-card-title">Quiet Luxury</h3>

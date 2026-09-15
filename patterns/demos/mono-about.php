@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <div class="mono-2col">
                                 <div>
                                         <figure style="margin:0;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-portrait.png' ); ?>" alt="Editorial portrait of the developer in a minimal studio, soft natural light, neutral background" style="aspect-ratio:4/5;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-portrait.webp' ); ?>" alt="Editorial portrait of the developer in a minimal studio, soft natural light, neutral background" style="aspect-ratio:4/5;object-fit:cover;border-radius:6px;width:100%;" loading="lazy">
                                                 <p class="mono-caption">Fig. 01 — Studio portrait, 2026.</p>
                                         </figure>
                                 </div>
@@ -283,7 +283,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                         <!-- Wide studio image -->
                         <!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-studio.png' ); ?>" alt="Clean minimal developer studio — laptop with abstract product interface, neutral desk, soft daylight" style="border-radius:6px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/><p class="mono-caption">Fig. 02 — Workspace, Europe / Asia. Daylight, a laptop, and a deliberately small toolkit.</p></figure>
+                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-studio.webp' ); ?>" alt="Clean minimal developer studio — laptop with abstract product interface, neutral desk, soft daylight" style="border-radius:6px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/><p class="mono-caption">Fig. 02 — Workspace, Europe / Asia. Daylight, a laptop, and a deliberately small toolkit.</p></figure>
                         <!-- /wp:image -->
 
                 </div>

@@ -162,7 +162,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="atelier-2col" style="--atelier-split: 1.2fr 1fr;">
 				<div>
 					<figure style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.png' ); ?>" alt="Maison 24 — art direction for a fashion house, single figure in a minimal architectural space with soft daylight" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.webp' ); ?>" alt="Maison 24 — art direction for a fashion house, single figure in a minimal architectural space with soft daylight" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
 					</figure>
 					<p class="atelier-caption">Fig. 01 — Maison 24, seasonal story (2026)</p>
 				</div>
@@ -221,7 +221,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<div>
 					<figure style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.png' ); ?>" alt="Noir Objects — digital product experience for a design objects gallery, displayed on screen with warm ivory surroundings" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.webp' ); ?>" alt="Noir Objects — digital product experience for a design objects gallery, displayed on screen with warm ivory surroundings" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
 					</figure>
 					<p class="atelier-caption">Fig. 02 — Noir Objects, digital experience (2025)</p>
 				</div>

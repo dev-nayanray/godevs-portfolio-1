@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Full-bleed 21/9 image -->
 			<!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"4px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.png' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" style="border-radius:4px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.webp' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" style="border-radius:4px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + body row -->
@@ -147,7 +147,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
 				</div>
 				<div class="mono-project-media" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.png' ); ?>" alt="ATLAS — data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.webp' ); ?>" alt="ATLAS — data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -156,7 +156,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:html -->
 			<a class="mono-project" href="#" style="--mono-split: 1.4fr 1fr; margin-top: 4rem;" aria-label="View project — North">
 				<div class="mono-project-media" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.png' ); ?>" alt="NORTH — e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.webp' ); ?>" alt="NORTH — e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
 				</div>
 				<div class="mono-project-body">
 					<p class="mono-project-num">03 — NORTH</p>
@@ -181,7 +181,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="mono-project is-full" href="#" aria-label="View project — Forma">
 						<div class="mono-project-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.png' ); ?>" alt="FORMA — creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.webp' ); ?>" alt="FORMA — creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
 						</div>
 						<div class="mono-project-body" style="margin-top: 1rem;">
 							<p class="mono-project-num">04 — FORMA</p>
@@ -201,7 +201,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="mono-project is-full" href="#" aria-label="View project — Pulse">
 						<div class="mono-project-media" style="aspect-ratio: 3/4;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.png' ); ?>" alt="PULSE — mobile product app UI, clean minimal onboarding flow" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.webp' ); ?>" alt="PULSE — mobile product app UI, clean minimal onboarding flow" loading="lazy">
 						</div>
 						<div class="mono-project-body" style="margin-top: 1rem;">
 							<p class="mono-project-num">05 — PULSE</p>
@@ -235,7 +235,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
 				</div>
 				<div class="mono-project-media" style="aspect-ratio: 16/10;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.png' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.webp' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->

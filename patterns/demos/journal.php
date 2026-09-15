@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"55%"} -->
 				<div class="wp-block-column" style="flex-basis:55%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.png' ); ?>" alt="Featured story — quiet minimal interior with soft light through a window, warm tones" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.webp' ); ?>" alt="Featured story — quiet minimal interior with soft light through a window, warm tones" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -145,7 +145,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
 				</div>
 				<div class="jour-article-image" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.png' ); ?>" alt="Editorial image about everyday architecture — minimal building facade with warm light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.webp' ); ?>" alt="Editorial image about everyday architecture — minimal building facade with warm light" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -154,7 +154,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — What We Mean When We Say Simple">
 				<div class="jour-article-image" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.png' ); ?>" alt="Editorial image about simplicity — single object on warm paper surface" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.webp' ); ?>" alt="Editorial image about simplicity — single object on warm paper surface" loading="lazy">
 				</div>
 				<div class="jour-article-body">
 					<p class="jour-article-meta"><span>Notes</span><span>28.08.26</span><span>5 min</span></p>
@@ -187,7 +187,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
 				</div>
 				<div class="jour-article-image" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.png' ); ?>" alt="Editorial image about slow travel — winding road through warm landscape at golden hour" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.webp' ); ?>" alt="Editorial image about slow travel — winding road through warm landscape at golden hour" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -196,7 +196,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — Designing for Attention">
 				<div class="jour-article-image" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.png' ); ?>" alt="Editorial image about attention and design — abstract composition of layered paper forms" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.webp' ); ?>" alt="Editorial image about attention and design — abstract composition of layered paper forms" loading="lazy">
 				</div>
 				<div class="jour-article-body">
 					<p class="jour-article-meta"><span>Design</span><span>07.08.26</span><span>6 min</span></p>
@@ -267,7 +267,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
 				<div class="wp-block-column" style="flex-basis:40%">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-portrait.png' ); ?>" alt="Editorial portrait of the writer author, warm natural light, neutral background, thoughtful" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-portrait.webp' ); ?>" alt="Editorial portrait of the writer author, warm natural light, neutral background, thoughtful" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -317,7 +317,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large essay image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-essay.png' ); ?>" alt="Featured essay — vast quiet landscape with a single path, warm golden light, contemplative" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-essay.webp' ); ?>" alt="Featured essay — vast quiet landscape with a single path, warm golden light, contemplative" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Essay intro -->
@@ -443,7 +443,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.png' ); ?>" alt="The Quiet Shape of Things — minimal hardcover book on warm paper surface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.webp' ); ?>" alt="The Quiet Shape of Things — minimal hardcover book on warm paper surface" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">The Quiet Shape of Things</p>
@@ -458,7 +458,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.png' ); ?>" alt="Ways of Looking — stack of minimal books, warm tones" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.webp' ); ?>" alt="Ways of Looking — stack of minimal books, warm tones" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">Ways of Looking</p>
@@ -473,7 +473,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="jour-book" href="#">
 						<div class="jour-book-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.png' ); ?>" alt="Small Observations — open book pages with warm light" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.webp' ); ?>" alt="Small Observations — open book pages with warm light" loading="lazy">
 						</div>
 						<div>
 							<p class="jour-book-title">Small Observations</p>

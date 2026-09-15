@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:4/3;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.png' ); ?>" alt="Forma — brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="Forma — brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
                                         </div>
                                 </a>
 
@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:3/4;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.png' ); ?>" alt="Maison 24 — art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.webp' ); ?>" alt="Maison 24 — art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
                                         </div>
                                 </a>
 
@@ -125,7 +125,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:16/10;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.png' ); ?>" alt="Noir Objects — digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.webp' ); ?>" alt="Noir Objects — digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
                                         </div>
                                 </a>
 
@@ -137,7 +137,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:1/1;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.png' ); ?>" alt="Sora — visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.webp' ); ?>" alt="Sora — visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
                                         </div>
                                 </a>
 
@@ -149,7 +149,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:3/4;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.png' ); ?>" alt="Field Notes — editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.webp' ); ?>" alt="Field Notes — editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
                                         </div>
                                 </a>
 
@@ -161,7 +161,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:16/10;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.png' ); ?>" alt="Mori — campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.webp' ); ?>" alt="Mori — campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
                                         </div>
                                 </a>
 

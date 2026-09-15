@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- Showreel poster -->
 			<!-- wp:html -->
 			<figure class="noir-showreel" style="aspect-ratio: 21/9;">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.png' ); ?>" alt="AFTERLIGHT — cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="eager">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.webp' ); ?>" alt="AFTERLIGHT — cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="eager">
 				<div class="noir-showreel-overlay">
 					<a class="noir-play-btn" href="#" aria-label="Play Afterlight">▶</a>
 					<p class="is-style-noir-label" style="color: var(--noir-soft); margin: 0;">View Film → &nbsp;·&nbsp; 03:42</p>
@@ -211,7 +211,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- Full-bleed image with caption -->
 			<!-- wp:html -->
 			<figure class="noir-frame" style="aspect-ratio: 21/9;">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-1.png' ); ?>" alt="AFTERLIGHT — full cinematic frame, the room as morning light enters and begins to withdraw" loading="lazy">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-1.webp' ); ?>" alt="AFTERLIGHT — full cinematic frame, the room as morning light enters and begins to withdraw" loading="lazy">
 			</figure>
 			<figcaption class="noir-caption">Frame 01 · Room with entering light · 06:14 take</figcaption>
 			<!-- /wp:html -->
@@ -223,7 +223,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<div class="wp-block-column">
 					<!-- wp:html -->
 					<figure class="noir-frame" style="aspect-ratio: 4/5;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-2.png' ); ?>" alt="AFTERLIGHT — detail frame, hands in dramatic warm light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-2.webp' ); ?>" alt="AFTERLIGHT — detail frame, hands in dramatic warm light" loading="lazy">
 					</figure>
 					<figcaption class="noir-caption">Frame 02 · Detail · The hands</figcaption>
 					<!-- /wp:html -->
@@ -233,7 +233,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<div class="wp-block-column">
 					<!-- wp:html -->
 					<figure class="noir-frame" style="aspect-ratio: 4/5;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-3.png' ); ?>" alt="AFTERLIGHT — detail frame, profile in low-key side light" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-detail-3.webp' ); ?>" alt="AFTERLIGHT — detail frame, profile in low-key side light" loading="lazy">
 					</figure>
 					<figcaption class="noir-caption">Frame 03 · Detail · The profile</figcaption>
 					<!-- /wp:html -->

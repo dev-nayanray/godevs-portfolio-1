@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <div class="wp-block-group alignwide">
                         <!-- wp:html -->
                         <a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View photograph — Plate 01">
-                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-1.png' ); ?>" alt="Landscape photograph — vast atmospheric coastline horizon at dawn with soft grey light" loading="eager">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-1.webp' ); ?>" alt="Landscape photograph — vast atmospheric coastline horizon at dawn with soft grey light" loading="eager">
                         </a>
                         <!-- /wp:html -->
                         <!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <div class="wp-block-group alignwide">
                         <!-- wp:html -->
                         <a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View photograph — Plate 02">
-                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.png' ); ?>" alt="Landscape photograph — minimalist coastline horizon with low winter light" loading="lazy">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.webp' ); ?>" alt="Landscape photograph — minimalist coastline horizon with low winter light" loading="lazy">
                         </a>
                         <!-- /wp:html -->
                         <!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -157,7 +157,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <div class="wp-block-group alignwide">
                         <!-- wp:html -->
                         <a class="frame-story" href="#" style="display:block; aspect-ratio: 3/4; max-width: 56%; margin: 0 auto;" aria-label="View photograph — Plate 03">
-                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.png' ); ?>" alt="Landscape photograph — vertical study of mist over a calm sea horizon" loading="lazy">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.webp' ); ?>" alt="Landscape photograph — vertical study of mist over a calm sea horizon" loading="lazy">
                         </a>
                         <!-- /wp:html -->
                         <!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -179,7 +179,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-1.png' ); ?>" alt="Detail photograph — texture study of weathered painted surface in low light" loading="lazy">
                                 </a>
                                 <a class="frame-story fs-4" href="#" aria-label="View photograph — Plate 05">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-2.png' ); ?>" alt="Detail photograph — close study of folded fabric catching low light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-2.webp' ); ?>" alt="Detail photograph — close study of folded fabric catching low light" loading="lazy">
                                 </a>
                         </div>
                         <!-- /wp:html -->

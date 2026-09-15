@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="atelier-2col">
 				<div>
 					<figure style="margin:0;">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-about-portrait.png' ); ?>" alt="Editorial portrait of the art director in profile against a warm ivory backdrop, soft side light" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-about-portrait.webp' ); ?>" alt="Editorial portrait of the art director in profile against a warm ivory backdrop, soft side light" style="aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;display:block;" loading="lazy">
 					</figure>
 					<p class="atelier-caption">Studio portrait — Spring 2026</p>
 				</div>
@@ -255,7 +255,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-studio.png' ); ?>" alt="The ATELIER studio interior — warm ivory walls, soft daylight, a long table covered in editorial specimens" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-studio.webp' ); ?>" alt="The ATELIER studio interior — warm ivory walls, soft daylight, a long table covered in editorial specimens" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Fig. 01 — The studio, somewhere between London and Copenhagen.</p>

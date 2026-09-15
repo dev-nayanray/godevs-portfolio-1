@@ -183,7 +183,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <div class="nova-project-row" style="--nova-row-split: 55% 1fr;">
                                 <div class="nova-project-media" style="aspect-ratio:4/5;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.png' ); ?>" alt="Aster — brand identity system flatlay with business cards, letterhead and wordmark samples on a warm cream surface, representing NOVA's brand strategy capabilities" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.webp' ); ?>" alt="Aster — brand identity system flatlay with business cards, letterhead and wordmark samples on a warm cream surface, representing NOVA's brand strategy capabilities" loading="lazy">
                                 </div>
                                 <div>
                                         <p style="font-size:var(--wp--preset--font-size--medium);line-height:1.6;color:var(--wp--preset--color--muted);max-width:46ch;margin:0 0 1.5rem;">We start where every brand should — with the people it serves and the position it can credibly own. Research, workshops and a sharp narrative that holds up from pitch deck to product launch.</p>
@@ -228,7 +228,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <div class="nova-project-row is-reversed" style="--nova-row-split: 1fr 55%; gap:4rem;">
                                 <div class="nova-project-media" style="aspect-ratio:16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="Orbit — abstract digital experience with floating translucent glass UI panels in dark space, representing NOVA's web design capabilities" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="Orbit — abstract digital experience with floating translucent glass UI panels in dark space, representing NOVA's web design capabilities" loading="lazy">
                                 </div>
                                 <div>
                                         <p style="font-size:var(--wp--preset--font-size--medium);line-height:1.6;color:var(--wp--preset--color--muted);max-width:46ch;margin:0 0 1.5rem;">UX strategy, interaction design, UI and a design system your team can actually maintain. We prototype early, test with real people, and ship work that performs as well as it looks.</p>
@@ -273,7 +273,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <div class="nova-project-row" style="--nova-row-split: 50% 1fr; gap:4rem;">
                                 <div class="nova-project-media" style="aspect-ratio:4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.png' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies, representing NOVA's creative direction capabilities" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.webp' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies, representing NOVA's creative direction capabilities" loading="lazy">
                                 </div>
                                 <div>
                                         <p style="font-size:var(--wp--preset--font-size--medium);line-height:1.6;color:var(--wp--preset--color--muted);max-width:46ch;margin:0 0 1.5rem;">Art direction across photography, film, campaign and seasonal identity. We hold the thread across every surface — so the brand feels like one set of decisions, not a dozen unrelated ones.</p>

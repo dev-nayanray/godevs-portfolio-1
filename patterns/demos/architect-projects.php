@@ -67,7 +67,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="arch-project is-full" href="#" aria-label="View project — House N">
 				<div class="arch-project-media" style="aspect-ratio: 21/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.png' ); ?>" alt="House N — Dhaka, minimalist concrete residence with courtyard, strong directional light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-1.webp' ); ?>" alt="House N — Dhaka, minimalist concrete residence with courtyard, strong directional light" loading="lazy">
 				</div>
 				<div class="arch-project-body" style="flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1.5rem 3rem; margin-top: 1.5rem;">
 					<div style="max-width: 38rem;">
@@ -92,7 +92,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="arch-project-arrow">View project <span class="arch-arrow" aria-hidden="true">→</span></p>
 				</div>
 				<div class="arch-project-media" style="aspect-ratio: 4/5;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-2.png' ); ?>" alt="Courtyard House — Lisbon, white concrete walls with courtyard light, Mediterranean residence" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-2.webp' ); ?>" alt="Courtyard House — Lisbon, white concrete walls with courtyard light, Mediterranean residence" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="arch-project is-full" href="#" style="margin-top: 5rem;" aria-label="View project — Concrete Gallery">
 				<div class="arch-project-media" style="aspect-ratio: 16/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-3.png' ); ?>" alt="Concrete Gallery — Berlin, brutalist cultural building, dramatic shadow patterns on monolithic concrete" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-3.webp' ); ?>" alt="Concrete Gallery — Berlin, brutalist cultural building, dramatic shadow patterns on monolithic concrete" loading="lazy">
 				</div>
 				<div class="arch-project-body" style="flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1.5rem 3rem; margin-top: 1.5rem;">
 					<div style="max-width: 38rem;">
@@ -123,7 +123,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="arch-project is-full" href="#" aria-label="View project — Terrace 07">
 						<div class="arch-project-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.png' ); ?>" alt="Terrace 07 — Singapore interior architecture, warm wood and concrete, soft directional light" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-4.webp' ); ?>" alt="Terrace 07 — Singapore interior architecture, warm wood and concrete, soft directional light" loading="lazy">
 						</div>
 						<div class="arch-project-body" style="margin-top: 1.25rem;">
 							<p class="arch-project-num">Project 04</p>
@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="arch-project is-full" href="#" aria-label="View project — Museum North">
 						<div class="arch-project-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-5.png' ); ?>" alt="Museum North — Copenhagen, contemporary cultural building with large glazing and reflective water" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-5.webp' ); ?>" alt="Museum North — Copenhagen, contemporary cultural building with large glazing and reflective water" loading="lazy">
 						</div>
 						<div class="arch-project-body" style="margin-top: 1.25rem;">
 							<p class="arch-project-num">Project 05</p>
@@ -164,7 +164,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="arch-project-arrow">View project <span class="arch-arrow" aria-hidden="true">→</span></p>
 				</div>
 				<div class="arch-project-media" style="aspect-ratio: 16/10;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-6.png' ); ?>" alt="Monolith — Tokyo, commercial architecture, dark stone and glass facade at dusk" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-project-6.webp' ); ?>" alt="Monolith — Tokyo, commercial architecture, dark stone and glass facade at dusk" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->

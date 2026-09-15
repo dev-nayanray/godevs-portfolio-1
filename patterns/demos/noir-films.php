@@ -83,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:html -->
                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View film — Afterlight">
                                 <div class="noir-film-media">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.png' ); ?>" alt="AFTERLIGHT — cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.webp' ); ?>" alt="AFTERLIGHT — cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="lazy">
                                         <span class="noir-play" aria-hidden="true">▶</span>
                                         <div class="noir-film-overlay">
                                                 <p class="noir-film-num">01</p>
@@ -122,7 +122,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film — The Last Summer">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-2.png' ); ?>" alt="THE LAST SUMMER — cinematic short film still, two figures silhouetted against a hazy sunset" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-2.webp' ); ?>" alt="THE LAST SUMMER — cinematic short film still, two figures silhouetted against a hazy sunset" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">02</p>
@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film — Monument">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-3.png' ); ?>" alt="MONUMENT — cinematic brand film still, massive concrete structure at dusk with dramatic light" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-3.webp' ); ?>" alt="MONUMENT — cinematic brand film still, massive concrete structure at dusk with dramatic light" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">03</p>
@@ -158,7 +158,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:html -->
                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9; margin-bottom: 2.5rem;" aria-label="View film — Nocturne">
                                 <div class="noir-film-media">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-4.png' ); ?>" alt="NOCTURNE — cinematic music video still, performer in dramatic colored light and shadow" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-4.webp' ); ?>" alt="NOCTURNE — cinematic music video still, performer in dramatic colored light and shadow" loading="lazy">
                                         <span class="noir-play" aria-hidden="true">▶</span>
                                         <div class="noir-film-overlay">
                                                 <p class="noir-film-num">04</p>
@@ -177,7 +177,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film — Between Tides">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.png' ); ?>" alt="BETWEEN TIDES — cinematic documentary still, vast ocean and sky at dawn with a distant figure" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.webp' ); ?>" alt="BETWEEN TIDES — cinematic documentary still, vast ocean and sky at dawn with a distant figure" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">05</p>
@@ -194,7 +194,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <!-- wp:html -->
                                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film — Form / Motion">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-6.png' ); ?>" alt="FORM / MOTION — cinematic campaign still, abstract motion blur of a figure in motion" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-6.webp' ); ?>" alt="FORM / MOTION — cinematic campaign still, abstract motion blur of a figure in motion" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">06</p>

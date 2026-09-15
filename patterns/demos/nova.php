@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"bottom","width":"58%"} -->
 				<div class="wp-block-column" style="flex-basis:58%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"},"layout":{"selfStretch":"fit","flexSize":"100%"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-hero.png' ); ?>" alt="Abstract architectural 3D render of flowing dark sculptural forms — NOVA creative studio hero" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-hero.webp' ); ?>" alt="Abstract architectural 3D render of flowing dark sculptural forms — NOVA creative studio hero" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -115,7 +115,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row" style="--nova-row-split: 55% 1fr;" href="#" aria-label="View Aster — Brand Identity project">
 				<div class="nova-project-media" style="aspect-ratio:4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.png' ); ?>" alt="Aster — brand identity system flatlay: business cards, letterhead and wordmark samples on warm cream surface" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.webp' ); ?>" alt="Aster — brand identity system flatlay: business cards, letterhead and wordmark samples on warm cream surface" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2026</span><span>·</span><span>Brand Identity</span></div>
@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row is-reversed" style="--nova-row-split: 1fr 55%; gap:4rem; margin-top:5rem;" href="#" aria-label="View Orbit — Digital Experience project">
 				<div class="nova-project-media" style="aspect-ratio:16/10;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="Orbit — abstract digital experience with floating translucent glass UI panels in dark space" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="Orbit — abstract digital experience with floating translucent glass UI panels in dark space" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2026</span><span>·</span><span>Digital Experience</span></div>
@@ -145,7 +145,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row" style="--nova-row-split: 45% 1fr; gap:4rem; margin-top:5rem;" href="#" aria-label="View Forma — E-commerce project">
 				<div class="nova-project-media" style="aspect-ratio:4/5;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.png' ); ?>" alt="Forma — minimalist fashion e-commerce website displayed on a laptop with editorial product photography" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.webp' ); ?>" alt="Forma — minimalist fashion e-commerce website displayed on a laptop with editorial product photography" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2025</span><span>·</span><span>E-commerce</span></div>
@@ -160,7 +160,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row is-reversed" style="--nova-row-split: 1fr 45%; gap:4rem; margin-top:5rem;" href="#" aria-label="View North — Digital Product project">
 				<div class="nova-project-media" style="aspect-ratio:3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.png' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.webp' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2025</span><span>·</span><span>Digital Product</span></div>
@@ -175,7 +175,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row" style="--nova-row-split: 58% 1fr; gap:4rem; margin-top:5rem;" href="#" aria-label="View Mono — Campaign project">
 				<div class="nova-project-media" style="aspect-ratio:16/10;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-mono.png' ); ?>" alt="Mono — bold abstract typographic campaign poster with geometric shapes and high contrast composition" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-mono.webp' ); ?>" alt="Mono — bold abstract typographic campaign poster with geometric shapes and high contrast composition" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2025</span><span>·</span><span>Campaign</span></div>
@@ -190,7 +190,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="nova-project-row is-reversed" style="--nova-row-split: 1fr 58%; gap:4rem; margin-top:5rem;" href="#" aria-label="View Vela — Creative Direction project">
 				<div class="nova-project-media" style="aspect-ratio:4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.png' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.webp' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies" loading="lazy">
 				</div>
 				<div>
 					<div class="nova-project-meta"><span>2024</span><span>·</span><span>Creative Direction</span></div>
@@ -376,7 +376,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="ORBIT case study — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="ORBIT case study — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Challenge → Solution → Result -->
@@ -532,7 +532,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 				<div class="wp-block-column" style="flex-basis:50%">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-studio.png' ); ?>" alt="NOVA creative studio interior — minimal designer workspace with natural light, warm wood and raw concrete" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-studio.webp' ); ?>" alt="NOVA creative studio interior — minimal designer workspace with natural light, warm wood and raw concrete" style="border-radius:2px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -620,7 +620,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.png' ); ?>" alt="Editorial composition about design thinking — layered paper and geometric forms" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.webp' ); ?>" alt="Editorial composition about design thinking — layered paper and geometric forms" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Process · 6 min read</p>
@@ -633,7 +633,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-2.png' ); ?>" alt="Editorial composition about brand building — sculptural forms and typography fragments" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-2.webp' ); ?>" alt="Editorial composition about brand building — sculptural forms and typography fragments" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Brand · 8 min read</p>
@@ -646,7 +646,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-3.png' ); ?>" alt="Editorial composition about digital human experience — soft organic 3D forms" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-3.webp' ); ?>" alt="Editorial composition about digital human experience — soft organic 3D forms" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Product · 5 min read</p>

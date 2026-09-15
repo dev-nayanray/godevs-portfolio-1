@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Featured image 21/9 -->
 			<!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.png' ); ?>" alt="Fintech App featured case study — mobile banking dashboard with balance cards and charts" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App featured case study — mobile banking dashboard with balance cards and charts" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + metric row -->
@@ -148,7 +148,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Analytics Platform case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.png' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">SaaS · Web · 2025</p>
@@ -168,7 +168,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Health Tracker case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.png' ); ?>" alt="Health Tracker — clean medication tracking mobile interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health Tracker — clean medication tracking mobile interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">Health · Mobile · 2025</p>
@@ -194,7 +194,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Commerce Admin case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.png' ); ?>" alt="Commerce Admin — clean order management dashboard interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="Commerce Admin — clean order management dashboard interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">E-commerce · Web · 2024</p>
@@ -214,7 +214,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Data Studio case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.png' ); ?>" alt="Data Studio — analytics workspace with query builder and saved views" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="Data Studio — analytics workspace with query builder and saved views" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">SaaS · Web · 2024</p>

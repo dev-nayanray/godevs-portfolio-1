@@ -93,7 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Dominant wide image (21/9 cinematic) -->
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.png' ); ?>" alt="Editorial composition about design thinking — layered paper, geometric forms and warm directional light" style="border-radius:2px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.webp' ); ?>" alt="Editorial composition about design thinking — layered paper, geometric forms and warm directional light" style="border-radius:2px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + excerpt split (asymmetric 58/42) -->
@@ -154,7 +154,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"top","width":"60%"} -->
 				<div class="wp-block-column" style="flex-basis:60%">
 					<!-- wp:image {"aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-2.png' ); ?>" alt="Editorial composition about brand building — sculptural forms and typography fragments on warm cream" style="border-radius:2px;aspect-ratio:16/10;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-2.webp' ); ?>" alt="Editorial composition about brand building — sculptural forms and typography fragments on warm cream" style="border-radius:2px;aspect-ratio:16/10;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Brand · 2026 · 8 min read</p>
@@ -167,7 +167,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"top","width":"40%"} -->
 				<div class="wp-block-column" style="flex-basis:40%">
 					<!-- wp:image {"aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-3.png' ); ?>" alt="Editorial composition about digital human experience — soft organic 3D forms in warm light" style="border-radius:2px;aspect-ratio:3/4;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-3.webp' ); ?>" alt="Editorial composition about digital human experience — soft organic 3D forms in warm light" style="border-radius:2px;aspect-ratio:3/4;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Product · 2026 · 5 min read</p>
@@ -186,7 +186,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.png' ); ?>" alt="Aster — brand identity system flatlay with business cards and wordmark samples on warm cream surface" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.webp' ); ?>" alt="Aster — brand identity system flatlay with business cards and wordmark samples on warm cream surface" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Craft · 2025 · 6 min read</p>
@@ -199,7 +199,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="ORBIT — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="ORBIT — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Notes · 2025 · 12 min read</p>
@@ -212,7 +212,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.png' ); ?>" alt="Forma — minimalist fashion e-commerce displayed on a laptop with editorial product photography" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.webp' ); ?>" alt="Forma — minimalist fashion e-commerce displayed on a laptop with editorial product photography" style="border-radius:2px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Craft · 2025 · 7 min read</p>
@@ -231,7 +231,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"top","width":"100%"} -->
 				<div class="wp-block-column" style="flex-basis:100%">
 					<!-- wp:image {"align":"wide","aspectRatio":"16/10","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-					<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.png' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" style="border-radius:2px;aspect-ratio:16/10;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.webp' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" style="border-radius:2px;aspect-ratio:16/10;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.1em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Process · 2025 · 9 min read</p>

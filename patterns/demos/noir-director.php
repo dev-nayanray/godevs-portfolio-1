@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column {"width":"42%"} -->
                                 <div class="wp-block-column" style="flex-basis:42%">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-portrait.png' ); ?>" alt="Cinematic editorial portrait of the film director, dramatic low-key side light against deep black" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-portrait.webp' ); ?>" alt="Cinematic editorial portrait of the film director, dramatic low-key side light against deep black" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.2em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
                                         <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--20)">Portrait · Studio · 2026</p>

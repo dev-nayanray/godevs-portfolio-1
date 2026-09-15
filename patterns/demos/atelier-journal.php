@@ -98,7 +98,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a href="#" class="atelier-featured" aria-label="Read featured essay — On slow practice" style="display:grid;grid-template-columns:1fr;gap:2rem;text-decoration:none;color:var(--atelier-ink);">
 				<figure style="margin:0;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-journal-1.png' ); ?>" alt="Featured essay cover — abstract editorial composition with warm ivory paper folds and soft natural light" style="aspect-ratio:21/9;object-fit:cover;width:100%;height:auto;display:block;" loading="eager">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-journal-1.webp' ); ?>" alt="Featured essay cover — abstract editorial composition with warm ivory paper folds and soft natural light" style="aspect-ratio:21/9;object-fit:cover;width:100%;height:auto;display:block;" loading="eager">
 				</figure>
 				<div style="display:grid;gap:1rem;max-width:60ch;">
 					<p class="atelier-article-meta" style="margin:0;">26.03.26 · Studio · 12 min read</p>

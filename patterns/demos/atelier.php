@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
                                 <div class="wp-block-column" style="flex-basis:40%">
                                         <!-- wp:image {"aspectRatio":"3/4","scale":"cover","style":{"layout":{"selfStretch":"fit","flexSize":"100%"}}} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-hero.png' ); ?>" alt="Editorial portrait of the creative director in a minimal studio with soft window light" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-hero.webp' ); ?>" alt="Editorial portrait of the creative director in a minimal studio with soft window light" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Studio portrait — Spring 2026</p>
@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="atelier-project is-featured" href="#" style="--atelier-split: 1.4fr 1fr;" aria-label="View Forma project">
                                 <div class="atelier-project-media" style="aspect-ratio: 4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.png' ); ?>" alt="Forma — brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="Forma — brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
                                 </div>
                                 <div>
                                         <p class="atelier-project-num">01 — Forma</p>
@@ -152,7 +152,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p style="margin-top:1.25rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                                 <div class="atelier-project-media" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.png' ); ?>" alt="Maison 24 — art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.webp' ); ?>" alt="Maison 24 — art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
@@ -161,7 +161,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="atelier-project" href="#" style="--atelier-split: 1.3fr 1fr; gap:3rem; margin-top:5rem;" aria-label="View Noir Objects project">
                                 <div class="atelier-project-media" style="aspect-ratio: 16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.png' ); ?>" alt="Noir Objects — digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.webp' ); ?>" alt="Noir Objects — digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
                                 </div>
                                 <div>
                                         <p class="atelier-project-num">03 — Noir Objects</p>
@@ -184,7 +184,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p style="margin-top:1.25rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                                 <div class="atelier-project-media" style="aspect-ratio: 1/1;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.png' ); ?>" alt="Sora — visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.webp' ); ?>" alt="Sora — visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
@@ -193,7 +193,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <a class="atelier-project" href="#" style="--atelier-split: 1fr 1.3fr; gap:3rem; margin-top:5rem;" aria-label="View Field Notes project">
                                 <div class="atelier-project-media" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.png' ); ?>" alt="Field Notes — editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.webp' ); ?>" alt="Field Notes — editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
                                 </div>
                                 <div>
                                         <p class="atelier-project-num">05 — Field Notes</p>
@@ -216,7 +216,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p style="margin-top:1.25rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                                 <div class="atelier-project-media" style="aspect-ratio: 16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.png' ); ?>" alt="Mori — campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.webp' ); ?>" alt="Mori — campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
@@ -254,7 +254,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Full-width visual -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.png' ); ?>" alt="FORMA case study — brand identity system for a contemporary design house" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="FORMA case study — brand identity system for a contemporary design house" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Challenge → Approach → Outcome -->
@@ -410,7 +410,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
                                 <div class="wp-block-column" style="flex-basis:40%">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-about-portrait.png' ); ?>" alt="Editorial portrait of the art director at work, warm ivory backdrop, soft side light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-about-portrait.webp' ); ?>" alt="Editorial portrait of the art director at work, warm ivory backdrop, soft side light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
@@ -575,16 +575,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <div class="atelier-gallery">
                                 <div class="atelier-gallery-item gi-1" style="aspect-ratio:16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-1.png' ); ?>" alt="Abstract editorial composition — folded warm ivory paper forms with soft shadow play" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-1.webp' ); ?>" alt="Abstract editorial composition — folded warm ivory paper forms with soft shadow play" loading="lazy">
                                 </div>
                                 <div class="atelier-gallery-item gi-2" style="aspect-ratio:4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-2.png' ); ?>" alt="Fashion editorial fragment — draped fabric in ivory and stone tones with soft light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-2.webp' ); ?>" alt="Fashion editorial fragment — draped fabric in ivory and stone tones with soft light" loading="lazy">
                                 </div>
                                 <div class="atelier-gallery-item gi-3" style="aspect-ratio:4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-3.png' ); ?>" alt="Art direction still life — ceramic objects on warm ivory plinth with soft natural shadow" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-3.webp' ); ?>" alt="Art direction still life — ceramic objects on warm ivory plinth with soft natural shadow" loading="lazy">
                                 </div>
                                 <div class="atelier-gallery-item gi-4" style="aspect-ratio:3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-4.png' ); ?>" alt="Editorial detail — hands arranging typographic specimens on warm ivory paper" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-gallery-4.webp' ); ?>" alt="Editorial detail — hands arranging typographic specimens on warm ivory paper" loading="lazy">
                                 </div>
                         </div>
                         <!-- /wp:html -->

@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":60,"overlayColor":"primary","minHeight":90,"isDark":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover" style="min-height:90vh;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-60 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Cinematic empty film set — lone shaft of warm light across a dark, abandoned room with atmospheric haze" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-hero.png' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+                <img class="wp-block-cover__image-background" alt="Cinematic empty film set — lone shaft of warm light across a dark, abandoned room with atmospheric haze" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
                 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 

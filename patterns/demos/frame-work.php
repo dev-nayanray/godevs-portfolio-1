@@ -67,13 +67,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-gallery">
 				<a class="frame-story" href="#" aria-label="View photograph — Quiet Coast I">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.png' ); ?>" alt="Landscape photograph — minimalist coastline with a calm horizon at first light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.webp' ); ?>" alt="Landscape photograph — minimalist coastline with a calm horizon at first light" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Vessel II">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-1.png' ); ?>" alt="Still life photograph — single ceramic vessel in raking side light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-1.webp' ); ?>" alt="Still life photograph — single ceramic vessel in raking side light" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Ridges III">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-5.png' ); ?>" alt="Landscape photograph — layered mountain ridges in atmospheric mist at dawn" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-5.webp' ); ?>" alt="Landscape photograph — layered mountain ridges in atmospheric mist at dawn" loading="lazy">
 				</a>
 			</div>
 			<!-- /wp:html -->
@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- Full-bleed wide plate — breaks the grid rhythm -->
 			<!-- wp:html -->
 			<a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View photograph — Rain, Plaza">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-2.png' ); ?>" alt="Street photograph — lone figure crossing a rain-soaked plaza at dusk" loading="lazy">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-2.webp' ); ?>" alt="Street photograph — lone figure crossing a rain-soaked plaza at dusk" loading="lazy">
 			</a>
 			<!-- /wp:html -->
 			<!-- wp:paragraph {"className":"frame-story-caption","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
@@ -92,10 +92,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-gallery">
 				<a class="frame-story" href="#" aria-label="View photograph — Wall Study I">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.png' ); ?>" alt="Architectural photograph — minimalist concrete wall with raking shadows" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.webp' ); ?>" alt="Architectural photograph — minimalist concrete wall with raking shadows" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Drape I">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-3.png' ); ?>" alt="Editorial photograph — draped fabric against a vast textured wall" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-3.webp' ); ?>" alt="Editorial photograph — draped fabric against a vast textured wall" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Detail I">
 					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-1.png' ); ?>" alt="Detail photograph — texture study of a weathered painted surface" loading="lazy">
@@ -107,10 +107,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-stories">
 				<a class="frame-story fs-3" href="#" aria-label="View photograph — Vessel IV">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-4.png' ); ?>" alt="Still life photograph — single vessel on a textured surface with raking light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-4.webp' ); ?>" alt="Still life photograph — single vessel on a textured surface with raking light" loading="lazy">
 				</a>
 				<a class="frame-story fs-4" href="#" aria-label="View photograph — Drape II">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-6.png' ); ?>" alt="Editorial photograph — draped fabric and figure in a vast empty space" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-6.webp' ); ?>" alt="Editorial photograph — draped fabric and figure in a vast empty space" loading="lazy">
 				</a>
 			</div>
 			<!-- /wp:html -->
@@ -119,13 +119,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-gallery">
 				<a class="frame-story" href="#" aria-label="View photograph — Detail II">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-2.png' ); ?>" alt="Detail photograph — close study of folded fabric and light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-2.webp' ); ?>" alt="Detail photograph — close study of folded fabric and light" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Still Life, Stone">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-4.png' ); ?>" alt="Still life photograph — ceramic object on weathered stone surface" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-work-4.webp' ); ?>" alt="Still life photograph — ceramic object on weathered stone surface" loading="lazy">
 				</a>
 				<a class="frame-story" href="#" aria-label="View photograph — Detail III">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-3.png' ); ?>" alt="Detail photograph — abstract surface study in low light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-detail-3.webp' ); ?>" alt="Detail photograph — abstract surface study in low light" loading="lazy">
 				</a>
 			</div>
 			<!-- /wp:html -->

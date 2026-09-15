@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- wp:cover {"useFeaturedImage":false,"dimRatio":20,"overlayColor":"primary","minHeight":92,"isDark":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
 	<div class="wp-block-cover" style="min-height:92vh;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
 		<span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-20 has-background-dim"></span>
-		<img class="wp-block-cover__image-background" alt="Spectacular dramatic landscape photograph — vast atmospheric sky over a minimalist horizon with a single distant figure for scale, golden hour" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-hero.png' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+		<img class="wp-block-cover__image-background" alt="Spectacular dramatic landscape photograph — vast atmospheric sky over a minimalist horizon with a single distant figure for scale, golden hour" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-cover__inner-container" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 			<!-- spacer to push content down -->
@@ -100,7 +100,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- Story 01 — large landscape (full-bleed wide) -->
 			<!-- wp:html -->
 			<a class="frame-story" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View story — Quiet Coast">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-1.png' ); ?>" alt="Fine-art portrait — single figure against a vast textured wall with dramatic side light" loading="lazy">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-1.webp' ); ?>" alt="Fine-art portrait — single figure against a vast textured wall with dramatic side light" loading="lazy">
 			</a>
 			<!-- /wp:html -->
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|80"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
@@ -118,10 +118,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-stories" style="margin-bottom:4rem;">
 				<a class="frame-story fs-1" href="#" aria-label="View story — Wall Study">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.png' ); ?>" alt="Architectural photograph — minimalist concrete staircase with dramatic shadows" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-2.webp' ); ?>" alt="Architectural photograph — minimalist concrete staircase with dramatic shadows" loading="lazy">
 				</a>
 				<a class="frame-story fs-2" href="#" aria-label="View story — Rain, Plaza">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.png' ); ?>" alt="Street photograph — lone figure crossing a rain-soaked plaza at dusk" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-3.webp' ); ?>" alt="Street photograph — lone figure crossing a rain-soaked plaza at dusk" loading="lazy">
 				</a>
 			</div>
 			<!-- /wp:html -->
@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- Story 04 — full-bleed wide -->
 			<!-- wp:html -->
 			<a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9; margin-bottom:1.5rem;" aria-label="View story — Vessel">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-4.png' ); ?>" alt="Still life photograph — single ceramic vessel on a textured surface with raking light" loading="lazy">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-4.webp' ); ?>" alt="Still life photograph — single ceramic vessel on a textured surface with raking light" loading="lazy">
 			</a>
 			<!-- /wp:html -->
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|80"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"baseline"}} -->
@@ -157,10 +157,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="frame-stories">
 				<a class="frame-story fs-5" href="#" aria-label="View story — Ridges">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-5.png' ); ?>" alt="Abstract landscape — layered mountain ridges in atmospheric mist at dawn" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-5.webp' ); ?>" alt="Abstract landscape — layered mountain ridges in atmospheric mist at dawn" loading="lazy">
 				</a>
 				<a class="frame-story fs-6" href="#" aria-label="View story — Drape">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-6.png' ); ?>" alt="Editorial fashion photograph — draped fabric and figure in a vast empty space" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-story-6.webp' ); ?>" alt="Editorial fashion photograph — draped fabric and figure in a vast empty space" loading="lazy">
 				</a>
 			</div>
 			<!-- /wp:html -->
@@ -191,7 +191,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:cover {"useFeaturedImage":false,"dimRatio":35,"overlayColor":"primary","minHeight":70,"isDark":true,"style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-cover" style="min-height:70vh;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 			<span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-35 has-background-dim"></span>
-			<img class="wp-block-cover__image-background" alt="Featured commission — dramatic cloud formation at sunset over a minimal horizon" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-journal-3.png' ); ?>" style="object-fit:cover;object-position:center" loading="lazy"/>
+			<img class="wp-block-cover__image-background" alt="Featured commission — dramatic cloud formation at sunset over a minimal horizon" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-journal-3.webp' ); ?>" style="object-fit:cover;object-position:center" loading="lazy"/>
 			<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-cover__inner-container">
 				<div class="wp-block-group alignwide">

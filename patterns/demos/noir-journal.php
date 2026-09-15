@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:html -->
                         <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="Read essay — Notes on Light">
                                 <div class="noir-film-media">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-journal-1.png' ); ?>" alt="Featured essay — Notes on Light — cinematic editorial still, single shaft of warm light across a dark interior" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-journal-1.webp' ); ?>" alt="Featured essay — Notes on Light — cinematic editorial still, single shaft of warm light across a dark interior" loading="lazy">
                                         <span class="noir-play" aria-hidden="true">→</span>
                                         <div class="noir-film-overlay">
                                                 <p class="noir-film-num">04.03.26</p>

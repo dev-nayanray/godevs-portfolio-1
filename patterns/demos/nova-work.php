@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Wide image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"2px"}}} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="ORBIT featured project — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="ORBIT featured project — immersive digital experience for a data platform, floating glass UI panels in dark space" style="border-radius:2px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + description split -->
@@ -167,7 +167,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View Aster — Branding project">
 						<div class="nova-project-media" style="aspect-ratio:16/10;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.png' ); ?>" alt="Aster — brand identity system flatlay: business cards, letterhead and wordmark samples on warm cream surface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-aster.webp' ); ?>" alt="Aster — brand identity system flatlay: business cards, letterhead and wordmark samples on warm cream surface" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2026</span><span>·</span><span>Branding</span></div>
 						<h3 class="nova-project-title">Aster</h3>
@@ -181,7 +181,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View Forma — E-commerce project">
 						<div class="nova-project-media" style="aspect-ratio:3/4;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.png' ); ?>" alt="Forma — minimalist fashion e-commerce website displayed on a laptop with editorial product photography" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-forma.webp' ); ?>" alt="Forma — minimalist fashion e-commerce website displayed on a laptop with editorial product photography" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2025</span><span>·</span><span>E-commerce</span></div>
 						<h3 class="nova-project-title">Forma</h3>
@@ -201,7 +201,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View North — Digital Product project">
 						<div class="nova-project-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.png' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-north.webp' ); ?>" alt="North — modern mobile app interface screens floating in space with clean premium UI design" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2025</span><span>·</span><span>Digital Product</span></div>
 						<h3 class="nova-project-title">North</h3>
@@ -215,7 +215,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View Mono — Campaign project">
 						<div class="nova-project-media" style="aspect-ratio:16/10;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-mono.png' ); ?>" alt="Mono — bold abstract typographic campaign poster with geometric shapes and high contrast composition" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-mono.webp' ); ?>" alt="Mono — bold abstract typographic campaign poster with geometric shapes and high contrast composition" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2025</span><span>·</span><span>Campaign</span></div>
 						<h3 class="nova-project-title">Mono</h3>
@@ -235,7 +235,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View Vela — Creative Direction project">
 						<div class="nova-project-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.png' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-vela.webp' ); ?>" alt="Vela — creative direction moodboard with layered fashion editorial photography swatches and color studies" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2024</span><span>·</span><span>Creative Direction</span></div>
 						<h3 class="nova-project-title">Vela</h3>
@@ -249,7 +249,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a href="#" class="nova-work-card" aria-label="View Lumen — Web Design project">
 						<div class="nova-project-media" style="aspect-ratio:3/4;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.png' ); ?>" alt="Lumen — editorial web design for a creative studio with layered paper and geometric forms" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-blog-1.webp' ); ?>" alt="Lumen — editorial web design for a creative studio with layered paper and geometric forms" loading="lazy">
 						</div>
 						<div class="nova-project-meta" style="margin-top:1.25rem;"><span>2024</span><span>·</span><span>Web Design</span></div>
 						<h3 class="nova-project-title">Lumen</h3>

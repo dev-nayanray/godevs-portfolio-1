@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|30"}}}} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-journal-1.png' ); ?>" alt="Featured essay image — concrete gallery interior with raking afternoon light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-journal-1.webp' ); ?>" alt="Featured essay image — concrete gallery interior with raking afternoon light" style="aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Meta + Title + Excerpt -->

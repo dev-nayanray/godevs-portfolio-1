@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Big 16/9 image -->
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-writing-1.png' ); ?>" alt="Featured article cover — abstract minimal composition of grid blocks and type, neutral palette" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-writing-1.webp' ); ?>" alt="Featured article cover — abstract minimal composition of grid blocks and type, neutral palette" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + body -->

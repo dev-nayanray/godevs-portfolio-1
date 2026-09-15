@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"bottom","width":"56%"} -->
 				<div class="wp-block-column" style="flex-basis:56%">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-hero.png' ); ?>" alt="Clean minimal developer workspace — laptop with abstract product interface, neutral desk, soft light" style="border-radius:6px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-hero.webp' ); ?>" alt="Clean minimal developer workspace — laptop with abstract product interface, neutral desk, soft light" style="border-radius:6px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->
@@ -100,7 +100,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="mono-project is-full" href="#" aria-label="View project — Luma">
 				<div class="mono-project-media" style="aspect-ratio: 21/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.png' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.webp' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" loading="lazy">
 				</div>
 				<div class="mono-project-body" style="flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1.5rem; margin-top: 1.25rem;">
 					<div>
@@ -135,7 +135,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
 				</div>
 				<div class="mono-project-media" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.png' ); ?>" alt="ATLAS — data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.webp' ); ?>" alt="ATLAS — data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -144,7 +144,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="mono-project" href="#" style="--mono-split: 1.4fr 1fr; margin-top: 4rem;" aria-label="View project — North">
 				<div class="mono-project-media" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.png' ); ?>" alt="NORTH — e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.webp' ); ?>" alt="NORTH — e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
 				</div>
 				<div class="mono-project-body">
 					<p class="mono-project-num">03 — NORTH</p>
@@ -169,7 +169,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="mono-project is-full" href="#" aria-label="View project — Forma">
 						<div class="mono-project-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.png' ); ?>" alt="FORMA — creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.webp' ); ?>" alt="FORMA — creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
 						</div>
 						<div class="mono-project-body" style="margin-top: 1rem;">
 							<p class="mono-project-num">04 — FORMA</p>
@@ -189,7 +189,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="mono-project is-full" href="#" aria-label="View project — Pulse">
 						<div class="mono-project-media" style="aspect-ratio: 3/4;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.png' ); ?>" alt="PULSE — mobile product app UI, clean minimal onboarding flow" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.webp' ); ?>" alt="PULSE — mobile product app UI, clean minimal onboarding flow" loading="lazy">
 						</div>
 						<div class="mono-project-body" style="margin-top: 1rem;">
 							<p class="mono-project-num">05 — PULSE</p>
@@ -223,7 +223,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
 				</div>
 				<div class="mono-project-media" style="aspect-ratio: 16/10;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.png' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.webp' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -261,7 +261,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large image -->
 			<!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-			<figure class="wp-block-image alignwide has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.png' ); ?>" alt="LUMA case study — clean minimal SaaS dashboard UI with data visualization" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.webp' ); ?>" alt="LUMA case study — clean minimal SaaS dashboard UI with data visualization" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Challenge → Approach → Technology → Result -->
@@ -330,7 +330,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 				<div class="wp-block-column" style="flex-basis:42%">
 					<!-- wp:image {"aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-portrait.png' ); ?>" alt="Editorial portrait of the developer in a minimal studio, soft natural light, neutral background" style="border-radius:6px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-portrait.webp' ); ?>" alt="Editorial portrait of the developer in a minimal studio, soft natural light, neutral background" style="border-radius:6px;aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 				</div>
 				<!-- /wp:column -->

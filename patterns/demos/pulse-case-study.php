@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.png' ); ?>" alt="Fintech App — dashboard overview showing balance cards, transaction history and savings goals" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App — dashboard overview showing balance cards, transaction history and savings goals" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"pulse-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em">Fig. 01 — Dashboard overview. The home screen anchors the banking experience around balance clarity and one-tap actions.</p>
@@ -208,7 +208,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Process image -->
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"8px"},"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
-			<figure class="wp-block-image has-custom-border" style="margin-top:var(--wp--preset--spacing--60)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-process-research.png' ); ?>" alt="PULSE process — research artifacts: interview scripts, affinity map and journey sketches pinned to a wall" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image has-custom-border" style="margin-top:var(--wp--preset--spacing--60)"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-process-research.webp' ); ?>" alt="PULSE process — research artifacts: interview scripts, affinity map and journey sketches pinned to a wall" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"pulse-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
 			<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em">Fig. 02 — Research artifacts. Eighteen interviews, affinity-mapped against five core jobs-to-be-done.</p>
@@ -243,7 +243,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-fintech-detail-1.png' ); ?>" alt="Fintech App detail — balance home screen with safe-to-spend callout and quick actions" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-fintech-detail-1.webp' ); ?>" alt="Fintech App detail — balance home screen with safe-to-spend callout and quick actions" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"pulse-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em">Fig. 03 — Home screen. A single safe-to-spend number, one-tap actions, no marketing.</p>
@@ -253,7 +253,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<!-- wp:column -->
 				<div class="wp-block-column">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-fintech-detail-2.png' ); ?>" alt="Fintech App detail — transfer flow with confirmation and biometric verification" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+					<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-fintech-detail-2.webp' ); ?>" alt="Fintech App detail — transfer flow with confirmation and biometric verification" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
 					<!-- /wp:image -->
 					<!-- wp:paragraph {"className":"pulse-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em"},"color":{"text":"var:preset|color|muted"}}} -->
 					<p class="pulse-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em">Fig. 04 — Transfer flow. Five taps end-to-end, biometric at the boundary, no friction in between.</p>

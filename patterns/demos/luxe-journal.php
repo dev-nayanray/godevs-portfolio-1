@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="luxe-card" href="#" aria-label="Read featured article — Why Material Matters" style="display:block;margin-top:1.5rem;">
 				<div class="luxe-card-media" style="aspect-ratio: 21/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-journal-1.png' ); ?>" alt="Featured journal image — editorial study in fabric, light and minimal composition, ivory tones" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-journal-1.webp' ); ?>" alt="Featured journal image — editorial study in fabric, light and minimal composition, ivory tones" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->

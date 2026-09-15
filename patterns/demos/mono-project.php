@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"4px"}}} -->
-                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.png' ); ?>" alt="LUMA — dashboard overview showing analytics, filters and a clean product workspace" style="border-radius:4px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.webp' ); ?>" alt="LUMA — dashboard overview showing analytics, filters and a clean product workspace" style="border-radius:4px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
                         <!-- /wp:image -->
                         <!-- wp:paragraph {"className":"mono-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em"},"color":{"text":"var:preset|color|muted"}}} -->
                         <p class="mono-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em">Fig. 01 — Dashboard overview. The home view anchors the platform around a single answer: what should I act on next?</p>
@@ -475,7 +475,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                         <!-- Gallery image 1 — wide -->
                         <!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"4px"}}} -->
-                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-1.png' ); ?>" alt="LUMA detail — analytics view with filter chips, time-range selector and a clean data table" style="border-radius:4px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-1.webp' ); ?>" alt="LUMA detail — analytics view with filter chips, time-range selector and a clean data table" style="border-radius:4px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
                         <!-- wp:paragraph {"className":"mono-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em"},"color":{"text":"var:preset|color|muted"}}} -->
                         <p class="mono-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em">Fig. 02 — Analytics view. Filter chips are typed queries, not strings — every option resolves to a documented shape the service layer understands.</p>
@@ -487,7 +487,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"4px"}}} -->
-                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-2.png' ); ?>" alt="LUMA detail — settings panel with typed forms, validation states and a clean sidebar" style="border-radius:4px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-2.webp' ); ?>" alt="LUMA detail — settings panel with typed forms, validation states and a clean sidebar" style="border-radius:4px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"mono-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="mono-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em">Fig. 03 — Settings. Form schema is generated from the same types package the backend uses — no hand-written validation drift.</p>
@@ -497,7 +497,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"4px"}}} -->
-                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-3.png' ); ?>" alt="LUMA detail — command palette with keyboard navigation over typed commands" style="border-radius:4px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-detail-3.webp' ); ?>" alt="LUMA detail — command palette with keyboard navigation over typed commands" style="border-radius:4px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"mono-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="mono-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em">Fig. 04 — Command palette. Every command is a typed handler — keyboard-first, accessible, and the fastest path through the product.</p>

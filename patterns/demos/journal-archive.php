@@ -90,7 +90,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="jour-article with-image" href="#" style="margin-top: 1.5rem; padding-top: 2.5rem; border-top: 1px solid var(--jour-line); align-items: start;" aria-label="Read article — The Things We Notice When Everything Gets Quiet">
 				<div class="jour-article-image" style="aspect-ratio: 16/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.png' ); ?>" alt="Featured archive essay — quiet minimal interior with soft light through a window, warm tones" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.webp' ); ?>" alt="Featured archive essay — quiet minimal interior with soft light through a window, warm tones" loading="lazy">
 				</div>
 				<div class="jour-article-body">
 					<p class="jour-article-meta"><span>Essay</span><span>04.09.26</span><span>8 min read</span></p>
@@ -131,7 +131,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
 				</div>
 				<div class="jour-article-image" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.png' ); ?>" alt="Editorial image about everyday architecture — minimal building facade with warm light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.webp' ); ?>" alt="Editorial image about everyday architecture — minimal building facade with warm light" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -140,7 +140,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — What We Mean When We Say Simple">
 				<div class="jour-article-image" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.png' ); ?>" alt="Editorial image about simplicity — single object on warm paper surface" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.webp' ); ?>" alt="Editorial image about simplicity — single object on warm paper surface" loading="lazy">
 				</div>
 				<div class="jour-article-body">
 					<p class="jour-article-meta"><span>Notes</span><span>28.08.26</span><span>5 min</span></p>
@@ -173,7 +173,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
 				</div>
 				<div class="jour-article-image" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.png' ); ?>" alt="Editorial image about slow travel — winding road through warm landscape at golden hour" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.webp' ); ?>" alt="Editorial image about slow travel — winding road through warm landscape at golden hour" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -182,7 +182,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — Designing for Attention">
 				<div class="jour-article-image" style="aspect-ratio: 4/3;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.png' ); ?>" alt="Editorial image about attention and design — abstract composition of layered paper forms" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.webp' ); ?>" alt="Editorial image about attention and design — abstract composition of layered paper forms" loading="lazy">
 				</div>
 				<div class="jour-article-body">
 					<p class="jour-article-meta"><span>Design</span><span>07.08.26</span><span>6 min</span></p>
@@ -215,7 +215,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
 				</div>
 				<div class="jour-article-image" style="aspect-ratio: 3/4;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-6.png' ); ?>" alt="Editorial image about slow reading — open book with warm afternoon light" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-6.webp' ); ?>" alt="Editorial image about slow reading — open book with warm afternoon light" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->

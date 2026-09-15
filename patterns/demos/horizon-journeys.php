@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- Large featured destination -->
 			<!-- wp:html -->
 			<a class="hor-destination" href="/journey" style="display:block;aspect-ratio:21/9" aria-label="View featured journey — Patagonia">
-				<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.png' ); ?>" alt="Patagonia — granite spires at dawn over a glacial lake, cinematic wide" loading="lazy"></div>
+				<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia — granite spires at dawn over a glacial lake, cinematic wide" loading="lazy"></div>
 				<div class="hor-destination-overlay" style="padding:2.5rem">
 					<p class="hor-destination-meta">Featured · Mountains · 2026</p>
 					<h2 class="hor-destination-name" style="font-size:clamp(2rem, 5vw, 4.5rem)">Patagonia</h2>
@@ -121,7 +121,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="hor-journeys" aria-label="All journeys">
 				<a class="hor-destination hj-1" href="/journey" aria-label="View journey — Patagonia">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.png' ); ?>" alt="Patagonia — granite spires at dawn" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia — granite spires at dawn" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Mountains · 2026</p>
 						<h3 class="hor-destination-name">Patagonia</h3>
@@ -129,7 +129,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</a>
 				<a class="hor-destination hj-2" href="/journey" aria-label="View journey — Iceland">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-iceland.png' ); ?>" alt="Iceland — black sand coastline under low light" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-iceland.webp' ); ?>" alt="Iceland — black sand coastline under low light" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Coast · 2026</p>
 						<h3 class="hor-destination-name">Iceland</h3>
@@ -137,7 +137,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</a>
 				<a class="hor-destination hj-3" href="/journey" aria-label="View journey — Kyoto">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-kyoto.png' ); ?>" alt="Kyoto — temple courtyard in autumn light" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-kyoto.webp' ); ?>" alt="Kyoto — temple courtyard in autumn light" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Culture · 2025</p>
 						<h3 class="hor-destination-name">Kyoto</h3>
@@ -145,7 +145,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</a>
 				<a class="hor-destination hj-4" href="/journey" aria-label="View journey — Dolomites">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-dolomites.png' ); ?>" alt="Dolomites — alpine meadow at dusk" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-dolomites.webp' ); ?>" alt="Dolomites — alpine meadow at dusk" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Mountains · 2025</p>
 						<h3 class="hor-destination-name">Dolomites</h3>
@@ -153,7 +153,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</a>
 				<a class="hor-destination hj-5" href="/journey" aria-label="View journey — Morocco">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-morocco.png' ); ?>" alt="Morocco — desert town at golden hour" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-morocco.webp' ); ?>" alt="Morocco — desert town at golden hour" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Desert · 2025</p>
 						<h3 class="hor-destination-name">Morocco</h3>
@@ -161,7 +161,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 				</a>
 				<a class="hor-destination hj-6" href="/journey" aria-label="View journey — Faroe Islands">
-					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.png' ); ?>" alt="Faroe Islands — sea cliffs in low drifting cloud" loading="lazy"></div>
+					<div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.webp' ); ?>" alt="Faroe Islands — sea cliffs in low drifting cloud" loading="lazy"></div>
 					<div class="hor-destination-overlay">
 						<p class="hor-destination-meta">Wild · 2024</p>
 						<h3 class="hor-destination-name">Faroe Islands</h3>

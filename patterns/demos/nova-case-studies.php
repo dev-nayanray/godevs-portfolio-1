@@ -91,7 +91,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 </div>
                                 <div>
                                         <div class="nova-project-media" style="aspect-ratio:16/10;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.png' ); ?>" alt="ORBIT — immersive digital experience for a data platform, floating glass UI panels in dark space" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-project-orbit.webp' ); ?>" alt="ORBIT — immersive digital experience for a data platform, floating glass UI panels in dark space" loading="lazy">
                                         </div>
                                         <p class="nova-caption">Fig. 01 — ORBIT primary surface, the rebuilt dashboard experience</p>
                                 </div>
@@ -209,7 +209,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Full-bleed alignwide image (21/9 cinematic) -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"0px"}}} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-1.png' ); ?>" alt="ORBIT detail view — full-width product surface showing the rebuilt data dashboard with calm typography and motion system" style="border-radius:0px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-1.webp' ); ?>" alt="ORBIT detail view — full-width product surface showing the rebuilt data dashboard with calm typography and motion system" style="border-radius:0px;aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Caption row -->
@@ -247,7 +247,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 </div>
                                 <div>
                                         <div class="nova-project-media" style="aspect-ratio:4/5;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-2.png' ); ?>" alt="ORBIT detail — motion system documentation showing easing curves and animation primitives" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-2.webp' ); ?>" alt="ORBIT detail — motion system documentation showing easing curves and animation primitives" loading="lazy">
                                         </div>
                                         <p class="nova-caption">Fig. 03 — Motion system documentation, easing primitives</p>
                                 </div>
@@ -259,7 +259,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div class="nova-editorial-2col" style="margin-top:5rem;">
                                 <div>
                                         <div class="nova-project-media" style="aspect-ratio:4/5;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-3.png' ); ?>" alt="ORBIT detail — type system and numeric display showing calm data typography" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nova/nova-orbit-detail-3.webp' ); ?>" alt="ORBIT detail — type system and numeric display showing calm data typography" loading="lazy">
                                         </div>
                                         <p class="nova-caption">Fig. 04 — Type system, numeric display specimen</p>
                                 </div>

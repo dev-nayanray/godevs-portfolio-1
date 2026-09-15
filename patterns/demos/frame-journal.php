@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- /wp:paragraph -->
 			<!-- wp:html -->
 			<a class="frame-story" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="Read featured essay — On the first hour of light">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-journal-1.png' ); ?>" alt="Featured essay photograph — soft atmospheric dawn light over a minimal coastal horizon" loading="eager">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frame/frame-journal-1.webp' ); ?>" alt="Featured essay photograph — soft atmospheric dawn light over a minimal coastal horizon" loading="eager">
 			</a>
 			<!-- /wp:html -->
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
