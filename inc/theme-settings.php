@@ -10,14 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ── FALLBACK LOADER ──────────────────────────────────────────────────────────
-$_godevs_fb_dir = get_template_directory() . '/inc';
-foreach ( array( '/content/cpt.php', '/content/taxonomies.php', '/content/meta-fields.php', '/content/case-study.php', '/demo-registry.php', '/demo-tracker.php', '/demo-importer.php' ) as $_fb ) {
-        $_p = $_godevs_fb_dir . $_fb;
-        if ( file_exists( $_p ) ) { require_once $_p; }
-}
-unset( $_godevs_fb_dir, $_fb, $_p );
-
 // ════════════════════════════════════════════════════════════════════════════
 // DEFAULT SETTINGS
 // ════════════════════════════════════════════════════════════════════════════

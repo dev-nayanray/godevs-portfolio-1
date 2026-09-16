@@ -904,7 +904,7 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
                 return false;
         }
 
-        $style_content = file_get_contents( $style_file ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+        $style_content = godevs_portfolio_read_file( $style_file );
         if ( empty( $style_content ) ) {
                 return false;
         }

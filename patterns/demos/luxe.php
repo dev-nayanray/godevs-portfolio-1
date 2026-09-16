@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"62%"} -->
                                 <div class="wp-block-column" style="flex-basis:62%">
                                         <!-- wp:image {"aspectRatio":"3/4","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-hero.webp' ); ?>" alt="Luxury fashion editorial hero — model in elegant minimal garment against soft ivory backdrop, dramatic soft light" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-hero.webp' ); ?>" alt="Luxury fashion editorial hero — model in elegant minimal garment against soft ivory backdrop, dramatic soft light" fetchpriority="high" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"luxe-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="luxe-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Campaign — Spring / Summer 2026</p>

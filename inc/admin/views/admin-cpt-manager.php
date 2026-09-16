@@ -205,7 +205,7 @@ $total_pages  = $posts_query->max_num_pages;
                                                                                 <?php esc_html_e( 'View', 'godevs-portfolio' ); ?>
                                                                         </a>
                                                                 <?php endif; ?>
-                                                                <a href="<?php echo esc_url( $delete_url ); ?>" class="button button-small button-link-delete godevs-cpt-delete" title="<?php esc_attr_e( 'Trash', 'godevs-portfolio' ); ?>" onclick="return confirm('<?php esc_attr_e( 'Move this item to trash?', 'godevs-portfolio' ); ?>')">
+                                                                <a href="<?php echo esc_url( $delete_url ); ?>" class="button button-small button-link-delete godevs-cpt-delete" title="<?php esc_attr_e( 'Trash', 'godevs-portfolio' ); ?>" data-confirm="<?php esc_attr_e( 'Move this item to trash?', 'godevs-portfolio' ); ?>">
                                                                         <span class="dashicons dashicons-trash"></span>
                                                                 </a>
                                                         </div>

@@ -38,11 +38,22 @@ function godevs_cpt_archive_settings_map(): array {
 /**
  * Get the current CPT slug on an archive page.
  *
- * @return string|null CPT slug (e.g., 'godevs_project') or null if not on a CPT archive.
+ * Returns 'post' on the blog home page (is_home()) so that the blog
+ * layout settings (blog_layout, blog_columns, blog_show_*) actually
+ * take effect on the front-end via the `godevs_cpt_archive_generate_template`
+ * filter. Previously this only returned CPT archives, leaving the standard
+ * blog home with no settings-driven layout.
+ *
+ * @return string|null CPT slug (e.g., 'godevs_project') or 'post' for blog home, or null.
  */
 function godevs_cpt_archive_get_current_type(): ?string {
         if ( is_post_type_archive() ) {
                 return get_query_var( 'post_type' );
+        }
+        // Standard blog home (Settings → Reading → Posts page) — return 'post'
+        // so the Theme Settings → Blog panel settings actually take effect.
+        if ( is_home() && ! is_front_page() ) {
+                return 'post';
         }
         return null;
 }
@@ -83,24 +94,53 @@ function godevs_cpt_archive_generate_inner_template( string $cpt_slug ): string 
         }
 
         // Dispatch to the CPT-specific generator.
+        $template = '';
         switch ( $cpt_slug ) {
                 case 'godevs_project':
-                        return godevs_cpt_archive_project_template( $layout, $columns );
+                        $template = godevs_cpt_archive_project_template( $layout, $columns );
+                        break;
                 case 'godevs_service':
-                        return godevs_cpt_archive_service_template( $layout, $columns );
+                        $template = godevs_cpt_archive_service_template( $layout, $columns );
+                        break;
                 case 'godevs_team':
-                        return godevs_cpt_archive_team_template( $layout, $columns );
+                        $template = godevs_cpt_archive_team_template( $layout, $columns );
+                        break;
                 case 'godevs_testimonial':
-                        return godevs_cpt_archive_testimonial_template( $layout, $columns );
+                        $template = godevs_cpt_archive_testimonial_template( $layout, $columns );
+                        break;
                 case 'godevs_experience':
-                        return godevs_cpt_archive_experience_template( $layout );
+                        $template = godevs_cpt_archive_experience_template( $layout );
+                        break;
                 case 'godevs_education':
-                        return godevs_cpt_archive_education_template( $layout );
+                        $template = godevs_cpt_archive_education_template( $layout );
+                        break;
                 case 'godevs_case_study':
-                        return godevs_cpt_archive_case_study_template( $layout, $columns );
+                        $template = godevs_cpt_archive_case_study_template( $layout, $columns );
+                        break;
+                case 'post':
+                        // Standard blog post — delegate to the blog-specific generator
+                        // defined in inc/settings-integration.php via the filter below.
+                        $template = '';
+                        break;
                 default:
-                        return '';
+                        $template = '';
         }
+
+        /**
+         * Filter the generated CPT archive template markup.
+         *
+         * Allows the Blog panel settings (blog_layout, blog_columns,
+         * blog_show_*) to override the default post archive rendering.
+         * Without this filter, those settings save but never affect rendering.
+         *
+         * @since 1.5.0
+         *
+         * @param string $template Generated block markup.
+         * @param string $cpt_slug  CPT slug (e.g., 'godevs_project') or 'post' for blog home.
+         * @param string $layout   Layout setting value (grid/list/timeline/showcase).
+         * @param int    $columns   Column count setting value.
+         */
+        return apply_filters( 'godevs_cpt_archive_generate_template', $template, $cpt_slug, $layout, $columns );
 }
 
 /**

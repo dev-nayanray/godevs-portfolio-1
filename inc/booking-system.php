@@ -475,8 +475,7 @@ function godevs_booking_send_status_email( int $post_id, string $new_status, str
         $message .= sprintf( __( '— %s', 'godevs-portfolio' ), $site_name );
 
         $headers = array(
-                'From: ' . $site_name . ' <' . $admin_email . '>',
-                'Content-Type: text/plain; charset=UTF-8',
+                'From' => $site_name . ' <' . $admin_email . '>',
         );
 
         wp_mail( $email, $subject, $message, $headers );

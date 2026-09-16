@@ -193,24 +193,28 @@
                                                         "fontFamily": "Inter",
                                                         "fontWeight": "400",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/inter-400.woff2"]
                                                 },
                                                 {
                                                         "fontFamily": "Inter",
                                                         "fontWeight": "500",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/inter-500.woff2"]
                                                 },
                                                 {
                                                         "fontFamily": "Inter",
                                                         "fontWeight": "600",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/inter-600.woff2"]
                                                 },
                                                 {
                                                         "fontFamily": "Inter",
                                                         "fontWeight": "700",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/inter-700.woff2"]
                                                 }
                                         ]
@@ -234,18 +238,21 @@
                                                         "fontFamily": "Newsreader",
                                                         "fontWeight": "500",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/newsreader-500.woff2"]
                                                 },
                                                 {
                                                         "fontFamily": "Newsreader",
                                                         "fontWeight": "500",
                                                         "fontStyle": "italic",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/newsreader-500-italic.woff2"]
                                                 },
                                                 {
                                                         "fontFamily": "Newsreader",
                                                         "fontWeight": "600",
                                                         "fontStyle": "normal",
+                                                        "fontDisplay": "swap",
                                                         "src": ["file:./assets/fonts/newsreader-600.woff2"]
                                                 }
                                         ]

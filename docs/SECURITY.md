@@ -1,349 +1,475 @@
 # GoDevs Portfolio — Security
 
-**Document version:** 0.1.0
-**Phase:** 1 — Foundation
+**Document version:** 1.5.0
 
-Security is a feature. This document defines the security baseline for the theme: what is required, how it is achieved, and what is forbidden.
+Security is a feature. This document describes the actual security
+model of the GoDevs Portfolio theme as it ships in v1.5.0.
 
-The theme is **presentation-only** — it processes no user input, stores no data, and exposes no admin UI. This dramatically reduces the attack surface compared to plugin-heavy themes.
-
----
-
-## 1. Security Principles
-
-1. **Escape at output, sanitize at input.** Never trust data — even data from WordPress core.
-2. **No user input in templates.** Templates render content via `core/post-content`, `core/post-title`, etc. — these handle escaping internally.
-3. **No SQL in the theme.** All queries via `core/query` (handled by WordPress core).
-4. **No AJAX endpoints in the theme.** AJAX/REST endpoints are plugin territory.
-5. **No admin UI in the theme.** Configuration is via Global Styles in the Site Editor.
-6. **No file operations.** The theme does not read or write files at runtime.
-7. **No remote requests.** The theme does not call external APIs.
-8. **No inline JavaScript.** All JS is in `assets/js/` and enqueued.
-9. **No eval(), no exec(), no shell commands.**
-10. **All nonces verified where applicable.** (Phase 1 has no nonce-requiring features.)
+> Note: earlier drafts of this document claimed "The theme is
+> presentation-only — it processes no user input, stores no data, and
+> exposes no admin UI." That was true of a much earlier prototype. It
+> is **not** true of v1.5.0. This rewrite reflects the real shipping
+> code.
 
 ---
 
-## 2. What the Theme Does NOT Do
+## 1. What the theme actually does
 
-| Capability | Reason | Where it belongs |
+v1.5.0 is an application-grade block theme. It:
+
+- **Accepts user input** — the booking form (`[godevs_booking_form]`),
+  the project-proposal form (`[godevs_proposal_form]`), the Theme
+  Settings dashboard, the Header/Footer Builder, and the Demo Importer
+  all accept and process user input.
+- **Stores data** — 75+ option rows in `wp_options`, ~40 post-meta
+  keys across 7 CPTs, 3 user-meta keys (notice dismissal + applied
+  style tracking), and transients for rate-limiting and import
+  concurrency control.
+- **Exposes admin UI** — 7+ admin surfaces (GoDevs Settings, Content
+  Manager, GoDevs Demos, Header/Footer Builder, onboarding notices,
+  booking admin notices, diagnostic notice).
+- **Handles AJAX** — 20 AJAX endpoints, all nonce-verified and
+  capability-checked.
+
+That is a significantly larger attack surface than a presentation-only
+theme. The sections below document how each part is defended.
+
+---
+
+## 2. Security principles
+
+1. **Escape at output, sanitize at input.** Never trust data — even
+   data from WordPress core.
+2. **Nonce every state-changing request.** Every AJAX endpoint and
+   every form-meta save handler verifies a nonce before doing
+   anything.
+3. **Capability-check every privileged action.** Admin actions require
+   `manage_options`; content edits require `edit_post` / `edit_posts`
+   scoped to the post being edited.
+4. **Sanitize every setting with its own callback.** Colors go through
+   `godevs_portfolio_sanitize_hex_color`, numeric values through
+   `absint`, URLs through `godevs_portfolio_sanitize_url`, everything
+   else through `sanitize_text_field`. The mapping lives in
+   `inc/theme-settings.php`.
+5. **Escape every output.** `esc_html`, `esc_attr`, `esc_url`,
+   `esc_textarea`, `wp_kses_post` are used throughout; no `echo` of
+   raw user data.
+6. **No inline JavaScript.** All JS lives in `assets/js/*.js` and is
+   enqueued. Inline `onclick`, `onsubmit`, and `<script>` blocks were
+   removed in P1.16.
+7. **No `eval()`, no `exec()`, no shell commands.**
+8. **Direct DB writes are exceptional and documented.** The demo
+   importer uses `$wpdb->update()` in three places — see §8.
+
+---
+
+## 3. Input surface
+
+### 3.1 Front-end forms
+
+| Form | Shortcode | Handler | Stores |
+|---|---|---|---|
+| Booking | `[godevs_booking_form]` | `godevs_ajax_submit_booking()` | private `godevs_booking` post + meta |
+| Proposal | `[godevs_proposal_form]` | `godevs_ajax_submit_proposal()` | private `godevs_proposal` post + meta + admin email |
+
+Both handlers:
+
+1. Verify a nonce (`godevs_booking_form` / `godevs_proposal_form`).
+2. Run a honeypot check on the proposal form (the `godevs_hp` field —
+   bots that fill it are rejected with HTTP 400).
+3. Run an IP-based rate limit on the proposal form (≤ 5 submissions
+   per IP per hour, enforced via a transient keyed
+   `godevs_proposal_rl_<md5(ip)>` with a 1-hour TTL).
+4. Sanitize every field with the appropriate WordPress function:
+   `sanitize_text_field` for short text, `sanitize_email` for emails,
+   `esc_url_raw` for URLs, `absint` for integers, and
+   `sanitize_textarea_field` for the free-text message.
+5. Validate required fields (`name`, `email`, `type`, `message`) and
+   reject with a localized error message if missing.
+6. Validate the email with `is_email()` and the URL with
+   `wp_http_validate_url()`.
+7. Insert the post as `private` (admin-only visibility) with
+   `wp_insert_post()`.
+8. Send an admin notification email via `wp_mail()` (non-fatal if no
+   mail server is configured — the submission is still stored).
+
+### 3.2 Theme Settings dashboard
+
+`inc/theme-settings.php` registers 75 settings under the
+`godevs_portfolio_settings_group` option group. Every setting is
+registered via `register_setting()` with its own sanitization callback:
+
+```php
+$sanitize_map = array(
+    'accent_color'     => 'godevs_portfolio_sanitize_hex_color',
+    'accent_hover'     => 'godevs_portfolio_sanitize_hex_color',
+    'surface_color'    => 'godevs_portfolio_sanitize_hex_color',
+    'background_color' => 'godevs_portfolio_sanitize_hex_color',
+    'text_color'       => 'godevs_portfolio_sanitize_hex_color',
+    'muted_color'      => 'godevs_portfolio_sanitize_hex_color',
+    'header_cta_link'  => 'godevs_portfolio_sanitize_url',
+    'container_width'  => 'absint',
+    'content_width'    => 'absint',
+    'card_radius'      => 'absint',
+    'button_radius'    => 'absint',
+);
+foreach ( $defaults as $key => $val ) {
+    $sanitize = $sanitize_map[ $key ] ?? 'sanitize_text_field';
+    register_setting( 'godevs_portfolio_settings_group', 'godevs_portfolio_' . $key, array(
+        'type'              => 'string',
+        'sanitize_callback' => $sanitize,
+    ) );
+}
+```
+
+The AJAX save handler (`godevs_portfolio_ajax_save_settings()`)
+re-validates colors and URLs a second time, defensively, before
+writing — so even a crafted request that bypasses the Settings API
+sanitization cannot inject an invalid color or URL into the dynamic CSS.
+
+### 3.3 Header/Footer Builder
+
+The HF Builder accepts layout JSON via 6 AJAX endpoints
+(`save_layout`, `delete_layout`, `set_active`, `get_layouts`,
+`render_preview`, `get_miniatures`). Every endpoint verifies the
+`godevs_settings_save` nonce and requires `manage_options`. Layout
+data is validated as an array of rows → columns → elements before
+being stored as a theme mod.
+
+### 3.4 Demo Importer
+
+The importer accepts a demo slug via 6 AJAX endpoints (`import_demo`,
+`remove_demo`, `get_import_details`, `preview_demo`,
+`get_demo_pages`, `preview_demo_page`). Every endpoint verifies the
+`godevs_demo_admin` nonce and requires `manage_options`. The demo slug
+is validated against the canonical registry in `inc/demo-registry.php`
+before any import work begins.
+
+---
+
+## 4. Stored data inventory
+
+### 4.1 wp_options
+
+| Option key | Purpose | Written by |
 |---|---|---|
-| Form submission handling | Storing user input is plugin territory | Companion plugin (e.g., Contact Form 7) |
-| Custom post type CRUD | Data management is plugin territory | Companion plugin |
-| Image upload handling | WordPress core handles media uploads | WordPress core |
-| User authentication | WordPress core handles login/registration | WordPress core |
-| AJAX/REST endpoints | Plugin territory | Companion plugin |
-| Email sending | Plugin territory | Companion plugin |
-| External API calls | Plugin territory | Companion plugin |
-| File reading/writing | Plugin territory | Companion plugin |
-| Database writes | Plugin territory | Companion plugin |
+| `godevs_portfolio_settings` | Legacy combined-array option (back-compat) | `godevs_portfolio_seed_default_settings()` |
+| `godevs_portfolio_<key>` (×75) | Per-setting rows | Settings API + AJAX save |
+| `godevs_portfolio_dynamic_css` | Cached compiled CSS string | `godevs_portfolio_generate_dynamic_css()` |
+| `theme_mods_*` | HF-builder active layouts, nav menu locations | `set_theme_mod()` |
 
-The theme is responsible for **rendering** content. It is not responsible for **managing** content.
+### 4.2 Post meta (~40 keys across 7 CPTs)
+
+Each CPT carries a namespaced meta prefix:
+
+| CPT | Prefix | Keys |
+|---|---|---|
+| `godevs_project` | `_godevs_project_` | client, url, date, duration, location, role, status, featured (8) |
+| `godevs_service` | `_godevs_service_` | icon, price, duration, featured, cta_label, cta_url (6) |
+| `godevs_team` | `_godevs_team_` | job_title, email, phone, location, website, linkedin, twitter, facebook, instagram, featured (10) |
+| `godevs_testimonial` | `_godevs_testimonial_` | client_name, client_role, company, rating, featured (5) |
+| `godevs_experience` | `_godevs_experience_` | company, position, start, end, location, current (6) |
+| `godevs_education` | `_godevs_education_` | institution, degree, field, start, end, location (6) |
+| `godevs_case_study` | `_godevs_cs_` | client, year, industry, role, status, featured (6) |
+
+Every meta key is registered via `register_post_meta()` with an
+`auth_callback` of `current_user_can('edit_post', $object_id)` (or
+`manage_options` for site-wide keys), and saved by a nonce-gated
+`save_post` handler.
+
+### 4.3 User meta
+
+| Key | Purpose |
+|---|---|
+| `godevs_portfolio_welcome_dismissed` | Suppress the first-run onboarding notice |
+| `godevs_portfolio_diag_dismissed` | Suppress the diagnostic admin notice |
+| `godevs-portfolio-applied-style` | Remember which demo's style variation the user applied |
+
+### 4.4 Transients
+
+| Key | Purpose | TTL |
+|---|---|---|
+| `godevs_proposal_rl_<md5(ip)>` | Proposal-form rate limit (5/IP/hour) | `HOUR_IN_SECONDS` |
+| `godevs_import_lock` | Demo-importer concurrency (one import at a time) | 60s |
+| `godevs_hf_preview_layouts` | HF-builder preview cache | 60s |
+| `godevs_portfolio_just_imported` | Drives the post-import onboarding notice | 5 min |
+| `godevs_portfolio_just_imported_home` | Homepage ID for the post-import notice | 5 min |
+| `godevs_portfolio_activation_redirect` | One-shot activation redirect to onboarding | 5 min |
 
 ---
 
-## 3. Output Escaping
+## 5. Output escaping
 
-### 3.1 Translation Functions
+### 5.1 Translation functions
 
 All translatable strings use escaping-aware translation functions:
 
 ```php
-// Text that will be output as HTML
-esc_html__('Read more', 'godevs-portfolio')
-
-// Text that will be an attribute value
-esc_attr__('Search', 'godevs-portfolio')
-
-// Text that contains allowed HTML (links, etc.)
-wp_kses(__('By continuing, you agree to our <a href="/terms">Terms</a>.', 'godevs-portfolio'), array('a' => array('href' => array())))
-
-// URL output
-esc_url__('https://example.com', 'godevs-portfolio') // for hardcoded URLs
-esc_url($some_url) // for dynamic URLs
+esc_html__('Read more', 'godevs-portfolio')     // HTML body
+esc_attr__('Search', 'godevs-portfolio')          // attribute value
+esc_url__('https://example.com', 'godevs-portfolio') // hardcoded URL
+wp_kses(__('By continuing… <a href="/terms">Terms</a>.', 'godevs-portfolio'), $allowed)
 ```
 
-### 3.2 Forbidden Translation Patterns
+### 5.2 Dynamic output
 
-```php
-// WRONG — unescaped output
-echo __('Hello', 'godevs-portfolio');
+Every dynamic value in `functions.php` and `inc/*.php` is escaped at
+output: `esc_url()` for URLs (font preload, asset URIs, demo links),
+`esc_attr()` for HTML attributes, `esc_html()` for user-visible text,
+`wp_kses_post()` for the rare cases where a controlled subset of HTML
+is allowed (e.g. the meta-summary line in the Content Manager).
 
-// WRONG — wrong text domain
-echo esc_html__('Hello', 'wrong-domain');
+No `echo` of unescaped user data anywhere in the theme.
 
-// WRONG — printf without escaping arguments
-printf(__('Hello %s', 'godevs-portfolio'), $user_name);
+### 5.3 The `phpcs:ignore` annotations
 
-// RIGHT
-printf(esc_html__('Hello %s', 'godevs-portfolio'), esc_html($user_name));
-```
+A small number of `phpcs:ignore WordPress.Security.EscapeOutput` and
+`phpcs:disable WordPress.Security.NonceVerification.Recommended`
+annotations exist. Each one is justified inline and falls into one of
+two categories:
 
-### 3.3 URLs
-
-Any URL output uses `esc_url()`:
-
-```php
-echo '<a href="' . esc_url($url) . '">' . esc_html($label) . '</a>';
-```
-
-In Phase 1, the theme has minimal PHP that outputs URLs — most URLs are in block markup (HTML), not in PHP.
-
-### 3.4 Allowed HTML
-
-When outputting user-provided HTML (rare in Phase 1 — the theme does not store user input), use `wp_kses_post()`:
-
-```php
-echo wp_kses_post($user_provided_html);
-```
-
-This allows only a safe subset of HTML tags and attributes.
+- **Core function returns safe HTML** — e.g.
+  `get_the_post_thumbnail()`, `paginate_links()`, `wp_kses_post()` of
+  a known-safe summary string built from already-escaped fragments.
+- **Nonce already verified above** — the annotation sits below a
+  `check_ajax_referer()` call so the nonce is verified; the annotation
+  suppresses the redundant `$_POST` access warning.
 
 ---
 
-## 4. Input Sanitization
+## 6. Nonces
 
-### 4.1 Phase 1 Has No Input
+Every state-changing request carries a nonce. The nonce actions used
+in the theme:
 
-The theme does not accept user input. There are no forms, no settings pages, no AJAX endpoints.
+| Nonce action | Used by |
+|---|---|
+| `godevs_diag_dismiss` | Diagnostic notice dismissal |
+| `godevs_settings_save` | Theme Settings save + every HF-builder endpoint |
+| `godevs_demo_admin` | Every demo-importer endpoint |
+| `godevs_booking_form` | Booking form submission |
+| `godevs_proposal_form` | Proposal form submission |
+| `godevs_proposal_status_save` | Proposal status workflow change |
+| `godevs_render_demo_page` | Demo preview iframe render |
+| `godevs_onboarding_dismiss` | Welcome notice dismissal |
+| `godevs_onboarding_dismiss_imported` | Post-import notice dismissal |
+| `godevs_hf_layout_meta` | HF-builder layout meta save |
+| `godevs_booking_meta` | Booking post meta save |
+| `godevs_cs_meta_save` | Case-study post meta save |
 
-### 4.2 Future Input Handling
-
-If a future phase adds input handling (e.g., theme settings), use:
-
-```php
-$text   = sanitize_text_field($_POST['text'] ?? '');
-$url    = esc_url_raw($_POST['url'] ?? '');
-$email  = sanitize_email($_POST['email'] ?? '');
-$int    = absint($_POST['int'] ?? 0);
-$array  = array_map('sanitize_text_field', $_POST['array'] ?? array());
-```
-
-### 4.3 Nonces
-
-Any form submission or state-changing action must include a nonce:
-
-```php
-// In the form
-wp_nonce_field('godevs_portfolio_action', 'godevs_portfolio_nonce');
-
-// On submission
-if (!wp_verify_nonce($_POST['godevs_portfolio_nonce'] ?? '', 'godevs_portfolio_action')) {
-    wp_die(esc_html__('Invalid request.', 'godevs-portfolio'));
-}
-```
-
-### 4.4 Capability Checks
-
-Any privileged action must check capabilities:
-
-```php
-if (!current_user_can('manage_options')) {
-    wp_die(esc_html__('You do not have permission to do this.', 'godevs-portfolio'));
-}
-```
-
-Phase 1 has no capability-gated functionality.
+Nonces are verified with `check_ajax_referer()` (AJAX endpoints) or
+`wp_verify_nonce()` (form-meta save handlers). A failed nonce check
+calls `wp_send_json_error()` (AJAX) or `wp_die()` (form handler) and
+aborts the request.
 
 ---
 
-## 5. Database Access
+## 7. Capability checks
 
-### 5.1 No Direct Database Access
+| Capability | Required for |
+|---|---|
+| `manage_options` | Theme Settings save/reset, every HF-builder endpoint, every demo-importer endpoint, onboarding dismissals, Content Manager access, diagnostic notice |
+| `edit_posts` | Demo preview render |
+| `edit_post` (scoped) | Saving post meta for a specific post (booking, case study, project, etc.) |
 
-The theme does not call `$wpdb` directly. All database access is via WordPress core APIs (`WP_Query`, `get_posts()`, etc.) — and in Phase 1, even these are not used directly. All post retrieval is via `core/query` block.
-
-### 5.2 No Custom Tables
-
-The theme does not create custom database tables. Companion plugins may.
-
-### 5.3 No Schema Modification
-
-The theme does not modify WordPress database schema on activation or deactivation.
+Every AJAX handler and every `save_post` meta handler begins with a
+capability check. A failed check returns HTTP 403
+(`wp_send_json_error(..., 403)`) or `wp_die()`.
 
 ---
 
-## 6. File Operations
+## 8. Direct database writes (`$wpdb->update()`)
 
-### 6.1 No File Reads
+The demo importer makes three direct `$wpdb->update()` calls against
+`$wpdb->posts` (in `inc/demo-importer.php`, ~lines 985, 1002, 1072).
+This is deliberate and documented in the code:
 
-The theme does not read files at runtime (no `file_get_contents()`, no `fopen()`). Static assets (CSS, JS, images) are enqueued via WordPress APIs which handle file URLs.
+> The importer writes the user global-styles JSON (the custom Styles
+> post that backs the active style variation) directly to the
+> `wp_posts` table via `$wpdb->update()`. Going through `wp_insert_post()`
+> or `wp_update_post()` instead would run WordPress's `wp_unslash()`
+> pipeline over `post_content`, which strips the backslashes from
+> escaped quotes inside CSS `font-family` stacks (e.g.
+> `"Inter", sans-serif`). The resulting invalid JSON makes WordPress
+> reject the variation and print repeated
+> `WP_Theme_JSON_Resolver` notices on the front end.
 
-### 6.2 No File Writes
+`$wpdb->update()` performs parameter binding internally (it builds a
+prepared statement from the `$data` and `$where` arrays), so the write
+is SQL-injection-safe. The values written are validated before the
+call (the demo slug is checked against the registry; the post ID is
+cast to `(int)`).
 
-The theme does not write files. No `file_put_contents()`, no logging to disk.
-
-### 6.3 No Include of User Files
-
-The theme does not `include` or `require` files based on user input.
-
----
-
-## 7. Remote Requests
-
-### 7.1 No `wp_remote_get()`, `wp_remote_post()`, `curl`, etc.
-
-The theme makes no external HTTP requests. All assets are bundled.
-
-### 7.2 No Phone-Home Behavior
-
-The theme does not:
-- Phone home for updates (handled by WordPress.org repository)
-- Phone home for telemetry
-- Phone home for license verification
-- Phone home for feature flags
+This is the **only** direct database write in the theme. Every other
+read/write goes through the WordPress core APIs (`WP_Query`,
+`get_posts()`, `wp_insert_post()`, `update_option()`,
+`update_post_meta()`, `update_user_meta()`, `set_transient()`).
 
 ---
 
-## 8. JavaScript Security
+## 9. File operations
 
-### 8.1 Inline JS Forbidden
+### 9.1 Read via `WP_Filesystem` (P1.5 fix)
 
-No `onclick`, `onload`, `onsubmit`, etc. in HTML. All JS in external files.
+Pattern files under `patterns/demos/*.php` are read for the demo
+preview iframe via the WordPress `WP_Filesystem` abstraction (not
+`file_get_contents()` directly). This was the P1.5 fix for the
+WordPress.org Theme Review requirement that all filesystem access go
+through the WP_Filesystem API.
 
-### 8.2 No `eval()`, No `Function()`
+`file_exists()` is used (via `get_template_directory()`) for
+existence checks before enqueuing assets — this is permitted by the
+guidelines because no file contents are read.
 
-These are forbidden in theme JS.
+### 9.2 No file writes
 
-### 8.3 DOM Manipulation
+The theme never writes to the filesystem. No `file_put_contents()`,
+no logging to disk. The dynamic CSS is stored in `wp_options`, not in
+a `.css` file.
 
-Theme JS (if any) uses standard DOM APIs. No `document.write()`. No `innerHTML` with user-provided content.
+### 9.3 No include of user files
 
-### 8.4 Event Listeners
-
-Event listeners are attached via `addEventListener()` in external files, not via inline attributes.
+The theme never `include`s or `require`s a file based on user input.
+The `inc/*.php` loader in `functions.php` iterates a hard-coded array
+of relative paths.
 
 ---
 
-## 9. CSP Compatibility
+## 10. Remote requests
+
+The theme makes **no outbound HTTP requests**. No `wp_remote_get()`,
+no `wp_remote_post()`, no `curl`, no phone-home telemetry, no update
+checks (handled by WordPress.org), no external font/image CDN.
+
+The only outbound communication is `wp_mail()` on proposal
+submission — and that is a WordPress core API call to the local mail
+transport, not an HTTP request to a third party.
+
+---
+
+## 11. JavaScript security
+
+### 11.1 No inline JS (P1.16 fix)
+
+Inline event handlers (`onclick`, `onsubmit`, `onload`, …) and inline
+`<script>` blocks were removed in P1.16. Every JS interaction is
+attached via `addEventListener()` in one of the 8 external scripts:
+
+| Script | Purpose |
+|---|---|
+| `assets/js/reveal.js` | Front-end scroll-reveal + header scroll shadow |
+| `assets/js/hf-frontend.js` | Mobile menu toggle, sticky scroll, newsletter form default-prevention |
+| `assets/js/front-forms.js` | Booking + proposal form AJAX submission |
+| `assets/js/admin-settings.js` | Theme Settings dashboard AJAX save |
+| `assets/js/admin-hf-builder.js` | Header/Footer Builder admin UI |
+| `assets/js/admin-demos.js` | Demo importer admin UI + progress overlay |
+| `assets/js/admin-cpt-manager.js` | Delegated `data-confirm` confirmation dialogs |
+| `assets/js/admin-diag.js` | Diagnostic notice dismissal |
+
+### 11.2 No `eval()`, no `Function()`
+
+Forbidden in theme JS. No `document.write()`. No `innerHTML` with
+user-provided content (the admin-demos progress overlay updates
+`textContent` and class lists, never raw HTML from the server).
+
+### 11.3 Localized data, not inline strings
+
+AJAX URLs and nonces are passed from PHP to JS via
+`wp_localize_script()` (the `GODEVS_DIAG`, `GODEVS_HF`, and demo-admin
+globals), not via inline `<?php echo ?>` inside `<script>` blocks.
+
+---
+
+## 12. CSP compatibility
 
 The theme is compatible with strict Content-Security-Policy headers:
 
-- No inline scripts → `script-src 'self'` works
-- No inline styles in templates → `style-src 'self'` works (WordPress core may emit some inline styles via `wp_add_inline_style` — these require `'unsafe-inline'` or nonces, which is a WordPress core concern)
-- No external font CDN → `font-src 'self'` works
-- No external image CDN → `img-src 'self'` works (unless users upload remote images)
-- No `data:` URIs in CSS except for tiny SVG icons (kept minimal)
+- No inline scripts → `script-src 'self'` works (P1.16 fix completed
+  the last gap: the diagnostic notice's inline dismiss script).
+- No external font/image CDN → `font-src 'self'`, `img-src 'self'`
+  work.
+- The dynamic CSS emitted at `wp_head` priority 11 is an inline
+  `<style>` block, which requires `style-src 'self' 'unsafe-inline'`
+  or a nonce. This matches WordPress core's own behavior (the style
+  engine emits inline styles), so it does not add a new requirement.
 
 ---
 
-## 10. Common Vulnerabilities and Mitigations
+## 13. Common vulnerabilities and mitigations
 
-### 10.1 XSS (Cross-Site Scripting)
-
-**Mitigation:** All output is escaped via `esc_html()`, `esc_attr()`, `esc_url()`, or `wp_kses_post()`. Templates use core blocks which handle escaping internally.
-
-### 10.2 CSRF (Cross-Site Request Forgery)
-
-**Mitigation:** Phase 1 has no state-changing actions. Future actions use nonces.
-
-### 10.3 SQL Injection
-
-**Mitigation:** The theme makes no direct SQL queries. All queries via `WP_Query` and `core/query` block, which use prepared statements internally.
-
-### 10.4 File Inclusion
-
-**Mitigation:** No `include` / `require` based on user input.
-
-### 10.5 SSRF (Server-Side Request Forgery)
-
-**Mitigation:** No remote requests.
-
-### 10.6 Information Disclosure
-
-**Mitigation:** No `display_errors`, no `error_reporting` overrides, no `var_dump()` / `print_r()` in production code.
-
-### 10.7 Open Redirect
-
-**Mitigation:** No redirect functions based on user input.
+| Class | Mitigation |
+|---|---|
+| XSS | Every output escaped (`esc_html`, `esc_attr`, `esc_url`, `wp_kses_post`); no `echo` of raw user data; templates use core blocks which escape internally |
+| CSRF | Every state-changing request carries a nonce; `check_ajax_referer()` / `wp_verify_nonce()` on every endpoint and form-meta handler |
+| SQL injection | No raw SQL anywhere; the 3 `$wpdb->update()` calls use parameter binding; all other queries via `WP_Query` / `get_posts()` / `wp_insert_post()` which prepare internally |
+| Brute-force form abuse | Proposal form rate-limited to 5/IP/hour via a transient; honeypot field rejects bots |
+| Privilege escalation | Every AJAX endpoint and meta-save handler checks `manage_options` / `edit_post` / `edit_posts` before acting |
+| File inclusion | The `inc/` loader iterates a hard-coded array; no user input reaches `require`/`include` |
+| SSRF | No outbound HTTP requests |
+| Information disclosure | No `display_errors` / `error_reporting` overrides; no `var_dump`/`print_r` in production code |
+| Open redirect | No redirect functions based on user input |
 
 ---
 
-## 11. Asset URLs
+## 14. Third-party dependencies
 
-### 11.1 Use `get_template_directory_uri()`
+The user-facing theme has **zero** third-party PHP dependencies and
+**zero** third-party JS dependencies in production. The only bundled
+assets are the Inter and Newsreader webfonts (OFL-licensed). No
+jQuery dependency on the front-end (the scripts are vanilla JS,
+deferred).
 
-```php
-wp_enqueue_style(
-    'godevs-portfolio-theme',
-    get_template_directory_uri() . '/assets/css/theme.css',
-    array(),
-    '0.1.0'
-);
-```
-
-Never hardcode URLs like `http://example.com/wp-content/themes/godevs-portfolio/...`. Always use `get_template_directory_uri()` (parent theme) or `get_stylesheet_directory_uri()` (child theme aware).
-
-### 11.2 No Protocol-Relative URLs
-
-Use `https://` (WordPress core handles protocol). Avoid `//` protocol-relative URLs — they cause issues with file:// testing.
+Development-only helpers (`scripts/generate-pot.py`,
+`scripts/minify-theme-css.py`) are Python 3 standard-library-only and
+are not shipped to the production server.
 
 ---
 
-## 12. Theme Activation and Deactivation
-
-### 12.1 No Activation Hook Side Effects
-
-The theme does not register `after_switch_theme` actions that modify the database, create posts, or activate plugins.
-
-### 12.2 No Deactivation Cleanup
-
-The theme does not delete options, posts, or users on deactivation. User content persists across theme switches.
-
----
-
-## 13. Third-Party Dependencies
-
-Phase 1 has **zero third-party dependencies**. No Composer packages, no npm packages in the user-facing theme (build tooling may use npm but only at development time).
-
-If a future phase adds a dependency:
-
-1. The dependency must be GPL-compatible
-2. The dependency must be audited for security
-3. The dependency must be vendored into the theme (no `composer install` / `npm install` on the production server)
-4. The dependency must add no external HTTP requests
-5. The dependency must add no inline JS
-
----
-
-## 14. Security Audit Checklist
+## 15. Security audit checklist
 
 Before every release:
 
 ### PHP
 - [ ] All output uses escaping functions
-- [ ] All translations use escaping-aware functions (`esc_html__`, `esc_attr__`, etc.)
-- [ ] No `echo` of untrusted data
+- [ ] All translations use escaping-aware functions (`esc_html__`, `esc_attr__`, …)
+- [ ] No `echo` of unescaped user data
 - [ ] No `eval()`, `exec()`, `system()`, `passthru()`
-- [ ] No `file_get_contents()`, `file_put_contents()` with user input
+- [ ] File reads go through `WP_Filesystem` (P1.5)
 - [ ] No `include` / `require` with user input
-- [ ] No `$wpdb` direct queries
+- [ ] The only `$wpdb` direct writes are the 3 documented `$wpdb->update()` calls in `demo-importer.php`
 - [ ] No `unserialize()` with user input
-- [ ] No `preg_replace()` with `/e` modifier (deprecated and dangerous)
+- [ ] No `preg_replace()` with `/e` modifier
+
+### AJAX
+- [ ] Every `wp_ajax_*` handler calls `check_ajax_referer()` first
+- [ ] Every handler checks `current_user_can()` before acting
+- [ ] Every `$_POST` / `$_GET` field is sanitized before use
+- [ ] Every response is JSON via `wp_send_json_success()` / `wp_send_json_error()`
 
 ### JavaScript
-- [ ] No inline JS in HTML
-- [ ] No `eval()`, `Function()`
-- [ ] No `document.write()`
-- [ ] No `innerHTML` with user-provided content
+- [ ] No inline JS in any PHP or HTML (P1.16)
+- [ ] No `eval()`, `Function()`, `document.write()`
+- [ ] AJAX URLs + nonces via `wp_localize_script()`, not inline `<?php ?>`
 
-### Templates
-- [ ] No `<?php ?>` tags in HTML templates
-- [ ] No inline styles in templates
-- [ ] No inline scripts in templates
-
-### Assets
-- [ ] All assets enqueued via `wp_enqueue_*`
-- [ ] All asset URLs via `get_template_directory_uri()`
-- [ ] Version strings on all enqueues
-
-### Dependencies
-- [ ] Zero third-party PHP dependencies
-- [ ] Zero third-party JS dependencies in production
-- [ ] All bundled assets GPL-compatible
+### Forms
+- [ ] Nonce field on every form
+- [ ] Honeypot on public forms
+- [ ] Rate limiting on public forms
+- [ ] `sanitize_*` on every field
+- [ ] Required-field + format validation before storage
 
 ### Configuration
-- [ ] No theme options stored in database (Global Styles only)
-- [ ] No admin menu pages
-- [ ] No customizer panels
-- [ ] No `add_menu_page()`, `add_submenu_page()`
+- [ ] Every `register_setting()` has a `sanitize_callback`
+- [ ] No `add_menu_page()` / `add_theme_page()` without a capability check in the callback
+
+---
+
+## 16. Responsible disclosure
+
+Found a security issue? Please report it privately to
+**security@godevs.net** before opening a public issue. We acknowledge
+reports within 48 hours and aim to ship a fix within 7 days for
+critical issues.
+
+Do not attempt to exploit the issue on production sites; demo sites at
+https://godevs.net/ are available for responsible testing.

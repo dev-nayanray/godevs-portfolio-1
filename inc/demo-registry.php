@@ -34,6 +34,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Read a file's contents using the WP_Filesystem API.
+ *
+ * Replaces file_get_contents() which triggers Theme Check warnings even
+ * when wrapped in phpcs:ignore. WP_Filesystem is the recommended API
+ * for filesystem reads in WordPress themes/plugins.
+ *
+ * @param string $file Absolute file path.
+ * @return string|false File contents or false on failure.
+ * @since 1.5.0
+ */
+function godevs_portfolio_read_file( string $file ) {
+        global $wp_filesystem;
+        if ( ! $wp_filesystem ) {
+                require_once ABSPATH . 'wp-admin/includes/file.php';
+                WP_Filesystem();
+        }
+        if ( ! $wp_filesystem || ! $wp_filesystem->exists( $file ) ) {
+                return false;
+        }
+        return $wp_filesystem->get_contents( $file );
+}
+
+/**
  * Recommended pages per demo category.
  *
  * Used by the importer when the user selects "Starter Import" — the
@@ -396,7 +419,7 @@ function godevs_portfolio_is_demo_complete( string $demo_id, array $pages ): boo
  * @return array|null Demo definition, or null if the file is invalid.
  */
 function godevs_portfolio_parse_demo_file( string $file ): ?array {
-        $contents = file_get_contents( $file ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents — reading a theme file, not user input.
+        $contents = godevs_portfolio_read_file( $file );
         if ( false === $contents ) {
                 return null;
         }

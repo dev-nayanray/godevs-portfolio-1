@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":45,"overlayColor":"primary","minHeight":94,"isDark":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover" style="min-height:94vh;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-45 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Cinematic film still — lone figure in a vast dark space with a single shaft of warm light, atmospheric haze" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+                <img class="wp-block-cover__image-background" alt="Cinematic film still — lone figure in a vast dark space with a single shaft of warm light, atmospheric haze" fetchpriority="high" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
                 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                         <!-- spacer -->
