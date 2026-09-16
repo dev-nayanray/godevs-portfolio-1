@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
                                 <div class="wp-block-column" style="flex-basis:40%">
                                         <!-- wp:image {"aspectRatio":"3/4","scale":"cover","style":{"layout":{"selfStretch":"fit","flexSize":"100%"}}} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-hero.webp' ); ?>" alt="Editorial portrait of the creative director in a minimal studio with soft window light" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-hero.webp' ); ?>" alt="Editorial portrait of the creative director in a minimal studio with soft window light" fetchpriority="high" style="aspect-ratio:3/4;object-fit:cover" loading="eager"/></figure>
                                         <!-- /wp:image -->
                                         <!-- wp:paragraph {"className":"atelier-caption","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"0.8125rem"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="atelier-caption has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem">Studio portrait — Spring 2026</p>

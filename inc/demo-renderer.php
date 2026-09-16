@@ -49,7 +49,7 @@ function godevs_portfolio_render_demo_html( string $demo_id, string $page ): str
                 return '';
         }
 
-        $text = file_get_contents( $file ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents — reading a theme file.
+        $text = godevs_portfolio_read_file( $file );
         if ( false === $text ) {
                 return '';
         }
@@ -119,7 +119,7 @@ function godevs_portfolio_render_resolve_template_parts( string $text, int $dept
                         if ( ! file_exists( $part_path ) ) {
                                 return "<!-- template-part {$slug} not found -->";
                         }
-                        $part_content = file_get_contents( $part_path ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+                        $part_content = godevs_portfolio_read_file( $part_path );
                         if ( false === $part_content ) {
                                 return '';
                         }
@@ -276,7 +276,7 @@ function godevs_portfolio_render_build_css_vars(): string {
         if ( ! file_exists( $theme_json_path ) ) {
                 return '';
         }
-        $theme = json_decode( file_get_contents( $theme_json_path ), true ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+        $theme = json_decode( godevs_portfolio_read_file( $theme_json_path ), true );
         if ( ! is_array( $theme ) ) {
                 return '';
         }
@@ -359,7 +359,7 @@ function godevs_portfolio_render_wrap_html( string $body_markup, string $demo_id
 
         // Read the theme CSS and expand preset refs in it.
         $theme_css_path = get_template_directory() . '/assets/css/theme.css';
-        $theme_css      = file_exists( $theme_css_path ) ? file_get_contents( $theme_css_path ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+        $theme_css      = file_exists( $theme_css_path ) ? godevs_portfolio_read_file( $theme_css_path ) : '';
         $theme_css      = godevs_portfolio_render_expand_preset_refs( $theme_css );
 
         $page_titles = array(
@@ -374,7 +374,7 @@ function godevs_portfolio_render_wrap_html( string $body_markup, string $demo_id
         // Static-render adjustments CSS (loaded from external file to avoid
         // brace-counting issues with PHP heredoc syntax in static audits).
         $static_css_path = get_template_directory() . '/assets/css/demo-preview.css';
-        $static_css      = file_exists( $static_css_path ) ? file_get_contents( $static_css_path ) : ''; // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+        $static_css      = file_exists( $static_css_path ) ? godevs_portfolio_read_file( $static_css_path ) : '';
         $static_css      = godevs_portfolio_render_expand_preset_refs( $static_css );
 
         // Use system fonts for the demo preview (no external CDN — WordPress.org compliant).

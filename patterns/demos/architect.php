@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":25,"overlayColor":"primary","minHeight":88,"isDark":true,"style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover" style="min-height:88vh;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-25 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Modern architectural house — minimalist concrete and glass residence at golden hour with strong shadows" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+                <img class="wp-block-cover__image-background" alt="Modern architectural house — minimalist concrete and glass residence at golden hour with strong shadows" fetchpriority="high" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/architect/architect-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container">
                         <div class="wp-block-group alignwide">

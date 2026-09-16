@@ -833,9 +833,10 @@ function godevs_hf_render_element( array $element ): string {
                         if ( $title ) {
                                 $out .= '<p class="godevs-hf-newsletter-title">' . esc_html( $title ) . '</p>';
                         }
-                        $out .= '<form class="godevs-hf-newsletter-form" onsubmit="return false">';
+                        $out .= '<form class="godevs-hf-newsletter-form">';
                         $out .= '<input type="email" placeholder="' . esc_attr( $placeholder ) . '" />';
                         $out .= '<button type="submit">' . esc_html( $btn_text ) . '</button>';
+                        $out .= '<span class="godevs-hf-newsletter-msg" style="display:none;" role="status" aria-live="polite"></span>';
                         $out .= '</form></div>';
                         break;
         }
@@ -1266,11 +1267,29 @@ function godevs_hf_enqueue_css(): void {
                 wp_enqueue_style( 'godevs-hf-builder', get_template_directory_uri() . '/assets/css/header-footer-builder.css', array(), (string) filemtime( $css ) );
         }
 
-        // Enqueue front-end JS for mobile hamburger menu + sticky scroll shadow.
-        $js = get_template_directory() . '/assets/js/hf-frontend.js';
-        if ( file_exists( $js ) ) {
-                wp_enqueue_script( 'godevs-hf-frontend', get_template_directory_uri() . '/assets/js/hf-frontend.js', array(), (string) filemtime( $js ), true );
-        }
+        // Enqueue front-end JS for mobile hamburger menu + sticky scroll shadow
+        // + newsletter-form default-prevention (P1.16 — remove inline JS).
+        $hf_frontend_js_path = get_template_directory() . '/assets/js/hf-frontend.js';
+        $hf_frontend_js_ver  = file_exists( $hf_frontend_js_path ) ? (string) filemtime( $hf_frontend_js_path ) : GODEVS_PORTFOLIO_VERSION;
+        wp_enqueue_script(
+                'godevs-hf-frontend',
+                get_template_directory_uri() . '/assets/js/hf-frontend.js',
+                array( 'jquery' ),
+                $hf_frontend_js_ver,
+                array( 'in_footer' => true, 'strategy' => 'defer' )
+        );
+
+        // Localize translatable strings used by hf-frontend.js so the
+        // newsletter success message is fully translatable.
+        wp_localize_script(
+                'godevs-hf-frontend',
+                'GODEVS_HF',
+                array(
+                        'i18n' => array(
+                                'newsletterSuccess' => __( 'Thanks for subscribing!', 'godevs-portfolio' ),
+                        ),
+                )
+        );
 }
 add_action( 'wp_enqueue_scripts', 'godevs_hf_enqueue_css' );
 

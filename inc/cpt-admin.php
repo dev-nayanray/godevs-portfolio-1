@@ -30,7 +30,19 @@ function godevs_cpt_admin_register_page(): void {
 add_action( 'admin_menu', 'godevs_cpt_admin_register_page' );
 
 /**
- * Enqueue admin styles for the CPT manager.
+ * Enqueue admin styles and scripts for the CPT manager.
+ *
+ * Styles:  assets/css/admin-cpt-manager.css
+ * Scripts: assets/js/admin-cpt-manager.js — provides the delegated
+ *          `data-confirm` confirmation dialog that replaces the previous
+ *          inline `onclick="return confirm(...)"` attribute on the
+ *          trash link (P1.16 — remove inline JS).
+ *
+ * Both are only loaded on the `appearance_page_godevs-portfolio-cpt-manager`
+ * admin screen.
+ *
+ * @param string $hook Current admin page hook suffix.
+ * @return void
  */
 function godevs_cpt_admin_enqueue_styles( string $hook ): void {
         if ( 'appearance_page_godevs-portfolio-cpt-manager' !== $hook ) {
@@ -40,6 +52,18 @@ function godevs_cpt_admin_enqueue_styles( string $hook ): void {
         $css_uri  = get_template_directory_uri() . '/assets/css/admin-cpt-manager.css';
         if ( file_exists( $css_path ) ) {
                 wp_enqueue_style( 'godevs-cpt-manager', $css_uri, array(), '2.6.0' );
+        }
+
+        // Enqueue the delegated `data-confirm` confirmation-dialog script.
+        $js_path = get_template_directory() . '/assets/js/admin-cpt-manager.js';
+        if ( file_exists( $js_path ) ) {
+                wp_enqueue_script(
+                        'godevs-cpt-manager',
+                        get_template_directory_uri() . '/assets/js/admin-cpt-manager.js',
+                        array(),
+                        (string) filemtime( $js_path ),
+                        array( 'in_footer' => true, 'strategy' => 'defer' )
+                );
         }
 }
 add_action( 'admin_enqueue_scripts', 'godevs_cpt_admin_enqueue_styles' );

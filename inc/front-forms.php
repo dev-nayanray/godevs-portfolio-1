@@ -44,7 +44,15 @@ function godevs_forms_enqueue_styles(): void {
                 wp_enqueue_style( 'godevs-front-forms', $css_uri, array(), '2.9.0' );
         }
 
-        wp_enqueue_script( 'godevs-front-forms', get_template_directory_uri() . '/assets/js/front-forms.js', array(), '2.9.0', true );
+        $front_forms_js_path = get_template_directory() . '/assets/js/front-forms.js';
+        $front_forms_js_ver  = file_exists( $front_forms_js_path ) ? (string) filemtime( $front_forms_js_path ) : GODEVS_PORTFOLIO_VERSION;
+        wp_enqueue_script(
+                'godevs-front-forms',
+                get_template_directory_uri() . '/assets/js/front-forms.js',
+                array(),
+                $front_forms_js_ver,
+                array( 'in_footer' => true, 'strategy' => 'defer' )
+        );
         wp_localize_script(
                 'godevs-front-forms',
                 'GODEVS_FORMS',
@@ -391,9 +399,8 @@ function godevs_ajax_submit_booking(): void {
         $reply_name = str_replace( array( '<', '>', "\r", "\n", "%0d", "%0a" ), '', $name );
 
         $headers = array(
-                'From: ' . $site_name . ' <' . $admin_email . '>',
-                'Content-Type: text/plain; charset=UTF-8',
-                'Reply-To: ' . $reply_name . ' <' . $email . '>',
+                'From'     => $site_name . ' <' . $admin_email . '>',
+                'Reply-To' => $reply_name . ' <' . $email . '>',
         );
 
         wp_mail( $admin_email, $subject, $email_body, $headers );
@@ -529,9 +536,8 @@ function godevs_ajax_submit_proposal(): void {
         $reply_name = str_replace( array( '<', '>', "\r", "\n", "%0d", "%0a" ), '', $name );
 
         $headers = array(
-                'From: ' . $site_name . ' <' . $admin_email . '>',
-                'Content-Type: text/plain; charset=UTF-8',
-                'Reply-To: ' . $reply_name . ' <' . $email . '>',
+                'From'     => $site_name . ' <' . $admin_email . '>',
+                'Reply-To' => $reply_name . ' <' . $email . '>',
         );
 
         wp_mail( $admin_email, $subject, $email_body, $headers );

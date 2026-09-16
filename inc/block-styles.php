@@ -16,31 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ── FALLBACK LOADER ──────────────────────────────────────────────────────
-// Load ALL inc/ content modules from here as a fallback. This ensures CPTs
-// register on EVERY request (front-end + admin) even if the user is running
-// an OLD version of functions.php that doesn't load these files.
-// require_once guarantees no double-loading if functions.php also loads them.
-$_godevs_bs_dir = get_template_directory() . '/inc';
-
-$_godevs_bs_files = array(
-        '/content/cpt.php',
-        '/content/taxonomies.php',
-        '/content/meta-fields.php',
-        '/content/case-study.php',
-        '/demo-registry.php',
-        '/demo-tracker.php',
-);
-
-foreach ( $_godevs_bs_files as $_godevs_bs_rel ) {
-        $_godevs_bs_full = $_godevs_bs_dir . $_godevs_bs_rel;
-        if ( file_exists( $_godevs_bs_full ) ) {
-                require_once $_godevs_bs_full;
-        }
-}
-
-unset( $_godevs_bs_dir, $_godevs_bs_files, $_godevs_bs_rel, $_godevs_bs_full );
-
 /**
  * Register custom block styles.
  *

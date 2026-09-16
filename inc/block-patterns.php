@@ -15,30 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ── FALLBACK LOADER ──────────────────────────────────────────────────────
-// Load ALL inc/ content modules from here as a fallback. This ensures CPTs
-// register on EVERY request even if the user is running an OLD functions.php.
-// require_once guarantees no double-loading if functions.php also loads them.
-$_godevs_bp_dir = get_template_directory() . '/inc';
-
-$_godevs_bp_files = array(
-        '/content/cpt.php',
-        '/content/taxonomies.php',
-        '/content/meta-fields.php',
-        '/content/case-study.php',
-        '/demo-registry.php',
-        '/demo-tracker.php',
-);
-
-foreach ( $_godevs_bp_files as $_godevs_bp_rel ) {
-        $_godevs_bp_full = $_godevs_bp_dir . $_godevs_bp_rel;
-        if ( file_exists( $_godevs_bp_full ) ) {
-                require_once $_godevs_bp_full;
-        }
-}
-
-unset( $_godevs_bp_dir, $_godevs_bp_files, $_godevs_bp_rel, $_godevs_bp_full );
-
 /**
  * Register GoDevs Portfolio pattern categories.
  *

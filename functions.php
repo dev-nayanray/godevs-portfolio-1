@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Theme version.
  */
 if ( ! defined( 'GODEVS_PORTFOLIO_VERSION' ) ) {
-        define( 'GODEVS_PORTFOLIO_VERSION', '1.4.0' );
+        define( 'GODEVS_PORTFOLIO_VERSION', '1.5.0' );
 }
 
 /**
@@ -55,6 +55,42 @@ function godevs_portfolio_setup(): void {
 
         // Add support for editor styles — assets/css/theme.css is loaded in the editor.
         add_editor_style( 'assets/css/theme.css' );
+        // Explicit editor-styles support (add_editor_style() enables it implicitly,
+        // but Theme Check expects the explicit declaration).
+        add_theme_support( 'editor-styles' );
+
+        // Add support for post-thumbnails (featured images). Block themes auto-enable
+        // this, but Theme Check flags its absence and demo patterns rely on it.
+        add_theme_support( 'post-thumbnails' );
+
+        // Add support for custom-logo (customizer upload). Block themes use the
+        // site-logo block, but custom-logo enables the Customizer upload path.
+        add_theme_support(
+                'custom-logo',
+                array(
+                        'width'       => 240,
+                        'height'      => 48,
+                        'flex-width'  => true,
+                        'flex-height' => true,
+                )
+        );
+
+        // Add support for wp-block-styles — applies core block stylesheet so the
+        // theme matches the editor preview. Block themes normally enable this via
+        // theme.json but explicit declaration is recommended by Theme Check.
+        add_theme_support( 'wp-block-styles' );
+
+        // Add support for align-wide (full + wide alignment classes). Block themes
+        // enable this via theme.json's `layout` block, but explicit declaration is
+        // recommended by Theme Check.
+        add_theme_support( 'align-wide' );
+
+        // Register custom image sizes for portfolio-specific card layouts.
+        // These are selectable in the media picker and used by `wp_get_attachment_image()`.
+        add_image_size( 'godevs-card', 600, 400, true );     // 3:2 portfolio card
+        add_image_size( 'godevs-portrait', 1000, 1250, true ); // 4:5 portrait
+        add_image_size( 'godevs-hero', 1600, 900, true );     // 16:9 hero
+        add_image_size( 'godevs-square', 800, 800, true );    // 1:1 square
 
         // Register nav menus used by core/navigation (location-based).
         register_nav_menus(
@@ -78,12 +114,14 @@ add_action( 'after_setup_theme', 'godevs_portfolio_setup' );
  */
 function godevs_portfolio_enqueue_styles(): void {
         // Supplementary styles (focus rings, reduced motion, block style classes).
-        $theme_css_path = get_template_directory() . '/assets/css/theme.css';
+        // Use minified CSS in production, unminified when SCRIPT_DEBUG is defined.
+        $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+        $theme_css_path = get_template_directory() . '/assets/css/theme' . $suffix . '.css';
         $theme_css_ver  = file_exists( $theme_css_path ) ? (string) filemtime( $theme_css_path ) : GODEVS_PORTFOLIO_VERSION;
 
         wp_enqueue_style(
                 'godevs-portfolio-theme',
-                get_template_directory_uri() . '/assets/css/theme.css',
+                get_template_directory_uri() . '/assets/css/theme' . $suffix . '.css',
                 array(),
                 $theme_css_ver
         );
@@ -109,6 +147,41 @@ function godevs_portfolio_enqueue_styles(): void {
         );
 }
 add_action( 'wp_enqueue_scripts', 'godevs_portfolio_enqueue_styles' );
+
+/**
+ * Preload critical above-the-fold fonts.
+ *
+ * Emits <link rel="preload"> tags for the body font (Inter 400), the
+ * semi-bold weight (Inter 600, used for headings), and the display
+ * serif (Newsreader 500, used for hero typography). Without preloading,
+ * the browser follows a CSS → @font-face → fetch chain that costs
+ * ~150-250ms on first paint — preloading eliminates that round-trip.
+ *
+ * The fonts are bundled in /assets/fonts/ as .woff2 files. We preload
+ * only the weights used above the fold; the rest are loaded lazily
+ * via the @font-face rules in theme.json.
+ *
+ * @return void
+ * @since 1.5.0
+ */
+function godevs_portfolio_preload_fonts(): void {
+        $base = get_template_directory_uri() . '/assets/fonts';
+        // Preload only the body + display weights used above the fold.
+        // Inter 400 = body text, Inter 600 = headings, Newsreader 500 = hero serif.
+        $fonts = array(
+                '/inter-400.woff2',
+                '/inter-600.woff2',
+                '/newsreader-500.woff2',
+        );
+        foreach ( $fonts as $font ) {
+                $path = get_template_directory() . '/assets/fonts' . $font;
+                if ( ! file_exists( $path ) ) {
+                        continue;
+                }
+                echo "<link rel='preload' href='" . esc_url( $base . $font ) . "' as='font' type='font/woff2' crossorigin>\n";
+        }
+}
+add_action( 'wp_head', 'godevs_portfolio_preload_fonts', 1 );
 
 /**
  * Include theme components.
@@ -153,6 +226,7 @@ $_godevs_files = array(
         '/header-footer-builder.php',
         '/settings-deadend-fixes.php',
         '/onboarding.php',
+        '/seo.php',
 );
 
 foreach ( $_godevs_files as $_godevs_rel ) {
@@ -277,27 +351,65 @@ function godevs_portfolio_diagnostic_notice(): void {
         echo '<p style="margin:8px 0 0 0;font-size:12px;color:#666;">' . esc_html__( 'If CPTs are not registered, visit Settings → Permalinks and click Save Changes to flush rewrite rules.', 'godevs-portfolio' ) . '</p>';
 
         echo '</div>';
-
-        // AJAX handler for dismissal.
-        ?>
-        <script>
-        (function() {
-                var notice = document.querySelector('.godevs-diag-notice');
-                if (!notice) return;
-                notice.addEventListener('click', function(e) {
-                        if (e.target.classList.contains('notice-dismiss')) {
-                                fetch(ajaxurl, {
-                                        method: 'POST',
-                                        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-                                        body: 'action=godevs_portfolio_dismiss_diag&_ajax_nonce=' + '<?php echo esc_js( wp_create_nonce( 'godevs_diag_dismiss' ) ); ?>'
-                                });
-                        }
-                });
-        })();
-        </script>
-        <?php
 }
 add_action( 'admin_notices', 'godevs_portfolio_diagnostic_notice' );
+
+/**
+ * Enqueue the diagnostic notice dismissal script.
+ *
+ * Loads `assets/js/admin-diag.js` only on the dashboard (`index.php`)
+ * and the themes page (`themes.php`) — the only two screens where the
+ * diagnostic notice is shown. The script reads its AJAX URL, nonce, and
+ * i18n strings from the `GODEVS_DIAG` global object that we localize
+ * here.
+ *
+ * Replaces the inline `<script>` block that previously lived inside
+ * `godevs_portfolio_diagnostic_notice()` (P1.16 — remove inline JS).
+ *
+ * @param string $hook The current admin page hook suffix.
+ * @return void
+ * @since 1.5.0
+ */
+function godevs_portfolio_enqueue_admin_diag_script( string $hook ): void {
+        // The diagnostic notice only renders on the dashboard and the
+        // themes page, so there is no point enqueuing the dismiss script
+        // anywhere else.
+        $screens = array(
+                'index.php',  // Dashboard.
+                'themes.php', // Appearance → Themes.
+        );
+        if ( ! in_array( $hook, $screens, true ) ) {
+                return;
+        }
+
+        $js_path = get_template_directory() . '/assets/js/admin-diag.js';
+        if ( ! file_exists( $js_path ) ) {
+                return;
+        }
+
+        $ver = (string) filemtime( $js_path );
+
+        wp_enqueue_script(
+                'godevs-admin-diag',
+                get_template_directory_uri() . '/assets/js/admin-diag.js',
+                array(),
+                $ver,
+                array( 'in_footer' => true, 'strategy' => 'defer' )
+        );
+
+        wp_localize_script(
+                'godevs-admin-diag',
+                'GODEVS_DIAG',
+                array(
+                        'ajaxUrl' => admin_url( 'admin-ajax.php' ),
+                        'nonce'   => wp_create_nonce( 'godevs_diag_dismiss' ),
+                        'i18n'    => array(
+                                'dismissed' => __( 'Diagnostic notice dismissed. You can re-enable it from the GoDevs Settings page.', 'godevs-portfolio' ),
+                        ),
+                )
+        );
+}
+add_action( 'admin_enqueue_scripts', 'godevs_portfolio_enqueue_admin_diag_script' );
 
 /**
  * AJAX handler to dismiss the diagnostic notice.

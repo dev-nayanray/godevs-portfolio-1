@@ -302,21 +302,6 @@ add_filter( 'body_class', 'godevs_deadend_services_cta_body_class' );
 // 11. MOTION_ENABLED — conditionally enqueue reveal.js + transitions
 // ════════════════════════════════════════════════════════════════════════════
 
-/**
- * Dequeue reveal.js when motion_enabled is '0'.
- *
- * Also adds a body class 'godevs-motion-off' that disables CSS transitions
- * on motion-dependent elements.
- *
- * @param string $handle Script handle.
- * @return bool True to keep, false to dequeue.
- */
-function godevs_deadend_motion_filter_scripts( string $handle ): bool {
-        if ( 'godevs-reveal' === $handle && '0' === godevs_portfolio_get_setting( 'motion_enabled' ) ) {
-                wp_dequeue_script( $handle );
-        }
-        return true;
-}
 // Hook into wp_enqueue_scripts late so we can dequeue what was queued earlier.
 add_action( 'wp_enqueue_scripts', function () {
         if ( '0' === godevs_portfolio_get_setting( 'motion_enabled' ) ) {

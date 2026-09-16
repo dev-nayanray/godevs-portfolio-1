@@ -172,22 +172,30 @@ function godevs_settings_blog_archive_template( string $layout, int $columns ): 
 /**
  * Hook into the CPT archive template generator for 'post' type.
  *
- * @param string|null $inner   The generated inner template (null if not generated yet).
- * @param string      $cpt_slug The CPT slug.
- * @return string|null The generated template for 'post', or null to use default.
+ * Reads blog_layout, blog_columns, blog_show_* settings and generates
+ * the inner block markup for the blog home page post-template.
+ *
+ * @param string $template The generated inner template (empty string for 'post').
+ * @param string $cpt_slug  The CPT slug ('post' for blog home).
+ * @param string $layout    Layout setting value passed through from the dispatcher.
+ * @param int    $columns   Column count passed through from the dispatcher.
+ * @return string The generated template for 'post', or the original $template unchanged.
  */
-function godevs_settings_post_archive_template( ?string $inner, string $cpt_slug ): ?string {
+function godevs_settings_post_archive_template( string $template, string $cpt_slug, string $layout = '', int $columns = 0 ): string {
         if ( 'post' !== $cpt_slug ) {
-                return $inner;
+                return $template;
         }
-        $layout  = godevs_portfolio_get_setting( 'blog_layout' );
-        $columns = (int) godevs_portfolio_get_setting( 'blog_columns' );
-        if ( $columns < 1 ) {
-                $columns = 3;
+        // The dispatcher passes the resolved layout/columns, but those values
+        // came from the CPT settings map which doesn't include 'post'. So we
+        // re-resolve them from the dedicated blog_* settings here.
+        $resolved_layout  = '' !== $layout ? $layout : godevs_portfolio_get_setting( 'blog_layout' );
+        $resolved_columns = $columns > 0 ? $columns : (int) godevs_portfolio_get_setting( 'blog_columns' );
+        if ( $resolved_columns < 1 ) {
+                $resolved_columns = 3;
         }
-        return godevs_settings_blog_archive_template( $layout, $columns );
+        return godevs_settings_blog_archive_template( $resolved_layout, $resolved_columns );
 }
-add_filter( 'godevs_cpt_archive_generate_template', 'godevs_settings_post_archive_template', 10, 2 );
+add_filter( 'godevs_cpt_archive_generate_template', 'godevs_settings_post_archive_template', 10, 4 );
 
 /**
  * Inject brand name and tagline into the site header.
@@ -253,16 +261,6 @@ function godevs_settings_typography_css( string $css ): string {
 add_filter( 'godevs_portfolio_dynamic_css', 'godevs_settings_typography_css' );
 
 /**
- * Apply the dynamic CSS filter so other modules can append CSS.
- *
- * @param string $css The generated CSS.
- * @return string Filtered CSS.
- */
-function godevs_portfolio_apply_dynamic_css_filter( string $css ): string {
-        return apply_filters( 'godevs_portfolio_dynamic_css', $css );
-}
-
-/**
  * Add lazy loading attributes to images if the setting is enabled.
  *
  * @param array $attrs  Image attributes.
@@ -278,33 +276,3 @@ function godevs_settings_lazy_load_images( array $attrs ): array {
         return $attrs;
 }
 add_filter( 'wp_get_attachment_image_attributes', 'godevs_settings_lazy_load_images' );
-
-/**
- * Add demo card density and preview ratio controls to the Demo panel.
- *
- * This is called from the theme-settings.php Demo panel via an action.
- */
-function godevs_settings_demo_panel_extra(): void {
-        $density = godevs_portfolio_get_setting( 'demo_card_density' );
-        $ratio   = godevs_portfolio_get_setting( 'demo_preview_ratio' );
-        ?>
-        <div class="godevs-setting-row">
-                <label class="godevs-setting-label"><?php esc_html_e( 'Card density', 'godevs-portfolio' ); ?></label>
-                <select name="demo_card_density" class="godevs-select">
-                        <option value="comfortable" <?php selected( $density, 'comfortable' ); ?>><?php esc_html_e( 'Comfortable', 'godevs-portfolio' ); ?></option>
-                        <option value="compact" <?php selected( $density, 'compact' ); ?>><?php esc_html_e( 'Compact', 'godevs-portfolio' ); ?></option>
-                </select>
-                <p class="godevs-setting-desc"><?php esc_html_e( 'Spacing between demo cards in the library.', 'godevs-portfolio' ); ?></p>
-        </div>
-        <div class="godevs-setting-row">
-                <label class="godevs-setting-label"><?php esc_html_e( 'Preview ratio', 'godevs-portfolio' ); ?></label>
-                <select name="demo_preview_ratio" class="godevs-select">
-                        <option value="16/10" <?php selected( $ratio, '16/10' ); ?>><?php esc_html_e( '16:10', 'godevs-portfolio' ); ?></option>
-                        <option value="16/9" <?php selected( $ratio, '16/9' ); ?>><?php esc_html_e( '16:9', 'godevs-portfolio' ); ?></option>
-                        <option value="4/3" <?php selected( $ratio, '4/3' ); ?>><?php esc_html_e( '4:3', 'godevs-portfolio' ); ?></option>
-                </select>
-                <p class="godevs-setting-desc"><?php esc_html_e( 'Aspect ratio for demo preview images.', 'godevs-portfolio' ); ?></p>
-        </div>
-        <?php
-}
-add_action( 'godevs_settings_demo_panel_extra', 'godevs_settings_demo_panel_extra' );

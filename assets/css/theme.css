@@ -14,7 +14,7 @@
  */
 
 /* --------------------------------------------------------------
- * 1. Focus states
+ * 1. Focus states + screen-reader-text + prefers-contrast
  * -------------------------------------------------------------- */
 
 *:focus-visible {
@@ -25,6 +25,101 @@
 /* Remove default focus ring for mouse users (keep for keyboard). */
 *:focus:not(:focus-visible) {
         outline: none;
+}
+
+/* --------------------------------------------------------------
+ * 1.1 Screen-reader-text utility class (WordPress.org requirement)
+ *
+ * Visually hides content while keeping it readable by screen readers.
+ * Used by the skip-link in every parts/header*.html file. Without this
+ * rule, the skip-link renders as visible inline text at the top of every
+ * page. The :focus variant restores visibility for keyboard navigation.
+ * -------------------------------------------------------------- */
+.screen-reader-text {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute !important;
+        word-wrap: normal !important;
+}
+
+.screen-reader-text:focus,
+.screen-reader-text:focus-visible {
+        background-color: var(--wp--preset--color--base, #ffffff);
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        clip-path: none;
+        color: var(--wp--preset--color--primary, #0a0a0a);
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 700;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        outline: 2px solid var(--wp--preset--color--accent, #2563eb);
+        outline-offset: 2px;
+}
+
+/* Skip-link specific styling — visible only when focused. */
+.skip-link.screen-reader-text:not(:focus):not(:focus-visible) {
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        position: absolute !important;
+}
+
+/* --------------------------------------------------------------
+ * 1.2 Enhanced contrast — WCAG 2.2 (1.4.6 Contrast Enhanced)
+ *
+ * Bumps muted text to 7:1 contrast, widens borders to 2px solid,
+ * disables any 4%-alpha background tints (which fail contrast
+ * against any background — see issue #A1 in audit).
+ * -------------------------------------------------------------- */
+@media (prefers-contrast: more) {
+        :root {
+                --wp--preset--color--muted: #2a2a2a;
+                --wp--preset--color--secondary: #2a2a2a;
+        }
+
+        body {
+                color: #000000;
+        }
+
+        /* Force visible borders on inputs and cards. */
+        input,
+        select,
+        textarea,
+        .wp-block-button__link,
+        .godevs-demo-card,
+        .is-style-card-bordered {
+                border-width: 2px !important;
+                border-style: solid !important;
+                border-color: currentColor !important;
+        }
+
+        /* Disable low-alpha background tints (4%-alpha focus cues etc.). */
+        [style*="rgba("] {
+                background-color: var(--wp--preset--color--surface-muted, #f5f5f0) !important;
+        }
+
+        /* Strengthen focus ring. */
+        *:focus-visible {
+                outline: 3px solid var(--wp--preset--color--accent, #0000ee) !important;
+                outline-offset: 3px !important;
+        }
 }
 
 /* --------------------------------------------------------------
@@ -2037,7 +2132,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
         background: rgba(255, 90, 48, 0.04);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-nova .nova-service-num {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -2396,7 +2491,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--atelier-accent);
         border-bottom-color: var(--atelier-accent);
         gap: 0.9rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-atelier .atelier-link .atelier-arrow {
         transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -2426,7 +2521,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-atelier .atelier-expertise-row:focus-visible {
         padding-left: 1rem;
         padding-right: 1rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-atelier .atelier-expertise-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -2787,7 +2882,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         border-color: var(--pulse-accent);
         box-shadow: 0 12px 40px -12px rgba(15, 17, 21, 0.12);
         transform: translateY(-2px);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-pulse .pulse-case-media {
         overflow: hidden;
@@ -2998,7 +3093,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--pulse-accent);
         border-bottom-color: var(--pulse-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-pulse .pulse-link .pulse-arrow {
         transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -3224,7 +3319,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-frame .frame-story:focus-visible img {
         transform: scale(1.025);
         filter: brightness(1);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-frame .frame-story-caption {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -3300,7 +3395,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--frame-accent);
         border-bottom-color: var(--frame-accent);
         gap: 0.9rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-frame .frame-link .frame-arrow {
         transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -3354,7 +3449,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-frame .frame-index-row:focus-visible {
         padding-left: 1rem;
         color: var(--frame-accent);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-frame .frame-index-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -3575,7 +3670,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-architect .arch-project:focus-visible .arch-project-media img {
         transform: scale(1.022);
         filter: saturate(1);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-architect .arch-project-body {
         display: flex;
@@ -3671,7 +3766,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-architect .arch-service-row:focus-visible {
         padding-left: 1rem;
         background: rgba(138, 107, 63, 0.04);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-architect .arch-service-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -3847,7 +3942,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--arch-accent);
         border-bottom-color: var(--arch-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-architect .arch-link .arch-arrow {
         transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -4034,7 +4129,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-noir .noir-film:focus-visible .noir-film-media img {
         transform: scale(1.04);
         filter: brightness(1) saturate(1);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 /* Film overlay — dark gradient with title reveal */
 .wp-block-godevs-demo-noir .noir-film-overlay {
@@ -4151,7 +4246,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         border-color: var(--noir-accent);
         background: var(--noir-accent);
         transform: scale(1.06);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 
 /* Services — numbered rows */
@@ -4171,7 +4266,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-noir .noir-service-row:focus-visible {
         padding-left: 1rem;
         background: rgba(194, 66, 43, 0.05);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-noir .noir-service-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -4224,7 +4319,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-noir .noir-index-row:focus-visible {
         padding-left: 1rem;
         color: var(--noir-accent);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-noir .noir-index-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -4359,7 +4454,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--noir-accent);
         border-bottom-color: var(--noir-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-noir .noir-link .noir-arrow {
         transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -4594,7 +4689,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-mono .mono-project:hover .mono-project-media img,
 .wp-block-godevs-demo-mono .mono-project:focus-visible .mono-project-media img {
         transform: scale(1.02);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-mono .mono-project-body { display: flex; flex-direction: column; gap: 0.6rem; }
 .wp-block-godevs-demo-mono .mono-project-num {
@@ -4645,7 +4740,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-mono .mono-project:hover .mono-project-arrow,
 .wp-block-godevs-demo-mono .mono-project:focus-visible .mono-project-arrow {
-        opacity: 1; color: var(--mono-accent); gap: 0.7rem; outline: none;
+        opacity: 1; color: var(--mono-accent); gap: 0.7rem; outline: 2px solid currentColor; outline-offset: 2px;
 }
 
 /* Services / experience — numbered rows */
@@ -4665,7 +4760,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-mono .mono-row:focus-visible {
         padding-left: 1rem;
         background: var(--mono-surface-muted);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-mono .mono-row-num {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -4739,7 +4834,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-mono .mono-oss-card:focus-visible {
         border-color: var(--mono-accent);
         transform: translateY(-2px);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-mono .mono-oss-title {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
@@ -4834,7 +4929,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--mono-accent);
         border-bottom-color: var(--mono-accent);
         gap: 0.7rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-mono .mono-link .mono-arrow { transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .wp-block-godevs-demo-mono .mono-link:hover .mono-arrow { transform: translateX(2px); }
@@ -5039,7 +5134,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-luxe .luxe-card:focus-visible .luxe-card-media img {
         transform: scale(1.03);
         filter: saturate(1);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-luxe .luxe-card-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -5127,7 +5222,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-luxe .luxe-service-row:hover,
 .wp-block-godevs-demo-luxe .luxe-service-row:focus-visible {
         padding-left: 1rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-luxe .luxe-service-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -5201,7 +5296,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--luxe-accent);
         border-bottom-color: var(--luxe-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-luxe .luxe-link .luxe-arrow { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .wp-block-godevs-demo-luxe .luxe-link:hover .luxe-arrow { transform: translateX(3px); }
@@ -5386,7 +5481,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-journal .jour-article:hover,
 .wp-block-godevs-demo-journal .jour-article:focus-visible {
         padding-left: 1rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 @media (min-width: 800px) {
         .wp-block-godevs-demo-journal .jour-article.with-image {
@@ -5453,7 +5548,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-journal .jour-note:hover,
 .wp-block-godevs-demo-journal .jour-note:focus-visible {
         padding-left: 1rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-journal .jour-note-num {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -5528,7 +5623,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-journal .jour-conversation:hover,
 .wp-block-godevs-demo-journal .jour-conversation:focus-visible {
         padding-left: 1rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-journal .jour-conversation-title {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
@@ -5575,7 +5670,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--jour-accent);
         border-bottom-color: var(--jour-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-journal .jour-link .jour-arrow { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .wp-block-godevs-demo-journal .jour-link:hover .jour-arrow { transform: translateX(3px); }
@@ -5751,7 +5846,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-horizon .hor-destination:focus-visible .hor-destination-media img {
         transform: scale(1.03);
         filter: brightness(1) saturate(1);
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-horizon .hor-destination-overlay {
         position: absolute;
@@ -5940,7 +6035,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--hor-accent);
         border-bottom-color: var(--hor-accent);
         gap: 0.85rem;
-        outline: none;
+        outline: 2px solid currentColor; outline-offset: 2px;
 }
 .wp-block-godevs-demo-horizon .hor-link .hor-arrow { transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .wp-block-godevs-demo-horizon .hor-link:hover .hor-arrow { transform: translateX(3px); }
