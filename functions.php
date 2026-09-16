@@ -207,13 +207,25 @@ add_action( 'wp_head', 'godevs_portfolio_preload_fonts', 1 );
 $_godevs_inc = get_template_directory() . '/inc';
 
 $_godevs_files = array(
-        // Theme-only modules. Plugin-surface modules (CPTs, settings,
-        // demo importer, header/footer builder, booking system, etc.)
-        // have been extracted to the GoDevs Portfolio Core companion plugin
-        // in v1.5.0 — they belong in plugin territory per WordPress.org
-        // Theme Review Guidelines.
         '/block-patterns.php',
         '/block-styles.php',
+        '/content/cpt.php',
+        '/content/taxonomies.php',
+        '/content/meta-fields.php',
+        '/content/case-study.php',
+        '/booking-system.php',
+        '/front-forms.php',
+        '/settings-integration.php',
+        '/demo-registry.php',
+        '/demo-tracker.php',
+        '/demo-renderer.php',
+        '/cpt-archives.php',
+        '/cpt-admin.php',
+        '/theme-settings.php',
+        '/demo-importer.php',
+        '/header-footer-builder.php',
+        '/settings-deadend-fixes.php',
+        '/onboarding.php',
         '/seo.php',
 );
 
@@ -228,75 +240,6 @@ foreach ( $_godevs_files as $_godevs_rel ) {
 }
 
 unset( $_godevs_inc, $_godevs_files, $_godevs_rel, $_godevs_full );
-
-// ════════════════════════════════════════════════════════════════════════════
-// COMPANION PLUGIN CHECK
-// ════════════════════════════════════════════════════════════════════════════
-
-/**
- * Verify the GoDevs Portfolio Core companion plugin is active.
- *
- * The plugin owns all plugin-surface functionality (CPTs, settings UI,
- * demo importer, header/footer builder, booking system, proposal forms,
- * onboarding). Without it, the theme renders but has no dynamic
- * settings, no demo import, and no CPTs.
- *
- * This function emits an admin notice if the plugin is missing.
- *
- * @return void
- * @since 1.5.0
- */
-function godevs_portfolio_check_companion_plugin(): void {
-        // The plugin defines this function via its main bootstrap file.
-        // If the plugin is active, the function exists; if not, the
-        // theme should recommend installation.
-        if ( function_exists( 'godevs_portfolio_core_theme_is_active' ) ) {
-                return;
-        }
-        add_action( 'admin_notices', 'godevs_portfolio_recommend_core_plugin_notice' );
-}
-add_action( 'after_setup_theme', 'godevs_portfolio_check_companion_plugin', 20 );
-
-/**
- * Admin notice recommending the GoDevs Portfolio Core plugin.
- *
- * @return void
- * @since 1.5.0
- */
-function godevs_portfolio_recommend_core_plugin_notice(): void {
-        $plugin_file = 'godevs-portfolio-core/godevs-portfolio-core.php';
-        $plugin_path = WP_PLUGIN_DIR . '/' . $plugin_file;
-
-        if ( file_exists( $plugin_path ) ) {
-                // Installed but not active — offer activate link.
-                $activate_url = wp_nonce_url(
-                        admin_url( 'plugins.php?action=activate&plugin=' . rawurlencode( $plugin_file ) ),
-                        'activate-plugin_' . $plugin_file
-                );
-                $message = sprintf(
-                        /* translators: %s: plugin name */
-                        __( 'The GoDevs Portfolio theme is active but its companion plugin is not. <strong>Activate GoDevs Portfolio Core</strong> to enable demo import, custom post types, the header/footer builder, booking system, and theme settings.', 'godevs-portfolio' ),
-                        'GoDevs Portfolio Core'
-                );
-                $button_label = __( 'Activate the plugin', 'godevs-portfolio' );
-                $button_url   = $activate_url;
-        } else {
-                // Not installed.
-                $message = sprintf(
-                        /* translators: %s: plugin name */
-                        __( 'The GoDevs Portfolio theme requires the companion <strong>GoDevs Portfolio Core</strong> plugin to enable demo import, custom post types, the header/footer builder, booking system, and theme settings. The plugin ships inside the theme download ZIP — extract it and upload via Plugins → Add New → Upload Plugin.', 'godevs-portfolio' ),
-                        'GoDevs Portfolio Core'
-                );
-                $button_label = __( 'Upload the plugin', 'godevs-portfolio' );
-                $button_url   = admin_url( 'plugin-install.php?tab=upload' );
-        }
-        ?>
-        <div class="notice notice-info is-dismissible">
-                <p><?php echo wp_kses_post( $message ); ?></p>
-                <p><a href="<?php echo esc_url( $button_url ); ?>" class="button button-primary"><?php echo esc_html( $button_label ); ?></a></p>
-        </div>
-        <?php
-}
 
 /**
  * Diagnostic admin notice.

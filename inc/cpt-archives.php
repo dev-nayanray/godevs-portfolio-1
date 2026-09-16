@@ -1,0 +1,567 @@
+<?php
+/**
+ * CPT Archive Layout System.
+ *
+ * Dynamically generates the inner template of `core/post-template` blocks
+ * on CPT archive pages, based on theme settings (layout type, column count,
+ * display toggles). This bridges the gap between the Theme Settings UI and
+ * the hard-coded archive templates.
+ *
+ * @package GoDevs_Portfolio
+ * @since   2.6.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+        exit;
+}
+
+/**
+ * Map CPT slugs to their settings prefixes.
+ *
+ * Each CPT has a settings prefix (e.g., 'portfolio_') that maps to the
+ * theme settings keys for that CPT (e.g., portfolio_layout, portfolio_columns).
+ *
+ * @return array<string,string> Map of CPT slug → settings prefix.
+ */
+function godevs_cpt_archive_settings_map(): array {
+        return array(
+                'godevs_project'     => 'portfolio_',
+                'godevs_service'     => 'services_',
+                'godevs_team'        => 'team_',
+                'godevs_testimonial' => 'testimonials_',
+                'godevs_experience'  => 'experience_',
+                'godevs_education'   => 'education_',
+                'godevs_case_study'  => 'case_studies_',
+        );
+}
+
+/**
+ * Get the current CPT slug on an archive page.
+ *
+ * Returns 'post' on the blog home page (is_home()) so that the blog
+ * layout settings (blog_layout, blog_columns, blog_show_*) actually
+ * take effect on the front-end via the `godevs_cpt_archive_generate_template`
+ * filter. Previously this only returned CPT archives, leaving the standard
+ * blog home with no settings-driven layout.
+ *
+ * @return string|null CPT slug (e.g., 'godevs_project') or 'post' for blog home, or null.
+ */
+function godevs_cpt_archive_get_current_type(): ?string {
+        if ( is_post_type_archive() ) {
+                return get_query_var( 'post_type' );
+        }
+        // Standard blog home (Settings → Reading → Posts page) — return 'post'
+        // so the Theme Settings → Blog panel settings actually take effect.
+        if ( is_home() && ! is_front_page() ) {
+                return 'post';
+        }
+        return null;
+}
+
+/**
+ * Resolve a setting value for a CPT archive.
+ *
+ * @param string $cpt_slug CPT slug (e.g., 'godevs_project').
+ * @param string $key      Setting key suffix (e.g., 'layout', 'columns').
+ * @param mixed  $default  Default value if setting is not set.
+ * @return mixed Setting value.
+ */
+function godevs_cpt_archive_setting( string $cpt_slug, string $key, $default = '' ) {
+        $map      = godevs_cpt_archive_settings_map();
+        $prefix   = $map[ $cpt_slug ] ?? '';
+        if ( ! $prefix ) {
+                return $default;
+        }
+        $full_key = $prefix . $key;
+        $value    = godevs_portfolio_get_setting( $full_key );
+        return '' !== $value ? $value : $default;
+}
+
+/**
+ * Generate the inner block markup for a post-template block on a CPT archive.
+ *
+ * Reads the theme settings (layout, columns, display toggles) and generates
+ * the correct WordPress block markup for the archive grid/list/timeline.
+ *
+ * @param string $cpt_slug CPT slug (e.g., 'godevs_project').
+ * @return string Block markup for the post-template inner content.
+ */
+function godevs_cpt_archive_generate_inner_template( string $cpt_slug ): string {
+        $layout  = godevs_cpt_archive_setting( $cpt_slug, 'layout', 'grid' );
+        $columns = (int) godevs_cpt_archive_setting( $cpt_slug, 'columns', '3' );
+        if ( $columns < 1 ) {
+                $columns = 3;
+        }
+
+        // Dispatch to the CPT-specific generator.
+        $template = '';
+        switch ( $cpt_slug ) {
+                case 'godevs_project':
+                        $template = godevs_cpt_archive_project_template( $layout, $columns );
+                        break;
+                case 'godevs_service':
+                        $template = godevs_cpt_archive_service_template( $layout, $columns );
+                        break;
+                case 'godevs_team':
+                        $template = godevs_cpt_archive_team_template( $layout, $columns );
+                        break;
+                case 'godevs_testimonial':
+                        $template = godevs_cpt_archive_testimonial_template( $layout, $columns );
+                        break;
+                case 'godevs_experience':
+                        $template = godevs_cpt_archive_experience_template( $layout );
+                        break;
+                case 'godevs_education':
+                        $template = godevs_cpt_archive_education_template( $layout );
+                        break;
+                case 'godevs_case_study':
+                        $template = godevs_cpt_archive_case_study_template( $layout, $columns );
+                        break;
+                case 'post':
+                        // Standard blog post — delegate to the blog-specific generator
+                        // defined in inc/settings-integration.php via the filter below.
+                        $template = '';
+                        break;
+                default:
+                        $template = '';
+        }
+
+        /**
+         * Filter the generated CPT archive template markup.
+         *
+         * Allows the Blog panel settings (blog_layout, blog_columns,
+         * blog_show_*) to override the default post archive rendering.
+         * Without this filter, those settings save but never affect rendering.
+         *
+         * @since 1.5.0
+         *
+         * @param string $template Generated block markup.
+         * @param string $cpt_slug  CPT slug (e.g., 'godevs_project') or 'post' for blog home.
+         * @param string $layout   Layout setting value (grid/list/timeline/showcase).
+         * @param int    $columns   Column count setting value.
+         */
+        return apply_filters( 'godevs_cpt_archive_generate_template', $template, $cpt_slug, $layout, $columns );
+}
+
+/**
+ * Generate column wrapper markup.
+ *
+ * @param int    $columns Number of columns.
+ * @param string $inner   Inner block markup.
+ * @return string Wrapped markup.
+ */
+function godevs_cpt_archive_wrap_columns( int $columns, string $inner ): string {
+        $col_class = "godevs-archive-grid-{$columns}col";
+        return "<!-- wp:group {\"className\":\"{$col_class}\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group {$col_class}\">\n{$inner}\n</div>\n<!-- /wp:group -->";
+}
+
+/**
+ * Project archive template generator.
+ */
+function godevs_cpt_archive_project_template( string $layout, int $columns ): string {
+        $show_client = godevs_cpt_archive_setting( 'godevs_project', 'show_client', '1' );
+        $show_year   = godevs_cpt_archive_setting( 'godevs_project', 'show_year', '1' );
+        $show_type   = godevs_cpt_archive_setting( 'godevs_project', 'show_type', '1' );
+
+        $card = '';
+        $card .= '<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/10","style":{"border":{"radius":"8px"}}} /-->';
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->';
+        $card .= '<div class="wp-block-group">';
+        if ( $show_year === '1' || $show_client === '1' ) {
+                $card .= '<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} -->';
+                $card .= '<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">';
+                $meta_parts = array();
+                if ( $show_year === '1' ) $meta_parts[] = '<!-- wp:post-date {"format":"Y"} /-->';
+                if ( $show_client === '1' ) $meta_parts[] = '<!-- wp:post-meta {"key":"_godevs_project_client"} /-->';
+                $card .= implode( ' · ', $meta_parts );
+                $card .= '</p>';
+                $card .= '<!-- /wp:paragraph -->';
+        }
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em"}}} /-->';
+        if ( $show_type === '1' ) {
+                $card .= '<!-- wp:post-terms {"term":"category","prefix":"","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        }
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'list' ) {
+                return $card;
+        }
+        return godevs_cpt_archive_wrap_columns( $columns, $card );
+}
+
+/**
+ * Service archive template generator.
+ */
+function godevs_cpt_archive_service_template( string $layout, int $columns ): string {
+        $show_price = godevs_cpt_archive_setting( 'godevs_service', 'show_price', '1' );
+
+        $card = '';
+        if ( $layout === 'numbered' ) {
+                $card .= '<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","fontWeight":"600","color":"var:preset|color|accent"}}} --><p class="has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);font-weight:600">01</p><!-- /wp:paragraph -->';
+        }
+        $card .= '<!-- wp:group {"className":"is-style-card-bordered","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->';
+        $card .= '<div class="wp-block-group is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">';
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em"}}} /-->';
+        $card .= '<!-- wp:post-excerpt {"moreText":"' . __( 'Read more', 'godevs-portfolio' ) . '","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+        if ( $show_price === '1' ) {
+                $card .= '<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} --><p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)"><strong>' . esc_html__( 'Price:', 'godevs-portfolio' ) . '</strong> <!-- wp:post-meta {"key":"_godevs_service_price"} /--></p><!-- /wp:paragraph -->';
+        }
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'list' ) {
+                return $card;
+        }
+        return godevs_cpt_archive_wrap_columns( $columns, $card );
+}
+
+/**
+ * Team archive template generator.
+ */
+function godevs_cpt_archive_team_template( string $layout, int $columns ): string {
+        $show_social = godevs_cpt_archive_setting( 'godevs_team', 'show_social', '1' );
+        $show_bio    = godevs_cpt_archive_setting( 'godevs_team', 'show_bio', '1' );
+
+        $card = '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->';
+        $card .= '<div class="wp-block-group">';
+        $card .= '<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"1/1","style":{"border":{"radius":"999px"}}} /-->';
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|medium","letterSpacing":"-0.01em"}}} /-->';
+        $card .= '<!-- wp:post-meta {"key":"_godevs_team_job_title","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        if ( $show_bio === '1' ) {
+                $card .= '<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+        }
+        // Team social links — only render when the user has enabled
+        // `team_show_social` in Theme Settings. Previously this setting was
+        // read but never used, leaving the toggle with no frontend effect.
+        if ( $show_social === '1' ) {
+                $card .= '<!-- wp:group {"className":"godevs-team-social","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->';
+                $card .= '<div class="wp-block-group godevs-team-social">';
+                $card .= '<!-- wp:post-meta {"key":"_godevs_team_twitter","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+                $card .= '<!-- wp:post-meta {"key":"_godevs_team_linkedin","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+                $card .= '</div>';
+                $card .= '<!-- /wp:group -->';
+        }
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'list' ) {
+                return $card;
+        }
+        return godevs_cpt_archive_wrap_columns( $columns, $card );
+}
+
+/**
+ * Testimonial archive template generator.
+ */
+function godevs_cpt_archive_testimonial_template( string $layout, int $columns ): string {
+        $show_avatar = godevs_cpt_archive_setting( 'godevs_testimonial', 'show_avatar', '1' );
+        $show_rating = godevs_cpt_archive_setting( 'godevs_testimonial', 'show_rating', '1' );
+
+        $card = '<!-- wp:group {"className":"is-style-card-bordered","style":{"spacing":{"padding":"var:preset|spacing|40","blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->';
+        $card .= '<div class="wp-block-group is-style-card-bordered" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">';
+        if ( $show_rating === '1' ) {
+                $card .= '<!-- wp:post-meta {"key":"_godevs_testimonial_rating","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"}}} /-->';
+        }
+        $card .= '<!-- wp:post-excerpt {"showMoreOnNewLine":false,"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|medium","lineHeight":"1.6"}}} /-->';
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->';
+        $card .= '<div class="wp-block-group">';
+        if ( $show_avatar === '1' ) {
+                $card .= '<!-- wp:post-featured-image {"isLink":false,"aspectRatio":"1/1","style":{"border":{"radius":"999px"},"layout":{"selfStretch":"fit","flexSize":"48px"}}} /-->';
+        }
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->';
+        $card .= '<div class="wp-block-group">';
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} /-->';
+        $card .= '<!-- wp:post-meta {"key":"_godevs_testimonial_client_role","style":{"typography":{"fontSize":"var:preset|font-size|x-small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'single' ) {
+                // Single quote: full-width, centered, larger type.
+                return '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":"var:preset|spacing|60","blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"640px"}} --><div class="wp-block-group alignwide">' . $card . '</div><!-- /wp:group -->';
+        }
+        return godevs_cpt_archive_wrap_columns( $columns, $card );
+}
+
+/**
+ * Experience archive template generator.
+ */
+function godevs_cpt_archive_experience_template( string $layout ): string {
+        $show_dates   = godevs_cpt_archive_setting( 'godevs_experience', 'show_dates', '1' );
+        $show_company = godevs_cpt_archive_setting( 'godevs_experience', 'show_company', '1' );
+
+        $card = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|10"},"border":{"bottom":{"color":"var:preset|color|line","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->';
+        $card .= '<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">';
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} --><div class="wp-block-group">';
+        if ( $show_dates === '1' ) {
+                $card .= '<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} --><p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)"><strong>' . esc_html__( 'Start:', 'godevs-portfolio' ) . '</strong> <!-- wp:post-meta {"key":"_godevs_experience_start"} /--> &middot; <strong>' . esc_html__( 'End:', 'godevs-portfolio' ) . '</strong> <!-- wp:post-meta {"key":"_godevs_experience_end"} /--></p><!-- /wp:paragraph -->';
+        }
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em"}}} /-->';
+        if ( $show_company === '1' ) {
+                $card .= '<!-- wp:post-meta {"key":"_godevs_experience_company","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        }
+        $card .= '<!-- wp:post-meta {"key":"_godevs_experience_position","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        $card .= '</div><!-- /wp:group -->';
+        $card .= '<!-- wp:post-excerpt {"moreText":"' . __( 'Read more', 'godevs-portfolio' ) . '","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'grid' ) {
+                return godevs_cpt_archive_wrap_columns( 2, $card );
+        }
+        return $card; // timeline / list both use full-width rows
+}
+
+/**
+ * Education archive template generator.
+ */
+function godevs_cpt_archive_education_template( string $layout ): string {
+        $show_dates       = godevs_cpt_archive_setting( 'godevs_education', 'show_dates', '1' );
+        $show_institution = godevs_cpt_archive_setting( 'godevs_education', 'show_institution', '1' );
+
+        $card = '<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|10"},"border":{"bottom":{"color":"var:preset|color|line","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->';
+        $card .= '<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">';
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} --><div class="wp-block-group">';
+        if ( $show_dates === '1' ) {
+                $card .= '<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} --><p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)"><strong>' . esc_html__( 'Start:', 'godevs-portfolio' ) . '</strong> <!-- wp:post-meta {"key":"_godevs_education_start"} /--> &middot; <strong>' . esc_html__( 'End:', 'godevs-portfolio' ) . '</strong> <!-- wp:post-meta {"key":"_godevs_education_end"} /--></p><!-- /wp:paragraph -->';
+        }
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em"}}} /-->';
+        if ( $show_institution === '1' ) {
+                $card .= '<!-- wp:post-meta {"key":"_godevs_education_institution","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        }
+        $card .= '<!-- wp:post-meta {"key":"_godevs_education_degree","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} /-->';
+        $card .= '</div><!-- /wp:group -->';
+        $card .= '<!-- wp:post-excerpt {"moreText":"' . __( 'Read more', 'godevs-portfolio' ) . '","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'grid' ) {
+                return godevs_cpt_archive_wrap_columns( 2, $card );
+        }
+        return $card;
+}
+
+/**
+ * Case study archive template generator.
+ */
+function godevs_cpt_archive_case_study_template( string $layout, int $columns ): string {
+        $show_client  = godevs_cpt_archive_setting( 'godevs_case_study', 'show_client', '1' );
+        $show_results = godevs_cpt_archive_setting( 'godevs_case_study', 'show_results', '1' );
+
+        $card = '';
+        $card .= '<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/10","style":{"border":{"radius":"8px"}}} /-->';
+        $card .= '<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->';
+        $card .= '<div class="wp-block-group">';
+        $card .= '<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|muted"}}} --><p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small)">';
+        $meta_parts = array();
+        if ( $show_client === '1' ) $meta_parts[] = '<!-- wp:post-meta {"key":"_godevs_cs_client"} /-->';
+        $meta_parts[] = '<!-- wp:post-meta {"key":"_godevs_cs_year"} /-->';
+        $card .= implode( ' · ', $meta_parts );
+        $card .= '</p><!-- /wp:paragraph -->';
+        $card .= '<!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em"}}} /-->';
+        if ( $show_results === '1' ) {
+                $card .= '<!-- wp:post-meta {"key":"_godevs_cs_result_1","style":{"typography":{"fontSize":"var:preset|font-size|small"},"color":{"text":"var:preset|color|accent"}}} /-->';
+        }
+        $card .= '</div>';
+        $card .= '<!-- /wp:group -->';
+
+        if ( $layout === 'list' ) {
+                return $card;
+        }
+        if ( $layout === 'showcase' ) {
+                // Showcase: 2-column with larger images.
+                return godevs_cpt_archive_wrap_columns( 2, $card );
+        }
+        return godevs_cpt_archive_wrap_columns( $columns, $card );
+}
+
+/**
+ * render_block_data filter: Replace the inner blocks of `core/post-template`
+ * on CPT archives with settings-aware markup BEFORE the loop runs.
+ *
+ * IMPORTANT: This filter uses `render_block_data` (NOT `pre_render_block`).
+ * The `pre_render_block` filter only allows short-circuiting the render with a
+ * string return value — it does NOT propagate block modifications back to
+ * WordPress for further rendering. `render_block_data` is the correct filter
+ * for modifying the parsed block (including its innerBlocks) before WordPress
+ * iterates and renders it.
+ *
+ * For `core/post-template` specifically, the inner blocks are iterated once
+ * per post in the query loop with the correct post context, so swapping them
+ * here causes `wp:post-title`, `wp:post-featured-image`, etc. to resolve to
+ * the current post in each iteration.
+ *
+ * @param array     $parsed_block  The block being rendered.
+ * @param array     $source_block  An un-modified copy of the original block.
+ * @param WP_Block|null $parent_block The parent block (if any).
+ * @return array Modified parsed block (unchanged if not a CPT post-template).
+ */
+function godevs_cpt_archive_modify_post_template( array $parsed_block, array $source_block = array(), $parent_block = null ): array {
+        if ( 'core/post-template' !== ( $parsed_block['blockName'] ?? '' ) ) {
+                return $parsed_block;
+        }
+
+        $cpt = godevs_cpt_archive_get_current_type();
+        if ( ! $cpt ) {
+                return $parsed_block;
+        }
+
+        // Only intercept CPTs that have a settings map.
+        $map = godevs_cpt_archive_settings_map();
+        if ( ! isset( $map[ $cpt ] ) ) {
+                return $parsed_block;
+        }
+
+        // Generate the settings-aware inner template (block markup).
+        $inner = godevs_cpt_archive_generate_inner_template( $cpt );
+        if ( '' === $inner ) {
+                return $parsed_block;
+        }
+
+        // Parse our generated markup into block objects, then replace the
+        // post-template's innerBlocks. WordPress core will iterate these inner
+        // blocks once per post in the query, with the correct post context.
+        $parsed_blocks = parse_blocks( $inner );
+
+        // Normalize: parse_blocks() returns top-level block arrays. Filter out
+        // null entries (which happen when there's whitespace between blocks).
+        $clean_blocks = array();
+        foreach ( $parsed_blocks as $b ) {
+                if ( ! empty( $b['blockName'] ) ) {
+                        $clean_blocks[] = $b;
+                }
+        }
+
+        if ( empty( $clean_blocks ) ) {
+                return $parsed_block;
+        }
+
+        // Replace the innerBlocks — this is what core/post-template iterates over
+        // when rendering each post in the query loop.
+        $parsed_block['innerBlocks'] = $clean_blocks;
+
+        // innerContent is a list of string fragments and null markers.
+        // null markers indicate where an inner block should be rendered.
+        // The string fragments are HTML that goes BETWEEN inner blocks.
+        // For our case, we have no inter-block HTML, so innerContent is a
+        // list of nulls (one per inner block) with empty strings between them.
+        //
+        // CRITICAL: We must NOT put serialized block markup (<!-- wp:... -->)
+        // in innerContent — that gets echoed literally. Each entry is either:
+        //   - null (render the next inner block here), OR
+        //   - a string of HTML to output verbatim (between inner blocks)
+        $parsed_block['innerContent'] = array();
+        foreach ( $clean_blocks as $i => $b ) {
+                if ( $i > 0 ) {
+                        $parsed_block['innerContent'][] = ''; // Empty string between blocks (no separator HTML).
+                }
+                $parsed_block['innerContent'][] = null; // null = render inner block $i here.
+        }
+
+        // Also clear innerHTML so it doesn't conflict.
+        $parsed_block['innerHTML'] = '';
+
+        // IMPORTANT: Normalize each inner block to remove any leftover
+        // comment-markup HTML from parse_blocks. parse_blocks() preserves
+        // the raw block markup in innerHTML/innerContent of nested blocks,
+        // which causes WP_Block::render to echo the comment markup verbatim.
+        // We recursively walk each clean block and replace innerContent
+        // entries that are strings of block markup with empty strings,
+        // leaving only null markers for inner-block rendering.
+        foreach ( $parsed_block['innerBlocks'] as &$inner_block ) {
+                $inner_block = godevs_cpt_archive_normalize_block( $inner_block );
+        }
+        unset( $inner_block );
+
+        return $parsed_block;
+}
+add_filter( 'render_block_data', 'godevs_cpt_archive_modify_post_template', 10, 3 );
+
+/**
+ * Recursively normalize a parsed block to remove raw block-comment markup
+ * from innerContent/innerHTML.
+ *
+ * After parse_blocks(), inner blocks may have innerContent entries that
+ * are strings like '<!-- wp:post-title /-->' instead of null markers.
+ * WordPress's WP_Block::render will echo these strings verbatim, causing
+ * the comment markup to appear as visible text on the frontend.
+ *
+ * This function walks the block tree and:
+ *   1. Re-builds innerContent from scratch as a list of nulls + empty strings
+ *      so that ONLY inner blocks (no markup) are rendered.
+ *   2. Re-builds innerHTML by concatenating the rendered HTML of inner blocks.
+ *
+ * This is the safest approach — we ignore whatever parse_blocks stored in
+ * innerContent/innerHTML and reconstruct them from innerBlocks.
+ *
+ * @param array $block Parsed block array.
+ * @return array Normalized block.
+ */
+function godevs_cpt_archive_normalize_block( array $block ): array {
+        // Recursively normalize inner blocks first.
+        if ( ! empty( $block['innerBlocks'] ) ) {
+                foreach ( $block['innerBlocks'] as &$child ) {
+                        $child = godevs_cpt_archive_normalize_block( $child );
+                }
+                unset( $child );
+        }
+
+        // Reconstruct innerContent as null markers + empty strings.
+        // Each inner block gets a null marker; between them we put empty strings.
+        // This ensures WordPress ONLY outputs the rendered inner blocks.
+        $new_inner_content = array();
+        $inner_html_parts  = array();
+
+        if ( ! empty( $block['innerBlocks'] ) ) {
+                foreach ( $block['innerBlocks'] as $i => $child ) {
+                        if ( $i > 0 ) {
+                                $new_inner_content[] = ''; // Empty separator.
+                        }
+                        $new_inner_content[] = null; // Render inner block $i here.
+                        // Capture the child's rendered HTML for innerHTML reconstruction.
+                        $inner_html_parts[] = $child['innerHTML'] ?? '';
+                }
+        }
+
+        $block['innerContent'] = $new_inner_content;
+
+        // Reconstruct innerHTML: just the concatenation of inner blocks' HTML.
+        // This is what WP_Block::render uses to compute the rendered output
+        // when the block is not dynamic.
+        $block['innerHTML'] = implode( '', $inner_html_parts );
+
+        return $block;
+}
+
+/**
+ * Enqueue archive layout CSS (grid column counts).
+ */
+function godevs_cpt_archive_enqueue_styles(): void {
+        if ( ! is_post_type_archive() ) {
+                return;
+        }
+        $cpt = get_query_var( 'post_type' );
+        $map = godevs_cpt_archive_settings_map();
+        if ( ! isset( $map[ $cpt ] ) ) {
+                return;
+        }
+
+        $columns = (int) godevs_cpt_archive_setting( $cpt, 'columns', '3' );
+        if ( $columns < 1 ) {
+                $columns = 3;
+        }
+
+        // Inline CSS for the grid column count.
+        $css = sprintf(
+                '.godevs-archive-grid-%dcol { display:grid; grid-template-columns:repeat(%d,1fr); gap:2rem; } @media(max-width:768px){ .godevs-archive-grid-%dcol { grid-template-columns:1fr; } }',
+                $columns,
+                $columns,
+                $columns
+        );
+        wp_add_inline_style( 'godevs-portfolio-theme', $css );
+}
+add_action( 'wp_enqueue_scripts', 'godevs_cpt_archive_enqueue_styles', 20 );
