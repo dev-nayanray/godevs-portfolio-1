@@ -539,7 +539,7 @@
                 // request runs behind it and the overlay reconciles with the
                 // real result when the server responds.
                 var card = $( '.godevs-demo-card[data-demo-id="' + demoId + '"]' );
-                showImportProgress( card ? card.dataset.demoName || demoId : demoId );
+                showImportProgress( card ? card.dataset.demoName || demoId : demoId, card ? card.dataset.demoPreview || '' : '' );
 
                 post( 'godevs_portfolio_import_demo', {
                         demo_id: demoId,
@@ -650,13 +650,23 @@
                 }
         }
 
-        function showImportProgress( demoName ) {
+        function showImportProgress( demoName, previewUrl ) {
                 if ( ! progressEl || ! progressSteps ) return;
                 clearProgressTimers();
                 if ( progressResult ) { progressResult.hidden = true; progressResult.innerHTML = ''; }
                 if ( progressActions ) progressActions.innerHTML = '';
                 if ( progressDemoName ) progressDemoName.textContent = demoName || '';
                 if ( progressStatus ) progressStatus.textContent = '';
+                var heroImg = $( '#godevs-progress-hero-img' );
+                if ( heroImg ) {
+                        if ( previewUrl ) {
+                                heroImg.src = previewUrl;
+                                heroImg.alt = demoName ? demoName + ' preview' : '';
+                                heroImg.hidden = false;
+                        } else {
+                                heroImg.hidden = true;
+                        }
+                }
                 progressSteps.innerHTML = PHASES.map( function ( p ) {
                         return '<li data-step-id="' + p.id + '">' + escapeHTML( p.label ) + '</li>';
                 } ).join( '' );
@@ -708,7 +718,9 @@
                         { label: 'Style variation', value: data.style_label || ( data.style_applied ? 'Applied' : '—' ) },
                         { label: 'Homepage', value: data.homepage_id ? 'Set' : '—' }
                 ];
-                var html = '<div class="godevs-ready-badge"><span aria-hidden="true">✓</span> Demo Ready</div>';
+                var heroImg = $( '#godevs-progress-hero-img' );
+                var thumb = ( heroImg && !heroImg.hidden && heroImg.src ) ? '<img class="godevs-ready-thumb" src="' + escapeHTML( heroImg.src ) + '" alt="">' : '';
+                var html = thumb + '<div class="godevs-ready-badge"><span aria-hidden="true">✓</span> Demo Ready</div>';
                 html += '<p class="godevs-ready-sub">' + escapeHTML( data.demo && data.demo.name ? data.demo.name + ' is live on your site.' : 'Your demo is live.' ) + '</p>';
                 html += '<ul class="godevs-ready-summary">';
                 rows.forEach( function ( r ) {

@@ -254,17 +254,23 @@ $imported_count = count( $imported );
 <div class="godevs-progress" id="godevs-progress" hidden role="status" aria-live="polite">
         <div class="godevs-progress-backdrop"></div>
         <div class="godevs-progress-panel">
-                <div class="godevs-progress-header">
-                        <span class="godevs-progress-demo-name" id="godevs-progress-demo-name"></span>
-                        <span class="godevs-progress-percent" id="godevs-progress-percent">0%</span>
+                <div class="godevs-progress-hero" id="godevs-progress-hero">
+                        <img id="godevs-progress-hero-img" src="" alt="" hidden />
+                        <span class="godevs-progress-hero-name" id="godevs-progress-demo-name"></span>
                 </div>
-                <div class="godevs-progress-bar" aria-hidden="true">
-                        <div class="godevs-progress-bar-fill" id="godevs-progress-bar-fill"></div>
+                <div class="godevs-progress-body">
+                        <div class="godevs-progress-header">
+                                <span class="godevs-progress-title-label"><?php esc_html_e( 'Importing demo', 'godevs-portfolio' ); ?></span>
+                                <span class="godevs-progress-percent" id="godevs-progress-percent">0%</span>
+                        </div>
+                        <div class="godevs-progress-bar" aria-hidden="true">
+                                <div class="godevs-progress-bar-fill" id="godevs-progress-bar-fill"></div>
+                        </div>
+                        <ol class="godevs-progress-steps" id="godevs-progress-steps"></ol>
+                        <p class="godevs-progress-status" id="godevs-progress-status"></p>
+                        <div class="godevs-progress-result" id="godevs-progress-result" hidden></div>
+                        <div class="godevs-progress-actions" id="godevs-progress-actions"></div>
                 </div>
-                <ol class="godevs-progress-steps" id="godevs-progress-steps"></ol>
-                <p class="godevs-progress-status" id="godevs-progress-status"></p>
-                <div class="godevs-progress-result" id="godevs-progress-result" hidden></div>
-                <div class="godevs-progress-actions" id="godevs-progress-actions"></div>
         </div>
 </div>
 
@@ -308,7 +314,40 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
         $is_complete = ! empty( $demo['is_complete'] );
         $preview_uri = $demo['preview_image_uri'] ?? '';
         $preview_alt = $demo['preview_alt'] ?? sprintf( __( 'Homepage preview of the %s demo', 'godevs-portfolio' ), $demo['name'] );
-        $page_count  = $demo['page_count'] ?? count( $demo['pages'] );
+                $page_count  = $demo['page_count'] ?? count( $demo['pages'] );
+
+        // Included-pages chips (max six, then "+n more").
+        $page_chips = '';
+        $chip_slugs = array_slice( (array) ( $demo['pages'] ?? array() ), 0, 6 );
+        $chip_labels = array(
+                'home' => 'Home', 'about' => 'About', 'services' => 'Services', 'work' => 'Work',
+                'portfolio' => 'Portfolio', 'projects' => 'Projects', 'project' => 'Project',
+                'case-studies' => 'Case Studies', 'case-study' => 'Case Study', 'journal' => 'Journal',
+                'blog' => 'Blog', 'contact' => 'Contact', 'studio' => 'Studio', 'team' => 'Team',
+                'films' => 'Films', 'film' => 'Film', 'director' => 'Director', 'stack' => 'Stack',
+                'writing' => 'Writing', 'collections' => 'Collections', 'collection' => 'Collection',
+                'editorial' => 'Editorial', 'archive' => 'Archive', 'article' => 'Article',
+                'story' => 'Story', 'stories' => 'Stories', 'journeys' => 'Journeys',
+                'journey' => 'Journey', '404' => '404',
+        );
+        $remaining = count( (array) ( $demo['pages'] ?? array() ) ) - count( $chip_slugs );
+        foreach ( $chip_slugs as $chip_slug ) {
+                $label = $chip_labels[ $chip_slug ] ?? ucwords( str_replace( array( '-', '_' ), ' ', $chip_slug ) );
+                $page_chips .= '<span class="godevs-chip">' . esc_html( $label ) . '</span>';
+        }
+        if ( $remaining > 0 ) {
+                $page_chips .= '<span class="godevs-chip is-more">+' . (int) $remaining . '</span>';
+        }
+
+        // Feature chips for ready demos.
+        $feature_chips = $is_ready
+                ? '<div class="godevs-chip-row godevs-chip-features">'
+                        . '<span class="godevs-chip is-feature">FSE Ready</span>'
+                        . '<span class="godevs-chip is-feature">Responsive</span>'
+                        . '<span class="godevs-chip is-feature">Accessible</span>'
+                        . '<span class="godevs-chip is-feature">One-click Import</span>'
+                        . '</div>'
+                : '';
 
         $card_classes = 'godevs-demo-card';
         if ( $is_imported ) {
@@ -379,28 +418,30 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
         }
 
         return sprintf(
-                '<article class="%1$s" data-demo-id="%2$s" data-demo-name="%3$s" data-demo-category="%4$s" data-demo-style="%5$s" data-demo-complete="%6$s" data-demo-keywords="%7$s">'
+                '<article class="%1$s" data-demo-id="%2$s" data-demo-name="%3$s" data-demo-category="%4$s" data-demo-style="%5$s" data-demo-complete="%6$s" data-demo-keywords="%7$s" data-demo-preview="%8$s">'
                 . '<div class="godevs-demo-card-preview">'
-                . '<div class="godevs-browser-frame" aria-hidden="true"><div class="godevs-browser-dots"><span></span><span></span><span></span></div><div class="godevs-browser-bar">%8$s</div></div>'
-                . '<div class="godevs-demo-card-preview-inner">%9$s'
-                . '<div class="godevs-demo-card-hover-overlay"><button type="button" class="button button-primary godevs-demo-preview-btn godevs-demo-preview-cta" data-action="preview" data-demo-id="%10$s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>%11$s</button></div>'
+                . '<div class="godevs-browser-frame" aria-hidden="true"><div class="godevs-browser-dots"><span></span><span></span><span></span></div><div class="godevs-browser-bar">%9$s</div></div>'
+                . '<div class="godevs-demo-card-preview-inner">%10$s'
+                . '<div class="godevs-demo-card-hover-overlay"><button type="button" class="button button-primary godevs-demo-preview-btn godevs-demo-preview-cta" data-action="preview" data-demo-id="%11$s"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>%12$s</button></div>'
                 . '</div>'
-                . '%12$s%13$s'
+                . '%13$s%14$s'
                 . '</div>'
                 . '<div class="godevs-demo-card-body">'
                 . '<div class="godevs-demo-card-header">'
                 . '<div class="godevs-demo-card-meta-top">'
-                . '<span class="godevs-demo-card-category-badge">%14$s</span>'
+                . '<span class="godevs-demo-card-category-badge">%15$s</span>'
                 . ( $demo['style'] ? '<span class="godevs-demo-card-style">' . esc_html( $demo['style'] ) . '</span>' : '' )
                 . '</div>'
-                . '<h4 class="godevs-demo-card-title">%15$s</h4>'
+                . '<h4 class="godevs-demo-card-title">%16$s</h4>'
                 . '</div>'
-                . '<p class="godevs-demo-card-description">%16$s</p>'
+                . '<p class="godevs-demo-card-description">%17$s</p>'
+                . '<div class="godevs-chip-row godevs-chip-pages">%21$s</div>'
+                . '%22$s'
                 . '<div class="godevs-demo-card-info">'
-                . '<span class="godevs-demo-card-pages"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>%17$s</span>'
-                . '%18$s'
+                . '<span class="godevs-demo-card-pages"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>%18$s</span>'
+                . '%19$s'
                 . '</div>'
-                . '<div class="godevs-demo-card-actions">%19$s</div>'
+                . '<div class="godevs-demo-card-actions">%20$s</div>'
                 . '</div>'
                 . '</article>',
                 esc_attr( $card_classes ),
@@ -410,6 +451,7 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
                 esc_attr( $demo['style'] ),
                 $is_complete ? '1' : '0',
                 esc_attr( strtolower( $demo['name'] . ' ' . $demo['category'] . ' ' . $demo['style'] ) ),
+                esc_url( $preview_uri ),
                 esc_html( $demo['name'] ),
                 $preview_html, // already escaped above
                 esc_attr( $demo['id'] ),
@@ -428,5 +470,8 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
                 ),
                 $is_complete ? '<span class="godevs-demo-card-pages-complete"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>' . esc_html__( 'All pages', 'godevs-portfolio' ) . '</span>' : '',
                 $actions_html // already escaped
+                ,
+                $page_chips,   // %20 — escaped above per chip
+                $feature_chips // %21 — escaped above, static strings
         );
 }

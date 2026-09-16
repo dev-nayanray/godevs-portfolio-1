@@ -5,6 +5,13 @@ All notable changes to GoDevs Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-09-16
+
+### Changed
+- Premium demo library redesign: demo cards now use real homepage screenshots (WebP thumbnails, ~23 KB each) instead of placeholder SVGs, with gradient overlays, hover lift + image zoom, refined typography and badge styling.
+- Every demo card shows an "Included" page-chip row (Home, About, Services, ... +n) and feature chips (FSE Ready, Responsive, Accessible, One-click Import).
+- Import progress overlay v3: visual hero header with the demo's homepage screenshot and name, animated percentage bar, step-by-step status with icons, and a Demo Ready success card that includes the demo thumbnail alongside the import summary and View Site / Edit Homepage / Done actions.
+
 ## [1.2.0] - 2026-09-16
 
 ### Added
