@@ -279,10 +279,26 @@ function godevs_portfolio_get_demos(): array {
         // Page-type suffixes that identify INNER PAGE patterns (not homepages).
         // We only show homepage demos in the demo browser — inner pages are
         // accessed via the preview modal's page navigation.
+        //
+        // CRITICAL: this list MUST include every inner-page suffix used by
+        // `patterns/demos/<demo>-<page>.php` files. Previously ~17 inner-page
+        // patterns (e.g. `noir-film.php`, `architect-project.php`,
+        // `mono-stack.php`) and 6 `*-404.php` files leaked through this filter
+        // and appeared in the Coming Soon grid with identical placeholder
+        // images, making the demo browser look broken.
         $page_suffixes = array(
                 '-about', '-work', '-portfolio', '-services', '-case-studies',
                 '-journal', '-blog', '-insights', '-research', '-teaching',
                 '-experience', '-contact',
+                // Inner-page slugs actually used by pattern files in /patterns/demos/.
+                '-film', '-films', '-director', '-story',
+                '-project', '-projects', '-stack', '-writing',
+                '-journey', '-journeys', '-article', '-archive',
+                '-collection', '-collections', '-editorial', '-studio',
+                '-case-study',
+                // 404 page patterns — these are demo-specific error pages, not
+                // standalone demos.
+                '-404',
         );
 
         $demos = array();

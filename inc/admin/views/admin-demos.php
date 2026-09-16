@@ -216,7 +216,7 @@ $imported_count = count( $imported );
 
                 <!-- Preview viewport — iframe-based for real rendered page -->
                 <div class="godevs-modal-body godevs-preview-body">
-                        <div class="godevs-preview-viewport" id="godevs-preview-viewport">
+                        <div class="godevs-preview-viewport" id="godevs-preview-viewport" aria-busy="false">
                                 <div class="godevs-preview-loading" id="godevs-preview-loading">
                                         <span class="godevs-spinner"></span>
                                         <p><?php esc_html_e( 'Loading live preview…', 'godevs-portfolio' ); ?></p>
@@ -261,7 +261,7 @@ $imported_count = count( $imported );
                 <div class="godevs-progress-body">
                         <div class="godevs-progress-header">
                                 <span class="godevs-progress-title-label"><?php esc_html_e( 'Importing demo', 'godevs-portfolio' ); ?></span>
-                                <span class="godevs-progress-percent" id="godevs-progress-percent">0%</span>
+                                <span class="godevs-progress-percent" id="godevs-progress-percent" aria-live="off">0%</span>
                         </div>
                         <div class="godevs-progress-bar" aria-hidden="true">
                                 <div class="godevs-progress-bar-fill" id="godevs-progress-bar-fill"></div>
@@ -418,7 +418,7 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
         }
 
         return sprintf(
-                '<article class="%1$s" data-demo-id="%2$s" data-demo-name="%3$s" data-demo-category="%4$s" data-demo-style="%5$s" data-demo-complete="%6$s" data-demo-keywords="%7$s" data-demo-preview="%8$s">'
+                '<article class="%1$s" role="article" tabindex="0" data-demo-id="%2$s" data-demo-name="%3$s" data-demo-category="%4$s" data-demo-style="%5$s" data-demo-complete="%6$s" data-demo-keywords="%7$s" data-demo-preview="%8$s">'
                 . '<div class="godevs-demo-card-preview">'
                 . '<div class="godevs-browser-frame" aria-hidden="true"><div class="godevs-browser-dots"><span></span><span></span><span></span></div><div class="godevs-browser-bar">%9$s</div></div>'
                 . '<div class="godevs-demo-card-preview-inner">%10$s'

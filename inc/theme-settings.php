@@ -32,18 +32,21 @@ function godevs_portfolio_get_default_settings(): array {
                 'body_font'               => 'body',
                 'heading_weight'          => '600',
                 'type_scale'              => 'fluid',
-                // Colors
-                'accent_color'            => '#2563EB',
-                'accent_hover'            => '#1d4ed8',
+                // Colors — aligned with theme.json palette so first-visit to
+                // Settings doesn't visibly shift the site colors.
+                'accent_color'            => '#1D4ED8',
+                'accent_hover'            => '#1E40AF',
                 'surface_color'           => '#FFFFFF',
                 'background_color'        => '#FAFAF7',
                 'text_color'              => '#0A0A0A',
-                'muted_color'             => '#6B7280',
-                // Layout
-                'container_width'         => '1280',
-                'content_width'           => '640',
+                'muted_color'             => '#5C5C56',
+                // Layout — aligned with theme.json (contentSize/wideSize).
+                // 1240px wideSize fits inside the 1280px audit viewport with
+                // 20px gutters, making alignwide meaningfully wider than alignnone.
+                'container_width'         => '1240',
+                'content_width'           => '1200',
                 'card_radius'             => '8',
-                'button_radius'           => '6',
+                'button_radius'           => '4',
                 'global_spacing'          => 'normal',
                 // Header
                 'header_style'            => 'default',
@@ -115,12 +118,24 @@ function godevs_portfolio_get_default_settings(): array {
                 'module_education'       => '1',
                 'module_faqs'            => '1',
                 'module_case_studies'    => '1',
+                'module_proposals'       => '1',
         );
 }
 
 function godevs_portfolio_get_setting( string $key ): string {
         $defaults = godevs_portfolio_get_default_settings();
-        return (string) get_option( 'godevs_portfolio_' . $key, $defaults[ $key ] ?? '' );
+        $default = $defaults[ $key ] ?? '';
+        // Use get_option() with the default as the fallback ONLY when the option
+        // row does not exist yet (fresh install). Once a value has been saved —
+        // including an intentionally-cleared '' — we must return that saved
+        // value verbatim, NOT the default. Otherwise settings like brand_tagline
+        // (default = blog description) cannot be cleared, and toggles that the
+        // user has turned off ('0') would silently come back as '1'.
+        $value = get_option( 'godevs_portfolio_' . $key, null );
+        if ( null === $value ) {
+                return (string) $default;
+        }
+        return (string) $value;
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -276,10 +291,19 @@ function godevs_portfolio_ajax_save_settings(): void {
 
         foreach ( $defaults as $key => $default ) {
                 $sanitize = $sanitize_map[ $key ] ?? 'sanitize_text_field';
-                $raw      = isset( $_POST[ $key ] ) ? wp_unslash( $_POST[ $key ] ) : $default;
-                $val      = call_user_func( $sanitize, $raw );
-                if ( '' === $val ) {
+
+                // Key distinction:
+                //  - NOT submitted (field absent from $_POST) → use the default.
+                //  - Submitted but empty string → the user cleared the field
+                //    intentionally. Save '' as a real value (not the default).
+                //    Previously the code did `if ( '' === $val ) { $val = $default; }`
+                //    which silently rewrote any cleared text field / any unchecked
+                //    toggle to its default, making those settings un-clearable.
+                if ( ! isset( $_POST[ $key ] ) ) {
                         $val = $default;
+                } else {
+                        $raw = wp_unslash( $_POST[ $key ] );
+                        $val = call_user_func( $sanitize, $raw );
                 }
                 update_option( 'godevs_portfolio_' . $key, $val );
                 $saved++;

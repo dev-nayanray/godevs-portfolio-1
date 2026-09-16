@@ -191,6 +191,17 @@ function godevs_cpt_archive_team_template( string $layout, int $columns ): strin
         if ( $show_bio === '1' ) {
                 $card .= '<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
         }
+        // Team social links — only render when the user has enabled
+        // `team_show_social` in Theme Settings. Previously this setting was
+        // read but never used, leaving the toggle with no frontend effect.
+        if ( $show_social === '1' ) {
+                $card .= '<!-- wp:group {"className":"godevs-team-social","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->';
+                $card .= '<div class="wp-block-group godevs-team-social">';
+                $card .= '<!-- wp:post-meta {"key":"_godevs_team_twitter","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+                $card .= '<!-- wp:post-meta {"key":"_godevs_team_linkedin","style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
+                $card .= '</div>';
+                $card .= '<!-- /wp:group -->';
+        }
         $card .= '</div>';
         $card .= '<!-- /wp:group -->';
 

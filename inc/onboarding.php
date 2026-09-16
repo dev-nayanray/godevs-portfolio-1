@@ -322,7 +322,7 @@ add_action( 'wp_ajax_godevs_onboarding_dismiss', 'godevs_onboarding_dismiss_ajax
  */
 function godevs_onboarding_render_welcome_panel(): void {
         // Only render if welcome=1 OR no demo has been imported yet.
-        $imported = get_option( 'godevs_demo_tracker', array() );
+        $imported = get_option( 'godevs_portfolio_imports', array() );
         $show_welcome = isset( $_GET['welcome'] ) || empty( $imported );
         if ( ! $show_welcome ) {
                 return;
@@ -393,10 +393,10 @@ add_action( 'wp_dashboard_setup', 'godevs_onboarding_register_dashboard_widget' 
  * @return void
  */
 function godevs_onboarding_render_dashboard_widget(): void {
-        $imported      = ! empty( get_option( 'godevs_demo_tracker', array() ) );
+        $imported      = ! empty( get_option( 'godevs_portfolio_imports', array() ) );
         $header_set    = ! empty( get_option( 'godevs_hf_active_header' ) ) || '' !== godevs_portfolio_get_setting( 'header_style' );
         $footer_set    = ! empty( get_option( 'godevs_hf_active_footer' ) ) || '' !== godevs_portfolio_get_setting( 'footer_style' );
-        $colors_set    = '#2563EB' !== godevs_portfolio_get_setting( 'accent_color' );
+        $colors_set    = '#1D4ED8' !== godevs_portfolio_get_setting( 'accent_color' );
 
         $steps = array(
                 array(

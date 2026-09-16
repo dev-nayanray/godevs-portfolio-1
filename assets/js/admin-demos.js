@@ -79,8 +79,13 @@
                 }
         }
 
+        // Debounced search input — avoids thrashing the DOM on every keystroke.
+        var searchDebounce = null;
         if ( searchInput ) {
-                searchInput.addEventListener( 'input', applyFilters );
+                searchInput.addEventListener( 'input', function () {
+                        clearTimeout( searchDebounce );
+                        searchDebounce = setTimeout( applyFilters, 150 );
+                } );
         }
         if ( categoryFilter ) {
                 categoryFilter.addEventListener( 'change', applyFilters );
@@ -156,11 +161,19 @@
                 modal.addEventListener( 'click', function ( e ) {
                         var target = e.target;
                         if ( target.dataset && target.dataset.action === 'close-modal' ) {
+                                // Call restorePreviewModal() + clearProgressTimers() explicitly — the
+                                // closeModal reassignment at the bottom of this IIFE relies on a closure
+                                // lookup that is brittle across minifiers; calling both helpers here
+                                // guarantees the modal is restored and timers are killed regardless.
+                                restorePreviewModal();
+                                clearProgressTimers();
                                 closeModal();
                         }
                 } );
                 document.addEventListener( 'keydown', function ( e ) {
                         if ( e.key === 'Escape' && modal && ! modal.hidden ) {
+                                restorePreviewModal();
+                                clearProgressTimers();
                                 closeModal();
                         }
                 } );
@@ -236,6 +249,11 @@
                 showPreviewLoading();
                 // Set the iframe src — the onload handler will hide the loading overlay.
                 previewIframe.onload = function () {
+                        hidePreviewLoading();
+                };
+                // Hide the loading overlay even if the iframe fails to load (network
+                // error, sandbox violation, etc.) — otherwise the spinner would spin forever.
+                previewIframe.onerror = function () {
                         hidePreviewLoading();
                 };
                 previewIframe.src = url;
@@ -539,6 +557,9 @@
                 // request runs behind it and the overlay reconciles with the
                 // real result when the server responds.
                 var card = $( '.godevs-demo-card[data-demo-id="' + demoId + '"]' );
+                // Per-card "importing" state — the card itself shows visual feedback
+                // (subtle pulse + dimmed actions) behind the progress overlay.
+                if ( card ) card.classList.add( 'is-importing' );
                 showImportProgress( card ? card.dataset.demoName || demoId : demoId, card ? card.dataset.demoPreview || '' : '' );
 
                 post( 'godevs_portfolio_import_demo', {
@@ -552,8 +573,10 @@
                                         btn.disabled = false;
                                         btn.style.opacity = '';
                                 } );
-
+                                // On error (no reload), drop the importing state so the card
+                                // doesn't appear stuck. On success the page reloads anyway.
                                 if ( ! resp || ! resp.success ) {
+                                        clearImportingState();
                                         var msg = ( resp && resp.data && resp.data.message ) || I18N.importFailed || 'Import failed.';
                                         finishImportError( msg );
                                         return;
@@ -565,6 +588,7 @@
                                         btn.disabled = false;
                                         btn.style.opacity = '';
                                 } );
+                                clearImportingState();
                                 finishImportError( I18N.networkError || 'Network error — the import request failed. Please try again.' );
                         } );
         }
@@ -637,6 +661,14 @@
                 if ( progressTick ) { clearInterval( progressTick ); progressTick = null; }
         }
 
+        // Drop the per-card `is-importing` flag from every card. Used after a
+        // failed import (the success path reloads the page so cleanup is moot).
+        function clearImportingState() {
+                $all( '.godevs-demo-card.is-importing' ).forEach( function ( c ) {
+                        c.classList.remove( 'is-importing' );
+                } );
+        }
+
         function setProgressPercent( pct ) {
                 if ( progressFill ) progressFill.style.width = pct + '%';
                 if ( progressPct ) progressPct.textContent = Math.round( pct ) + '%';
@@ -671,6 +703,11 @@
                         return '<li data-step-id="' + p.id + '">' + escapeHTML( p.label ) + '</li>';
                 } ).join( '' );
                 setProgressPercent( 0 );
+                // Screen readers should NOT announce every percent tick — that would
+                // flood the user with updates. The container `#godevs-progress` keeps
+                // role=status + aria-live=polite so step labels and the final result
+                // are still announced, but the percent itself is silent.
+                if ( progressPct ) progressPct.setAttribute( 'aria-live', 'off' );
                 progressEl.hidden = false;
                 document.body.style.overflow = 'hidden';
 
