@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Theme version.
  */
 if ( ! defined( 'GODEVS_PORTFOLIO_VERSION' ) ) {
-        define( 'GODEVS_PORTFOLIO_VERSION', '1.2.0' );
+        define( 'GODEVS_PORTFOLIO_VERSION', '1.4.0' );
 }
 
 /**
@@ -371,6 +371,13 @@ function godevs_portfolio_seed_default_settings(): void {
         }
         update_option( 'godevs_portfolio_settings', $defaults, false );
 
+        // Regenerate dynamic CSS so the site renders with the correct colors /
+        // layout / radii immediately on first load (instead of waiting for
+        // the admin to visit the Settings page).
+        if ( function_exists( 'godevs_portfolio_generate_dynamic_css' ) ) {
+                godevs_portfolio_generate_dynamic_css();
+        }
+
         // Also reset the rewrite version so the version-bump flusher re-runs.
         delete_option( 'godevs_portfolio_rewrite_version' );
 
@@ -510,6 +517,14 @@ function godevs_portfolio_upgrade_handler(): void {
 
         // 3. Flush rewrite rules.
         flush_rewrite_rules();
+
+        // 3.5. Regenerate dynamic CSS — picks up any new design tokens added
+        // in this version (e.g. new color/radius settings) and refreshes the
+        // cached `godevs_portfolio_dynamic_css` option so the front-end
+        // matches the current defaults.
+        if ( function_exists( 'godevs_portfolio_generate_dynamic_css' ) ) {
+                godevs_portfolio_generate_dynamic_css();
+        }
 
         // 4. Record the version so this handler doesn't re-run.
         update_option( 'godevs_portfolio_rewrite_version', GODEVS_PORTFOLIO_VERSION, false );

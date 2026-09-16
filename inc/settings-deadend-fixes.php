@@ -100,6 +100,7 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
                 'compact'     => '0.92',
                 'comfortable' => '1.0',
                 'large'       => '1.12',
+                'fixed'       => '1.0',  // Fixed (rem) — handled below via separate rule.
         );
         $scale_factor = $scale_map[ $scale ] ?? '1.0';
 
@@ -115,7 +116,7 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
 
         // Only emit CSS if either setting deviates from default — keeps the
         // generated CSS minimal when defaults are used.
-        if ( '1.0' === $scale_factor && '1.0' === $spacing_factor ) {
+        if ( '1.0' === $scale_factor && '1.0' === $spacing_factor && 'fixed' !== $scale ) {
                 return $css;
         }
 
@@ -132,6 +133,20 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
                 $css .= "h4{font-size:calc(1.25rem * var(--wp--custom--type-scale-factor));}";
                 $css .= "h5{font-size:calc(1.125rem * var(--wp--custom--type-scale-factor));}";
                 $css .= "h6{font-size:calc(1rem * var(--wp--custom--type-scale-factor));}";
+        }
+
+        // 'fixed' type-scale: pin headings to absolute rem values instead of
+        // theme.json's fluid clamp() — the user explicitly asked for "Fixed (rem)".
+        if ( 'fixed' === $scale ) {
+                $css .= "h1{font-size:2.5rem;}";
+                $css .= "h2{font-size:2rem;}";
+                $css .= "h3{font-size:1.5rem;}";
+                $css .= "h4{font-size:1.25rem;}";
+                $css .= "h5{font-size:1.125rem;}";
+                $css .= "h6{font-size:1rem;}";
+                $css .= ".has-large-font-size{font-size:1.5rem;}";
+                $css .= ".has-x-large-font-size{font-size:2rem;}";
+                $css .= ".has-xx-large-font-size{font-size:2.5rem;}";
         }
 
         // Apply spacing factor to common spacing tokens.

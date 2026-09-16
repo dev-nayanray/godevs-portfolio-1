@@ -64,11 +64,17 @@
                         }
                 } );
 
-                // Collect toggles (checkboxes)
+                // Collect toggles (checkboxes).
+                // IMPORTANT: send an explicit '0' for unchecked boxes — NOT an empty
+                // string. The PHP save handler treats '' (empty string) as
+                // "use the default value", which means toggles with a default of
+                // '1' could never be turned off (the empty string was silently
+                // rewritten to the default '1' on save). Sending '0' makes the
+                // off-state a real, persistable value.
                 form.find( 'input[type="checkbox"]' ).each( function () {
                         var name = $( this ).attr( 'name' );
                         if ( name ) {
-                                data[ name ] = $( this ).is( ':checked' ) ? '1' : '';
+                                data[ name ] = $( this ).is( ':checked' ) ? '1' : '0';
                         }
                 } );
 
