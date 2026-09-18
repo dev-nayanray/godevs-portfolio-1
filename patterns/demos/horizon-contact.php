@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Horizon (Photography) — Contact
+ * Title: Demo - Horizon (Photography) - Contact
  * Slug: godevs-portfolio/demo-horizon-contact
- * Description: HORIZON contact — inquiry form, availability. Recommended style variation: Horizon.
+ * Description: HORIZON contact - inquiry form, availability. Recommended style variation: Horizon.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, horizon, contact, inquiry
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-horizon","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO ═══ -->
+	<!-- === 01 - HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
 				<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— Contact</p>
+				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- Contact</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
 				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500">Available for assignments · 2026</p>
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+	<!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</nav>
 					</section>
 					<section>
-						<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--muted);margin-bottom:1rem">— What Happens Next</p>
+						<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--muted);margin-bottom:1rem">- What Happens Next</p>
 						<ol style="list-style:none;padding:0;margin:0;display:grid;gap:1.25rem;counter-reset:hor-step">
 							<li style="counter-increment:hor-step;display:grid;grid-template-columns:2.5rem 1fr;gap:0.75rem;align-items:start">
 								<span style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;color:var(--wp--preset--color--accent);font-weight:500">01</span>
@@ -87,11 +87,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</li>
 							<li style="counter-increment:hor-step;display:grid;grid-template-columns:2.5rem 1fr;gap:0.75rem;align-items:start">
 								<span style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;color:var(--wp--preset--color--accent);font-weight:500">02</span>
-								<span style="font-size:0.9375rem;line-height:1.65;color:var(--wp--preset--color--foreground)">A brief conversation — by email or, if it helps, a 20-minute call.</span>
+								<span style="font-size:0.9375rem;line-height:1.65;color:var(--wp--preset--color--foreground)">A brief conversation - by email or, if it helps, a 20-minute call.</span>
 							</li>
 							<li style="counter-increment:hor-step;display:grid;grid-template-columns:2.5rem 1fr;gap:0.75rem;align-items:start">
 								<span style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;color:var(--wp--preset--color--accent);font-weight:500">03</span>
-								<span style="font-size:0.9375rem;line-height:1.65;color:var(--wp--preset--color--foreground)">A considered response — scope, timeline, and whether the project fits the calendar.</span>
+								<span style="font-size:0.9375rem;line-height:1.65;color:var(--wp--preset--color--foreground)">A considered response - scope, timeline, and whether the project fits the calendar.</span>
 							</li>
 						</ol>
 					</section>
@@ -99,7 +99,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<!-- RIGHT: inquiry form -->
 				<div class="hor-form-wrap">
-					<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--accent);margin-bottom:0.75rem">— Send a message</p>
+					<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--accent);margin-bottom:0.75rem">- Send a message</p>
 					<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-size:clamp(1.25rem,2vw,1.5rem);line-height:1.4;margin:0 0 2rem">Tell me what you're working on, and what you need.</p>
 
 					<form action="#" method="post" aria-label="Inquiry form" style="display:grid;gap:1.5rem">
@@ -130,7 +130,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 						<div>
 							<button type="submit" style="display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--wp--preset--color--foreground);border-radius:0;background:var(--wp--preset--color--primary);color:var(--wp--preset--color--base);padding:0.95rem 1.6rem;font-family:var(--wp--preset--font-family--body);font-weight:500;font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background 0.3s ease,border-color 0.3s ease,color 0.3s ease">Start a conversation <span aria-hidden="true">→</span></button>
-							<p style="font-family:var(--wp--preset--font-family--mono);font-size:0.625rem;letter-spacing:0.08em;color:var(--wp--preset--color--muted);margin-top:1rem">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+							<p style="font-family:var(--wp--preset--font-family--mono);font-size:0.625rem;letter-spacing:0.08em;color:var(--wp--preset--color--muted);margin-top:1rem">Demo form - connect a form plugin or the theme's front-forms feature.</p>
 						</div>
 					</form>
 				</div>
@@ -158,7 +158,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FAQ ═══ -->
+	<!-- === 03 - FAQ === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -170,7 +170,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"30%"} -->
 				<div class="wp-block-column" style="flex-basis:30%">
 					<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— FAQ</p>
+					<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- FAQ</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -192,28 +192,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<span>How quickly do you respond?</span>
 						<span class="hor-faq-marker" aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.875rem;color:var(--wp--preset--color--muted);transition:transform 0.3s ease">+</span>
 					</summary>
-					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">Within three working days, almost always sooner. If your inquiry is time-sensitive — a campaign shoot in the next two weeks, for example — mark it as such in the subject line and I'll prioritize it.</p>
+					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">Within three working days, almost always sooner. If your inquiry is time-sensitive - a campaign shoot in the next two weeks, for example - mark it as such in the subject line and I'll prioritize it.</p>
 				</details>
 				<details style="border-top:1px solid var(--wp--preset--color--line);padding:1.5rem 0">
 					<summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;font-family:var(--wp--preset--font-family--display);font-weight:600;font-size:clamp(1.125rem,2vw,1.375rem);letter-spacing:-0.02em;line-height:1.2;color:var(--wp--preset--color--foreground)">
 						<span>What should I include?</span>
 						<span class="hor-faq-marker" aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.875rem;color:var(--wp--preset--color--muted);transition:transform 0.3s ease">+</span>
 					</summary>
-					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">A short paragraph on the project, the dates you have in mind, the location, and what you'd like the work to do. Reference images, mood links or prior campaigns help — but aren't required at first contact.</p>
+					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">A short paragraph on the project, the dates you have in mind, the location, and what you'd like the work to do. Reference images, mood links or prior campaigns help - but aren't required at first contact.</p>
 				</details>
 				<details style="border-top:1px solid var(--wp--preset--color--line);padding:1.5rem 0">
 					<summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;font-family:var(--wp--preset--font-family--display);font-weight:600;font-size:clamp(1.125rem,2vw,1.375rem);letter-spacing:-0.02em;line-height:1.2;color:var(--wp--preset--color--foreground)">
 						<span>Do you travel internationally?</span>
 						<span class="hor-faq-marker" aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.875rem;color:var(--wp--preset--color--muted);transition:transform 0.3s ease">+</span>
 					</summary>
-					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">Yes — roughly two-thirds of the work is outside Portugal. Travel and production days are factored into the project estimate. I hold a passport valid for visa-free entry to most assignment destinations.</p>
+					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">Yes - roughly two-thirds of the work is outside Portugal. Travel and production days are factored into the project estimate. I hold a passport valid for visa-free entry to most assignment destinations.</p>
 				</details>
 				<details style="border-top:1px solid var(--wp--preset--color--line);border-bottom:1px solid var(--wp--preset--color--line);padding:1.5rem 0">
 					<summary style="cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;font-family:var(--wp--preset--font-family--display);font-weight:600;font-size:clamp(1.125rem,2vw,1.375rem);letter-spacing:-0.02em;line-height:1.2;color:var(--wp--preset--color--foreground)">
 						<span>Do you provide full production?</span>
 						<span class="hor-faq-marker" aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.875rem;color:var(--wp--preset--color--muted);transition:transform 0.3s ease">+</span>
 					</summary>
-					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">For larger assignments I work with a small network of producers, fixers and assistants across Europe, Asia and South America. I'm happy to manage local production or collaborate with your team — both work well.</p>
+					<p style="margin:1rem 0 0;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:50ch">For larger assignments I work with a small network of producers, fixers and assistants across Europe, Asia and South America. I'm happy to manage local production or collaborate with your team - both work well.</p>
 				</details>
 			</div>
 			<style>
@@ -237,7 +237,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Where do you need images from? Tell me the story, the place and the deadline — I'll chart the journey.</p>
+		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Where do you need images from? Tell me the story, the place and the deadline - I'll chart the journey.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:shortcode -->

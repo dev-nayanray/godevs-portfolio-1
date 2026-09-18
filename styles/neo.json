@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Neo",
-	"description": "A neo-brutalist aesthetic — high contrast, bold borders, geometric type. For experimental and creative portfolios.",
+	"description": "A neo-brutalist aesthetic - high contrast, bold borders, geometric type. For experimental and creative portfolios.",
 	"settings": {
 		"color": {
 			"palette": [

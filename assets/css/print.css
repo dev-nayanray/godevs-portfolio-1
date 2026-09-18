@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — print styles.
+ * GoDevs Portfolio - print styles.
  *
  * Print styles exist to make the theme usable for editorial sites that need
  * printable article pages. They strip interactive chrome and re-establish
@@ -70,7 +70,7 @@
 		font-family: "Newsreader", Georgia, serif !important;
 	}
 
-	/* Drop decorative shadows and rounded corners — they print as muddy. */
+	/* Drop decorative shadows and rounded corners - they print as muddy. */
 	img,
 	figure,
 	.wp-block-group {

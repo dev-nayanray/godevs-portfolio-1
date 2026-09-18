@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Editorial",
-	"description": "A magazine-inspired palette — serif display type paired with sans body, warm cream background, ink black text, muted brown accent. Reads as a publication.",
+	"description": "A magazine-inspired palette - serif display type paired with sans body, warm cream background, ink black text, muted brown accent. Reads as a publication.",
 	"settings": {
 		"color": {
 			"palette": [

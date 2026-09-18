@@ -1,6 +1,6 @@
 <?php
 /**
- * Settings Integration — wires theme settings to front-end behavior.
+ * Settings Integration - wires theme settings to front-end behavior.
  *
  * This file bridges the gap between saved Theme Settings options and
  * actual front-end rendering. It handles:
@@ -15,7 +15,7 @@
  *   8. Brand name/tagline injection
  *
  * @package GoDevs_Portfolio
- * @since   3.1.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -56,7 +56,7 @@ function godevs_settings_footer_slug_map(): array {
  * based on the Theme Settings header_style / footer_style value.
  *
  * This lets the user pick a header variant (Minimal, Centered, Split,
- * Transparent, Dark) from the Header settings panel — without needing
+ * Transparent, Dark) from the Header settings panel - without needing
  * to use the Header/Footer Builder.
  *
  * Only runs when NO builder layout is active (the builder takes
@@ -76,7 +76,7 @@ function godevs_settings_swap_template_part( string $block_content, array $block
                 return $block_content;
         }
 
-        // Only swap the default 'header' and 'footer' slugs — not variants
+        // Only swap the default 'header' and 'footer' slugs - not variants
         // like 'header-dark' or 'footer-minimal' that are already specific.
         if ( 'header' === $slug ) {
                 // Skip if a builder layout is active for headers.

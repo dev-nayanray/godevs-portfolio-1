@@ -3,7 +3,7 @@
  * Title: Services
  * Slug: godevs-portfolio/services
  * Categories: featured, godevs-portfolio-services
- * Description: An editorial index of four services as hairline-bordered rows — mono ghost numbers, display titles, and arrow links. Use on studio and agency portfolios.
+ * Description: An editorial index of four services as hairline-bordered rows - mono ghost numbers, display titles, and arrow links. Use on studio and agency portfolios.
  * Keywords: services, what-we-do, capabilities, offering, list
  * Viewport Width: 1280
  */
@@ -38,7 +38,7 @@
 					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Strategy</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Positioning, message hierarchy, and a written brief that names the three pages that actually matter — decided before anything is designed.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Positioning, message hierarchy, and a written brief that names the three pages that actually matter - decided before anything is designed.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -59,7 +59,7 @@
 					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Brand identity</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Logotype, palette, typography, and the small set of rules that keep it all coherent — delivered as tokens your site inherits automatically.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Logotype, palette, typography, and the small set of rules that keep it all coherent - delivered as tokens your site inherits automatically.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -80,7 +80,7 @@
 					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Web design</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Editorial layouts composed directly in the block editor — real patterns, real content, reviewed in the browser rather than in static mockups.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Editorial layouts composed directly in the block editor - real patterns, real content, reviewed in the browser rather than in static mockups.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -101,7 +101,7 @@
 					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Development</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Block themes, custom patterns, and performance budgets under one second — handed over with documentation your team can actually follow.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Block themes, custom patterns, and performance budgets under one second - handed over with documentation your team can actually follow.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

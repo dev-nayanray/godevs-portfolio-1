@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function godevs_portfolio_register_meta_fields(): void {
 
-        // ── Project Meta ─────────────────────────────────────────
+        // -- Project Meta -----------------------------------------
         $project_fields = array(
                 '_godevs_project_client'      => 'sanitize_text_field',
                 '_godevs_project_url'         => 'esc_url_raw',
@@ -57,7 +57,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Service Meta ──────────────────────────────────────────
+        // -- Service Meta ------------------------------------------
         $service_fields = array(
                 '_godevs_service_icon'        => 'sanitize_text_field',
                 '_godevs_service_price'      => 'sanitize_text_field',
@@ -83,7 +83,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Team Meta ────────────────────────────────────────────
+        // -- Team Meta --------------------------------------------
         $team_fields = array(
                 '_godevs_team_job_title'   => 'sanitize_text_field',
                 '_godevs_team_email'       => 'sanitize_email',
@@ -113,7 +113,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Testimonial Meta ────────────────────────────────────
+        // -- Testimonial Meta ------------------------------------
         $testimonial_fields = array(
                 '_godevs_testimonial_client_name'  => 'sanitize_text_field',
                 '_godevs_testimonial_client_role'  => 'sanitize_text_field',
@@ -138,7 +138,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Booking Meta (NOT exposed via REST — privacy) ───────
+        // -- Booking Meta (NOT exposed via REST - privacy) -------
         $booking_fields = array(
                 '_godevs_booking_name'           => 'sanitize_text_field',
                 '_godevs_booking_email'          => 'sanitize_email',
@@ -158,7 +158,7 @@ function godevs_portfolio_register_meta_fields(): void {
                         array(
                                 'type'              => 'string',
                                 'single'            => true,
-                                'show_in_rest'      => false, // Privacy — do not expose via REST.
+                                'show_in_rest'      => false, // Privacy - do not expose via REST.
                                 'sanitize_callback' => $sanitize,
                                 'auth_callback'     => static function () {
                                         return current_user_can( 'manage_options' );
@@ -167,7 +167,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Experience Meta ──────────────────────────────────────
+        // -- Experience Meta --------------------------------------
         $experience_fields = array(
                 '_godevs_experience_company'    => 'sanitize_text_field',
                 '_godevs_experience_position'  => 'sanitize_text_field',
@@ -193,7 +193,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Education Meta ──────────────────────────────────────
+        // -- Education Meta --------------------------------------
         $education_fields = array(
                 '_godevs_education_institution' => 'sanitize_text_field',
                 '_godevs_education_degree'      => 'sanitize_text_field',
@@ -219,7 +219,7 @@ function godevs_portfolio_register_meta_fields(): void {
                 );
         }
 
-        // ── Per-Post Header/Footer Layout Override ─────────────────────
+        // -- Per-Post Header/Footer Layout Override ---------------------
         // Allows pages (and posts) to select a specific Header/Footer
         // Builder layout that overrides the site-wide active layout.
         // Values: a saved layout slug, 'default' (use site-wide), or 'none'
@@ -300,7 +300,7 @@ function godevs_portfolio_get_meta( int $post_id, string $key, string $prefix = 
  *
  * @param string $post_type The current post type.
  * @return void
- * @since 2.4.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_add_hf_layout_meta_box( string $post_type ): void {
         if ( ! in_array( $post_type, array( 'page', 'post' ), true ) ) {
@@ -327,17 +327,17 @@ add_action( 'add_meta_boxes', 'godevs_portfolio_add_hf_layout_meta_box' );
  *
  * @param WP_Post $post The post being edited.
  * @return void
- * @since 2.4.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_render_hf_layout_meta_box( WP_Post $post ): void {
         wp_nonce_field( 'godevs_hf_layout_meta', 'godevs_hf_layout_nonce' );
 
-        // Load saved values — fall back to 'default'.
+        // Load saved values - fall back to 'default'.
         $header_layout = get_post_meta( $post->ID, '_godevs_page_header_layout', true ) ?: 'default';
         $footer_layout = get_post_meta( $post->ID, '_godevs_page_footer_layout', true ) ?: 'default';
 
         // Load all saved layouts from the Header/Footer Builder.
-        // We do this defensively — the builder file may not be loaded on
+        // We do this defensively - the builder file may not be loaded on
         // the front-end of the edit screen if it's lazy-loaded.
         $layouts = function_exists( 'godevs_hf_get_layouts' ) ? godevs_hf_get_layouts() : array();
 
@@ -358,7 +358,7 @@ function godevs_portfolio_render_hf_layout_meta_box( WP_Post $post ): void {
                                         <?php esc_html_e( 'Site-wide default', 'godevs-portfolio' ); ?>
                                 </option>
                                 <option value="none"<?php selected( $current, 'none' ); ?>>
-                                        <?php esc_html_e( '— Disable builder (use theme parts)', 'godevs-portfolio' ); ?>
+                                        <?php esc_html_e( '- Disable builder (use theme parts)', 'godevs-portfolio' ); ?>
                                 </option>
                                 <?php if ( ! empty( $saved ) ) : ?>
                                         <optgroup label="<?php esc_attr_e( 'Saved layouts', 'godevs-portfolio' ); ?>">
@@ -373,7 +373,7 @@ function godevs_portfolio_render_hf_layout_meta_box( WP_Post $post ): void {
                         <?php
                         if ( empty( $saved ) ) {
                                 echo '<span style="display:block;margin-top:4px;font-size:11px;color:#666;">' .
-                                        esc_html__( 'No saved layouts yet — create one in Appearance → GoDevs Settings → Header/Footer Builder.', 'godevs-portfolio' ) .
+                                        esc_html__( 'No saved layouts yet - create one in Appearance → GoDevs Settings → Header/Footer Builder.', 'godevs-portfolio' ) .
                                         '</span>';
                         }
                         ?>
@@ -387,7 +387,7 @@ function godevs_portfolio_render_hf_layout_meta_box( WP_Post $post ): void {
  *
  * @param int $post_id The post ID being saved.
  * @return void
- * @since 2.4.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_save_hf_layout_meta( int $post_id ): void {
         // Bail on autosave.
@@ -405,7 +405,7 @@ function godevs_portfolio_save_hf_layout_meta( int $post_id ): void {
         if ( empty( $_POST['godevs_hf_layout_nonce'] ) || ! wp_verify_nonce( sanitize_key( $_POST['godevs_hf_layout_nonce'] ), 'godevs_hf_layout_meta' ) ) {
                 return;
         }
-        // Check post type — only `page` and `post` support per-page header/footer override.
+        // Check post type - only `page` and `post` support per-page header/footer override.
         if ( ! in_array( get_post_type( $post_id ), array( 'page', 'post' ), true ) ) {
                 return;
         }

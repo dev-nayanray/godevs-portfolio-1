@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Team — Profile Grid
+ * Title: Team - Profile Grid
  * Slug: godevs-portfolio/team-grid
- * Description: A four-up grid of premium profile cards — circular portraits, display-font names, mono role micro-labels, and hairline-bordered is-style-card-pro shells with staggered reveal.
+ * Description: A four-up grid of premium profile cards - circular portraits, display-font names, mono role micro-labels, and hairline-bordered is-style-card-pro shells with staggered reveal.
  * Categories: godevs-portfolio-team
  * Keywords: team, grid, profiles, avatars, people, modern
  * Viewport Width: 1280

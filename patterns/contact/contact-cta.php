@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Contact — Inline CTA
+ * Title: Contact - Inline CTA
  * Slug: godevs-portfolio/contact-inline-cta
- * Description: A centered inline contact CTA — accent eyebrow, mixed-serif display headline, oversized display mailto, and pill meta chips over secondary links. Distinct in its centered single-action composition.
+ * Description: A centered inline contact CTA - accent eyebrow, mixed-serif display headline, oversized display mailto, and pill meta chips over secondary links. Distinct in its centered single-action composition.
  * Categories: godevs-portfolio-contact
  * Keywords: contact, cta, email, reach-out, inline
  * Viewport Width: 1280
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65">For new projects, collaborations, or a quick question — email is the fastest way to reach the studio.</p>
+<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65">For new projects, collaborations, or a quick question - email is the fastest way to reach the studio.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xx-large","lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"},"color":{"text":"var:preset|color|primary"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->

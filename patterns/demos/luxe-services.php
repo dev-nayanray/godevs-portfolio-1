@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Luxe (Fashion) — Services
+ * Title: Demo - Luxe (Fashion) - Services
  * Slug: godevs-portfolio/demo-luxe-services
- * Description: LUXE services — fashion capabilities. Recommended style variation: Luxe.
+ * Description: LUXE services - fashion capabilities. Recommended style variation: Luxe.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, luxe, services, capabilities
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-luxe","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO ═══ -->
+	<!-- === 01 - HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Services</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Services</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">07 Capabilities · Collection / Editorial / Campaign · Worldwide</p>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"bottom","width":"38%"} -->
 				<div class="wp-block-column" style="flex-basis:38%">
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">A single practice, offering seven distinct capabilities — from the first idea of a collection to the final image. Each engagement is scoped to the work, never the other way around.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">A single practice, offering seven distinct capabilities - from the first idea of a collection to the final image. Each engagement is scoped to the work, never the other way around.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — SERVICES LIST ═══ -->
+	<!-- === 02 - SERVICES LIST === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Index · Capabilities</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Index · Capabilities</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"luxe-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.75rem)","lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
 				<h2 class="wp-block-heading luxe-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.75rem);line-height:1.05;letter-spacing:-0.02em;font-weight:400">Seven ways of working.</h2>
@@ -131,7 +131,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — EXPANDED DETAIL: 01 CREATIVE DIRECTION ═══ -->
+	<!-- === 03 - EXPANDED DETAIL: 01 CREATIVE DIRECTION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -139,7 +139,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Eyebrow -->
 			<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">01 — Creative Direction</p>
+			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">01 - Creative Direction</p>
 			<!-- /wp:paragraph -->
 
 			<!-- H2 -->
@@ -155,7 +155,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="luxe-card" href="/services" aria-label="View Creative Direction work">
 						<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-campaign.webp' ); ?>" alt="Creative Direction — campaign image study in movement, light and material" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-campaign.webp' ); ?>" alt="Creative Direction - campaign image study in movement, light and material" loading="lazy">
 						</div>
 					</a>
 					<!-- /wp:html -->
@@ -164,10 +164,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 				<div class="wp-block-column" style="flex-basis:42%">
 					<!-- wp:paragraph {"className":"luxe-statement","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"clamp(1.375rem, 2.8vw, 2rem)","lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"400"}}} -->
-					<p class="luxe-statement" style="font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:clamp(1.375rem, 2.8vw, 2rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;max-width:32ch">A collection begins long before the first sketch — in research, mood, reference and intent.</p>
+					<p class="luxe-statement" style="font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:clamp(1.375rem, 2.8vw, 2rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;max-width:32ch">A collection begins long before the first sketch - in research, mood, reference and intent.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.75;margin-top:var(--wp--preset--spacing--30)">Creative Direction defines the visual language of a season — the references, the mood, the silhouette logic and the way the garments will be photographed. It is the conceptual spine that holds the collection together.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.75;margin-top:var(--wp--preset--spacing--30)">Creative Direction defines the visual language of a season - the references, the mood, the silhouette logic and the way the garments will be photographed. It is the conceptual spine that holds the collection together.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
 					<p style="margin-top:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="/services">Read more →</a></p>
@@ -182,7 +182,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — EXPANDED DETAIL: 02 FASHION DESIGN ═══ -->
+	<!-- === 04 - EXPANDED DETAIL: 02 FASHION DESIGN === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -190,7 +190,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Eyebrow -->
 			<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">02 — Fashion Design</p>
+			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">02 - Fashion Design</p>
 			<!-- /wp:paragraph -->
 
 			<!-- H2 -->
@@ -204,10 +204,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"verticalAlignment":"center","width":"42%"} -->
 				<div class="wp-block-column" style="flex-basis:42%">
 					<!-- wp:paragraph {"className":"luxe-statement","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"clamp(1.375rem, 2.8vw, 2rem)","lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"400"}}} -->
-					<p class="luxe-statement" style="font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:clamp(1.375rem, 2.8vw, 2rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;max-width:32ch">Each piece is drawn flat, then resolved on the body — fabric sourced from a single mill, finished by a single atelier.</p>
+					<p class="luxe-statement" style="font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:clamp(1.375rem, 2.8vw, 2rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;max-width:32ch">Each piece is drawn flat, then resolved on the body - fabric sourced from a single mill, finished by a single atelier.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.75;margin-top:var(--wp--preset--spacing--30)">Fashion Design moves the collection from concept to garment — through flat patterns, toiles, fittings, fabric sourcing and final production. Each piece is built around the relationship between body, fabric and light.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.75;margin-top:var(--wp--preset--spacing--30)">Fashion Design moves the collection from concept to garment - through flat patterns, toiles, fittings, fabric sourcing and final production. Each piece is built around the relationship between body, fabric and light.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
 					<p style="margin-top:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="/services">Read more →</a></p>
@@ -219,7 +219,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:html -->
 					<a class="luxe-card" href="/services" aria-label="View Fashion Design work">
 						<div class="luxe-card-media" style="aspect-ratio: 4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.webp' ); ?>" alt="Fashion Design — Form collection draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-collection-form.webp' ); ?>" alt="Fashion Design - Form collection draped fabric and silhouette study in ivory and charcoal tones" loading="lazy">
 						</div>
 					</a>
 					<!-- /wp:html -->
@@ -233,7 +233,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — PROCESS ═══ -->
+	<!-- === 05 - PROCESS === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -243,7 +243,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Process · 04 Stages</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Process · 04 Stages</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"luxe-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.75rem)","lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
 				<h2 class="wp-block-heading luxe-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.75rem);line-height:1.05;letter-spacing:-0.02em;font-weight:400">How the work is made.</h2>
@@ -286,7 +286,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 06 — CLOSING LINE ═══ -->
+	<!-- === 06 - CLOSING LINE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

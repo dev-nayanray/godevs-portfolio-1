@@ -1,5 +1,5 @@
-/* GoDevs Portfolio — Header & Footer Builder JS
- * v2.4.0 — Visual drag-drop builder with device breakpoints
+/* GoDevs Portfolio - Header & Footer Builder JS
+ * v2.4.0 - Visual drag-drop builder with device breakpoints
  */
 ( function ( $ ) {
         'use strict';
@@ -13,7 +13,7 @@
         var savedLayouts = {};
         var activeLayout = null;
 
-        /* ─── Init ─── */
+        /* --- Init --- */
         function init() {
                 // Load data
                 loadLayouts();
@@ -38,7 +38,7 @@
                 $( '#godevs-hf-save-layout' ).on( 'click', saveCurrentLayout );
         }
 
-        /* ─── Load layouts from server ─── */
+        /* --- Load layouts from server --- */
         function loadLayouts() {
                 var $grid = $( '#godevs-hf-template-grid' );
                 var $savedList = $( '#godevs-hf-saved-list' );
@@ -68,7 +68,7 @@
                         renderSavedLayouts();
                         renderElementPalette();
                 } ).fail( function ( jqXHR, textStatus, errorThrown ) {
-                        // Silent failure — the user sees an empty grid with no diagnostic.
+                        // Silent failure - the user sees an empty grid with no diagnostic.
                         // Surface the error so it can be debugged.
                         var errorMsg = 'AJAX request failed: ' + textStatus + ' ' + errorThrown;
                         if ( jqXHR.status ) {
@@ -82,7 +82,7 @@
                 } );
         }
 
-        /* ─── Render starter templates ─── */
+        /* --- Render starter templates --- */
         function renderTemplates() {
                 var $grid = $( '#godevs-hf-template-grid' );
                 $grid.empty();
@@ -109,7 +109,7 @@
                 } );
         }
 
-        /* ─── Render saved layouts ─── */
+        /* --- Render saved layouts --- */
         function renderSavedLayouts() {
                 var $list = $( '#godevs-hf-saved-list' );
                 $list.empty();
@@ -150,7 +150,7 @@
                 } );
         }
 
-        /* ─── Render element palette ─── */
+        /* --- Render element palette --- */
         function renderElementPalette() {
                 var $list = $( '#godevs-hf-elements-list' );
                 $list.empty();
@@ -180,7 +180,7 @@
                 } );
         }
 
-        /* ─── Load a starter template ─── */
+        /* --- Load a starter template --- */
         function loadTemplate( templateKey ) {
                 var tmpl = templatesList[ templateKey ];
                 if ( ! tmpl ) return;
@@ -190,12 +190,12 @@
                         rows: JSON.parse( JSON.stringify( tmpl.rows ) )
                 };
 
-                $( '#godevs-hf-layout-name' ).val( tmpl.label + ' — Custom' );
+                $( '#godevs-hf-layout-name' ).val( tmpl.label + ' - Custom' );
                 showEditor();
                 renderCanvas();
         }
 
-        /* ─── Edit an existing saved layout ─── */
+        /* --- Edit an existing saved layout --- */
         function editLayout( slug ) {
                 var layout = savedLayouts[ slug ];
                 if ( ! layout ) return;
@@ -207,14 +207,14 @@
                 renderCanvas();
         }
 
-        /* ─── Show editor ─── */
+        /* --- Show editor --- */
         function showEditor() {
                 $( '#godevs-hf-editor' ).show();
                 $( '#godevs-hf-live-preview-section' ).show();
                 $( 'html, body' ).animate( { scrollTop: $( '#godevs-hf-editor' ).offset().top - 50 }, 300 );
         }
 
-        /* ─── Render the visual canvas ─── */
+        /* --- Render the visual canvas --- */
         function renderCanvas() {
                 var $canvas = $( '#godevs-hf-canvas' );
                 var $grid = $canvas.find( '.godevs-hf-canvas-inner' );
@@ -252,7 +252,7 @@
                 $grid.append( $addRow );
         }
 
-        /* ─── Render a single row ─── */
+        /* --- Render a single row --- */
         function renderRow( row, rowIdx ) {
                 var settings = row.settings || {};
                 var bg = settings.background || '';
@@ -316,7 +316,7 @@
                 return $row;
         }
 
-        /* ─── Render a column ─── */
+        /* --- Render a column --- */
         function renderColumn( col, colIdx, rowIdx ) {
                 var $col = $(
                         '<div class="godevs-hf-builder-col" data-col="' + colIdx + '" data-row="' + rowIdx + '">' +
@@ -358,7 +358,7 @@
                 return $col;
         }
 
-        /* ─── Render an element ─── */
+        /* --- Render an element --- */
         function renderElement( element, elIdx, colIdx, rowIdx ) {
                 var elDef = elementsList[ element.type ] || {};
                 var label = elDef.label || element.type;
@@ -394,7 +394,7 @@
                 return $el;
         }
 
-        /* ─── Add element to a column ─── */
+        /* --- Add element to a column --- */
         function addElement( rowIdx, colIdx, elementType ) {
                 var elDef = elementsList[ elementType ] || {};
                 var newElement = {
@@ -424,7 +424,7 @@
                 addElement( rowIdx, colIdx, elementType );
         }
 
-        /* ─── Selection + Settings Panel ─── */
+        /* --- Selection + Settings Panel --- */
         function selectRow( rowIdx ) {
                 $( '.godevs-hf-builder-row, .godevs-hf-builder-col, .godevs-hf-builder-element' ).removeClass( 'is-selected' );
                 $( '.godevs-hf-builder-row' ).eq( rowIdx ).addClass( 'is-selected' );
@@ -490,7 +490,7 @@
 
                 $panel.find( '.godevs-hf-col-width' ).on( 'input', debounce( function () { col.width = $( this ).val(); renderCanvas(); }, 250 ) );
 
-                // Wire up responsive visibility checkboxes — these toggle whether
+                // Wire up responsive visibility checkboxes - these toggle whether
                 // the column is shown at each device breakpoint.
                 $panel.find( '.vis-desktop' ).on( 'change', function () {
                         col.visible_desktop = $( this ).is( ':checked' );
@@ -519,7 +519,7 @@
                 }
                 var settingsHTML = '<div class="godevs-hf-settings-group"><p class="godevs-hf-settings-group-title">' + ( elDef.label || element.type ) + ' Settings</p>';
 
-                // Generate fields based on element type — with field-type awareness.
+                // Generate fields based on element type - with field-type awareness.
                 var fields = Object.keys( elDef.defaults || {} );
                 fields.forEach( function ( field ) {
                         var val = s[ field ] !== undefined ? s[ field ] : ( elDef.defaults[ field ] || '' );
@@ -577,7 +577,7 @@
                 $panel.show();
                 $panel.find( '#godevs-hf-element-settings' ).html( settingsHTML );
 
-                // Wire up live updates — debounced + re-render canvas so changes
+                // Wire up live updates - debounced + re-render canvas so changes
                 // propagate visually.
                 $panel.find( 'input[data-field], textarea[data-field], select[data-field]' ).on( 'input change', debounce( function () {
                         s[ $( this ).data( 'field' ) ] = $( this ).val();
@@ -617,7 +617,7 @@
         }
 
         /**
-         * Simple debounce utility — delays the execution of a function until
+         * Simple debounce utility - delays the execution of a function until
          * after `wait` ms have elapsed since the last call. Prevents rapid-fire
          * canvas re-renders while the user types.
          */
@@ -633,7 +633,7 @@
         }
 
         /**
-         * Live preview — fetches the rendered HTML from the server via AJAX
+         * Live preview - fetches the rendered HTML from the server via AJAX
          * and injects it into the preview container. This gives the user a
          * real-time visual preview of the header/footer as they edit.
          *
@@ -665,7 +665,7 @@
                         }
                 } ).fail( function () {
                         $preview.removeClass( 'is-loading' );
-                        // Silent fail — the wireframe is still shown above.
+                        // Silent fail - the wireframe is still shown above.
                 } );
         }, 500 );
 
@@ -673,7 +673,7 @@
                 _previewDebounced();
         }
 
-        /* ─── Save layout ─── */
+        /* --- Save layout --- */
         function saveCurrentLayout() {
                 if ( ! currentLayout ) {
                         alert( 'No layout to save. Load a template first.' );
@@ -704,7 +704,7 @@
                 } );
         }
 
-        /* ─── Activate layout ─── */
+        /* --- Activate layout --- */
         function activateLayout( slug ) {
                 $.post( api.ajaxUrl, {
                         action: 'godevs_hf_set_active',
@@ -719,7 +719,7 @@
                 } );
         }
 
-        /* ─── Delete layout ─── */
+        /* --- Delete layout --- */
         function deleteLayout( slug ) {
                 if ( ! confirm( 'Delete this layout? This cannot be undone.' ) ) return;
 
@@ -736,7 +736,7 @@
                 } );
         }
 
-        /* ─── Status indicator ─── */
+        /* --- Status indicator --- */
         function showIndicator( message, isError ) {
                 var $indicator = $( '#godevs-save-indicator' );
                 $indicator.text( message )

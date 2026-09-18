@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: About — Profile and Stats
- * Description: A vertically centered about — round portrait, mixed-serif headline, one-line bio, and a hairline-ruled stat row with mono ghost numerals. Distinct from Image and Stats in its centered composition.
+ * Title: About - Profile and Stats
+ * Description: A vertically centered about - round portrait, mixed-serif headline, one-line bio, and a hairline-ruled stat row with mono ghost numerals. Distinct from Image and Stats in its centered composition.
  * Slug: godevs-portfolio/about-profile-stats
  * Categories: godevs-portfolio-about
  * Keywords: about, profile, bio, stats, centered
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
-		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Identity, editorial, and front-end engineering. Each project is an opportunity to make the next one better — clearer typography, more considered spacing, faster load, deeper accessibility.</p>
+		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Identity, editorial, and front-end engineering. Each project is an opportunity to make the next one better - clearer typography, more considered spacing, faster load, deeper accessibility.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"className":"godevs-reveal-stagger"} -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Services — Featured
+ * Title: Services - Featured
  * Slug: godevs-portfolio/services-featured
- * Description: A hierarchical 60/40 split — one primary service in a hairline-bordered panel with ghost numeral and solid CTA, beside two stacked secondary services. Distinct in its featured-led emphasis.
+ * Description: A hierarchical 60/40 split - one primary service in a hairline-bordered panel with ghost numeral and solid CTA, beside two stacked secondary services. Distinct in its featured-led emphasis.
  * Categories: godevs-portfolio-services
  * Keywords: services, featured, primary, hierarchical, emphasis
  * Viewport Width: 1280
@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">The full studio engagement</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Strategy, identity, design, and build in one accountable engagement — a weekly cadence, a single budget, and a site your team can edit without calling us. Most engagements run eight to twelve weeks.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Strategy, identity, design, and build in one accountable engagement - a weekly cadence, a single budget, and a site your team can edit without calling us. Most engagements run eight to twelve weeks.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
 				<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">

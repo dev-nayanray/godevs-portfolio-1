@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Journal (Writing)
+ * Title: Demo - Journal (Writing)
  * Slug: godevs-portfolio/demo-journal
- * Description: JOURNAL — Premium Writer / Author / Editorial Portfolio. Warm paper, deep ink, muted burgundy, Newsreader serif. Literary, editorial, reading-focused. Recommended style variation: Journal.
+ * Description: JOURNAL: Premium Writer / Author / Editorial Portfolio. Warm paper, deep ink, muted burgundy, Newsreader serif. Literary, editorial, reading-focused. Recommended style variation: Journal.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, journal, writer, author, editorial, blog, publication
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-journal","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO ═══ -->
+        <!-- === 01 - HERO === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — FEATURED STORY ═══ -->
+        <!-- === 02 - FEATURED STORY === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"55%"} -->
                                 <div class="wp-block-column" style="flex-basis:55%">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.webp' ); ?>" alt="Featured story — quiet minimal interior with soft light through a window, warm tones" fetchpriority="high" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-featured.webp' ); ?>" alt="Featured story - quiet minimal interior with soft light through a window, warm tones" fetchpriority="high" style="aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
@@ -102,7 +102,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4vw, 3.25rem);line-height:1.08;letter-spacing:-0.02em;font-weight:400">The Things We Notice When Everything Gets <span style="font-style:italic">Quiet</span></h2>
                                         <!-- /wp:heading -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"42ch"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;max-width:42ch">When the noise recedes, the small details — the quality of light, the texture of a surface, the rhythm of a day — become visible again. An essay on what we miss when we move too fast.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;max-width:42ch">When the noise recedes, the small details - the quality of light, the texture of a surface, the rhythm of a day - become visible again. An essay on what we miss when we move too fast.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
                                         <p style="margin-top:var(--wp--preset--spacing--30);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="/essays">Read article →</a></p>
@@ -117,7 +117,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — LATEST WRITING ═══ -->
+        <!-- === 03 - LATEST WRITING === -->
         <!-- wp:group {"tagName":"section","anchor":"latest","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section id="latest" class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -135,9 +135,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </div>
                         <!-- /wp:group -->
 
-                        <!-- Article 1 — with image, reversed -->
+                        <!-- Article 1 - with image, reversed -->
                         <!-- wp:html -->
-                        <a class="jour-article with-image is-reversed" href="#" style="margin-top: 1rem;" aria-label="Read article — The Architecture of Everyday Things">
+                        <a class="jour-article with-image is-reversed" href="#" style="margin-top: 1rem;" aria-label="Read article - The Architecture of Everyday Things">
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Essay</span><span>04.09.26</span><span>7 min</span></p>
                                         <h3 class="jour-article-title">The Architecture of Everyday Things</h3>
@@ -145,29 +145,29 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                                 <div class="jour-article-image" style="aspect-ratio: 4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.webp' ); ?>" alt="Editorial image about everyday architecture — minimal building facade with warm light" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-1.webp' ); ?>" alt="Editorial image about everyday architecture - minimal building facade with warm light" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Article 2 — with image, normal -->
+                        <!-- Article 2 - with image, normal -->
                         <!-- wp:html -->
-                        <a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — What We Mean When We Say Simple">
+                        <a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article - What We Mean When We Say Simple">
                                 <div class="jour-article-image" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.webp' ); ?>" alt="Editorial image about simplicity — single object on warm paper surface" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-2.webp' ); ?>" alt="Editorial image about simplicity - single object on warm paper surface" loading="lazy">
                                 </div>
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Notes</span><span>28.08.26</span><span>5 min</span></p>
                                         <h3 class="jour-article-title">What We Mean When We Say Simple</h3>
-                                        <p class="jour-article-excerpt">Simplicity is not the absence of things — it's the presence of the right things in the right proportion.</p>
+                                        <p class="jour-article-excerpt">Simplicity is not the absence of things - it's the presence of the right things in the right proportion.</p>
                                         <p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Article 3 — text only -->
+                        <!-- Article 3 - text only -->
                         <!-- wp:html -->
-                        <a class="jour-article" href="#" style="margin-top: 0;" aria-label="Read article — Notes From a City That Never Stops">
+                        <a class="jour-article" href="#" style="margin-top: 0;" aria-label="Read article - Notes From a City That Never Stops">
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Travel</span><span>21.08.26</span><span>9 min</span></p>
                                         <h3 class="jour-article-title">Notes From a City That Never Stops</h3>
@@ -177,9 +177,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Article 4 — with image, reversed -->
+                        <!-- Article 4 - with image, reversed -->
                         <!-- wp:html -->
-                        <a class="jour-article with-image is-reversed" href="#" style="margin-top: 0;" aria-label="Read article — The Long Way Around">
+                        <a class="jour-article with-image is-reversed" href="#" style="margin-top: 0;" aria-label="Read article - The Long Way Around">
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Essay</span><span>14.08.26</span><span>8 min</span></p>
                                         <h3 class="jour-article-title">The Long Way Around</h3>
@@ -187,16 +187,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p style="margin-top: 0.75rem;"><span class="jour-link">Read article <span class="jour-arrow" aria-hidden="true">→</span></span></p>
                                 </div>
                                 <div class="jour-article-image" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.webp' ); ?>" alt="Editorial image about slow travel — winding road through warm landscape at golden hour" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-4.webp' ); ?>" alt="Editorial image about slow travel - winding road through warm landscape at golden hour" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Article 5 — with image, normal -->
+                        <!-- Article 5 - with image, normal -->
                         <!-- wp:html -->
-                        <a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article — Designing for Attention">
+                        <a class="jour-article with-image" href="#" style="margin-top: 0;" aria-label="Read article - Designing for Attention">
                                 <div class="jour-article-image" style="aspect-ratio: 4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.webp' ); ?>" alt="Editorial image about attention and design — abstract composition of layered paper forms" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-article-5.webp' ); ?>" alt="Editorial image about attention and design - abstract composition of layered paper forms" loading="lazy">
                                 </div>
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Design</span><span>07.08.26</span><span>6 min</span></p>
@@ -207,9 +207,9 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Article 6 — text only -->
+                        <!-- Article 6 - text only -->
                         <!-- wp:html -->
-                        <a class="jour-article" href="#" style="margin-top: 0;" aria-label="Read article — On Making Things Slowly">
+                        <a class="jour-article" href="#" style="margin-top: 0;" aria-label="Read article - On Making Things Slowly">
                                 <div class="jour-article-body">
                                         <p class="jour-article-meta"><span>Notes</span><span>31.07.26</span><span>4 min</span></p>
                                         <h3 class="jour-article-title">On Making Things Slowly</h3>
@@ -229,7 +229,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — EXPLORE / CATEGORIES ═══ -->
+        <!-- === 04 - EXPLORE / CATEGORIES === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -239,7 +239,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Explore</p>
+                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Explore</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -257,7 +257,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — AUTHOR INTRODUCTION ═══ -->
+        <!-- === 05 - AUTHOR INTRODUCTION === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -274,13 +274,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
                                 <div class="wp-block-column" style="flex-basis:60%">
                                         <!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— About the Writer</p>
+                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- About the Writer</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
                                         <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.1;letter-spacing:-0.02em;font-weight:400">I write about design, culture, technology and the <span style="font-style:italic">quiet details</span> that shape how we experience everyday life.</h2>
                                         <!-- /wp:heading -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">An independent writer based between London and Dhaka. I publish this journal — a slow, considered space for thinking in public about the things that shape our attention, our work and our world.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">An independent writer based between London and Dhaka. I publish this journal - a slow, considered space for thinking in public about the things that shape our attention, our work and our world.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
                                         <p style="margin-top:var(--wp--preset--spacing--50);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="/about">More about me →</a></p>
@@ -294,7 +294,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 06 — FEATURED ESSAY ═══ -->
+        <!-- === 06 - FEATURED ESSAY === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -317,7 +317,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Large essay image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-essay.webp' ); ?>" alt="Featured essay — vast quiet landscape with a single path, warm golden light, contemplative" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-essay.webp' ); ?>" alt="Featured essay - vast quiet landscape with a single path, warm golden light, contemplative" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Essay intro -->
@@ -326,7 +326,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"66%"} -->
                                 <div class="wp-block-column" style="flex-basis:66%">
                                         <!-- wp:paragraph {"className":"jour-dropcap","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"},"color":{"text":"var:preset|color|foreground"}}} -->
-                                        <p class="jour-dropcap has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--medium);line-height:1.75">There is a particular kind of clarity that arrives only when we stop rushing toward an answer. It comes not from thinking harder, but from giving an idea room to breathe — to wander, to circle back, to find its own shape. This is an essay about taking the long way around.</p>
+                                        <p class="jour-dropcap has-text-color" style="color:var(--wp--preset--color--foreground);font-size:var(--wp--preset--font-size--medium);line-height:1.75">There is a particular kind of clarity that arrives only when we stop rushing toward an answer. It comes not from thinking harder, but from giving an idea room to breathe - to wander, to circle back, to find its own shape. This is an essay about taking the long way around.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
                                         <p style="margin-top:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="/essays">Read the full essay →</a></p>
@@ -351,7 +351,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 07 — QUOTE (full-width) ═══ -->
+        <!-- === 07 - QUOTE (full-width) === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|120","bottom":"var:preset|spacing|120","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--120);padding-bottom:var(--wp--preset--spacing--120);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -364,7 +364,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 08 — NOTES ═══ -->
+        <!-- === 08 - NOTES === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -374,7 +374,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Notes</p>
+                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Notes</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -393,7 +393,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div style="margin-top: 2rem;">
                                 <a class="jour-note" href="#">
                                         <span class="jour-note-num">01</span>
-                                        <span class="jour-note-text">On choosing fewer things — and meaning it.</span>
+                                        <span class="jour-note-text">On choosing fewer things - and meaning it.</span>
                                 </a>
                                 <a class="jour-note" href="#">
                                         <span class="jour-note-num">02</span>
@@ -419,7 +419,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 09 — PUBLICATIONS ═══ -->
+        <!-- === 09 - PUBLICATIONS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -427,7 +427,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Selected Publications</p>
+                                <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Selected Publications</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
                                 <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.05;letter-spacing:-0.02em;font-weight:400">Books &amp; <span style="font-style:italic">writing.</span></h2>
@@ -443,7 +443,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="jour-book" href="#">
                                                 <div class="jour-book-image">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.webp' ); ?>" alt="The Quiet Shape of Things — minimal hardcover book on warm paper surface" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-1.webp' ); ?>" alt="The Quiet Shape of Things - minimal hardcover book on warm paper surface" loading="lazy">
                                                 </div>
                                                 <div>
                                                         <p class="jour-book-title">The Quiet Shape of Things</p>
@@ -458,7 +458,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="jour-book" href="#">
                                                 <div class="jour-book-image">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.webp' ); ?>" alt="Ways of Looking — stack of minimal books, warm tones" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-2.webp' ); ?>" alt="Ways of Looking - stack of minimal books, warm tones" loading="lazy">
                                                 </div>
                                                 <div>
                                                         <p class="jour-book-title">Ways of Looking</p>
@@ -473,7 +473,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="jour-book" href="#">
                                                 <div class="jour-book-image">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.webp' ); ?>" alt="Small Observations — open book pages with warm light" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/journal/journal-book-3.webp' ); ?>" alt="Small Observations - open book pages with warm light" loading="lazy">
                                                 </div>
                                                 <div>
                                                         <p class="jour-book-title">Small Observations</p>
@@ -490,7 +490,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 10 — CONVERSATIONS ═══ -->
+        <!-- === 10 - CONVERSATIONS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -500,7 +500,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Conversations</p>
+                                        <p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Conversations</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -534,7 +534,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 11 — NEWSLETTER (footer handles the main subscribe, small anchor here) ═══ -->
+        <!-- === 11 - NEWSLETTER (footer handles the main subscribe, small anchor here) === -->
         <!-- wp:group {"tagName":"section","anchor":"newsletter","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section id="newsletter" class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
         </section>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Atelier (Designer) — 404
+ * Title: Demo - Atelier (Designer) - 404
  * Slug: godevs-portfolio/demo-atelier-404
- * Description: ATELIER 404 — editorial not-found page. Recommended style variation: Atelier.
+ * Description: ATELIER 404 - editorial not-found page. Recommended style variation: Atelier.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, atelier, 404, error, designer
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-atelier","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO: editorial not-found ═══ -->
+        <!-- === 01 - HERO: editorial not-found === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|120","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--120);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">— Error 404</p>
+                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">- Error 404</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
                                 <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500">Not found · /404</p>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"bottom","width":"28%"} -->
                                 <div class="wp-block-column" style="flex-basis:28%">
                                         <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem","lineHeight":"1.55"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"28ch"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem;line-height:1.55;max-width:28ch">The page you're looking for isn't here — it may have moved, or never existed. Let's get you back to the work.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem;line-height:1.55;max-width:28ch">The page you're looking for isn't here - it may have moved, or never existed. Let's get you back to the work.</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — NAVIGATION + QUIET DETAIL ═══ -->
+        <!-- === 02 - NAVIGATION + QUIET DETAIL === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|120","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--120);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">— A way back</p>
+                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">- A way back</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
                                 <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500">Status · 404 · Page not found</p>
@@ -131,7 +131,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Quiet closing line -->
                         <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.125rem","lineHeight":"1.55"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"46ch"}}} -->
-                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--60);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.125rem;line-height:1.55;max-width:46ch">Or write to the studio directly — <a href="mailto:studio@atelier.co" style="color:var(--atelier-ink);border-bottom:1px solid var(--atelier-line);padding-bottom:1px;text-decoration:none;">studio@atelier.co</a> — and we'll point you to the right place.</p>
+                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--60);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.125rem;line-height:1.55;max-width:46ch">Or write to the studio directly - <a href="mailto:studio@atelier.co" style="color:var(--atelier-ink);border-bottom:1px solid var(--atelier-line);padding-bottom:1px;text-decoration:none;">studio@atelier.co</a> - and we'll point you to the right place.</p>
                         <!-- /wp:paragraph -->
 
                 </div>

@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero — Dark Creative
- * Description: A dark inverted hero on a primary ground — oversized mixed-serif headline, outline pill CTA, and a hairline stat ledger with mono ghost numerals. For studio and developer portfolios.
+ * Title: Hero - Dark Creative
+ * Description: A dark inverted hero on a primary ground - oversized mixed-serif headline, outline pill CTA, and a hairline stat ledger with mono ghost numerals. For studio and developer portfolios.
  * Slug: godevs-portfolio/hero-dark-creative
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
  * Keywords: hero, dark, inverted, studio, creative, stats
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|contrast"},"spacing":{"margin":{"top":"var:preset|spacing|40"}},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
-		<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">A small studio practice working across identity, editorial, and product — shipped carefully, on time, without ceremony. Six engagements a year, never more.</p>
+		<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">A small studio practice working across identity, editorial, and product - shipped carefully, on time, without ceremony. Six engagements a year, never more.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"220px"}} -->
 		<div class="wp-block-group" style="width:220px">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">01 — Practice</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">01 - Practice</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);letter-spacing:-0.02em;font-weight:700">12 yrs</h3>
@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"220px"}} -->
 		<div class="wp-block-group" style="width:220px">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">02 — Shipped</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">02 - Shipped</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);letter-spacing:-0.02em;font-weight:700">80+</h3>
@@ -64,7 +64,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"220px"}} -->
 		<div class="wp-block-group" style="width:220px">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">03 — Open source</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500">03 - Open source</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);letter-spacing:-0.02em;font-weight:700">5 projects</h3>

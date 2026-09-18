@@ -1,4 +1,4 @@
-/* GoDevs Portfolio — Demo Preview Static-Render CSS
+/* GoDevs Portfolio - Demo Preview Static-Render CSS
  *
  * This CSS is injected into the iframe preview HTML to ensure WordPress
  * block markup renders correctly without the WordPress block editor's
@@ -98,7 +98,7 @@ a:hover { opacity: 0.8; }
 .godevs-project-meta { padding: 0; }
 .godevs-project-meta p { margin: 0 0 0.5rem 0; }
 
-/* Reveal — disable for screenshots */
+/* Reveal - disable for screenshots */
 .godevs-reveal { opacity: 1 !important; transform: none !important; }
 .godevs-reveal-stagger > * { opacity: 1 !important; transform: none !important; }
 

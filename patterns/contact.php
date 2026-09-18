@@ -3,7 +3,7 @@
  * Title: Contact
  * Slug: godevs-portfolio/contact
  * Categories: featured, godevs-portfolio-contact, call-to-action
- * Description: An editorial 40/60 contact split — oversized mailto headline and hairline meta rows beside a bordered inquiry card with form-style fields. Designed for a light background.
+ * Description: An editorial 40/60 contact split - oversized mailto headline and hairline meta rows beside a bordered inquiry card with form-style fields. Designed for a light background.
  * Keywords: contact, get-in-touch, hire, brief, email
  * Viewport Width: 1280
  */
@@ -44,7 +44,7 @@
 						<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Based in</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
-						<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">CET — working worldwide</p>
+						<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">CET - working worldwide</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
@@ -85,7 +85,7 @@
 					<p class="has-text-color" style="color:var(--wp--preset--color--muted);border-bottom:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--normal);line-height:1.6">Email</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.6"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"color":{"text":"var:preset|color|muted"}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);border-bottom:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--normal);line-height:1.6">Project details — scope, timeline, budget range</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);border-bottom:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--normal);line-height:1.6">Project details - scope, timeline, budget range</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -99,7 +99,7 @@
 				<!-- /wp:buttons -->
 
 				<!-- wp:paragraph {"fontSize":"x-small","style":{"color":{"text":"var:preset|color|muted"},"typography":{"lineHeight":"1.6"}}} -->
-				<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.6">Your note goes straight to the studio inbox. No lists, no tracking — read once, answered by a person.</p>
+				<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.6">Your note goes straight to the studio inbox. No lists, no tracking - read once, answered by a person.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

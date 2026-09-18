@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — Scroll Reveal + Header Scroll-State
+ * GoDevs Portfolio - Scroll Reveal + Header Scroll-State
  *
  * Vanilla JS, IntersectionObserver-based. No dependencies.
  * Respects prefers-reduced-motion: reduce (elements start visible).
@@ -10,7 +10,7 @@
 	// Check reduced motion preference
 	var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-	// ── Scroll Reveal ──────────────────────────────────────
+	// -- Scroll Reveal --------------------------------------
 	if (!prefersReducedMotion && 'IntersectionObserver' in window) {
 		var revealElements = document.querySelectorAll('.godevs-reveal');
 
@@ -35,13 +35,13 @@
 			});
 		}
 	} else {
-		// Reduced motion or no IntersectionObserver — make everything visible
+		// Reduced motion or no IntersectionObserver - make everything visible
 		document.querySelectorAll('.godevs-reveal').forEach(function (el) {
 			el.classList.add('is-visible');
 		});
 	}
 
-	// ── Header Scroll-State ────────────────────────────────
+	// -- Header Scroll-State --------------------------------
 	var headers = document.querySelectorAll('.site-header');
 	if (headers.length > 0 && !prefersReducedMotion) {
 		var scrollThreshold = 20;
@@ -73,7 +73,7 @@
 		updateHeaderScroll();
 	}
 
-	// ── Expand-on-Click Search ────────────────────────────
+	// -- Expand-on-Click Search ----------------------------
 	var searchToggles = document.querySelectorAll('.godevs-search-toggle');
 	searchToggles.forEach(function (toggle) {
 		toggle.addEventListener('click', function (e) {

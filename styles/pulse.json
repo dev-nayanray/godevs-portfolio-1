@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Pulse",
-	"description": "PULSE — UX / Product Designer. Cool neutral system, Inter sans paired with mono annotations, teal accent, 6px radii, systematic product-grade aesthetic. For product designers, UX designers and case-study-driven portfolios.",
+	"description": "PULSE: UX / Product Designer. Cool neutral system, Inter sans paired with mono annotations, teal accent, 6px radii, systematic product-grade aesthetic. For product designers, UX designers and case-study-driven portfolios.",
 	"settings": {
 		"color": {
 			"palette": [

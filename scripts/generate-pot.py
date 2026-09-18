@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GoDevs Portfolio — POT file generator.
+GoDevs Portfolio - POT file generator.
 
 Scans the theme's PHP source for WordPress internationalization function
 calls and writes / regenerates `languages/godevs-portfolio.pot`.
@@ -31,8 +31,8 @@ string literals is collapsed so that split strings still extract cleanly.
 
 Exit codes
 ----------
-0 — .pot regenerated successfully.
-1 — I/O error or malformed input.
+0 - .pot regenerated successfully.
+1 - I/O error or malformed input.
 
 License: GPL-2.0-or-later
 """
@@ -65,26 +65,26 @@ EXCLUDE_DIRS = {
 }
 
 # Only .php files are scanned. Block markup (.html templates/parts) and
-# pattern content is intentionally excluded — WordPress.org treats pattern
+# pattern content is intentionally excluded - WordPress.org treats pattern
 # markup as content, not code, and does not require it to be gettext-wrapped.
 INCLUDE_EXTENSIONS = (".php",)
 
 # i18n functions and how many leading string arguments they carry.
-# (function_name, arg_count) — arg_count is the number of leading
+# (function_name, arg_count) - arg_count is the number of leading
 # string-literal arguments to capture from the call.
 SINGLE_ARG_FUNCS = {
     "__", "_e", "esc_html__", "esc_html_e", "esc_attr__", "esc_attr_e",
 }
-CONTEXT_FUNCS = {  # (msgid, context) — context is the SECOND arg.
+CONTEXT_FUNCS = {  # (msgid, context) - context is the SECOND arg.
     "_x", "_ex", "esc_html_x", "esc_attr_x",
 }
-PLURAL_FUNCS = {  # (singular, plural) — plural is the SECOND arg.
+PLURAL_FUNCS = {  # (singular, plural) - plural is the SECOND arg.
     "_n",
 }
 PLURAL_CONTEXT_FUNCS = {  # (singular, plural, context)
     "_nx",
 }
-NOOP_FUNCS = {  # (singular, plural) — like _n but no translation at call time.
+NOOP_FUNCS = {  # (singular, plural) - like _n but no translation at call time.
     "_n_noop", "_nx_noop",
 }
 
@@ -133,7 +133,7 @@ def decode_php_string(raw: str, quote: str) -> str:
             elif nxt in mapping:
                 out.append(mapping[nxt])
             else:
-                # Unknown escape — keep the backslash + char verbatim.
+                # Unknown escape - keep the backslash + char verbatim.
                 out.append("\\" + nxt)
             i += 2
         else:
@@ -301,7 +301,7 @@ def write_pot(catalogue: Dict, out_path: str, root: str) -> int:
     lines.append('"Language: \\n"')
     lines.append('"Plural-Forms: nplurals=2; plural=(n != 1);\\n"')
     lines.append("")
-    lines.append("#: (auto-generated — do not edit by hand)")
+    lines.append("#: (auto-generated - do not edit by hand)")
     lines.append("")
 
     # Deterministic ordering: by msgid text, then context.

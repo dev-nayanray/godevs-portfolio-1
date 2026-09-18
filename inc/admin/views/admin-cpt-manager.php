@@ -3,7 +3,7 @@
  * CPT Management admin page view.
  *
  * @package GoDevs_Portfolio
- * @since   2.6.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -43,7 +43,7 @@ $total_pages  = $posts_query->max_num_pages;
 ?>
 
 <div class="wrap godevs-cpt-manager-wrap">
-        <!-- ═══ HEADER ═══ -->
+        <!-- === HEADER === -->
         <header class="godevs-cpt-header">
                 <div class="godevs-cpt-header-inner">
                         <div class="godevs-cpt-header-text">
@@ -58,7 +58,7 @@ $total_pages  = $posts_query->max_num_pages;
                 </div>
         </header>
 
-        <!-- ═══ DASHBOARD CARDS ═══ -->
+        <!-- === DASHBOARD CARDS === -->
         <div class="godevs-cpt-dashboard">
                 <?php foreach ( $cpts as $slug => $info ) :
                         $count   = godevs_cpt_admin_get_count( $slug );
@@ -93,7 +93,7 @@ $total_pages  = $posts_query->max_num_pages;
                 <?php endforeach; ?>
         </div>
 
-        <!-- ═══ LIST VIEW ═══ -->
+        <!-- === LIST VIEW === -->
         <section class="godevs-cpt-list-section">
                 <header class="godevs-cpt-list-header">
                         <h2 class="godevs-cpt-list-title">
@@ -164,12 +164,12 @@ $total_pages  = $posts_query->max_num_pages;
                                                 <td class="godevs-cpt-col-title">
                                                         <div class="godevs-cpt-title-cell">
                                                                 <?php if ( $has_thumb ) : ?>
-                                                                        <div class="godevs-cpt-thumb"><?php echo get_the_post_thumbnail( $post->ID, array( 40, 40 ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — core function returns safe HTML. ?></div>
+                                                                        <div class="godevs-cpt-thumb"><?php echo get_the_post_thumbnail( $post->ID, array( 40, 40 ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - core function returns safe HTML. ?></div>
                                                                 <?php else : ?>
                                                                         <div class="godevs-cpt-thumb godevs-cpt-thumb-placeholder"><span class="dashicons <?php echo esc_attr( $cpt_info['icon'] ?? 'dashicons-admin-post' ); ?>"></span></div>
                                                                 <?php endif; ?>
                                                                 <div class="godevs-cpt-title-info">
-                                                                        <strong><a href="<?php echo esc_url( $edit_url ); ?>"><?php echo esc_html( get_the_title( $post->ID ) ?: sprintf( __( '(no title) — ID #%d', 'godevs-portfolio' ), $post->ID ) ); ?></a></strong>
+                                                                        <strong><a href="<?php echo esc_url( $edit_url ); ?>"><?php echo esc_html( get_the_title( $post->ID ) ?: sprintf( __( '(no title) - ID #%d', 'godevs-portfolio' ), $post->ID ) ); ?></a></strong>
                                                                         <?php
                                                                         // Show meta summary (first 2 meta fields).
                                                                         $meta_keys = godevs_cpt_admin_get_meta_keys( $current );
@@ -219,7 +219,7 @@ $total_pages  = $posts_query->max_num_pages;
                         <?php if ( $total_pages > 1 ) : ?>
                         <div class="godevs-cpt-pagination tablenav-pages">
                                 <?php
-                                echo paginate_links( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — core function returns safe HTML.
+                                echo paginate_links( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - core function returns safe HTML.
                                         array(
                                                 'base'      => add_query_arg( array( 'paged' => '%#%' ) ),
                                                 'format'    => '',

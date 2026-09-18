@@ -4,9 +4,9 @@
  *
  * Registers:
  *   - godevs_case_study  (Case Study CPT)
- *   - godevs_case_study_type (taxonomy — hierarchical)
- *   - godevs_case_study_industry (taxonomy — hierarchical)
- *   - godevs_case_study_technology (taxonomy — flat)
+ *   - godevs_case_study_type (taxonomy - hierarchical)
+ *   - godevs_case_study_industry (taxonomy - hierarchical)
+ *   - godevs_case_study_technology (taxonomy - flat)
  *
  * Meta fields with a professional admin meta-box UI grouped into:
  *   - Project Information
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ── CPT Registration ──────────────────────────────────────────
+// -- CPT Registration ------------------------------------------
 
 /**
  * Register the Case Study CPT.
@@ -65,7 +65,7 @@ function godevs_portfolio_register_case_study_cpt(): void {
 }
 add_action( 'init', 'godevs_portfolio_register_case_study_cpt' );
 
-// ── Taxonomies ────────────────────────────────────────────────
+// -- Taxonomies ------------------------------------------------
 
 /**
  * Register Case Study taxonomies.
@@ -77,7 +77,7 @@ function godevs_portfolio_register_case_study_taxonomies(): void {
                 return;
         }
 
-        // Case Study Type (hierarchical — e.g., Web Design, Branding, Development)
+        // Case Study Type (hierarchical - e.g., Web Design, Branding, Development)
         register_taxonomy(
                 'godevs_case_study_type',
                 'godevs_case_study',
@@ -98,7 +98,7 @@ function godevs_portfolio_register_case_study_taxonomies(): void {
                 )
         );
 
-        // Industry (hierarchical — e.g., Technology, Healthcare, Finance)
+        // Industry (hierarchical - e.g., Technology, Healthcare, Finance)
         register_taxonomy(
                 'godevs_case_study_industry',
                 'godevs_case_study',
@@ -119,7 +119,7 @@ function godevs_portfolio_register_case_study_taxonomies(): void {
                 )
         );
 
-        // Technology (flat — e.g., React, WordPress, Figma)
+        // Technology (flat - e.g., React, WordPress, Figma)
         register_taxonomy(
                 'godevs_case_study_technology',
                 'godevs_case_study',
@@ -142,7 +142,7 @@ function godevs_portfolio_register_case_study_taxonomies(): void {
 }
 add_action( 'init', 'godevs_portfolio_register_case_study_taxonomies' );
 
-// ── Meta Fields ──────────────────────────────────────────────
+// -- Meta Fields ----------------------------------------------
 
 /**
  * Register Case Study meta fields.
@@ -199,7 +199,7 @@ function godevs_portfolio_register_case_study_meta(): void {
 }
 add_action( 'init', 'godevs_portfolio_register_case_study_meta' );
 
-// ── Meta Box UI ──────────────────────────────────────────────
+// -- Meta Box UI ----------------------------------------------
 
 /**
  * Add meta boxes for Case Study.
@@ -370,7 +370,7 @@ function godevs_portfolio_cs_links_cb( WP_Post $post ): void {
  * @return void
  */
 function godevs_portfolio_save_case_study_meta( int $post_id ): void {
-        // Bail on AJAX (Quick Edit) and Cron — these don't send form data.
+        // Bail on AJAX (Quick Edit) and Cron - these don't send form data.
         if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
                 return;
         }

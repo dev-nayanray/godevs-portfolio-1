@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero — Split Profile
- * Description: A 55/45 split hero — mixed-serif display headline, pill meta chips, and dual CTAs beside a 3:4 portrait with an overlapping accent status card. For personal portfolio introductions.
+ * Title: Hero - Split Profile
+ * Description: A 55/45 split hero - mixed-serif display headline, pill meta chips, and dual CTAs beside a 3:4 portrait with an overlapping accent status card. For personal portfolio introductions.
  * Slug: godevs-portfolio/hero-split-profile
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
  * Keywords: hero, split, profile, intro, about
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">I'm a designer-developer working where editorial design, accessibility, and modern WordPress engineering meet. This is a selection of recent work — six engagements a year, each one built to be handed over.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">I'm a designer-developer working where editorial design, accessibility, and modern WordPress engineering meet. This is a selection of recent work - six engagements a year, each one built to be handed over.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->

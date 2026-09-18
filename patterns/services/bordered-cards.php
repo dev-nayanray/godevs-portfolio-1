@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Services — Bordered Cards
+ * Title: Services - Bordered Cards
  * Slug: godevs-portfolio/services-bordered-cards
- * Description: A three-column grid of strictly hairline-bordered cards — mono ghost numerals, display titles, pill meta chips, and an accent arrow link. No shadows, all structure.
+ * Description: A three-column grid of strictly hairline-bordered cards - mono ghost numerals, display titles, pill meta chips, and an accent arrow link. No shadows, all structure.
  * Categories: godevs-portfolio-services
  * Keywords: services, bordered, cards, hairline, grid
  * Viewport Width: 1280
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Brand identity</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Logotype, palette, and type rules — distilled into tokens your site inherits on day one.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Logotype, palette, and type rules - distilled into tokens your site inherits on day one.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|accent"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600;letter-spacing:0.02em"><a href="/services/brand-identity">Explore →</a></p>
@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Web design</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Editorial layouts composed in the block editor — real patterns, reviewed in the browser, not in mockups.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Editorial layouts composed in the block editor - real patterns, reviewed in the browser, not in mockups.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|accent"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600;letter-spacing:0.02em"><a href="/services/web-design">Explore →</a></p>
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Development</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Block themes and custom patterns with sub-second budgets — handed over with documentation your team follows.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Block themes and custom patterns with sub-second budgets - handed over with documentation your team follows.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|accent"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600;letter-spacing:0.02em"><a href="/services/development">Explore →</a></p>

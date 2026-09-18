@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Contact — Split
+ * Title: Contact - Split
  * Slug: godevs-portfolio/contact-split
- * Description: An editorial 40/60 contact split — display headline, oversized mailto, and hairline meta rows beside a bordered inquiry card with form-style underlined fields. Distinct in its two-column pairing of information with action.
+ * Description: An editorial 40/60 contact split - display headline, oversized mailto, and hairline meta rows beside a bordered inquiry card with form-style underlined fields. Distinct in its two-column pairing of information with action.
  * Categories: godevs-portfolio-contact
  * Keywords: contact, split, two-column, details, form-area
  * Viewport Width: 1280
@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">CET — working worldwide</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">CET - working worldwide</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.6"},"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"color":{"text":"var:preset|color|muted"}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--normal);line-height:1.6">Project details — scope, timeline, budget range</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--normal);line-height:1.6">Project details - scope, timeline, budget range</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -92,7 +92,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontFamily":"var:preset|font-family|mono","letterSpacing":"0.06em"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);letter-spacing:0.06em">Your note goes straight to the studio inbox. No lists, no tracking — read once, answered by a person.</p>
+<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);letter-spacing:0.06em">Your note goes straight to the studio inbox. No lists, no tracking - read once, answered by a person.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

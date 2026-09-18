@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Architect",
-	"description": "ARCHITECT — Architecture & Interior Design Studio. Warm concrete base, charcoal ink, muted bronze accent, Inter at medium weights with strong uppercase metadata. Calm, precise, material-focused, editorial. For architecture studios and interior designers.",
+	"description": "ARCHITECT: Architecture & Interior Design Studio. Warm concrete base, charcoal ink, muted bronze accent, Inter at medium weights with strong uppercase metadata. Calm, precise, material-focused, editorial. For architecture studios and interior designers.",
 	"settings": {
 		"color": {
 			"palette": [

@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Creative",
-	"description": "A creative, expressive aesthetic — warm amber accent on cream, generous radii, soft shadows, asymmetric compositions. For designers and illustrators.",
+	"description": "A creative, expressive aesthetic - warm amber accent on cream, generous radii, soft shadows, asymmetric compositions. For designers and illustrators.",
 	"settings": {
 		"color": {
 			"palette": [

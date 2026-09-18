@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Hero — Minimal
- * Description: An ultra-restrained gallery-like hero — eyebrow, large display headline mixing regular and serif-italic type, a one-line intro, a quiet arrow CTA, and a bottom hairline with mono meta. No image; whitespace does the talking.
+ * Title: Hero - Minimal
+ * Description: An ultra-restrained gallery-like hero - eyebrow, large display headline mixing regular and serif-italic type, a one-line intro, a quiet arrow CTA, and a bottom hairline with mono meta. No image; whitespace does the talking.
  * Slug: godevs-portfolio/hero-minimal
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
  * Keywords: hero, minimal, restrained, gallery, sparse
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"560px"}}} -->
-		<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;max-width:560px">Twelve years of identity, editorial, and interface work — kept short on purpose.</p>
+		<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;max-width:560px">Twelve years of identity, editorial, and interface work - kept short on purpose.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.08em","fontWeight":"500"}}} -->
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40)">
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var(--wp--preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Portfolio — 2026 ed.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em;text-transform:uppercase;font-weight:500">Portfolio - 2026 ed.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->

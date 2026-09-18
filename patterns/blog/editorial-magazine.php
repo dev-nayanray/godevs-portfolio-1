@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Blog — Editorial Magazine
+ * Title: Blog - Editorial Magazine
  * Slug: godevs-portfolio/blog-editorial-magazine
- * Description: A publication-style journal front — a lead story with pill meta chips, a two-up secondary tier, and a hairline index of recent posts with mono ghost numerals. Distinct in its multi-tier magazine composition.
+ * Description: A publication-style journal front - a lead story with pill meta chips, a two-up secondary tier, and a hairline index of recent posts with mono ghost numerals. Distinct in its multi-tier magazine composition.
  * Categories: godevs-portfolio-blog
  * Keywords: blog, magazine, editorial, multi-tier, featured, publication
  * Viewport Width: 1280

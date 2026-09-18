@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Portfolio",
-	"description": "A dedicated portfolio aesthetic — deep navy, refined spacing, elegant buttons. For professional portfolios and personal brands.",
+	"description": "A dedicated portfolio aesthetic - deep navy, refined spacing, elegant buttons. For professional portfolios and personal brands.",
 	"settings": {
 		"color": {
 			"palette": [

@@ -1,6 +1,6 @@
 <?php
 /**
- * Dead-End Settings Fixes — wires the 12 previously orphan settings to real
+ * Dead-End Settings Fixes - wires the 12 previously orphan settings to real
  * frontend consumers.
  *
  * Each function below consumes one setting that previously saved but had
@@ -9,18 +9,18 @@
  * was dead).
  *
  * Settings covered:
- *   1.  brand_tagline      — inject into core/site-tagline block
- *   2.  type_scale         — generate --wp--custom--type-scale CSS var
- *   3.  global_spacing     — generate --wp--custom--spacing-scale CSS var
- *   4.  header_sticky      — toggle .site-header sticky class
- *   5.  header_cta_text    — inject CTA button into header (when set)
- *   6.  header_cta_link    — paired with header_cta_text
- *   7.  footer_copyright   — toggle copyright text in core/site-footer area
- *   8.  footer_social      — toggle social icons in footer
- *   9.  footer_cta         — toggle CTA strip in footer
- *  10.  services_show_cta  — toggle CTA block on services archive
- *  11.  motion_enabled     — conditionally enqueue reveal.js + transitions
- *  12.  reduced_motion      — force-disable all animations regardless of OS pref
+ *   1.  brand_tagline      - inject into core/site-tagline block
+ *   2.  type_scale         - generate --wp--custom--type-scale CSS var
+ *   3.  global_spacing     - generate --wp--custom--spacing-scale CSS var
+ *   4.  header_sticky      - toggle .site-header sticky class
+ *   5.  header_cta_text    - inject CTA button into header (when set)
+ *   6.  header_cta_link    - paired with header_cta_text
+ *   7.  footer_copyright   - toggle copyright text in core/site-footer area
+ *   8.  footer_social      - toggle social icons in footer
+ *   9.  footer_cta         - toggle CTA strip in footer
+ *  10.  services_show_cta  - toggle CTA block on services archive
+ *  11.  motion_enabled     - conditionally enqueue reveal.js + transitions
+ *  12.  reduced_motion      - force-disable all animations regardless of OS pref
  *
  * @package GoDevs_Portfolio
  * @since   1.0.0
@@ -30,9 +30,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// 1. BRAND TAGLINE — override core/site-tagline block output
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 1. BRAND TAGLINE - override core/site-tagline block output
+// ============================================================================
 
 /**
  * Inject the custom brand_tagline into the core/site-tagline block.
@@ -70,9 +70,9 @@ function godevs_deadend_brand_tagline( string $block_content, array $block ): st
 }
 add_filter( 'render_block', 'godevs_deadend_brand_tagline', 10, 2 );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 2 & 3. TYPE_SCALE + GLOBAL_SPACING — emit CSS custom properties
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 2 & 3. TYPE_SCALE + GLOBAL_SPACING - emit CSS custom properties
+// ============================================================================
 
 /**
  * Append type-scale + global-spacing CSS variables to the dynamic CSS.
@@ -96,11 +96,11 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
         // Type scale factor.
         $scale = godevs_portfolio_get_setting( 'type_scale' );
         $scale_map = array(
-                'fluid'       => '1.0',  // No-op — fluid is handled by theme.json clamp().
+                'fluid'       => '1.0',  // No-op - fluid is handled by theme.json clamp().
                 'compact'     => '0.92',
                 'comfortable' => '1.0',
                 'large'       => '1.12',
-                'fixed'       => '1.0',  // Fixed (rem) — handled below via separate rule.
+                'fixed'       => '1.0',  // Fixed (rem) - handled below via separate rule.
         );
         $scale_factor = $scale_map[ $scale ] ?? '1.0';
 
@@ -114,7 +114,7 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
         );
         $spacing_factor = $spacing_map[ $spacing ] ?? '1.0';
 
-        // Only emit CSS if either setting deviates from default — keeps the
+        // Only emit CSS if either setting deviates from default - keeps the
         // generated CSS minimal when defaults are used.
         if ( '1.0' === $scale_factor && '1.0' === $spacing_factor && 'fixed' !== $scale ) {
                 return $css;
@@ -136,7 +136,7 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
         }
 
         // 'fixed' type-scale: pin headings to absolute rem values instead of
-        // theme.json's fluid clamp() — the user explicitly asked for "Fixed (rem)".
+        // theme.json's fluid clamp() - the user explicitly asked for "Fixed (rem)".
         if ( 'fixed' === $scale ) {
                 $css .= "h1{font-size:2.5rem;}";
                 $css .= "h2{font-size:2rem;}";
@@ -161,9 +161,9 @@ function godevs_deadend_type_and_spacing_css( string $css ): string {
 }
 add_filter( 'godevs_portfolio_dynamic_css', 'godevs_deadend_type_and_spacing_css' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 4. HEADER STICKY — toggle sticky class on .site-header
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 4. HEADER STICKY - toggle sticky class on .site-header
+// ============================================================================
 
 /**
  * Emit body class `godevs-header-sticky-off` when header_sticky is disabled.
@@ -183,9 +183,9 @@ function godevs_deadend_header_sticky_body_class( array $classes ): array {
 }
 add_filter( 'body_class', 'godevs_deadend_header_sticky_body_class' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 5 & 6. HEADER CTA TEXT + LINK — inject a CTA button into the header
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 5 & 6. HEADER CTA TEXT + LINK - inject a CTA button into the header
+// ============================================================================
 
 /**
  * Inject a CTA button into core/site-title (the header brand block) area.
@@ -225,9 +225,9 @@ function godevs_deadend_header_cta_inject( string $block_content, array $block )
 }
 add_filter( 'render_block', 'godevs_deadend_header_cta_inject', 15, 2 );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // 7, 8 & 9. FOOTER COPYRIGHT / SOCIAL / CTA toggles
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Toggle visibility of footer elements based on settings.
@@ -277,9 +277,9 @@ function godevs_deadend_footer_toggles( string $block_content, array $block ): s
 }
 add_filter( 'render_block', 'godevs_deadend_footer_toggles', 12, 2 );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 10. SERVICES SHOW CTA — toggle CTA on services archive
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 10. SERVICES SHOW CTA - toggle CTA on services archive
+// ============================================================================
 
 /**
  * Add body class for services archive CTA visibility.
@@ -298,9 +298,9 @@ function godevs_deadend_services_cta_body_class( array $classes ): array {
 }
 add_filter( 'body_class', 'godevs_deadend_services_cta_body_class' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 11. MOTION_ENABLED — conditionally enqueue reveal.js + transitions
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 11. MOTION_ENABLED - conditionally enqueue reveal.js + transitions
+// ============================================================================
 
 // Hook into wp_enqueue_scripts late so we can dequeue what was queued earlier.
 add_action( 'wp_enqueue_scripts', function () {
@@ -323,16 +323,16 @@ function godevs_deadend_motion_body_class( array $classes ): array {
 }
 add_filter( 'body_class', 'godevs_deadend_motion_body_class' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 12. REDUCED_MOTION — force-disable animations regardless of OS preference
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 12. REDUCED_MOTION - force-disable animations regardless of OS preference
+// ============================================================================
 
 /**
  * When reduced_motion setting is '1', force the body class
  * 'godevs-force-reduced-motion' that overrides prefers-reduced-motion.
  *
  * This lets the admin force-disable animations even for users who haven't
- * set the OS preference — useful for accessibility compliance.
+ * set the OS preference - useful for accessibility compliance.
  *
  * @param array $classes Body classes.
  * @return array Modified.

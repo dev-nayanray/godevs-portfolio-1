@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Blog — Three Column Grid
+ * Title: Blog - Three Column Grid
  * Slug: godevs-portfolio/blog-three-column-grid
- * Description: An equal-weight three-column journal grid — cover images, mono date micro-labels, display titles, and accent read-more links, with staggered reveals and an outline archive button. Distinct in its grid-without-lead composition.
+ * Description: An equal-weight three-column journal grid - cover images, mono date micro-labels, display titles, and accent read-more links, with staggered reveals and an outline archive button. Distinct in its grid-without-lead composition.
  * Categories: godevs-portfolio-blog
  * Keywords: blog, three-column, grid, posts, equal-weight
  * Viewport Width: 1280

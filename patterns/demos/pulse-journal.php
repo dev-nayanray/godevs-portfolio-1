@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Pulse (Designer) — Journal
+ * Title: Demo - Pulse (Designer) - Journal
  * Slug: godevs-portfolio/demo-pulse-journal
- * Description: PULSE insights archive — editorial article index with categories. Recommended style variation: Pulse.
+ * Description: PULSE insights archive - editorial article index with categories. Recommended style variation: Pulse.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, pulse, journal, insights, ux
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-pulse","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — ARCHIVE HEADER ═══ -->
+	<!-- === 01 - ARCHIVE HEADER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -25,10 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— Insights</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- Insights</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">12 articles · 2025 — 2026</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">12 articles · 2025 - 2026</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Supporting copy -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40);max-width:60ch">Short essays from the practice — research methods, system design, and the small decisions that change how a product feels. Updated when I have something worth saying.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40);max-width:60ch">Short essays from the practice - research methods, system design, and the small decisions that change how a product feels. Updated when I have something worth saying.</p>
 			<!-- /wp:paragraph -->
 
 		</div>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CATEGORY FILTER ═══ -->
+	<!-- === 02 - CATEGORY FILTER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FEATURED ARTICLE ═══ -->
+	<!-- === 03 - FEATURED ARTICLE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Featured image 16/9 -->
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-journal-1.webp' ); ?>" alt="Featured journal visual — abstract editorial layout of grids, charts and typography fragments on a cool neutral field" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-journal-1.webp' ); ?>" alt="Featured journal visual - abstract editorial layout of grids, charts and typography fragments on a cool neutral field" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + excerpt row -->
@@ -92,11 +92,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 5vw, 4rem);line-height:1.0;letter-spacing:-0.03em;font-weight:600"><a href="#" style="color:inherit;text-decoration:none;">Designing systems people can extend.</a></h2>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--30);max-width:62ch">A design system isn't the components — it's the contribution model around them. Notes from building three systems in three different teams, and the small rules that decided whether they lived or quietly died.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--30);max-width:62ch">A design system isn't the components - it's the contribution model around them. Notes from building three systems in three different teams, and the small rules that decided whether they lived or quietly died.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:html -->
 				<div style="margin-top:1.5rem;">
-					<a class="pulse-link" href="#" aria-label="Read the featured article — Designing systems people can extend">Read <span class="pulse-arrow" aria-hidden="true">→</span></a>
+					<a class="pulse-link" href="#" aria-label="Read the featured article - Designing systems people can extend">Read <span class="pulse-arrow" aria-hidden="true">→</span></a>
 				</div>
 				<!-- /wp:html -->
 			</div>
@@ -107,7 +107,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — ARTICLE LIST (editorial index) ═══ -->
+	<!-- === 04 - ARTICLE LIST (editorial index) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -117,7 +117,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|40"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— All articles</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- All articles</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.75rem, 3.5vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
 				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.75rem, 3.5vw, 2.75rem);line-height:1.1;letter-spacing:-0.02em;font-weight:600">More from the journal.</h2>
@@ -152,7 +152,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — PAGINATION ═══ -->
+	<!-- === 05 - PAGINATION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->

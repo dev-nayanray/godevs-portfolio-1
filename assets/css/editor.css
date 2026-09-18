@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — editor-only styles.
+ * GoDevs Portfolio - editor-only styles.
  *
  * These styles apply only inside the block editor and Site Editor. They
  * supplement the global styles generated from theme.json with editor-only
@@ -7,7 +7,7 @@
  * hero pattern.
  *
  * Everything that should appear on the front-end must live in theme.json or
- * in block markup — not here.
+ * in block markup - not here.
  */
 
 /* Paragraph style: muted text
@@ -16,14 +16,14 @@
 	color: var(--wp--preset--color--muted);
 }
 
-/* Paragraph style: lead — slightly larger, more spacing, useful in hero. */
+/* Paragraph style: lead - slightly larger, more spacing, useful in hero. */
 .is-style-lead {
 	font-size: var(--wp--preset--font-size--large);
 	line-height: 1.55;
 	color: var(--wp--preset--color--secondary);
 }
 
-/* Style variation for the separator block — thin hairline. */
+/* Style variation for the separator block - thin hairline. */
 .wp-block-separator.is-style-hairline {
 	border-top-width: 1px;
 	border-top-style: solid;
@@ -32,7 +32,7 @@
 	margin-bottom: var(--wp--preset--spacing--60);
 }
 
-/* Style variation for the buttons block — small radius pill. */
+/* Style variation for the buttons block - small radius pill. */
 .wp-block-button.is-style-pill .wp-block-button__link {
 	border-radius: var(--wp--custom--radius--pill);
 }
@@ -51,7 +51,7 @@
 	color: var(--wp--preset--color--background);
 }
 
-/* Style book preview — keep line lengths reasonable in the Style Book panel. */
+/* Style book preview - keep line lengths reasonable in the Style Book panel. */
 .editor-styles-wrapper .wp-block-post-title,
 .editor-styles-wrapper .wp-block-heading {
 	max-width: 22em;

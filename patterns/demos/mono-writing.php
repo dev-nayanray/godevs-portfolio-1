@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Mono (Developer) — Writing
+ * Title: Demo - Mono (Developer) - Writing
  * Slug: godevs-portfolio/demo-mono-writing
- * Description: MONO writing — technical journal archive. Recommended style variation: Mono.
+ * Description: MONO writing - technical journal archive. Recommended style variation: Mono.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, mono, writing, journal, blog
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-mono","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — ARCHIVE HEADER ═══ -->
+	<!-- === 01 - ARCHIVE HEADER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -25,10 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Writing</p>
+				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Writing</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">12 notes · 2025 — 2026</p>
+				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">12 notes · 2025 - 2026</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CATEGORY FILTER ═══ -->
+	<!-- === 02 - CATEGORY FILTER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FEATURED ARTICLE ═══ -->
+	<!-- === 03 - FEATURED ARTICLE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -84,14 +84,14 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Big 16/9 image -->
 			<!-- wp:image {"aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-writing-1.webp' ); ?>" alt="Featured article cover — abstract minimal composition of grid blocks and type, neutral palette" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-writing-1.webp' ); ?>" alt="Featured article cover - abstract minimal composition of grid blocks and type, neutral palette" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + body -->
 			<!-- wp:html -->
 			<a href="#" style="display:block;text-decoration:none;color:inherit;margin-top:1.5rem;">
 				<h2 class="mono-display" style="font-family:var(--wp--preset--font-family--display);font-weight:600;font-size:clamp(2rem, 5vw, 4rem);line-height:1.05;letter-spacing:-0.025em;margin:0 0 1.25rem 0;max-width:24ch;">Designing Better WordPress Block Themes</h2>
-				<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin:0 0 1.5rem 0;max-width:60ch;">A working set of principles for block theme architecture — patterns as compositions, theme.json as the source of truth, and how to keep a WordPress codebase from drifting into the all-too-familiar tangle of overrides and templates.</p>
+				<p style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin:0 0 1.5rem 0;max-width:60ch;">A working set of principles for block theme architecture - patterns as compositions, theme.json as the source of truth, and how to keep a WordPress codebase from drifting into the all-too-familiar tangle of overrides and templates.</p>
 				<p style="font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500;color:var(--wp--preset--color--foreground);margin:0;">Read <span aria-hidden="true">→</span></p>
 			</a>
 			<!-- /wp:html -->
@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — ARTICLE LIST ═══ -->
+	<!-- === 04 - ARTICLE LIST === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -111,7 +111,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— More notes</p>
+				<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- More notes</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"mono-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.75rem, 3.5vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
 				<h2 class="wp-block-heading mono-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.75rem, 3.5vw, 2.75rem);line-height:1.1;letter-spacing:-0.02em;font-weight:600">Recent writing.</h2>
@@ -154,13 +154,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — PAGINATION ═══ -->
+	<!-- === 05 - PAGINATION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">01 / 03 — Showing 5 of 12 notes</p>
+			<p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">01 / 03 - Showing 5 of 12 notes</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:html -->
 			<a class="mono-link" href="#"><span class="mono-chip" style="text-decoration:none;">Next →</span></a>

@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — Diagnostic Admin Notice dismissal.
+ * GoDevs Portfolio - Diagnostic Admin Notice dismissal.
  *
  * Listens for clicks on the dismiss button of the
  * `.godevs-diag-notice` admin notice and fires an AJAX request to
@@ -9,7 +9,7 @@
  * in functions.php.
  *
  * Replaces the previous inline `<script>` block that lived inside
- * `godevs_portfolio_diagnostic_notice()` (P1.16 — remove inline JS).
+ * `godevs_portfolio_diagnostic_notice()` (P1.16 - remove inline JS).
  *
  * @package GoDevs_Portfolio
  * @since   1.5.0
@@ -62,7 +62,7 @@
                         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                         body: body
                 } ).catch( function () {
-                        // Silent failure — the notice will simply reappear next
+                        // Silent failure - the notice will simply reappear next
                         // page load, which is the safe default.
                 } );
         }

@@ -1,4 +1,4 @@
-# GoDevs Portfolio — Security
+# GoDevs Portfolio - Security
 
 **Document version:** 1.5.0
 
@@ -6,7 +6,7 @@ Security is a feature. This document describes the actual security
 model of the GoDevs Portfolio theme as it ships in v1.5.0.
 
 > Note: earlier drafts of this document claimed "The theme is
-> presentation-only — it processes no user input, stores no data, and
+> presentation-only - it processes no user input, stores no data, and
 > exposes no admin UI." That was true of a much earlier prototype. It
 > is **not** true of v1.5.0. This rewrite reflects the real shipping
 > code.
@@ -17,18 +17,18 @@ model of the GoDevs Portfolio theme as it ships in v1.5.0.
 
 v1.5.0 is an application-grade block theme. It:
 
-- **Accepts user input** — the booking form (`[godevs_booking_form]`),
+- **Accepts user input** - the booking form (`[godevs_booking_form]`),
   the project-proposal form (`[godevs_proposal_form]`), the Theme
   Settings dashboard, the Header/Footer Builder, and the Demo Importer
   all accept and process user input.
-- **Stores data** — 75+ option rows in `wp_options`, ~40 post-meta
+- **Stores data** - 75+ option rows in `wp_options`, ~40 post-meta
   keys across 7 CPTs, 3 user-meta keys (notice dismissal + applied
   style tracking), and transients for rate-limiting and import
   concurrency control.
-- **Exposes admin UI** — 7+ admin surfaces (GoDevs Settings, Content
+- **Exposes admin UI** - 7+ admin surfaces (GoDevs Settings, Content
   Manager, GoDevs Demos, Header/Footer Builder, onboarding notices,
   booking admin notices, diagnostic notice).
-- **Handles AJAX** — 20 AJAX endpoints, all nonce-verified and
+- **Handles AJAX** - 20 AJAX endpoints, all nonce-verified and
   capability-checked.
 
 That is a significantly larger attack surface than a presentation-only
@@ -38,7 +38,7 @@ theme. The sections below document how each part is defended.
 
 ## 2. Security principles
 
-1. **Escape at output, sanitize at input.** Never trust data — even
+1. **Escape at output, sanitize at input.** Never trust data - even
    data from WordPress core.
 2. **Nonce every state-changing request.** Every AJAX endpoint and
    every form-meta save handler verifies a nonce before doing
@@ -59,7 +59,7 @@ theme. The sections below document how each part is defended.
    removed in P1.16.
 7. **No `eval()`, no `exec()`, no shell commands.**
 8. **Direct DB writes are exceptional and documented.** The demo
-   importer uses `$wpdb->update()` in three places — see §8.
+   importer uses `$wpdb->update()` in three places - see §8.
 
 ---
 
@@ -75,7 +75,7 @@ theme. The sections below document how each part is defended.
 Both handlers:
 
 1. Verify a nonce (`godevs_booking_form` / `godevs_proposal_form`).
-2. Run a honeypot check on the proposal form (the `godevs_hp` field —
+2. Run a honeypot check on the proposal form (the `godevs_hp` field -
    bots that fill it are rejected with HTTP 400).
 3. Run an IP-based rate limit on the proposal form (≤ 5 submissions
    per IP per hour, enforced via a transient keyed
@@ -91,7 +91,7 @@ Both handlers:
 7. Insert the post as `private` (admin-only visibility) with
    `wp_insert_post()`.
 8. Send an admin notification email via `wp_mail()` (non-fatal if no
-   mail server is configured — the submission is still stored).
+   mail server is configured - the submission is still stored).
 
 ### 3.2 Theme Settings dashboard
 
@@ -124,7 +124,7 @@ foreach ( $defaults as $key => $val ) {
 
 The AJAX save handler (`godevs_portfolio_ajax_save_settings()`)
 re-validates colors and URLs a second time, defensively, before
-writing — so even a crafted request that bypasses the Settings API
+writing - so even a crafted request that bypasses the Settings API
 sanitization cannot inject an invalid color or URL into the dynamic CSS.
 
 ### 3.3 Header/Footer Builder
@@ -228,10 +228,10 @@ A small number of `phpcs:ignore WordPress.Security.EscapeOutput` and
 annotations exist. Each one is justified inline and falls into one of
 two categories:
 
-- **Core function returns safe HTML** — e.g.
+- **Core function returns safe HTML** - e.g.
   `get_the_post_thumbnail()`, `paginate_links()`, `wp_kses_post()` of
   a known-safe summary string built from already-escaped fragments.
-- **Nonce already verified above** — the annotation sits below a
+- **Nonce already verified above** - the annotation sits below a
   `check_ajax_referer()` call so the nonce is verified; the annotation
   suppresses the redundant `$_POST` access warning.
 
@@ -318,7 +318,7 @@ WordPress.org Theme Review requirement that all filesystem access go
 through the WP_Filesystem API.
 
 `file_exists()` is used (via `get_template_directory()`) for
-existence checks before enqueuing assets — this is permitted by the
+existence checks before enqueuing assets - this is permitted by the
 guidelines because no file contents are read.
 
 ### 9.2 No file writes
@@ -342,7 +342,7 @@ no `wp_remote_post()`, no `curl`, no phone-home telemetry, no update
 checks (handled by WordPress.org), no external font/image CDN.
 
 The only outbound communication is `wp_mail()` on proposal
-submission — and that is a WordPress core API call to the local mail
+submission - and that is a WordPress core API call to the local mail
 transport, not an HTTP request to a third party.
 
 ---

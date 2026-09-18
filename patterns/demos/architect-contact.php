@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Architect (Architecture) — Contact
+ * Title: Demo - Architect (Architecture) - Contact
  * Slug: godevs-portfolio/demo-architect-contact
- * Description: ARCHITECT contact — inquiry form, studio info, FAQ. Recommended style variation: Architect.
+ * Description: ARCHITECT contact - inquiry form, studio info, FAQ. Recommended style variation: Architect.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, architect, contact, inquiry
  * Viewport Width: 1440
@@ -17,13 +17,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-architect","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — CONTACT HERO (typography) ═══ -->
+	<!-- === 01 - CONTACT HERO (typography) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"is-style-arch-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.2em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-arch-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500">— Contact</p>
+			<p class="is-style-arch-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500">- Contact</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:heading {"level":1,"className":"arch-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"500","letterSpacing":"-0.03em","lineHeight":"0.98","fontSize":"clamp(3rem, 9vw, 8rem)"}},"layout":{"selfStretch":"fit","flexSize":"14ch"}} -->
 			<h1 class="wp-block-heading arch-display" style="font-family:var(--wp--preset--font-family--display);font-weight:500;letter-spacing:-0.03em;line-height:0.98;font-size:clamp(3rem, 9vw, 8rem);max-width:14ch">Have a place in <span class="arch-italic">mind?</span></h1>
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CONTACT INFO + INQUIRY FORM (arch-2col, 40/60) ═══ -->
+	<!-- === 02 - CONTACT INFO + INQUIRY FORM (arch-2col, 40/60) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<!-- What happens next -->
 					<div style="margin-top: 1.5rem; border-top: 1px solid var(--arch-line, #D9D4C8); padding-top: 2rem;">
-						<p class="is-style-arch-label" style="color: var(--wp--preset--color--accent); font-family: var(--wp--preset--font-family--body); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; margin: 0 0 1.5rem;">— What happens next</p>
+						<p class="is-style-arch-label" style="color: var(--wp--preset--color--accent); font-family: var(--wp--preset--font-family--body); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; margin: 0 0 1.5rem;">- What happens next</p>
 						<div style="display: grid; grid-template-columns: 2.5rem 1fr; gap: 1rem; align-items: baseline; padding: 0.85rem 0; border-bottom: 1px solid var(--arch-line, #D9D4C8);">
 							<span class="arch-service-num">01</span>
 							<span style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; line-height: 1.6; color: var(--arch-muted, #6E6A62);">We review your brief within 3 working days.</span>
@@ -244,7 +244,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</div>
 						</div>
 						<button type="submit" class="arch-form-submit">Start a project <span aria-hidden="true">→</span></button>
-						<p class="arch-form-note">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+						<p class="arch-form-note">Demo form - connect a form plugin or the theme's front-forms feature.</p>
 					</form>
 				</div>
 			</div>
@@ -254,7 +254,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FAQ (bordered list, 4 questions) ═══ -->
+	<!-- === 03 - FAQ (bordered list, 4 questions) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -262,7 +262,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-arch-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.2em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-arch-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500">— FAQ</p>
+				<p class="is-style-arch-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500">- FAQ</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"arch-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.04","letterSpacing":"-0.025em","fontWeight":"500"}}} -->
 				<h2 class="wp-block-heading arch-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.04;letter-spacing:-0.025em;font-weight:500">Common questions, briefly answered.</h2>
@@ -281,7 +281,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div style="display: grid; grid-template-columns: 3rem 1fr 2fr; gap: 1.5rem; align-items: baseline; padding: 1.5rem 0; border-bottom: 1px solid var(--arch-line);">
 					<span class="arch-service-num">02</span>
 					<span class="arch-service-title">What should I include in my brief?</span>
-					<span class="arch-service-desc">Site location, intended program, approximate budget, timeline, and any constraints — planning, climate, or heritage.</span>
+					<span class="arch-service-desc">Site location, intended program, approximate budget, timeline, and any constraints - planning, climate, or heritage.</span>
 				</div>
 				<div style="display: grid; grid-template-columns: 3rem 1fr 2fr; gap: 1.5rem; align-items: baseline; padding: 1.5rem 0; border-bottom: 1px solid var(--arch-line);">
 					<span class="arch-service-num">03</span>
@@ -291,7 +291,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div style="display: grid; grid-template-columns: 3rem 1fr 2fr; gap: 1.5rem; align-items: baseline; padding: 1.5rem 0; border-bottom: 1px solid var(--arch-line);">
 					<span class="arch-service-num">04</span>
 					<span class="arch-service-title">Can you work with existing structures?</span>
-					<span class="arch-service-desc">Yes — renovation, adaptive reuse and sensitive transformation of existing buildings is a core part of our practice.</span>
+					<span class="arch-service-desc">Yes - renovation, adaptive reuse and sensitive transformation of existing buildings is a core part of our practice.</span>
 				</div>
 			</div>
 			<!-- /wp:html -->

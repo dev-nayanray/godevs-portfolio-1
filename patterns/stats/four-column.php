@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Stats — Four Column
+ * Title: Stats - Four Column
  * Slug: godevs-portfolio/stats-four-column
  * Description: A four-up stat grid on a muted surface with huge accent display numerals, mono ghost index labels, and hairline top rules per column. Distinct in its quantitative four-up grid composition.
  * Categories: godevs-portfolio-stats

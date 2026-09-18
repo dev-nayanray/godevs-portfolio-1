@@ -1,11 +1,11 @@
-# GoDevs Portfolio — Design System
+# GoDevs Portfolio - Design System
 
 **Document version:** 0.1.0
-**Phase:** 1 — Foundation
+**Phase:** 1 - Foundation
 
 This document defines the visual design system for GoDevs Portfolio. It is the source of truth for design tokens, type pairings, spacing, layout, button system, and card system. All values defined here are implemented in `theme.json` and consumed by templates and patterns.
 
-The design direction is **premium, editorial, modern**. The objective is a portfolio presence that feels considered and intentional — never generic.
+The design direction is **premium, editorial, modern**. The objective is a portfolio presence that feels considered and intentional - never generic.
 
 ---
 
@@ -17,7 +17,7 @@ The design direction is **premium, editorial, modern**. The objective is a portf
 4. **Subtle interactions.** No excessive animation. Hover states are minimal and functional. Reduced motion is respected.
 5. **Soft, considered surfaces.** Borders are subtle. Shadows are restrained. Cards feel layered without floating.
 6. **Consistency over novelty.** A small set of tokens used consistently outperforms many bespoke values.
-7. **Accessibility is non-negotiable.** Contrast, focus, keyboard, screen readers — see `ACCESSIBILITY.md`.
+7. **Accessibility is non-negotiable.** Contrast, focus, keyboard, screen readers - see `ACCESSIBILITY.md`.
 
 ---
 
@@ -29,9 +29,9 @@ All colors are defined in `theme.json` under `settings.color.palette` and expose
 
 | Token | Slug | Purpose |
 |---|---|---|
-| Primary | `primary` | Primary brand color — buttons, links, key accents |
-| Secondary | `secondary` | Secondary brand color — secondary accents, supporting UI |
-| Accent | `accent` | Highlight color — used sparingly for emphasis |
+| Primary | `primary` | Primary brand color - buttons, links, key accents |
+| Secondary | `secondary` | Secondary brand color - secondary accents, supporting UI |
+| Accent | `accent` | Highlight color - used sparingly for emphasis |
 | Background | `base` | Page background |
 | Surface | `surface` | Card / section background |
 | Surface Elevated | `surface-elevated` | Raised cards, popovers |
@@ -48,7 +48,7 @@ All colors are defined in `theme.json` under `settings.color.palette` and expose
 |---|---|---|
 | `primary` | `#0A0A0A` | Near-black ink for editorial base |
 | `secondary` | `#3D3D3D` | Soft charcoal for secondary text |
-| `accent` | `#2563EB` | Confident blue — used sparingly |
+| `accent` | `#2563EB` | Confident blue - used sparingly |
 | `base` | `#FAFAF7` | Warm off-white, less clinical than pure white |
 | `surface` | `#FFFFFF` | Pure white for cards |
 | `surface-elevated` | `#FFFFFF` | Same as surface in default; differentiated in dark variation |
@@ -64,7 +64,7 @@ All colors are defined in `theme.json` under `settings.color.palette` and expose
 
 - **Background variations are forbidden** as a substitute for proper style variations. A new variation must change more than one color.
 - **Contrast minimum** is WCAG 2.1 AA: 4.5:1 for body text, 3:1 for large text and UI components.
-- **Accent usage** is rationed — never use accent as a section background. Use it for links, primary buttons, and small emphasis.
+- **Accent usage** is rationed - never use accent as a section background. Use it for links, primary buttons, and small emphasis.
 - **Never hardcode hex values** in templates, patterns, or CSS. Always reference the preset (`var:preset|color|primary`).
 
 ---
@@ -81,7 +81,7 @@ Typography is the dominant visual language. The system pairs a confident display
 | Body | `body` | System UI body stack | Body, headings H4–H6 |
 | Mono | `mono` | SF Mono, Menlo, monospace | Code, captions, meta |
 
-**Default stacks (Phase 1, system fonts — no external loading):**
+**Default stacks (Phase 1, system fonts - no external loading):**
 
 ```
 --wp--preset--font-family--display: "Inter", "SF Pro Display", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -103,11 +103,11 @@ All sizes are fluid (rem-based with viewport clamps). Sizes use WordPress `setti
 | H1 | `xx-large` | 2.25rem (36px) | 5vw | 3.75rem (60px) |
 | H2 | `x-large` | 1.875rem (30px) | 3.5vw | 2.75rem (44px) |
 | H3 | `large` | 1.5rem (24px) | 2.5vw | 2rem (32px) |
-| H4 | `medium` | 1.25rem (20px) | — | 1.5rem (24px) |
-| Body | `normal` | 1rem (16px) | — | 1.125rem (18px) |
-| Large Body | `medium` (alt) | 1.125rem (18px) | — | 1.25rem (20px) |
-| Small | `small` | 0.875rem (14px) | — | — |
-| Caption | `x-small` | 0.75rem (12px) | — | — |
+| H4 | `medium` | 1.25rem (20px) | - | 1.5rem (24px) |
+| Body | `normal` | 1rem (16px) | - | 1.125rem (18px) |
+| Large Body | `medium` (alt) | 1.125rem (18px) | - | 1.25rem (20px) |
+| Small | `small` | 0.875rem (14px) | - | - |
+| Caption | `x-small` | 0.75rem (12px) | - | - |
 
 **Line height defaults:** 1.1 for display, 1.2 for headings, 1.6 for body.
 
@@ -117,10 +117,10 @@ All sizes are fluid (rem-based with viewport clamps). Sizes use WordPress `setti
 
 - H1 appears **once per page** (in the hero or the page title block).
 - H2 introduces a new section. H3 introduces a subsection within H2.
-- Body type is `1.125rem` (18px) for portfolio sites — readable, considered.
-- Captions are uppercase + letter-spaced — used for section eyebrows.
+- Body type is `1.125rem` (18px) for portfolio sites - readable, considered.
+- Captions are uppercase + letter-spaced - used for section eyebrows.
 - No font weights above 700. Display headings are 700. Body is 400.
-- No italics for emphasis in body text — use weight or color.
+- No italics for emphasis in body text - use weight or color.
 
 ---
 
@@ -142,7 +142,7 @@ The spacing scale is defined in `theme.json` under `settings.spacing.spacingScal
 | 3XL | `90` | `6rem` (96px) | Hero padding |
 | 4XL | `100` | `8rem` (128px) | Large section breaks |
 
-The scale is **arithmetic on a 0.25rem base** — predictable and easy to reason about.
+The scale is **arithmetic on a 0.25rem base** - predictable and easy to reason about.
 
 ### 4.2 Spacing Usage Rules
 
@@ -186,12 +186,12 @@ A standard section follows this composition:
 
 ```
 Group (full width)
-  ├── Group (wide width, inner)
-  │     ├── Group (vertical, gap MD) — header
-  │     │     ├── Paragraph (eyebrow — caption style)
-  │     │     └── Heading (H2)
-  │     └── Group (content, gap LG)
-  │           └── [pattern-specific blocks]
+  ├-- Group (wide width, inner)
+  │     ├-- Group (vertical, gap MD) - header
+  │     │     ├-- Paragraph (eyebrow - caption style)
+  │     │     └-- Heading (H2)
+  │     └-- Group (content, gap LG)
+  │           └-- [pattern-specific blocks]
 ```
 
 ### 5.4 Grid Behavior
@@ -208,11 +208,11 @@ Defined in `theme.json` → `styles.blocks.core/button.variations` and via block
 
 | Variant | Use |
 |---|---|
-| Primary (default) | Main CTA — solid accent background, white text |
-| Outline | Secondary CTA — transparent background, accent border |
-| Text | Tertiary CTA — no background, accent text, optional arrow |
-| Pill | Decorative / friendly CTA — fully rounded |
-| Arrow | CTA with directional affordance — uses an inline SVG arrow |
+| Primary (default) | Main CTA - solid accent background, white text |
+| Outline | Secondary CTA - transparent background, accent border |
+| Text | Tertiary CTA - no background, accent text, optional arrow |
+| Pill | Decorative / friendly CTA - fully rounded |
+| Arrow | CTA with directional affordance - uses an inline SVG arrow |
 
 **Rules:**
 - Buttons are **never** emoji icons or Unicode symbols.
@@ -271,7 +271,7 @@ Cards are **not a custom block**. They are compositions of core blocks styled co
 - Cards use radius medium (8px) by default.
 - Buttons use radius small (4px) by default.
 - Hero / full-bleed sections use 0 radius.
-- No element uses radius > 1rem — avoids "AI-generated card" look.
+- No element uses radius > 1rem - avoids "AI-generated card" look.
 
 ---
 
@@ -374,7 +374,7 @@ Phase 1 ships 4 variations (Default + Minimal + Dark + Editorial). See `STYLE-VA
 
 Accessibility is part of the design system, not a separate concern. Key surfaces:
 
-- **Focus rings:** 2px accent outline with 2px offset — visible on every interactive element.
+- **Focus rings:** 2px accent outline with 2px offset - visible on every interactive element.
 - **Link affordance:** Links are underlined by default. Hover removes underline only on text-decoration-skip-ink-supporting browsers.
 - **Heading hierarchy:** Strict H1 → H2 → H3 nesting.
 - **Color contrast:** All default palette combinations meet WCAG 2.1 AA.

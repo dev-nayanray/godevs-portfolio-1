@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Contact — Minimal
+ * Title: Contact - Minimal
  * Slug: godevs-portfolio/contact-minimal
- * Description: An ultra-restrained contact section — a centered display mailto with one serif-italic accent word, a mono micro-caption, and hairline rules. Distinct in its single-action, gallery-like composition.
+ * Description: An ultra-restrained contact section - a centered display mailto with one serif-italic accent word, a mono micro-caption, and hairline rules. Distinct in its single-action, gallery-like composition.
  * Categories: godevs-portfolio-contact
  * Keywords: contact, minimal, email, restrained, centered
  * Viewport Width: 1280
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.65">One inbox, one person — reply within two working days.</p>
+<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.65">One inbox, one person - reply within two working days.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->

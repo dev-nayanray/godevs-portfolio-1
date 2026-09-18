@@ -1,4 +1,4 @@
-# Coding Standards — GoDevs Portfolio
+# Coding Standards - GoDevs Portfolio
 
 The theme follows WordPress coding standards for PHP, JavaScript,
 CSS, and HTML. This document is the canonical reference for the
@@ -124,7 +124,7 @@ The key rules:
 - **Properties:** Lowercase property names. Hyphenated
   property names (e.g. `font-weight`, not `fontWeight`).
 - **Values:** No leading zero for values between -1 and 1
-  (e.g. `0.5rem`, not `0.5rem` — wait, that's actually allowed
+  (e.g. `0.5rem`, not `0.5rem` - wait, that's actually allowed
   in modern CSS; WordPress convention is to omit the leading
   zero, but the theme follows CSS spec and keeps the leading
   zero for readability of `0.5rem` and `0.75rem`).
@@ -152,7 +152,7 @@ The theme intentionally ships minimal CSS:
   style previews, hero preview height).
 - `assets/css/print.css` is print styles.
 
-There is intentionally no `assets/css/style.css` body — the
+There is intentionally no `assets/css/style.css` body - the
 WordPress theme header at the top of `style.css` is the only
 content; the design system is in `theme.json`.
 

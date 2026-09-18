@@ -1,7 +1,7 @@
-# GoDevs Portfolio — Contributing
+# GoDevs Portfolio - Contributing
 
 **Document version:** 0.1.0
-**Phase:** 1 — Foundation
+**Phase:** 1 - Foundation
 
 This document describes how to contribute to the GoDevs Portfolio theme. It applies to both human contributors and AI agents.
 
@@ -9,10 +9,10 @@ This document describes how to contribute to the GoDevs Portfolio theme. It appl
 
 ## 1. Before You Begin
 
-1. Read `AI-DEVELOPMENT-GUIDE.md` — it defines the workflow.
-2. Read `ARCHITECTURE.md` — it defines where files belong.
-3. Read `DESIGN-SYSTEM.md` — it defines the visual language.
-4. Read `WORDPRESS-STANDARDS.md` — it defines the code conventions.
+1. Read `AI-DEVELOPMENT-GUIDE.md` - it defines the workflow.
+2. Read `ARCHITECTURE.md` - it defines where files belong.
+3. Read `DESIGN-SYSTEM.md` - it defines the visual language.
+4. Read `WORDPRESS-STANDARDS.md` - it defines the code conventions.
 
 Do not begin work without reading these four documents.
 
@@ -32,14 +32,14 @@ See `AI-DEVELOPMENT-GUIDE.md` Section 2 for the full description.
 
 ### 3.1 Step-by-Step
 
-1. **Identify the category** — see `PATTERN-SYSTEM.md` Section 2.
-2. **Pick a descriptive name** — see `PATTERN-SYSTEM.md` Section 3.
+1. **Identify the category** - see `PATTERN-SYSTEM.md` Section 2.
+2. **Pick a descriptive name** - see `PATTERN-SYSTEM.md` Section 3.
 3. **Create the file** at `patterns/<category>/<name>.php`.
 4. **Author the metadata header**:
    ```php
    <?php
    /**
-    * Title: Hero — Split Profile
+    * Title: Hero - Split Profile
     * Slug: godevs-portfolio/hero-split-profile
     * Description: A two-column hero with an editorial portrait on one side and a bold display headline plus CTA on the other.
     * Categories: godevs-portfolio-hero
@@ -48,18 +48,18 @@ See `AI-DEVELOPMENT-GUIDE.md` Section 2 for the full description.
     */
    ?>
    ```
-5. **Compose with core blocks** — see `PATTERN-SYSTEM.md` Section 4.
-6. **Reference design tokens** — colors via `var:preset|color|<slug>`, spacing via `var:preset|spacing|<slug>`, sizes via `var:preset|font-size|<slug>`.
+5. **Compose with core blocks** - see `PATTERN-SYSTEM.md` Section 4.
+6. **Reference design tokens** - colors via `var:preset|color|<slug>`, spacing via `var:preset|spacing|<slug>`, sizes via `var:preset|font-size|<slug>`.
 7. **Validate**:
    ```bash
    php -l patterns/<category>/<name>.php
    ```
-8. **Test in Site Editor** — insert the pattern, verify it renders correctly.
-9. **Test in every style variation** — switch to each `styles/*.json` variation, insert the pattern, verify it still looks intentional.
-10. **Test responsive** — viewport at 360px, 768px, 1280px.
-11. **Test accessibility** — keyboard nav, focus visible, contrast AA.
+8. **Test in Site Editor** - insert the pattern, verify it renders correctly.
+9. **Test in every style variation** - switch to each `styles/*.json` variation, insert the pattern, verify it still looks intentional.
+10. **Test responsive** - viewport at 360px, 768px, 1280px.
+11. **Test accessibility** - keyboard nav, focus visible, contrast AA.
 12. **Update `CHANGELOG.md`** under "Added".
-13. **Commit** with message: `feat(patterns): add Hero — Split Profile pattern`.
+13. **Commit** with message: `feat(patterns): add Hero - Split Profile pattern`.
 
 ### 3.2 Pattern Template
 
@@ -68,7 +68,7 @@ Use this skeleton when authoring a new pattern:
 ```php
 <?php
 /**
- * Title: <Category> — <Descriptive Subtitle>
+ * Title: <Category> - <Descriptive Subtitle>
  * Slug: godevs-portfolio/<category-slug>-<descriptive-slug>
  * Description: <One sentence explaining the pattern's design intent>
  * Categories: godevs-portfolio-<category>
@@ -110,7 +110,7 @@ Use this skeleton when authoring a new pattern:
 
 ### 4.1 Step-by-Step
 
-1. **Identify the WordPress template hierarchy slot** — see `TEMPLATE-SYSTEM.md` Section 1.1.
+1. **Identify the WordPress template hierarchy slot** - see `TEMPLATE-SYSTEM.md` Section 1.1.
 2. **Create the file** at `templates/<name>.html`.
 3. **Compose** with `core/template-part` for header/footer + `core/group` for main + content blocks.
 4. **Validate**:
@@ -118,7 +118,7 @@ Use this skeleton when authoring a new pattern:
    # JSON validation of the HTML's block markup is handled by WordPress on activation
    ls -la templates/<name>.html
    ```
-5. **Test** — activate the theme, visit a route that resolves to the template, verify rendering.
+5. **Test** - activate the theme, visit a route that resolves to the template, verify rendering.
 6. **Update `CHANGELOG.md`** under "Added".
 7. **Commit** with message: `feat(templates): add <name> template`.
 
@@ -146,11 +146,11 @@ Use this skeleton when authoring a new pattern:
 
 ### 5.1 Step-by-Step
 
-1. **Identify the purpose** — header variant, footer variant, sidebar, etc.
+1. **Identify the purpose** - header variant, footer variant, sidebar, etc.
 2. **Create the file** at `parts/<name>.html`.
 3. **Compose** with semantic blocks (`core/site-logo`, `core/navigation`, etc.).
-4. **Register the template part** in `parts/<name>.html` itself — WordPress auto-discovers files in `parts/`.
-5. **Validate** — visit Appearance → Editor → Template Parts, verify it appears.
+4. **Register the template part** in `parts/<name>.html` itself - WordPress auto-discovers files in `parts/`.
+5. **Validate** - visit Appearance → Editor → Template Parts, verify it appears.
 6. **Update `CHANGELOG.md`** under "Added".
 7. **Commit** with message: `feat(parts): add <name> template part`.
 
@@ -160,16 +160,16 @@ Use this skeleton when authoring a new pattern:
 
 ### 6.1 Step-by-Step
 
-1. **Read `STYLE-VARIATIONS.md`** — confirm the variation meets the Three-Change Rule.
+1. **Read `STYLE-VARIATIONS.md`** - confirm the variation meets the Three-Change Rule.
 2. **Create the file** at `styles/<name>.json`.
-3. **Author the JSON** — override the relevant `settings.color`, `settings.typography`, `settings.spacing`, `styles.*` subtrees.
+3. **Author the JSON** - override the relevant `settings.color`, `settings.typography`, `settings.spacing`, `styles.*` subtrees.
 4. **Validate**:
    ```bash
    python3 -m json.tool styles/<name>.json > /dev/null
    ```
-5. **Test in Site Editor** — switch to the variation, verify it applies.
-6. **Test every pattern** in the variation — switch to each pattern, verify it renders correctly.
-7. **Verify contrast** — use WebAIM Contrast Checker on every color combination.
+5. **Test in Site Editor** - switch to the variation, verify it applies.
+6. **Test every pattern** in the variation - switch to each pattern, verify it renders correctly.
+7. **Verify contrast** - use WebAIM Contrast Checker on every color combination.
 8. **Update `CHANGELOG.md`** under "Added".
 9. **Commit** with message: `feat(styles): add <name> style variation`.
 
@@ -214,15 +214,15 @@ Use this skeleton when authoring a new pattern:
 
 ### 7.1 Step-by-Step
 
-1. **Identify the change** — settings (tokens) vs styles (block-level).
-2. **Read `DESIGN-SYSTEM.md`** — confirm the change fits the system.
+1. **Identify the change** - settings (tokens) vs styles (block-level).
+2. **Read `DESIGN-SYSTEM.md`** - confirm the change fits the system.
 3. **Edit `theme.json`** with the minimal change.
 4. **Validate**:
    ```bash
    python3 -m json.tool theme.json > /dev/null
    ```
-5. **Test in Site Editor** — verify the change is reflected.
-6. **Test variations** — verify variations still apply correctly.
+5. **Test in Site Editor** - verify the change is reflected.
+6. **Test variations** - verify variations still apply correctly.
 7. **Update `CHANGELOG.md`** under "Changed".
 8. **Commit** with message: `refactor(theme-json): <change>` or `feat(theme-json): <change>`.
 
@@ -255,11 +255,11 @@ CSS in `assets/css/theme.css` is appropriate when:
 
 ### 8.3 Step-by-Step
 
-1. **Read `PERFORMANCE.md`** — confirm CSS is the right tool.
-2. **Read `WORDPRESS-STANDARDS.md`** — confirm conventions.
+1. **Read `PERFORMANCE.md`** - confirm CSS is the right tool.
+2. **Read `WORDPRESS-STANDARDS.md`** - confirm conventions.
 3. **Add to `assets/css/theme.css`** with a comment explaining the rule's purpose.
-4. **Reference tokens** — use `var(--wp--preset--color|spacing|font-size|font-family|<slug>)`.
-5. **Validate** — visual inspection, no console errors.
+4. **Reference tokens** - use `var(--wp--preset--color|spacing|font-size|font-family|<slug>)`.
+5. **Validate** - visual inspection, no console errors.
 6. **Update `CHANGELOG.md`** under "Changed".
 7. **Commit** with message: `style(assets): <change>`.
 
@@ -284,12 +284,12 @@ JavaScript is appropriate when:
 
 ### 9.3 Step-by-Step
 
-1. **Read `PERFORMANCE.md`** — confirm JS is needed.
-2. **Read `WORDPRESS-STANDARDS.md`** — confirm conventions.
-3. **Read `SECURITY.md`** — confirm safety.
+1. **Read `PERFORMANCE.md`** - confirm JS is needed.
+2. **Read `WORDPRESS-STANDARDS.md`** - confirm conventions.
+3. **Read `SECURITY.md`** - confirm safety.
 4. **Add to `assets/js/theme.js`** with a comment explaining the enhancement.
 5. **Enqueue** in `functions.php` with `defer` strategy.
-6. **Validate** — visual inspection, no console errors, page works without JS.
+6. **Validate** - visual inspection, no console errors, page works without JS.
 7. **Update `CHANGELOG.md`** under "Added" or "Changed".
 8. **Commit** with message: `feat(assets): <change>`.
 
@@ -299,9 +299,9 @@ JavaScript is appropriate when:
 
 ### 10.1 Step-by-Step
 
-1. **Identify the relevant `docs/` file** — see `AI-DEVELOPMENT-GUIDE.md` Section 9.
-2. **Read the existing content** — understand what's already documented.
-3. **Make the minimal change** — do not rewrite the file.
+1. **Identify the relevant `docs/` file** - see `AI-DEVELOPMENT-GUIDE.md` Section 9.
+2. **Read the existing content** - understand what's already documented.
+3. **Make the minimal change** - do not rewrite the file.
 4. **Update `CHANGELOG.md`** under "Changed".
 5. **Commit** with message: `docs(<area>): <change>`.
 
@@ -426,7 +426,7 @@ Examples:
 
 ## Screenshots
 
-<For visual changes — before and after.>
+<For visual changes - before and after.>
 
 ## Breaking Changes
 
@@ -535,4 +535,4 @@ For maintainers cutting a release:
 7. Build the release zip (excluding `.git`, `docs/`, `node_modules/`, `.DS_Store`).
 8. (Once on WordPress.org) SVN commit to the theme repository.
 
-Phase 1 does not produce a release zip — it produces the foundation. The release process is documented for Phase 7.
+Phase 1 does not produce a release zip - it produces the foundation. The release process is documented for Phase 7.

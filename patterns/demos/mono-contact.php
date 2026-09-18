@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Mono (Developer) — Contact
+ * Title: Demo - Mono (Developer) - Contact
  * Slug: godevs-portfolio/demo-mono-contact
- * Description: MONO contact — inquiry form, availability, FAQ. Recommended style variation: Mono.
+ * Description: MONO contact - inquiry form, availability, FAQ. Recommended style variation: Mono.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, mono, contact, inquiry
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-mono","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO ═══ -->
+        <!-- === 01 - HERO === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
                         <div class="wp-block-group">
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Contact</p>
+                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Contact</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
                                 <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">Replies within 2 business days</p>
@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+        <!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <div class="mono-2col mono-contact-split" style="--mono-split: 1fr 1.5fr;">
                                 <!-- LEFT: contact info -->
                                 <div class="mono-contact-info">
-                                        <p class="is-style-mono-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500;margin:0 0 1.5rem 0;">— Direct</p>
+                                        <p class="is-style-mono-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500;margin:0 0 1.5rem 0;">- Direct</p>
 
                                         <div class="mono-facts">
                                                 <div class="mono-fact-row">
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 </div>
                                                 <div class="mono-fact-row">
                                                         <span class="mono-fact-key">Hours</span>
-                                                        <span class="mono-fact-val">09:00 — 18:00 CET, Mon — Fri</span>
+                                                        <span class="mono-fact-val">09:00 - 18:00 CET, Mon - Fri</span>
                                                 </div>
                                                 <div class="mono-fact-row">
                                                         <span class="mono-fact-key">Social</span>
@@ -92,7 +92,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 </div>
                                         </div>
 
-                                        <p class="is-style-mono-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500;margin:2.5rem 0 1rem 0;">— What happens next</p>
+                                        <p class="is-style-mono-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500;margin:2.5rem 0 1rem 0;">- What happens next</p>
                                         <ol class="mono-next-list" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem;">
                                                 <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.75rem;align-items:baseline;">
                                                         <span aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;font-weight:600;color:var(--wp--preset--color--accent);">01</span>
@@ -104,7 +104,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 </li>
                                                 <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.75rem;align-items:baseline;">
                                                         <span aria-hidden="true" style="font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;font-weight:600;color:var(--wp--preset--color--accent);">03</span>
-                                                        <span style="font-family:var(--wp--preset--font-family--body);font-size:0.9375rem;line-height:1.55;color:var(--wp--preset--color--muted);">A scoped proposal — timeline, deliverables, fixed fee.</span>
+                                                        <span style="font-family:var(--wp--preset--font-family--body);font-size:0.9375rem;line-height:1.55;color:var(--wp--preset--color--muted);">A scoped proposal - timeline, deliverables, fixed fee.</span>
                                                 </li>
                                         </ol>
                                 </div>
@@ -215,9 +215,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                         <label class="mono-field-label" for="mono-budget">Budget</label>
                                                         <select class="mono-field-select" id="mono-budget" name="mono-budget">
                                                                 <option value="">Select…</option>
-                                                                <option value="5-15">$5 — 15k</option>
-                                                                <option value="15-40">$15 — 40k</option>
-                                                                <option value="40-100">$40 — 100k</option>
+                                                                <option value="5-15">$5 - 15k</option>
+                                                                <option value="15-40">$15 - 40k</option>
+                                                                <option value="40-100">$40 - 100k</option>
                                                                 <option value="100+">$100k+</option>
                                                                 <option value="unsure">Not sure</option>
                                                         </select>
@@ -228,8 +228,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <label class="mono-field-label" for="mono-timeline">Timeline</label>
                                                 <select class="mono-field-select" id="mono-timeline" name="mono-timeline">
                                                         <option value="">Select…</option>
-                                                        <option value="1-3">1 — 3 months</option>
-                                                        <option value="3-6">3 — 6 months</option>
+                                                        <option value="1-3">1 - 3 months</option>
+                                                        <option value="3-6">3 - 6 months</option>
                                                         <option value="6+">6+ months</option>
                                                         <option value="flexible">Flexible</option>
                                                 </select>
@@ -237,11 +237,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                                         <div class="mono-field">
                                                 <label class="mono-field-label" for="mono-message">Message</label>
-                                                <textarea class="mono-field-textarea" id="mono-message" name="mono-message" placeholder="Tell me about the project — what are you making, who is it for, when does it need to land?"></textarea>
+                                                <textarea class="mono-field-textarea" id="mono-message" name="mono-message" placeholder="Tell me about the project - what are you making, who is it for, when does it need to land?"></textarea>
                                         </div>
 
                                         <div class="mono-form-actions">
-                                                <p class="mono-form-note">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+                                                <p class="mono-form-note">Demo form - connect a form plugin or the theme's front-forms feature.</p>
                                                 <button class="mono-submit" type="submit">Start a project →</button>
                                         </div>
 
@@ -254,7 +254,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — FAQ ═══ -->
+        <!-- === 03 - FAQ === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -264,7 +264,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— FAQ</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- FAQ</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -281,25 +281,25 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                         <span class="mono-row-num">Q1</span>
                                                         <span class="mono-row-title">How quickly do you respond?</span>
                                                         <span class="mono-row-desc">Within two business days, usually faster. A 30-minute call follows if the brief looks like a fit.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
                                                         <span class="mono-row-num">Q2</span>
                                                         <span class="mono-row-title">What should I include in my brief?</span>
                                                         <span class="mono-row-desc">The product, the team, the timeline, the budget range, and what success looks like. A paragraph each is plenty.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
                                                         <span class="mono-row-num">Q3</span>
                                                         <span class="mono-row-title">Do you work with in-house teams?</span>
-                                                        <span class="mono-row-desc">Yes — embedded alongside your engineers and designers, with clear ownership of the parts I build.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-desc">Yes - embedded alongside your engineers and designers, with clear ownership of the parts I build.</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
                                                         <span class="mono-row-num">Q4</span>
                                                         <span class="mono-row-title">What's your availability?</span>
-                                                        <span class="mono-row-desc">Currently booking 6 — 8 weeks ahead. Engagements from 2 weeks to 6 months, depending on scope.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-desc">Currently booking 6 - 8 weeks ahead. Engagements from 2 weeks to 6 months, depending on scope.</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                         </div>
                                         <!-- /wp:html -->

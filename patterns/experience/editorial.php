@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Experience — Editorial
+ * Title: Experience - Editorial
  * Slug: godevs-portfolio/experience-editorial
- * Description: A magazine-led experience feature — a large serif-italic pull quote set on a quote card above a chronologically numbered role ledger with hairline rules. Distinct in its publication-led composition with a quote emphasis.
+ * Description: A magazine-led experience feature - a large serif-italic pull quote set on a quote card above a chronologically numbered role ledger with hairline rules. Distinct in its publication-led composition with a quote emphasis.
  * Categories: godevs-portfolio-experience
  * Keywords: experience, editorial, quote, magazine, narrative
  * Viewport Width: 1280
@@ -25,11 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"className":"is-style-card-quote","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--content-size)"}} -->
 <div class="wp-block-group is-style-card-quote" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|x-large","lineHeight":"1.3","letterSpacing":"-0.01em"},"color":{"text":"var:preset|color|primary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--x-large);line-height:1.3;letter-spacing:-0.01em">"Every good studio is really a slow argument about quality — ours just happens to ship on a two-week cadence."</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--primary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--x-large);line-height:1.3;letter-spacing:-0.01em">"Every good studio is really a slow argument about quality - ours just happens to ship on a two-week cadence."</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--30)">Mara Voss — Creative Director, GoDevs</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--30)">Mara Voss - Creative Director, GoDevs</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
-<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Product designer — Northline Press</h3>
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Product designer - Northline Press</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
-<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Lead engineer — Fieldnote Studio</h3>
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Lead engineer - Fieldnote Studio</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","letterSpacing":"-0.01em","fontWeight":"700"}}} -->
-<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Founding partner — GoDevs</h3>
+<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);letter-spacing:-0.01em;font-weight:700">Founding partner - GoDevs</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->

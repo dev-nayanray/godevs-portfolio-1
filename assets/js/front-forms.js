@@ -1,8 +1,8 @@
 /**
- * GoDevs Portfolio — Front-end Forms JS
+ * GoDevs Portfolio - Front-end Forms JS
  *
  * Handles submission for [godevs_booking_form] and [godevs_proposal_form]
- * shortcodes via AJAX. No jQuery dependency — vanilla JS.
+ * shortcodes via AJAX. No jQuery dependency - vanilla JS.
  *
  * Features:
  *   - Inline validation with aria-describedby error messaging (UX-D)
@@ -106,7 +106,7 @@
                                 return i18n.invalidEmail || 'Please enter a valid email address.';
                         }
                 }
-                // Phone format check (optional — just length).
+                // Phone format check (optional - just length).
                 if (field.type === 'tel' && field.value && field.value.length < 7) {
                         return i18n.invalidPhone || 'Please enter a valid phone number.';
                 }
@@ -173,7 +173,7 @@
                 // Honeypot check (anti-spam).
                 var honeypot = form.querySelector('input[name="godevs_hp"]');
                 if (honeypot && honeypot.value) {
-                        // Bot filled the honeypot — silently fail.
+                        // Bot filled the honeypot - silently fail.
                         return;
                 }
 
@@ -203,7 +203,7 @@
                         body: new URLSearchParams(data)
                 })
                         .then(function (response) {
-                                // Check HTTP status — non-200 means network/server error.
+                                // Check HTTP status - non-200 means network/server error.
                                 if (!response.ok) {
                                         throw new Error('HTTP ' + response.status);
                                 }

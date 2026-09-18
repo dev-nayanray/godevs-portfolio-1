@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Services — Split
+ * Title: Services - Split
  * Slug: godevs-portfolio/services-split
- * Description: An asymmetric editorial split — sticky-feel header with serif-italic accent heading and CTA on the left, hairline list of four services with mono numerals on the right.
+ * Description: An asymmetric editorial split - sticky-feel header with serif-italic accent heading and CTA on the left, hairline list of four services with mono numerals on the right.
  * Categories: godevs-portfolio-services
  * Keywords: services, split, asymmetric, two-column, editorial
  * Viewport Width: 1280

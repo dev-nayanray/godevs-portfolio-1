@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Contact — Information
+ * Title: Contact - Information
  * Slug: godevs-portfolio/contact-information
- * Description: An information-led contact grid — three bordered cards on a muted surface with mono micro-labels, hairline dividers, and quiet meta copy. Distinct in its no-form, details-first composition.
+ * Description: An information-led contact grid - three bordered cards on a muted surface with mono micro-labels, hairline dividers, and quiet meta copy. Distinct in its no-form, details-first composition.
  * Categories: godevs-portfolio-contact
  * Keywords: contact, information, email, location, social
  * Viewport Width: 1280
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Read once, answered by a person — within two working days.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Read once, answered by a person - within two working days.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Prinsengracht 123 · CET — working with clients worldwide.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Prinsengracht 123 · CET - working with clients worldwide.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

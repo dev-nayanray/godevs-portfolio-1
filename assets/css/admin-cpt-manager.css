@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — CPT Manager Admin Styles
+ * GoDevs Portfolio - CPT Manager Admin Styles
  *
  * Modern, professional UI for the Content Manager admin page at
  * Appearance → Content Manager.
@@ -37,7 +37,7 @@
 	padding: 0;
 }
 
-/* ═══ HEADER ═══ */
+/* === HEADER === */
 .godevs-cpt-header {
 	background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 	color: #ffffff;
@@ -76,7 +76,7 @@
 	max-width: 640px;
 }
 
-/* ═══ DASHBOARD CARDS ═══ */
+/* === DASHBOARD CARDS === */
 .godevs-cpt-dashboard {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -159,7 +159,7 @@
 	height: 14px;
 }
 
-/* ═══ LIST SECTION ═══ */
+/* === LIST SECTION === */
 .godevs-cpt-list-section {
 	background: var(--cm-color-surface);
 	border: 1px solid var(--cm-color-border);
@@ -240,7 +240,7 @@
 	margin-right: 2px;
 }
 
-/* ═══ TABLE ═══ */
+/* === TABLE === */
 .godevs-cpt-table {
 	border: none;
 	border-radius: 0;
@@ -392,7 +392,7 @@
 	border-color: var(--cm-color-danger) !important;
 }
 
-/* ═══ EMPTY STATE ═══ */
+/* === EMPTY STATE === */
 .godevs-cpt-empty {
 	text-align: center;
 	padding: 48px 24px;
@@ -421,7 +421,7 @@
 	margin-right: auto;
 }
 
-/* ═══ PAGINATION ═══ */
+/* === PAGINATION === */
 .godevs-cpt-pagination {
 	margin: 16px 24px;
 }
@@ -462,7 +462,7 @@
 	color: #ffffff;
 }
 
-/* ═══ RESPONSIVE ═══ */
+/* === RESPONSIVE === */
 @media (max-width: 782px) {
 	.godevs-cpt-dashboard {
 		grid-template-columns: 1fr;

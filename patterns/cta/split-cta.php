@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: CTA — Split Band
+ * Title: CTA - Split Band
  * Slug: godevs-portfolio/cta-split-band
- * Description: A full-bleed dark CTA band on primary — display headline and mono meta on the left, a pill button pair on the right, over a hairline top rule. Distinct in its asymmetric split composition.
+ * Description: A full-bleed dark CTA band on primary - display headline and mono meta on the left, a pill button pair on the right, over a hairline top rule. Distinct in its asymmetric split composition.
  * Categories: godevs-portfolio-cta
  * Keywords: cta, call-to-action, band, split, conversion
  * Viewport Width: 1280

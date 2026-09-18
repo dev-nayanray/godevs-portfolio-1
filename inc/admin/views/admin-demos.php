@@ -1,6 +1,6 @@
 <?php
 /**
- * Demo library view — embedded in GoDevs Settings → Demo Library tab.
+ * Demo library view - embedded in GoDevs Settings → Demo Library tab.
  *
  * Also used as the standalone Appearance → GoDevs Demos page.
  *
@@ -13,7 +13,7 @@
  *   - Import progress overlay
  *
  * @package GoDevs_Portfolio
- * @since   2.5.0  Redesigned with modern UI + iframe preview.
+ * @since 1.0.0.0  Redesigned with modern UI + iframe preview.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -38,7 +38,7 @@ $imported_count = count( $imported );
 
 <div class="godevs-demos-wrap" data-total="<?php echo esc_attr( (string) $total_demos ); ?>" data-ready="<?php echo esc_attr( (string) $ready_count ); ?>" data-coming="<?php echo esc_attr( (string) $coming_count ); ?>">
 
-        <!-- ═══ HERO HEADER ═══ -->
+        <!-- === HERO HEADER === -->
         <header class="godevs-demos-hero">
                 <div class="godevs-demos-hero-inner">
                         <div class="godevs-demos-hero-text">
@@ -71,7 +71,7 @@ $imported_count = count( $imported );
                 </div>
         </header>
 
-        <!-- ═══ FILTER BAR ═══ -->
+        <!-- === FILTER BAR === -->
         <div class="godevs-demos-filters" role="search">
                 <div class="godevs-filter-group godevs-filter-search">
                         <label for="godevs-search-input" class="screen-reader-text"><?php esc_html_e( 'Search demos', 'godevs-portfolio' ); ?></label>
@@ -127,7 +127,7 @@ $imported_count = count( $imported );
                 </div>
         </div>
 
-        <!-- ═══ READY DEMOS SECTION ═══ -->
+        <!-- === READY DEMOS SECTION === -->
         <section class="godevs-demos-section" data-section="ready">
                 <header class="godevs-demos-section-header">
                         <h3 class="godevs-demos-section-title">
@@ -135,7 +135,7 @@ $imported_count = count( $imported );
                                 <?php esc_html_e( 'Ready Demos', 'godevs-portfolio' ); ?>
                                 <span class="godevs-demos-section-count"><?php echo esc_html( (string) $ready_count ); ?></span>
                         </h3>
-                        <p class="godevs-demos-section-subtitle"><?php esc_html_e( 'Fully designed home + inner pages — ready to import with one click.', 'godevs-portfolio' ); ?></p>
+                        <p class="godevs-demos-section-subtitle"><?php esc_html_e( 'Fully designed home + inner pages - ready to import with one click.', 'godevs-portfolio' ); ?></p>
                 </header>
                 <div class="godevs-demos-grid" id="godevs-demos-grid-ready">
                         <?php foreach ( $complete_demos as $demo ) : ?>
@@ -149,7 +149,7 @@ $imported_count = count( $imported );
                 </div>
         </section>
 
-        <!-- ═══ COMING SOON SECTION ═══ -->
+        <!-- === COMING SOON SECTION === -->
         <?php if ( $coming_count > 0 ) : ?>
         <section class="godevs-demos-section godevs-demos-section-coming" data-section="coming">
                 <header class="godevs-demos-section-header">
@@ -158,7 +158,7 @@ $imported_count = count( $imported );
                                 <?php esc_html_e( 'Coming Soon', 'godevs-portfolio' ); ?>
                                 <span class="godevs-demos-section-count"><?php echo esc_html( (string) $coming_count ); ?></span>
                         </h3>
-                        <p class="godevs-demos-section-subtitle"><?php esc_html_e( 'Homepage patterns available — inner pages are being designed.', 'godevs-portfolio' ); ?></p>
+                        <p class="godevs-demos-section-subtitle"><?php esc_html_e( 'Homepage patterns available - inner pages are being designed.', 'godevs-portfolio' ); ?></p>
                 </header>
                 <div class="godevs-demos-grid godevs-demos-grid-coming" id="godevs-demos-grid-coming">
                         <?php foreach ( $coming_demos as $demo ) : ?>
@@ -173,7 +173,7 @@ $imported_count = count( $imported );
         </section>
         <?php endif; ?>
 
-        <!-- ═══ EMPTY STATE ═══ -->
+        <!-- === EMPTY STATE === -->
         <div class="godevs-demos-empty" id="godevs-demos-empty" hidden>
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                 <h3><?php esc_html_e( 'No demos found', 'godevs-portfolio' ); ?></h3>
@@ -182,7 +182,7 @@ $imported_count = count( $imported );
         </div>
 </div>
 
-<!-- ═══ LIVE PREVIEW MODAL (iframe-based) ═══ -->
+<!-- === LIVE PREVIEW MODAL (iframe-based) === -->
 <div class="godevs-modal godevs-preview-modal" id="godevs-modal" hidden role="dialog" aria-modal="true" aria-labelledby="godevs-modal-title">
         <div class="godevs-modal-backdrop" data-action="close-modal"></div>
         <div class="godevs-modal-panel godevs-preview-panel">
@@ -214,7 +214,7 @@ $imported_count = count( $imported );
                         </div>
                 </header>
 
-                <!-- Preview viewport — iframe-based for real rendered page -->
+                <!-- Preview viewport - iframe-based for real rendered page -->
                 <div class="godevs-modal-body godevs-preview-body">
                         <div class="godevs-preview-viewport" id="godevs-preview-viewport" aria-busy="false">
                                 <div class="godevs-preview-loading" id="godevs-preview-loading">
@@ -250,7 +250,7 @@ $imported_count = count( $imported );
         </div>
 </div>
 
-<!-- ═══ IMPORT PROGRESS OVERLAY ═══ -->
+<!-- === IMPORT PROGRESS OVERLAY === -->
 <div class="godevs-progress" id="godevs-progress" hidden role="status" aria-live="polite">
         <div class="godevs-progress-backdrop"></div>
         <div class="godevs-progress-panel">
@@ -274,7 +274,7 @@ $imported_count = count( $imported );
         </div>
 </div>
 
-<!-- ═══ JS CONFIG ═══ -->
+<!-- === JS CONFIG === -->
 <script>
 window.GODEVS_DEMOS = {
         ajaxUrl: <?php echo wp_json_encode( $ajax_url ); ?>,
@@ -282,7 +282,7 @@ window.GODEVS_DEMOS = {
         renderNonce: <?php echo wp_json_encode( wp_create_nonce( 'godevs_render_demo_page' ) ); ?>,
         imported: <?php echo wp_json_encode( array_values( $imported ) ); ?>,
         i18n: {
-                confirmStarterTitle: <?php echo wp_json_encode( __( 'Import Demo — Starter', 'godevs-portfolio' ) ); ?>,
+                confirmStarterTitle: <?php echo wp_json_encode( __( 'Import Demo - Starter', 'godevs-portfolio' ) ); ?>,
                 confirmSafeTitle: <?php echo wp_json_encode( __( 'Import Demo', 'godevs-portfolio' ) ); ?>,
                 cancel: <?php echo wp_json_encode( __( 'Cancel', 'godevs-portfolio' ) ); ?>,
                 importDemo: <?php echo wp_json_encode( __( 'Import Demo', 'godevs-portfolio' ) ); ?>,
@@ -471,7 +471,7 @@ function godevs_portfolio_render_demo_card( array $demo, array $imported ): stri
                 $is_complete ? '<span class="godevs-demo-card-pages-complete"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>' . esc_html__( 'All pages', 'godevs-portfolio' ) . '</span>' : '',
                 $actions_html // already escaped
                 ,
-                $page_chips,   // %20 — escaped above per chip
-                $feature_chips // %21 — escaped above, static strings
+                $page_chips,   // %20 - escaped above per chip
+                $feature_chips // %21 - escaped above, static strings
         );
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Atelier (Designer) — Contact
+ * Title: Demo - Atelier (Designer) - Contact
  * Slug: godevs-portfolio/demo-atelier-contact
- * Description: ATELIER contact — inquiry form, availability, FAQ. Recommended style variation: Atelier.
+ * Description: ATELIER contact - inquiry form, availability, FAQ. Recommended style variation: Atelier.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, atelier, contact, inquiry, designer
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-atelier","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO: editorial asymmetric ═══ -->
+	<!-- === 01 - HERO: editorial asymmetric === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">— Contact</p>
+				<p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">- Contact</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:html -->
 				<span class="atelier-status"><span class="atelier-dot" aria-hidden="true"></span>Available for selected projects · Q3 2026</span>
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+	<!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				<!-- LEFT: contact information -->
 				<div class="atelier-contact-info">
-					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--40);">— Direct</p>
+					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--40);">- Direct</p>
 
 					<dl style="margin:0 0 var(--wp--preset--spacing--50);display:grid;grid-template-columns:1fr;gap:0;font-family:var(--wp--preset--font-family--body);font-size:0.9375rem;color:var(--atelier-ink);">
 						<div style="display:grid;grid-template-columns:5.5rem 1fr;gap:1.25rem;padding:1rem 0;border-top:1px solid var(--atelier-line);align-items:baseline;">
@@ -84,11 +84,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 						<div style="display:grid;grid-template-columns:5.5rem 1fr;gap:1.25rem;padding:1rem 0;border-top:1px solid var(--atelier-line);border-bottom:1px solid var(--atelier-line);align-items:baseline;">
 							<dt style="color:var(--atelier-muted);text-transform:uppercase;letter-spacing:0.14em;font-size:0.6875rem;">Hours</dt>
-							<dd style="margin:0;font-family:var(--wp--preset--font-family--display);font-size:1.0625rem;">Mon — Thu · 09 — 18 CET</dd>
+							<dd style="margin:0;font-family:var(--wp--preset--font-family--display);font-size:1.0625rem;">Mon - Thu · 09 - 18 CET</dd>
 						</div>
 					</dl>
 
-					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--30);">— Elsewhere</p>
+					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--30);">- Elsewhere</p>
 					<nav style="display:flex;flex-wrap:wrap;gap:0.5rem 1.5rem;font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1rem;margin:0 0 var(--wp--preset--spacing--50);" aria-label="Social channels">
 						<a href="#" style="color:var(--atelier-muted);text-decoration:none;border-bottom:1px solid transparent;padding:0.25rem 0;transition:color 0.3s ease, border-color 0.3s ease;">Instagram</a>
 						<a href="#" style="color:var(--atelier-muted);text-decoration:none;border-bottom:1px solid transparent;padding:0.25rem 0;transition:color 0.3s ease, border-color 0.3s ease;">Behance</a>
@@ -96,7 +96,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<a href="#" style="color:var(--atelier-muted);text-decoration:none;border-bottom:1px solid transparent;padding:0.25rem 0;transition:color 0.3s ease, border-color 0.3s ease;">Are.na</a>
 					</nav>
 
-					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--30);">— What happens next</p>
+					<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--30);">- What happens next</p>
 					<ol style="list-style:none;margin:0;padding:0;display:grid;gap:1rem;font-family:var(--wp--preset--font-family--body);font-size:0.9375rem;color:var(--atelier-ink);">
 						<li style="display:grid;grid-template-columns:1.75rem 1fr;gap:0.85rem;align-items:baseline;">
 							<span style="color:var(--atelier-accent);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;">01</span>
@@ -108,7 +108,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</li>
 						<li style="display:grid;grid-template-columns:1.75rem 1fr;gap:0.85rem;align-items:baseline;">
 							<span style="color:var(--atelier-accent);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;">03</span>
-							<span style="line-height:1.55;">A tailored proposal — scope, timeline, fee — within a week.</span>
+							<span style="line-height:1.55;">A tailored proposal - scope, timeline, fee - within a week.</span>
 						</li>
 					</ol>
 				</div>
@@ -116,7 +116,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- RIGHT: inquiry form -->
 				<div class="atelier-contact-form">
 					<form class="atelier-form" action="#" method="post" novalidate>
-						<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--40);">— Inquiry</p>
+						<p class="is-style-atelier-label" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;margin:0 0 var(--wp--preset--spacing--40);">- Inquiry</p>
 
 						<div class="atelier-form-row" style="display:grid;grid-template-columns:1fr;gap:0.4rem;margin-bottom:1.5rem;">
 							<label for="atelier-name" style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--atelier-muted);font-weight:500;">Name</label>
@@ -149,9 +149,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<div class="atelier-select" style="position:relative;border-bottom:1px solid var(--atelier-line);transition:border-color 0.3s ease;">
 									<select id="atelier-budget" name="atelier-budget" required style="width:100%;font-family:var(--wp--preset--font-family--body);font-size:0.9375rem;color:var(--atelier-ink);background:transparent;border:0;border-radius:0;padding:0.6rem 1.5rem 0.6rem 0;outline:none;appearance:none;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;">
 										<option value="" disabled selected>Select a range</option>
-										<option value="10-25">£10 — 25k</option>
-										<option value="25-50">£25 — 50k</option>
-										<option value="50-100">£50 — 100k</option>
+										<option value="10-25">£10 - 25k</option>
+										<option value="25-50">£25 - 50k</option>
+										<option value="50-100">£50 - 100k</option>
 										<option value="100+">£100k +</option>
 										<option value="not-sure">Not sure yet</option>
 									</select>
@@ -173,7 +173,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<p style="margin:0;font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--atelier-muted);">Response within 3 days</p>
 						</div>
 
-						<p style="margin:1.5rem 0 0;font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem;color:var(--atelier-muted);line-height:1.55;">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+						<p style="margin:1.5rem 0 0;font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:0.8125rem;color:var(--atelier-muted);line-height:1.55;">Demo form - connect a form plugin or the theme's front-forms feature.</p>
 					</form>
 				</div>
 
@@ -231,7 +231,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FAQ: bordered editorial list ═══ -->
+	<!-- === 03 - FAQ: bordered editorial list === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -241,7 +241,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"30%"} -->
 				<div class="wp-block-column" style="flex-basis:30%">
 					<!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">— FAQ</p>
+					<p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">- FAQ</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -263,28 +263,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<span style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.125rem, 2vw, 1.5rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;">How quickly do you respond?</span>
 						<span style="color:var(--atelier-muted);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;" aria-hidden="true">01</span>
 					</dt>
-					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Every inquiry is read by the studio directly — usually within one working day, always within three. If the project is a fit, the next step is a short conversation to align on scope and timing.</dd>
+					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Every inquiry is read by the studio directly - usually within one working day, always within three. If the project is a fit, the next step is a short conversation to align on scope and timing.</dd>
 				</div>
 				<div style="display:grid;grid-template-columns:1fr;gap:0.5rem;padding:1.75rem 0;border-top:1px solid var(--atelier-line);">
 					<dt style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;">
 						<span style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.125rem, 2vw, 1.5rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;">What should I include in my brief?</span>
 						<span style="color:var(--atelier-muted);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;" aria-hidden="true">02</span>
 					</dt>
-					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">A short note is enough — who you are, what you're making, the audience, the timing, and a rough sense of budget. References help, but aren't required. The conversation will fill in the rest.</dd>
+					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">A short note is enough - who you are, what you're making, the audience, the timing, and a rough sense of budget. References help, but aren't required. The conversation will fill in the rest.</dd>
 				</div>
 				<div style="display:grid;grid-template-columns:1fr;gap:0.5rem;padding:1.75rem 0;border-top:1px solid var(--atelier-line);">
 					<dt style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;">
 						<span style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.125rem, 2vw, 1.5rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;">Do you work remotely?</span>
 						<span style="color:var(--atelier-muted);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;" aria-hidden="true">03</span>
 					</dt>
-					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Most engagements run remotely, with a workshop or in-person review at key moments. The studio is set up between London, Copenhagen and Dhaka — time zones are usually workable for clients across Europe, the Americas and Asia.</dd>
+					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Most engagements run remotely, with a workshop or in-person review at key moments. The studio is set up between London, Copenhagen and Dhaka - time zones are usually workable for clients across Europe, the Americas and Asia.</dd>
 				</div>
 				<div style="display:grid;grid-template-columns:1fr;gap:0.5rem;padding:1.75rem 0;border-top:1px solid var(--atelier-line);border-bottom:1px solid var(--atelier-line);">
 					<dt style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;">
 						<span style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.125rem, 2vw, 1.5rem);line-height:1.3;letter-spacing:-0.01em;font-weight:400;">What's your availability?</span>
 						<span style="color:var(--atelier-muted);font-style:italic;font-family:var(--wp--preset--font-family--display);font-size:1rem;" aria-hidden="true">04</span>
 					</dt>
-					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Two engagements per quarter, intentionally. The studio is currently taking on selected projects for Q3 2026 onwards — earlier starts are sometimes possible for the right fit.</dd>
+					<dd style="margin:0;font-size:0.9375rem;line-height:1.7;color:var(--atelier-muted);max-width:60ch;">Two engagements per quarter, intentionally. The studio is currently taking on selected projects for Q3 2026 onwards - earlier starts are sometimes possible for the right fit.</dd>
 				</div>
 			</dl>
 			<!-- /wp:html -->
@@ -303,7 +303,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Share the brief — the messier the better. Every good collaboration starts with a conversation.</p>
+		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Share the brief - the messier the better. Every good collaboration starts with a conversation.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:shortcode -->

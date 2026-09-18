@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Skills — Progress
+ * Title: Skills - Progress
  * Slug: godevs-portfolio/skills-progress
- * Description: A segmented skill ledger — hairline-separated rows with body-font skill names, mono dot indicators, and right-aligned mono percentage readouts. Accessible: the visible mono label carries the exact value.
+ * Description: A segmented skill ledger - hairline-separated rows with body-font skill names, mono dot indicators, and right-aligned mono percentage readouts. Accessible: the visible mono label carries the exact value.
  * Categories: godevs-portfolio-skills
  * Keywords: skills, progress, proficiency, capability, ledger
  * Viewport Width: 1280

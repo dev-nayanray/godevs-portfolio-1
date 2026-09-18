@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Mono",
-	"description": "MONO — Developer / Creative Technologist. Monochrome foundation, off-white and charcoal, restrained electric accent, Inter display/body + SF Mono technical metadata. Minimal, technical, intelligent, human, premium.",
+	"description": "MONO: Developer / Creative Technologist. Monochrome foundation, off-white and charcoal, restrained electric accent, Inter display/body + SF Mono technical metadata. Minimal, technical, intelligent, human, premium.",
 	"settings": {
 		"color": {
 			"palette": [

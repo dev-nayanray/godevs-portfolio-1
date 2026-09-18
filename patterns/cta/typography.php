@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: CTA — Typography
+ * Title: CTA - Typography
  * Slug: godevs-portfolio/cta-typography
- * Description: A typography-led CTA — a single clamp-scaled display headline that doubles as the link, with one serif-italic accent phrase and a mono micro-caption below. Distinct in its type-as-CTA composition.
+ * Description: A typography-led CTA - a single clamp-scaled display headline that doubles as the link, with one serif-italic accent phrase and a mono micro-caption below. Distinct in its type-as-CTA composition.
  * Categories: godevs-portfolio-cta
  * Keywords: cta, typography, display, oversized, type-led
  * Viewport Width: 1280

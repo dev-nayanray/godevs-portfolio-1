@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Portfolio — Two Column
+ * Title: Portfolio - Two Column
  * Slug: godevs-portfolio/portfolio-two-column
- * Description: A live two-column grid with large 3/2 hover-reveal covers, pill meta chips, and display titles — an image-led, low-density browse. Distinct in its larger crops and breathing room.
+ * Description: A live two-column grid with large 3/2 hover-reveal covers, pill meta chips, and display titles - an image-led, low-density browse. Distinct in its larger crops and breathing room.
  * Categories: godevs-portfolio-portfolio
  * Keywords: portfolio, two-column, large-images, grid
  * Viewport Width: 1280
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
 					<div class="wp-block-group">
 						<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500","textTransform":"uppercase"},"color":{"text":"var:preset|color|secondary"},"border":{"radius":"999px","width":"1px","color":"var:preset|color|line","style":"solid"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}}} -->
-						<p class="has-x-small-font-size has-text-color has-border-color" style="border-color:var(--wp--preset--color--line);border-style:solid;border-width:1px;border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);color:var(--wp--preset--color--secondary);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">2026 — Case study</p>
+						<p class="has-x-small-font-size has-text-color has-border-color" style="border-color:var(--wp--preset--color--line);border-style:solid;border-width:1px;border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);color:var(--wp--preset--color--secondary);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">2026 - Case study</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Skills — Minimal
+ * Title: Skills - Minimal
  * Slug: godevs-portfolio/skills-minimal
- * Description: An ultra-restrained skills index — oversized display-font discipline names separated by hairline rules, with ghost mono numerals and nothing else. Distinct in its spare, list-led presentation.
+ * Description: An ultra-restrained skills index - oversized display-font discipline names separated by hairline rules, with ghost mono numerals and nothing else. Distinct in its spare, list-led presentation.
  * Categories: godevs-portfolio-skills
  * Keywords: skills, minimal, list, sparse, restrained
  * Viewport Width: 1280

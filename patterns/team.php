@@ -36,7 +36,7 @@
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin-top:var(--wp--preset--spacing--20)">Maya Okonkwo</h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Founder — Design</p>
+			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Founder - Design</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
 			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Leads design on every engagement and still sketches the first pass by hand.</p>
@@ -60,7 +60,7 @@
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin-top:var(--wp--preset--spacing--20)">Tomás Rivera</h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letterSpacing:0.12em;font-weight:600">Partner — Engineering</p>
+			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letterSpacing:0.12em;font-weight:600">Partner - Engineering</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
 			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Builds the WordPress side of every project with an accessibility-first mindset.</p>
@@ -84,7 +84,7 @@
 			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700;margin-top:var(--wp--preset--spacing--20)">Priya Anand</h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Operations — Content</p>
+			<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Operations - Content</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|secondary"}}} -->
 			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small);line-height:1.6">Runs the studio day to day and writes the editorial voice behind each launch.</p>

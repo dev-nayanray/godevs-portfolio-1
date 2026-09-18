@@ -1,5 +1,5 @@
 /*
- * GoDevs Portfolio — Supplementary theme styles
+ * GoDevs Portfolio - Supplementary theme styles
  *
  * The bulk of the theme styling is emitted by WordPress from theme.json
  * (design tokens + block-level styles + element styles).
@@ -71,7 +71,7 @@
         outline-offset: 2px;
 }
 
-/* Skip-link specific styling — visible only when focused. */
+/* Skip-link specific styling - visible only when focused. */
 .skip-link.screen-reader-text:not(:focus):not(:focus-visible) {
         clip: rect(1px, 1px, 1px, 1px);
         clip-path: inset(50%);
@@ -82,11 +82,11 @@
 }
 
 /* --------------------------------------------------------------
- * 1.2 Enhanced contrast — WCAG 2.2 (1.4.6 Contrast Enhanced)
+ * 1.2 Enhanced contrast - WCAG 2.2 (1.4.6 Contrast Enhanced)
  *
  * Bumps muted text to 7:1 contrast, widens borders to 2px solid,
  * disables any 4%-alpha background tints (which fail contrast
- * against any background — see issue #A1 in audit).
+ * against any background - see issue #A1 in audit).
  * -------------------------------------------------------------- */
 @media (prefers-contrast: more) {
         :root {
@@ -139,10 +139,10 @@
 }
 
 /* --------------------------------------------------------------
- * 3. Block style classes — core/button variants
+ * 3. Block style classes - core/button variants
  * -------------------------------------------------------------- */
 
-/* Outline button — transparent background, accent border. */
+/* Outline button - transparent background, accent border. */
 .wp-block-button.is-style-outline .wp-block-button__link {
         background-color: transparent;
         border: 1px solid var(--wp--preset--color--accent, currentColor);
@@ -161,7 +161,7 @@
         transform: translateY(1px);
 }
 
-/* Text link button — no chrome, accent text. */
+/* Text link button - no chrome, accent text. */
 .wp-block-button.is-style-text-link .wp-block-button__link {
         background: transparent;
         border: none;
@@ -188,7 +188,7 @@
         color: var(--wp--preset--color--contrast);
 }
 
-/* Pill button — fully rounded. */
+/* Pill button - fully rounded. */
 .wp-block-button.is-style-pill .wp-block-button__link {
         border-radius: 9999px;
         padding-left: var(--wp--preset--spacing--60, 2rem);
@@ -200,7 +200,7 @@
         transform: translateY(1px);
 }
 
-/* Arrow button — text-link style with directional affordance via ::after. */
+/* Arrow button - text-link style with directional affordance via ::after. */
 .wp-block-button.is-style-arrow .wp-block-button__link {
         background: transparent;
         border: none;
@@ -228,7 +228,7 @@
         transform: translateX(2px);
 }
 
-/* Default button — better hover/active state */
+/* Default button - better hover/active state */
 .wp-block-button:not(.is-style-outline):not(.is-style-text-link):not(.is-style-pill):not(.is-style-arrow) > .wp-block-button__link {
         display: inline-flex;
         align-items: center;
@@ -256,7 +256,7 @@
         transform: translateY(1px);
 }
 
-/* On dark surfaces (primary background), default button should be the inverse — white bg, dark text */
+/* On dark surfaces (primary background), default button should be the inverse - white bg, dark text */
 .has-primary-background-color .wp-block-button:not(.is-style-outline):not(.is-style-text-link):not(.is-style-pill):not(.is-style-arrow) > .wp-block-button__link {
         background-color: var(--wp--preset--color--contrast, #FFFFFF);
         color: var(--wp--preset--color--primary, #0A0A0A);
@@ -273,15 +273,15 @@
 }
 
 /* --------------------------------------------------------------
- * 4. Block style classes — core/image variants
+ * 4. Block style classes - core/image variants
  * -------------------------------------------------------------- */
 
-/* Rounded image — generous radius. */
+/* Rounded image - generous radius. */
 .wp-block-image.is-style-rounded img {
         border-radius: 1rem;
 }
 
-/* Framed image — bordered with padding. */
+/* Framed image - bordered with padding. */
 .wp-block-image.is-style-framed img {
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         padding: var(--wp--preset--spacing--20, 0.5rem);
@@ -289,13 +289,13 @@
         border-radius: 0.25rem;
 }
 
-/* Soft image — subtle shadow, no border. */
+/* Soft image - subtle shadow, no border. */
 .wp-block-image.is-style-soft img {
         border-radius: 0.5rem;
         box-shadow: var(--wp--preset--shadow--elevated, 0 12px 32px rgba(10, 10, 10, 0.08));
 }
 
-/* Full bleed image — negative margins for full-width display. */
+/* Full bleed image - negative margins for full-width display. */
 .wp-block-image.is-style-full-bleed {
         margin-left: calc(-1 * var(--wp--preset--spacing--50, 1.5rem));
         margin-right: calc(-1 * var(--wp--preset--spacing--50, 1.5rem));
@@ -308,10 +308,10 @@
 }
 
 /* --------------------------------------------------------------
- * 4. Block style classes — core/group card variants
+ * 4. Block style classes - core/group card variants
  * -------------------------------------------------------------- */
 
-/* Card Default — subtle border + soft shadow. */
+/* Card Default - subtle border + soft shadow. */
 .wp-block-group.is-style-card-default {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -320,14 +320,14 @@
         padding: var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Card Bordered — 1px border, no shadow. */
+/* Card Bordered - 1px border, no shadow. */
 .wp-block-group.is-style-card-bordered {
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: 0.5rem;
         padding: var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Card Elevated — larger shadow, no border. */
+/* Card Elevated - larger shadow, no border. */
 .wp-block-group.is-style-card-elevated {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border-radius: 0.5rem;
@@ -335,19 +335,19 @@
         padding: var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Card Minimal — no chrome, only whitespace. */
+/* Card Minimal - no chrome, only whitespace. */
 .wp-block-group.is-style-card-minimal {
         padding: var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Card Editorial — accent left border + serif heading. */
+/* Card Editorial - accent left border + serif heading. */
 .wp-block-group.is-style-card-editorial {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border-left: 2px solid var(--wp--preset--color--accent, currentColor);
         padding: var(--wp--preset--spacing--50, 1.5rem) var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Card Featured — accent top border, surface background. */
+/* Card Featured - accent top border, surface background. */
 .wp-block-group.is-style-card-featured {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border-top: 3px solid var(--wp--preset--color--accent, currentColor);
@@ -355,7 +355,7 @@
         box-shadow: var(--wp--preset--shadow--raised, 0 4px 12px rgba(10, 10, 10, 0.06));
 }
 
-/* Card Numbered — large display numerals + content. */
+/* Card Numbered - large display numerals + content. */
 .wp-block-group.is-style-card-numbered {
         counter-reset: godevs-card-number;
         padding: var(--wp--preset--spacing--60, 2rem);
@@ -378,7 +378,7 @@
 }
 
 /* --------------------------------------------------------------
- * 5. Block style classes — core/separator variants
+ * 5. Block style classes - core/separator variants
  * -------------------------------------------------------------- */
 
 .wp-block-separator.is-style-thin {
@@ -405,7 +405,7 @@
 }
 
 /* --------------------------------------------------------------
- * 6. Block style classes — eyebrow paragraph
+ * 6. Block style classes - eyebrow paragraph
  * -------------------------------------------------------------- */
 
 .wp-block-paragraph.is-style-eyebrow,
@@ -423,7 +423,7 @@ p.is-style-eyebrow {
  * -------------------------------------------------------------- */
 
 /* Articles use a content-width column. WordPress core handles the layout
- * via the align settings in theme.json — no custom layout needed. */
+ * via the align settings in theme.json - no custom layout needed. */
 
 /* Ensure images inside article bodies do not exceed content width. */
 .entry-content .wp-block-image,
@@ -453,7 +453,7 @@ a:hover {
         text-decoration-thickness: 2px;
 }
 
-/* Skip link — visible only when focused. */
+/* Skip link - visible only when focused. */
 .skip-link {
         background: var(--wp--preset--color--primary, #0a0a0a);
         color: var(--wp--preset--color--contrast, #ffffff);
@@ -471,7 +471,7 @@ a:hover {
  * 9. Header / footer minor refinements
  * -------------------------------------------------------------- */
 
-/* Sticky default header — only when no transparent header is in use. */
+/* Sticky default header - only when no transparent header is in use. */
 .site-header {
         position: sticky;
         top: 0;
@@ -481,7 +481,7 @@ a:hover {
         transition: background-color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)),
 }
 
-/* Transparent header variant — used over hero covers. */
+/* Transparent header variant - used over hero covers. */
 .site-header.is-transparent,
 .site-header-transparent {
         background-color: transparent;
@@ -527,16 +527,16 @@ a:hover {
 }
 
 /* --------------------------------------------------------------
- * 11. Phase 6 — Design refinements
+ * 11. Phase 6 - Design refinements
  * -------------------------------------------------------------- */
 
-/* Better link underlines — skip ink for descenders */
+/* Better link underlines - skip ink for descenders */
 a {
         text-decoration-skip-ink: auto;
         text-underline-offset: 0.2em;
 }
 
-/* Card hover — subtle lift for elevated and default cards */
+/* Card hover - subtle lift for elevated and default cards */
 .wp-block-group.is-style-card-default:hover,
 .wp-block-group.is-style-card-elevated:hover {
         box-shadow: 0 16px 40px rgba(10, 10, 10, 0.10);
@@ -548,7 +548,7 @@ a {
         transition: box-shadow 0.2s ease;
 }
 
-/* Details/FAQ — better summary styling */
+/* Details/FAQ - better summary styling */
 .wp-block-details summary {
         cursor: pointer;
         font-weight: 600;
@@ -579,7 +579,7 @@ a {
         margin-bottom: var(--wp--preset--spacing--30, 0.75rem);
 }
 
-/* Navigation — better hover/active states */
+/* Navigation - better hover/active states */
 .wp-block-navigation .wp-block-navigation-item__content {
         transition: color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
         position: relative;
@@ -590,14 +590,14 @@ a {
         opacity: 0.75;
 }
 
-/* Current nav item — underline indicator. Color stays inherited so it
+/* Current nav item - underline indicator. Color stays inherited so it
  * passes contrast on primary-colored header bands in every palette. */
 .wp-block-navigation .current-menu-item .wp-block-navigation-item__content {
         color: inherit;
         font-weight: 600;
 }
 
-/* Quote — refined styling (merged with Phase 10 enhancements) */
+/* Quote - refined styling (merged with Phase 10 enhancements) */
 .wp-block-quote {
         border-left: 3px solid var(--wp--preset--color--accent, currentColor);
         padding-left: var(--wp--preset--spacing--60, 2rem);
@@ -613,7 +613,7 @@ a {
         margin-top: var(--wp--preset--spacing--30, 0.75rem);
 }
 
-/* Pullquote — refined spacing */
+/* Pullquote - refined spacing */
 .wp-block-pullquote {
         border-top: 2px solid var(--wp--preset--color--line, currentColor);
         border-bottom: 2px solid var(--wp--preset--color--line, currentColor);
@@ -625,13 +625,13 @@ a {
         margin: 0;
 }
 
-/* Image — consistent border radius fallback */
+/* Image - consistent border radius fallback */
 .wp-block-image img {
         height: auto;
         max-width: 100%;
 }
 
-/* Post title links — better hover */
+/* Post title links - better hover */
 .wp-block-post-title a {
         text-decoration: none;
         transition: color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
@@ -641,7 +641,7 @@ a {
         color: var(--wp--preset--color--accent, currentColor);
 }
 
-/* Read more — better presentation */
+/* Read more - better presentation */
 .wp-block-read-more {
         text-decoration: none;
         font-weight: 600;
@@ -657,13 +657,13 @@ a {
         border-bottom-color: var(--wp--preset--color--primary, currentColor);
 }
 
-/* Post date — refined */
+/* Post date - refined */
 .wp-block-post-date {
         font-variant-numeric: tabular-nums;
         letter-spacing: 0.01em;
 }
 
-/* Search — refined input styling */
+/* Search - refined input styling */
 .wp-block-search__input {
         border-color: var(--wp--preset--color--line, #e5e5e0);
         border-width: 1px;
@@ -680,20 +680,20 @@ a {
         outline: none;
 }
 
-/* Separator — refined thin style */
+/* Separator - refined thin style */
 .wp-block-separator.is-style-thin {
         border: none;
         border-top: 1px solid var(--wp--preset--color--line, #e5e5e0);
         margin-block: var(--wp--preset--spacing--70, 3rem);
 }
 
-/* Responsive — prevent horizontal overflow globally */
+/* Responsive - prevent horizontal overflow globally */
 html, body {
         overflow-x: hidden;
         max-width: 100vw;
 }
 
-/* Responsive — clamp large type on mobile */
+/* Responsive - clamp large type on mobile */
 @media (max-width: 480px) {
         h1 {
                 font-size: clamp(1.75rem, 8vw, 2.5rem) !important;
@@ -712,7 +712,7 @@ html, body {
         object-fit: cover;
 }
 
-/* Social icons — consistent sizing */
+/* Social icons - consistent sizing */
 .wp-block-social-links .wp-block-social-link {
         transition: transform var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)), background-color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
 }
@@ -721,7 +721,7 @@ html, body {
         transform: translateY(-2px);
 }
 
-/* Comment form — better spacing */
+/* Comment form - better spacing */
 .wp-block-post-comment-form input[type="text"],
 .wp-block-post-comment-form input[type="email"],
 .wp-block-post-comment-form textarea {
@@ -743,10 +743,10 @@ html, body {
 }
 
 /* --------------------------------------------------------------
- * 12. Phase 8 — Premium design refinements
+ * 12. Phase 8 - Premium design refinements
  * -------------------------------------------------------------- */
 
-/* Premium heading typography — stronger hierarchy */
+/* Premium heading typography - stronger hierarchy */
 h1, h2, h3 {
         text-wrap: balance;
 }
@@ -755,12 +755,12 @@ h4, h5, h6 {
         text-wrap: pretty;
 }
 
-/* Better paragraph leading — prevent orphan lines */
+/* Better paragraph leading - prevent orphan lines */
 p {
         text-wrap: pretty;
 }
 
-/* Premium card hover — smoother transition with transform */
+/* Premium card hover - smoother transition with transform */
 .wp-block-group.is-style-card-default,
 .wp-block-group.is-style-card-bordered,
 .wp-block-group.is-style-card-elevated,
@@ -774,12 +774,12 @@ p {
         box-shadow: var(--wp--preset--shadow--floating, 0 20px 48px rgba(10, 10, 10, 0.12));
 }
 
-/* Premium button — smoother transitions */
+/* Premium button - smoother transitions */
 .wp-block-button .wp-block-button__link {
         transition: background-color var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)), color var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)), border-color var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1)), transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Premium navigation — underline animation */
+/* Premium navigation - underline animation */
 .wp-block-navigation .wp-block-navigation-item__content::after {
         content: '';
         position: absolute;
@@ -795,7 +795,7 @@ p {
         width: 100%;
 }
 
-/* Premium image — subtle zoom on hover for linked images */
+/* Premium image - subtle zoom on hover for linked images */
 .wp-block-image a img,
 .wp-block-post-featured-image a img {
         transition: transform var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
@@ -806,9 +806,9 @@ p {
         transform: scale(1.02);
 }
 
-/* Premium pullquote — already refined in section 11, border widths merged */
+/* Premium pullquote - already refined in section 11, border widths merged */
 
-/* Premium details — smoother toggle */
+/* Premium details - smoother toggle */
 .wp-block-details summary {
         transition: color var(--wp--custom--motion--duration--fast, 150ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
 }
@@ -817,29 +817,29 @@ p {
         color: var(--wp--preset--color--accent, currentColor);
 }
 
-/* Premium separator — dotted style */
+/* Premium separator - dotted style */
 .wp-block-separator.is-style-dots::before {
         letter-spacing: 0.8em;
         color: var(--wp--preset--color--line, currentColor);
 }
 
-/* Premium search — larger input with better focus */
+/* Premium search - larger input with better focus */
 .wp-block-search {
         gap: var(--wp--preset--spacing--30, 0.75rem);
 }
 
-/* Premium post title — better link presentation */
+/* Premium post title - better link presentation */
 .wp-block-post-title a:hover {
         text-decoration: none;
 }
 
-/* Premium avatar — subtle border */
+/* Premium avatar - subtle border */
 .wp-block-avatar img {
         border: 2px solid var(--wp--preset--color--surface, #ffffff);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Premium social icons — consistent sizing and hover */
+/* Premium social icons - consistent sizing and hover */
 .wp-block-social-links {
         gap: var(--wp--preset--spacing--30, 0.75rem);
 }
@@ -849,7 +849,7 @@ p {
         border-radius: 50%;
 }
 
-/* Premium form inputs — consistent styling */
+/* Premium form inputs - consistent styling */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -886,14 +886,14 @@ select:focus {
         outline: none;
 }
 
-/* Premium responsive — better mobile type scale */
+/* Premium responsive - better mobile type scale */
 @media (max-width: 600px) {
         h1 { font-size: clamp(1.75rem, 7vw, 2.25rem) !important; line-height: 1.15 !important; }
         h2 { font-size: clamp(1.5rem, 5vw, 1.875rem) !important; }
         h3 { font-size: clamp(1.25rem, 4vw, 1.5rem) !important; }
 }
 
-/* Premium responsive — small mobile (375px and below) */
+/* Premium responsive - small mobile (375px and below) */
 @media (max-width: 375px) {
         .wp-block-group.alignwide,
         .wp-block-group.alignfull {
@@ -908,7 +908,7 @@ select:focus {
         }
 }
 
-/* Premium responsive — tablet adjustments */
+/* Premium responsive - tablet adjustments */
 @media (max-width: 768px) {
         .wp-block-columns .wp-block-column {
                 flex-basis: 100% !important;
@@ -917,18 +917,18 @@ select:focus {
 }
 
 /* --------------------------------------------------------------
- * Container system — three tiers
+ * Container system - three tiers
  *
  * A single, named container vocabulary the patterns and templates can
  * opt into. The widths mirror theme.json's `contentSize` / `wideSize`
  * (1200px / 1240px) so a 1280px viewport has visible differentiation
- * between "content" (1200) and "wide" (1240) — previously both were
+ * between "content" (1200) and "wide" (1240) - previously both were
  * effectively 1232px because wideSize was larger than the viewport.
  *
  * Use:
- *   .godevs-container       — reading column, narrow CTA bands
- *   .godevs-container-wide  — multi-column grids, hero+meta rows
- *   .godevs-container-full  — full-bleed background band (place an
+ *   .godevs-container       - reading column, narrow CTA bands
+ *   .godevs-container-wide  - multi-column grids, hero+meta rows
+ *   .godevs-container-full  - full-bleed background band (place an
  *                              inner .godevs-container-wide for content)
  * -------------------------------------------------------------- */
 .godevs-container,
@@ -958,7 +958,7 @@ select:focus {
         padding-inline: var(--wp--preset--spacing--60, 2rem);
 }
 
-/* Large desktop — allow wide to grow slightly, but without !important
+/* Large desktop - allow wide to grow slightly, but without !important
  * so per-pattern overrides still win. Previously this used !important
  * which blocked every per-template override. */
 @media (min-width: 1440px) {
@@ -970,7 +970,7 @@ select:focus {
         }
 }
 
-/* Premium scroll behavior — smooth scroll for in-page links */
+/* Premium scroll behavior - smooth scroll for in-page links */
 html {
         scroll-behavior: smooth;
 }
@@ -993,10 +993,10 @@ html {
 }
 
 /* --------------------------------------------------------------
- * 13. Phase 10 — Premium pattern design refinements
+ * 13. Phase 10 - Premium pattern design refinements
  * -------------------------------------------------------------- */
 
-/* Premium eyebrow — consistent accent color, tracked uppercase */
+/* Premium eyebrow - consistent accent color, tracked uppercase */
 .is-style-eyebrow {
         letter-spacing: 0.12em;
         text-transform: uppercase;
@@ -1006,13 +1006,13 @@ html {
         margin-bottom: var(--wp--preset--spacing--30, 0.75rem);
 }
 
-/* Premium section rhythm — better vertical spacing between sections */
+/* Premium section rhythm - better vertical spacing between sections */
 .wp-block-group.alignfull > .wp-block-group.alignwide {
         padding-top: var(--wp--preset--spacing--80, 4rem);
         padding-bottom: var(--wp--preset--spacing--80, 4rem);
 }
 
-/* Premium heading — better letter-spacing for display */
+/* Premium heading - better letter-spacing for display */
 h1, h2 {
         letter-spacing: -0.02em;
 }
@@ -1021,12 +1021,12 @@ h3, h4 {
         letter-spacing: -0.01em;
 }
 
-/* Premium body text — better measure */
+/* Premium body text - better measure */
 p {
         max-width: 70ch;
 }
 
-/* Premium blockquote — already refined in section 11, merged with Phase 10 enhancements */
+/* Premium blockquote - already refined in section 11, merged with Phase 10 enhancements */
 
 .wp-block-quote p {
         font-style: italic;
@@ -1035,7 +1035,7 @@ p {
         max-width: none;
 }
 
-/* Premium details — better spacing */
+/* Premium details - better spacing */
 .wp-block-details {
         margin-bottom: var(--wp--preset--spacing--40, 1rem);
 }
@@ -1051,43 +1051,43 @@ p {
         margin-bottom: var(--wp--preset--spacing--30, 0.75rem);
 }
 
-/* Premium image — better overflow handling */
+/* Premium image - better overflow handling */
 .wp-block-image {
         overflow: hidden;
 }
 
-/* Premium gallery — consistent gaps */
+/* Premium gallery - consistent gaps */
 .wp-block-gallery {
         gap: var(--wp--preset--spacing--40, 1rem);
 }
 
-/* Premium code — better presentation */
+/* Premium code - better presentation */
 .wp-block-code code {
         display: block;
         font-family: var(--wp--preset--font-family--mono, monospace);
         line-height: 1.6;
 }
 
-/* Premium separator — better visual treatment */
+/* Premium separator - better visual treatment */
 .wp-block-separator:not(.is-style-dots):not(.is-style-thin) {
         border: none;
         border-top: 2px solid var(--wp--preset--color--line, #e5e5e0);
         margin-block: var(--wp--preset--spacing--80, 4rem);
 }
 
-/* Premium columns — better responsive gap */
+/* Premium columns - better responsive gap */
 @media (max-width: 782px) {
         .wp-block-columns {
                 gap: var(--wp--preset--spacing--60, 2rem);
         }
 }
 
-/* Premium query loop — better card spacing in grids */
+/* Premium query loop - better card spacing in grids */
 .wp-block-query .wp-block-post-template .wp-block-group {
         height: 100%;
 }
 
-/* Premium post featured image — better hover */
+/* Premium post featured image - better hover */
 .wp-block-post-featured-image {
         overflow: hidden;
 }
@@ -1100,31 +1100,31 @@ p {
         transform: scale(1.05);
 }
 
-/* Premium navigation — better mobile menu */
+/* Premium navigation - better mobile menu */
 .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
         padding: var(--wp--preset--spacing--50, 1.5rem);
 }
 
-/* Premium buttons — consistent vertical rhythm */
+/* Premium buttons - consistent vertical rhythm */
 .wp-block-buttons {
         margin-top: var(--wp--preset--spacing--50, 1.5rem);
 }
 
-/* Premium form — better label spacing */
+/* Premium form - better label spacing */
 .wp-block-post-comment-form label {
         display: block;
         margin-bottom: var(--wp--preset--spacing--20, 0.5rem);
         font-weight: 600;
 }
 
-/* Premium comment — better spacing */
+/* Premium comment - better spacing */
 .wp-block-comment-template .wp-block-comment-author-name,
 .wp-block-comment-template .wp-block-comment-date {
         font-size: var(--wp--preset--font-size--small, 0.875rem);
         color: var(--wp--preset--color--muted, #6b7280);
 }
 
-/* Premium pagination — better button styling */
+/* Premium pagination - better button styling */
 .wp-block-query-pagination {
         display: flex;
         gap: var(--wp--preset--spacing--30, 0.75rem);
@@ -1151,7 +1151,7 @@ p {
         background: var(--wp--preset--color--surface-muted, #f5f5f0);
 }
 
-/* Premium responsive — prevent oversize type on small screens */
+/* Premium responsive - prevent oversize type on small screens */
 @media (max-width: 480px) {
         .wp-block-heading {
                 word-break: break-word;
@@ -1159,7 +1159,7 @@ p {
         }
 }
 
-/* Premium touch — better touch targets on mobile */
+/* Premium touch - better touch targets on mobile */
 @media (max-width: 768px) {
         .wp-block-button .wp-block-button__link {
                 min-height: 44px;
@@ -1170,10 +1170,10 @@ p {
 }
 
 /* --------------------------------------------------------------
- * 14. Phase 1 — Premium design system extensions
+ * 14. Phase 1 - Premium design system extensions
  * -------------------------------------------------------------- */
 
-/* 1024px breakpoint — tablet landscape / small laptop */
+/* 1024px breakpoint - tablet landscape / small laptop */
 @media (max-width: 1024px) {
         .wp-block-columns {
                 gap: var(--wp--preset--spacing--50, 1.5rem);
@@ -1188,7 +1188,7 @@ p {
         }
 }
 
-/* Responsive grid utility — auto-fit with minmax */
+/* Responsive grid utility - auto-fit with minmax */
 .godevs-grid-auto {
         display: grid;
         gap: var(--wp--preset--spacing--50, 1.5rem);
@@ -1207,7 +1207,7 @@ p {
         }
 }
 
-/* Scroll-reveal utility — opacity/translateY transition */
+/* Scroll-reveal utility - opacity/translateY transition */
 .godevs-reveal {
         opacity: 0;
         transform: translateY(24px);
@@ -1220,7 +1220,7 @@ p {
         transform: translateY(0);
 }
 
-/* Staggered reveal — nth-child delays for grid items */
+/* Staggered reveal - nth-child delays for grid items */
 .godevs-reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
 .godevs-reveal-stagger > *:nth-child(2) { transition-delay: 80ms; }
 .godevs-reveal-stagger > *:nth-child(3) { transition-delay: 160ms; }
@@ -1229,7 +1229,7 @@ p {
 .godevs-reveal-stagger > *:nth-child(6) { transition-delay: 400ms; }
 .godevs-reveal-stagger > *:nth-child(n+7) { transition-delay: 480ms; }
 
-/* Reduced motion — skip reveal entirely */
+/* Reduced motion - skip reveal entirely */
 @media (prefers-reduced-motion: reduce) {
         .godevs-reveal {
                 opacity: 1;
@@ -1241,7 +1241,7 @@ p {
         }
 }
 
-/* ── Hover-reveal utility for portfolio cards ──────────────────────────────
+/* -- Hover-reveal utility for portfolio cards ------------------------------
  * On touch devices and keyboard focus, the meta stays visible (the
  * .godevs-hover-reveal container reveals its .godevs-hover-reveal-meta on
  * hover OR focus-within). On reduced-motion, the meta is always visible
@@ -1305,7 +1305,7 @@ p {
         }
 }
 
-/* ── Masonry grid utility ──────────────────────────────────────────────────
+/* -- Masonry grid utility --------------------------------------------------
  * Uses CSS grid with auto-fit + minmax for responsive columns, and
  * grid-row: span N on alternating items to create staggered heights.
  * Falls back to a single column on narrow screens.
@@ -1408,12 +1408,12 @@ p {
         }
 }
 
-/* Section rhythm — alternating backgrounds */
+/* Section rhythm - alternating backgrounds */
 section.wp-block-group:nth-of-type(even) {
         background-color: var(--wp--preset--color--surface-muted, transparent);
 }
 
-/* Project single — meta sidebar treatment */
+/* Project single - meta sidebar treatment */
 .godevs-project-meta {
         display: flex;
         flex-wrap: wrap;
@@ -1437,7 +1437,7 @@ section.wp-block-group:nth-of-type(even) {
         font-weight: 600;
 }
 
-/* Next project transition — large image + title */
+/* Next project transition - large image + title */
 .godevs-next-project {
         position: relative;
         overflow: hidden;
@@ -1457,15 +1457,15 @@ section.wp-block-group:nth-of-type(even) {
         }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * Senior UI/UX Review Improvements (v2.4.0)
  *
  * Global fixes identified by VLM-based review of all 10 complete demos.
  * These rules improve visual hierarchy, CTA clarity, link styling,
  * and contrast across every demo without breaking existing layouts.
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
-/* ─── 1. Body copy link styling ──────────────────────────────────────
+/* --- 1. Body copy link styling --------------------------------------
  * Inline links inside paragraphs and headings were falling back to the
  * browser default (blue + underline). Use the accent color, no underline,
  * subtle weight, with a fade hover and a thin underline on hover.
@@ -1502,7 +1502,7 @@ p a:focus-visible {
         border-radius: 2px;
 }
 
-/* ─── 2. Stronger CTA links (the "→ Read more" / "View work" pattern) ───
+/* --- 2. Stronger CTA links (the "→ Read more" / "View work" pattern) ---
  * Demo pages use plain paragraphs with arrow links like "→ View all work".
  * Promote these to visually distinct interactive elements.
  */
@@ -1519,7 +1519,7 @@ p > a[href^="/"]:only-child,
         padding-top: 0.25rem;
 }
 
-/* ─── 3. Muted text contrast ────────────────────────────────────────
+/* --- 3. Muted text contrast ----------------------------------------
  * Governed entirely by theme.json and each style variation's palette.
  * A previous hardcoded !important hex override passed on the light
  * default palette but broke WCAG AA in the Dark variation (2.6:1),
@@ -1527,7 +1527,7 @@ p > a[href^="/"]:only-child,
  * on its own base color.
  */
 
-/* ─── 4. Body line-height refinement ────────────────────────────────
+/* --- 4. Body line-height refinement --------------------------------
  * Slightly increase line-height for long-form body copy. 1.7 was
  * slightly tight on mobile; 1.75 reads more comfortably.
  */
@@ -1537,7 +1537,7 @@ p > a[href^="/"]:only-child,
         line-height: 1.75;
 }
 
-/* ─── 5. Hover/focus states for cards and images ────────────────────
+/* --- 5. Hover/focus states for cards and images --------------------
  * Add subtle scale + shadow transitions on hover for any element with
  * a custom border (images, cards). Previously these had no hover state.
  */
@@ -1548,7 +1548,7 @@ p > a[href^="/"]:only-child,
                     box-shadow var(--wp--custom--motion--duration--base, 300ms) var(--wp--custom--motion--ease, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
-/* ─── 6. Section dividers (eyebrow + heading rhythm) ──────────────
+/* --- 6. Section dividers (eyebrow + heading rhythm) --------------
  * Each demo section header uses an eyebrow paragraph + heading.
  * Improve the rhythm between them with consistent spacing.
  */
@@ -1557,7 +1557,7 @@ p > a[href^="/"]:only-child,
         margin-top: 0.5rem;
 }
 
-/* ─── 7. Dark surface link styling (for director-style demos) ────────
+/* --- 7. Dark surface link styling (for director-style demos) --------
  * On dark surfaces (primary background), accent blue (#2563EB) is too
  * dark to read. Use contrast (white) for links on dark backgrounds.
  */
@@ -1582,7 +1582,7 @@ p > a[href^="/"]:only-child,
         opacity: 1;
 }
 
-/* ─── 8. Demo card grid polish (admin demo library) ────────────────
+/* --- 8. Demo card grid polish (admin demo library) ----------------
  * Subtle hover lift for demo cards in the admin grid.
  */
 
@@ -1595,7 +1595,7 @@ p > a[href^="/"]:only-child,
         transform: translateY(-2px);
 }
 
-/* ─── 9. Form input placeholder text styling ────────────────────────
+/* --- 9. Form input placeholder text styling ------------------------
  * Director and other demos use <p> elements styled as inputs.
  * Make them look more like real inputs with proper focus state.
  */
@@ -1605,7 +1605,7 @@ p > a[href^="/"]:only-child,
         box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-/* ─── 10. Reduced motion override for the new transitions ─────────── */
+/* --- 10. Reduced motion override for the new transitions ----------- */
 
 @media (prefers-reduced-motion: reduce) {
         .wp-block-paragraph a,
@@ -1625,13 +1625,13 @@ p > a[href^="/"]:only-child,
         }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * CPT Archive Layout Grid (v2.6.0)
  *
  * CSS for the settings-controlled archive grid. Column count is set
  * dynamically by godevs_cpt_archive_enqueue_styles() based on the
  * theme settings (e.g., portfolio_columns = 3).
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-archive-grid-2col,
 .godevs-archive-grid-3col,
@@ -1645,7 +1645,7 @@ p > a[href^="/"]:only-child,
 .godevs-archive-grid-3col { grid-template-columns: repeat(3, 1fr); }
 .godevs-archive-grid-4col { grid-template-columns: repeat(4, 1fr); }
 
-/* Tablet — collapse to 2 columns */
+/* Tablet - collapse to 2 columns */
 @media (max-width: 1024px) {
         .godevs-archive-grid-3col,
         .godevs-archive-grid-4col {
@@ -1653,7 +1653,7 @@ p > a[href^="/"]:only-child,
         }
 }
 
-/* Mobile — single column */
+/* Mobile - single column */
 @media (max-width: 768px) {
         .godevs-archive-grid-2col,
         .godevs-archive-grid-3col,
@@ -1662,20 +1662,20 @@ p > a[href^="/"]:only-child,
         }
 }
 
-/* List layout — full-width rows */
+/* List layout - full-width rows */
 .godevs-archive-list .wp-block-group {
         margin-bottom: 1.5rem;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * Modern Card System v1.1.0 — Reusable CPT card patterns
+/* ===================================================================
+ * Modern Card System v1.1.0 - Reusable CPT card patterns
  *
  * Premium card variants for Projects, Services, Testimonials,
  * Team, Education, Case Studies. Each variant designed for
  * the grid + listing patterns below.
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
-/* ─── Card Pro — premium elevated card with hover lift ─────────── */
+/* --- Card Pro - premium elevated card with hover lift ----------- */
 .wp-block-group.is-style-card-pro {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -1690,7 +1690,7 @@ p > a[href^="/"]:only-child,
         box-shadow: var(--wp--preset--shadow--elevated, 0 12px 32px rgba(10, 10, 10, 0.08));
 }
 
-/* ─── Card Media — image-top card with content below ───────────── */
+/* --- Card Media - image-top card with content below ------------- */
 .wp-block-group.is-style-card-media {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -1709,7 +1709,7 @@ p > a[href^="/"]:only-child,
         padding: var(--wp--preset--spacing--50, 1.5rem);
 }
 
-/* ─── Card Overlay — image with text overlay ──────────────────── */
+/* --- Card Overlay - image with text overlay -------------------- */
 .wp-block-group.is-style-card-overlay {
         position: relative;
         border-radius: var(--wp--custom--radius--md, 12px);
@@ -1734,7 +1734,7 @@ p > a[href^="/"]:only-child,
         color: #ffffff;
 }
 
-/* ─── Card Compact — dense, scannable card for grids ──────────── */
+/* --- Card Compact - dense, scannable card for grids ------------ */
 .wp-block-group.is-style-card-compact {
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
         border-radius: var(--wp--custom--radius--md, 12px);
@@ -1745,7 +1745,7 @@ p > a[href^="/"]:only-child,
         border-color: var(--wp--preset--color--accent, #2563eb);
 }
 
-/* ─── Card Accent — colored left border + subtle bg ───────────── */
+/* --- Card Accent - colored left border + subtle bg ------------- */
 .wp-block-group.is-style-card-accent {
         background-color: var(--wp--preset--color--surface-muted, #f5f5f0);
         border-left: 3px solid var(--wp--preset--color--accent, #2563eb);
@@ -1757,7 +1757,7 @@ p > a[href^="/"]:only-child,
         border-left-width: 5px;
 }
 
-/* ─── Card Profile — circular avatar + info for team ───────────── */
+/* --- Card Profile - circular avatar + info for team ------------- */
 .wp-block-group.is-style-card-profile {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -1775,7 +1775,7 @@ p > a[href^="/"]:only-child,
         margin: 0 auto var(--wp--preset--spacing--40, 1rem);
 }
 
-/* ─── Card Quote — large quotation mark for testimonials ──────── */
+/* --- Card Quote - large quotation mark for testimonials -------- */
 .wp-block-group.is-style-card-quote {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -1800,7 +1800,7 @@ p > a[href^="/"]:only-child,
         pointer-events: none;
 }
 
-/* ─── Card Stats — big number + label for case study results ───── */
+/* --- Card Stats - big number + label for case study results ----- */
 .wp-block-group.is-style-card-stats {
         background-color: var(--wp--preset--color--surface, #ffffff);
         border: 1px solid var(--wp--preset--color--line, #e5e5e0);
@@ -1816,7 +1816,7 @@ p > a[href^="/"]:only-child,
         color: var(--wp--preset--color--accent, #2563eb);
 }
 
-/* ─── Reusable grid layout utilities ───────────────────────────── */
+/* --- Reusable grid layout utilities ----------------------------- */
 .godevs-grid-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1862,13 +1862,13 @@ p > a[href^="/"]:only-child,
         .wp-block-group.is-style-card-pro:hover { transform: none; }
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   Settings Dead-End Fixes — frontend consumers for the 12 previously-orphan
+/* ===========================================================================
+   Settings Dead-End Fixes - frontend consumers for the 12 previously-orphan
    settings (added v1.0.0).
    These rules are toggled by body classes added in inc/settings-deadend-fixes.php
-   ═══════════════════════════════════════════════════════════════════════════ */
+   =========================================================================== */
 
-/* 4. HEADER STICKY OFF — disable sticky positioning + transitions */
+/* 4. HEADER STICKY OFF - disable sticky positioning + transitions */
 body.godevs-header-sticky-off .site-header,
 body.godevs-header-sticky-off header.wp-block-template-part {
         position: relative !important;
@@ -1876,7 +1876,7 @@ body.godevs-header-sticky-off header.wp-block-template-part {
         transition: none !important;
 }
 
-/* 11. MOTION OFF — disable all transitions + animations */
+/* 11. MOTION OFF - disable all transitions + animations */
 body.godevs-motion-off *,
 body.godevs-motion-off *::before,
 body.godevs-motion-off *::after {
@@ -1890,7 +1890,7 @@ body.godevs-motion-off .godevs-reveal {
         transform: none !important;
 }
 
-/* 12. REDUCED MOTION (forced) — same as prefers-reduced-motion but always on */
+/* 12. REDUCED MOTION (forced) - same as prefers-reduced-motion but always on */
 body.godevs-force-reduced-motion *,
 body.godevs-force-reduced-motion *::before,
 body.godevs-force-reduced-motion *::after {
@@ -1904,7 +1904,7 @@ body.godevs-force-reduced-motion .godevs-reveal {
         transform: none !important;
 }
 
-/* 5 & 6. HEADER CTA — injected button styling */
+/* 5 & 6. HEADER CTA - injected button styling */
 .godevs-header-cta-wrap {
         display: flex;
         align-items: center;
@@ -1949,7 +1949,7 @@ body .godevs-hide-social .godevs-footer-social {
         display: none !important;
 }
 
-/* 9. FOOTER CTA ON — show the CTA strip (off by default) */
+/* 9. FOOTER CTA ON - show the CTA strip (off by default) */
 body .godevs-show-footer-cta .godevs-footer-cta {
         display: block !important;
 }
@@ -1958,21 +1958,21 @@ body .godevs-show-footer-cta .godevs-footer-cta {
         display: none; /* Hidden by default; only shows when footer_cta='1' */
 }
 
-/* 10. SERVICES SHOW_CTA OFF — hide CTA on services archive */
+/* 10. SERVICES SHOW_CTA OFF - hide CTA on services archive */
 body.godevs-services-cta-off .godevs-services-cta,
 body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         display: none !important;
 }
 
-/* Search match highlight (admin only — but harmless here) */
+/* Search match highlight (admin only - but harmless here) */
 .is-search-match {
         animation: godevs-search-fade-in 200ms ease-out;
 }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* NOVA — Creative Digital Agency demo. Scoped under .wp-block-godevs-demo-nova */
+/* ==================================================================== */
+/* NOVA - Creative Digital Agency demo. Scoped under .wp-block-godevs-demo-nova */
 /* All rules are namespaced so they never leak into other demos.         */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-nova {
         --nova-ink: #0A0A0A;
@@ -1983,7 +1983,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "ss01", "cv11";
 }
 
-/* Nova eyebrow / metadata label — mono, uppercase, tracked */
+/* Nova eyebrow / metadata label - mono, uppercase, tracked */
 .wp-block-godevs-demo-nova .is-style-nova-label,
 .wp-block-godevs-demo-nova .nova-label {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -1995,7 +1995,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.4;
 }
 
-/* Nova display heading — huge, tight, ink */
+/* Nova display heading - huge, tight, ink */
 .wp-block-godevs-demo-nova .nova-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -2011,7 +2011,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         letter-spacing: -0.02em;
 }
 
-/* Client strip — flex wrap of brand names */
+/* Client strip - flex wrap of brand names */
 .wp-block-godevs-demo-nova .nova-clients {
         display: flex;
         flex-wrap: wrap;
@@ -2033,7 +2033,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--nova-ink);
 }
 
-/* Project row — asymmetric editorial rows with hover image scale */
+/* Project row - asymmetric editorial rows with hover image scale */
 .wp-block-godevs-demo-nova .nova-project-row {
         display: grid;
         grid-template-columns: 1fr;
@@ -2085,7 +2085,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin: 0.75rem 0;
 }
 
-/* Arrow link — text-link with animated arrow */
+/* Arrow link - text-link with animated arrow */
 .wp-block-godevs-demo-nova .nova-arrow-link {
         display: inline-flex;
         align-items: center;
@@ -2112,7 +2112,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         transform: translateX(2px);
 }
 
-/* Services list — numbered rows with hover reveal */
+/* Services list - numbered rows with hover reveal */
 .wp-block-godevs-demo-nova .nova-service-list {
         border-top: 1px solid var(--nova-line);
 }
@@ -2160,7 +2160,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         transform: translateX(0);
 }
 
-/* Stats — editorial large numbers */
+/* Stats - editorial large numbers */
 .wp-block-godevs-demo-nova .nova-stat-num {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -2204,7 +2204,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         to { transform: translateX(-50%); }
 }
 
-/* Dark section — ink background, contrast text */
+/* Dark section - ink background, contrast text */
 .wp-block-godevs-demo-nova .nova-dark {
         background: var(--nova-ink);
         color: var(--nova-base);
@@ -2311,7 +2311,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-top: 0.75rem;
 }
 
-/* Reduced motion — disable all NOVA animations */
+/* Reduced motion - disable all NOVA animations */
 @media (prefers-reduced-motion: reduce) {
         .wp-block-godevs-demo-nova .nova-project-media img,
         .wp-block-godevs-demo-nova .nova-arrow-link,
@@ -2327,7 +2327,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         }
 }
 
-/* Responsive spacing guard — prevent horizontal overflow on small screens */
+/* Responsive spacing guard - prevent horizontal overflow on small screens */
 .wp-block-godevs-demo-nova .alignfull,
 .wp-block-godevs-demo-nova .alignwide {
         max-width: 100vw;
@@ -2335,12 +2335,12 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-nova img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* ATELIER — Independent Creative Designer / Art Director demo.            */
+/* ==================================================================== */
+/* ATELIER - Independent Creative Designer / Art Director demo.            */
 /* Scoped under .wp-block-godevs-demo-atelier. Editorial serif-forward,   */
 /* warm ivory paper, charcoal ink, clay accent, generous whitespace.       */
-/* All rules namespaced — never leak into other demos.                    */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* All rules namespaced - never leak into other demos.                    */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-atelier {
         --atelier-ink: #1A1814;
@@ -2354,7 +2354,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         -moz-osx-font-smoothing: grayscale;
 }
 
-/* ATELIER eyebrow / metadata label — small sans, tracked, uppercase */
+/* ATELIER eyebrow / metadata label - small sans, tracked, uppercase */
 .wp-block-godevs-demo-atelier .is-style-atelier-label,
 .wp-block-godevs-demo-atelier .atelier-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -2366,7 +2366,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.5;
 }
 
-/* ATELIER display — serif, large, editorial line-height */
+/* ATELIER display - serif, large, editorial line-height */
 .wp-block-godevs-demo-atelier .atelier-display {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -2380,7 +2380,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-weight: 400;
 }
 
-/* Editorial statement — medium serif, generous measure */
+/* Editorial statement - medium serif, generous measure */
 .wp-block-godevs-demo-atelier .atelier-statement {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -2389,7 +2389,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-size: clamp(1.5rem, 3.2vw, 2.5rem);
 }
 
-/* Vertical text — editorial side label */
+/* Vertical text - editorial side label */
 .wp-block-godevs-demo-atelier .atelier-vertical {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -2400,7 +2400,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--atelier-muted);
 }
 
-/* Project row — editorial asymmetric, image with hover scale */
+/* Project row - editorial asymmetric, image with hover scale */
 .wp-block-godevs-demo-atelier .atelier-project {
         display: grid;
         grid-template-columns: 1fr;
@@ -2472,7 +2472,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--atelier-line);
 }
 
-/* Arrow link — serif italic, underline animation */
+/* Arrow link - serif italic, underline animation */
 .wp-block-godevs-demo-atelier .atelier-link {
         display: inline-flex;
         align-items: baseline;
@@ -2501,7 +2501,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         transform: translateX(4px);
 }
 
-/* Expertise list — typographic, numbered, hover reveal */
+/* Expertise list - typographic, numbered, hover reveal */
 .wp-block-godevs-demo-atelier .atelier-expertise {
         border-top: 1px solid var(--atelier-line);
 }
@@ -2555,7 +2555,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         transform: translateX(0);
 }
 
-/* Clients — minimal typographic arrangement */
+/* Clients - minimal typographic arrangement */
 .wp-block-godevs-demo-atelier .atelier-clients {
         display: grid;
         grid-template-columns: 1fr;
@@ -2581,13 +2581,13 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--atelier-accent);
 }
 
-/* Process steps — editorial, no icons */
+/* Process steps - editorial, no icons */
 .wp-block-godevs-demo-atelier .atelier-process-step {
         border-top: 1px solid var(--atelier-line);
         padding-top: 1.25rem;
 }
 
-/* Visual gallery — irregular editorial grid */
+/* Visual gallery - irregular editorial grid */
 .wp-block-godevs-demo-atelier .atelier-gallery {
         display: grid;
         grid-template-columns: 1fr;
@@ -2612,7 +2612,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-atelier .atelier-gallery .gi-5 { grid-column: span 8; grid-row: span 1; }
 }
 
-/* Journal article — editorial, minimal */
+/* Journal article - editorial, minimal */
 .wp-block-godevs-demo-atelier .atelier-article {
         text-decoration: none;
         color: var(--atelier-ink);
@@ -2640,7 +2640,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-style: italic;
 }
 
-/* Filter chips — editorial, no fill */
+/* Filter chips - editorial, no fill */
 .wp-block-godevs-demo-atelier .atelier-filter {
         display: flex;
         flex-wrap: wrap;
@@ -2662,7 +2662,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         border-bottom-color: var(--atelier-ink);
 }
 
-/* Pagination — editorial */
+/* Pagination - editorial */
 .wp-block-godevs-demo-atelier .atelier-pagination {
         display: flex;
         gap: 1.25rem;
@@ -2725,7 +2725,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         50% { box-shadow: 0 0 0 6px rgba(160, 74, 42, 0.06); }
 }
 
-/* Image caption — italic serif */
+/* Image caption - italic serif */
 .wp-block-godevs-demo-atelier .atelier-caption {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-style: italic;
@@ -2735,7 +2735,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.5;
 }
 
-/* Pull quote — large serif */
+/* Pull quote - large serif */
 .wp-block-godevs-demo-atelier .atelier-pullquote {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -2776,7 +2776,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--atelier-base);
 }
 
-/* Reduced motion — disable all ATELIER animations */
+/* Reduced motion - disable all ATELIER animations */
 @media (prefers-reduced-motion: reduce) {
         .wp-block-godevs-demo-atelier .atelier-project-media img,
         .wp-block-godevs-demo-atelier .atelier-gallery-item img,
@@ -2801,11 +2801,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-atelier img { max-width: 100%; height: auto; }
 .wp-block-godevs-demo-atelier .atelier-vertical { white-space: nowrap; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* PULSE — UX / Product Designer demo. Scoped under                   */
+/* ==================================================================== */
+/* PULSE - UX / Product Designer demo. Scoped under                   */
 /* .wp-block-godevs-demo-pulse. Cool neutral system, mono annotations,  */
 /* teal accent, product-grade, systematic. All rules namespaced.        */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-pulse {
         --pulse-ink: #0F1115;
@@ -2821,7 +2821,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         -moz-osx-font-smoothing: grayscale;
 }
 
-/* PULSE eyebrow / spec label — mono, tracked, product-grade */
+/* PULSE eyebrow / spec label - mono, tracked, product-grade */
 .wp-block-godevs-demo-pulse .is-style-pulse-label,
 .wp-block-godevs-demo-pulse .pulse-label {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -2833,7 +2833,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.5;
 }
 
-/* PULSE display — Inter, tight, geometric */
+/* PULSE display - Inter, tight, geometric */
 .wp-block-godevs-demo-pulse .pulse-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -2845,7 +2845,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--pulse-accent);
 }
 
-/* Spec annotation — mono with a leading marker */
+/* Spec annotation - mono with a leading marker */
 .wp-block-godevs-demo-pulse .pulse-spec {
         font-family: var(--wp--preset--font-family--mono, monospace);
         font-size: 0.8125rem;
@@ -2857,7 +2857,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-weight: 600;
 }
 
-/* Case study card — systematic, with metric callout */
+/* Case study card - systematic, with metric callout */
 .wp-block-godevs-demo-pulse .pulse-case {
         display: grid;
         grid-template-columns: 1fr;
@@ -2930,7 +2930,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
         color: var(--pulse-muted);
 }
-/* Metric callout — the signature of PULSE */
+/* Metric callout - the signature of PULSE */
 .wp-block-godevs-demo-pulse .pulse-metric {
         display: flex;
         align-items: baseline;
@@ -2955,7 +2955,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--pulse-muted);
 }
 
-/* Results stats — big numbers, mono labels */
+/* Results stats - big numbers, mono labels */
 .wp-block-godevs-demo-pulse .pulse-stat-num {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 700;
@@ -2972,7 +2972,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-top: 0.6rem;
 }
 
-/* Process — numbered grid with mono markers */
+/* Process - numbered grid with mono markers */
 .wp-block-godevs-demo-pulse .pulse-process-step {
         background: var(--pulse-surface);
         border: 1px solid var(--pulse-line);
@@ -2995,7 +2995,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-bottom: 1rem;
 }
 
-/* Skills — spec-sheet rows */
+/* Skills - spec-sheet rows */
 .wp-block-godevs-demo-pulse .pulse-skill-row {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -3065,7 +3065,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* Testimonial — product-grade card with metric */
+/* Testimonial - product-grade card with metric */
 .wp-block-godevs-demo-pulse .pulse-testimonial {
         background: var(--pulse-surface);
         border: 1px solid var(--pulse-line);
@@ -3074,7 +3074,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         height: 100%;
 }
 
-/* Arrow link — sans, with arrow */
+/* Arrow link - sans, with arrow */
 .wp-block-godevs-demo-pulse .pulse-link {
         display: inline-flex;
         align-items: center;
@@ -3133,7 +3133,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         gap: 0.5rem;
 }
 
-/* Dark section — product dashboard vibe */
+/* Dark section - product dashboard vibe */
 .wp-block-godevs-demo-pulse .pulse-dark {
         background: var(--pulse-ink);
         color: var(--pulse-base);
@@ -3240,11 +3240,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-pulse img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* FRAME — Photographer demo. Scoped under .wp-block-godevs-demo-frame.  */
+/* ==================================================================== */
+/* FRAME - Photographer demo. Scoped under .wp-block-godevs-demo-frame.  */
 /* Dark gallery aesthetic, minimal chrome, image-first. All rules          */
-/* namespaced — never leak into other demos.                              */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* namespaced - never leak into other demos.                              */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-frame {
         --frame-ink: #0B0B0B;
@@ -3259,7 +3259,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "kern", "liga";
 }
 
-/* FRAME label — uppercase, tracked, minimal gallery tag */
+/* FRAME label - uppercase, tracked, minimal gallery tag */
 .wp-block-godevs-demo-frame .is-style-frame-label,
 .wp-block-godevs-demo-frame .frame-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -3271,7 +3271,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* FRAME display — Inter at light weight, airy, gallery-scale */
+/* FRAME display - Inter at light weight, airy, gallery-scale */
 .wp-block-godevs-demo-frame .frame-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 300;
@@ -3286,7 +3286,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         letter-spacing: -0.015em;
 }
 
-/* Light section — for text-heavy pages (about/journal/contact) */
+/* Light section - for text-heavy pages (about/journal/contact) */
 .wp-block-godevs-demo-frame .frame-light {
         background: #F4F4F2;
         color: #0B0B0B;
@@ -3299,7 +3299,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-frame .frame-light .frame-label,
 .wp-block-godevs-demo-frame .frame-light .is-style-frame-label { color: #6E6E6E; }
 
-/* Story image — large editorial, full-bleed-ish */
+/* Story image - large editorial, full-bleed-ish */
 .wp-block-godevs-demo-frame .frame-story {
         display: block;
         position: relative;
@@ -3331,7 +3331,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* Story grid — asymmetric editorial */
+/* Story grid - asymmetric editorial */
 .wp-block-godevs-demo-frame .frame-stories {
         display: grid;
         grid-template-columns: 1fr;
@@ -3354,7 +3354,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-frame .frame-stories .frame-story { aspect-ratio: auto; }
 }
 
-/* Gallery masonry — work archive */
+/* Gallery masonry - work archive */
 .wp-block-godevs-demo-frame .frame-gallery {
         display: grid;
         grid-template-columns: 1fr;
@@ -3374,7 +3374,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-frame .frame-gallery .frame-story { aspect-ratio: 4/5; }
 
-/* Arrow link — minimal, with subtle underline */
+/* Arrow link - minimal, with subtle underline */
 .wp-block-godevs-demo-frame .frame-link {
         display: inline-flex;
         align-items: center;
@@ -3427,7 +3427,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--frame-ink);
 }
 
-/* Index list — gallery archive rows */
+/* Index list - gallery archive rows */
 .wp-block-godevs-demo-frame .frame-index-row {
         display: grid;
         grid-template-columns: 1fr;
@@ -3483,7 +3483,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-frame .frame-index-row:hover .frame-index-arrow { opacity: 1; transform: translateX(0); color: var(--frame-accent); }
 
-/* Filter chips — minimal gallery tags */
+/* Filter chips - minimal gallery tags */
 .wp-block-godevs-demo-frame .frame-filter {
         display: flex;
         flex-wrap: wrap;
@@ -3527,7 +3527,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         }
 }
 
-/* Pull quote — large, light, airy */
+/* Pull quote - large, light, airy */
 .wp-block-godevs-demo-frame .frame-pullquote {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 300;
@@ -3582,11 +3582,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-frame img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* ARCHITECT — Architecture & Interior Design Studio demo. Scoped under  */
+/* ==================================================================== */
+/* ARCHITECT - Architecture & Interior Design Studio demo. Scoped under  */
 /* .wp-block-godevs-demo-architect. Warm concrete, charcoal, bronze,      */
 /* strong uppercase metadata, calm/precise/material. Namespaced.           */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-architect {
         --arch-ink: #1C1A17;
@@ -3600,7 +3600,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "ss01", "kern", "liga";
 }
 
-/* ARCHITECT label — uppercase, tracked, architectural metadata */
+/* ARCHITECT label - uppercase, tracked, architectural metadata */
 .wp-block-godevs-demo-architect .is-style-arch-label,
 .wp-block-godevs-demo-architect .arch-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -3612,7 +3612,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.5;
 }
 
-/* ARCHITECT display — Inter 500, architectural precision */
+/* ARCHITECT display - Inter 500, architectural precision */
 .wp-block-godevs-demo-architect .arch-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 500;
@@ -3627,7 +3627,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         letter-spacing: -0.015em;
 }
 
-/* Project index row — the architectural signature */
+/* Project index row - the architectural signature */
 .wp-block-godevs-demo-architect .arch-project {
         display: grid;
         grid-template-columns: 1fr;
@@ -3749,7 +3749,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         transform: translateX(4px);
 }
 
-/* Services — numbered rows */
+/* Services - numbered rows */
 .wp-block-godevs-demo-architect .arch-service-row {
         display: grid;
         grid-template-columns: 3rem 1fr 2fr auto;
@@ -3796,7 +3796,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-architect .arch-service-row:hover .arch-service-arrow { opacity: 1; transform: translateX(0); color: var(--arch-accent); }
 
-/* Stats — understated */
+/* Stats - understated */
 .wp-block-godevs-demo-architect .arch-stat-num {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 500;
@@ -3814,7 +3814,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-top: 0.6rem;
 }
 
-/* Material grid — tactile close-ups */
+/* Material grid - tactile close-ups */
 .wp-block-godevs-demo-architect .arch-materials {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -3853,7 +3853,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Team — editorial portraits, no circular avatars */
+/* Team - editorial portraits, no circular avatars */
 .wp-block-godevs-demo-architect .arch-team-member .arch-team-portrait {
         overflow: hidden;
         background: var(--arch-surface);
@@ -3885,7 +3885,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-top: 0.3rem;
 }
 
-/* Filter chips — architectural */
+/* Filter chips - architectural */
 .wp-block-godevs-demo-architect .arch-filter {
         display: flex;
         flex-wrap: wrap;
@@ -3909,7 +3909,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         border-bottom-color: var(--arch-accent);
 }
 
-/* Dark section — concrete wall vibe */
+/* Dark section - concrete wall vibe */
 .wp-block-godevs-demo-architect .arch-dark {
         background: var(--arch-ink);
         color: var(--arch-base);
@@ -3966,7 +3966,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-architect .arch-2col.is-wide-narrow { grid-template-columns: 1.7fr 1fr; }
 }
 
-/* Project facts — spec sheet */
+/* Project facts - spec sheet */
 .wp-block-godevs-demo-architect .arch-facts {
         border-top: 1px solid var(--arch-line);
 }
@@ -4053,11 +4053,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-architect img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* NOIR — Film Director / Cinematographer demo. Scoped under            */
+/* ==================================================================== */
+/* NOIR - Film Director / Cinematographer demo. Scoped under            */
 /* .wp-block-godevs-demo-noir. Near-black cinematic, film-red accent,    */
 /* Inter bold film-title typography. All rules namespaced.              */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-noir {
         --noir-ink: #0A0908;
@@ -4072,7 +4072,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "ss01", "kern", "liga";
 }
 
-/* NOIR label — uppercase, tracked, cinematic metadata */
+/* NOIR label - uppercase, tracked, cinematic metadata */
 .wp-block-godevs-demo-noir .is-style-noir-label,
 .wp-block-godevs-demo-noir .noir-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -4084,7 +4084,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* NOIR display — Inter bold 700, film-title-sequence */
+/* NOIR display - Inter bold 700, film-title-sequence */
 .wp-block-godevs-demo-noir .noir-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 700;
@@ -4102,7 +4102,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--noir-accent);
 }
 
-/* Film card — cinematic title card */
+/* Film card - cinematic title card */
 .wp-block-godevs-demo-noir .noir-film {
         display: block;
         position: relative;
@@ -4131,7 +4131,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         filter: brightness(1) saturate(1);
         outline: 2px solid currentColor; outline-offset: 2px;
 }
-/* Film overlay — dark gradient with title reveal */
+/* Film overlay - dark gradient with title reveal */
 .wp-block-godevs-demo-noir .noir-film-overlay {
         position: absolute;
         inset: 0;
@@ -4173,7 +4173,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin: 0 0.5rem;
         opacity: 0.5;
 }
-/* Play indicator — appears on hover */
+/* Play indicator - appears on hover */
 .wp-block-godevs-demo-noir .noir-play {
         position: absolute;
         top: 1.5rem;
@@ -4201,7 +4201,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         background: var(--noir-accent);
 }
 
-/* Showreel — large play poster */
+/* Showreel - large play poster */
 .wp-block-godevs-demo-noir .noir-showreel {
         position: relative;
         overflow: hidden;
@@ -4249,7 +4249,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         outline: 2px solid currentColor; outline-offset: 2px;
 }
 
-/* Services — numbered rows */
+/* Services - numbered rows */
 .wp-block-godevs-demo-noir .noir-service-row {
         display: grid;
         grid-template-columns: 3rem 1fr 2fr auto;
@@ -4351,7 +4351,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-noir .noir-index-row:hover .noir-index-arrow { opacity: 1; transform: translateX(0); }
 
-/* Filter chips — cinematic */
+/* Filter chips - cinematic */
 .wp-block-godevs-demo-noir .noir-filter {
         display: flex;
         flex-wrap: wrap;
@@ -4375,7 +4375,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         border-bottom-color: var(--noir-accent);
 }
 
-/* Frames gallery — cinematic contact sheet */
+/* Frames gallery - cinematic contact sheet */
 .wp-block-godevs-demo-noir .noir-frames {
         display: grid;
         grid-template-columns: 1fr;
@@ -4412,7 +4412,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-noir .noir-frame:hover img { transform: scale(1.04); filter: brightness(1) saturate(1); }
 
-/* Clients — typographic */
+/* Clients - typographic */
 .wp-block-godevs-demo-noir .noir-clients {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -4589,11 +4589,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-noir img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* MONO — Developer / Creative Technologist demo. Scoped under           */
+/* ==================================================================== */
+/* MONO - Developer / Creative Technologist demo. Scoped under           */
 /* .wp-block-godevs-demo-mono. Monochrome foundation, electric accent,    */
 /* Inter + mono technical metadata. All rules namespaced.               */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-mono {
         --mono-ink: #0E0E0E;
@@ -4608,7 +4608,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "ss01", "cv11", "kern", "liga";
 }
 
-/* MONO technical label — mono, small, for metadata/code/status */
+/* MONO technical label - mono, small, for metadata/code/status */
 .wp-block-godevs-demo-mono .is-style-mono-label,
 .wp-block-godevs-demo-mono .mono-label {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -4619,7 +4619,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* MONO display — Inter, tight, editorial */
+/* MONO display - Inter, tight, editorial */
 .wp-block-godevs-demo-mono .mono-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -4629,7 +4629,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-mono .mono-display .mono-accent-text { color: var(--mono-accent); }
 
-/* Tech chip — inline code-style label */
+/* Tech chip - inline code-style label */
 .wp-block-godevs-demo-mono .mono-chip {
         display: inline-flex;
         align-items: center;
@@ -4651,7 +4651,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-mono .mono-chip:hover { color: var(--mono-accent); border-color: var(--mono-accent); }
 
-/* Project row — editorial product case study */
+/* Project row - editorial product case study */
 .wp-block-godevs-demo-mono .mono-project {
         display: grid;
         grid-template-columns: 1fr;
@@ -4743,7 +4743,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         opacity: 1; color: var(--mono-accent); gap: 0.7rem; outline: 2px solid currentColor; outline-offset: 2px;
 }
 
-/* Services / experience — numbered rows */
+/* Services / experience - numbered rows */
 .wp-block-godevs-demo-mono .mono-row {
         display: grid;
         grid-template-columns: 3rem 1fr 2fr auto;
@@ -4791,7 +4791,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-mono .mono-row:hover .mono-row-arrow { opacity: 1; transform: translateX(0); color: var(--mono-accent); }
 
-/* Stack grid — text-based tools, not logos */
+/* Stack grid - text-based tools, not logos */
 .wp-block-godevs-demo-mono .mono-stack-group {
         border-top: 1px solid var(--mono-line);
         padding: 1.5rem 0;
@@ -4816,7 +4816,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         color: var(--mono-muted);
 }
 
-/* OSS card — GitHub-style metadata */
+/* OSS card - GitHub-style metadata */
 .wp-block-godevs-demo-mono .mono-oss-card {
         border: 1px solid var(--mono-line);
         border-radius: 6px;
@@ -4862,7 +4862,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-mono .mono-oss-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
 
-/* Code block accent — design accent, not overwhelming */
+/* Code block accent - design accent, not overwhelming */
 .wp-block-godevs-demo-mono .mono-code {
         font-family: var(--wp--preset--font-family--mono, monospace);
         font-size: 0.875rem;
@@ -4876,7 +4876,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-mono .mono-code .mono-code-accent { color: var(--mono-accent); }
 .wp-block-godevs-demo-mono .mono-code .mono-code-muted { color: rgba(250, 250, 249, 0.5); }
 
-/* Testimonial — clean editorial */
+/* Testimonial - clean editorial */
 .wp-block-godevs-demo-mono .mono-testimonial {
         border-left: 2px solid var(--mono-line);
         padding: 0.5rem 0 0.5rem 1.5rem;
@@ -4898,7 +4898,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-top: 0.5rem;
 }
 
-/* Dark section — for technical depth */
+/* Dark section - for technical depth */
 .wp-block-godevs-demo-mono .mono-dark {
         background: var(--mono-ink);
         color: var(--mono-base);
@@ -4948,7 +4948,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-mono .mono-2col.is-wide-narrow { grid-template-columns: 1.6fr 1fr; }
 }
 
-/* Project facts — spec sheet */
+/* Project facts - spec sheet */
 .wp-block-godevs-demo-mono .mono-facts {
         border-top: 1px solid var(--mono-line);
 }
@@ -5041,11 +5041,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-mono img { max-width: 100%; height: auto; }
 .wp-block-godevs-demo-mono .mono-code { white-space: pre-wrap; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* LUXE — Fashion Designer / Stylist demo. Scoped under                */
+/* ==================================================================== */
+/* LUXE - Fashion Designer / Stylist demo. Scoped under                */
 /* .wp-block-godevs-demo-luxe. Soft ivory, charcoal, muted gold,         */
 /* Newsreader serif display. All rules namespaced.                      */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-luxe {
         --luxe-ink: #1A1814;
@@ -5059,7 +5059,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "kern", "liga", "ss01";
 }
 
-/* LUXE label — uppercase, tracked, luxury metadata */
+/* LUXE label - uppercase, tracked, luxury metadata */
 .wp-block-godevs-demo-luxe .is-style-luxe-label,
 .wp-block-godevs-demo-luxe .luxe-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -5071,7 +5071,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* LUXE display — Newsreader serif, elegant editorial */
+/* LUXE display - Newsreader serif, elegant editorial */
 .wp-block-godevs-demo-luxe .luxe-display {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -5085,7 +5085,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-luxe .luxe-display .luxe-accent-text { color: var(--luxe-accent); }
 
-/* LUXE statement — medium serif, editorial */
+/* LUXE statement - medium serif, editorial */
 .wp-block-godevs-demo-luxe .luxe-statement {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -5095,7 +5095,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-size: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
-/* Vertical text — editorial side label */
+/* Vertical text - editorial side label */
 .wp-block-godevs-demo-luxe .luxe-vertical {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -5107,7 +5107,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         white-space: nowrap;
 }
 
-/* Collection / editorial card — image with hover */
+/* Collection / editorial card - image with hover */
 .wp-block-godevs-demo-luxe .luxe-card {
         display: block;
         position: relative;
@@ -5183,7 +5183,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-luxe .luxe-grid .lg-6 { grid-column: span 8; }
 }
 
-/* Lookbook grid — varied portrait ratios */
+/* Lookbook grid - varied portrait ratios */
 .wp-block-godevs-demo-luxe .luxe-lookbook {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -5206,7 +5206,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
-/* Services — numbered editorial rows */
+/* Services - numbered editorial rows */
 .wp-block-godevs-demo-luxe .luxe-service-row {
         display: grid;
         grid-template-columns: 3rem 1fr 2fr auto;
@@ -5256,7 +5256,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-luxe .luxe-service-row:hover .luxe-service-arrow { opacity: 1; transform: translateX(0); color: var(--luxe-accent); }
 
-/* Clients — elegant text list */
+/* Clients - elegant text list */
 .wp-block-godevs-demo-luxe .luxe-clients {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -5277,7 +5277,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-luxe .luxe-clients span:hover { opacity: 1; color: var(--luxe-accent); }
 
-/* Arrow link — serif italic */
+/* Arrow link - serif italic */
 .wp-block-godevs-demo-luxe .luxe-link {
         display: inline-flex;
         align-items: center;
@@ -5357,7 +5357,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         margin-bottom: 0.5rem;
 }
 
-/* Image caption — italic serif */
+/* Image caption - italic serif */
 .wp-block-godevs-demo-luxe .luxe-caption {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-style: italic;
@@ -5414,11 +5414,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-luxe img { max-width: 100%; height: auto; }
 .wp-block-godevs-demo-luxe .luxe-vertical { white-space: nowrap; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* JOURNAL — Premium Writer / Author / Editorial Portfolio demo.       */
+/* ==================================================================== */
+/* JOURNAL - Premium Writer / Author / Editorial Portfolio demo.       */
 /* Scoped under .wp-block-godevs-demo-journal. Warm paper, deep ink,     */
 /* muted burgundy, Newsreader serif. Reading-focused. Namespaced.       */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-journal {
         --jour-ink: #1A1714;
@@ -5432,7 +5432,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "kern", "liga", "onum";
 }
 
-/* JOURNAL label — uppercase, tracked, editorial metadata */
+/* JOURNAL label - uppercase, tracked, editorial metadata */
 .wp-block-godevs-demo-journal .is-style-jour-label,
 .wp-block-godevs-demo-journal .jour-label {
         font-family: var(--wp--preset--font-family--body, "Inter", sans-serif);
@@ -5444,7 +5444,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* JOURNAL display — Newsreader serif, literary */
+/* JOURNAL display - Newsreader serif, literary */
 .wp-block-godevs-demo-journal .jour-display {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -5458,7 +5458,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-journal .jour-display .jour-accent-text { color: var(--jour-accent); }
 
-/* JOURNAL lead — medium serif for intros */
+/* JOURNAL lead - medium serif for intros */
 .wp-block-godevs-demo-journal .jour-lead {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -5467,7 +5467,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-size: clamp(1.375rem, 2.5vw, 1.75rem);
 }
 
-/* Article entry — editorial index row */
+/* Article entry - editorial index row */
 .wp-block-godevs-demo-journal .jour-article {
         display: grid;
         grid-template-columns: 1fr;
@@ -5533,7 +5533,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         max-width: 48ch;
 }
 
-/* Notes — short-form entries */
+/* Notes - short-form entries */
 .wp-block-godevs-demo-journal .jour-note {
         display: grid;
         grid-template-columns: 2.5rem 1fr;
@@ -5567,7 +5567,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-journal .jour-note:hover .jour-note-text { font-style: italic; }
 
-/* Publications — editorial book list */
+/* Publications - editorial book list */
 .wp-block-godevs-demo-journal .jour-book {
         display: grid;
         grid-template-columns: 1fr;
@@ -5641,7 +5641,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-style: italic;
 }
 
-/* Pull quote — enormous, full-width */
+/* Pull quote - enormous, full-width */
 .wp-block-godevs-demo-journal .jour-quote {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-weight: 400;
@@ -5651,7 +5651,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-journal .jour-quote .jour-italic { font-style: italic; }
 
-/* Arrow link — serif italic */
+/* Arrow link - serif italic */
 .wp-block-godevs-demo-journal .jour-link {
         display: inline-flex;
         align-items: center;
@@ -5689,7 +5689,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-journal .jour-2col.is-wide-narrow { grid-template-columns: 1.7fr 1fr; }
 }
 
-/* Drop cap — editorial reading accent */
+/* Drop cap - editorial reading accent */
 .wp-block-godevs-demo-journal .jour-dropcap::first-letter {
         font-family: var(--wp--preset--font-family--display, "Newsreader", serif);
         font-size: 3.5em;
@@ -5710,7 +5710,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.5;
 }
 
-/* Newsletter input — editorial subscribe */
+/* Newsletter input - editorial subscribe */
 .wp-block-godevs-demo-journal .jour-subscribe {
         display: flex;
         flex-wrap: wrap;
@@ -5780,11 +5780,11 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-journal img { max-width: 100%; height: auto; }
 
-/* ════════════════════════════════════════════════════════════════════ */
-/* HORIZON — Travel Photographer / Visual Storyteller demo. Scoped      */
+/* ==================================================================== */
+/* HORIZON - Travel Photographer / Visual Storyteller demo. Scoped      */
 /* under .wp-block-godevs-demo-horizon. Warm charcoal/ivory, burnt      */
 /* orange accent, Inter display + mono coordinates. Immersive.           */
-/* ══════════════════════════════════════════════════════════════════════ */
+/* ====================================================================== */
 
 .wp-block-godevs-demo-horizon {
         --hor-ink: #161310;
@@ -5798,7 +5798,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         font-feature-settings: "ss01", "cv11", "kern", "liga";
 }
 
-/* HORIZON label — mono, tracked, travel metadata */
+/* HORIZON label - mono, tracked, travel metadata */
 .wp-block-godevs-demo-horizon .is-style-hor-label,
 .wp-block-godevs-demo-horizon .hor-label {
         font-family: var(--wp--preset--font-family--mono, monospace);
@@ -5810,7 +5810,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         line-height: 1.6;
 }
 
-/* HORIZON display — Inter 600, tight, dramatic */
+/* HORIZON display - Inter 600, tight, dramatic */
 .wp-block-godevs-demo-horizon .hor-display {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -5820,7 +5820,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-horizon .hor-display .hor-accent-text { color: var(--hor-accent); }
 
-/* Destination card — immersive image with overlay */
+/* Destination card - immersive image with overlay */
 .wp-block-godevs-demo-horizon .hor-destination {
         display: block;
         position: relative;
@@ -5886,7 +5886,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         letter-spacing: 0.06em;
 }
 
-/* Journey grid — asymmetric immersive destinations */
+/* Journey grid - asymmetric immersive destinations */
 .wp-block-godevs-demo-horizon .hor-journeys {
         display: grid;
         grid-template-columns: 1fr;
@@ -5905,7 +5905,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-horizon .hor-journeys .hj-6 { grid-column: span 4; aspect-ratio: 3/4; }
 }
 
-/* Photography grid — varied curated frames */
+/* Photography grid - varied curated frames */
 .wp-block-godevs-demo-horizon .hor-frames {
         display: grid;
         grid-template-columns: 1fr;
@@ -5954,7 +5954,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-horizon .hor-frame:hover .hor-frame-caption { opacity: 1; transform: translateY(0); }
 
-/* Journal article — editorial travel row */
+/* Journal article - editorial travel row */
 .wp-block-godevs-demo-horizon .hor-article {
         display: grid;
         grid-template-columns: 1fr;
@@ -5996,7 +5996,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-horizon .hor-article:hover .hor-article-title { color: var(--hor-accent); }
 
-/* Stats — minimal travel numbers */
+/* Stats - minimal travel numbers */
 .wp-block-godevs-demo-horizon .hor-stat-num {
         font-family: var(--wp--preset--font-family--display, "Inter", sans-serif);
         font-weight: 600;
@@ -6050,7 +6050,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
         .wp-block-godevs-demo-horizon .hor-2col { grid-template-columns: 1fr 1fr; gap: 4rem; }
 }
 
-/* Dark section — immersive */
+/* Dark section - immersive */
 .wp-block-godevs-demo-horizon .hor-dark {
         background: var(--hor-ink);
         color: var(--hor-base);
@@ -6062,7 +6062,7 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 .wp-block-godevs-demo-horizon .hor-dark .hor-label,
 .wp-block-godevs-demo-horizon .hor-dark .is-style-hor-label { color: rgba(245, 242, 235, 0.55); }
 
-/* Image caption — mono */
+/* Image caption - mono */
 .wp-block-godevs-demo-horizon .hor-caption {
         font-family: var(--wp--preset--font-family--mono, monospace);
         font-size: 0.6875rem;
@@ -6118,17 +6118,17 @@ body.godevs-services-cta-off .wp-block-query .godevs-cta-section {
 }
 .wp-block-godevs-demo-horizon img { max-width: 100%; height: auto; }
 
-/* ═══════════════════════════════════════════════════════════════════════════
- * Phase 11 — Responsive hardening pass (v3.x)
+/* ===========================================================================
+ * Phase 11 - Responsive hardening pass (v3.x)
  *
  * Audit-driven fixes for the 9 viewports: 1920, 1440, 1280, 1024, 768,
  * 430, 390, 375, 320. These rules sit at the end of the file so they win
  * the cascade over earlier per-demo rules without needing !important on
  * every declaration. Specific selectors are scoped under their demo
  * namespace so the cascade order does the right thing.
- * ═══════════════════════════════════════════════════════════════════════════ */
+ * =========================================================================== */
 
-/* ─── A. Global overflow guards (extra hardening on top of section 596) ──── */
+/* --- A. Global overflow guards (extra hardening on top of section 596) ---- */
 html, body {
         overflow-x: hidden;
         max-width: 100vw;
@@ -6144,7 +6144,7 @@ html, body {
         box-sizing: border-box;
 }
 
-/* ─── B. Post-template grid — collapse cleanly to 1 column on mobile ───── */
+/* --- B. Post-template grid - collapse cleanly to 1 column on mobile ----- */
 @media (max-width: 1024px) {
         .wp-block-post-template.is-layout-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -6158,7 +6158,7 @@ html, body {
         }
 }
 
-/* ─── C. Site header — let the inner row wrap on small screens ─────────── */
+/* --- C. Site header - let the inner row wrap on small screens ----------- */
 /* The default header.html wraps the logo + (tagline + nav + CTA) row in a
  * flex-nowrap group. On 320–430px screens that overflows. Force the inner
  * groups to allow wrapping below the tablet breakpoint. */
@@ -6169,7 +6169,7 @@ html, body {
                 flex-wrap: wrap !important;
                 gap: var(--wp--preset--spacing--30, 0.75rem) !important;
         }
-        /* Hide the "Portfolio — 2026" / "Menu — 2026" decorative tagline at
+        /* Hide the "Portfolio - 2026" / "Menu - 2026" decorative tagline at
          * narrow widths so the logo + hamburger + CTA can breathe. */
         .site-header .wp-block-group.alignwide > .wp-block-group > .wp-block-group > p {
                 display: none;
@@ -6193,7 +6193,7 @@ html, body {
         }
 }
 
-/* ─── D. Mobile menu overlay (WordPress core navigation) — polish ──────── */
+/* --- D. Mobile menu overlay (WordPress core navigation) - polish -------- */
 @media (max-width: 768px) {
         .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
                 padding: var(--wp--preset--spacing--50, 1.5rem);
@@ -6204,7 +6204,7 @@ html, body {
         }
 }
 
-/* ─── E. Container / section padding — tighten on small screens ─────── */
+/* --- E. Container / section padding - tighten on small screens ------- */
 @media (max-width: 768px) {
         .wp-block-group.alignfull,
         .wp-block-group.alignwide {
@@ -6229,7 +6229,7 @@ html, body {
         }
 }
 
-/* ─── F. 4-column service / index rows — collapse to 2-col then 1-col ── */
+/* --- F. 4-column service / index rows - collapse to 2-col then 1-col -- */
 /* ATELIER, ARCHITECT, NOIR, MONO, LUXE all use `3rem 1fr 2fr auto` for
  * their numbered service rows. At ≤768px this collapses to a 2-col
  * num/title + desc/arrow layout, and at ≤480px to a 1-col stack. */
@@ -6274,7 +6274,7 @@ html, body {
         }
 }
 
-/* NOVA services use `auto 1fr auto` — collapse to 2-col at narrow. */
+/* NOVA services use `auto 1fr auto` - collapse to 2-col at narrow. */
 @media (max-width: 600px) {
         .wp-block-godevs-demo-nova .nova-service-row {
                 grid-template-columns: 2rem 1fr;
@@ -6286,14 +6286,14 @@ html, body {
         }
 }
 
-/* ─── G. Editorial 2-column rows (luxe/mono/atelier/etc. —2col) ────────
+/* --- G. Editorial 2-column rows (luxe/mono/atelier/etc. -2col) --------
  * These already collapse via @media (min-width: 800px) { … } patterns.
  * The base rule uses 1fr so they're already mobile-first. Nothing to do.
  */
 
-/* ─── H. Lookbook / clients 2-col on phone (already 2-col, OK) ───────── */
+/* --- H. Lookbook / clients 2-col on phone (already 2-col, OK) --------- */
 
-/* ─── I. Credits spec sheet — 9rem label column is too wide at <375px ── */
+/* --- I. Credits spec sheet - 9rem label column is too wide at <375px -- */
 @media (max-width: 375px) {
         .wp-block-godevs-demo-luxe .luxe-credit-row,
         .wp-block-godevs-demo-noir .noir-credit-row,
@@ -6303,7 +6303,7 @@ html, body {
         }
 }
 
-/* ─── J. Lookbook + frame/story grids — keep at 2 cols at ≥320, 1 col below ── */
+/* --- J. Lookbook + frame/story grids - keep at 2 cols at ≥320, 1 col below -- */
 @media (max-width: 360px) {
         .wp-block-godevs-demo-luxe .luxe-lookbook,
         .wp-block-godevs-demo-architect .arch-materials,
@@ -6315,7 +6315,7 @@ html, body {
         }
 }
 
-/* ─── K. Pulse skill row — collapse 1fr 2fr to 1fr at <480 ─────────── */
+/* --- K. Pulse skill row - collapse 1fr 2fr to 1fr at <480 ----------- */
 @media (max-width: 480px) {
         .wp-block-godevs-demo-pulse .pulse-skill-row {
                 grid-template-columns: 1fr;
@@ -6323,7 +6323,7 @@ html, body {
         }
 }
 
-/* ─── L. Big wordmarks — let them wrap rather than overflow ─────────── */
+/* --- L. Big wordmarks - let them wrap rather than overflow ----------- */
 @media (max-width: 480px) {
         .wp-block-godevs-demo-nova .nova-footer-wordmark,
         .wp-block-godevs-demo-atelier .atelier-footer-wordmark,
@@ -6342,7 +6342,7 @@ html, body {
         }
 }
 
-/* ─── M. Marquees — pause mask on small screens so edges read clearly ─ */
+/* --- M. Marquees - pause mask on small screens so edges read clearly - */
 @media (max-width: 768px) {
         .wp-block-godevs-demo-nova .nova-marquee {
                 -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
@@ -6350,7 +6350,7 @@ html, body {
         }
 }
 
-/* ─── N. Search input — full width on phone, button stays visible ────── */
+/* --- N. Search input - full width on phone, button stays visible ------ */
 @media (max-width: 600px) {
         .wp-block-search {
                 width: 100%;
@@ -6368,7 +6368,7 @@ html, body {
         }
 }
 
-/* ─── O. wp:cover min-height — convert viewport units to safe values ─ */
+/* --- O. wp:cover min-height - convert viewport units to safe values - */
 /* WP cover blocks with minHeight:92 / 94 emit `min-height: 92vh` which is
  * fine, but combined with the iOS URL bar the content can be cut off.
  * Cap the cover min-height on mobile to 70vh so content stays visible. */
@@ -6379,7 +6379,7 @@ html, body {
         }
 }
 
-/* ─── P. wp-block-button — full-width on phone for primary CTAs ─────── */
+/* --- P. wp-block-button - full-width on phone for primary CTAs ------- */
 @media (max-width: 375px) {
         .wp-block-buttons.is-vertical .wp-block-button,
         .wp-block-buttons .wp-block-button {
@@ -6391,7 +6391,7 @@ html, body {
         }
 }
 
-/* ─── Q. Tables — horizontal scroll instead of overflow ─────────────── */
+/* --- Q. Tables - horizontal scroll instead of overflow --------------- */
 .wp-block-table {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -6403,7 +6403,7 @@ html, body {
         width: 100%;
 }
 
-/* ─── R. Code blocks — allow horizontal scroll, never overflow ──────── */
+/* --- R. Code blocks - allow horizontal scroll, never overflow -------- */
 .wp-block-code,
 pre {
         overflow-x: auto;
@@ -6411,16 +6411,16 @@ pre {
         -webkit-overflow-scrolling: touch;
 }
 
-/* ─── S. Marquee tracks (NOVA) — pause-on-touch for accessibility ──── */
+/* --- S. Marquee tracks (NOVA) - pause-on-touch for accessibility ---- */
 @media (hover: none) {
         .wp-block-godevs-demo-nova .nova-marquee-track {
                 animation-play-state: paused;
         }
 }
 
-/* ─── T. Pulse experience row — already collapses, keep ──────────────── */
+/* --- T. Pulse experience row - already collapses, keep ---------------- */
 
-/* ─── U. Demo-internal filter rows — allow wrap ─────────────────────── */
+/* --- U. Demo-internal filter rows - allow wrap ----------------------- */
 @media (max-width: 600px) {
         .wp-block-godevs-demo-nova .nova-filter,
         .wp-block-godevs-demo-atelier .atelier-filter,
@@ -6436,7 +6436,7 @@ pre {
         }
 }
 
-/* ─── V. Demo hero columns — collapse to single column on mobile ────
+/* --- V. Demo hero columns - collapse to single column on mobile ----
  * The wp:columns block in core already collapses via .wp-block-columns
  * CSS, but demos wrap inner groups that use `flex-wrap: nowrap`. Force
  * wrap on the hero image+text rows so they stack cleanly. */
@@ -6469,7 +6469,7 @@ pre {
         }
 }
 
-/* ─── W. Footer columns — already flex-wrap, but tighten on phone ──── */
+/* --- W. Footer columns - already flex-wrap, but tighten on phone ---- */
 @media (max-width: 600px) {
         .godevs-footer .wp-block-group.alignwide {
                 gap: var(--wp--preset--spacing--40, 1rem);
@@ -6479,14 +6479,14 @@ pre {
         }
 }
 
-/* ─── X. Block editor wrapper — ensure editor preview matches front-end ──
- * (Defensive — no effect on the front-end, but keeps the editor from
+/* --- X. Block editor wrapper - ensure editor preview matches front-end --
+ * (Defensive - no effect on the front-end, but keeps the editor from
  * showing horizontal scrollbars when these patterns are previewed.) */
 .editor-styles-wrapper {
         overflow-x: hidden;
 }
 
-/* ─── Y. Demo-specific grids — extra safeguard at <375px ──────────── */
+/* --- Y. Demo-specific grids - extra safeguard at <375px ------------ */
 @media (max-width: 375px) {
         .wp-block-godevs-demo-luxe .luxe-grid,
         .wp-block-godevs-demo-atelier .atelier-gallery,
@@ -6502,7 +6502,7 @@ pre {
         }
 }
 
-/* ─── Z. Long pre-formatted text (NOIR director, MONO code) — wrap ── */
+/* --- Z. Long pre-formatted text (NOIR director, MONO code) - wrap -- */
 @media (max-width: 600px) {
         .wp-block-godevs-demo-mono .mono-code,
         .wp-block-godevs-demo-mono .mono-project-meta,
@@ -6514,7 +6514,7 @@ pre {
         }
 }
 
-/* ─── AA. wp-block-image — ensure images never overflow their container ── */
+/* --- AA. wp-block-image - ensure images never overflow their container -- */
 .wp-block-image img,
 .wp-block-post-featured-image img,
 .wp-block-cover__image-background img {
@@ -6523,7 +6523,7 @@ pre {
         display: block;
 }
 
-/* ─── AB. Pagination — wrap on small screens ─────────────────────────── */
+/* --- AB. Pagination - wrap on small screens --------------------------- */
 @media (max-width: 600px) {
         .wp-block-query-pagination {
                 flex-wrap: wrap;
@@ -6535,9 +6535,9 @@ pre {
         }
 }
 
-/* ─── AC. Comment form — full-width inputs already handled (section 11) ── */
+/* --- AC. Comment form - full-width inputs already handled (section 11) -- */
 
-/* ─── AD. Sticky header offset fix — prevent content jump on mobile ── */
+/* --- AD. Sticky header offset fix - prevent content jump on mobile -- */
 @media (max-width: 768px) {
         .site-header.is-sticky,
         header.wp-block-template-part[style*="position: sticky"] {
@@ -6547,7 +6547,7 @@ pre {
         }
 }
 
-/* ─── AE. Aspect-ratio images — guard against iOS Safari quirks ────── */
+/* --- AE. Aspect-ratio images - guard against iOS Safari quirks ------ */
 .wp-block-image[style*="aspect-ratio"] img,
 figure[style*="aspect-ratio"] img {
         object-fit: cover;
@@ -6555,13 +6555,13 @@ figure[style*="aspect-ratio"] img {
         height: 100%;
 }
 
-/* ─── AF. Custom CSS variable rows (inline-style splits) — guard ──────
+/* --- AF. Custom CSS variable rows (inline-style splits) - guard ------
  * Demo patterns use `--nova-row-split: 55% 1fr;` etc. in inline styles.
  * When the @media (min-width: 900px) rule kicks in, the variable is
  * consumed. On mobile, the base `1fr` rule already applies. No action.
  */
 
-/* ─── AG. Reduced-motion override — kill any newly added transitions ── */
+/* --- AG. Reduced-motion override - kill any newly added transitions -- */
 @media (prefers-reduced-motion: reduce) {
         .wp-block-godevs-demo-nova .nova-marquee-track,
         .wp-block-godevs-demo-atelier .atelier-marquee-track,
@@ -6578,7 +6578,7 @@ figure[style*="aspect-ratio"] img {
         }
 }
 
-/* ─── AH. Long header wordmark — wrap on very narrow screens ───────── */
+/* --- AH. Long header wordmark - wrap on very narrow screens --------- */
 @media (max-width: 480px) {
         .site-header .wp-block-site-title a,
         .site-header .wp-block-site-title {
@@ -6588,7 +6588,7 @@ figure[style*="aspect-ratio"] img {
         }
 }
 
-/* ─── AI. Floating filters/CTAs in demo headers (NOVA, MONO, etc.) ──
+/* --- AI. Floating filters/CTAs in demo headers (NOVA, MONO, etc.) --
  * Some demos have a tagline in the header that should hide on phone. */
 @media (max-width: 600px) {
         .site-header .wp-block-group > p[style*="letter-spacing"],
@@ -6597,7 +6597,7 @@ figure[style*="aspect-ratio"] img {
         }
 }
 
-/* ─── AJ. Skip link — visible only when focused (already handled in
+/* --- AJ. Skip link - visible only when focused (already handled in
  * header.html via .screen-reader-text class). Ensure it stays visible
  * on focus at all widths. */
 .skip-link:focus {
@@ -6612,7 +6612,7 @@ figure[style*="aspect-ratio"] img {
         border-radius: 0 0 var(--wp--custom--radius--sm, 6px) 0;
 }
 
-/* ─── AK. Site footer — keep copyright + social row stacked on phone ── */
+/* --- AK. Site footer - keep copyright + social row stacked on phone -- */
 @media (max-width: 480px) {
         .godevs-footer .wp-block-group[style*="justify-content"] {
                 flex-direction: column;

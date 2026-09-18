@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Hero — Centered Introduction
+ * Title: Hero - Centered Introduction
  * Description: A vertically centered editorial hero with an accent eyebrow, mixed-serif display headline, dual pill CTAs, and a hairline mono meta row. For portfolios that lead with the work.
  * Slug: godevs-portfolio/hero-centered-introduction
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- wp:group {"className":"godevs-reveal-stagger","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained","contentSize":"880px"}} -->
 	<div class="wp-block-group godevs-reveal-stagger">
 		<!-- wp:paragraph {"align":"center","className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-		<p class="is-style-eyebrow has-text-align-center has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Selected work · 2014 — 2026</p>
+		<p class="is-style-eyebrow has-text-align-center has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">Selected work · 2014 - 2026</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading {"level":1,"textAlign":"center","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|xxx-large","lineHeight":"1.04","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">A decade of editorial design, accessibility, and front-end engineering. The work below spans identity systems, publications, and product portfolios — each one argued down to the pixel.</p>
+		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">A decade of editorial design, accessibility, and front-end engineering. The work below spans identity systems, publications, and product portfolios - each one argued down to the pixel.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->

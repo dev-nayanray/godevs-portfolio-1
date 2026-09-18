@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Portfolio — Four Column
+ * Title: Portfolio - Four Column
  * Slug: godevs-portfolio/portfolio-four-column
- * Description: A dense four-up portfolio grid with 1/1 hover-reveal covers, pill meta chips, and compact display titles — fed by the Query block at eight per page.
+ * Description: A dense four-up portfolio grid with 1/1 hover-reveal covers, pill meta chips, and compact display titles - fed by the Query block at eight per page.
  * Categories: godevs-portfolio-portfolio
  * Keywords: portfolio, four-column, dense, grid, compact
  * Viewport Width: 1280
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">2026 — Case study</p>
+					<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);text-transform:uppercase;letter-spacing:0.08em;font-weight:500">2026 - Case study</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|medium","lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"700"}}} /-->
 				</div>

@@ -2,7 +2,7 @@
 # favicon, etc.). v0.1 ships this directory intentionally empty.
 #
 # The theme does NOT ship default Open Graph images, favicons, or site
-# icons — users provide these via the Site Editor (logo, site icon) and
+# icons - users provide these via the Site Editor (logo, site icon) and
 # the WordPress Customizer (site icon) respectively.
 #
 # Future phases may add:

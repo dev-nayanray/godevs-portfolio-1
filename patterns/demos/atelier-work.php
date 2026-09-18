@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Atelier (Designer) — Work
+ * Title: Demo - Atelier (Designer) - Work
  * Slug: godevs-portfolio/demo-atelier-work
- * Description: ATELIER portfolio archive — editorial project grid, category filtering. Recommended style variation: Atelier.
+ * Description: ATELIER portfolio archive - editorial project grid, category filtering. Recommended style variation: Atelier.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, atelier, work, portfolio, archive, designer
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-atelier","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — ARCHIVE HEADER: editorial asymmetric ═══ -->
+        <!-- === 01 - ARCHIVE HEADER: editorial asymmetric === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -27,10 +27,10 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">— Work</p>
+                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">- Work</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:paragraph {"className":"is-style-atelier-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">Archive · 24 projects · 2024 — 2026</p>
+                                <p class="is-style-atelier-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500">Archive · 24 projects · 2024 - 2026</p>
                                 <!-- /wp:paragraph -->
                         </div>
                         <!-- /wp:group -->
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — CATEGORY FILTER ═══ -->
+        <!-- === 02 - CATEGORY FILTER === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — EDITORIAL PROJECT LIST: structured, bordered, alternating ═══ -->
+        <!-- === 03 - EDITORIAL PROJECT LIST: structured, bordered, alternating === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -97,11 +97,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">01 · Identity · 2026</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Forma</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A complete identity system for a contemporary design house — wordmark, type pairing, editorial templates and a photographic language carried across every touchpoint.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A complete identity system for a contemporary design house - wordmark, type pairing, editorial templates and a photographic language carried across every touchpoint.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:4/3;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="Forma — brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-forma.webp' ); ?>" alt="Forma - brand identity system for a contemporary design house, stationery flatlay on warm ivory paper" loading="lazy">
                                         </div>
                                 </a>
 
@@ -109,11 +109,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">02 · Art Direction · 2026</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Maison 24</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">Art direction for a fashion house's seasonal story — image world, casting, set and the editorial sequence that holds it together.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">Art direction for a fashion house's seasonal story - image world, casting, set and the editorial sequence that holds it together.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:3/4;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.webp' ); ?>" alt="Maison 24 — art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-maison24.webp' ); ?>" alt="Maison 24 - art direction fashion editorial, single figure in minimal architectural space" loading="lazy">
                                         </div>
                                 </a>
 
@@ -121,11 +121,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">03 · Digital · 2025</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Noir Objects</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A digital experience for a design objects gallery — interface, motion and an editorial system that treats objects as protagonists.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A digital experience for a design objects gallery - interface, motion and an editorial system that treats objects as protagonists.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:16/10;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.webp' ); ?>" alt="Noir Objects — digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-noir.webp' ); ?>" alt="Noir Objects - digital product experience displayed on screen with warm ivory surroundings" loading="lazy">
                                         </div>
                                 </a>
 
@@ -133,11 +133,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">04 · Identity · 2025</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Sora</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A restrained visual identity for a skincare house — debossed wordmark, a quiet material system and packaging designed to age well.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A restrained visual identity for a skincare house - debossed wordmark, a quiet material system and packaging designed to age well.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:1/1;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.webp' ); ?>" alt="Sora — visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-sora.webp' ); ?>" alt="Sora - visual identity mockup with folded paper collateral and debossed monogram" loading="lazy">
                                         </div>
                                 </a>
 
@@ -145,11 +145,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">05 · Editorial · 2025</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Field Notes</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A 240-page publication documenting a year of studio practice — editorial design, image editing and a typographic system built for long-form reading.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A 240-page publication documenting a year of studio practice - editorial design, image editing and a typographic system built for long-form reading.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:3/4;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.webp' ); ?>" alt="Field Notes — editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-fieldnotes.webp' ); ?>" alt="Field Notes - editorial publication, open art book on warm ivory surface with typographic spreads" loading="lazy">
                                         </div>
                                 </a>
 
@@ -157,11 +157,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <div class="atelier-archive-text" style="display:grid;gap:0.6rem;">
                                                 <p class="atelier-article-meta" style="margin:0;">06 · Campaign · 2024</p>
                                                 <h3 class="atelier-project-title" style="margin:0;">Mori</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A campaign for a botanical fragrance house — still life, motion and a flexible image system that carries across every channel.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.65;color:var(--atelier-muted);max-width:46ch;margin:0;">A campaign for a botanical fragrance house - still life, motion and a flexible image system that carries across every channel.</p>
                                                 <p style="margin-top:0.4rem;"><span class="atelier-link">View project <span class="atelier-arrow" aria-hidden="true">→</span></span></p>
                                         </div>
                                         <div class="atelier-project-media" style="aspect-ratio:16/10;max-height:340px;">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.webp' ); ?>" alt="Mori — campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/atelier/atelier-project-mori.webp' ); ?>" alt="Mori - campaign image, minimal still life with natural objects and soft shadow on warm ivory" loading="lazy">
                                         </div>
                                 </a>
 
@@ -197,7 +197,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — PAGINATION ═══ -->
+        <!-- === 04 - PAGINATION === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -219,7 +219,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — CLOSING LINE ═══ -->
+        <!-- === 05 - CLOSING LINE === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

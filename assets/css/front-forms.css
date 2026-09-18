@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — Front-end Forms Styles
+ * GoDevs Portfolio - Front-end Forms Styles
  *
  * Styles for the [godevs_booking_form] and [godevs_proposal_form] shortcodes.
  * Modern, clean, responsive design that matches the theme's aesthetic.
@@ -157,7 +157,7 @@
 	border-radius: 8px;
 }
 
-/* Responsive — stack the two-column rows on mobile */
+/* Responsive - stack the two-column rows on mobile */
 @media (max-width: 600px) {
 	.godevs-form-row {
 		grid-template-columns: 1fr;
@@ -170,7 +170,7 @@
 	}
 }
 
-/* ─── Inline Field Errors (UX-D) ─── */
+/* --- Inline Field Errors (UX-D) --- */
 .godevs-form-field input.has-error,
 .godevs-form-field select.has-error,
 .godevs-form-field textarea.has-error {
@@ -191,7 +191,7 @@
         border-radius: 3px;
 }
 
-/* ─── Submit Button Loading State ─── */
+/* --- Submit Button Loading State --- */
 .godevs-form-submit.is-loading {
         opacity: 0.85;
         cursor: wait;

@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Corporate",
-	"description": "A trustworthy, structured aesthetic — confident blue, mid-gray surfaces, structured spacing, conventional radii. For B2B and consultancy portfolios.",
+	"description": "A trustworthy, structured aesthetic - confident blue, mid-gray surfaces, structured spacing, conventional radii. For B2B and consultancy portfolios.",
 	"settings": {
 		"color": {
 			"palette": [

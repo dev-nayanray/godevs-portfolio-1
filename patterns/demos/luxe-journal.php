@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Luxe (Fashion) — Journal
+ * Title: Demo - Luxe (Fashion) - Journal
  * Slug: godevs-portfolio/demo-luxe-journal
- * Description: LUXE journal — fashion editorial notes. Recommended style variation: Luxe.
+ * Description: LUXE journal - fashion editorial notes. Recommended style variation: Luxe.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, luxe, journal, notes, fashion
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-luxe","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — ARCHIVE HEADER ═══ -->
+	<!-- === 01 - ARCHIVE HEADER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Journal</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Journal</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">12 Articles · 2024 / 2026 · Essay / Process / Notes</p>
@@ -45,13 +45,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CATEGORY FILTER ═══ -->
+	<!-- === 02 - CATEGORY FILTER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Filter by category</p>
+			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Filter by category</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:html -->
 			<style>
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FEATURED ARTICLE ═══ -->
+	<!-- === 03 - FEATURED ARTICLE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -86,9 +86,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Large full-bleed image -->
 			<!-- wp:html -->
-			<a class="luxe-card" href="#" aria-label="Read featured article — Why Material Matters" style="display:block;margin-top:1.5rem;">
+			<a class="luxe-card" href="#" aria-label="Read featured article - Why Material Matters" style="display:block;margin-top:1.5rem;">
 				<div class="luxe-card-media" style="aspect-ratio: 21/9;">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-journal-1.webp' ); ?>" alt="Featured journal image — editorial study in fabric, light and minimal composition, ivory tones" loading="lazy">
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/luxe/luxe-journal-1.webp' ); ?>" alt="Featured journal image - editorial study in fabric, light and minimal composition, ivory tones" loading="lazy">
 				</div>
 			</a>
 			<!-- /wp:html -->
@@ -109,7 +109,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<!-- wp:column {"width":"35%"} -->
 				<div class="wp-block-column" style="flex-basis:35%">
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">An essay on why fabric is the first decision a designer makes — and how the texture, weight and fall of a single textile shapes everything that follows.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">An essay on why fabric is the first decision a designer makes - and how the texture, weight and fall of a single textile shapes everything that follows.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
 					<p style="margin-top:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="#">Read →</a></p>
@@ -124,7 +124,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — ARTICLE LIST ═══ -->
+	<!-- === 04 - ARTICLE LIST === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -134,7 +134,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Index · 2026</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Index · 2026</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"luxe-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.875rem, 4vw, 3rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
 				<h2 class="wp-block-heading luxe-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.875rem, 4vw, 3rem);line-height:1.1;letter-spacing:-0.02em;font-weight:400">More from the journal.</h2>
@@ -177,13 +177,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — PAGINATION ═══ -->
+	<!-- === 05 - PAGINATION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">01 / 03 — Showing 5 of 12 articles</p>
+			<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">01 / 03 - Showing 5 of 12 articles</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontStyle":"italic","fontSize":"1.0625rem"}}} -->
 			<p style="font-family:var(--wp--preset--font-family--display);font-style:italic;font-size:1.0625rem"><a href="#">Next →</a></p>

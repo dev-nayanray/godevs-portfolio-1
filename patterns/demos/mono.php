@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Mono (Developer)
+ * Title: Demo - Mono (Developer)
  * Slug: godevs-portfolio/demo-mono
- * Description: MONO — Developer / Creative Technologist. Monochrome foundation, electric accent, Inter + mono technical metadata. Minimal, technical, intelligent, human. Recommended style variation: Mono.
+ * Description: MONO: Developer / Creative Technologist. Monochrome foundation, electric accent, Inter + mono technical metadata. Minimal, technical, intelligent, human. Recommended style variation: Mono.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, mono, developer, technologist, engineer, portfolio
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-mono","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO ═══ -->
+        <!-- === 01 - HERO === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"bottom","width":"56%"} -->
                                 <div class="wp-block-column" style="flex-basis:56%">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-hero.webp' ); ?>" alt="Clean minimal developer workspace — laptop with abstract product interface, neutral desk, soft light" fetchpriority="high" style="border-radius:6px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
+                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-hero.webp' ); ?>" alt="Clean minimal developer workspace - laptop with abstract product interface, neutral desk, soft light" fetchpriority="high" style="border-radius:6px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — SELECTED WORK ═══ -->
+        <!-- === 02 - SELECTED WORK === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"default"}} -->
@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|70"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)">
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">Selected Work — 2023 / 2026</p>
+                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">Selected Work - 2023 / 2026</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"className":"mono-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 6vw, 5.5rem)","lineHeight":"1.0","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
                                 <h2 class="wp-block-heading mono-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 6vw, 5.5rem);line-height:1.0;letter-spacing:-0.03em;font-weight:600">Selected Work</h2>
@@ -96,15 +96,15 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </div>
                         <!-- /wp:group -->
 
-                        <!-- Project 01 — LUMA (full-width) -->
+                        <!-- Project 01 - LUMA (full-width) -->
                         <!-- wp:html -->
-                        <a class="mono-project is-full" href="#" aria-label="View project — Luma">
+                        <a class="mono-project is-full" href="#" aria-label="View project - Luma">
                                 <div class="mono-project-media" style="aspect-ratio: 21/9;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.webp' ); ?>" alt="LUMA — product platform dashboard UI, clean minimal analytics interface" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-1.webp' ); ?>" alt="LUMA - product platform dashboard UI, clean minimal analytics interface" loading="lazy">
                                 </div>
                                 <div class="mono-project-body" style="flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1.5rem; margin-top: 1.25rem;">
                                         <div>
-                                                <p class="mono-project-num">01 — LUMA</p>
+                                                <p class="mono-project-num">01 - LUMA</p>
                                                 <h3 class="mono-project-title">Luma</h3>
                                                 <p class="mono-project-meta"><span>Product Platform</span><span>2026</span></p>
                                                 <p class="mono-project-desc" style="max-width: 50ch; margin-top: 0.5rem;">A product platform turning complex data into a simple, usable experience.</p>
@@ -119,14 +119,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Project 02 — ATLAS (reversed, vertical) -->
+                        <!-- Project 02 - ATLAS (reversed, vertical) -->
                         <!-- wp:html -->
-                        <a class="mono-project is-reversed" href="#" style="--mono-split: 1fr 1.3fr; margin-top: 4rem;" aria-label="View project — Atlas">
+                        <a class="mono-project is-reversed" href="#" style="--mono-split: 1fr 1.3fr; margin-top: 4rem;" aria-label="View project - Atlas">
                                 <div class="mono-project-body">
-                                        <p class="mono-project-num">02 — ATLAS</p>
+                                        <p class="mono-project-num">02 - ATLAS</p>
                                         <h3 class="mono-project-title">Atlas</h3>
                                         <p class="mono-project-meta"><span>Data &amp; Analytics Platform</span><span>2025</span></p>
-                                        <p class="mono-project-desc" style="max-width: 38ch;">A data and analytics platform built for clarity — dashboards people actually use.</p>
+                                        <p class="mono-project-desc" style="max-width: 38ch;">A data and analytics platform built for clarity - dashboards people actually use.</p>
                                         <div class="mono-project-stack">
                                                 <span class="mono-chip">React</span>
                                                 <span class="mono-chip">Node.js</span>
@@ -135,19 +135,19 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
                                 </div>
                                 <div class="mono-project-media" style="aspect-ratio: 3/4;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.webp' ); ?>" alt="ATLAS — data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-2.webp' ); ?>" alt="ATLAS - data analytics mobile app UI, clean minimal charts and metrics" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Project 03 — NORTH (image left, landscape) -->
+                        <!-- Project 03 - NORTH (image left, landscape) -->
                         <!-- wp:html -->
-                        <a class="mono-project" href="#" style="--mono-split: 1.4fr 1fr; margin-top: 4rem;" aria-label="View project — North">
+                        <a class="mono-project" href="#" style="--mono-split: 1.4fr 1fr; margin-top: 4rem;" aria-label="View project - North">
                                 <div class="mono-project-media" style="aspect-ratio: 4/3;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.webp' ); ?>" alt="NORTH — e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-3.webp' ); ?>" alt="NORTH - e-commerce website UI on laptop, clean minimal product grid" loading="lazy">
                                 </div>
                                 <div class="mono-project-body">
-                                        <p class="mono-project-num">03 — NORTH</p>
+                                        <p class="mono-project-num">03 - NORTH</p>
                                         <h3 class="mono-project-title">North</h3>
                                         <p class="mono-project-meta"><span>E-commerce Experience</span><span>2025</span></p>
                                         <p class="mono-project-desc" style="max-width: 38ch;">A commerce experience engineered for speed and conversion.</p>
@@ -161,18 +161,18 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Projects 04 + 05 — split pair -->
+                        <!-- Projects 04 + 05 - split pair -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|60"}}}} -->
                         <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--60)">
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="mono-project is-full" href="#" aria-label="View project — Forma">
+                                        <a class="mono-project is-full" href="#" aria-label="View project - Forma">
                                                 <div class="mono-project-media" style="aspect-ratio: 4/3;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.webp' ); ?>" alt="FORMA — creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-4.webp' ); ?>" alt="FORMA - creative collaboration tool UI, clean minimal interface with cards" loading="lazy">
                                                 </div>
                                                 <div class="mono-project-body" style="margin-top: 1rem;">
-                                                        <p class="mono-project-num">04 — FORMA</p>
+                                                        <p class="mono-project-num">04 - FORMA</p>
                                                         <h3 class="mono-project-title">Forma</h3>
                                                         <p class="mono-project-meta"><span>Collaboration Tool</span><span>2024</span></p>
                                                         <div class="mono-project-stack">
@@ -187,12 +187,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="mono-project is-full" href="#" aria-label="View project — Pulse">
+                                        <a class="mono-project is-full" href="#" aria-label="View project - Pulse">
                                                 <div class="mono-project-media" style="aspect-ratio: 3/4;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.webp' ); ?>" alt="PULSE — mobile product app UI, clean minimal onboarding flow" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-5.webp' ); ?>" alt="PULSE - mobile product app UI, clean minimal onboarding flow" loading="lazy">
                                                 </div>
                                                 <div class="mono-project-body" style="margin-top: 1rem;">
-                                                        <p class="mono-project-num">05 — PULSE</p>
+                                                        <p class="mono-project-num">05 - PULSE</p>
                                                         <h3 class="mono-project-title">Pulse</h3>
                                                         <p class="mono-project-meta"><span>Mobile Product</span><span>2024</span></p>
                                                         <div class="mono-project-stack">
@@ -207,14 +207,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                         </div>
                         <!-- /wp:columns -->
 
-                        <!-- Project 06 — GRID (reversed, landscape) -->
+                        <!-- Project 06 - GRID (reversed, landscape) -->
                         <!-- wp:html -->
-                        <a class="mono-project is-reversed" href="#" style="--mono-split: 1fr 1.4fr; margin-top: 4rem;" aria-label="View project — Grid">
+                        <a class="mono-project is-reversed" href="#" style="--mono-split: 1fr 1.4fr; margin-top: 4rem;" aria-label="View project - Grid">
                                 <div class="mono-project-body">
-                                        <p class="mono-project-num">06 — GRID</p>
+                                        <p class="mono-project-num">06 - GRID</p>
                                         <h3 class="mono-project-title">Grid</h3>
                                         <p class="mono-project-meta"><span>Developer Platform</span><span>2023</span></p>
-                                        <p class="mono-project-desc" style="max-width: 38ch;">A developer platform with documentation, CLI and API — built for other engineers.</p>
+                                        <p class="mono-project-desc" style="max-width: 38ch;">A developer platform with documentation, CLI and API - built for other engineers.</p>
                                         <div class="mono-project-stack">
                                                 <span class="mono-chip">TypeScript</span>
                                                 <span class="mono-chip">Node.js</span>
@@ -223,7 +223,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p class="mono-project-arrow">View project <span aria-hidden="true">→</span></p>
                                 </div>
                                 <div class="mono-project-media" style="aspect-ratio: 16/10;">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.webp' ); ?>" alt="GRID — developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-project-6.webp' ); ?>" alt="GRID - developer platform documentation UI, clean minimal code blocks and sidebar" loading="lazy">
                                 </div>
                         </a>
                         <!-- /wp:html -->
@@ -238,7 +238,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — FEATURED CASE STUDY: LUMA (dark) ═══ -->
+        <!-- === 03 - FEATURED CASE STUDY: LUMA (dark) === -->
         <!-- wp:group {"tagName":"section","className":"mono-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"color":{"background":"var:preset|color|primary","text":"var:preset|color|contrast"}},"layout":{"type":"default"}} -->
         <section class="wp-block-group mono-dark alignfull has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -261,7 +261,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Large image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"6px"}}} -->
-                        <figure class="wp-block-image alignwide has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.webp' ); ?>" alt="LUMA case study — clean minimal SaaS dashboard UI with data visualization" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mono/mono-featured.webp' ); ?>" alt="LUMA case study - clean minimal SaaS dashboard UI with data visualization" style="border-radius:6px;aspect-ratio:16/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Challenge → Approach → Technology → Result -->
@@ -320,7 +320,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — ABOUT ═══ -->
+        <!-- === 04 - ABOUT === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -337,13 +337,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
                                 <div class="wp-block-column" style="flex-basis:58%">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— About</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- About</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:heading {"level":2,"className":"mono-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
                                         <h2 class="wp-block-heading mono-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Engineer by discipline. Designer by instinct.</h2>
                                         <!-- /wp:heading -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">I build digital products at the intersection of engineering, design and usability. Ten years of practice across product platforms, design systems and technical architecture — working directly with founders and teams who care about how things are made.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">I build digital products at the intersection of engineering, design and usability. Ten years of practice across product platforms, design systems and technical architecture - working directly with founders and teams who care about how things are made.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|foreground"}}} -->
                                         <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--foreground);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500"><span class="mono-dot" aria-hidden="true"></span>Available for selected projects</p>
@@ -360,7 +360,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — TECHNOLOGY STACK ═══ -->
+        <!-- === 05 - TECHNOLOGY STACK === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -368,7 +368,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Stack</p>
+                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Stack</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
                                 <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Tools I work with.</h2>
@@ -410,7 +410,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 06 — EXPERIENCE ═══ -->
+        <!-- === 06 - EXPERIENCE === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -420,7 +420,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Experience</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Experience</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -432,28 +432,28 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <div style="margin-top: 2rem;">
                                                 <div class="mono-row" href="#" style="text-decoration: none;">
-                                                        <span class="mono-row-num">2026 — Now</span>
+                                                        <span class="mono-row-num">2026 - Now</span>
                                                         <span class="mono-row-title">Independent Developer</span>
                                                         <span class="mono-row-desc">Building digital products for startups and businesses.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
-                                                        <span class="mono-row-num">2023 — 2026</span>
+                                                        <span class="mono-row-num">2023 - 2026</span>
                                                         <span class="mono-row-title">Senior Frontend Engineer</span>
                                                         <span class="mono-row-desc">Product development and design systems.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
-                                                        <span class="mono-row-num">2020 — 2023</span>
+                                                        <span class="mono-row-num">2020 - 2023</span>
                                                         <span class="mono-row-title">Full-Stack Developer</span>
                                                         <span class="mono-row-desc">Web applications and digital platforms.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                                 <div class="mono-row" style="text-decoration: none;">
-                                                        <span class="mono-row-num">2016 — 2020</span>
+                                                        <span class="mono-row-num">2016 - 2020</span>
                                                         <span class="mono-row-title">WordPress Developer</span>
                                                         <span class="mono-row-desc">Custom themes, plugins and WooCommerce.</span>
-                                                        <span class="mono-row-arrow" aria-hidden="true">—</span>
+                                                        <span class="mono-row-arrow" aria-hidden="true">-</span>
                                                 </div>
                                         </div>
                                         <!-- /wp:html -->
@@ -466,7 +466,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 07 — SERVICES ═══ -->
+        <!-- === 07 - SERVICES === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -476,7 +476,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Services</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Services</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -536,7 +536,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 08 — PRINCIPLES ═══ -->
+        <!-- === 08 - PRINCIPLES === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -546,7 +546,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Principles</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Principles</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -566,7 +566,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">01 — Simplicity</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">01 - Simplicity</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.65">Remove unnecessary complexity.</p>
@@ -576,7 +576,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">02 — Performance</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">02 - Performance</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.65">Fast experiences are better experiences.</p>
@@ -586,7 +586,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">03 — Accessibility</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">03 - Accessibility</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.65">Products should work for everyone.</p>
@@ -596,7 +596,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">04 — Maintainability</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">04 - Maintainability</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.65">Good code should remain understandable.</p>
@@ -606,7 +606,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.04em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">05 — Detail</p>
+                                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;font-weight:600">05 - Detail</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
                                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.65">Small details create great products.</p>
@@ -631,7 +631,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 09 — OPEN SOURCE & EXPERIMENTS ═══ -->
+        <!-- === 09 - OPEN SOURCE & EXPERIMENTS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -639,7 +639,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Open Source</p>
+                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Open Source</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 4.5vw, 3.5rem)","lineHeight":"1.05","letterSpacing":"-0.025em","fontWeight":"600"}}} -->
                                 <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 4.5vw, 3.5rem);line-height:1.05;letter-spacing:-0.025em;font-weight:600">Open Source &amp; Experiments.</h2>
@@ -709,13 +709,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 10 — TESTIMONIALS ═══ -->
+        <!-- === 10 - TESTIMONIALS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Testimonials (demo identities)</p>
+                        <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Testimonials (demo identities)</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|60","margin":{"top":"var:preset|spacing|40"}}}} -->
                         <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--40)">
@@ -724,7 +724,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="mono-testimonial">
                                                 <p style="font-family:var(--wp--preset--font-family--display);font-weight:500;font-size:clamp(1.125rem, 1.8vw, 1.375rem);line-height:1.4;letter-spacing:-0.015em;margin:0;">"He transformed a complicated product into an interface our customers immediately understood."</p>
-                                                <p class="is-style-mono-label" style="color: var(--mono-muted); margin-top: 1rem;">Maya Rahman — Product Lead, Luma</p>
+                                                <p class="is-style-mono-label" style="color: var(--mono-muted); margin-top: 1rem;">Maya Rahman - Product Lead, Luma</p>
                                         </figure>
                                         <!-- /wp:html -->
                                 </div>
@@ -734,7 +734,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <figure class="mono-testimonial">
                                                 <p style="font-family:var(--wp--preset--font-family--display);font-weight:500;font-size:clamp(1.125rem, 1.8vw, 1.375rem);line-height:1.4;letter-spacing:--0.015em;margin:0;">"Fast, thoughtful and extremely detail-oriented. The code is as clean as the design."</p>
-                                                <p class="is-style-mono-label" style="color: var(--mono-muted); margin-top: 1rem;">Arif Hasan — Founder, North</p>
+                                                <p class="is-style-mono-label" style="color: var(--mono-muted); margin-top: 1rem;">Arif Hasan - Founder, North</p>
                                         </figure>
                                         <!-- /wp:html -->
                                 </div>
@@ -746,7 +746,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 11 — WRITING ═══ -->
+        <!-- === 11 - WRITING === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -754,7 +754,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
                                 <!-- wp:paragraph {"className":"is-style-mono-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.01em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">— Writing</p>
+                                <p class="is-style-mono-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.01em;font-weight:500">- Writing</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"className":"mono-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 6vw, 5rem)","lineHeight":"1.0","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
                                 <h2 class="wp-block-heading mono-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 6vw, 5rem);line-height:1.0;letter-spacing:-0.03em;font-weight:600">Notes.</h2>

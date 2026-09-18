@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Luxe",
-	"description": "LUXE — Fashion Designer / Stylist / Creative Fashion Portfolio. Soft ivory base, deep charcoal, muted gold accent. Newsreader serif display + Inter UI sans + uppercase tracked metadata. Elegant, editorial, sophisticated, image-led luxury fashion.",
+	"description": "LUXE: Fashion Designer / Stylist / Creative Fashion Portfolio. Soft ivory base, deep charcoal, muted gold accent. Newsreader serif display + Inter UI sans + uppercase tracked metadata. Elegant, editorial, sophisticated, image-led luxury fashion.",
 	"settings": {
 		"color": {
 			"palette": [

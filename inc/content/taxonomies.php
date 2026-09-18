@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function godevs_portfolio_register_taxonomies(): void {
 
-	// ── Project Categories ───────────────────────────────────
+	// -- Project Categories -----------------------------------
 	if ( godevs_portfolio_module_enabled( 'projects' ) ) {
 		register_taxonomy(
 			'godevs_project_category',
@@ -74,7 +74,7 @@ function godevs_portfolio_register_taxonomies(): void {
 		);
 	}
 
-	// ── Service Categories ───────────────────────────────────
+	// -- Service Categories -----------------------------------
 	if ( godevs_portfolio_module_enabled( 'services' ) ) {
 		register_taxonomy(
 			'godevs_service_category',
@@ -97,7 +97,7 @@ function godevs_portfolio_register_taxonomies(): void {
 		);
 	}
 
-	// ── Team Departments ─────────────────────────────────────
+	// -- Team Departments -------------------------------------
 	if ( godevs_portfolio_module_enabled( 'team' ) ) {
 		register_taxonomy(
 			'godevs_team_department',
@@ -120,7 +120,7 @@ function godevs_portfolio_register_taxonomies(): void {
 		);
 	}
 
-	// ── FAQ Categories ──────────────────────────────────────
+	// -- FAQ Categories --------------------------------------
 	if ( godevs_portfolio_module_enabled( 'faqs' ) ) {
 		register_taxonomy(
 			'godevs_faq_category',

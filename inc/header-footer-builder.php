@@ -8,7 +8,7 @@
  * custom layout is active.
  *
  * @package GoDevs_Portfolio
- * @since   2.3.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -104,9 +104,9 @@ function godevs_hf_set_active( string $type, string $slug ): bool {
         return update_option( "godevs_hf_active_{$type}", $slug, false );
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // ELEMENT DEFINITIONS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Get available builder elements.
@@ -291,14 +291,14 @@ function godevs_hf_get_header_templates(): array {
                                 ),
                         ),
                 ),
-                // ═══ NEW v2.7.0 STARTER TEMPLATES ═══
+                // === NEW v2.7.0 STARTER TEMPLATES ===
                 'editorial' => array(
                         'label' => __( 'Editorial Magazine', 'godevs-portfolio' ),
                         'rows'  => array(
                                 array(
                                         'columns' => array(
                                                 array( 'width' => '100', 'elements' => array(
-                                                        array( 'type' => 'text', 'settings' => array( 'content' => 'EST. 2024 — INDEPENDENT PUBLICATION', 'font_size' => '11', 'align' => 'center' ) ),
+                                                        array( 'type' => 'text', 'settings' => array( 'content' => 'EST. 2024 - INDEPENDENT PUBLICATION', 'font_size' => '11', 'align' => 'center' ) ),
                                                 ) ),
                                         ),
                                         'settings' => array( 'height' => '32', 'background' => 'var(--wp--preset--color--primary)', 'text_color' => 'var(--wp--preset--color--contrast)', 'sticky' => '0', 'padding_top' => '6', 'padding_bottom' => '6' ),
@@ -505,7 +505,7 @@ function godevs_hf_get_footer_templates(): array {
                                 ),
                         ),
                 ),
-                // ═══ NEW v2.7.0 FOOTER TEMPLATES ═══
+                // === NEW v2.7.0 FOOTER TEMPLATES ===
                 'newsletter-focus' => array(
                         'label' => __( 'Newsletter Focus', 'godevs-portfolio' ),
                         'rows'  => array(
@@ -604,7 +604,7 @@ function godevs_hf_get_footer_templates(): array {
                                                 array( 'width' => '33', 'elements' => array( array( 'type' => 'widget_area', 'settings' => array( 'sidebar_id' => 'godevs-hf-footer' ) ) ) ),
                                                 array( 'width' => '34', 'elements' => array(
                                                         array( 'type' => 'logo' ),
-                                                        array( 'type' => 'text', 'settings' => array( 'content' => 'A widgetized footer layout — drag widgets into the sidebars to populate these columns.', 'font_size' => '13' ) ),
+                                                        array( 'type' => 'text', 'settings' => array( 'content' => 'A widgetized footer layout - drag widgets into the sidebars to populate these columns.', 'font_size' => '13' ) ),
                                                         array( 'type' => 'social_icons', 'settings' => array( 'size' => '14' ) ),
                                                 ) ),
                                         ),
@@ -651,9 +651,9 @@ function godevs_hf_get_footer_templates(): array {
         );
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // FRONT-END RENDERING
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Render a single builder element.
@@ -706,7 +706,7 @@ function godevs_hf_render_element( array $element ): string {
                                 // No menu assigned to primary. Instead of blindly
                                 // picking the first menu by term_id (which would
                                 // show the OLDEST demo's pages), prefer the most
-                                // recently created "— Navigation" menu (which is
+                                // recently created "- Navigation" menu (which is
                                 // the menu the demo importer just created).
                                 $all_menus = wp_get_nav_menus( array( 'orderby' => 'date' ) );
                                 $menu      = null;
@@ -719,7 +719,7 @@ function godevs_hf_render_element( array $element ): string {
                                                 }
                                         );
                                         foreach ( $all_menus as $candidate ) {
-                                                if ( false !== strpos( $candidate->name, '— Navigation' ) ) {
+                                                if ( false !== strpos( $candidate->name, '- Navigation' ) ) {
                                                         $menu = $candidate;
                                                         break;
                                                 }
@@ -797,7 +797,7 @@ function godevs_hf_render_element( array $element ): string {
 
                 case 'html':
                         $content = $s['content'] ?? '';
-                        $out     = sprintf( '<div class="godevs-hf-html">%s</div>', wp_kses_post( $content ) ); // phpcs:ignore — user-defined HTML in admin.
+                        $out     = sprintf( '<div class="godevs-hf-html">%s</div>', wp_kses_post( $content ) ); // phpcs:ignore - user-defined HTML in admin.
                         break;
 
                 case 'image':
@@ -853,7 +853,7 @@ function godevs_hf_render_element( array $element ): string {
 function godevs_hf_render_layout( string $type ): string {
         $active_slug = godevs_hf_get_active( $type );
         if ( ! $active_slug ) {
-                return ''; // No custom layout — use template part.
+                return ''; // No custom layout - use template part.
         }
 
         $layout = godevs_hf_get_layout( $type, $active_slug );
@@ -952,7 +952,7 @@ function godevs_hf_render_layout( string $type ): string {
  * @return bool True if the color is dark enough to need white text.
  */
 function godevs_hf_is_dark_color( string $color ): bool {
-        // Handle CSS variables — can't determine, assume not dark.
+        // Handle CSS variables - can't determine, assume not dark.
         if ( 0 === strpos( $color, 'var(' ) ) {
                 // Check for known dark vars.
                 return false !== strpos( $color, 'primary' ) || false !== strpos( $color, 'contrast' );
@@ -993,12 +993,12 @@ function godevs_hf_is_dark_color( string $color ): bool {
  *      set via the page-edit meta box. Value `'default'` means "use site-wide".
  *   2. Site-wide option: `godevs_hf_active_header` / `godevs_hf_active_footer`
  *      set via the Header/Footer Builder admin UI.
- *   3. None — fall back to the theme's default template-part.
+ *   3. None - fall back to the theme's default template-part.
  *
  * @param string $type 'header' or 'footer'.
  * @return string|null Active layout slug, or null if no layout is active
  *                     (the theme's default template-part should be used).
- * @since 2.4.0  Added per-post meta override.
+ * @since 1.0.0.0  Added per-post meta override.
  */
 function godevs_hf_get_active_for_current_post( string $type ): ?string {
         // 1. Per-post override (only on singular views).
@@ -1026,7 +1026,7 @@ function godevs_hf_get_active_for_current_post( string $type ): ?string {
 }
 
 /**
- * Output custom header on wp_body_open — but ONLY when an active builder
+ * Output custom header on wp_body_open - but ONLY when an active builder
  * layout exists. The default template-part is suppressed separately by
  * the `render_block` filter below (godevs_hf_suppress_default_template_part).
  */
@@ -1037,13 +1037,13 @@ function godevs_hf_output_header(): void {
         }
         $html = godevs_hf_render_layout( 'header' );
         if ( $html ) {
-                echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — rendered from sanitized builder data.
+                echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - rendered from sanitized builder data.
         }
 }
 add_action( 'wp_body_open', 'godevs_hf_output_header' );
 
 /**
- * Output custom footer on wp_footer — but ONLY when an active builder
+ * Output custom footer on wp_footer - but ONLY when an active builder
  * layout exists. The default template-part is suppressed separately by
  * the `render_block` filter below.
  */
@@ -1054,7 +1054,7 @@ function godevs_hf_output_footer(): void {
         }
         $html = godevs_hf_render_layout( 'footer' );
         if ( $html ) {
-                echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — rendered from sanitized builder data.
+                echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - rendered from sanitized builder data.
         }
 }
 add_action( 'wp_footer', 'godevs_hf_output_footer' );
@@ -1062,7 +1062,7 @@ add_action( 'wp_footer', 'godevs_hf_output_footer' );
 /**
  * Suppress the default `<!-- wp:template-part {"slug":"header"} /-->` and
  * `<!-- wp:template-part {"slug":"footer"} /-->` blocks when an active builder
- * layout exists for that type — otherwise both the builder-rendered header
+ * layout exists for that type - otherwise both the builder-rendered header
  * AND the theme's default template-part would appear on screen.
  *
  * Also suppresses demo-pattern-embedded template-parts (e.g. `header-dark`,
@@ -1072,7 +1072,7 @@ add_action( 'wp_footer', 'godevs_hf_output_footer' );
  * @param string    $block_content The rendered block HTML.
  * @param array     $block         The block array.
  * @return string Empty string to suppress, or original content otherwise.
- * @since 2.4.0
+ * @since 1.0.0.0
  */
 function godevs_hf_suppress_default_template_part( string $block_content, array $block ): string {
         if ( 'core/template-part' !== $block['blockName'] ) {
@@ -1098,7 +1098,7 @@ function godevs_hf_suppress_default_template_part( string $block_content, array 
         }
 
         // If a builder layout is active for this area (either per-post or site-wide),
-        // suppress the default template-part — the builder's HTML was already
+        // suppress the default template-part - the builder's HTML was already
         // echoed on wp_body_open / wp_footer.
         if ( godevs_hf_get_active_for_current_post( $type ) ) {
                 return '';
@@ -1108,9 +1108,9 @@ function godevs_hf_suppress_default_template_part( string $block_content, array 
 }
 add_filter( 'render_block', 'godevs_hf_suppress_default_template_part', 10, 2 );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // AJAX ENDPOINTS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_hf_ajax_save_layout(): void {
         check_ajax_referer( 'godevs_settings_save', 'nonce' );
@@ -1208,7 +1208,7 @@ add_action( 'wp_ajax_godevs_hf_get_layouts', 'godevs_hf_ajax_get_layouts' );
  * header/footer as the user edits. Returns rendered HTML that the JS
  * injects into the canvas container.
  *
- * @since 3.0.0
+ * @since 1.0.0.0
  */
 function godevs_hf_ajax_render_preview(): void {
         check_ajax_referer( 'godevs_settings_save', 'nonce' );
@@ -1254,9 +1254,9 @@ function godevs_hf_ajax_render_preview(): void {
 }
 add_action( 'wp_ajax_godevs_hf_render_preview', 'godevs_hf_ajax_render_preview' );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // BUILDER CSS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_hf_enqueue_css(): void {
         if ( is_admin() ) {
@@ -1268,7 +1268,7 @@ function godevs_hf_enqueue_css(): void {
         }
 
         // Enqueue front-end JS for mobile hamburger menu + sticky scroll shadow
-        // + newsletter-form default-prevention (P1.16 — remove inline JS).
+        // + newsletter-form default-prevention (P1.16 - remove inline JS).
         $hf_frontend_js_path = get_template_directory() . '/assets/js/hf-frontend.js';
         $hf_frontend_js_ver  = file_exists( $hf_frontend_js_path ) ? (string) filemtime( $hf_frontend_js_path ) : GODEVS_PORTFOLIO_VERSION;
         wp_enqueue_script(
@@ -1293,9 +1293,9 @@ function godevs_hf_enqueue_css(): void {
 }
 add_action( 'wp_enqueue_scripts', 'godevs_hf_enqueue_css' );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // REGISTER SIDEBARS FOR WIDGET AREAS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_hf_register_sidebars(): void {
         register_sidebar( array(
@@ -1320,9 +1320,9 @@ function godevs_hf_register_sidebars(): void {
 }
 add_action( 'widgets_init', 'godevs_hf_register_sidebars' );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // SVG PREVIEW MINIATURES (UX-C)
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Generate an SVG miniature of a starter template based on its row/column

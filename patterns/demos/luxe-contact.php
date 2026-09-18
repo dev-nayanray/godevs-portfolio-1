@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Luxe (Fashion) — Contact
+ * Title: Demo - Luxe (Fashion) - Contact
  * Slug: godevs-portfolio/demo-luxe-contact
- * Description: LUXE contact — inquiry form, availability. Recommended style variation: Luxe.
+ * Description: LUXE contact - inquiry form, availability. Recommended style variation: Luxe.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, luxe, contact, inquiry
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-luxe","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO ═══ -->
+	<!-- === 01 - HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Contact</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Contact</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
 				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">Available · Q2 / Q3 2026 · Selected Projects Only</p>
@@ -60,7 +60,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+	<!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -70,13 +70,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|80"}}} -->
 			<div class="wp-block-columns">
 
-				<!-- LEFT — Contact info (40%) -->
+				<!-- LEFT - Contact info (40%) -->
 				<!-- wp:column {"width":"40%"} -->
 				<div class="wp-block-column" style="flex-basis:40%">
 
 					<!-- Eyebrow -->
 					<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Studio</p>
+					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Studio</p>
 					<!-- /wp:paragraph -->
 
 					<!-- Contact details (luxe-credits) -->
@@ -103,7 +103,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<!-- Social links -->
 					<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
-					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--50)">— Elsewhere</p>
+					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--50)">- Elsewhere</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:html -->
 					<nav class="luxe-clients" aria-label="Social links" style="margin-top:1rem;gap:1.5rem 1.75rem;">
@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<!-- What happens next -->
 					<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
-					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--60)">— What happens next</p>
+					<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500;margin-top:var(--wp--preset--spacing--60)">- What happens next</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:html -->
 					<ol style="list-style:none;padding:0;margin:1.25rem 0 0;counter-reset:nextstep;">
@@ -123,11 +123,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</li>
 						<li style="counter-increment:nextstep;display:grid;grid-template-columns:2rem 1fr;gap:0.75rem;padding:0.75rem 0;border-top:1px solid var(--luxe-line);">
 							<span style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;color:var(--luxe-accent);font-weight:500;" aria-hidden="true">02</span>
-							<span style="font-size:var(--wp--preset--font-size--medium);line-height:1.7;color:var(--luxe-muted);">A short conversation — by message or call — to understand the work.</span>
+							<span style="font-size:var(--wp--preset--font-size--medium);line-height:1.7;color:var(--luxe-muted);">A short conversation - by message or call - to understand the work.</span>
 						</li>
 						<li style="counter-increment:nextstep;display:grid;grid-template-columns:2rem 1fr;gap:0.75rem;padding:0.75rem 0;border-top:1px solid var(--luxe-line);border-bottom:1px solid var(--luxe-line);">
 							<span style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;color:var(--luxe-accent);font-weight:500;" aria-hidden="true">03</span>
-							<span style="font-size:var(--wp--preset--font-size--medium);line-height:1.7;color:var(--luxe-muted);">A scoped proposal — timeline, scope and fee — within a week.</span>
+							<span style="font-size:var(--wp--preset--font-size--medium);line-height:1.7;color:var(--luxe-muted);">A scoped proposal - timeline, scope and fee - within a week.</span>
 						</li>
 					</ol>
 					<!-- /wp:html -->
@@ -135,7 +135,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 				<!-- /wp:column -->
 
-				<!-- RIGHT — Inquiry form (60%) -->
+				<!-- RIGHT - Inquiry form (60%) -->
 				<!-- wp:column {"width":"60%"} -->
 				<div class="wp-block-column" style="flex-basis:60%">
 
@@ -166,7 +166,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						.wp-block-godevs-demo-luxe .luxe-form-note{font-family:var(--wp--preset--font-family--body,"Inter",sans-serif);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--luxe-muted,#8A8275);margin:0;}
 					</style>
 					<div class="luxe-form">
-						<p class="luxe-form-eyebrow">— Inquiry</p>
+						<p class="luxe-form-eyebrow">- Inquiry</p>
 						<p class="luxe-form-title">Begin a conversation.</p>
 						<form action="#" method="post" novalidate>
 							<div class="luxe-form-row">
@@ -218,7 +218,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</div>
 							<div class="luxe-form-actions">
 								<button class="luxe-form-submit" type="submit">Make an inquiry <span aria-hidden="true">→</span></button>
-								<p class="luxe-form-note">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+								<p class="luxe-form-note">Demo form - connect a form plugin or the theme's front-forms feature.</p>
 							</div>
 						</form>
 					</div>
@@ -235,7 +235,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FAQ ═══ -->
+	<!-- === 03 - FAQ === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -245,7 +245,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-luxe-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Frequently Asked · 04</p>
+				<p class="is-style-luxe-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Frequently Asked · 04</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"luxe-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.75rem)","lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"400"}}} -->
 				<h2 class="wp-block-heading luxe-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.75rem);line-height:1.05;letter-spacing:-0.02em;font-weight:400">Before you write.</h2>
@@ -259,13 +259,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a class="luxe-service-row" href="/contact" style="grid-template-columns: 3rem 1fr 24rem 2rem;">
 					<span class="luxe-service-num">01</span>
 					<span class="luxe-service-title">How quickly do you respond?</span>
-					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">Most inquiries receive a personal reply within three working days — sooner for time-sensitive projects.</span>
+					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">Most inquiries receive a personal reply within three working days - sooner for time-sensitive projects.</span>
 					<span class="luxe-service-arrow" aria-hidden="true">→</span>
 				</a>
 				<a class="luxe-service-row" href="/contact" style="grid-template-columns: 3rem 1fr 24rem 2rem;">
 					<span class="luxe-service-num">02</span>
 					<span class="luxe-service-title">What should I include in my inquiry?</span>
-					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">A short brief — the project, the timeline, the budget range and any references that feel relevant to the work.</span>
+					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">A short brief - the project, the timeline, the budget range and any references that feel relevant to the work.</span>
 					<span class="luxe-service-arrow" aria-hidden="true">→</span>
 				</a>
 				<a class="luxe-service-row" href="/contact" style="grid-template-columns: 3rem 1fr 24rem 2rem;">
@@ -277,7 +277,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a class="luxe-service-row" href="/contact" style="grid-template-columns: 3rem 1fr 24rem 2rem;">
 					<span class="luxe-service-num">04</span>
 					<span class="luxe-service-title">Do you work with emerging brands?</span>
-					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">Often — when the work is considered and the vision is clear. Scope and fee adapt to the stage of the practice.</span>
+					<span class="luxe-service-desc" style="font-family: var(--wp--preset--font-family--body); font-size: 0.875rem; letter-spacing: 0; text-transform: none; line-height: 1.6;">Often - when the work is considered and the vision is clear. Scope and fee adapt to the stage of the practice.</span>
 					<span class="luxe-service-arrow" aria-hidden="true">→</span>
 				</a>
 			</div>
@@ -288,7 +288,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — CLOSING LINE ═══ -->
+	<!-- === 04 - CLOSING LINE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -313,7 +313,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">For commissions, collaborations and press — share the details and we will respond personally within two working days.</p>
+		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">For commissions, collaborations and press - share the details and we will respond personally within two working days.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:shortcode -->

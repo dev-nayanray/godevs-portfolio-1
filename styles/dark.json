@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Dark",
-	"description": "A deep, considered dark mode — neutral dark background, off-white text, brighter accent for accessibility. Favored by developers and design studios.",
+	"description": "A deep, considered dark mode - neutral dark background, off-white text, brighter accent for accessibility. Favored by developers and design studios.",
 	"settings": {
 		"color": {
 			"palette": [

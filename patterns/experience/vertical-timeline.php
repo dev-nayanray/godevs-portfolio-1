@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Experience — Vertical Timeline
+ * Title: Experience - Vertical Timeline
  * Slug: godevs-portfolio/experience-vertical-timeline
  * Description: A two-column vertical timeline with right-aligned mono year markers, a hairline spine, display-font role titles, and pill org chips. Distinct in its date-marker rail composition.
  * Categories: godevs-portfolio-experience
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="wp-block-group alignwide"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%"} -->
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2022 — Now</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2022 - Now</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%"} -->
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2018 — 2022</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2018 - 2022</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"25%"} -->
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.12em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2014 — 2018</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.12em;text-transform:uppercase;font-weight:500">2014 - 2018</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

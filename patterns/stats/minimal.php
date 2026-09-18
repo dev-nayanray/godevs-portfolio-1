@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Stats — Minimal
+ * Title: Stats - Minimal
  * Slug: godevs-portfolio/stats-minimal
- * Description: A quiet stats band — four large numerals with mono uppercase labels, separated by hairlines under a single eyebrow. No cards, no background fill.
+ * Description: A quiet stats band - four large numerals with mono uppercase labels, separated by hairlines under a single eyebrow. No cards, no background fill.
  * Categories: godevs-portfolio-stats
  * Keywords: stats, minimal, numerals, hairline, band
  * Viewport Width: 1280

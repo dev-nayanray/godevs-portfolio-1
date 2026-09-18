@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Noir (Film) — Contact
+ * Title: Demo - Noir (Film) - Contact
  * Slug: godevs-portfolio/demo-noir-contact
- * Description: NOIR contact — inquiry form, availability, FAQ. Recommended style variation: Noir.
+ * Description: NOIR contact - inquiry form, availability, FAQ. Recommended style variation: Noir.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, noir, contact, inquiry
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <!-- Header (transparent over hero) -->
         <!-- wp:template-part {"slug":"header-noir","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — CONTACT HERO ═══ -->
+        <!-- === 01 - CONTACT HERO === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|120","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--120);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","maxWidth":"88ch"}},"layout":{"type":"default"}} -->
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                         <!-- Eyebrow -->
                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Contact</p>
+                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Contact</p>
                         <!-- /wp:paragraph -->
 
                         <!-- H1 -->
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                         <!-- Supporting copy -->
                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--30)">Available for selected commercial, narrative and visual storytelling projects. Based between Europe and Asia. I read every brief personally — usually within three days.</p>
+                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--30)">Available for selected commercial, narrative and visual storytelling projects. Based between Europe and Asia. I read every brief personally - usually within three days.</p>
                         <!-- /wp:paragraph -->
 
                 </div>
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+        <!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
@@ -51,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|70"}}} -->
                         <div class="wp-block-columns">
 
-                                <!-- LEFT — Contact info -->
+                                <!-- LEFT - Contact info -->
                                 <!-- wp:column {"width":"40%"} -->
                                 <div class="wp-block-column" style="flex-basis:40%">
                                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
                                                 <div class="wp-block-group">
                                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Email</p>
+                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Email</p>
                                                         <!-- /wp:paragraph -->
                                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.4"},"color":{"text":"var:preset|color|contrast"}}} -->
                                                         <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:1.125rem;line-height:1.4"><a href="mailto:studio@noir.film">studio@noir.film</a></p>
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
                                                 <div class="wp-block-group">
                                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Studio</p>
+                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Studio</p>
                                                         <!-- /wp:paragraph -->
                                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.5"},"color":{"text":"var:preset|color|contrast"}}} -->
                                                         <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:1.125rem;line-height:1.5">Atelier 4F<br>14 Rue des Lumières<br>75011 Paris</p>
@@ -85,7 +85,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
                                                 <div class="wp-block-group">
                                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Location</p>
+                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Location</p>
                                                         <!-- /wp:paragraph -->
                                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.5"},"color":{"text":"var:preset|color|contrast"}}} -->
                                                         <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:1.125rem;line-height:1.5">Europe / Asia</p>
@@ -97,7 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
                                                 <div class="wp-block-group">
                                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Elsewhere</p>
+                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Elsewhere</p>
                                                         <!-- /wp:paragraph -->
                                                         <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.75rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"500","lineHeight":"2.0"}}} -->
                                                         <p style="font-family:var(--wp--preset--font-family--body);font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;line-height:2.0"><a href="#">Instagram</a> · <a href="#">Vimeo</a> · <a href="#">Behance</a> · <a href="#">LinkedIn</a></p>
@@ -109,13 +109,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"top":"var:preset|spacing|30"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"layout":{"type":"default"}}} -->
                                                 <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;margin-top:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--40)">
                                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— What happens next</p>
+                                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- What happens next</p>
                                                         <!-- /wp:paragraph -->
                                                         <!-- wp:html -->
                                                         <ol class="noir-faq-steps" style="margin:0;padding:0;list-style:none;">
                                                                 <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.5rem;padding:0.75rem 0;border-bottom:1px solid var(--noir-line);"><span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--noir-muted);">01</span><span style="color:var(--noir-soft);font-size:0.9375rem;line-height:1.5;">I review your brief within three days.</span></li>
                                                                 <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.5rem;padding:0.75rem 0;border-bottom:1px solid var(--noir-line);"><span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--noir-muted);">02</span><span style="color:var(--noir-soft);font-size:0.9375rem;line-height:1.5;">A short 30-minute call to read the room.</span></li>
-                                                                <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.5rem;padding:0.75rem 0;"><span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--noir-muted);">03</span><span style="color:var(--noir-soft);font-size:0.9375rem;line-height:1.5;">A scoped proposal — direction, timeline, fee.</span></li>
+                                                                <li style="display:grid;grid-template-columns:2rem 1fr;gap:0.5rem;padding:0.75rem 0;"><span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--noir-muted);">03</span><span style="color:var(--noir-soft);font-size:0.9375rem;line-height:1.5;">A scoped proposal - direction, timeline, fee.</span></li>
                                                         </ol>
                                                         <!-- /wp:html -->
                                                 </div>
@@ -126,7 +126,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 </div>
                                 <!-- /wp:column -->
 
-                                <!-- RIGHT — Inquiry form -->
+                                <!-- RIGHT - Inquiry form -->
                                 <!-- wp:column {"width":"60%"} -->
                                 <div class="wp-block-column" style="flex-basis:60%">
                                         <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"color":{"background":"var:preset|color|surface-muted"}}} -->
@@ -134,7 +134,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                                                 <!-- Form header -->
                                                 <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.625rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Inquiry Form</p>
+                                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.625rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Inquiry Form</p>
                                                 <!-- /wp:paragraph -->
 
                                                 <!-- wp:heading {"level":2,"className":"noir-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.75rem, 3vw, 2.5rem)","lineHeight":"1.05","letterSpacing":"-0.02em","fontWeight":"700"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
@@ -244,9 +244,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                                         <label class="noir-field-label" for="noir-budget">Budget</label>
                                                                         <select class="noir-field-select" id="noir-budget" name="noir-budget">
                                                                                 <option value="">Select…</option>
-                                                                                <option value="10-30">$10 — 30k</option>
-                                                                                <option value="30-80">$30 — 80k</option>
-                                                                                <option value="80-200">$80 — 200k</option>
+                                                                                <option value="10-30">$10 - 30k</option>
+                                                                                <option value="30-80">$30 - 80k</option>
+                                                                                <option value="80-200">$80 - 200k</option>
                                                                                 <option value="200+">$200k+</option>
                                                                                 <option value="unsure">Not sure</option>
                                                                         </select>
@@ -257,8 +257,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                                 <label class="noir-field-label" for="noir-timeline">Timeline</label>
                                                                 <select class="noir-field-select" id="noir-timeline" name="noir-timeline">
                                                                         <option value="">Select…</option>
-                                                                        <option value="1-3">1 — 3 months</option>
-                                                                        <option value="3-6">3 — 6 months</option>
+                                                                        <option value="1-3">1 - 3 months</option>
+                                                                        <option value="3-6">3 - 6 months</option>
                                                                         <option value="6+">6+ months</option>
                                                                         <option value="flexible">Flexible</option>
                                                                 </select>
@@ -266,11 +266,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                                                         <div class="noir-field">
                                                                 <label class="noir-field-label" for="noir-message">Message</label>
-                                                                <textarea class="noir-field-textarea" id="noir-message" name="noir-message" placeholder="Tell me about the project — what are you making, who is it for, when does it need to land?"></textarea>
+                                                                <textarea class="noir-field-textarea" id="noir-message" name="noir-message" placeholder="Tell me about the project - what are you making, who is it for, when does it need to land?"></textarea>
                                                         </div>
 
                                                         <div class="noir-form-actions">
-                                                                <p class="noir-form-note">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+                                                                <p class="noir-form-note">Demo form - connect a form plugin or the theme's front-forms feature.</p>
                                                                 <button class="noir-submit" type="submit">Start a conversation →</button>
                                                         </div>
 
@@ -290,7 +290,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — FAQ ═══ -->
+        <!-- === 03 - FAQ === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -302,7 +302,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— FAQ · 04</p>
+                                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- FAQ · 04</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -323,25 +323,25 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <span class="noir-service-num">01</span>
                                         <span class="noir-service-title">How quickly do you respond?</span>
                                         <span class="noir-service-desc">Personally, within three working days.</span>
-                                        <span class="noir-service-arrow" aria-hidden="true">—</span>
+                                        <span class="noir-service-arrow" aria-hidden="true">-</span>
                                 </div>
                                 <div class="noir-service-row" style="border-bottom: 1px solid var(--noir-line);">
                                         <span class="noir-service-num">02</span>
                                         <span class="noir-service-title">What should I include in my brief?</span>
                                         <span class="noir-service-desc">The story, the audience, the budget, the deadline.</span>
-                                        <span class="noir-service-arrow" aria-hidden="true">—</span>
+                                        <span class="noir-service-arrow" aria-hidden="true">-</span>
                                 </div>
                                 <div class="noir-service-row" style="border-bottom: 1px solid var(--noir-line);">
                                         <span class="noir-service-num">03</span>
                                         <span class="noir-service-title">Do you travel for shoots?</span>
-                                        <span class="noir-service-desc">Yes — worldwide, with a small trusted crew.</span>
-                                        <span class="noir-service-arrow" aria-hidden="true">—</span>
+                                        <span class="noir-service-desc">Yes - worldwide, with a small trusted crew.</span>
+                                        <span class="noir-service-arrow" aria-hidden="true">-</span>
                                 </div>
                                 <div class="noir-service-row" style="border-bottom: 1px solid var(--noir-line);">
                                         <span class="noir-service-num">04</span>
                                         <span class="noir-service-title">Do you provide the full crew?</span>
-                                        <span class="noir-service-desc">Crew, camera, lighting, sound — scaled to scope.</span>
-                                        <span class="noir-service-arrow" aria-hidden="true">—</span>
+                                        <span class="noir-service-desc">Crew, camera, lighting, sound - scaled to scope.</span>
+                                        <span class="noir-service-arrow" aria-hidden="true">-</span>
                                 </div>
                         </div>
                         <!-- /wp:html -->
@@ -360,7 +360,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-                <p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Every film starts with a logline. Send yours — plus the timeline and the dream — and we'll take it from there.</p>
+                <p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Every film starts with a logline. Send yours - plus the timeline and the dream - and we'll take it from there.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:shortcode -->

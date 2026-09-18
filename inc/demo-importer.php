@@ -155,8 +155,8 @@ add_action( 'wp_ajax_godevs_portfolio_get_import_details', 'godevs_portfolio_aja
  * and (optionally) sets the homepage + applies the recommended style variation.
  *
  * Two modes:
- *   - 'starter': For fresh sites — sets homepage, applies style variation.
- *   - 'safe': For existing sites — creates pages but does not change homepage or style.
+ *   - 'starter': For fresh sites - sets homepage, applies style variation.
+ *   - 'safe': For existing sites - creates pages but does not change homepage or style.
  *
  * @return void
  */
@@ -169,7 +169,7 @@ function godevs_portfolio_ajax_import_demo(): void {
 
         $demo_id = isset( $_POST['demo_id'] ) ? sanitize_file_name( wp_unslash( $_POST['demo_id'] ) ) : '';
         $mode    = isset( $_POST['mode'] ) ? sanitize_key( wp_unslash( $_POST['mode'] ) ) : 'safe';
-        // The JS sends apply_style as '1' or '0'. Cast to int first, then bool —
+        // The JS sends apply_style as '1' or '0'. Cast to int first, then bool -
         // (bool) '0' is TRUE in PHP because non-empty strings are truthy.
         $apply_style = isset( $_POST['apply_style'] ) ? ( '1' === (string) wp_unslash( $_POST['apply_style'] ) ) : false;
         // phpcs:disable WordPress.Security.NonceVerification.Recommended -- verified above via check_ajax_referer().
@@ -192,7 +192,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 wp_send_json_error( array( 'message' => __( 'This demo is coming soon and cannot be imported yet.', 'godevs-portfolio' ) ), 403 );
         }
 
-        // ═══ CONCURRENCY LOCK ═══
+        // === CONCURRENCY LOCK ===
         // Prevent duplicate imports from concurrent admin requests. Acquired
         // BEFORE the destructive cleanup phase so two overlapping requests
         // can never both trash pages/menus.
@@ -236,7 +236,7 @@ function godevs_portfolio_ajax_import_demo(): void {
         $errors          = array();
         $replaced_demos  = array();
 
-        // ═══ AUTO-CLEANUP: Remove ALL previously imported demos ═══
+        // === AUTO-CLEANUP: Remove ALL previously imported demos ===
         // This ensures only ONE demo's pages are visible on the site at any
         // time. When a new demo is imported, all previously imported demo
         // pages, navigation menus, style variations, and homepage settings
@@ -257,7 +257,7 @@ function godevs_portfolio_ajax_import_demo(): void {
         }
 
         // Also clean up any orphaned demo menus (from failed imports, etc.).
-        // Delete any nav menu whose name ends with "— Navigation" that isn't
+        // Delete any nav menu whose name ends with "- Navigation" that isn't
         // currently assigned to a location. This catches stale menus.
         $existing_menus = wp_get_nav_menus();
         $current_locations = get_theme_mod( 'nav_menu_locations', array() );
@@ -267,7 +267,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                         continue;
                 }
                 // Only delete menus created by our demo importer.
-                if ( false !== strpos( $menu->name, '— Navigation' ) ) {
+                if ( false !== strpos( $menu->name, '- Navigation' ) ) {
                         wp_delete_nav_menu( $menu->term_id );
                 }
         }
@@ -293,7 +293,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 wp_delete_nav_menu( $seeded_menu->term_id );
         }
 
-        // Also handle re-import of the SAME demo — remove its old pages first
+        // Also handle re-import of the SAME demo - remove its old pages first
         // so we don't get duplicate pages with suffix slugs (home-director-2).
         if ( isset( $previous_imports[ $demo_id ] ) ) {
                 $remove_result = godevs_portfolio_tracker_remove( $demo_id, true );
@@ -302,7 +302,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 }
         }
 
-        // ═══ RESET STYLE VARIATION ═══
+        // === RESET STYLE VARIATION ===
         // If there was a previous import with a style applied, reset the
         // global styles post so the new demo's style (or the default) starts
         // from a clean state. This prevents the old demo's colors/typography
@@ -368,16 +368,16 @@ function godevs_portfolio_ajax_import_demo(): void {
                         $page_file = godevs_portfolio_get_demo_page_file( $demo_id, $page_slug );
                         if ( null !== $page_file && file_exists( $page_file ) ) {
                                 ob_start();
-                                include $page_file; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern file output is HTML block markup.
+                                include $page_file; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - pattern file output is HTML block markup.
                                 $content = (string) ob_get_clean();
                         } else {
-                                // No pattern file for this page — skip it entirely
+                                // No pattern file for this page - skip it entirely
                                 // rather than publishing a blank page (and a nav
                                 // item pointing at it). The registry already filters
                                 // pages to existing files; this is a safety net.
                                 $errors[] = sprintf(
                                         /* translators: %s: page slug. */
-                                        __( 'Skipped "%1$s" — no demo content found.', 'godevs-portfolio' ),
+                                        __( 'Skipped "%1$s" - no demo content found.', 'godevs-portfolio' ),
                                         $page_slug
                                 );
                                 continue;
@@ -389,7 +389,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 // include their own header/footer template-part references
                 // (e.g. `header-dark`, `footer-minimal`), but when this content
                 // becomes `post_content` on a real page, WordPress wraps it in
-                // the active `page.html` template — which ALSO has its own
+                // the active `page.html` template - which ALSO has its own
                 // header/footer template-part references. That produces a
                 // double-header + double-footer on the rendered page.
                 //
@@ -415,7 +415,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 }
 
                 // Anything still pointing at "#" after the showcase rewrite
-                // (e.g. decorative social anchors) must not lead nowhere —
+                // (e.g. decorative social anchors) must not lead nowhere -
                 // send it to the demo's contact page.
                 if ( in_array( 'contact', $demo['pages'], true ) && false !== strpos( $content, 'href="#"' ) ) {
                         $content = str_replace( 'href="#"', 'href="/contact/"', $content );
@@ -455,7 +455,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                 }
         }
 
-        // If not a single page could be created, the import failed — report
+        // If not a single page could be created, the import failed - report
         // it instead of recording a "successful" import with zero pages.
         if ( empty( $created_pages ) ) {
                 delete_transient( 'godevs_import_lock' );
@@ -481,7 +481,7 @@ function godevs_portfolio_ajax_import_demo(): void {
         // 3. Create the navigation menu.
         $menu_name = sprintf(
                 /* translators: %s: demo name. */
-                __( '%s — Navigation', 'godevs-portfolio' ),
+                __( '%s - Navigation', 'godevs-portfolio' ),
                 $demo['name']
         );
         $menu_exists = wp_get_nav_menu_object( $menu_name );
@@ -552,7 +552,7 @@ function godevs_portfolio_ajax_import_demo(): void {
                         // styles and would override the demo's palette and
                         // link colors with !important rules. A demo import
                         // takes over the site's look, so drop the stale
-                        // override — it regenerates the next time the user
+                        // override - it regenerates the next time the user
                         // saves Theme Settings.
                         delete_option( 'godevs_portfolio_dynamic_css' );
 
@@ -609,7 +609,7 @@ function godevs_portfolio_ajax_import_demo(): void {
         // 7. Clear the import lock and return the result.
         delete_transient( 'godevs_import_lock' );
 
-        // 7.5. Fire the post-import action — used by the onboarding module
+        // 7.5. Fire the post-import action - used by the onboarding module
         // to display the "Demo imported successfully!" admin notice with
         // next-action buttons (View Site, Edit Homepage, Customize Theme).
         do_action( 'godevs_portfolio_demo_imported', $demo['id'], $homepage_id );
@@ -651,7 +651,7 @@ add_action( 'wp_ajax_godevs_portfolio_import_demo', 'godevs_portfolio_ajax_impor
  * @param string $demo_id          Demo slug (e.g. 'nova').
  * @param int    $services_page_id Imported Services page ID.
  * @return int Number of services created.
- * @since 1.2.0
+ * @since 1.0.0
  */
 function godevs_portfolio_seed_demo_services( string $demo_id, int $services_page_id ): int {
         // Remove services seeded by ANY previous demo import.
@@ -731,10 +731,10 @@ function godevs_portfolio_seed_demo_services( string $demo_id, int $services_pag
 }
 
 /**
- * Demo service catalog — three services per demo with professional copy.
+ * Demo service catalog - three services per demo with professional copy.
  *
  * @return array<string, array<int, array<string,mixed>>>
- * @since 1.2.0
+ * @since 1.0.0
  */
 function godevs_portfolio_demo_services_catalog(): array {
         return array(
@@ -745,31 +745,31 @@ function godevs_portfolio_demo_services_catalog(): array {
                 ),
                 'atelier'   => array(
                         array( 'title' => 'Art Direction', 'intro' => 'Direction for campaigns and editorial projects that need a considered, authored point of view.', 'deliverables' => array( 'Concept & moodboards', 'Photography direction', 'Typography direction', 'Final artwork supervision' ), 'process' => 'We begin with references and conversation, then direct production in close, small rounds.' ),
-                        array( 'title' => 'Visual Identity', 'intro' => 'Identities for studios, makers and cultural projects — quiet, confident and built to last.', 'deliverables' => array( 'Logotype & marks', 'Stationery suite', 'Packaging or signage', 'Usage guidelines' ), 'process' => 'A sketch-led process: dozens of directions on paper before anything touches a screen.' ),
+                        array( 'title' => 'Visual Identity', 'intro' => 'Identities for studios, makers and cultural projects - quiet, confident and built to last.', 'deliverables' => array( 'Logotype & marks', 'Stationery suite', 'Packaging or signage', 'Usage guidelines' ), 'process' => 'A sketch-led process: dozens of directions on paper before anything touches a screen.' ),
                         array( 'title' => 'Editorial Design', 'intro' => 'Books, catalogues and reports with considered grids and unhurried typography.', 'deliverables' => array( 'Grid & typographic system', 'Cover concepts', 'Full layout', 'Print-ready artwork' ), 'process' => 'Sample spreads first, then full layout in passes with proofing at every stage.' ),
                 ),
                 'pulse'     => array(
-                        array( 'title' => 'UX Research & Audits', 'intro' => 'Evidence instead of opinions — user interviews, analytics reviews and usability audits.', 'deliverables' => array( 'Research plan', '5–8 user interviews', 'Usability audit report', 'Prioritized recommendations' ), 'process' => 'One week of fieldwork, one week of synthesis, a findings workshop with your team.' ),
+                        array( 'title' => 'UX Research & Audits', 'intro' => 'Evidence instead of opinions - user interviews, analytics reviews and usability audits.', 'deliverables' => array( 'Research plan', '5–8 user interviews', 'Usability audit report', 'Prioritized recommendations' ), 'process' => 'One week of fieldwork, one week of synthesis, a findings workshop with your team.' ),
                         array( 'title' => 'Product Design', 'intro' => 'End-to-end design of web and mobile products, from flows to a developer-ready system.', 'deliverables' => array( 'User flows & wireframes', 'High-fidelity screens', 'Interactive prototype', 'Component library' ), 'process' => 'Two-week design sprints with prototype testing between each sprint.' ),
                         array( 'title' => 'Design Systems', 'intro' => 'Token-based design systems that keep growing products consistent.', 'deliverables' => array( 'Component audit', 'Token architecture', 'Documented components', 'Figma + code sync' ), 'process' => 'We audit what exists, define the tokens, and ship the system with your engineers.' ),
                 ),
                 'frame'     => array(
                         array( 'title' => 'Editorial Photography', 'intro' => 'Commissioned photo essays and portrait sessions with a quiet, deliberate eye.', 'deliverables' => array( 'Creative brief', 'Full-day session', 'Curated image set (40+)', 'Print-ready masters' ), 'process' => 'A conversation about the story first, location scouting, then a calm, unhurried shoot day.' ),
                         array( 'title' => 'Print Sales', 'intro' => 'Limited archival prints from the ongoing bodies of work.', 'deliverables' => array( 'Hahnemühle archival paper', 'Signed & numbered', 'Certificate of authenticity', 'Worldwide shipping' ), 'process' => 'Choose a print, we confirm the edition, and ship within two weeks.' ),
-                        array( 'title' => 'Commissions', 'intro' => 'Long-form documentary commissions for publications and institutions.', 'deliverables' => array( 'Proposal & treatment', 'Multi-day coverage', 'Edited story', 'Caption & metadata package' ), 'process' => 'We agree the story, the days and the deliverables in writing — then I disappear until the edit is ready.' ),
+                        array( 'title' => 'Commissions', 'intro' => 'Long-form documentary commissions for publications and institutions.', 'deliverables' => array( 'Proposal & treatment', 'Multi-day coverage', 'Edited story', 'Caption & metadata package' ), 'process' => 'We agree the story, the days and the deliverables in writing - then I disappear until the edit is ready.' ),
                 ),
                 'architect' => array(
                         array( 'title' => 'Residential Architecture', 'intro' => 'Homes shaped around light, material and the rituals of the people who live in them.', 'deliverables' => array( 'Feasibility study', 'Concept & planning set', 'Technical documentation', 'Site supervision' ), 'process' => 'We start with the site and a brief, then develop the project through models and 1:1 material studies.' ),
-                        array( 'title' => 'Interior Design', 'intro' => 'Interiors that carry the architecture inside — calm surfaces, honest materials.', 'deliverables' => array( 'Spatial concept', 'Material & finish palette', 'Custom joinery design', 'Furniture & lighting plan' ), 'process' => 'Concept boards, then detailed drawings and samples, resolved before a single wall opens.' ),
+                        array( 'title' => 'Interior Design', 'intro' => 'Interiors that carry the architecture inside - calm surfaces, honest materials.', 'deliverables' => array( 'Spatial concept', 'Material & finish palette', 'Custom joinery design', 'Furniture & lighting plan' ), 'process' => 'Concept boards, then detailed drawings and samples, resolved before a single wall opens.' ),
                         array( 'title' => 'Consultation', 'intro' => 'Focused advisory sessions for renovations, layouts and material decisions.', 'deliverables' => array( 'Pre-purchase assessment', 'Layout options study', 'Material guidance', 'Written summary' ), 'process' => 'A site visit, a working session, and a clear written recommendation within a week.' ),
                 ),
                 'noir'      => array(
-                        array( 'title' => 'Direction', 'intro' => 'Direction for films that need a cinematic instinct and a steady hand.', 'deliverables' => array( 'Treatment development', 'Casting & rehearsals', 'On-set direction', 'Editorial supervision' ), 'process' => 'Long development, short lists, precise shoots — the film is made three times: script, set and cut.' ),
-                        array( 'title' => 'Cinematography', 'intro' => 'Photography for narratives, documentaries and commercials — light first, always.', 'deliverables' => array( 'Look development', 'Camera & lens package', 'Principal photography', 'Grading supervision' ), 'process' => 'Tests before the shoot, discipline during it, and a grade I attend from first pass to final.' ),
+                        array( 'title' => 'Direction', 'intro' => 'Direction for films that need a cinematic instinct and a steady hand.', 'deliverables' => array( 'Treatment development', 'Casting & rehearsals', 'On-set direction', 'Editorial supervision' ), 'process' => 'Long development, short lists, precise shoots - the film is made three times: script, set and cut.' ),
+                        array( 'title' => 'Cinematography', 'intro' => 'Photography for narratives, documentaries and commercials - light first, always.', 'deliverables' => array( 'Look development', 'Camera & lens package', 'Principal photography', 'Grading supervision' ), 'process' => 'Tests before the shoot, discipline during it, and a grade I attend from first pass to final.' ),
                         array( 'title' => 'Music Videos', 'intro' => 'Three-to-four minute worlds built around a song and its artist.', 'deliverables' => array( 'Concept & boards', 'Two-day shoot', 'Edit & grade', 'Delivery masters' ), 'process' => 'The track leads. We build one strong idea and protect it all the way to delivery.' ),
                 ),
                 'mono'      => array(
-                        array( 'title' => 'Web Application Development', 'intro' => 'Full-stack builds with boring, reliable technology and honest timelines.', 'deliverables' => array( 'Architecture document', 'Working application', 'Automated test suite', 'Deployment pipeline' ), 'process' => 'Weekly shipped increments behind feature flags — you see progress every Friday.' ),
+                        array( 'title' => 'Web Application Development', 'intro' => 'Full-stack builds with boring, reliable technology and honest timelines.', 'deliverables' => array( 'Architecture document', 'Working application', 'Automated test suite', 'Deployment pipeline' ), 'process' => 'Weekly shipped increments behind feature flags - you see progress every Friday.' ),
                         array( 'title' => 'WordPress Engineering', 'intro' => 'Block themes, custom blocks and performant builds done properly.', 'deliverables' => array( 'Block theme build', 'Custom Gutenberg blocks', 'Performance budget pass', 'CI for releases' ), 'process' => 'Design tokens in, semantic templates out, Core Web Vitals verified before launch.' ),
                         array( 'title' => 'Technical Consulting', 'intro' => 'Second opinions, audits and rescue missions for struggling codebases.', 'deliverables' => array( 'Codebase audit', 'Risk register', 'Refactoring roadmap', 'Pairing sessions' ), 'process' => 'A week of reading and mapping, then a written plan you could execute with or without me.' ),
                 ),
@@ -849,7 +849,7 @@ function godevs_portfolio_render_demo_markup( array $demo ): string {
         }
 
         ob_start();
-        include $demo['file']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern file output is HTML block markup, not user input.
+        include $demo['file']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - pattern file output is HTML block markup, not user input.
         return (string) ob_get_clean();
 }
 
@@ -859,7 +859,7 @@ function godevs_portfolio_render_demo_markup( array $demo ): string {
  * Demo pattern files (patterns/demos/*.php) embed their own header/footer
  * template-part references (e.g. `header-dark`, `footer-minimal`). When this
  * content becomes the `post_content` of an imported page, WordPress wraps
- * it in the active `page.html` template — which ALSO has its own header and
+ * it in the active `page.html` template - which ALSO has its own header and
  * footer template-part references. That produces a double-header +
  * double-footer on the rendered page (and a TRIPLE header if a Header/Footer
  * Builder layout is also active).
@@ -871,7 +871,7 @@ function godevs_portfolio_render_demo_markup( array $demo ): string {
  *
  * @param string $content The raw pattern markup (may contain PHP-processed HTML).
  * @return string Markup with all `wp:template-part` references removed.
- * @since 2.4.1
+ * @since 1.0.0.1
  */
 function godevs_portfolio_strip_template_parts_from_content( string $content ): string {
         if ( '' === $content ) {
@@ -905,7 +905,7 @@ function godevs_portfolio_strip_template_parts_from_content( string $content ): 
  *
  * @param string $style_slug The style variation slug (e.g., 'dark', 'minimal').
  * @return bool True on success, false on failure.
- * @since 2.0.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
         $style_file = get_template_directory() . '/styles/' . $style_slug . '.json';
@@ -953,7 +953,7 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
         // CRITICAL: Include 'isGlobalStylesUserThemeJSON' so WordPress
         // recognizes this as a valid user-edited global styles override.
         // Also MERGE with any existing user customizations instead of
-        // overwriting them entirely — this preserves Site Editor changes.
+        // overwriting them entirely - this preserves Site Editor changes.
         $global_styles = array(
                 'version'                     => 3,
                 'isGlobalStylesUserThemeJSON' => true,
@@ -1045,7 +1045,7 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
 function godevs_portfolio_reset_style_variation(): bool {
         $stylesheet = get_stylesheet();
 
-        // Drop any Theme Settings CSS override along with the variation —
+        // Drop any Theme Settings CSS override along with the variation -
         // see the import handler for the rationale.
         delete_option( 'godevs_portfolio_dynamic_css' );
 
@@ -1080,7 +1080,7 @@ function godevs_portfolio_reset_style_variation(): bool {
                                 'settings'                    => array(),
                         )
                 );
-                // Write directly — wp_update_post() unslashes the content and
+                // Write directly - wp_update_post() unslashes the content and
                 // would corrupt the JSON. See apply_style_variation().
                 global $wpdb;
                 $wpdb->update( $wpdb->posts, array( 'post_content' => $empty_styles ), array( 'ID' => (int) $post_id ) );
@@ -1151,7 +1151,7 @@ add_action( 'wp_ajax_godevs_portfolio_preview_demo', 'godevs_portfolio_ajax_prev
  * the page-navigation bar.
  *
  * @return void
- * @since 1.3.0
+ * @since 1.0.0
  */
 function godevs_portfolio_ajax_get_demo_pages(): void {
         check_ajax_referer( 'godevs_demo_admin', 'nonce' );
@@ -1202,7 +1202,7 @@ add_action( 'wp_ajax_godevs_portfolio_get_demo_pages', 'godevs_portfolio_ajax_ge
  * preview modal's page-navigation feature.
  *
  * @return void
- * @since 1.3.0
+ * @since 1.0.0
  */
 function godevs_portfolio_ajax_preview_demo_page(): void {
         check_ajax_referer( 'godevs_demo_admin', 'nonce' );
@@ -1233,7 +1233,7 @@ function godevs_portfolio_ajax_preview_demo_page(): void {
         $markup = '';
         if ( file_exists( $file ) ) {
                 ob_start();
-                include $file; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern file output is HTML block markup.
+                include $file; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - pattern file output is HTML block markup.
                 $markup = (string) ob_get_clean();
         }
 

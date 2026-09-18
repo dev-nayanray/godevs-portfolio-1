@@ -1,18 +1,18 @@
 <?php
 /**
- * Theme Settings — Modern Dynamic Dashboard for GoDevs Portfolio.
+ * Theme Settings - Modern Dynamic Dashboard for GoDevs Portfolio.
  *
  * @package GoDevs_Portfolio
- * @since   2.0.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // DEFAULT SETTINGS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_portfolio_get_default_settings(): array {
         return array(
@@ -24,7 +24,7 @@ function godevs_portfolio_get_default_settings(): array {
                 'body_font'               => 'body',
                 'heading_weight'          => '600',
                 'type_scale'              => 'fluid',
-                // Colors — aligned with theme.json palette so first-visit to
+                // Colors - aligned with theme.json palette so first-visit to
                 // Settings doesn't visibly shift the site colors.
                 'accent_color'            => '#1D4ED8',
                 'accent_hover'            => '#1E40AF',
@@ -32,7 +32,7 @@ function godevs_portfolio_get_default_settings(): array {
                 'background_color'        => '#FAFAF7',
                 'text_color'              => '#0A0A0A',
                 'muted_color'             => '#5C5C56',
-                // Layout — aligned with theme.json (contentSize/wideSize).
+                // Layout - aligned with theme.json (contentSize/wideSize).
                 // 1240px wideSize fits inside the 1280px audit viewport with
                 // 20px gutters, making alignwide meaningfully wider than alignnone.
                 'container_width'         => '1240',
@@ -118,8 +118,8 @@ function godevs_portfolio_get_setting( string $key ): string {
         $defaults = godevs_portfolio_get_default_settings();
         $default = $defaults[ $key ] ?? '';
         // Use get_option() with the default as the fallback ONLY when the option
-        // row does not exist yet (fresh install). Once a value has been saved —
-        // including an intentionally-cleared '' — we must return that saved
+        // row does not exist yet (fresh install). Once a value has been saved -
+        // including an intentionally-cleared '' - we must return that saved
         // value verbatim, NOT the default. Otherwise settings like brand_tagline
         // (default = blog description) cannot be cleared, and toggles that the
         // user has turned off ('0') would silently come back as '1'.
@@ -130,9 +130,9 @@ function godevs_portfolio_get_setting( string $key ): string {
         return (string) $value;
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // REGISTER MENU + SETTINGS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_portfolio_settings_register_menu(): void {
         add_theme_page(
@@ -200,7 +200,7 @@ function godevs_portfolio_sanitize_hex_color( $value ): string {
         $with_hash = '#' === $value[0] ? $value : '#' . $value;
         $sanitized = sanitize_hex_color( $with_hash );
         if ( null === $sanitized ) {
-                // Not a valid hex color — return empty so the default is used.
+                // Not a valid hex color - return empty so the default is used.
                 return '';
         }
         return strtolower( $sanitized );
@@ -220,9 +220,9 @@ function godevs_portfolio_sanitize_url( $value ): string {
         return esc_url_raw( $value );
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // ENQUEUE ASSETS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_portfolio_settings_enqueue( string $hook ): void {
         if ( 'appearance_page_godevs-portfolio-settings' !== $hook ) return;
@@ -251,9 +251,9 @@ function godevs_portfolio_settings_enqueue( string $hook ): void {
 }
 add_action( 'admin_enqueue_scripts', 'godevs_portfolio_settings_enqueue' );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // AJAX SAVE
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_portfolio_ajax_save_settings(): void {
         check_ajax_referer( 'godevs_settings_save', 'nonce' );
@@ -264,7 +264,7 @@ function godevs_portfolio_ajax_save_settings(): void {
         $defaults = godevs_portfolio_get_default_settings();
         $saved    = 0;
 
-        // Per-key sanitizers — same map as godevs_portfolio_settings_register().
+        // Per-key sanitizers - same map as godevs_portfolio_settings_register().
         // Using the right sanitizer per field prevents CSS injection via the
         // dynamic-CSS output (color values are written into a <style> block).
         $sanitize_map = array(
@@ -347,7 +347,7 @@ add_action( 'wp_ajax_godevs_portfolio_reset_settings', 'godevs_portfolio_ajax_re
  * effect on the front-end.
  *
  * The CSS is stored in the wp_options table and output via
- * godevs_portfolio_output_dynamic_css() at wp_head priority 11 — AFTER
+ * godevs_portfolio_output_dynamic_css() at wp_head priority 11 - AFTER
  * WordPress's global-styles (priority 8) so our values win the cascade.
  */
 function godevs_portfolio_generate_dynamic_css(): void {
@@ -371,7 +371,7 @@ function godevs_portfolio_generate_dynamic_css(): void {
         $safe_int = static function ( string $key ): int {
                 $val = godevs_portfolio_get_setting( $key );
                 $int = absint( $val );
-                // Guard against zero (would break layout) — fall back to default.
+                // Guard against zero (would break layout) - fall back to default.
                 if ( ! $int ) {
                         $defaults = godevs_portfolio_get_default_settings();
                         $int = absint( $defaults[ $key ] ?? 0 );
@@ -431,9 +431,9 @@ function godevs_portfolio_output_dynamic_css(): void {
 // (priority 8), so user's saved colors override theme.json defaults.
 add_action( 'wp_head', 'godevs_portfolio_output_dynamic_css', 11 );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // RENDER PAGE
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_portfolio_settings_render_page(): void {
         if ( ! current_user_can( 'manage_options' ) ) {
@@ -505,7 +505,7 @@ function godevs_portfolio_settings_render_page(): void {
                                 <?php do_action( 'godevs_portfolio_settings_before_panels' ); ?>
                                 <form id="godevs-settings-form" autocomplete="off">
 
-                                        <!-- ═══ GENERAL ═══ -->
+                                        <!-- === GENERAL === -->
                                         <div class="godevs-panel is-active" id="panel-general">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'General', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure general settings for the GoDevs Portfolio theme.', 'godevs-portfolio' ); ?></p>
@@ -516,7 +516,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ TYPOGRAPHY ═══ -->
+                                        <!-- === TYPOGRAPHY === -->
                                         <div class="godevs-panel" id="panel-typography">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Typography', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Control fonts, weights, and type scaling.', 'godevs-portfolio' ); ?></p>
@@ -529,7 +529,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ COLORS ═══ -->
+                                        <!-- === COLORS === -->
                                         <div class="godevs-panel" id="panel-colors">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Colors', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Customize the color palette. Changes apply via CSS custom properties.', 'godevs-portfolio' ); ?></p>
@@ -544,7 +544,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ LAYOUT ═══ -->
+                                        <!-- === LAYOUT === -->
                                         <div class="godevs-panel" id="panel-layout">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Layout', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Control container widths, radii, and spacing.', 'godevs-portfolio' ); ?></p>
@@ -558,14 +558,14 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ HEADER ═══ -->
+                                        <!-- === HEADER === -->
                                         <div class="godevs-panel" id="panel-header">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Header', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure the site header. Choose a custom builder layout as the site-wide default, or use the theme default.', 'godevs-portfolio' ); ?></p>
 
                                                 <?php
-                                                // Default Header Layout — choose from saved builder layouts.
-                                                $header_layouts_options = array( '' => __( '— Use theme default (no builder) —', 'godevs-portfolio' ) );
+                                                // Default Header Layout - choose from saved builder layouts.
+                                                $header_layouts_options = array( '' => __( '- Use theme default (no builder) -', 'godevs-portfolio' ) );
                                                 if ( function_exists( 'godevs_hf_get_layouts' ) ) {
                                                         $saved_header_layouts = godevs_hf_get_layouts();
                                                         if ( ! empty( $saved_header_layouts['header'] ) ) {
@@ -583,14 +583,14 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ FOOTER ═══ -->
+                                        <!-- === FOOTER === -->
                                         <div class="godevs-panel" id="panel-footer">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Footer', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure the site footer. Choose a custom builder layout as the site-wide default, or use the theme default.', 'godevs-portfolio' ); ?></p>
 
                                                 <?php
-                                                // Default Footer Layout — choose from saved builder layouts.
-                                                $footer_layouts_options = array( '' => __( '— Use theme default (no builder) —', 'godevs-portfolio' ) );
+                                                // Default Footer Layout - choose from saved builder layouts.
+                                                $footer_layouts_options = array( '' => __( '- Use theme default (no builder) -', 'godevs-portfolio' ) );
                                                 if ( function_exists( 'godevs_hf_get_layouts' ) ) {
                                                         $saved_footer_layouts = godevs_hf_get_layouts();
                                                         if ( ! empty( $saved_footer_layouts['footer'] ) ) {
@@ -608,7 +608,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ BLOG ═══ -->
+                                        <!-- === BLOG === -->
                                         <div class="godevs-panel" id="panel-blog">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Blog', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure blog archive and single post display.', 'godevs-portfolio' ); ?></p>
@@ -623,7 +623,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ PORTFOLIO ═══ -->
+                                        <!-- === PORTFOLIO === -->
                                         <div class="godevs-panel" id="panel-portfolio">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Portfolio', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure project archive and single display.', 'godevs-portfolio' ); ?></p>
@@ -637,7 +637,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ SERVICES ═══ -->
+                                        <!-- === SERVICES === -->
                                         <div class="godevs-panel" id="panel-services">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Services', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure service archive and single display.', 'godevs-portfolio' ); ?></p>
@@ -650,7 +650,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ TEAM ═══ -->
+                                        <!-- === TEAM === -->
                                         <div class="godevs-panel" id="panel-team">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Team', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure team member display.', 'godevs-portfolio' ); ?></p>
@@ -663,7 +663,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ TESTIMONIALS ═══ -->
+                                        <!-- === TESTIMONIALS === -->
                                         <div class="godevs-panel" id="panel-testimonials">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Testimonials', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure testimonial display.', 'godevs-portfolio' ); ?></p>
@@ -676,7 +676,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ EXPERIENCE ═══ -->
+                                        <!-- === EXPERIENCE === -->
                                         <div class="godevs-panel" id="panel-experience">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Experience', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure work experience archive display.', 'godevs-portfolio' ); ?></p>
@@ -688,7 +688,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ EDUCATION ═══ -->
+                                        <!-- === EDUCATION === -->
                                         <div class="godevs-panel" id="panel-education">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Education', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure education archive display.', 'godevs-portfolio' ); ?></p>
@@ -700,7 +700,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ CASE STUDIES ═══ -->
+                                        <!-- === CASE STUDIES === -->
                                         <div class="godevs-panel" id="panel-case-studies">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Case Studies', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Configure case study archive display.', 'godevs-portfolio' ); ?></p>
@@ -713,10 +713,10 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ DEMO LIBRARY (embedded in settings) ═══ -->
+                                        <!-- === DEMO LIBRARY (embedded in settings) === -->
                                         <div class="godevs-panel" id="panel-demo">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Demo Library', 'godevs-portfolio' ); ?></h2>
-                                                <p class="godevs-panel-desc"><?php esc_html_e( 'Browse, preview, and import complete portfolio websites. Preview any demo live — then import with one click. Your existing content is never deleted.', 'godevs-portfolio' ); ?></p>
+                                                <p class="godevs-panel-desc"><?php esc_html_e( 'Browse, preview, and import complete portfolio websites. Preview any demo live - then import with one click. Your existing content is never deleted.', 'godevs-portfolio' ); ?></p>
 
                                                 <?php
                                                 // Embed the full demo browser UI (filters, grid, modal, progress).
@@ -724,7 +724,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ HEADER & FOOTER BUILDER ═══ -->
+                                        <!-- === HEADER & FOOTER BUILDER === -->
                                         <div class="godevs-panel" id="panel-builder">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Header & Footer Builder', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Visually build custom headers and footers with drag-and-drop elements. Choose a starter template or create your own.', 'godevs-portfolio' ); ?></p>
@@ -769,7 +769,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                                 </div>
                                                         </div>
 
-                                                        <!-- Live Preview — shows the actual rendered HTML as the user edits -->
+                                                        <!-- Live Preview - shows the actual rendered HTML as the user edits -->
                                                         <div class="godevs-hf-live-preview-section" id="godevs-hf-live-preview-section" style="display:none;">
                                                                 <p class="godevs-setting-group-title"><?php esc_html_e( 'Live Preview', 'godevs-portfolio' ); ?></p>
                                                                 <div class="godevs-hf-live-preview-container">
@@ -781,7 +781,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 </div>
                                         </div>
 
-                                        <!-- ═══ PERFORMANCE ═══ -->
+                                        <!-- === PERFORMANCE === -->
                                         <div class="godevs-panel" id="panel-performance">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Performance', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Control motion, loading, and optimization.', 'godevs-portfolio' ); ?></p>
@@ -793,7 +793,7 @@ function godevs_portfolio_settings_render_page(): void {
                                                 ?>
                                         </div>
 
-                                        <!-- ═══ ADVANCED ═══ -->
+                                        <!-- === ADVANCED === -->
                                         <div class="godevs-panel" id="panel-advanced">
                                                 <h2 class="godevs-panel-title"><?php esc_html_e( 'Advanced', 'godevs-portfolio' ); ?></h2>
                                                 <p class="godevs-panel-desc"><?php esc_html_e( 'Module visibility and system controls.', 'godevs-portfolio' ); ?></p>
@@ -835,9 +835,9 @@ function godevs_portfolio_settings_render_page(): void {
         <?php
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // SETTING CONTROL HELPERS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 function godevs_setting_text( string $key, string $label, string $desc = '', string $type = 'text' ): void {
         $val = godevs_portfolio_get_setting( $key );

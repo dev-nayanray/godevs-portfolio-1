@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Nova",
-	"description": "NOVA — Creative Digital Agency. Bold editorial sans typography on warm off-white, deep ink black, with a distinctive ember accent. Sharp corners, tight tracking, generous whitespace, asymmetric composition. For creative agencies, branding studios and digital studios.",
+	"description": "NOVA: Creative Digital Agency. Bold editorial sans typography on warm off-white, deep ink black, with a distinctive ember accent. Sharp corners, tight tracking, generous whitespace, asymmetric composition. For creative agencies, branding studios and digital studios.",
 	"settings": {
 		"color": {
 			"palette": [

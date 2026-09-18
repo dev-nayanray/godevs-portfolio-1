@@ -7,8 +7,8 @@
  * can be executed via `php tests/run.php` in any environment.
  *
  * Exit codes:
- *   0 — all tests passed.
- *   1 — one or more tests failed.
+ *   0 - all tests passed.
+ *   1 - one or more tests failed.
  *
  * @package GoDevs_Portfolio
  */
@@ -46,7 +46,7 @@ foreach ( $test_files as $file ) {
 
 	$func = 'test_' . str_replace( '-', '_', $name );
 	if ( ! function_exists( $func ) ) {
-		$failures[] = "$name — test function $func not defined";
+		$failures[] = "$name - test function $func not defined";
 		$failed++;
 		continue;
 	}
@@ -56,7 +56,7 @@ foreach ( $test_files as $file ) {
 	foreach ( $results as $result ) {
 		if ( ! $result[0] ) {
 			$test_failed = true;
-			$failures[] = "$name — " . $result[1];
+			$failures[] = "$name - " . $result[1];
 		}
 	}
 

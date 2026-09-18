@@ -3,7 +3,7 @@
  * Title: About
  * Slug: godevs-portfolio/about
  * Categories: featured, godevs-portfolio-about
- * Description: A 60/40 editorial about section — mixed-serif display headline, pill stat chips, and an overlapping status card offset onto a 4:5 portrait image. Use on studio and personal portfolio pages.
+ * Description: A 60/40 editorial about section - mixed-serif display headline, pill stat chips, and an overlapping status card offset onto a 4:5 portrait image. Use on studio and personal portfolio pages.
  * Keywords: about, bio, profile, studio, person
  * Viewport Width: 1280
  */
@@ -26,7 +26,7 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--50)">We are a compact team of designers and engineers who take on six projects a year — no more. Each engagement starts with strategy and ends with a WordPress site your team can run entirely without us, built on a design system rather than a pile of one-off pages.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--50)">We are a compact team of designers and engineers who take on six projects a year - no more. Each engagement starts with strategy and ends with a WordPress site your team can run entirely without us, built on a design system rather than a pile of one-off pages.</p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->

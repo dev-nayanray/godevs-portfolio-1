@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Portfolio — Minimal
+ * Title: Portfolio - Minimal
  * Slug: godevs-portfolio/portfolio-minimal
- * Description: An ultra-restrained text-only index of projects — mono ghost numerals, display titles, and accent arrows over hairline rows. Distinct in its reduced, typography-led presentation.
+ * Description: An ultra-restrained text-only index of projects - mono ghost numerals, display titles, and accent arrows over hairline rows. Distinct in its reduced, typography-led presentation.
  * Categories: godevs-portfolio-portfolio
  * Keywords: portfolio, minimal, list, restrained, text-only
  * Viewport Width: 1280
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","verticalAlignment":"center","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="border-bottom:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 				<!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","fontWeight":"500","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"right":"var:preset|spacing|50"}}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;letter-spacing:0.02em;margin-right:var(--wp--preset--spacing--50)">—</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);font-weight:500;letter-spacing:0.02em;margin-right:var(--wp--preset--spacing--50)">-</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} /-->
 				<!-- wp:paragraph {"align":"right","style":{"typography":{"fontSize":"var:preset|font-size|large","fontWeight":"500"},"color":{"text":"var:preset|color|accent"},"spacing":{"margin":{"left":"var:preset|spacing|50"}}}} -->

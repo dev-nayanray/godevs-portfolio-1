@@ -2,7 +2,7 @@
         "$schema": "https://schemas.wp.org/trunk/theme.json",
         "version": 3,
         "title": "Noir",
-        "description": "NOIR — Film Director / Cinematographer. Near-black cinematic base, soft warm white, restrained film-red accent, Inter at bold weights for film-title-sequence typography, uppercase cinematic metadata. Dark, immersive, emotional, premium.",
+        "description": "NOIR: Film Director / Cinematographer. Near-black cinematic base, soft warm white, restrained film-red accent, Inter at bold weights for film-title-sequence typography, uppercase cinematic metadata. Dark, immersive, emotional, premium.",
         "settings": {
                 "color": {
                         "palette": [

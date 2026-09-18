@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// 1. ACTIVATION REDIRECT — send user to Welcome page on first activation
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 1. ACTIVATION REDIRECT - send user to Welcome page on first activation
+// ============================================================================
 
 /**
  * Redirect to the Welcome page on the first admin load after activation.
@@ -210,12 +210,12 @@ function godevs_onboarding_seed_default_homepage(): void {
 }
 add_action( 'after_switch_theme', 'godevs_onboarding_seed_default_homepage' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 2. WELCOME NOTICE — dismissible admin notice on every admin page
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 2. WELCOME NOTICE - dismissible admin notice on every admin page
+// ============================================================================
 
 /**
- * Render a dismissible "Welcome — Get Started" admin notice.
+ * Render a dismissible "Welcome - Get Started" admin notice.
  *
  * Shows on every admin screen until dismissed. Includes action buttons:
  *   - Import a Demo
@@ -242,7 +242,7 @@ function godevs_onboarding_welcome_notice(): void {
         if ( '1' === get_user_meta( get_current_user_id(), 'godevs_portfolio_welcome_dismissed', true ) ) {
                 return;
         }
-        // Don't show on the settings page itself — that has its own welcome panel.
+        // Don't show on the settings page itself - that has its own welcome panel.
         if ( isset( $_GET['page'] ) && 'godevs-portfolio-settings' === sanitize_key( wp_unslash( $_GET['page'] ) ) ) {
                 return;
         }
@@ -255,7 +255,7 @@ function godevs_onboarding_welcome_notice(): void {
                                         <?php esc_html_e( 'Welcome to GoDevs Portfolio', 'godevs-portfolio'); ?>
                                 </h3>
                                 <p style="margin:0 0 8px;font-size:13px;color:#50575e;">
-                                        <?php esc_html_e( 'Thanks for installing! Get started in minutes — import a demo, pick a header, customize your colors, and publish.', 'godevs-portfolio'); ?>
+                                        <?php esc_html_e( 'Thanks for installing! Get started in minutes - import a demo, pick a header, customize your colors, and publish.', 'godevs-portfolio'); ?>
                                 </p>
                                 <p style="margin:0;font-size:13px;">
                                         <a href="<?php echo esc_url( admin_url( 'themes.php?page=godevs-portfolio-demos' ) ); ?>" class="button button-primary" style="margin-right:6px;">
@@ -308,9 +308,9 @@ function godevs_onboarding_dismiss_ajax(): void {
 }
 add_action( 'wp_ajax_godevs_onboarding_dismiss', 'godevs_onboarding_dismiss_ajax' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 3. WELCOME PANEL — full-page welcome banner on Theme Settings page
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 3. WELCOME PANEL - full-page welcome banner on Theme Settings page
+// ============================================================================
 
 /**
  * Render the welcome panel at the top of the Theme Settings page.
@@ -363,9 +363,9 @@ function godevs_onboarding_render_welcome_panel(): void {
 }
 add_action( 'godevs_portfolio_settings_before_panels', 'godevs_onboarding_render_welcome_panel' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 4. DASHBOARD WIDGET — quick-start checklist on the WP admin dashboard
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 4. DASHBOARD WIDGET - quick-start checklist on the WP admin dashboard
+// ============================================================================
 
 /**
  * Register the dashboard widget.
@@ -378,7 +378,7 @@ function godevs_onboarding_register_dashboard_widget(): void {
         }
         wp_add_dashboard_widget(
                 'godevs_portfolio_dashboard',
-                __( 'GoDevs Portfolio — Quick Start', 'godevs-portfolio'),
+                __( 'GoDevs Portfolio - Quick Start', 'godevs-portfolio'),
                 'godevs_onboarding_render_dashboard_widget'
         );
 }
@@ -457,9 +457,9 @@ function godevs_onboarding_render_dashboard_widget(): void {
         <?php
 }
 
-// ════════════════════════════════════════════════════════════════════════════
-// 5. AFTER-IMPORT GUIDANCE — show success notice + next-action buttons
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 5. AFTER-IMPORT GUIDANCE - show success notice + next-action buttons
+// ============================================================================
 
 /**
  * Set a transient after a successful demo import so we can show the
@@ -475,7 +475,7 @@ function godevs_onboarding_set_import_success_flag( string $demo_id, int $homepa
         if ( $homepage_id ) {
                 set_transient( 'godevs_portfolio_just_imported_home', $homepage_id, 5 * MINUTE_IN_SECONDS );
         }
-        // Also flag the welcome notice as dismissed — the user has progressed past it.
+        // Also flag the welcome notice as dismissed - the user has progressed past it.
         update_user_meta( get_current_user_id(), 'godevs_portfolio_welcome_dismissed', '1' );
 }
 add_action( 'godevs_portfolio_demo_imported', 'godevs_onboarding_set_import_success_flag', 10, 2 );
@@ -502,7 +502,7 @@ function godevs_onboarding_after_import_notice(): void {
         $editor_url   = admin_url( 'site-editor.php' );
         $settings_url = admin_url( 'themes.php?page=godevs-portfolio-settings' );
 
-        // Don't show on the demo library page itself — show on the next page they visit.
+        // Don't show on the demo library page itself - show on the next page they visit.
         if ( isset( $_GET['page'] ) && 'godevs-portfolio-demos' === sanitize_key( wp_unslash( $_GET['page'] ) ) ) {
                 return;
         }
@@ -574,9 +574,9 @@ function godevs_onboarding_dismiss_imported_ajax(): void {
 }
 add_action( 'wp_ajax_godevs_onboarding_dismiss_imported', 'godevs_onboarding_dismiss_imported_ajax' );
 
-// ════════════════════════════════════════════════════════════════════════════
-// 6. HELPER HOOK — fired by demo-importer after successful import
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
+// 6. HELPER HOOK - fired by demo-importer after successful import
+// ============================================================================
 
 /**
  * Fire the godevs_portfolio_demo_imported action after a successful import.

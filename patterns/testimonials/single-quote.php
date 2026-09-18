@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Testimonials — Single Quote
+ * Title: Testimonials - Single Quote
  * Slug: godevs-portfolio/testimonials-single-quote
  * Description: One large editorial pull quote with serif-italic body, ghost quotation styling, accent initial avatar attribution, and a mono engagement footnote beneath a hairline rule.
  * Categories: godevs-portfolio-testimonials
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:pullquote {"align":"wide","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontSize":"var:preset|font-size|x-large","lineHeight":"1.35","letterSpacing":"-0.015em","fontStyle":"italic","fontWeight":"500"},"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-pullquote alignwide" style="padding-top:0;padding-bottom:0"><blockquote class="has-text-align-center" style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--x-large);line-height:1.35;letter-spacing:-0.015em;font-style:italic;font-weight:500"><p>“Working with this practice felt like adding a senior partner to the team — clear thinking, careful execution, and a real point of view on what makes a portfolio site worth visiting.”</p></blockquote></figure>
+<figure class="wp-block-pullquote alignwide" style="padding-top:0;padding-bottom:0"><blockquote class="has-text-align-center" style="font-family:var(--wp--preset--font-family--serif);font-size:var(--wp--preset--font-size--x-large);line-height:1.35;letter-spacing:-0.015em;font-style:italic;font-weight:500"><p>“Working with this practice felt like adding a senior partner to the team - clear thinking, careful execution, and a real point of view on what makes a portfolio site worth visiting.”</p></blockquote></figure>
 <!-- /wp:pullquote -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"center"}} -->
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:separator {"className":"is-style-thin","style":{"color":{"background":"var:preset|color|line"}}} /-->
 
 <!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.14em","textTransform":"uppercase"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase">Studio Field — Brand &amp; product design · Engaged 2020–2022</p>
+<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.14em;text-transform:uppercase">Studio Field - Brand &amp; product design · Engaged 2020–2022</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->

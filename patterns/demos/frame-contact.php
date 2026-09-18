@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Frame (Photography) — Contact
+ * Title: Demo - Frame (Photography) - Contact
  * Slug: godevs-portfolio/demo-frame-contact
- * Description: FRAME contact — inquiry form, availability, FAQ. Recommended style variation: Frame.
+ * Description: FRAME contact - inquiry form, availability, FAQ. Recommended style variation: Frame.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, frame, contact, inquiry, photography
  * Viewport Width: 1440
@@ -12,22 +12,22 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <!-- wp:group {"tagName":"section","className":"wp-block-godevs-demo-frame","layout":{"type":"default"}} -->
 <section class="wp-block-group wp-block-godevs-demo-frame alignfull">
 
-        <!-- Header (minimal — floats over hero) -->
+        <!-- Header (minimal - floats over hero) -->
         <!-- wp:template-part {"slug":"header-frame","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ HERO — typography, supporting copy, availability ═══ -->
+        <!-- === HERO - typography, supporting copy, availability === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:paragraph {"className":"is-style-frame-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
-                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">— Contact</p>
+                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">- Contact</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:heading {"level":1,"className":"frame-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontWeight":"300","letterSpacing":"-0.03em","lineHeight":"0.98","fontSize":"clamp(2.75rem, 9vw, 8.5rem)"}}} -->
                         <h1 class="wp-block-heading frame-display" style="font-family:var(--wp--preset--font-family--display);font-weight:300;letter-spacing:-0.03em;line-height:0.98;font-size:clamp(2.75rem, 9vw, 8.5rem)">Let's make <span class="frame-italic">pictures.</span></h1>
                         <!-- /wp:heading -->
                         <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"var:preset|font-size|medium","lineHeight":"1.7","fontWeight":"300"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}},"layout":{"selfStretch":"fit","flexSize":"52ch"}}} -->
-                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--medium);line-height:1.7;font-weight:300;margin-top:var(--wp--preset--spacing--40);max-width:52ch">Editorial, brand and fine-art commissions. Based in Lisbon, working worldwide. Tell me about the project — I read every brief myself.</p>
+                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--medium);line-height:1.7;font-weight:300;margin-top:var(--wp--preset--spacing--40);max-width:52ch">Editorial, brand and fine-art commissions. Based in Lisbon, working worldwide. Tell me about the project - I read every brief myself.</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
                         <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:400;margin-top:var(--wp--preset--spacing--40)"><span class="frame-dot" aria-hidden="true"></span>Available for commissions · Q3 2026</p>
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ CONTACT INFO + INQUIRY FORM — frame-2col 40/60 ═══ -->
+        <!-- === CONTACT INFO + INQUIRY FORM - frame-2col 40/60 === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:columns {"align":"wide","className":"frame-2col","style":{"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:column {"width":"40%"} -->
                         <div class="wp-block-column" style="flex-basis:40%">
                                 <!-- wp:paragraph {"className":"is-style-frame-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-                                <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;margin-bottom:var(--wp--preset--spacing--30)">— Direct</p>
+                                <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;margin-bottom:var(--wp--preset--spacing--30)">- Direct</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.5rem, 2.8vw, 2.25rem)","fontWeight":"300","letterSpacing":"-0.015em","lineHeight":"1.1"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
                                 <p style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.5rem, 2.8vw, 2.25rem);font-weight:300;letter-spacing:-0.015em;line-height:1.1;margin-bottom:var(--wp--preset--spacing--40)"><a href="mailto:studio@frame.photo" style="text-decoration:none;color:var(--wp--preset--color--foreground);border-bottom:1px solid var(--frame-line);transition:color 0.4s ease, border-color 0.4s ease;">studio@frame.photo</a></p>
@@ -69,15 +69,15 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <ol style="list-style:none;margin:0;padding:0;font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--normal);line-height:1.7;font-weight:300;color:var(--wp--preset--color--foreground);">
                                         <li style="display:grid;grid-template-columns:2.5rem 1fr;gap:0 1rem;padding:0.85rem 0;border-top:1px solid var(--frame-line);">
                                                 <span style="font-size:0.625rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--wp--preset--color--muted);">01</span>
-                                                <span>I review your brief within three days — usually the same week.</span>
+                                                <span>I review your brief within three days - usually the same week.</span>
                                         </li>
                                         <li style="display:grid;grid-template-columns:2.5rem 1fr;gap:0 1rem;padding:0.85rem 0;border-top:1px solid var(--frame-line);">
                                                 <span style="font-size:0.625rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--wp--preset--color--muted);">02</span>
-                                                <span>A thirty-minute conversation — by call or in the studio — to feel the fit.</span>
+                                                <span>A thirty-minute conversation - by call or in the studio - to feel the fit.</span>
                                         </li>
                                         <li style="display:grid;grid-template-columns:2.5rem 1fr;gap:0 1rem;padding:0.85rem 0;border-top:1px solid var(--frame-line);border-bottom:1px solid var(--frame-line);">
                                                 <span style="font-size:0.625rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--wp--preset--color--muted);">03</span>
-                                                <span>A scoped proposal — dates, deliverables, fee — within the week.</span>
+                                                <span>A scoped proposal - dates, deliverables, fee - within the week.</span>
                                         </li>
                                 </ol>
                                 <!-- /wp:html -->
@@ -88,7 +88,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"color":{"background":"var:preset|color|surface-muted"},"border":{"color":"var:preset|color|line","radius":"0","style":"solid","width":"1px"}},"layout":{"type":"default"}} -->
                                 <div class="wp-block-group has-background-color has-border-color" style="background-color:var(--wp--preset--color--surface-muted);border-color:var(--wp--preset--color--line);border-radius:0;border-style:solid;border-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50)">
                                         <!-- wp:paragraph {"className":"is-style-frame-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-                                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;margin-bottom:var(--wp--preset--spacing--40)">— Inquiry</p>
+                                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;margin-bottom:var(--wp--preset--spacing--40)">- Inquiry</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:html -->
                                         <style>
@@ -238,19 +238,19 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                                         <label class="frame-form-label" for="frame-budget">Budget</label>
                                                         <select id="frame-budget" name="frame-budget">
                                                                 <option value="">Select…</option>
-                                                                <option value="2-5k">€2 — 5k</option>
-                                                                <option value="5-15k">€5 — 15k</option>
-                                                                <option value="15-40k">€15 — 40k</option>
+                                                                <option value="2-5k">€2 - 5k</option>
+                                                                <option value="5-15k">€5 - 15k</option>
+                                                                <option value="15-40k">€15 - 40k</option>
                                                                 <option value="40k+">€40k+</option>
                                                                 <option value="not-sure">Not sure</option>
                                                         </select>
                                                 </div>
                                                 <div class="frame-form-field">
                                                         <label class="frame-form-label" for="frame-message">Message</label>
-                                                        <textarea id="frame-message" name="frame-message" rows="5" placeholder="Tell me about the project — what, where, when, and the feeling you are after."></textarea>
+                                                        <textarea id="frame-message" name="frame-message" rows="5" placeholder="Tell me about the project - what, where, when, and the feeling you are after."></textarea>
                                                 </div>
                                                 <button type="submit" class="frame-form-submit">Send inquiry <span class="frame-arrow" aria-hidden="true">→</span></button>
-                                                <p class="frame-form-note">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+                                                <p class="frame-form-note">Demo form - connect a form plugin or the theme's front-forms feature.</p>
                                         </form>
                                         <!-- /wp:html -->
                                 </div>
@@ -262,7 +262,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ FAQ — bordered list ═══ -->
+        <!-- === FAQ - bordered list === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -270,7 +270,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
                                 <!-- wp:paragraph {"className":"is-style-frame-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">— Frequently asked</p>
+                                <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">- Frequently asked</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"className":"frame-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 6vw, 5.5rem)","lineHeight":"0.98","letterSpacing":"-0.03em","fontWeight":"300"}}} -->
                                 <h2 class="wp-block-heading frame-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 6vw, 5.5rem);line-height:0.98;letter-spacing:-0.03em;font-weight:300">Before you write</h2>
@@ -290,21 +290,21 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                         <span style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;color:var(--frame-muted);padding-top:0.5rem;">02</span>
                                         <div>
                                                 <p style="margin:0 0 0.6rem 0;font-family:var(--wp--preset--font-family--display);font-weight:300;font-size:clamp(1.25rem, 2vw, 1.625rem);letter-spacing:-0.015em;line-height:1.15;color:var(--wp--preset--color--foreground);">What should I include in my brief?</p>
-                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">A short paragraph on the project, the dates you are working towards, where the photograph will live, and a sense of the feeling you are after — references are welcome but not required.</p>
+                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">A short paragraph on the project, the dates you are working towards, where the photograph will live, and a sense of the feeling you are after - references are welcome but not required.</p>
                                         </div>
                                 </div>
                                 <div style="display:grid;grid-template-columns:3rem 1fr;gap:0 2rem;padding:1.5rem 0;border-bottom:1px solid var(--frame-line);">
                                         <span style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;color:var(--frame-muted);padding-top:0.5rem;">03</span>
                                         <div>
                                                 <p style="margin:0 0 0.6rem 0;font-family:var(--wp--preset--font-family--display);font-weight:300;font-size:clamp(1.25rem, 2vw, 1.625rem);letter-spacing:-0.015em;line-height:1.15;color:var(--wp--preset--color--foreground);">Do you travel for commissions?</p>
-                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">Yes — roughly a third of the work is made outside Portugal. Travel and production are scoped into the proposal, with a preference for slower trips that let the place arrive before the camera does.</p>
+                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">Yes - roughly a third of the work is made outside Portugal. Travel and production are scoped into the proposal, with a preference for slower trips that let the place arrive before the camera does.</p>
                                         </div>
                                 </div>
                                 <div style="display:grid;grid-template-columns:3rem 1fr;gap:0 2rem;padding:1.5rem 0;border-bottom:1px solid var(--frame-line);">
                                         <span style="font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.14em;color:var(--frame-muted);padding-top:0.5rem;">04</span>
                                         <div>
                                                 <p style="margin:0 0 0.6rem 0;font-family:var(--wp--preset--font-family--display);font-weight:300;font-size:clamp(1.25rem, 2vw, 1.625rem);letter-spacing:-0.015em;line-height:1.15;color:var(--wp--preset--color--foreground);">Do you sell prints?</p>
-                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">Selected series are released as signed, numbered editions on Hahnemühle Photo Rag — usually twice a year. Enquiries go to studio@frame.photo or through the Print Store link above.</p>
+                                                <p style="margin:0;font-family:var(--wp--preset--font-family--body);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--wp--preset--color--muted);max-width:60ch;">Selected series are released as signed, numbered editions on Hahnemühle Photo Rag - usually twice a year. Enquiries go to studio@frame.photo or through the Print Store link above.</p>
                                         </div>
                                 </div>
                         </div>
@@ -314,16 +314,16 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ CTA — brief closing line ═══ -->
+        <!-- === CTA - brief closing line === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:paragraph {"className":"is-style-frame-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"400"},"color":{"text":"var:preset|color|muted"}}} -->
-                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">— Or simply</p>
+                        <p class="is-style-frame-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:400">- Or simply</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.5rem, 3vw, 2.25rem)","fontWeight":"300","letterSpacing":"-0.015em","lineHeight":"1.2"},"color":{"text":"var:preset|color|muted"},"layout":{"selfStretch":"fit","flexSize":"48ch"}}} -->
-                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:clamp(1.5rem, 3vw, 2.25rem);font-weight:300;letter-spacing:-0.015em;line-height:1.2;max-width:48ch">Prefer email? Write directly to <a href="mailto:studio@frame.photo" style="text-decoration:none;color:var(--wp--preset--color--foreground);border-bottom:1px solid var(--frame-line);transition:color 0.4s ease, border-color 0.4s ease;">studio@frame.photo</a> — I read every one myself.</p>
+                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--display);font-size:clamp(1.5rem, 3vw, 2.25rem);font-weight:300;letter-spacing:-0.015em;line-height:1.2;max-width:48ch">Prefer email? Write directly to <a href="mailto:studio@frame.photo" style="text-decoration:none;color:var(--wp--preset--color--foreground);border-bottom:1px solid var(--frame-line);transition:color 0.4s ease, border-color 0.4s ease;">studio@frame.photo</a> - I read every one myself.</p>
                         <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -339,7 +339,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-                <p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Tell me about the light you're chasing — location, mood, timeline. Let's make pictures that hold still.</p>
+                <p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Tell me about the light you're chasing - location, mood, timeline. Let's make pictures that hold still.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:shortcode -->

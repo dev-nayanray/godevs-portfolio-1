@@ -141,7 +141,7 @@ function godevs_portfolio_register_block_styles(): void {
                 )
         );
 
-        // Button — Arrow variant (text-link with directional affordance).
+        // Button - Arrow variant (text-link with directional affordance).
         register_block_style(
                 'core/button',
                 array(
@@ -198,7 +198,7 @@ function godevs_portfolio_register_block_styles(): void {
                 )
         );
 
-        // ═══ Modern card variants (v1.1.0) ═══
+        // === Modern card variants (v1.1.0) ===
         // These have CSS in theme.css but were missing PHP registration.
         // Without registration, they don't appear in the editor's style picker.
 

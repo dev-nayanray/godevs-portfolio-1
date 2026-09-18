@@ -43,7 +43,7 @@
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"bottom":"var:preset|spacing|20"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 					<div class="wp-block-group" style="border-bottom:1px solid var(--wp--preset--color--line);padding-bottom:var(--wp--preset--spacing--20)">
 						<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-						<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);letter-spacing:0.08em;font-weight:500">2026 — Case study</p>
+						<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--muted);letter-spacing:0.08em;font-weight:500">2026 - Case study</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
 						<p class="has-x-small-font-size has-text-color" style="color:var(--wp--preset--color--accent);letter-spacing:0.08em;font-weight:500">→</p>
@@ -61,7 +61,7 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
 				<!-- wp:paragraph {"align":"center","style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|large"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--large)">Nothing here — yet.</p>
+				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--large)">Nothing here - yet.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|muted"}}} -->
 				<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted)">Publish your first GoDevs project and it will appear in this grid.</p>

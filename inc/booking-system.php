@@ -12,7 +12,7 @@
  *   - Booking status workflow (pending → confirmed → completed / cancelled)
  *
  * @package GoDevs_Portfolio
- * @since   2.8.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,7 +37,7 @@ function godevs_booking_get_statuses(): array {
 }
 
 /**
- * Sanitize a booking status — must be one of the valid statuses.
+ * Sanitize a booking status - must be one of the valid statuses.
  *
  * @param mixed $value Raw status input.
  * @return string Sanitized status (defaults to 'pending').
@@ -81,7 +81,7 @@ function godevs_booking_list_column_content( string $column, int $post_id ): voi
         switch ( $column ) {
                 case 'booking_client':
                         $name = get_post_meta( $post_id, '_godevs_booking_name', true );
-                        echo '<strong>' . esc_html( $name ?: '—' ) . '</strong>';
+                        echo '<strong>' . esc_html( $name ?: '-' ) . '</strong>';
                         break;
                 case 'booking_contact':
                         $email = get_post_meta( $post_id, '_godevs_booking_email', true );
@@ -93,12 +93,12 @@ function godevs_booking_list_column_content( string $column, int $post_id ): voi
                                 echo '<a href="tel:' . esc_attr( $phone ) . '">' . esc_html( $phone ) . '</a>';
                         }
                         if ( ! $email && ! $phone ) {
-                                echo '—';
+                                echo '-';
                         }
                         break;
                 case 'booking_service':
                         $service = get_post_meta( $post_id, '_godevs_booking_service', true );
-                        echo esc_html( $service ?: '—' );
+                        echo esc_html( $service ?: '-' );
                         break;
                 case 'booking_date_time':
                         $date = get_post_meta( $post_id, '_godevs_booking_date', true );
@@ -108,7 +108,7 @@ function godevs_booking_list_column_content( string $column, int $post_id ): voi
                         } elseif ( $date ) {
                                 echo esc_html( $date );
                         } else {
-                                echo '—';
+                                echo '-';
                         }
                         break;
                 case 'booking_status':
@@ -472,7 +472,7 @@ function godevs_booking_send_status_email( int $post_id, string $new_status, str
         }
 
         $message .= "\n" . __( 'Thank you for choosing us.', 'godevs-portfolio' ) . "\n\n";
-        $message .= sprintf( __( '— %s', 'godevs-portfolio' ), $site_name );
+        $message .= sprintf( __( '- %s', 'godevs-portfolio' ), $site_name );
 
         $headers = array(
                 'From' => $site_name . ' <' . $admin_email . '>',

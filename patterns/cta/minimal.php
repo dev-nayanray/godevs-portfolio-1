@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: CTA — Minimal
+ * Title: CTA - Minimal
  * Slug: godevs-portfolio/cta-minimal
- * Description: A restrained, complete CTA — eyebrow, serif-accented headline, one-line sub, filled and outline buttons, generous whitespace under a single top hairline. No background fill.
+ * Description: A restrained, complete CTA - eyebrow, serif-accented headline, one-line sub, filled and outline buttons, generous whitespace under a single top hairline. No background fill.
  * Categories: godevs-portfolio-cta
  * Keywords: cta, minimal, restrained, quiet, hairline
  * Viewport Width: 1280

@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — CPT Manager admin page JS.
+ * GoDevs Portfolio - CPT Manager admin page JS.
  *
  * Handles interactions on the Content Manager admin page
  * (Appearance → Content Manager):
@@ -8,7 +8,7 @@
  *     `data-confirm` attribute will prompt the user with `confirm()`
  *     before navigating. If the user cancels, the default action is
  *     prevented. This replaces the previous inline `onclick="return
- *     confirm(...)"` attribute on the trash link (P1.16 — remove
+ *     confirm(...)"` attribute on the trash link (P1.16 - remove
  *     inline JS).
  *
  * The script is enqueued by `godevs_cpt_admin_enqueue_styles()` in

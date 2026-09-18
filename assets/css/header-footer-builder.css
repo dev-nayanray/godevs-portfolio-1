@@ -1,4 +1,4 @@
-/* GoDevs Portfolio — Header & Footer Builder front-end styles
+/* GoDevs Portfolio - Header & Footer Builder front-end styles
  * v2.3.0
  */
 
@@ -240,9 +240,9 @@
 	}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * v2.7.0 — Additional element styles + dark/light variants + mobile menu
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * v2.7.0 - Additional element styles + dark/light variants + mobile menu
+ * =================================================================== */
 
 /* Tagline */
 .godevs-hf-tagline {
@@ -309,7 +309,7 @@
 	opacity: 1;
 }
 
-/* Dark variant utility class — for rows with dark backgrounds */
+/* Dark variant utility class - for rows with dark backgrounds */
 .godevs-hf-row.is-dark,
 .godevs-hf-row.is-dark a,
 .godevs-hf-row.is-dark .godevs-hf-site-title,
@@ -347,7 +347,7 @@
 	color: rgba(255, 255, 255, 0.9);
 }
 
-/* Light variant — for rows with light backgrounds */
+/* Light variant - for rows with light backgrounds */
 .godevs-hf-row.is-light .godevs-hf-nav-menu > li > a {
 	color: var(--wp--preset--color--text, #0a0a0a);
 }
@@ -356,7 +356,7 @@
 	color: var(--wp--preset--color--text, #0a0a0a);
 }
 
-/* Newsletter form — adapt to light backgrounds */
+/* Newsletter form - adapt to light backgrounds */
 .godevs-hf-row.is-light .godevs-hf-newsletter-form input[type="email"] {
 	background-color: rgba(0, 0, 0, 0.04);
 	border-color: rgba(0, 0, 0, 0.15);
@@ -420,7 +420,7 @@
 	transform: rotate(-45deg) translate(4px, -4px);
 }
 
-/* Mobile responsive — show hamburger, hide nav */
+/* Mobile responsive - show hamburger, hide nav */
 @media (max-width: 768px) {
 	.godevs-hf-mobile-toggle {
 		display: inline-flex;
@@ -483,7 +483,7 @@
 	}
 }
 
-/* Scrolled state for sticky headers — JS toggles this class */
+/* Scrolled state for sticky headers - JS toggles this class */
 .godevs-hf-row.is-sticky.is-scrolled {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Pulse (Designer) — Work
+ * Title: Demo - Pulse (Designer) - Work
  * Slug: godevs-portfolio/demo-pulse-work
- * Description: PULSE case studies archive — filterable grid with metrics. Recommended style variation: Pulse.
+ * Description: PULSE case studies archive - filterable grid with metrics. Recommended style variation: Pulse.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, pulse, work, case studies, archive, ux
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-pulse","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — ARCHIVE HEADER ═══ -->
+	<!-- === 01 - ARCHIVE HEADER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -25,10 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— Case Studies</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- Case Studies</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">12 case studies · 2014 — 2026</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">12 case studies · 2014 - 2026</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Supporting copy -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40)">A selected archive of products I've designed end-to-end — research through launch. Each case study is paired with the metric that defined its success.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40)">A selected archive of products I've designed end-to-end - research through launch. Each case study is paired with the metric that defined its success.</p>
 			<!-- /wp:paragraph -->
 
 		</div>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CATEGORY FILTER ═══ -->
+	<!-- === 02 - CATEGORY FILTER === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FEATURED CASE STUDY ═══ -->
+	<!-- === 03 - FEATURED CASE STUDY === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -79,7 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 			<!-- Featured image 21/9 -->
 			<!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App featured case study — mobile banking dashboard with balance cards and charts" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App featured case study - mobile banking dashboard with balance cards and charts" style="border-radius:8px;aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 
 			<!-- Title + metric row -->
@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 5vw, 4rem);line-height:1.0;letter-spacing:-0.03em;font-weight:600">Fintech App</h2>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"},"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--30)">A mobile banking experience rebuilt around clarity and trust — from onboarding through daily use. Research-led, system-driven, and measured against the metrics that mattered.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--30)">A mobile banking experience rebuilt around clarity and trust - from onboarding through daily use. Research-led, system-driven, and measured against the metrics that mattered.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:html -->
 					<div style="margin-top:1.5rem;">
@@ -122,7 +122,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — CASE STUDY GRID ═══ -->
+	<!-- === 04 - CASE STUDY GRID === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -132,7 +132,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— All case studies</p>
+				<p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- All case studies</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.75rem, 3.5vw, 2.75rem)","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}}} -->
 				<h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.75rem, 3.5vw, 2.75rem);line-height:1.1;letter-spacing:-0.02em;font-weight:600">More selected work.</h2>
@@ -148,12 +148,12 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Analytics Platform case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics - clean dashboard interface with data tables and charts" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">SaaS · Web · 2025</p>
 							<h3 class="pulse-case-title">Analytics Platform</h3>
-							<p class="pulse-case-desc">Turning dense data into decisions — a dashboard people actually use.</p>
+							<p class="pulse-case-desc">Turning dense data into decisions - a dashboard people actually use.</p>
 							<div class="pulse-metric">
 								<span class="pulse-metric-num">2.1×</span>
 								<span class="pulse-metric-label">Daily active use</span>
@@ -168,7 +168,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Health Tracker case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health Tracker — clean medication tracking mobile interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health Tracker - clean medication tracking mobile interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">Health · Mobile · 2025</p>
@@ -194,7 +194,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Commerce Admin case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="Commerce Admin — clean order management dashboard interface" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="Commerce Admin - clean order management dashboard interface" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">E-commerce · Web · 2024</p>
@@ -214,7 +214,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 					<!-- wp:html -->
 					<a class="pulse-case" href="#" aria-label="View Data Studio case study">
 						<div class="pulse-case-media" style="aspect-ratio:4/3;">
-							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="Data Studio — analytics workspace with query builder and saved views" loading="lazy">
+							<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="Data Studio - analytics workspace with query builder and saved views" loading="lazy">
 						</div>
 						<div class="pulse-case-body">
 							<p class="pulse-case-meta">SaaS · Web · 2024</p>
@@ -237,7 +237,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — PAGINATION ═══ -->
+	<!-- === 05 - PAGINATION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
@@ -258,7 +258,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 06 — CLOSING NOTE ═══ -->
+	<!-- === 06 - CLOSING NOTE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->

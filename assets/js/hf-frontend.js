@@ -1,12 +1,12 @@
 /**
- * GoDevs Portfolio — Header/Footer Builder Front-end JS
+ * GoDevs Portfolio - Header/Footer Builder Front-end JS
  *
  * Handles:
  *   - Mobile hamburger menu toggle (for builder-rendered nav menus)
  *   - Sticky header scroll shadow (adds .is-scrolled class when scrolled)
  *   - Newsletter form default-prevention (replaces the previous inline
  *     `onsubmit="return false"` attribute on .godevs-hf-newsletter-form,
- *     P1.16 — remove inline JS). On submit we prevent the default page
+ *     P1.16 - remove inline JS). On submit we prevent the default page
  *     navigation and surface a localized "Thanks for subscribing!" message.
  *
  * This script is enqueued on the front-end (not in admin) by

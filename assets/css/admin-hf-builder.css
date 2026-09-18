@@ -1,8 +1,8 @@
-/* GoDevs Portfolio — Header & Footer Builder admin styles
- * v2.4.0 — Visual drag-and-drop builder with device breakpoints
+/* GoDevs Portfolio - Header & Footer Builder admin styles
+ * v2.4.0 - Visual drag-and-drop builder with device breakpoints
  */
 
-/* ═══ Builder Wrapper ═══ */
+/* === Builder Wrapper === */
 .godevs-hf-builder-wrap {
         border: 1px solid #e0e0e0;
         border-radius: 8px;
@@ -10,7 +10,7 @@
         background: #f9fafb;
 }
 
-/* ═══ Header/Footer Tabs ═══ */
+/* === Header/Footer Tabs === */
 .godevs-hf-tabs {
         display: flex;
         gap: 0;
@@ -41,7 +41,7 @@
         background: #fff;
 }
 
-/* ═══ Templates Section ═══ */
+/* === Templates Section === */
 .godevs-hf-templates,
 .godevs-hf-saved-layouts {
         padding: 24px;
@@ -100,7 +100,7 @@
         height: 12px;
 }
 
-/* ═══ Saved Layouts ═══ */
+/* === Saved Layouts === */
 .godevs-hf-saved-item {
         display: flex;
         justify-content: space-between;
@@ -149,7 +149,7 @@
         border-radius: 4px;
 }
 
-/* ═══ Editor Section ═══ */
+/* === Editor Section === */
 .godevs-hf-editor {
         display: grid;
         grid-template-columns: 200px 1fr 280px;
@@ -212,7 +212,7 @@
         height: 18px;
 }
 
-/* ═══ Element Palette (left sidebar) ═══ */
+/* === Element Palette (left sidebar) === */
 .godevs-hf-elements-panel {
         background: #fff;
         border-right: 1px solid #e0e0e0;
@@ -270,7 +270,7 @@
         margin-top: 0;
 }
 
-/* ═══ Canvas (center) ═══ */
+/* === Canvas (center) === */
 .godevs-hf-canvas {
         background: #f0f0f1;
         padding: 24px;
@@ -465,7 +465,7 @@
         color: #e85d40;
 }
 
-/* ═══ Settings Panel (right sidebar) ═══ */
+/* === Settings Panel (right sidebar) === */
 .godevs-hf-settings-panel {
         background: #fff;
         border-left: 1px solid #e0e0e0;
@@ -548,7 +548,7 @@
         text-decoration: line-through;
 }
 
-/* ═══ Responsive ═══ */
+/* === Responsive === */
 @media (max-width: 1024px) {
         .godevs-hf-editor {
                 grid-template-columns: 160px 1fr 240px;
@@ -570,9 +570,9 @@
         }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * v3.0.0 — Live Preview Section
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * v3.0.0 - Live Preview Section
+ * =================================================================== */
 
 .godevs-hf-live-preview-section {
         margin-top: 20px;
@@ -639,9 +639,9 @@
         display: none !important;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * v3.0.0 — Improved Device Switcher (syncs with live preview)
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * v3.0.0 - Improved Device Switcher (syncs with live preview)
+ * =================================================================== */
 
 .godevs-hf-device-controls {
         display: flex;
@@ -699,7 +699,7 @@
         opacity: 0.3;
 }
 
-/* ─── HF Builder Miniatures (UX-C) ─── */
+/* --- HF Builder Miniatures (UX-C) --- */
 .godevs-hf-starter-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GoDevs Portfolio — CSS minifier (P1.12)
+GoDevs Portfolio - CSS minifier (P1.12)
 
 Lightweight regex-based minifier for assets/css/theme.css.
 
@@ -44,7 +44,7 @@ def minify_css(css: str) -> str:
         placeholders.append(match.group(0))
         return f"\x00PH{len(placeholders) - 1}\x00"
 
-    # url(...) — quoted or unquoted, no nested parens (rare in practice).
+    # url(...) - quoted or unquoted, no nested parens (rare in practice).
     body = re.sub(r'url\(\s*(?:"[^"]*"|\'[^\']*\'|[^)]*)\s*\)', stash, body)
     # Double-quoted strings.
     body = re.sub(r'"[^"]*"', stash, body)
@@ -54,7 +54,7 @@ def minify_css(css: str) -> str:
     # 4. Strip whitespace around { } ; ,
     body = re.sub(r'\s*([{};,])\s*', r'\1', body)
 
-    # 5. Strip whitespace AFTER `:` only (NOT before) — preserves the
+    # 5. Strip whitespace AFTER `:` only (NOT before) - preserves the
     #    descendant-combinator + pseudo-class pattern (e.g. `.parent :hover`
     #    and `> :first-child`).
     body = re.sub(r':\s+', ':', body)
@@ -100,7 +100,7 @@ def main() -> None:
 
     with open(sys.argv[2], 'w', encoding='utf-8') as f:
         f.write(minified)
-        f.write('\n')  # trailing newline — POSIX-friendly
+        f.write('\n')  # trailing newline - POSIX-friendly
 
     orig_size = len(css.encode('utf-8'))
     mini_size = len(minified.encode('utf-8'))
@@ -108,7 +108,7 @@ def main() -> None:
 
     # Sanity: open/close brace counts must match.
     # We compare the minified brace counts against the brace counts of
-    # the original CSS with comments stripped — braces inside /* */
+    # the original CSS with comments stripped - braces inside /* */
     # comments are text, not CSS, so they should not appear in the
     # minified output.
     css_no_comments = re.sub(r'/\*.*?\*/', '', css, flags=re.DOTALL)

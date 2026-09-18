@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Skills — Technology Grid
+ * Title: Skills - Technology Grid
  * Slug: godevs-portfolio/skills-technology-grid
- * Description: A categorized stack index — mono micro-label headings (Design, Build, Operate) over pill chip rows of technologies, separated by hairline rules. Distinct in its categorical chip-grid composition.
+ * Description: A categorized stack index - mono micro-label headings (Design, Build, Operate) over pill chip rows of technologies, separated by hairline rules. Distinct in its categorical chip-grid composition.
  * Categories: godevs-portfolio-skills
  * Keywords: skills, technologies, tools, grid, chips, stack
  * Viewport Width: 1280
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"},"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
 <div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">01 — Design</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">01 - Design</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
 <div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">02 — Build</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">02 - Build</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
@@ -77,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"var(--wp--style--global--wide-size)"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">03 — Operate</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;margin-bottom:var(--wp--preset--spacing--30)">03 - Operate</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->

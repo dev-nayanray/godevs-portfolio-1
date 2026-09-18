@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Portfolio — Asymmetric
+ * Title: Portfolio - Asymmetric
  * Slug: godevs-portfolio/portfolio-asymmetric
  * Description: A staggered two-row showcase with alternating 55/45 image-and-text columns, mono ghost numerals, pill meta chips, and hover-reveal covers. Distinct in its magazine-style asymmetric composition.
  * Categories: godevs-portfolio-portfolio
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="wp-block-group godevs-hover-reveal is-style-card-media">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"var(--wp--custom--radius--lg, 12px)"}}} -->
 					<figure class="wp-block-image has-custom-border">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Studio Field identity refresh — cover" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px"/>
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Studio Field identity refresh - cover" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px"/>
 					</figure>
 					<!-- /wp:image -->
 				</div>
@@ -57,10 +57,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<!-- /wp:group -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
-					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Studio Field — identity refresh</h3>
+					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Studio Field - identity refresh</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A new visual language for a small studio practice — wordmark, type system, and a compact component library shipped as design tokens.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A new visual language for a small studio practice - wordmark, type system, and a compact component library shipped as design tokens.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|accent"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600;letter-spacing:0.02em"><a href="/work/studio-field">View case study →</a></p>
@@ -89,10 +89,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<!-- /wp:group -->
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
-					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Long-form Journal — publication system</h3>
+					<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Long-form Journal - publication system</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A multi-author editorial site built Gutenberg-native — fluid typography, accessible color, and a reading column that stays calm at every breakpoint.</p>
+					<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A multi-author editorial site built Gutenberg-native - fluid typography, accessible color, and a reading column that stays calm at every breakpoint.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600","letterSpacing":"0.02em"},"color":{"text":"var:preset|color|accent"}}} -->
 					<p class="has-text-color" style="color:var(--wp--preset--color--accent);font-size:var(--wp--preset--font-size--small);font-weight:600;letter-spacing:0.02em"><a href="/work/long-form-journal">View case study →</a></p>
@@ -107,7 +107,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="wp-block-group godevs-hover-reveal is-style-card-media">
 					<!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"var(--wp--custom--radius--lg, 12px)"}}} -->
 					<figure class="wp-block-image has-custom-border">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Long-form Journal editorial site — cover" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px"/>
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Long-form Journal editorial site - cover" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px"/>
 					</figure>
 					<!-- /wp:image -->
 				</div>

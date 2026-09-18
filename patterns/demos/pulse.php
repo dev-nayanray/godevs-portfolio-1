@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Pulse (Designer)
+ * Title: Demo - Pulse (Designer)
  * Slug: godevs-portfolio/demo-pulse
- * Description: PULSE — UX / Product Designer. Cool neutral system, mono annotations, teal accent, case-study-driven portfolio with metrics. Recommended style variation: Pulse.
+ * Description: PULSE: UX / Product Designer. Cool neutral system, mono annotations, teal accent, case-study-driven portfolio with metrics. Recommended style variation: Pulse.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, pulse, ux, product, designer, case study, portfolio
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-pulse","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO ═══ -->
+        <!-- === 01 - HERO === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"bottom","width":"44%"} -->
                                 <div class="wp-block-column" style="flex-basis:44%">
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6">A product designer focused on outcomes — turning complex problems into systems people actually want to use. I work with founders and product teams from research to launch.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6">A product designer focused on outcomes - turning complex problems into systems people actually want to use. I work with founders and product teams from research to launch.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}}} -->
                                         <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">
@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"bottom","width":"56%"} -->
                                 <div class="wp-block-column" style="flex-basis:56%">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-hero.webp' ); ?>" alt="Abstract arrangement of floating app UI panels — PULSE product design hero" fetchpriority="high" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
+                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-hero.webp' ); ?>" alt="Abstract arrangement of floating app UI panels - PULSE product design hero" fetchpriority="high" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="eager"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
@@ -75,7 +75,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — FEATURED CASE STUDY: Fintech App (dark) ═══ -->
+        <!-- === 02 - FEATURED CASE STUDY: Fintech App (dark) === -->
         <!-- wp:group {"tagName":"section","className":"pulse-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"color":{"background":"var:preset|color|primary","text":"var:preset|color|contrast"}},"layout":{"type":"default"}} -->
         <section class="wp-block-group pulse-dark alignfull has-contrast-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -108,14 +108,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <p class="pulse-stat-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase">Conversion uplift in 8 weeks post-launch</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|contrast"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40)">A mobile banking experience rebuilt around clarity — from onboarding to daily use. Research-led, system-driven, measured against the metrics that mattered.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-size:var(--wp--preset--font-size--medium);line-height:1.6;margin-top:var(--wp--preset--spacing--40)">A mobile banking experience rebuilt around clarity - from onboarding to daily use. Research-led, system-driven, measured against the metrics that mattered.</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
                                 <!-- wp:column {"verticalAlignment":"center","width":"66%"} -->
                                 <div class="wp-block-column" style="flex-basis:66%">
                                         <!-- wp:image {"aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"8px"}}} -->
-                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App case study — clean mobile banking interface with charts and balance cards" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App case study - clean mobile banking interface with charts and balance cards" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
@@ -132,7 +132,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — FEATURED CASE STUDIES grid ═══ -->
+        <!-- === 03 - FEATURED CASE STUDIES grid === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"default"}} -->
@@ -158,7 +158,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="pulse-case" href="#" aria-label="View Fintech App case study">
                                                 <div class="pulse-case-media" style="aspect-ratio:4/3;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App — mobile banking interface with charts and balance cards" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-fintech.webp' ); ?>" alt="Fintech App - mobile banking interface with charts and balance cards" loading="lazy">
                                                 </div>
                                                 <div class="pulse-case-body">
                                                         <p class="pulse-case-meta">Fintech · Mobile · 2026</p>
@@ -178,12 +178,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="pulse-case" href="#" aria-label="View SaaS Analytics case study">
                                                 <div class="pulse-case-media" style="aspect-ratio:4/3;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics — clean dashboard interface with data tables and charts" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-saas.webp' ); ?>" alt="SaaS Analytics - clean dashboard interface with data tables and charts" loading="lazy">
                                                 </div>
                                                 <div class="pulse-case-body">
                                                         <p class="pulse-case-meta">SaaS · Web · 2025</p>
                                                         <h3 class="pulse-case-title">Analytics Platform</h3>
-                                                        <p class="pulse-case-desc">Turning dense data into decisions — a dashboard people actually use.</p>
+                                                        <p class="pulse-case-desc">Turning dense data into decisions - a dashboard people actually use.</p>
                                                         <div class="pulse-metric">
                                                                 <span class="pulse-metric-num">2.1×</span>
                                                                 <span class="pulse-metric-label">Daily active use</span>
@@ -204,7 +204,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="pulse-case" href="#" aria-label="View Health App case study">
                                                 <div class="pulse-case-media" style="aspect-ratio:4/3;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health App — clean medication tracking mobile interface" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-health.webp' ); ?>" alt="Health App - clean medication tracking mobile interface" loading="lazy">
                                                 </div>
                                                 <div class="pulse-case-body">
                                                         <p class="pulse-case-meta">Health · Mobile · 2025</p>
@@ -224,7 +224,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <a class="pulse-case" href="#" aria-label="View E-commerce Admin case study">
                                                 <div class="pulse-case-media" style="aspect-ratio:4/3;">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="E-commerce Admin — clean order management dashboard interface" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pulse/pulse-case-ecommerce.webp' ); ?>" alt="E-commerce Admin - clean order management dashboard interface" loading="lazy">
                                                 </div>
                                                 <div class="pulse-case-body">
                                                         <p class="pulse-case-meta">E-commerce · Web · 2024</p>
@@ -252,13 +252,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — RESULTS / STATS ═══ -->
+        <!-- === 04 - RESULTS / STATS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">By the numbers — demo data</p>
+                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">By the numbers - demo data</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
                         <div class="wp-block-columns">
@@ -309,7 +309,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — DESIGN PROCESS ═══ -->
+        <!-- === 05 - DESIGN PROCESS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -369,7 +369,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:1.25rem;line-height:1.2;letter-spacing:-0.015em;font-weight:600">Design</h3>
                                                 <!-- /wp:heading -->
                                                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.6">Flows, wireframes and high-fidelity UI — built on a system, prototyped early, tested with real users.</p>
+                                                <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.6">Flows, wireframes and high-fidelity UI - built on a system, prototyped early, tested with real users.</p>
                                                 <!-- /wp:paragraph -->
                                         </div>
                                         <!-- /wp:group -->
@@ -384,7 +384,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:1.25rem;line-height:1.2;letter-spacing:-0.015em;font-weight:600">Ship & measure</h3>
                                                 <!-- /wp:heading -->
                                                 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|small","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"}}} -->
-                                                <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.6">Engineering handoff, launch and a measurement plan — then iterate against the metrics that matter.</p>
+                                                <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--small);line-height:1.6">Engineering handoff, launch and a measurement plan - then iterate against the metrics that matter.</p>
                                                 <!-- /wp:paragraph -->
                                         </div>
                                         <!-- /wp:group -->
@@ -398,7 +398,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 06 — EXPERIENCE timeline ═══ -->
+        <!-- === 06 - EXPERIENCE timeline === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -408,7 +408,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— Experience</p>
+                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- Experience</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -420,24 +420,24 @@ if ( ! defined( 'ABSPATH' ) ) {
                                         <!-- wp:html -->
                                         <div style="margin-top:2rem;">
                                                 <div class="pulse-exp-row">
-                                                        <span class="pulse-exp-year">2023 — Now</span>
+                                                        <span class="pulse-exp-year">2023 - Now</span>
                                                         <span class="pulse-exp-role">Independent Product Designer</span>
                                                         <span class="pulse-exp-org">Selected engagements with fintech, health and SaaS teams.</span>
                                                 </div>
                                                 <div class="pulse-exp-row">
-                                                        <span class="pulse-exp-year">2020 — 2023</span>
+                                                        <span class="pulse-exp-year">2020 - 2023</span>
                                                         <span class="pulse-exp-role">Senior Product Designer</span>
-                                                        <span class="pulse-exp-org">North Studio — led design for the flagship product, built the design system.</span>
+                                                        <span class="pulse-exp-org">North Studio - led design for the flagship product, built the design system.</span>
                                                 </div>
                                                 <div class="pulse-exp-row">
-                                                        <span class="pulse-exp-year">2017 — 2020</span>
+                                                        <span class="pulse-exp-year">2017 - 2020</span>
                                                         <span class="pulse-exp-role">Product Designer</span>
-                                                        <span class="pulse-exp-org">Orbit Labs — shipped 3 mobile products from research to launch.</span>
+                                                        <span class="pulse-exp-org">Orbit Labs - shipped 3 mobile products from research to launch.</span>
                                                 </div>
                                                 <div class="pulse-exp-row">
-                                                        <span class="pulse-exp-year">2014 — 2017</span>
+                                                        <span class="pulse-exp-year">2014 - 2017</span>
                                                         <span class="pulse-exp-role">UX Designer</span>
-                                                        <span class="pulse-exp-org">Arc Agency — agency work across brand, web and product.</span>
+                                                        <span class="pulse-exp-org">Arc Agency - agency work across brand, web and product.</span>
                                                 </div>
                                         </div>
                                         <!-- /wp:html -->
@@ -450,7 +450,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 07 — SKILLS spec-sheet ═══ -->
+        <!-- === 07 - SKILLS spec-sheet === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -460,7 +460,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"width":"30%"} -->
                                 <div class="wp-block-column" style="flex-basis:30%">
                                         <!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— Skills</p>
+                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- Skills</p>
                                         <!-- /wp:paragraph -->
                                 </div>
                                 <!-- /wp:column -->
@@ -502,13 +502,13 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 08 — TESTIMONIALS ═══ -->
+        <!-- === 08 - TESTIMONIALS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-group alignwide">
                         <!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— Testimonials (demo identities)</p>
+                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- Testimonials (demo identities)</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"top":"var:preset|spacing|50"}}}} -->
                         <div class="wp-block-columns" style="margin-top:var(--wp--preset--spacing--50)">
@@ -547,7 +547,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 09 — ABOUT ═══ -->
+        <!-- === 09 - ABOUT === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -564,13 +564,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"58%"} -->
                                 <div class="wp-block-column" style="flex-basis:58%">
                                         <!-- wp:paragraph {"className":"is-style-pulse-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">— About</p>
+                                        <p class="is-style-pulse-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500">- About</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:heading {"level":2,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.25rem, 5vw, 4rem)","lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
                                         <h2 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 5vw, 4rem);line-height:1.05;letter-spacing:-0.03em;font-weight:600">Designing for outcomes.</h2>
                                         <!-- /wp:heading -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.6"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6">I'm a product designer with twelve years of practice across fintech, health and SaaS. I work end-to-end — research, strategy, interaction, UI and design systems — and I care about the metrics that follow a launch, not just the screens before it.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.6">I'm a product designer with twelve years of practice across fintech, health and SaaS. I work end-to-end - research, strategy, interaction, UI and design systems - and I care about the metrics that follow a launch, not just the screens before it.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}},"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.75rem","letterSpacing":"0.06em","textTransform":"uppercase"}}} -->
                                         <p style="margin-top:var(--wp--preset--spacing--40);font-family:var(--wp--preset--font-family--mono);font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase"><a href="/about">Read the full bio →</a></p>
@@ -584,7 +584,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 10 — FINAL CTA (Contact) — handled by footer-pulse, small note here ═══ -->
+        <!-- === 10 - FINAL CTA (Contact) - handled by footer-pulse, small note here === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->

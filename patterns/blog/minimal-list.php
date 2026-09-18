@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Blog — Minimal List
+ * Title: Blog - Minimal List
  * Slug: godevs-portfolio/blog-minimal-list
- * Description: An ultra-restrained, text-only journal index — display heading with serif-italic accent, mono date micro-labels, and hairline-ruled rows of linked titles. Distinct in its spare list composition.
+ * Description: An ultra-restrained, text-only journal index - display heading with serif-italic accent, mono date micro-labels, and hairline-ruled rows of linked titles. Distinct in its spare list composition.
  * Categories: godevs-portfolio-blog
  * Keywords: blog, minimal, list, posts, restrained
  * Viewport Width: 1280

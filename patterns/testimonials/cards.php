@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Testimonials — Cards
+ * Title: Testimonials - Cards
  * Slug: godevs-portfolio/testimonials-cards
  * Description: A three-column grid of card-quote testimonials with circular accent initial avatars, mono role micro-labels, and hairline structure. Distinct from Single Quote in its multi-card grid composition.
  * Categories: godevs-portfolio-testimonials

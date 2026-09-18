@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Skills — Statistics
+ * Title: Skills - Statistics
  * Slug: godevs-portfolio/skills-statistics
  * Description: A framed 2x2 metrics grid with oversized accent display figures, mono micro-labels, and hairline dividers forming the lattice. Distinct in its quantitative emphasis and boxed grid framing.
  * Categories: godevs-portfolio-skills

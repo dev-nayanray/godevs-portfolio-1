@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Elegant",
-	"description": "An elegant, refined aesthetic — serif display, generous spacing, restrained palette with deep emerald accent. Considered and quiet, for established practices.",
+	"description": "An elegant, refined aesthetic - serif display, generous spacing, restrained palette with deep emerald accent. Considered and quiet, for established practices.",
 	"settings": {
 		"color": {
 			"palette": [

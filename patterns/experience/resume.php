@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Experience — Resume
+ * Title: Experience - Resume
  * Slug: godevs-portfolio/experience-resume
- * Description: A compact résumé ledger — tight hairline rows pairing role and employer with right-aligned mono dates and one-line summaries, closing on an outline CV button. Distinct from Vertical Timeline in its compact, list-led composition.
+ * Description: A compact résumé ledger - tight hairline rows pairing role and employer with right-aligned mono dates and one-line summaries, closing on an outline CV button. Distinct from Vertical Timeline in its compact, list-led composition.
  * Categories: godevs-portfolio-experience
  * Keywords: experience, resume, roles, history, compact
  * Viewport Width: 1280
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2022 — Now</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2022 - Now</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -59,7 +59,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2018 — 2022</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2018 - 2022</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|small","letterSpacing":"0.1em"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2014 — 2018</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--small);letter-spacing:0.1em">2014 - 2018</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

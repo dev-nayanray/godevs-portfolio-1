@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Horizon (Photography)
+ * Title: Demo - Horizon (Photography)
  * Slug: godevs-portfolio/demo-horizon
- * Description: HORIZON — Travel Photographer / Visual Storyteller. Immersive, cinematic, editorial travel photography. Recommended style variation: Horizon.
+ * Description: HORIZON: Travel Photographer / Visual Storyteller. Immersive, cinematic, editorial travel photography. Recommended style variation: Horizon.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, horizon, travel, photography, photographer
  * Viewport Width: 1440
@@ -17,11 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
         <!-- Header -->
         <!-- wp:template-part {"slug":"header-horizon","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — HERO: immersive full-screen cover ═══ -->
+        <!-- === 01 - HERO: immersive full-screen cover === -->
         <!-- wp:cover {"useFeaturedImage":false,"dimRatio":30,"overlayColor":"primary","minHeight":92,"minHeightUnit":"vh","isDark":true,"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-cover alignfull" style="min-height:92vh;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0">
                 <span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-30 has-background-dim"></span>
-                <img class="wp-block-cover__image-background" alt="Patagonian mountain range at first light — granite spires rising above low cloud, cinematic, immersive" fetchpriority="high" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
+                <img class="wp-block-cover__image-background" alt="Patagonian mountain range at first light - granite spires rising above low cloud, cinematic, immersive" fetchpriority="high" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.webp' ); ?>" style="object-fit:cover;object-position:center" loading="eager"/>
                 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
                 <div class="wp-block-cover__inner-container" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                         <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -61,7 +61,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
         <!-- /wp:cover -->
 
-        <!-- ═══ 02 — FEATURED JOURNEY: PATAGONIA ═══ -->
+        <!-- === 02 - FEATURED JOURNEY: PATAGONIA === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -84,7 +84,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                         <!-- Large featured image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonian granite spires at dawn — Fitz Roy range under clearing cloud, alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonian granite spires at dawn - Fitz Roy range under clearing cloud, alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Meta + CTA row -->
@@ -112,7 +112,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — JOURNEYS INDEX ═══ -->
+        <!-- === 03 - JOURNEYS INDEX === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -133,48 +133,48 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- Journeys grid (asymmetric) -->
                         <!-- wp:html -->
                         <div class="hor-journeys" aria-label="Selected journeys">
-                                <a class="hor-destination hj-1" href="/journey" aria-label="View journey — Patagonia">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia — granite spires at dawn" loading="lazy"></div>
+                                <a class="hor-destination hj-1" href="/journey" aria-label="View journey - Patagonia">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia - granite spires at dawn" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Mountains · 2026</p>
                                                 <h3 class="hor-destination-name">Patagonia</h3>
                                                 <p class="hor-destination-coords">49°20′S 73°02′W · Argentina + Chile</p>
                                         </div>
                                 </a>
-                                <a class="hor-destination hj-2" href="/journey" aria-label="View journey — Iceland">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-iceland.webp' ); ?>" alt="Iceland — black sand coastline" loading="lazy"></div>
+                                <a class="hor-destination hj-2" href="/journey" aria-label="View journey - Iceland">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-iceland.webp' ); ?>" alt="Iceland - black sand coastline" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Coast · 2026</p>
                                                 <h3 class="hor-destination-name">Iceland</h3>
                                                 <p class="hor-destination-coords">64°08′N 21°56′W · North Atlantic</p>
                                         </div>
                                 </a>
-                                <a class="hor-destination hj-3" href="/journey" aria-label="View journey — Kyoto">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-kyoto.webp' ); ?>" alt="Kyoto — temple courtyard in autumn" loading="lazy"></div>
+                                <a class="hor-destination hj-3" href="/journey" aria-label="View journey - Kyoto">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-kyoto.webp' ); ?>" alt="Kyoto - temple courtyard in autumn" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Culture · 2025</p>
                                                 <h3 class="hor-destination-name">Kyoto</h3>
                                                 <p class="hor-destination-coords">35°00′N 135°46′E · Japan</p>
                                         </div>
                                 </a>
-                                <a class="hor-destination hj-4" href="/journey" aria-label="View journey — Dolomites">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-dolomites.webp' ); ?>" alt="Dolomites — alpine meadow at dusk" loading="lazy"></div>
+                                <a class="hor-destination hj-4" href="/journey" aria-label="View journey - Dolomites">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-dolomites.webp' ); ?>" alt="Dolomites - alpine meadow at dusk" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Mountains · 2025</p>
                                                 <h3 class="hor-destination-name">Dolomites</h3>
                                                 <p class="hor-destination-coords">46°24′N 11°51′E · Italy</p>
                                         </div>
                                 </a>
-                                <a class="hor-destination hj-5" href="/journey" aria-label="View journey — Morocco">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-morocco.webp' ); ?>" alt="Morocco — desert town at golden hour" loading="lazy"></div>
+                                <a class="hor-destination hj-5" href="/journey" aria-label="View journey - Morocco">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-morocco.webp' ); ?>" alt="Morocco - desert town at golden hour" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Desert · 2025</p>
                                                 <h3 class="hor-destination-name">Morocco</h3>
                                                 <p class="hor-destination-coords">31°47′N 7°05′W · North Africa</p>
                                         </div>
                                 </a>
-                                <a class="hor-destination hj-6" href="/journey" aria-label="View journey — Faroe Islands">
-                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.webp' ); ?>" alt="Faroe Islands — sea cliffs in low cloud" loading="lazy"></div>
+                                <a class="hor-destination hj-6" href="/journey" aria-label="View journey - Faroe Islands">
+                                        <div class="hor-destination-media"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-faroe.webp' ); ?>" alt="Faroe Islands - sea cliffs in low cloud" loading="lazy"></div>
                                         <div class="hor-destination-overlay">
                                                 <p class="hor-destination-meta">Wild · 2024</p>
                                                 <h3 class="hor-destination-name">Faroe Islands</h3>
@@ -196,7 +196,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — FEATURED STORY: ICELAND (dark immersive) ═══ -->
+        <!-- === 04 - FEATURED STORY: ICELAND (dark immersive) === -->
         <!-- wp:group {"tagName":"section","className":"hor-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull hor-dark" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -212,14 +212,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <h2 class="wp-block-heading hor-display has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 7vw, 6rem);line-height:0.98;letter-spacing:-0.04em;font-weight:600;text-transform:uppercase">The Last Light of the North</h2>
                                 <!-- /wp:heading -->
                                 <!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"var:preset|font-size|medium","lineHeight":"1.7","fontWeight":"400"},"color":{"text":"var:preset|color|contrast"}}} -->
-                                <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--medium);line-height:1.7;font-weight:400;max-width:52ch">Three weeks following the changing light across Iceland's western coast — from the soft blue hours of the Snæfellsnes peninsula to the long gold of the Westfjords, where the sun barely sets and the land keeps its own time.</p>
+                                <p class="has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--body);font-size:var(--wp--preset--font-size--medium);line-height:1.7;font-weight:400;max-width:52ch">Three weeks following the changing light across Iceland's western coast - from the soft blue hours of the Snæfellsnes peninsula to the long gold of the Westfjords, where the sun barely sets and the land keeps its own time.</p>
                                 <!-- /wp:paragraph -->
                         </div>
                         <!-- /wp:group -->
 
                         <!-- Story image -->
                         <!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-story-iceland.webp' ); ?>" alt="Iceland westfjords — long golden light across black basalt coastline, low cloud, cinematic" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+                        <figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-story-iceland.webp' ); ?>" alt="Iceland westfjords - long golden light across black basalt coastline, low cloud, cinematic" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
                         <!-- /wp:image -->
 
                         <!-- Read story link -->
@@ -234,7 +234,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — SELECTED FRAMES ═══ -->
+        <!-- === 05 - SELECTED FRAMES === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -256,28 +256,28 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:html -->
                         <div class="hor-frames" aria-label="Selected photography frames">
                                 <figure class="hor-frame hf-1">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.webp' ); ?>" alt="Lofoten — fishing village under low cloud at first light" loading="lazy">
-                                        <figcaption class="hor-frame-caption">01 — Lofoten, Norway</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.webp' ); ?>" alt="Lofoten - fishing village under low cloud at first light" loading="lazy">
+                                        <figcaption class="hor-frame-caption">01 - Lofoten, Norway</figcaption>
                                 </figure>
                                 <figure class="hor-frame hf-2">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-2.webp' ); ?>" alt="Kyoto — quiet temple courtyard at dusk, paper lanterns" loading="lazy">
-                                        <figcaption class="hor-frame-caption">02 — Kyoto, Japan</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-2.webp' ); ?>" alt="Kyoto - quiet temple courtyard at dusk, paper lanterns" loading="lazy">
+                                        <figcaption class="hor-frame-caption">02 - Kyoto, Japan</figcaption>
                                 </figure>
                                 <figure class="hor-frame hf-3">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-3.png' ); ?>" alt="Patagonia — granite spires above glacial lake, alpine dawn" loading="lazy">
-                                        <figcaption class="hor-frame-caption">03 — El Chaltén, Argentina</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-3.png' ); ?>" alt="Patagonia - granite spires above glacial lake, alpine dawn" loading="lazy">
+                                        <figcaption class="hor-frame-caption">03 - El Chaltén, Argentina</figcaption>
                                 </figure>
                                 <figure class="hor-frame hf-4">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-4.webp' ); ?>" alt="Morocco — atlas mountain village, warm earth tones, dusk" loading="lazy">
-                                        <figcaption class="hor-frame-caption">04 — High Atlas, Morocco</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-4.webp' ); ?>" alt="Morocco - atlas mountain village, warm earth tones, dusk" loading="lazy">
+                                        <figcaption class="hor-frame-caption">04 - High Atlas, Morocco</figcaption>
                                 </figure>
                                 <figure class="hor-frame hf-5">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-5.webp' ); ?>" alt="Dolomites — alpine lake reflection at golden hour" loading="lazy">
-                                        <figcaption class="hor-frame-caption">05 — Lago di Braies, Italy</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-5.webp' ); ?>" alt="Dolomites - alpine lake reflection at golden hour" loading="lazy">
+                                        <figcaption class="hor-frame-caption">05 - Lago di Braies, Italy</figcaption>
                                 </figure>
                                 <figure class="hor-frame hf-6">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-6.webp' ); ?>" alt="Faroe Islands — sea cliffs in low drifting cloud" loading="lazy">
-                                        <figcaption class="hor-frame-caption">06 — Mykines, Faroe Islands</figcaption>
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-6.webp' ); ?>" alt="Faroe Islands - sea cliffs in low drifting cloud" loading="lazy">
+                                        <figcaption class="hor-frame-caption">06 - Mykines, Faroe Islands</figcaption>
                                 </figure>
                         </div>
                         <!-- /wp:html -->
@@ -287,7 +287,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 06 — TRAVEL STATS ═══ -->
+        <!-- === 06 - TRAVEL STATS === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|90","bottom":"var:preset|spacing|90","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--90);padding-bottom:var(--wp--preset--spacing--90);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -338,7 +338,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 07 — ABOUT THE PHOTOGRAPHER ═══ -->
+        <!-- === 07 - ABOUT THE PHOTOGRAPHER === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -349,20 +349,20 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <!-- wp:column {"verticalAlignment":"center","width":"38%"} -->
                                 <div class="wp-block-column" style="flex-basis:38%">
                                         <!-- wp:image {"aspectRatio":"4/5","scale":"cover"} -->
-                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-portrait.webp' ); ?>" alt="Portrait of Alex Morgan — travel photographer, in field clothing, soft natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
+                                        <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-portrait.webp' ); ?>" alt="Portrait of Alex Morgan - travel photographer, in field clothing, soft natural light" style="aspect-ratio:4/5;object-fit:cover" loading="lazy"/></figure>
                                         <!-- /wp:image -->
                                 </div>
                                 <!-- /wp:column -->
                                 <!-- wp:column {"verticalAlignment":"center","width":"62%"} -->
                                 <div class="wp-block-column" style="flex-basis:62%">
                                         <!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— About the Photographer</p>
+                                        <p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- About the Photographer</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:heading {"level":2,"className":"hor-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 3.75rem)","lineHeight":"1.05","letterSpacing":"-0.03em","fontWeight":"600"}}} -->
                                         <h2 class="wp-block-heading hor-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 3.75rem);line-height:1.05;letter-spacing:-0.03em;font-weight:600">I photograph places, people and the spaces between them.</h2>
                                         <!-- /wp:heading -->
                                         <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.7"},"color":{"text":"var:preset|color|muted"}}} -->
-                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">I'm Alex Morgan — a travel photographer based in Lisbon, working worldwide. For ten years I've followed light, weather and patience across mountains, coastlines and old cities. The work lives in editorial, destination and brand stories that value restraint and presence over spectacle.</p>
+                                        <p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.7">I'm Alex Morgan - a travel photographer based in Lisbon, working worldwide. For ten years I've followed light, weather and patience across mountains, coastlines and old cities. The work lives in editorial, destination and brand stories that value restraint and presence over spectacle.</p>
                                         <!-- /wp:paragraph -->
                                         <!-- wp:html -->
                                         <div style="margin-top:var(--wp--preset--spacing--50)">
@@ -379,7 +379,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 08 — JOURNAL ═══ -->
+        <!-- === 08 - JOURNAL === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -389,7 +389,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
                                 <!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— Journal</p>
+                                <p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- Journal</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"className":"hor-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.5rem, 7vw, 6rem)","lineHeight":"0.98","letterSpacing":"-0.04em","fontWeight":"600","textTransform":"uppercase"}}} -->
                                 <h2 class="wp-block-heading hor-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 7vw, 6rem);line-height:0.98;letter-spacing:-0.04em;font-weight:600;text-transform:uppercase">Travel Journal</h2>
@@ -400,20 +400,20 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <!-- Articles list -->
                         <!-- wp:html -->
                         <div aria-label="Journal entries">
-                                <a class="hor-article" href="/journal/a-week-above-the-clouds" aria-label="Read — A Week Above the Clouds">
+                                <a class="hor-article" href="/journal/a-week-above-the-clouds" aria-label="Read - A Week Above the Clouds">
                                         <div class="hor-article-image" style="aspect-ratio:4/3">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-1.webp' ); ?>" alt="Annapurna — village above the cloud line at sunrise" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-1.webp' ); ?>" alt="Annapurna - village above the cloud line at sunrise" loading="lazy">
                                         </div>
                                         <div>
                                                 <p class="hor-article-meta"><span>Nepal</span><span>2026</span><span>Expedition · 14 days</span></p>
                                                 <h3 class="hor-article-title">A Week Above the Clouds</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.7;color:var(--wp--preset--color--muted);max-width:52ch">A slow ascent through the Annapurna foothills — ten days of walking, three villages, and the particular silence of mornings at altitude.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.7;color:var(--wp--preset--color--muted);max-width:52ch">A slow ascent through the Annapurna foothills - ten days of walking, three villages, and the particular silence of mornings at altitude.</p>
                                                 <p class="hor-article-meta" style="margin-top:1rem">Read story →</p>
                                         </div>
                                 </a>
-                                <a class="hor-article is-reversed" href="/journal/walking-through-the-old-city" aria-label="Read — Walking Through the Old City">
+                                <a class="hor-article is-reversed" href="/journal/walking-through-the-old-city" aria-label="Read - Walking Through the Old City">
                                         <div class="hor-article-image" style="aspect-ratio:4/3">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-2.webp' ); ?>" alt="Marrakech — narrow lane in the medina at golden hour" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-2.webp' ); ?>" alt="Marrakech - narrow lane in the medina at golden hour" loading="lazy">
                                         </div>
                                         <div>
                                                 <p class="hor-article-meta"><span>Marrakech</span><span>2026</span><span>Culture · 9 days</span></p>
@@ -422,14 +422,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                                                 <p class="hor-article-meta" style="margin-top:1rem">Read story →</p>
                                         </div>
                                 </a>
-                                <a class="hor-article" href="/journal/the-roads-between-the-mountains" aria-label="Read — The Roads Between the Mountains">
+                                <a class="hor-article" href="/journal/the-roads-between-the-mountains" aria-label="Read - The Roads Between the Mountains">
                                         <div class="hor-article-image" style="aspect-ratio:4/3">
-                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-3.webp' ); ?>" alt="Dolomites — mountain pass road at dusk, dramatic light" loading="lazy">
+                                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-journal-3.webp' ); ?>" alt="Dolomites - mountain pass road at dusk, dramatic light" loading="lazy">
                                         </div>
                                         <div>
                                                 <p class="hor-article-meta"><span>Dolomites</span><span>2025</span><span>Road Trip · 11 days</span></p>
                                                 <h3 class="hor-article-title">The Roads Between the Mountains</h3>
-                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.7;color:var(--wp--preset--color--muted);max-width:52ch">A late-autumn drive through the Dolomites — 1,400 km across seven passes, with notebooks full of weather and the patience to wait for the right hour.</p>
+                                                <p style="font-size:var(--wp--preset--font-size--normal);line-height:1.7;color:var(--wp--preset--color--muted);max-width:52ch">A late-autumn drive through the Dolomites - 1,400 km across seven passes, with notebooks full of weather and the patience to wait for the right hour.</p>
                                                 <p class="hor-article-meta" style="margin-top:1rem">Read story →</p>
                                         </div>
                                 </a>

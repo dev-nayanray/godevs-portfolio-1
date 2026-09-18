@@ -3,7 +3,7 @@
  * Title: Minimal Footer
  * Slug: godevs-portfolio/footer
  * Categories: footer, godevs-portfolio-footer
- * Description: A full-bleed editorial footer on dark primary — oversized display wordmark with serif tagline, micro-label link columns, and a mono copyright hairline row.
+ * Description: A full-bleed editorial footer on dark primary - oversized display wordmark with serif tagline, micro-label link columns, and a mono copyright hairline row.
  * Keywords: footer, minimal, copyright, navigation
  * Viewport Width: 1280
  */
@@ -61,7 +61,7 @@
 	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|secondary","style":"solid","width":"1px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 	<div class="wp-block-group alignwide" style="border-top:1px solid var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40)">
 		<!-- wp:paragraph {"className":"godevs-footer-copyright","fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em"}}} -->
-		<p class="godevs-footer-copyright has-x-small-font-size" style="letter-spacing:0.08em">© 2026 GoDevs — All rights reserved.</p>
+		<p class="godevs-footer-copyright has-x-small-font-size" style="letter-spacing:0.08em">© 2026 GoDevs - All rights reserved.</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"letterSpacing":"0.08em"}}} -->
 		<p class="has-x-small-font-size" style="letter-spacing:0.08em"><a href="#">X</a> · <a href="#">Dribbble</a> · <a href="#">GitHub</a></p>

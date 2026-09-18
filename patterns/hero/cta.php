@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Hero — CTA
+ * Title: Hero - CTA
  * Description: A compact, single-purpose conversion hero with an availability pill, mixed-serif headline, dual pill CTAs, and a mono micro-caption. For launches, waitlists, and enquiries.
  * Slug: godevs-portfolio/hero-cta
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
-		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Taking on two new engagements this quarter — portfolio sites, product launches, and editorial work. First reply within one business day.</p>
+		<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Taking on two new engagements this quarter - portfolio sites, product launches, and editorial work. First reply within one business day.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->

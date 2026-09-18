@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Horizon (Photography) — Journey
+ * Title: Demo - Horizon (Photography) - Journey
  * Slug: godevs-portfolio/demo-horizon-journey
- * Description: HORIZON single journey — Patagonia, immersive travel story. Recommended style variation: Horizon.
+ * Description: HORIZON single journey - Patagonia, immersive travel story. Recommended style variation: Horizon.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, horizon, journey, patagonia, travel
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-horizon","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — JOURNEY HERO ═══ -->
+	<!-- === 01 - JOURNEY HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -50,23 +50,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — FULL-WIDTH HERO IMAGE ═══ -->
+	<!-- === 02 - FULL-WIDTH HERO IMAGE === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia — granite spires at dawn over a glacial lake, Fitz Roy range, cinematic wide" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-patagonia.webp' ); ?>" alt="Patagonia - granite spires at dawn over a glacial lake, Fitz Roy range, cinematic wide" style="aspect-ratio:21/9;object-fit:cover" loading="eager"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"hor-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.06em"}}} -->
-			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 01 — First light on the Fitz Roy range, El Chaltén, Argentina.</p>
+			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 01 - First light on the Fitz Roy range, El Chaltén, Argentina.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — INTRODUCTION (2-col with journey facts) ═══ -->
+	<!-- === 03 - INTRODUCTION (2-col with journey facts) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -75,10 +75,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="hor-2col">
 				<div>
-					<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-size:clamp(1.25rem, 2vw, 1.625rem);line-height:1.45;max-width:42ch">Eighteen days along the southern edge of the continent — from the wind-scoured steppe to the granite spires of Fitz Roy and Torres del Paine. This is a journey about scale, weather, and the kind of patience the mountains demand.</p>
+					<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-size:clamp(1.25rem, 2vw, 1.625rem);line-height:1.45;max-width:42ch">Eighteen days along the southern edge of the continent - from the wind-scoured steppe to the granite spires of Fitz Roy and Torres del Paine. This is a journey about scale, weather, and the kind of patience the mountains demand.</p>
 				</div>
 				<div>
-					<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--muted);margin-bottom:var(--wp--preset--spacing--30)">— Journey Facts</p>
+					<p class="is-style-hor-label" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--wp--preset--color--muted);margin-bottom:var(--wp--preset--spacing--30)">- Journey Facts</p>
 					<dl style="display:grid;grid-template-columns:auto 1fr;gap:0.85rem 1.5rem;font-family:var(--wp--preset--font-family--mono);font-size:0.8125rem;line-height:1.6">
 						<dt style="color:var(--wp--preset--color--muted);letter-spacing:0.06em;text-transform:uppercase;font-size:0.6875rem">Location</dt><dd style="margin:0;color:var(--wp--preset--color--foreground)">Patagonia</dd>
 						<dt style="color:var(--wp--preset--color--muted);letter-spacing:0.06em;text-transform:uppercase;font-size:0.6875rem">Country</dt><dd style="margin:0;color:var(--wp--preset--color--foreground)">Argentina + Chile</dd>
@@ -96,7 +96,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 04 — THE JOURNEY (story body) ═══ -->
+	<!-- === 04 - THE JOURNEY (story body) === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"720px"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -106,7 +106,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— The Journey</p>
+				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- The Journey</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"hor-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.25rem, 6vw, 5rem)","lineHeight":"0.98","letterSpacing":"-0.04em","fontWeight":"600","textTransform":"uppercase"}}} -->
 				<h2 class="wp-block-heading hor-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 6vw, 5rem);line-height:0.98;letter-spacing:-0.04em;font-weight:600;text-transform:uppercase">The Journey</h2>
@@ -116,10 +116,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Body paragraphs -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"}}} -->
-			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">The flight into El Calafate lands you on the edge of a country that doesn't seem to belong to anyone. The steppe runs flat to the horizon in every direction, bleached yellow by wind and short grass, and the Andes rise from it like a wall someone forgot to finish. From the terminal, you drive west — three hours of gravel and guanaco — until the road bends upward into mountains.</p>
+			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">The flight into El Calafate lands you on the edge of a country that doesn't seem to belong to anyone. The steppe runs flat to the horizon in every direction, bleached yellow by wind and short grass, and the Andes rise from it like a wall someone forgot to finish. From the terminal, you drive west - three hours of gravel and guanaco - until the road bends upward into mountains.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"}}} -->
-			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">El Chaltén is a town of 2,000 people and one street, built specifically for the eighteen days a year when the weather holds. The other three hundred and forty-seven, you wait. I waited for four of them — reading, walking the river, photographing the cloud that wrapped Fitz Roy like a flag — before the sky finally opened one morning at 5:42 a.m.</p>
+			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">El Chaltén is a town of 2,000 people and one street, built specifically for the eighteen days a year when the weather holds. The other three hundred and forty-seven, you wait. I waited for four of them - reading, walking the river, photographing the cloud that wrapped Fitz Roy like a flag - before the sky finally opened one morning at 5:42 a.m.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- Pull quote -->
@@ -129,10 +129,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Body paragraphs continued -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"}}} -->
-			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">Crossing into Chile, the landscape softens. Torres del Paine is younger rock — dark sedimentary spires over pale granite — and the valleys below hold lakes colored by glacial flour in shades of turquoise that don't seem possible at this latitude. I spent a week walking the W circuit, sleeping in refugios, photographing the same three peaks at different hours until the light ran out.</p>
+			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">Crossing into Chile, the landscape softens. Torres del Paine is younger rock - dark sedimentary spires over pale granite - and the valleys below hold lakes colored by glacial flour in shades of turquoise that don't seem possible at this latitude. I spent a week walking the W circuit, sleeping in refugios, photographing the same three peaks at different hours until the light ran out.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.75"}}} -->
-			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">By the eighteenth day I had stopped trying to photograph Patagonia and started trying to be in it. The best frames from the trip are the ones I almost didn't take — mornings when I let the camera stay in the bag and just watched the light arrive.</p>
+			<p style="font-size:var(--wp--preset--font-size--medium);line-height:1.75">By the eighteenth day I had stopped trying to photograph Patagonia and started trying to be in it. The best frames from the trip are the ones I almost didn't take - mornings when I let the camera stay in the bag and just watched the light arrive.</p>
 			<!-- /wp:paragraph -->
 
 		</div>
@@ -140,23 +140,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 05 — FULL-WIDTH IMAGE WITH CAPTION ═══ -->
+	<!-- === 05 - FULL-WIDTH IMAGE WITH CAPTION === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:image {"align":"wide","aspectRatio":"21/9","scale":"cover"} -->
-			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.webp' ); ?>" alt="Patagonia — wide vista of granite spires above low cloud, golden alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
+			<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-hero.webp' ); ?>" alt="Patagonia - wide vista of granite spires above low cloud, golden alpine light" style="aspect-ratio:21/9;object-fit:cover" loading="lazy"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:paragraph {"className":"hor-caption","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.06em"}}} -->
-			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 02 — Cloud spilling over the Andes at first light, viewed from the eastern steppe.</p>
+			<p class="hor-caption" style="font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.06em">Fig. 02 - Cloud spilling over the Andes at first light, viewed from the eastern steppe.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 06 — GALLERY ═══ -->
+	<!-- === 06 - GALLERY === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -166,7 +166,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|60"}}}} -->
 			<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— Gallery · 02 frames</p>
+				<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- Gallery · 02 frames</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":2,"className":"hor-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2rem, 5vw, 4rem)","lineHeight":"0.98","letterSpacing":"-0.04em","fontWeight":"600","textTransform":"uppercase"}}} -->
 				<h2 class="wp-block-heading hor-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2rem, 5vw, 4rem);line-height:0.98;letter-spacing:-0.04em;font-weight:600;text-transform:uppercase">Selected Frames</h2>
@@ -178,12 +178,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:html -->
 			<div class="hor-frames" aria-label="Journey gallery">
 				<figure class="hor-frame hf-1">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.webp' ); ?>" alt="Patagonia — granite spire at dawn above low cloud" loading="lazy">
-					<figcaption class="hor-frame-caption">01 — El Chaltén, Argentina</figcaption>
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-1.webp' ); ?>" alt="Patagonia - granite spire at dawn above low cloud" loading="lazy">
+					<figcaption class="hor-frame-caption">01 - El Chaltén, Argentina</figcaption>
 				</figure>
 				<figure class="hor-frame hf-4">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-3.png' ); ?>" alt="Patagonia — glacial lake reflecting granite peaks at golden hour" loading="lazy">
-					<figcaption class="hor-frame-caption">02 — Torres del Paine, Chile</figcaption>
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/horizon/horizon-frame-3.png' ); ?>" alt="Patagonia - glacial lake reflecting granite peaks at golden hour" loading="lazy">
+					<figcaption class="hor-frame-caption">02 - Torres del Paine, Chile</figcaption>
 				</figure>
 			</div>
 			<!-- /wp:html -->
@@ -193,16 +193,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 07 — NEXT JOURNEY ═══ -->
+	<!-- === 07 - NEXT JOURNEY === -->
 	<!-- wp:group {"tagName":"section","className":"hor-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull hor-dark" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.16em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">— Next Journey</p>
+			<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500">- Next Journey</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:html -->
-			<a class="hor-display" href="/journey-iceland" style="display:block;font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 8vw, 7rem);font-weight:600;letter-spacing:-0.04em;line-height:0.98;text-transform:uppercase;color:var(--wp--preset--color--contrast);text-decoration:none;border-bottom:0;max-width:18ch">Next — Iceland <span class="hor-accent-text" aria-hidden="true">→</span></a>
+			<a class="hor-display" href="/journey-iceland" style="display:block;font-family:var(--wp--preset--font-family--display);font-size:clamp(2.5rem, 8vw, 7rem);font-weight:600;letter-spacing:-0.04em;line-height:0.98;text-transform:uppercase;color:var(--wp--preset--color--contrast);text-decoration:none;border-bottom:0;max-width:18ch">Next - Iceland <span class="hor-accent-text" aria-hidden="true">→</span></a>
 			<!-- /wp:html -->
 			<!-- wp:paragraph {"className":"is-style-hor-label","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"0.6875rem","letterSpacing":"0.14em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|contrast"}}} -->
 			<p class="is-style-hor-label has-text-color" style="color:var(--wp--preset--color--contrast);font-family:var(--wp--preset--font-family--mono);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500">Iceland · North Atlantic · 2026 · 21 days</p>

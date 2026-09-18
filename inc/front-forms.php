@@ -4,12 +4,12 @@
  *
  * Provides two shortcodes for front-end user interaction:
  *
- *   [godevs_booking_form]  — A booking request form that creates a
+ *   [godevs_booking_form]  - A booking request form that creates a
  *     godevs_booking post when submitted. Used for appointment/service
  *     bookings. Sends an email notification to the admin on submission.
  *
- *   [godevs_proposal_form] — A project proposal/contact form that sends
- *     an email to the site admin. Does NOT create a post — it's a
+ *   [godevs_proposal_form] - A project proposal/contact form that sends
+ *     an email to the site admin. Does NOT create a post - it's a
  *     lightweight contact form for project inquiries.
  *
  * Both forms are self-contained: they handle their own submission via
@@ -17,7 +17,7 @@
  * display. No plugins required.
  *
  * @package GoDevs_Portfolio
- * @since   2.9.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -120,7 +120,7 @@ function godevs_booking_form_shortcode( array $atts = array() ): string {
                 <form class="godevs-form" method="post" autocomplete="on" novalidate>
                         <?php wp_nonce_field( 'godevs_booking_form', 'godevs_booking_nonce' ); ?>
                         <input type="hidden" name="action" value="godevs_submit_booking" />
-                        <!-- Honeypot anti-spam field — hidden from real users via CSS. -->
+                        <!-- Honeypot anti-spam field - hidden from real users via CSS. -->
                         <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
                                 <label><?php esc_html_e( 'Leave this field empty', 'godevs-portfolio' ); ?>
                                         <input type="text" name="godevs_hp" tabindex="-1" autocomplete="off" />
@@ -146,7 +146,7 @@ function godevs_booking_form_shortcode( array $atts = array() ): string {
                                 <div class="godevs-form-field">
                                         <label for="godevs-booking-service"><?php esc_html_e( 'Service', 'godevs-portfolio' ); ?></label>
                                         <select id="godevs-booking-service" name="booking_service">
-                                                <option value=""><?php esc_html_e( '— Select a service —', 'godevs-portfolio' ); ?></option>
+                                                <option value=""><?php esc_html_e( '- Select a service -', 'godevs-portfolio' ); ?></option>
                                                 <?php foreach ( $services as $id => $title ) : ?>
                                                         <option value="<?php echo esc_attr( $title ); ?>"<?php selected( $atts['service'], $title ); ?>><?php echo esc_html( $title ); ?></option>
                                                 <?php endforeach; ?>
@@ -235,7 +235,7 @@ function godevs_proposal_form_shortcode(): string {
                                 <div class="godevs-form-field">
                                         <label for="godevs-proposal-type"><?php esc_html_e( 'Project Type', 'godevs-portfolio' ); ?> <span class="required">*</span></label>
                                         <select id="godevs-proposal-type" name="proposal_type" required>
-                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value=""><?php esc_html_e( '- Select -', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'Website', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Website', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'Branding', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Branding', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'UI/UX Design', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'UI/UX Design', 'godevs-portfolio' ); ?></option>
@@ -251,10 +251,10 @@ function godevs_proposal_form_shortcode(): string {
                                 <div class="godevs-form-field">
                                         <label for="godevs-proposal-budget"><?php esc_html_e( 'Budget Range', 'godevs-portfolio' ); ?></label>
                                         <select id="godevs-proposal-budget" name="proposal_budget">
-                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value=""><?php esc_html_e( '- Select -', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'Under $5,000', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Under $5,000', 'godevs-portfolio' ); ?></option>
-                                                <option value="<?php esc_attr_e( '$5,000 — $15,000', 'godevs-portfolio' ); ?>"><?php esc_html_e( '$5,000 — $15,000', 'godevs-portfolio' ); ?></option>
-                                                <option value="<?php esc_attr_e( '$15,000 — $50,000', 'godevs-portfolio' ); ?>"><?php esc_html_e( '$15,000 — $50,000', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( '$5,000 - $15,000', 'godevs-portfolio' ); ?>"><?php esc_html_e( '$5,000 - $15,000', 'godevs-portfolio' ); ?></option>
+                                                <option value="<?php esc_attr_e( '$15,000 - $50,000', 'godevs-portfolio' ); ?>"><?php esc_html_e( '$15,000 - $50,000', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( '$50,000+', 'godevs-portfolio' ); ?>"><?php esc_html_e( '$50,000+', 'godevs-portfolio' ); ?></option>
                                         </select>
                                 </div>
@@ -264,7 +264,7 @@ function godevs_proposal_form_shortcode(): string {
                                 <div class="godevs-form-field">
                                         <label for="godevs-proposal-timeline"><?php esc_html_e( 'Project Timeline', 'godevs-portfolio' ); ?></label>
                                         <select id="godevs-proposal-timeline" name="proposal_timeline">
-                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value=""><?php esc_html_e( '- Select -', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'ASAP', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'ASAP', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( '1–3 months', 'godevs-portfolio' ); ?>"><?php esc_html_e( '1–3 months', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( '3–6 months', 'godevs-portfolio' ); ?>"><?php esc_html_e( '3–6 months', 'godevs-portfolio' ); ?></option>
@@ -275,7 +275,7 @@ function godevs_proposal_form_shortcode(): string {
                                 <div class="godevs-form-field">
                                         <label for="godevs-proposal-contact-method"><?php esc_html_e( 'Preferred Contact Method', 'godevs-portfolio' ); ?></label>
                                         <select id="godevs-proposal-contact-method" name="proposal_contact_method">
-                                                <option value=""><?php esc_html_e( '— Select —', 'godevs-portfolio' ); ?></option>
+                                                <option value=""><?php esc_html_e( '- Select -', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'Email', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Email', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'Phone', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'Phone', 'godevs-portfolio' ); ?></option>
                                                 <option value="<?php esc_attr_e( 'WhatsApp', 'godevs-portfolio' ); ?>"><?php esc_html_e( 'WhatsApp', 'godevs-portfolio' ); ?></option>
@@ -295,7 +295,7 @@ function godevs_proposal_form_shortcode(): string {
 
                         <div class="godevs-form-field">
                                 <label for="godevs-proposal-message"><?php esc_html_e( 'Project Description', 'godevs-portfolio' ); ?> <span class="required">*</span></label>
-                                <textarea id="godevs-proposal-message" name="proposal_message" rows="6" required placeholder="<?php esc_attr_e( 'Tell us about your project — goals, scope, anything that helps us understand what you need.', 'godevs-portfolio' ); ?>"></textarea>
+                                <textarea id="godevs-proposal-message" name="proposal_message" rows="6" required placeholder="<?php esc_attr_e( 'Tell us about your project - goals, scope, anything that helps us understand what you need.', 'godevs-portfolio' ); ?>"></textarea>
                         </div>
 
                         <button type="submit" class="godevs-form-submit wp-element-button">
@@ -319,8 +319,8 @@ add_shortcode( 'godevs_proposal_form', 'godevs_proposal_form_shortcode' );
 function godevs_ajax_submit_booking(): void {
         check_ajax_referer( 'godevs_booking_form', 'godevs_booking_nonce' );
 
-        // Honeypot anti-spam check — if filled, silently fail.
-        // Note: we intentionally do NOT read or use the honeypot value — we only
+        // Honeypot anti-spam check - if filled, silently fail.
+        // Note: we intentionally do NOT read or use the honeypot value - we only
         // check whether the field was filled by a bot. No sanitization needed.
         if ( isset( $_POST['godevs_hp'] ) && '' !== wp_unslash( $_POST['godevs_hp'] ) ) {
                 wp_send_json_error( array( 'message' => __( 'Spam detected.', 'godevs-portfolio' ) ), 400 );
@@ -349,7 +349,7 @@ function godevs_ajax_submit_booking(): void {
         $post_id = wp_insert_post(
                 array(
                         'post_type'   => 'godevs_booking',
-                        'post_title'  => sprintf( '%s — %s', $name, $service ?: __( 'General Booking', 'godevs-portfolio' ) ),
+                        'post_title'  => sprintf( '%s - %s', $name, $service ?: __( 'General Booking', 'godevs-portfolio' ) ),
                         'post_status' => 'pending',
                         'post_content' => $message,
                 ),
@@ -395,7 +395,7 @@ function godevs_ajax_submit_booking(): void {
         }
         $email_body .= sprintf( "\n" . __( "Manage booking: %s\n", 'godevs-portfolio' ), admin_url( 'post.php?post=' . $post_id . '&action=edit' ) );
 
-        // Sanitize name for email header — strip <, >, newlines to prevent header injection.
+        // Sanitize name for email header - strip <, >, newlines to prevent header injection.
         $reply_name = str_replace( array( '<', '>', "\r", "\n", "%0d", "%0a" ), '', $name );
 
         $headers = array(
@@ -421,13 +421,13 @@ function godevs_ajax_submit_proposal(): void {
         check_ajax_referer( 'godevs_proposal_form', 'godevs_proposal_nonce' );
 
         // Honeypot anti-spam check.
-        // We intentionally do NOT read or use the honeypot value — we only check
+        // We intentionally do NOT read or use the honeypot value - we only check
         // whether the field was filled by a bot. No sanitization needed.
         if ( isset( $_POST['godevs_hp'] ) && '' !== wp_unslash( $_POST['godevs_hp'] ) ) {
                 wp_send_json_error( array( 'message' => __( 'Spam detected.', 'godevs-portfolio' ) ), 400 );
         }
 
-        // Rate limiting — max 5 submissions per IP per hour.
+        // Rate limiting - max 5 submissions per IP per hour.
         $ip  = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : 'unknown';
         $key = 'godevs_proposal_rl_' . md5( $ip );
         $count = (int) get_transient( $key );
@@ -465,7 +465,7 @@ function godevs_ajax_submit_proposal(): void {
         $post_id = wp_insert_post(
                 array(
                         'post_type'    => 'godevs_proposal',
-                        'post_title'   => sprintf( '%s — %s', $name, $type ),
+                        'post_title'   => sprintf( '%s - %s', $name, $type ),
                         'post_content' => $message,
                         'post_status'  => 'private',
                 ),
@@ -496,7 +496,7 @@ function godevs_ajax_submit_proposal(): void {
 
         set_transient( $key, $count + 1, HOUR_IN_SECONDS );
 
-        // Send admin email — a failed mail (e.g. no mail server) is not fatal:
+        // Send admin email - a failed mail (e.g. no mail server) is not fatal:
         // the proposal is stored and visible in the admin.
         $admin_email = get_bloginfo( 'admin_email' );
         $site_name   = wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES );
@@ -532,7 +532,7 @@ function godevs_ajax_submit_proposal(): void {
         $email_body .= sprintf( "\n" . __( "Project Description:\n%s\n", 'godevs-portfolio' ), $message );
         $email_body .= sprintf( "\n" . __( "Manage proposal: %s\n", 'godevs-portfolio' ), admin_url( 'post.php?post=' . $post_id . '&action=edit' ) );
 
-        // Sanitize name for email header — strip <, >, newlines to prevent header injection.
+        // Sanitize name for email header - strip <, >, newlines to prevent header injection.
         $reply_name = str_replace( array( '<', '>', "\r", "\n", "%0d", "%0a" ), '', $name );
 
         $headers = array(
@@ -555,7 +555,7 @@ add_action( 'wp_ajax_nopriv_godevs_submit_proposal', 'godevs_ajax_submit_proposa
  * Shows date, name, email, project type, budget and workflow status so the
  * admin can triage inquiries without opening each one.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_proposal_admin_columns( array $columns ): array {
         $new = array();
@@ -578,7 +578,7 @@ add_filter( 'manage_godevs_proposal_posts_columns', 'godevs_proposal_admin_colum
 /**
  * Render proposal admin column content.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_proposal_admin_column_content( string $column, int $post_id ): void {
         $meta_key = '_godevs_proposal_' . str_replace( 'godevs_proposal_', '', $column );
@@ -596,7 +596,7 @@ add_action( 'manage_godevs_proposal_posts_custom_column', 'godevs_proposal_admin
 /**
  * Proposal workflow statuses.
  *
- * @since 1.1.0
+ * @since 1.0.0
  * @return array<string,string> status slug => label.
  */
 function godevs_portfolio_proposal_statuses(): array {
@@ -610,10 +610,10 @@ function godevs_portfolio_proposal_statuses(): array {
 }
 
 /**
- * Status meta box on the proposal edit screen — a lightweight select so the
+ * Status meta box on the proposal edit screen - a lightweight select so the
  * workflow can be managed without a full CRM UI.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_proposal_add_status_metabox(): void {
         add_meta_box(
@@ -630,7 +630,7 @@ add_action( 'add_meta_boxes', 'godevs_proposal_add_status_metabox' );
 /**
  * Render the status meta box.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_proposal_status_metabox_html( WP_Post $post ): void {
         wp_nonce_field( 'godevs_proposal_status_save', 'godevs_proposal_status_nonce' );
@@ -647,7 +647,7 @@ function godevs_proposal_status_metabox_html( WP_Post $post ): void {
 /**
  * Save the status meta box.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_proposal_save_status( int $post_id ): void {
         if ( ! isset( $_POST['godevs_proposal_status_nonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_POST['godevs_proposal_status_nonce'] ) ), 'godevs_proposal_status_save' ) ) {

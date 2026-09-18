@@ -1,9 +1,9 @@
-# GoDevs Portfolio — Demo Import System
+# GoDevs Portfolio - Demo Import System
 
 **Document version:** 0.4.0
-**Phase:** 4 — Stability & Demo Import System
+**Phase:** 4 - Stability & Demo Import System
 
-This document describes the native demo import system added in Phase 4 — its architecture, security model, import modes, and rollback.
+This document describes the native demo import system added in Phase 4 - its architecture, security model, import modes, and rollback.
 
 ---
 
@@ -20,8 +20,8 @@ Import Controller (inc/demo-importer.php)
     ↓
 Page Creation (wp_insert_post)
 Navigation Creation (wp_create_nav_menu + wp_update_nav_menu_item)
-Homepage Application (update_option page_on_front — Starter mode only)
-Style Variation Application (user meta — optional)
+Homepage Application (update_option page_on_front - Starter mode only)
+Style Variation Application (user meta - optional)
 Content Import (demo pattern markup embedded in homepage)
     ↓
 Import Tracker (inc/demo-tracker.php)
@@ -29,13 +29,13 @@ Import Tracker (inc/demo-tracker.php)
 Completion
 ```
 
-Components are separated. The importer uses WordPress core APIs only — no direct database queries.
+Components are separated. The importer uses WordPress core APIs only - no direct database queries.
 
 ---
 
 ## 2. Demo Registry
 
-The registry is **data-driven** — it reads metadata from the existing pattern files in `patterns/demos/`. No demo UI is hardcoded for any specific demo.
+The registry is **data-driven** - it reads metadata from the existing pattern files in `patterns/demos/`. No demo UI is hardcoded for any specific demo.
 
 ### Reading a Demo
 
@@ -44,8 +44,8 @@ For each PHP file in `patterns/demos/`, the registry:
 1. Parses the docblock header
 2. Extracts `Title`, `Slug`, `Description`, `Categories`, `Keywords`, `Viewport Width`
 3. Parses the title to extract the demo name and category label:
-   - Title format: `Demo — <Name> (<Category>)`
-   - Example: `Demo — Atelier (Developer)` → name=`Atelier`, category=`Developer`
+   - Title format: `Demo - <Name> (<Category>)`
+   - Example: `Demo - Atelier (Developer)` → name=`Atelier`, category=`Developer`
 4. Extracts the recommended style variation from the description suffix:
    - Pattern: `Recommended style variation: <Name>.`
 5. Looks up recommended pages per category in a static map
@@ -74,30 +74,30 @@ Registered via `add_theme_page()` in `inc/demo-importer.php`. Only users with th
 
 The page shows:
 
-- **Header** — title, subtitle, total demo count
-- **Filters** — search input, category dropdown, style dropdown
-- **Grid** — responsive grid of demo cards (auto-fill, min 280px wide per card)
+- **Header** - title, subtitle, total demo count
+- **Filters** - search input, category dropdown, style dropdown
+- **Grid** - responsive grid of demo cards (auto-fill, min 280px wide per card)
 
 ### Demo Card
 
 Each card shows:
 
-- **Preview area** — gradient placeholder with the demo name in display type
-- **Name** — extracted from the pattern title
-- **Category** — extracted from the pattern title
-- **Recommended style** — extracted from the description
-- **Description** — first sentence from the pattern metadata
-- **Actions** — Preview button, Import button, Remove button (if already imported)
+- **Preview area** - gradient placeholder with the demo name in display type
+- **Name** - extracted from the pattern title
+- **Category** - extracted from the pattern title
+- **Recommended style** - extracted from the description
+- **Description** - first sentence from the pattern metadata
+- **Actions** - Preview button, Import button, Remove button (if already imported)
 
 If the demo has been imported, the card shows an "Imported" badge in the top-right corner.
 
 ### Filtering
 
-Client-side filtering — no per-card AJAX. The JS reads `data-demo-category`, `data-demo-style`, `data-demo-keywords` attributes from each card and toggles visibility.
+Client-side filtering - no per-card AJAX. The JS reads `data-demo-category`, `data-demo-style`, `data-demo-keywords` attributes from each card and toggles visibility.
 
-- **Search** — matches against demo name, category, and style
-- **Category filter** — dropdown of distinct categories
-- **Style filter** — dropdown of distinct recommended styles
+- **Search** - matches against demo name, category, and style
+- **Category filter** - dropdown of distinct categories
+- **Style filter** - dropdown of distinct recommended styles
 
 An empty-state message appears when no demos match the filters.
 
@@ -171,7 +171,7 @@ If a demo has already been imported:
 - Clicking "Re-import" shows a warning in the confirmation modal:
   > This demo has already been imported. Importing again will create a new set of pages and a new navigation menu.
 
-Re-importing does not silently overwrite the previous import — it creates new pages with new slugs.
+Re-importing does not silently overwrite the previous import - it creates new pages with new slugs.
 
 ---
 
@@ -213,7 +213,7 @@ The "Remove" button on an imported demo:
    > This will trash the pages created by the importer and delete the navigation menu.
    > Existing content unrelated to this demo will not be affected. Trashed pages can be restored from the WordPress trash.
 2. On confirmation:
-   - **Trashes** each page recorded in the tracker (uses `wp_trash_post` — safe, restorable)
+   - **Trashes** each page recorded in the tracker (uses `wp_trash_post` - safe, restorable)
    - **Deletes** the navigation menu recorded in the tracker (uses `wp_delete_nav_menu`)
    - **Resets** the homepage setting if it was set by the importer (only if `page_on_front` matches the recorded homepage ID)
    - **Clears** the user meta style flag if it was set by the importer
@@ -226,7 +226,7 @@ The "Remove" button on an imported demo:
 - **Never deletes** posts/pages the user created independently
 - **Never deletes** media the user uploaded independently
 - **Never overwrites** user templates or global styles
-- Uses `wp_trash_post` (not `wp_delete_post`) for pages — content is restorable from the WordPress trash
+- Uses `wp_trash_post` (not `wp_delete_post`) for pages - content is restorable from the WordPress trash
 
 ---
 
@@ -259,7 +259,7 @@ The nonce is created via `wp_create_nonce( 'godevs_demo_admin' )` and passed to 
 - Demo IDs are sanitized via `sanitize_file_name()` and validated against the registry (must match an existing demo)
 - Import mode is sanitized via `sanitize_key()` and validated against the allowed list (`starter`, `safe`)
 - Boolean flags are cast via `(bool)`
-- No user-provided HTML is stored — the importer uses WordPress APIs for all content creation
+- No user-provided HTML is stored - the importer uses WordPress APIs for all content creation
 
 ### Output Escaping
 
@@ -299,8 +299,8 @@ The importer is loaded only in admin context (`is_admin()` check in `functions.p
 ### Admin impact: minimal
 
 - The admin page loads one CSS file (`admin-demos.css`, ~6 KB) and one JS file (`admin-demos.js`, ~10 KB)
-- The demo registry parses pattern files on first access — the result is cached for the duration of the request via a static variable
-- Filtering is client-side — no per-card AJAX
+- The demo registry parses pattern files on first access - the result is cached for the duration of the request via a static variable
+- Filtering is client-side - no per-card AJAX
 - Preview uses a single AJAX call per preview action
 
 ### Demo payload size
@@ -313,10 +313,10 @@ The demo pattern markup (rendered via output buffering) is typically 5-15 KB per
 
 The architecture supports:
 
-- **More demos** — adding demos to `patterns/demos/` automatically adds them to the registry
-- **WXR exports** — for one-click full-site imports including demo content (posts, media) — currently out of scope
-- **Per-demo preview images** — auto-generated SVG previews (currently uses a styled text placeholder)
-- **Custom starter content** — per-demo sample posts, sample media, custom navigation — currently uses the demo pattern markup only
+- **More demos** - adding demos to `patterns/demos/` automatically adds them to the registry
+- **WXR exports** - for one-click full-site imports including demo content (posts, media) - currently out of scope
+- **Per-demo preview images** - auto-generated SVG previews (currently uses a styled text placeholder)
+- **Custom starter content** - per-demo sample posts, sample media, custom navigation - currently uses the demo pattern markup only
 
 Adding any of these requires changes only to the importer, not to the registry or admin UI.
 
@@ -324,12 +324,12 @@ Adding any of these requires changes only to the importer, not to the registry o
 
 ## 13. Limitations (Honest)
 
-1. **Style variation application is non-destructive but indirect** — Phase 4 uses user meta as a fallback. WordPress core reads the active variation from the `wp_global_styles` post. Programmatically applying a variation requires writing to that post (complex, version-dependent). Phase 4 instructs the user to apply the recommended style via the Site Editor → Styles browser.
+1. **Style variation application is non-destructive but indirect** - Phase 4 uses user meta as a fallback. WordPress core reads the active variation from the `wp_global_styles` post. Programmatically applying a variation requires writing to that post (complex, version-dependent). Phase 4 instructs the user to apply the recommended style via the Site Editor → Styles browser.
 
-2. **No live preview iframe** — the preview modal shows the rendered demo markup, not a fully-styled iframe preview. A live iframe preview would require either (a) creating a temporary post/page and rendering it, or (b) intercepting the front-end with a custom query parameter. Phase 4 uses the simpler modal-based rendered markup approach.
+2. **No live preview iframe** - the preview modal shows the rendered demo markup, not a fully-styled iframe preview. A live iframe preview would require either (a) creating a temporary post/page and rendering it, or (b) intercepting the front-end with a custom query parameter. Phase 4 uses the simpler modal-based rendered markup approach.
 
-3. **Page slug uniqueness** — the importer appends the demo ID to page slugs (e.g., `home-atelier`) to avoid conflicts with existing pages. This means re-importing the same demo creates new slugs each time.
+3. **Page slug uniqueness** - the importer appends the demo ID to page slugs (e.g., `home-atelier`) to avoid conflicts with existing pages. This means re-importing the same demo creates new slugs each time.
 
-4. **No content override** — if the user has already created a "Home" page, the importer does NOT overwrite it. It creates a new "Home" page with a unique slug. The user must manually delete the old one if desired.
+4. **No content override** - if the user has already created a "Home" page, the importer does NOT overwrite it. It creates a new "Home" page with a unique slug. The user must manually delete the old one if desired.
 
-5. **Trashed pages are not auto-deleted** — the cleanup trashes pages (via `wp_trash_post`). WordPress will permanently delete them only when the user empties the trash. This is intentional — it provides an undo path.
+5. **Trashed pages are not auto-deleted** - the cleanup trashes pages (via `wp_trash_post`). WordPress will permanently delete them only when the user empties the trash. This is intentional - it provides an undo path.

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Services — Three Column List
+ * Title: Services - Three Column List
  * Slug: godevs-portfolio/services-three-column-list
- * Description: A borderless three-column services list separated by vertical hairlines — accent eyebrows, display titles, and quiet one-liners. Distinct from Feature Cards in its list-led calm.
+ * Description: A borderless three-column services list separated by vertical hairlines - accent eyebrows, display titles, and quiet one-liners. Distinct from Feature Cards in its list-led calm.
  * Categories: godevs-portfolio-services
  * Keywords: services, three-column, list, minimal, offerings
  * Viewport Width: 1280
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"right":"var:preset|spacing|60"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">01 — Strategy</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">01 - Strategy</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700"><a href="/services/strategy">Decide before designing</a></h3>
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"right":"var:preset|spacing|60"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group has-border-color" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">02 — Identity</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">02 - Identity</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700"><a href="/services/brand-identity">A system, not a sticker</a></h3>
@@ -68,7 +68,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"left":"var:preset|spacing|60"}},"border":{"left":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group has-border-color" style="border-left-color:var(--wp--preset--color--line);border-left-style:solid;border-left-width:1px;padding-left:var(--wp--preset--spacing--60)">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">03 — Build</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">03 - Build</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"isLink":true,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700"><a href="/services/development">Fast, and stays fast</a></h3>

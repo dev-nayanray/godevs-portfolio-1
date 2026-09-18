@@ -1,6 +1,6 @@
 <?php
 /**
- * Live demo renderer — serves fully-rendered HTML5 documents for iframe preview.
+ * Live demo renderer - serves fully-rendered HTML5 documents for iframe preview.
  *
  * This file ports the Python `scripts/render-demo-html.py` logic to PHP so
  * that the admin preview modal can load a real, styled page in an `<iframe>`
@@ -21,7 +21,7 @@
  *      and CSS variables derived from theme.json
  *
  * @package GoDevs_Portfolio
- * @since   2.5.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -102,7 +102,7 @@ function godevs_portfolio_render_replace_php_echoes( string $text ): string {
 
 /**
  * Resolve `<!-- wp:template-part {"slug":"xxx"} /-->` by inlining parts/xxx.html.
- * Recursive — parts that reference other parts are resolved too.
+ * Recursive - parts that reference other parts are resolved too.
  */
 function godevs_portfolio_render_resolve_template_parts( string $text, int $depth = 0 ): string {
         if ( $depth > 5 ) {
@@ -369,7 +369,7 @@ function godevs_portfolio_render_wrap_html( string $body_markup, string $demo_id
                 'teaching' => 'Teaching',
         );
         $page_title = $page_titles[ $page ] ?? ucfirst( $page );
-        $title      = ucfirst( $demo_id ) . ' — ' . $page_title;
+        $title      = ucfirst( $demo_id ) . ' - ' . $page_title;
 
         // Static-render adjustments CSS (loaded from external file to avoid
         // brace-counting issues with PHP heredoc syntax in static audits).
@@ -377,7 +377,7 @@ function godevs_portfolio_render_wrap_html( string $body_markup, string $demo_id
         $static_css      = file_exists( $static_css_path ) ? godevs_portfolio_read_file( $static_css_path ) : '';
         $static_css      = godevs_portfolio_render_expand_preset_refs( $static_css );
 
-        // Use system fonts for the demo preview (no external CDN — WordPress.org compliant).
+        // Use system fonts for the demo preview (no external CDN - WordPress.org compliant).
         $no_nav_js = '<script>document.addEventListener("click", function(e){if(e.target.tagName==="A"){e.preventDefault();}}, false);</script>';
 
         return '<!DOCTYPE html>
@@ -413,7 +413,7 @@ function godevs_portfolio_render_wrap_html( string $body_markup, string $demo_id
  * URL: admin-ajax.php?action=godevs_render_demo_page&demo=<id>&page=<slug>&_wpnonce=<nonce>
  *
  * @return void Streams text/html.
- * @since 2.5.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_ajax_render_demo_page_html(): void {
         // Verify nonce (allow either GET or POST).
@@ -423,7 +423,7 @@ function godevs_portfolio_ajax_render_demo_page_html(): void {
                 wp_die( esc_html__( 'Nonce verification failed.', 'godevs-portfolio' ) );
         }
 
-        // Capability check — preview is available to anyone who can edit_posts
+        // Capability check - preview is available to anyone who can edit_posts
         // (so editors can preview too, not just admins).
         if ( ! current_user_can( 'edit_posts' ) ) {
                 status_header( 403 );
@@ -453,12 +453,12 @@ function godevs_portfolio_ajax_render_demo_page_html(): void {
         }
 
         // Stream as text/html with a long cache lifetime (the rendered HTML
-        // only changes when the theme updates — let the browser cache it).
+        // only changes when the theme updates - let the browser cache it).
         header( 'Content-Type: text/html; charset=utf-8' );
         header( 'Cache-Control: private, max-age=3600' );
         header( 'X-Content-Type-Options: nosniff' );
 
-        echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — rendered from sanitized theme files, not user input.
+        echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - rendered from sanitized theme files, not user input.
         exit;
 }
 add_action( 'wp_ajax_godevs_render_demo_page', 'godevs_portfolio_ajax_render_demo_page_html' );

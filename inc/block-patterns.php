@@ -130,7 +130,7 @@ function godevs_portfolio_register_pattern_categories(): void {
                 array(
                         'slug'        => 'godevs-portfolio-demos',
                         'title'       => __( 'Demos', 'godevs-portfolio' ),
-                        'description' => __( 'Ready-made portfolio websites — each a distinct composition of patterns and a chosen style variation. Insert one to start a new portfolio site instantly.', 'godevs-portfolio' ),
+                        'description' => __( 'Ready-made portfolio websites - each a distinct composition of patterns and a chosen style variation. Insert one to start a new portfolio site instantly.', 'godevs-portfolio' ),
                 ),
         );
 
@@ -155,7 +155,7 @@ add_action( 'init', 'godevs_portfolio_register_pattern_categories' );
  * skipped to avoid conflicts.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_register_subdirectory_patterns(): void {
         $registry  = WP_Block_Patterns_Registry::get_instance();
@@ -226,10 +226,10 @@ function godevs_portfolio_register_subdirectory_patterns(): void {
 
                 // Render the pattern file to capture its markup. The files are
                 // PHP (they echo asset URLs), so the content must be executed
-                // at registration time — a raw filePath would ship un-executed
+                // at registration time - a raw filePath would ship un-executed
                 // PHP fragments inside the block JSON.
                 ob_start();
-                include $file_path; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pattern files output block markup only.
+                include $file_path; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped - pattern files output block markup only.
                 $pattern['content'] = (string) ob_get_clean();
 
                 // Translate title and description.

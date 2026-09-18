@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Testimonials — Featured
+ * Title: Testimonials - Featured
  * Slug: godevs-portfolio/testimonials-featured
- * Description: A single flagship testimonial on a muted surface band — circular portrait, oversized serif-italic quote in a card-quote frame, mono role micro-label, and pill engagement chips. Distinct in its single-testimonial emphasis.
+ * Description: A single flagship testimonial on a muted surface band - circular portrait, oversized serif-italic quote in a card-quote frame, mono role micro-label, and pill engagement chips. Distinct in its single-testimonial emphasis.
  * Categories: godevs-portfolio-testimonials
  * Keywords: testimonials, featured, single, large, portrait
  * Viewport Width: 1280
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:quote {"className":"is-style-card-quote","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"surface","fontSize":"large"} -->
 <blockquote class="wp-block-quote has-background has-surface-background-color has-large-font-size is-style-card-quote" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"var:preset|font-family|serif","fontStyle":"italic","fontWeight":"500","fontSize":"var:preset|font-size|x-large","lineHeight":"1.35","letterSpacing":"-0.015em"}}} -->
-<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--x-large);line-height:1.35;letter-spacing:-0.015em">“Working with this practice felt like adding a senior partner to the team — clear thinking, careful execution, and a real point of view on what makes a portfolio worth visiting.”</p>
+<p style="font-family:var(--wp--preset--font-family--serif);font-style:italic;font-weight:500;font-size:var(--wp--preset--font-size--x-large);line-height:1.35;letter-spacing:-0.015em">“Working with this practice felt like adding a senior partner to the team - clear thinking, careful execution, and a real point of view on what makes a portfolio worth visiting.”</p>
 <!-- /wp:paragraph --></blockquote>
 <!-- /wp:quote -->
 

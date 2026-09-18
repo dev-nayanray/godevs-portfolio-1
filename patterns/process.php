@@ -3,7 +3,7 @@
  * Title: Process
  * Slug: godevs-portfolio/process
  * Categories: featured, godevs-portfolio-services, text
- * Description: A four-step horizontal process on a muted band — oversized mono numerals, display titles, and hairline-connected columns. Useful on services and about pages to explain how the studio works.
+ * Description: A four-step horizontal process on a muted band - oversized mono numerals, display titles, and hairline-connected columns. Useful on services and about pages to explain how the studio works.
  * Keywords: process, workflow, how-we-work, methodology, steps, approach
  * Viewport Width: 1280
  */
@@ -49,7 +49,7 @@
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--medium);line-height:1.15;letter-spacing:-0.01em;font-weight:700;margin-top:var(--wp--preset--spacing--40)">Design system</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Typography, palette, and spacing tokens previewed live in the block editor — never as a static mockup.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--20)">Typography, palette, and spacing tokens previewed live in the block editor - never as a static mockup.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:column -->

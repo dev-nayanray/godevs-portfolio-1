@@ -1,5 +1,5 @@
-/* GoDevs Portfolio — Premium Demo Library JS
- * v2.0 — Device preview, page navigation, improved modal experience.
+/* GoDevs Portfolio - Premium Demo Library JS
+ * v2.0 - Device preview, page navigation, improved modal experience.
  */
 ( function ( window, document ) {
         'use strict';
@@ -79,7 +79,7 @@
                 }
         }
 
-        // Debounced search input — avoids thrashing the DOM on every keystroke.
+        // Debounced search input - avoids thrashing the DOM on every keystroke.
         var searchDebounce = null;
         if ( searchInput ) {
                 searchInput.addEventListener( 'input', function () {
@@ -122,7 +122,7 @@
         var openNewTabBtn = $( '#godevs-preview-open-new' );
         var deviceBtns = $all( '.godevs-device-btn' );
         var closeBtns = $all( '[data-action="close-modal"]' );
-        // The render endpoint URL is built from the api config — see admin-demos.php.
+        // The render endpoint URL is built from the api config - see admin-demos.php.
         var renderNonce = api.renderNonce || '';
 
         // State
@@ -161,7 +161,7 @@
                 modal.addEventListener( 'click', function ( e ) {
                         var target = e.target;
                         if ( target.dataset && target.dataset.action === 'close-modal' ) {
-                                // Call restorePreviewModal() + clearProgressTimers() explicitly — the
+                                // Call restorePreviewModal() + clearProgressTimers() explicitly - the
                                 // closeModal reassignment at the bottom of this IIFE relies on a closure
                                 // lookup that is brittle across minifiers; calling both helpers here
                                 // guarantees the modal is restored and timers are killed regardless.
@@ -242,24 +242,24 @@
 
         // Render the preview by setting the iframe src. The PHP endpoint
         // streams a complete HTML5 document with full CSS, so the iframe
-        // shows the real rendered page — not raw block markup.
+        // shows the real rendered page - not raw block markup.
         function renderPreviewIframe( demoId, page ) {
                 if ( ! previewIframe ) return;
                 var url = buildRenderUrl( demoId, page );
                 showPreviewLoading();
-                // Set the iframe src — the onload handler will hide the loading overlay.
+                // Set the iframe src - the onload handler will hide the loading overlay.
                 previewIframe.onload = function () {
                         hidePreviewLoading();
                 };
                 // Hide the loading overlay even if the iframe fails to load (network
-                // error, sandbox violation, etc.) — otherwise the spinner would spin forever.
+                // error, sandbox violation, etc.) - otherwise the spinner would spin forever.
                 previewIframe.onerror = function () {
                         hidePreviewLoading();
                 };
                 previewIframe.src = url;
         }
 
-        // Backward-compat no-op — no longer used (was used for innerHTML injection).
+        // Backward-compat no-op - no longer used (was used for innerHTML injection).
         function renderPreviewMarkup() {}
 
         /* -------------------- Page navigation -------------------- */
@@ -434,9 +434,9 @@
                         '<p><strong>Choose import mode:</strong></p>' +
                         '<p>' +
                                 '<label><input type="radio" name="godevs-import-mode" value="starter" checked> ' +
-                                '<strong>Starter Import</strong> — recommended. Sets the demo as your homepage and applies the recommended style.</label><br>' +
+                                '<strong>Starter Import</strong> - recommended. Sets the demo as your homepage and applies the recommended style.</label><br>' +
                                 '<label><input type="radio" name="godevs-import-mode" value="safe"> ' +
-                                '<strong>Safe Import</strong> — for existing sites. Creates pages without changing your current homepage or style.</label>' +
+                                '<strong>Safe Import</strong> - for existing sites. Creates pages without changing your current homepage or style.</label>' +
                         '</p>';
 
                 if ( demo.style ) {
@@ -553,11 +553,11 @@
                         btn.style.opacity = '0.5';
                 } );
 
-                // Show the live progress overlay immediately — the import
+                // Show the live progress overlay immediately - the import
                 // request runs behind it and the overlay reconciles with the
                 // real result when the server responds.
                 var card = $( '.godevs-demo-card[data-demo-id="' + demoId + '"]' );
-                // Per-card "importing" state — the card itself shows visual feedback
+                // Per-card "importing" state - the card itself shows visual feedback
                 // (subtle pulse + dimmed actions) behind the progress overlay.
                 if ( card ) card.classList.add( 'is-importing' );
                 showImportProgress( card ? card.dataset.demoName || demoId : demoId, card ? card.dataset.demoPreview || '' : '' );
@@ -589,7 +589,7 @@
                                         btn.style.opacity = '';
                                 } );
                                 clearImportingState();
-                                finishImportError( I18N.networkError || 'Network error — the import request failed. Please try again.' );
+                                finishImportError( I18N.networkError || 'Network error - the import request failed. Please try again.' );
                         } );
         }
 
@@ -703,7 +703,7 @@
                         return '<li data-step-id="' + p.id + '">' + escapeHTML( p.label ) + '</li>';
                 } ).join( '' );
                 setProgressPercent( 0 );
-                // Screen readers should NOT announce every percent tick — that would
+                // Screen readers should NOT announce every percent tick - that would
                 // flood the user with updates. The container `#godevs-progress` keeps
                 // role=status + aria-live=polite so step labels and the final result
                 // are still announced, but the percent itself is silent.
@@ -751,9 +751,9 @@
                 var rows = [
                         { label: 'Pages created', value: pageCount },
                         { label: 'Service details', value: serviceCount },
-                        { label: 'Navigation menu', value: data.nav_menu_id ? 'Built & assigned' : '—' },
-                        { label: 'Style variation', value: data.style_label || ( data.style_applied ? 'Applied' : '—' ) },
-                        { label: 'Homepage', value: data.homepage_id ? 'Set' : '—' }
+                        { label: 'Navigation menu', value: data.nav_menu_id ? 'Built & assigned' : '-' },
+                        { label: 'Style variation', value: data.style_label || ( data.style_applied ? 'Applied' : '-' ) },
+                        { label: 'Homepage', value: data.homepage_id ? 'Set' : '-' }
                 ];
                 var heroImg = $( '#godevs-progress-hero-img' );
                 var thumb = ( heroImg && !heroImg.hidden && heroImg.src ) ? '<img class="godevs-ready-thumb" src="' + escapeHTML( heroImg.src ) + '" alt="">' : '';

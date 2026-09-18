@@ -8,7 +8,7 @@
  * the hard-coded archive templates.
  *
  * @package GoDevs_Portfolio
- * @since   2.6.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -50,7 +50,7 @@ function godevs_cpt_archive_get_current_type(): ?string {
         if ( is_post_type_archive() ) {
                 return get_query_var( 'post_type' );
         }
-        // Standard blog home (Settings → Reading → Posts page) — return 'post'
+        // Standard blog home (Settings → Reading → Posts page) - return 'post'
         // so the Theme Settings → Blog panel settings actually take effect.
         if ( is_home() && ! is_front_page() ) {
                 return 'post';
@@ -118,7 +118,7 @@ function godevs_cpt_archive_generate_inner_template( string $cpt_slug ): string 
                         $template = godevs_cpt_archive_case_study_template( $layout, $columns );
                         break;
                 case 'post':
-                        // Standard blog post — delegate to the blog-specific generator
+                        // Standard blog post - delegate to the blog-specific generator
                         // defined in inc/settings-integration.php via the filter below.
                         $template = '';
                         break;
@@ -133,7 +133,7 @@ function godevs_cpt_archive_generate_inner_template( string $cpt_slug ): string 
          * blog_show_*) to override the default post archive rendering.
          * Without this filter, those settings save but never affect rendering.
          *
-         * @since 1.5.0
+         * @since 1.0.0
          *
          * @param string $template Generated block markup.
          * @param string $cpt_slug  CPT slug (e.g., 'godevs_project') or 'post' for blog home.
@@ -231,7 +231,7 @@ function godevs_cpt_archive_team_template( string $layout, int $columns ): strin
         if ( $show_bio === '1' ) {
                 $card .= '<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"style":{"typography":{"fontSize":"var:preset|font-size|small"}}} /-->';
         }
-        // Team social links — only render when the user has enabled
+        // Team social links - only render when the user has enabled
         // `team_show_social` in Theme Settings. Previously this setting was
         // read but never used, leaving the toggle with no frontend effect.
         if ( $show_social === '1' ) {
@@ -385,7 +385,7 @@ function godevs_cpt_archive_case_study_template( string $layout, int $columns ):
  *
  * IMPORTANT: This filter uses `render_block_data` (NOT `pre_render_block`).
  * The `pre_render_block` filter only allows short-circuiting the render with a
- * string return value — it does NOT propagate block modifications back to
+ * string return value - it does NOT propagate block modifications back to
  * WordPress for further rendering. `render_block_data` is the correct filter
  * for modifying the parsed block (including its innerBlocks) before WordPress
  * iterates and renders it.
@@ -440,7 +440,7 @@ function godevs_cpt_archive_modify_post_template( array $parsed_block, array $so
                 return $parsed_block;
         }
 
-        // Replace the innerBlocks — this is what core/post-template iterates over
+        // Replace the innerBlocks - this is what core/post-template iterates over
         // when rendering each post in the query loop.
         $parsed_block['innerBlocks'] = $clean_blocks;
 
@@ -451,7 +451,7 @@ function godevs_cpt_archive_modify_post_template( array $parsed_block, array $so
         // list of nulls (one per inner block) with empty strings between them.
         //
         // CRITICAL: We must NOT put serialized block markup (<!-- wp:... -->)
-        // in innerContent — that gets echoed literally. Each entry is either:
+        // in innerContent - that gets echoed literally. Each entry is either:
         //   - null (render the next inner block here), OR
         //   - a string of HTML to output verbatim (between inner blocks)
         $parsed_block['innerContent'] = array();
@@ -495,7 +495,7 @@ add_filter( 'render_block_data', 'godevs_cpt_archive_modify_post_template', 10, 
  *      so that ONLY inner blocks (no markup) are rendered.
  *   2. Re-builds innerHTML by concatenating the rendered HTML of inner blocks.
  *
- * This is the safest approach — we ignore whatever parse_blocks stored in
+ * This is the safest approach - we ignore whatever parse_blocks stored in
  * innerContent/innerHTML and reconstruct them from innerBlocks.
  *
  * @param array $block Parsed block array.

@@ -2,7 +2,7 @@
 
 A premium, Gutenberg-first, Full Site Editing WordPress block theme for portfolios, editorial sites, and personal brands.
 
-**Version:** 0.1.0 — Phase 1 Foundation
+**Version:** 0.1.0 - Phase 1 Foundation
 **License:** GPL v2 or later
 **Text Domain:** `godevs-portfolio`
 **Requires WordPress:** 6.5+
@@ -38,10 +38,10 @@ The theme requires **no plugins**. It activates and renders a complete experienc
 
 Full documentation is in `docs/`. Start with:
 
-- [`docs/PRD.md`](docs/PRD.md) — Product vision and scope
-- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — File structure and principles
-- [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) — Design tokens reference
-- [`docs/AI-DEVELOPMENT-GUIDE.md`](docs/AI-DEVELOPMENT-GUIDE.md) — Workflow for AI agents and contributors
+- [`docs/PRD.md`](docs/PRD.md) - Product vision and scope
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) - File structure and principles
+- [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) - Design tokens reference
+- [`docs/AI-DEVELOPMENT-GUIDE.md`](docs/AI-DEVELOPMENT-GUIDE.md) - Workflow for AI agents and contributors
 
 ---
 
@@ -75,18 +75,18 @@ GoDevs Portfolio is a scalable Gutenberg design system whose long-term targets a
 - 100+ page/template compositions
 - 15+ style variations
 
-Phase 1 ships the **foundation only** — capable of supporting the long-term plan without rework. See [`docs/RELEASE-ROADMAP.md`](docs/RELEASE-ROADMAP.md) for the multi-phase plan.
+Phase 1 ships the **foundation only** - capable of supporting the long-term plan without rework. See [`docs/RELEASE-ROADMAP.md`](docs/RELEASE-ROADMAP.md) for the multi-phase plan.
 
 ---
 
 ## Key Principles
 
-- **Block-first** — Composed entirely from WordPress core blocks. No custom blocks.
-- **theme.json-driven** — All design tokens (colors, typography, spacing, layout, borders) live in `theme.json`. No hardcoded values in CSS or templates.
-- **Accessibility-first** — Targets WCAG 2.1 Level AA.
-- **Performance-first** — No JS in Phase 1, minimal CSS, system fonts.
-- **No plugin required** — Activates and renders a complete experience with zero plugins.
-- **No external dependencies** — No font CDN, no icon library, no jQuery, no CSS framework.
+- **Block-first** - Composed entirely from WordPress core blocks. No custom blocks.
+- **theme.json-driven** - All design tokens (colors, typography, spacing, layout, borders) live in `theme.json`. No hardcoded values in CSS or templates.
+- **Accessibility-first** - Targets WCAG 2.1 Level AA.
+- **Performance-first** - No JS in Phase 1, minimal CSS, system fonts.
+- **No plugin required** - Activates and renders a complete experience with zero plugins.
+- **No external dependencies** - No font CDN, no icon library, no jQuery, no CSS framework.
 
 ---
 

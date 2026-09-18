@@ -1,11 +1,11 @@
-# GoDevs Portfolio — Architecture
+# GoDevs Portfolio - Architecture
 
 **Document version:** 1.5.0
 **Phase:** Shipping product
 
 This document describes the actual architecture of the GoDevs Portfolio block theme as it ships in v1.5.0. It is the authoritative reference for where new files belong and how the pieces fit together.
 
-> Note: earlier drafts of this document described a "Phase 1 — Foundation" theme with no CPTs, no settings pages, and a tiny 3-file `inc/` directory. None of that is true of v1.5.0. This rewrite reflects the real shipping code.
+> Note: earlier drafts of this document described a "Phase 1 - Foundation" theme with no CPTs, no settings pages, and a tiny 3-file `inc/` directory. None of that is true of v1.5.0. This rewrite reflects the real shipping code.
 
 ---
 
@@ -39,7 +39,7 @@ The application layer is what makes the theme a usable product out of the box. I
 ### 1.3 What it is NOT
 
 - It is **not** a classic theme. No `header.php`, `sidebar.php`, or PHP-rendered templates.
-- It is **not** plugin-free in spirit. It deliberately ships plugin-territory features inside the theme so a single ZIP gives the user a working product. The plan is to extract that surface into the **GoDevs Core** companion plugin (Phase 2 of the v1.5.0 roadmap — see §9).
+- It is **not** plugin-free in spirit. It deliberately ships plugin-territory features inside the theme so a single ZIP gives the user a working product. The plan is to extract that surface into the **GoDevs Core** companion plugin (Phase 2 of the v1.5.0 roadmap - see §9).
 
 ---
 
@@ -93,10 +93,10 @@ foreach ( $_godevs_files as $_godevs_rel ) {
 }
 ```
 
-That is **20 file entries** (`seo.php` is included but `inc/content/` ships 4 files, so 19 distinct `inc/` modules plus 4 content modules — see §3). Every file is loaded unconditionally on every request (front-end and admin), because:
+That is **20 file entries** (`seo.php` is included but `inc/content/` ships 4 files, so 19 distinct `inc/` modules plus 4 content modules - see §3). Every file is loaded unconditionally on every request (front-end and admin), because:
 
 - `is_admin()` is not reliably true at the moment `functions.php` loads (it can return false on multisite, rewritten admin URLs, or when a security plugin rewrites the admin path).
-- Each admin-only module registers its hooks via `admin_menu` / `admin_init`, which only fire on admin requests — so the callbacks are never executed on the front-end even though the file is loaded.
+- Each admin-only module registers its hooks via `admin_menu` / `admin_init`, which only fire on admin requests - so the callbacks are never executed on the front-end even though the file is loaded.
 - Each `require_once` is guarded by `file_exists()` so a missing file degrades gracefully instead of white-screening.
 
 Load status is recorded in `$GLOBALS['godevs_portfolio_loaded_files']` and surfaced in the diagnostic admin notice (see §7).
@@ -107,64 +107,64 @@ Load status is recorded in `$GLOBALS['godevs_portfolio_loaded_files']` and surfa
 
 ```
 inc/
-├── block-patterns.php              Pattern categories + registration
-├── block-styles.php                Custom block style variations
-├── theme-settings.php              Settings dashboard (75 settings) + Settings API + 2 AJAX
-├── settings-integration.php        Settings → generate_dynamic_css() bridge
-├── settings-deadend-fixes.php     Back-compat fixes for stale settings option shapes
-├── header-footer-builder.php       HF layout builder + 6 AJAX + front-end enqueue
-├── demo-importer.php               One-click demo import/remove + 6 AJAX
-├── demo-registry.php                Demo metadata + page-set mapping + preview nonces
-├── demo-renderer.php                Demo preview iframe renderer + 1 AJAX
-├── demo-tracker.php                 Track imported demo pages for clean removal
-├── onboarding.php                   First-run welcome notice + post-import notice + 2 AJAX
-├── cpt-archives.php                 CPT archive layout/columns settings
-├── cpt-admin.php                    Content Manager admin page (appearance_page_...)
-├── booking-system.php               Booking CPT meta box + admin notices
-├── front-forms.php                  [godevs_booking_form] + [godevs_proposal_form] + 2 AJAX + rate-limiting
-├── seo.php                          SEO meta helpers
-├── content/
-│   ├── cpt.php                      8 CPTs (project, service, team, testimonial, booking, experience, education, faq)
-│   ├── taxonomies.php               5 taxonomies (project cat+tag, service cat, team dept, faq cat)
-│   ├── meta-fields.php              Post-meta registration + save handlers (nonce-gated)
-│   └── case-study.php               Case-study CPT + 3 taxonomies + meta
-└── admin/views/
-    ├── admin-demos.php              GoDevs Demos admin page view
-    └── admin-cpt-manager.php         Content Manager admin page view
+├-- block-patterns.php              Pattern categories + registration
+├-- block-styles.php                Custom block style variations
+├-- theme-settings.php              Settings dashboard (75 settings) + Settings API + 2 AJAX
+├-- settings-integration.php        Settings → generate_dynamic_css() bridge
+├-- settings-deadend-fixes.php     Back-compat fixes for stale settings option shapes
+├-- header-footer-builder.php       HF layout builder + 6 AJAX + front-end enqueue
+├-- demo-importer.php               One-click demo import/remove + 6 AJAX
+├-- demo-registry.php                Demo metadata + page-set mapping + preview nonces
+├-- demo-renderer.php                Demo preview iframe renderer + 1 AJAX
+├-- demo-tracker.php                 Track imported demo pages for clean removal
+├-- onboarding.php                   First-run welcome notice + post-import notice + 2 AJAX
+├-- cpt-archives.php                 CPT archive layout/columns settings
+├-- cpt-admin.php                    Content Manager admin page (appearance_page_...)
+├-- booking-system.php               Booking CPT meta box + admin notices
+├-- front-forms.php                  [godevs_booking_form] + [godevs_proposal_form] + 2 AJAX + rate-limiting
+├-- seo.php                          SEO meta helpers
+├-- content/
+│   ├-- cpt.php                      8 CPTs (project, service, team, testimonial, booking, experience, education, faq)
+│   ├-- taxonomies.php               5 taxonomies (project cat+tag, service cat, team dept, faq cat)
+│   ├-- meta-fields.php              Post-meta registration + save handlers (nonce-gated)
+│   └-- case-study.php               Case-study CPT + 3 taxonomies + meta
+└-- admin/views/
+    ├-- admin-demos.php              GoDevs Demos admin page view
+    └-- admin-cpt-manager.php         Content Manager admin page view
 ```
 
 Each module's responsibilities, in one line:
 
-- **block-patterns.php** — registers the `godevs-portfolio-*` inserter categories and declares pattern files under `patterns/`.
-- **block-styles.php** — registers custom block style variations (button, card, separator, eyebrow).
-- **theme-settings.php** — the `godevs_portfolio_settings` option, its 75-key defaults, the Settings API `register_setting()` calls with per-key sanitization callbacks, the settings admin page, and the AJAX save/reset endpoints.
-- **settings-integration.php** — bridges saved settings into `godevs_portfolio_generate_dynamic_css()`, the function that compiles settings into a CSS string cached in the `godevs_portfolio_dynamic_css` option.
-- **settings-deadend-fixes.php** — back-compat shim that rewrites option-shape changes from older versions so an upgrade never leaves the site in a broken state.
-- **header-footer-builder.php** — the visual Header/Footer builder admin UI, its CRUD (`save_layout`, `delete_layout`, `set_active`, `get_layouts`, `render_preview`, `get_miniatures`), and the front-end rendering of saved layouts. Also enqueues `assets/js/hf-frontend.js` (mobile menu, sticky scroll, newsletter form) and `assets/css/header-footer-builder.css`.
-- **demo-importer.php** — the `godevs_portfolio_import_demo` / `godevs_portfolio_remove_demo` AJAX pipeline: clears prior tracked content, creates pages from demo pattern files, seeds demo services, builds the nav menu, applies the style variation (written via `$wpdb->update()` to avoid `wp_unslash()` corrupting JSON font stacks — see [`SECURITY.md`](SECURITY.md)), sets the homepage, and enables `/%postname%/` permalinks. Plus 5 supporting AJAX endpoints (import details, preview, get-demo-pages, preview-page).
-- **demo-registry.php** — the canonical list of the 10 importable demos, their titles, screenshots, categories, recommended style variations, and the page-set → pattern-file mapping.
-- **demo-renderer.php** — renders a demo's pattern HTML inside the admin preview iframe (nonce-gated).
-- **demo-tracker.php** — records which pages/menu/style-variation/homepage were created by a given import, so removal is clean and idempotent.
-- **onboarding.php** — the welcome admin notice (fresh install) and the post-import "your demo is ready" notice. Both dismiss via AJAX.
-- **cpt-archives.php** — exposes per-CPT archive layout/columns settings into the Theme Settings dashboard.
-- **cpt-admin.php** — registers the "Content Manager" admin page under Appearance and enqueues its CSS (`admin-cpt-manager.css`) and JS (`admin-cpt-manager.js` — the delegated `data-confirm` confirmation dialog).
-- **booking-system.php** — the booking CPT's meta box (date, time, service, status) and admin notices for new bookings.
-- **front-forms.php** — the two front-end form shortcodes and their AJAX submission handlers. The proposal form carries honeypot + IP-based rate limiting (5 per IP per hour, via a transient).
-- **seo.php** — emits `<meta>` description / Open Graph tags from post excerpt / site settings.
+- **block-patterns.php** - registers the `godevs-portfolio-*` inserter categories and declares pattern files under `patterns/`.
+- **block-styles.php** - registers custom block style variations (button, card, separator, eyebrow).
+- **theme-settings.php** - the `godevs_portfolio_settings` option, its 75-key defaults, the Settings API `register_setting()` calls with per-key sanitization callbacks, the settings admin page, and the AJAX save/reset endpoints.
+- **settings-integration.php** - bridges saved settings into `godevs_portfolio_generate_dynamic_css()`, the function that compiles settings into a CSS string cached in the `godevs_portfolio_dynamic_css` option.
+- **settings-deadend-fixes.php** - back-compat shim that rewrites option-shape changes from older versions so an upgrade never leaves the site in a broken state.
+- **header-footer-builder.php** - the visual Header/Footer builder admin UI, its CRUD (`save_layout`, `delete_layout`, `set_active`, `get_layouts`, `render_preview`, `get_miniatures`), and the front-end rendering of saved layouts. Also enqueues `assets/js/hf-frontend.js` (mobile menu, sticky scroll, newsletter form) and `assets/css/header-footer-builder.css`.
+- **demo-importer.php** - the `godevs_portfolio_import_demo` / `godevs_portfolio_remove_demo` AJAX pipeline: clears prior tracked content, creates pages from demo pattern files, seeds demo services, builds the nav menu, applies the style variation (written via `$wpdb->update()` to avoid `wp_unslash()` corrupting JSON font stacks - see [`SECURITY.md`](SECURITY.md)), sets the homepage, and enables `/%postname%/` permalinks. Plus 5 supporting AJAX endpoints (import details, preview, get-demo-pages, preview-page).
+- **demo-registry.php** - the canonical list of the 10 importable demos, their titles, screenshots, categories, recommended style variations, and the page-set → pattern-file mapping.
+- **demo-renderer.php** - renders a demo's pattern HTML inside the admin preview iframe (nonce-gated).
+- **demo-tracker.php** - records which pages/menu/style-variation/homepage were created by a given import, so removal is clean and idempotent.
+- **onboarding.php** - the welcome admin notice (fresh install) and the post-import "your demo is ready" notice. Both dismiss via AJAX.
+- **cpt-archives.php** - exposes per-CPT archive layout/columns settings into the Theme Settings dashboard.
+- **cpt-admin.php** - registers the "Content Manager" admin page under Appearance and enqueues its CSS (`admin-cpt-manager.css`) and JS (`admin-cpt-manager.js` - the delegated `data-confirm` confirmation dialog).
+- **booking-system.php** - the booking CPT's meta box (date, time, service, status) and admin notices for new bookings.
+- **front-forms.php** - the two front-end form shortcodes and their AJAX submission handlers. The proposal form carries honeypot + IP-based rate limiting (5 per IP per hour, via a transient).
+- **seo.php** - emits `<meta>` description / Open Graph tags from post excerpt / site settings.
 
 ### 3.1 content/ subfolder
 
 `inc/content/` holds the data-model layer, isolated so it can be lifted wholesale into the GoDevs Core plugin in Phase 2:
 
-- **cpt.php** — `godevs_portfolio_register_post_types()` registers 8 CPTs (project, service, team, testimonial, booking, experience, education, faq), each gated by `godevs_portfolio_module_enabled()`.
-- **taxonomies.php** — `godevs_portfolio_register_taxonomies()` registers 5 taxonomies.
-- **meta-fields.php** — `register_post_meta()` calls + the nonce-gated `save_post` handlers.
-- **case-study.php** — the case-study CPT (the 9th CPT), its 3 taxonomies, and its meta box.
+- **cpt.php** - `godevs_portfolio_register_post_types()` registers 8 CPTs (project, service, team, testimonial, booking, experience, education, faq), each gated by `godevs_portfolio_module_enabled()`.
+- **taxonomies.php** - `godevs_portfolio_register_taxonomies()` registers 5 taxonomies.
+- **meta-fields.php** - `register_post_meta()` calls + the nonce-gated `save_post` handlers.
+- **case-study.php** - the case-study CPT (the 9th CPT), its 3 taxonomies, and its meta box.
 
 ### 3.2 admin/views/ subfolder
 
-- **admin-demos.php** — the GoDevs Demos admin page (renders the demo grid + import progress overlay).
-- **admin-cpt-manager.php** — the Content Manager admin page (per-CPT dashboard + list view + trash link with `data-confirm`).
+- **admin-demos.php** - the GoDevs Demos admin page (renders the demo grid + import progress overlay).
+- **admin-cpt-manager.php** - the Content Manager admin page (per-CPT dashboard + list view + trash link with `data-confirm`).
 
 ---
 
@@ -211,15 +211,15 @@ theme.json  (design tokens: palette, typography, spacing, layout, radii, shadows
       │
       │  emitted by WordPress core as CSS custom properties + Global Styles
       ▼
-templates/*.html  (32 route templates — block markup)
+templates/*.html  (32 route templates - block markup)
       │
       │  reference template parts via core/template-part
       ▼
-parts/*.html  (44 template parts — headers, footers, mobile menu, newsletter, …)
+parts/*.html  (44 template parts - headers, footers, mobile menu, newsletter, …)
       │
       │  composed from core blocks, optionally consuming patterns
       ▼
-patterns/**/*.php  (146 patterns — 73 generic + 73 demo inner-pages)
+patterns/**/*.php  (146 patterns - 73 generic + 73 demo inner-pages)
       │
       │  registered by inc/block-patterns.php, surfaced in the Inserter
       ▼
@@ -227,7 +227,7 @@ patterns/demos/*.php  (73 demo inner-page patterns, one per demo page)
       │
       │  consumed by inc/demo-importer.php to build demo pages
       ▼
-styles/*.json  (21 style variations — each an intentional redesign)
+styles/*.json  (21 style variations - each an intentional redesign)
 ```
 
 Each layer overrides the one above for a specific concern:
@@ -247,9 +247,9 @@ Each layer overrides the one above for a specific concern:
 ### 5.1 Why patterns is split into `patterns/` and `patterns/demos/`
 
 Generic patterns (`patterns/hero.php`, `patterns/about.php`, …) are
-inserter-facing — the user picks them from the Patterns panel in the
+inserter-facing - the user picks them from the Patterns panel in the
 Site Editor. Demo inner-page patterns
-(`patterns/demos/architect-about.php`, …) are import-facing — they are
+(`patterns/demos/architect-about.php`, …) are import-facing - they are
 consumed by the demo importer to build a demo's pages, and show up in
 the inserter too, but their primary consumer is `inc/demo-importer.php`
 via `inc/demo-registry.php`'s page-set mapping.
@@ -259,7 +259,7 @@ via `inc/demo-registry.php`'s page-set mapping.
 Each `styles/<name>.json` overrides `theme.json`'s `styles` subtree.
 A style variation is an intentional redesign across multiple axes
 (palette, typography, button radius, link treatment, spacing, separator
-treatment) — not a palette swap. 10 of the 21 variations are the
+treatment) - not a palette swap. 10 of the 21 variations are the
 "house style" of one of the 10 demos; the remaining 11 are standalone
 designs the user can apply to any content.
 
@@ -280,7 +280,7 @@ Block parser (core)
       │
       ▼
 parts/*.html referenced via core/template-part
-      │   (header/footer may instead be a HF-builder layout — see §6.3)
+      │   (header/footer may instead be a HF-builder layout - see §6.3)
       ▼
 Blocks render with theme.json-applied styles + dynamic CSS
       │
@@ -306,7 +306,7 @@ wp_ajax_godevs_portfolio_import_demo  [inc/demo-importer.php]
       │   6. seed demo services (godevs_service posts)
       │   7. build nav menu from created pages
       │   8. apply style variation via $wpdb->update() on wp_posts
-      │      (JSON written raw — wp_unslash() corrupts font stacks)
+      │      (JSON written raw - wp_unslash() corrupts font stacks)
       │   9. set front page + show_on_front
       │  10. enable /%postname%/ permalinks + flush rewrite rules
       │  11. release lock (shutdown handler safety)

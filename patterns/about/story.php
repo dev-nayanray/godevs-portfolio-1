@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: About — Story
- * Description: A long-form about told as three numbered chapters — mono ghost numerals, accent year eyebrows, and body copy ruled by hairlines. Sequential, time-stamped composition.
+ * Title: About - Story
+ * Description: A long-form about told as three numbered chapters - mono ghost numerals, accent year eyebrows, and body copy ruled by hairlines. Sequential, time-stamped composition.
  * Slug: godevs-portfolio/about-story
  * Categories: godevs-portfolio-about
  * Keywords: about, story, narrative, history, timeline, long-form
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"560px"}} -->
 			<div class="wp-block-group" style="width:560px">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2014 — Beginnings</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2014 - Beginnings</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.65">Started as a single freelancer doing identity work for studios. First project: a publication masthead that took six months and was wrong on the first three tries.</p>
@@ -53,10 +53,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"560px"}} -->
 			<div class="wp-block-group" style="width:560px">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2019 — Studio years</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2019 - Studio years</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.65">Joined a small studio as senior designer. Built and maintained the design system. Learned how to ship a portfolio site in three weeks instead of three months — without cutting the wrong corners.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.65">Joined a small studio as senior designer. Built and maintained the design system. Learned how to ship a portfolio site in three weeks instead of three months - without cutting the wrong corners.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","selfStretch":"fit","flexSize":"560px"}} -->
 			<div class="wp-block-group" style="width:560px">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2022 — Independent again</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">2022 - Independent again</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"}}} -->
 				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.65">Left to return to independent practice. Currently working with founders, editorial teams, and a small number of open-source projects. The work below is from this period.</p>

@@ -1,9 +1,9 @@
-# GoDevs Portfolio — Pattern System
+# GoDevs Portfolio - Pattern System
 
 **Document version:** 0.1.0
-**Phase:** 1 — Foundation
+**Phase:** 1 - Foundation
 
-This document defines the pattern architecture, taxonomy, naming conventions, authoring standards, and growth strategy. Patterns are the primary value of the theme — they are reusable compositions of core blocks that users insert into any page or post.
+This document defines the pattern architecture, taxonomy, naming conventions, authoring standards, and growth strategy. Patterns are the primary value of the theme - they are reusable compositions of core blocks that users insert into any page or post.
 
 The long-term target is **500+ patterns across 18 categories**. Phase 1 ships ~10 representative patterns to validate the system.
 
@@ -24,7 +24,7 @@ A pattern is **not**:
 ```php
 <?php
 /**
- * Title: Hero — Split Profile
+ * Title: Hero - Split Profile
  * Slug: godevs-portfolio/hero-split-profile
  * Description: A two-column hero with an editorial portrait on one side and a bold display headline plus CTA on the other.
  * Categories: godevs-portfolio-hero
@@ -43,10 +43,10 @@ A pattern is **not**:
 
 | Field | Required | Notes |
 |---|---|---|
-| `Title` | Yes | Descriptive — see Naming Standard below |
-| `Slug` | Yes | Prefixed with `godevs-portfolio/` — namespaced to avoid collisions |
-| `Description` | Yes | One sentence — explains when to use this pattern |
-| `Categories` | Yes | At least one — see Categories below |
+| `Title` | Yes | Descriptive - see Naming Standard below |
+| `Slug` | Yes | Prefixed with `godevs-portfolio/` - namespaced to avoid collisions |
+| `Description` | Yes | One sentence - explains when to use this pattern |
+| `Categories` | Yes | At least one - see Categories below |
 | `Keywords` | Recommended | 3–5 keywords users might search |
 | `Viewport Width` | Recommended | Typically `1280` for desktop patterns, `768` for compact |
 
@@ -83,7 +83,7 @@ Categories are registered in `inc/block-patterns.php`.
 
 ### 2.2 Multi-Category Patterns
 
-A pattern may belong to multiple categories. For example, "Hero — Split Profile" might be tagged both `godevs-portfolio-hero` and `godevs-portfolio-pages`. The first category is the **primary** category and is shown first in the inserter.
+A pattern may belong to multiple categories. For example, "Hero - Split Profile" might be tagged both `godevs-portfolio-hero` and `godevs-portfolio-pages`. The first category is the **primary** category and is shown first in the inserter.
 
 ---
 
@@ -92,7 +92,7 @@ A pattern may belong to multiple categories. For example, "Hero — Split Profil
 Pattern titles follow this convention:
 
 ```
-<Section> — <Descriptive Subtitle>
+<Section> - <Descriptive Subtitle>
 ```
 
 Where `<Section>` matches one of the category labels (Hero, About, Services, etc.), and `<Descriptive Subtitle>` is a short, specific phrase describing the pattern's design intent.
@@ -101,16 +101,16 @@ Where `<Section>` matches one of the category labels (Hero, About, Services, etc
 
 | Title | Slug |
 |---|---|
-| Hero — Split Profile | `godevs-portfolio/hero-split-profile` |
-| Hero — Minimal Introduction | `godevs-portfolio/hero-minimal-introduction` |
-| Portfolio — Three Column Grid | `godevs-portfolio/portfolio-three-column-grid` |
-| Services — Feature Cards | `godevs-portfolio/services-feature-cards` |
-| About — Image and Stats | `godevs-portfolio/about-image-and-stats` |
-| Testimonials — Single Quote | `godevs-portfolio/testimonials-single-quote` |
-| CTA — Split Band | `godevs-portfolio/cta-split-band` |
-| Contact — Inline CTA | `godevs-portfolio/contact-inline-cta` |
-| Experience — Vertical Timeline | `godevs-portfolio/experience-vertical-timeline` |
-| Blog — Featured Posts | `godevs-portfolio/blog-featured-posts` |
+| Hero - Split Profile | `godevs-portfolio/hero-split-profile` |
+| Hero - Minimal Introduction | `godevs-portfolio/hero-minimal-introduction` |
+| Portfolio - Three Column Grid | `godevs-portfolio/portfolio-three-column-grid` |
+| Services - Feature Cards | `godevs-portfolio/services-feature-cards` |
+| About - Image and Stats | `godevs-portfolio/about-image-and-stats` |
+| Testimonials - Single Quote | `godevs-portfolio/testimonials-single-quote` |
+| CTA - Split Band | `godevs-portfolio/cta-split-band` |
+| Contact - Inline CTA | `godevs-portfolio/contact-inline-cta` |
+| Experience - Vertical Timeline | `godevs-portfolio/experience-vertical-timeline` |
+| Blog - Featured Posts | `godevs-portfolio/blog-featured-posts` |
 
 ### 3.2 Bad Names (Forbidden)
 
@@ -157,31 +157,31 @@ godevs-portfolio/<category-slug>-<descriptive-slug>
 
 - Prefer `core/stack` and `core/row` over manual `core/columns` for non-equal splits.
 - Use `core/columns` only for equal-width grids.
-- Use `core/media-text` for any image+content split — never two-column with one image.
-- Use `core/query` + `core/post-template` for any post/portfolio list — never a static `core/columns` of `core/image`s.
-- Use `core/buttons` for CTAs — never `core/button` alone.
+- Use `core/media-text` for any image+content split - never two-column with one image.
+- Use `core/query` + `core/post-template` for any post/portfolio list - never a static `core/columns` of `core/image`s.
+- Use `core/buttons` for CTAs - never `core/button` alone.
 
 ### 4.3 Styling Rules
 
-- All colors via `var:preset|color|<slug>` — never hardcoded hex.
-- All spacing via `var:preset|spacing|<slug>` — never hardcoded `rem`/`px`.
-- All font sizes via `var:preset|font-size|<slug>` — never hardcoded size.
+- All colors via `var:preset|color|<slug>` - never hardcoded hex.
+- All spacing via `var:preset|spacing|<slug>` - never hardcoded `rem`/`px`.
+- All font sizes via `var:preset|font-size|<slug>` - never hardcoded size.
 - All font families via `var:preset|font-family|<slug>`.
-- Border radius via the block's `style.border.radius` — never hardcoded in CSS.
+- Border radius via the block's `style.border.radius` - never hardcoded in CSS.
 - Block-level custom class names use `wp-block-godevs-<pattern-name>` only when needed for supplementary CSS.
 
 ### 4.4 Accessibility Rules
 
-- Every section has a visible H2 — never a section with only imagery.
-- Every image has descriptive `alt` text — or empty `alt=""` if purely decorative.
-- Every button/link has a text label — no icon-only buttons.
+- Every section has a visible H2 - never a section with only imagery.
+- Every image has descriptive `alt` text - or empty `alt=""` if purely decorative.
+- Every button/link has a text label - no icon-only buttons.
 - Reading order matches visual order (use `core/stack`, not absolute positioning).
 - Color contrast meets WCAG 2.1 AA in default + every variation.
 
 ### 4.5 Content Rules
 
 - Pattern content uses **placeholder text** that hints at purpose, not Lorem Ipsum.
-- Example: A services pattern shows "Brand Strategy", "Visual Identity", "Web Design" — not "Service 1, Service 2".
+- Example: A services pattern shows "Brand Strategy", "Visual Identity", "Web Design" - not "Service 1, Service 2".
 - Images use `core/image` with `placeholder` or a default `wp-post-image`-compatible URL. No external image URLs.
 
 ---
@@ -195,9 +195,9 @@ godevs-portfolio/<category-slug>-<descriptive-slug>
 | Phase 1 | ~10 | Representative patterns validating the system |
 | Phase 2 | 50+ | Full set per major category |
 | Phase 3 | 150+ | Variations on each major pattern type |
-| Phase 4 | (demos consume patterns — no new patterns) | — |
+| Phase 4 | (demos consume patterns - no new patterns) | - |
 | Phase 5 | 500+ | Comprehensive library covering all niches |
-| Phase 6 | (audit and cull — no new patterns unless filling gaps) | Quality pass |
+| Phase 6 | (audit and cull - no new patterns unless filling gaps) | Quality pass |
 
 ### 5.2 Visual Distinctness Rule
 
@@ -215,10 +215,10 @@ Two patterns that differ only in color or copy are **not distinct** and one shou
 ### 5.3 Culling Strategy
 
 At Phase 6 audit:
-- Identify patterns that differ from another pattern only by color — remove one
-- Identify patterns with low inserter engagement (if analytics available) — review
-- Identify patterns that fail accessibility audit — fix or remove
-- Identify patterns that fail responsive audit — fix or remove
+- Identify patterns that differ from another pattern only by color - remove one
+- Identify patterns with low inserter engagement (if analytics available) - review
+- Identify patterns that fail accessibility audit - fix or remove
+- Identify patterns that fail responsive audit - fix or remove
 
 The pattern library should grow through **addition of distinct designs**, not duplication.
 
@@ -230,12 +230,12 @@ Patterns live in `patterns/<category>/<pattern-name>.php`. The folder name match
 
 ```
 patterns/
-├── hero/
-│   └── split-profile.php
-├── about/
-│   └── image-and-stats.php
-├── services/
-│   └── feature-cards.php
+├-- hero/
+│   └-- split-profile.php
+├-- about/
+│   └-- image-and-stats.php
+├-- services/
+│   └-- feature-cards.php
 ...
 ```
 
@@ -243,7 +243,7 @@ patterns/
 
 When the pattern count grows past 50, a flat `patterns/` directory becomes unmanageable. Category folders keep the directory navigable and make per-category audits trivial.
 
-The folder name does **not** need to match the pattern's registered category — that mapping happens in the pattern's PHP header. But by convention, we keep them aligned.
+The folder name does **not** need to match the pattern's registered category - that mapping happens in the pattern's PHP header. But by convention, we keep them aligned.
 
 ---
 
@@ -282,16 +282,16 @@ Phase 1 ships the following representative patterns. Each was chosen to validate
 
 | File | Title | Category | Layout system validated |
 |---|---|---|---|
-| `hero/split-profile.php` | Hero — Split Profile | Hero | Two-column split with media+text |
-| `about/image-and-stats.php` | About — Image and Stats | About | Media-text + stats row |
-| `services/feature-cards.php` | Services — Feature Cards | Services | Three-column grid of cards |
-| `portfolio/three-column-grid.php` | Portfolio — Three Column Grid | Portfolio | Query loop + post-template grid |
-| `skills/labeled-list.php` | Skills — Labeled List | Skills | Two-column label/value list |
-| `experience/vertical-timeline.php` | Experience — Vertical Timeline | Experience | Stack with year+content blocks |
-| `testimonials/single-quote.php` | Testimonials — Single Quote | Testimonials | Pull quote with attribution |
-| `cta/split-cta.php` | CTA — Split Band | CTA | Full-bleed band with split content |
-| `contact/contact-cta.php` | Contact — Inline CTA | Contact | Centered CTA with contact info |
-| `blog/featured-posts.php` | Blog — Featured Posts | Blog | Query loop with featured post + 2 secondary |
+| `hero/split-profile.php` | Hero - Split Profile | Hero | Two-column split with media+text |
+| `about/image-and-stats.php` | About - Image and Stats | About | Media-text + stats row |
+| `services/feature-cards.php` | Services - Feature Cards | Services | Three-column grid of cards |
+| `portfolio/three-column-grid.php` | Portfolio - Three Column Grid | Portfolio | Query loop + post-template grid |
+| `skills/labeled-list.php` | Skills - Labeled List | Skills | Two-column label/value list |
+| `experience/vertical-timeline.php` | Experience - Vertical Timeline | Experience | Stack with year+content blocks |
+| `testimonials/single-quote.php` | Testimonials - Single Quote | Testimonials | Pull quote with attribution |
+| `cta/split-cta.php` | CTA - Split Band | CTA | Full-bleed band with split content |
+| `contact/contact-cta.php` | Contact - Inline CTA | Contact | Centered CTA with contact info |
+| `blog/featured-posts.php` | Blog - Featured Posts | Blog | Query loop with featured post + 2 secondary |
 
 This set covers:
 - All major layout systems (split, stack, grid, query loop, cover)
@@ -305,14 +305,14 @@ This set covers:
 
 When adding a new pattern:
 
-1. **Identify the category** — file goes in `patterns/<category>/`
-2. **Pick a descriptive name** — see Naming Standard
-3. **Author the metadata header** — title, slug, description, categories, keywords, viewport
-4. **Compose with core blocks** — see Authoring Standards
-5. **Validate the markup** — open in Site Editor, ensure it inserts and renders
-6. **Test in a style variation** — switch to each style variation, ensure it still looks intentional
-7. **Test responsive** — viewport at 360px, 768px, 1280px
-8. **Test accessibility** — keyboard nav, focus visible, contrast AA
+1. **Identify the category** - file goes in `patterns/<category>/`
+2. **Pick a descriptive name** - see Naming Standard
+3. **Author the metadata header** - title, slug, description, categories, keywords, viewport
+4. **Compose with core blocks** - see Authoring Standards
+5. **Validate the markup** - open in Site Editor, ensure it inserts and renders
+6. **Test in a style variation** - switch to each style variation, ensure it still looks intentional
+7. **Test responsive** - viewport at 360px, 768px, 1280px
+8. **Test accessibility** - keyboard nav, focus visible, contrast AA
 9. **Update `CHANGELOG.md`** under "Added"
 10. **Commit** with message `Add pattern: <title>`
 

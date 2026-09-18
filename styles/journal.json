@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Journal",
-	"description": "JOURNAL — Premium Writer / Author / Editorial Portfolio. Warm paper base, deep charcoal-brown ink, muted burgundy accent. Newsreader serif display + Inter UI. Literary, editorial, sophisticated, reading-focused, premium publication.",
+	"description": "JOURNAL: Premium Writer / Author / Editorial Portfolio. Warm paper base, deep charcoal-brown ink, muted burgundy accent. Newsreader serif display + Inter UI. Literary, editorial, sophisticated, reading-focused, premium publication.",
 	"settings": {
 		"color": {
 			"palette": [

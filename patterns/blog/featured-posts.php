@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Blog — Featured Posts
+ * Title: Blog - Featured Posts
  * Slug: godevs-portfolio/blog-featured-posts
- * Description: A two-tier journal section — a large lead story with pill meta chips beside a hairline-ruled stack of secondary posts, closed by an outline archive button. Distinct in its lead-plus-stack composition.
+ * Description: A two-tier journal section - a large lead story with pill meta chips beside a hairline-ruled stack of secondary posts, closed by an outline archive button. Distinct in its lead-plus-stack composition.
  * Categories: godevs-portfolio-blog
  * Keywords: blog, featured, posts, journal, latest
  * Viewport Width: 1280

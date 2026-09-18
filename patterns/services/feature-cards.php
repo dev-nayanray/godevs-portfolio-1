@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Services — Feature Cards
+ * Title: Services - Feature Cards
  * Slug: godevs-portfolio/services-feature-cards
- * Description: A three-column grid of open feature cards — accent eyebrow, display title, considered description, and an accent link per service, anchored by a serif-italic display header.
+ * Description: A three-column grid of open feature cards - accent eyebrow, display title, considered description, and an accent link per service, anchored by a serif-italic display header.
  * Categories: godevs-portfolio-services
  * Keywords: services, features, offerings, cards, grid
  * Viewport Width: 1280
@@ -32,13 +32,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">01 — Strategy</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">01 - Strategy</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Positioning that holds</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A written brief that names the three pages that actually matter — decided before anything is designed.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">A written brief that names the three pages that actually matter - decided before anything is designed.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
 				<p style="border-top:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/strategy">Learn more →</a></p>
@@ -53,13 +53,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">02 — Identity</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">02 - Identity</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Systems, not logos</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Palette, typography, and the small set of rules that keep everything coherent — shipped as tokens.</p>
+				<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7">Palette, typography, and the small set of rules that keep everything coherent - shipped as tokens.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}},"typography":{"fontSize":"var:preset|font-size|small","fontWeight":"600"}}} -->
 				<p style="border-top:1px solid var(--wp--preset--color--line);padding-top:var(--wp--preset--spacing--20);font-size:var(--wp--preset--font-size--small);font-weight:600"><a href="/services/brand-identity">Learn more →</a></p>
@@ -74,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.12em","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">03 — Build</p>
+				<p class="is-style-eyebrow has-text-color" style="color:var(--wp--preset--color--accent);text-transform:uppercase;letter-spacing:0.12em;font-weight:600">03 - Build</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|large","lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
 				<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--large);line-height:1.15;letter-spacing:-0.02em;font-weight:700">Fast, and stays fast</h3>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Testimonials — Minimal
+ * Title: Testimonials - Minimal
  * Slug: godevs-portfolio/testimonials-minimal
- * Description: An ultra-restrained testimonial — a single centered serif-italic quote between hairline rules, with a mono attribution line beneath. Distinct in its spare, gallery-like composition.
+ * Description: An ultra-restrained testimonial - a single centered serif-italic quote between hairline rules, with a mono attribution line beneath. Distinct in its spare, gallery-like composition.
  * Categories: godevs-portfolio-testimonials
  * Keywords: testimonials, minimal, restrained, sparse, centered
  * Viewport Width: 1280

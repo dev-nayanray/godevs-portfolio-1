@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Team — Query Grid
+ * Title: Team - Query Grid
  * Slug: godevs-portfolio/team-query-grid
- * Description: Live grid of team members — circular portraits, hairline-ruled name rows with mono micro-labels, and staggered reveals. Updates automatically when you add new members.
+ * Description: Live grid of team members - circular portraits, hairline-ruled name rows with mono micro-labels, and staggered reveals. Updates automatically when you add new members.
  * Categories: godevs-portfolio-team, godevs-portfolio-demos
  * Keywords: dynamic, team, grid, query, loop, people
  * Viewport Width: 1280

@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Theme version.
  */
 if ( ! defined( 'GODEVS_PORTFOLIO_VERSION' ) ) {
-        define( 'GODEVS_PORTFOLIO_VERSION', '1.5.0' );
+        define( 'GODEVS_PORTFOLIO_VERSION', '1.0.0' );
 }
 
 /**
@@ -53,7 +53,7 @@ function godevs_portfolio_setup(): void {
                 )
         );
 
-        // Add support for editor styles — assets/css/theme.css is loaded in the editor.
+        // Add support for editor styles - assets/css/theme.css is loaded in the editor.
         add_editor_style( 'assets/css/theme.css' );
         // Explicit editor-styles support (add_editor_style() enables it implicitly,
         // but Theme Check expects the explicit declaration).
@@ -75,7 +75,7 @@ function godevs_portfolio_setup(): void {
                 )
         );
 
-        // Add support for wp-block-styles — applies core block stylesheet so the
+        // Add support for wp-block-styles - applies core block stylesheet so the
         // theme matches the editor preview. Block themes normally enable this via
         // theme.json but explicit declaration is recommended by Theme Check.
         add_theme_support( 'wp-block-styles' );
@@ -126,7 +126,7 @@ function godevs_portfolio_enqueue_styles(): void {
                 $theme_css_ver
         );
 
-        // Theme stylesheet (the WordPress theme header file — holds no CSS in Phase 1).
+        // Theme stylesheet (the WordPress theme header file - holds no CSS in Phase 1).
         wp_enqueue_style(
                 'godevs-portfolio-style',
                 get_stylesheet_uri(),
@@ -155,14 +155,14 @@ add_action( 'wp_enqueue_scripts', 'godevs_portfolio_enqueue_styles' );
  * semi-bold weight (Inter 600, used for headings), and the display
  * serif (Newsreader 500, used for hero typography). Without preloading,
  * the browser follows a CSS → @font-face → fetch chain that costs
- * ~150-250ms on first paint — preloading eliminates that round-trip.
+ * ~150-250ms on first paint - preloading eliminates that round-trip.
  *
  * The fonts are bundled in /assets/fonts/ as .woff2 files. We preload
  * only the weights used above the fold; the rest are loaded lazily
  * via the @font-face rules in theme.json.
  *
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_portfolio_preload_fonts(): void {
         $base = get_template_directory_uri() . '/assets/fonts';
@@ -195,7 +195,7 @@ add_action( 'wp_head', 'godevs_portfolio_preload_fonts', 1 );
  * a class of "admin page never appears" bugs.
  *
  * The admin-only files register their hooks via add_action('admin_menu', ...)
- * and add_action('admin_init', ...) — these hooks ONLY fire on admin
+ * and add_action('admin_init', ...) - these hooks ONLY fire on admin
  * pages, so the callbacks are never executed on front-end requests.
  *
  * Each require_once is guarded by file_exists() so that if a file is
@@ -246,7 +246,7 @@ unset( $_godevs_inc, $_godevs_files, $_godevs_rel, $_godevs_full );
  *
  * Shows on the WordPress dashboard for users with 'manage_options' capability.
  * Displays which inc/ files loaded successfully and which CPT registration
- * functions exist. This helps diagnose "CPTs not showing" issues — if you
+ * functions exist. This helps diagnose "CPTs not showing" issues - if you
  * see this notice, functions.php IS loading correctly. If CPTs still don't
  * appear in the admin menu, the issue is with CPT registration itself (not
  * with file loading).
@@ -255,7 +255,7 @@ unset( $_godevs_inc, $_godevs_files, $_godevs_rel, $_godevs_full );
  * re-shown by clicking the "Show diagnostics" link on the Settings page.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_diagnostic_notice(): void {
         if ( ! current_user_can( 'manage_options' ) ) {
@@ -303,7 +303,7 @@ function godevs_portfolio_diagnostic_notice(): void {
         $unregistered_cpts = array_filter( $cpts, static fn( $c ) => ! post_type_exists( $c ) );
 
         echo '<div class="notice notice-info is-dismissible godevs-diag-notice" style="padding:12px 16px;">';
-        echo '<h3 style="margin:0 0 8px 0;">' . esc_html__( 'GoDevs Portfolio — Diagnostic Status', 'godevs-portfolio' ) . '</h3>';
+        echo '<h3 style="margin:0 0 8px 0;">' . esc_html__( 'GoDevs Portfolio - Diagnostic Status', 'godevs-portfolio' ) . '</h3>';
 
         echo '<p style="margin:4px 0;"><strong>' . esc_html__( 'Theme version:', 'godevs-portfolio' ) . '</strong> ' . esc_html( GODEVS_PORTFOLIO_VERSION ) . '</p>';
 
@@ -336,13 +336,13 @@ function godevs_portfolio_diagnostic_notice(): void {
         } else {
                 echo '<span style="color:red;">' . esc_html__( 'Not yet registered:', 'godevs-portfolio' ) . '</span> ';
                 echo '<code>' . esc_html( implode( ', ', $unregistered_cpts ) ) . '</code>';
-                echo '<br><em>' . esc_html__( '(CPTs register on the init hook — visit any admin page to trigger it.)', 'godevs-portfolio' ) . '</em>';
+                echo '<br><em>' . esc_html__( '(CPTs register on the init hook - visit any admin page to trigger it.)', 'godevs-portfolio' ) . '</em>';
         }
         echo '</p>';
 
         echo '<p style="margin:4px 0;"><strong>' . esc_html__( 'Demo import page:', 'godevs-portfolio' ) . '</strong> ';
         if ( function_exists( 'godevs_portfolio_register_admin_page' ) ) {
-                echo '<span style="color:green;">' . esc_html__( 'Demo importer loaded — look under Appearance → GoDevs Demos ✓', 'godevs-portfolio' ) . '</span>';
+                echo '<span style="color:green;">' . esc_html__( 'Demo importer loaded - look under Appearance → GoDevs Demos ✓', 'godevs-portfolio' ) . '</span>';
         } else {
                 echo '<span style="color:red;">' . esc_html__( 'Demo importer NOT loaded', 'godevs-portfolio' ) . '</span>';
         }
@@ -358,17 +358,17 @@ add_action( 'admin_notices', 'godevs_portfolio_diagnostic_notice' );
  * Enqueue the diagnostic notice dismissal script.
  *
  * Loads `assets/js/admin-diag.js` only on the dashboard (`index.php`)
- * and the themes page (`themes.php`) — the only two screens where the
+ * and the themes page (`themes.php`) - the only two screens where the
  * diagnostic notice is shown. The script reads its AJAX URL, nonce, and
  * i18n strings from the `GODEVS_DIAG` global object that we localize
  * here.
  *
  * Replaces the inline `<script>` block that previously lived inside
- * `godevs_portfolio_diagnostic_notice()` (P1.16 — remove inline JS).
+ * `godevs_portfolio_diagnostic_notice()` (P1.16 - remove inline JS).
  *
  * @param string $hook The current admin page hook suffix.
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_portfolio_enqueue_admin_diag_script( string $hook ): void {
         // The diagnostic notice only renders on the dashboard and the
@@ -415,7 +415,7 @@ add_action( 'admin_enqueue_scripts', 'godevs_portfolio_enqueue_admin_diag_script
  * AJAX handler to dismiss the diagnostic notice.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_dismiss_diag_ajax(): void {
         check_ajax_referer( 'godevs_diag_dismiss', '_ajax_nonce' );
@@ -442,7 +442,7 @@ add_action( 'wp_ajax_godevs_portfolio_dismiss_diag', 'godevs_portfolio_dismiss_d
  * is activated in the admin). It is idempotent.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_seed_default_settings(): void {
         // Only seed defaults when the option does NOT exist yet.
@@ -454,7 +454,7 @@ function godevs_portfolio_seed_default_settings(): void {
         // settings are preserved.
         $existing = get_option( 'godevs_portfolio_settings', null );
         if ( null !== $existing ) {
-                // Option already exists — leave saved settings intact and bail.
+                // Option already exists - leave saved settings intact and bail.
                 return;
         }
 
@@ -508,7 +508,7 @@ add_action( 'after_switch_theme', 'godevs_portfolio_seed_default_settings' );
  * (switch_theme) to keep the rewrite rules in sync.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_flush_rewrites_on_switch(): void {
         // CPTs are registered on `init` which fires before this hook on the
@@ -533,7 +533,7 @@ add_action( 'after_switch_theme', 'godevs_portfolio_flush_rewrites_on_switch' );
  * the next manual flush, which can cause phantom 404s on the new theme.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_flush_rewrites_on_deactivation(): void {
         flush_rewrite_rules();
@@ -557,11 +557,11 @@ add_action( 'switch_theme', 'godevs_portfolio_flush_rewrites_on_deactivation' );
  *   4. Records the current version so the handler doesn't re-run until the
  *      next version bump.
  *
- * This handler also serves as the FIRST-RUN initializer — if the recorded
+ * This handler also serves as the FIRST-RUN initializer - if the recorded
  * version is empty (fresh install), it runs all the setup steps.
  *
  * @return void
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_upgrade_handler(): void {
         if ( ! is_admin() ) {
@@ -630,7 +630,7 @@ function godevs_portfolio_upgrade_handler(): void {
         // 3. Flush rewrite rules.
         flush_rewrite_rules();
 
-        // 3.5. Regenerate dynamic CSS — picks up any new design tokens added
+        // 3.5. Regenerate dynamic CSS - picks up any new design tokens added
         // in this version (e.g. new color/radius settings) and refreshes the
         // cached `godevs_portfolio_dynamic_css` option so the front-end
         // matches the current defaults.

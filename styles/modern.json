@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Modern",
-	"description": "A modern, geometric aesthetic — sharp corners, confident type, neutral palette with a single confident accent. Reduced ornament, strong hierarchy.",
+	"description": "A modern, geometric aesthetic - sharp corners, confident type, neutral palette with a single confident accent. Reduced ornament, strong hierarchy.",
 	"settings": {
 		"color": {
 			"palette": [

@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: About — Editorial
- * Description: A publication-style 60/40 about — display headline and body left, serif-italic pull quote on a hairline ground right, with a mono attribution rule. For long-form studio pages.
+ * Title: About - Editorial
+ * Description: A publication-style 60/40 about - display headline and body left, serif-italic pull quote on a hairline ground right, with a mono attribution rule. For long-form studio pages.
  * Slug: godevs-portfolio/about-editorial
  * Categories: godevs-portfolio-about
  * Keywords: about, editorial, publication, pull-quote, two-column
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7;margin-top:var(--wp--preset--spacing--40)">That is the practice — design, write, build, ship, repeat. The portfolio below is what came out of those cycles, kept honest by a decade of trimming what didn't belong.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7;margin-top:var(--wp--preset--spacing--40)">That is the practice - design, write, build, ship, repeat. The portfolio below is what came out of those cycles, kept honest by a decade of trimming what didn't belong.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
@@ -45,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<p>Slow is a feature, not a bug. Most of the work that lasts took longer than the brief allowed.</p>
 					<!-- /wp:paragraph -->
 					<!-- wp:cite -->
-					<cite>— working note, 2025</cite>
+					<cite>- working note, 2025</cite>
 					<!-- /wp:cite -->
 				</blockquote>
 				<!-- /wp:quote -->

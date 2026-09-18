@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Services — Numbered Features
+ * Title: Services - Numbered Features
  * Slug: godevs-portfolio/services-numbered-features
  * Description: A four-up services grid led by oversized mono ghost numerals 01–04 over hairline-topped columns, each with a display title, one-liner, and accent arrow.
  * Categories: godevs-portfolio-services

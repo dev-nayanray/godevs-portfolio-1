@@ -1,6 +1,6 @@
 <?php
 /**
- * Demo registry — loads demo metadata from the existing pattern files.
+ * Demo registry - loads demo metadata from the existing pattern files.
  *
  * Each demo is already registered as a WordPress block pattern in
  * patterns/demos/*.php with metadata in the PHP docblock:
@@ -18,10 +18,10 @@
  *   - category        (extracted from the Categories header)
  *   - description     (from the Description header)
  *   - style           (extracted from the Description "Recommended style variation: X" suffix)
- *   - pages           (recommended pages for this demo — derived from category)
- *   - preview         (URL to the demo preview — uses the block preview endpoint)
+ *   - pages           (recommended pages for this demo - derived from category)
+ *   - preview         (URL to the demo preview - uses the block preview endpoint)
  *
- * The registry is data-driven — adding a new demo pattern file in
+ * The registry is data-driven - adding a new demo pattern file in
  * patterns/demos/ automatically adds it to the registry. No hardcoded
  * demo UI is needed.
  *
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param string $file Absolute file path.
  * @return string|false File contents or false on failure.
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_portfolio_read_file( string $file ) {
         global $wp_filesystem;
@@ -59,12 +59,12 @@ function godevs_portfolio_read_file( string $file ) {
 /**
  * Recommended pages per demo category.
  *
- * Used by the importer when the user selects "Starter Import" — the
+ * Used by the importer when the user selects "Starter Import" - the
  * importer creates these pages and populates the homepage with the
  * demo's pattern markup.
  *
  * Categories are matched by the demo's title parenthetical (e.g., the
- * "Developer" in "Demo — Atelier (Developer)").
+ * "Developer" in "Demo - Atelier (Developer)").
  *
  * @return array<string,string[]> Map of category slug → page slugs.
  */
@@ -89,7 +89,7 @@ function godevs_portfolio_demo_pages_per_category(): array {
  * parenthetical) to one of the predefined category slugs used by
  * `godevs_portfolio_demo_pages_per_category()`.
  *
- * The demo titles use a variety of labels — Developer, Designer, Creative,
+ * The demo titles use a variety of labels - Developer, Designer, Creative,
  * UI, Architect, Luxury, Travel, Speaker, Teacher, etc. We collapse the
  * long tail into the 11 canonical categories used for filtering and
  * recommended-pages mapping.
@@ -219,7 +219,7 @@ function godevs_portfolio_normalize_demo_category( string $label ): string {
                 'veil'           => 'lifestyle',
                 'obscura'        => 'lifestyle',
 
-                // content creators — lifestyle / personal brand family
+                // content creators - lifestyle / personal brand family
                 'content creator' => 'lifestyle',
                 'online creator'  => 'lifestyle',
                 'creator'        => 'lifestyle',
@@ -260,7 +260,7 @@ function godevs_portfolio_normalize_demo_category( string $label ): string {
                 'wedding'        => 'lifestyle',
 
                 // layout / style descriptor labels that don't fit a category
-                // — leave them as 'specialized' below
+                // - leave them as 'specialized' below
         );
 
         if ( isset( $map[ $label ] ) ) {
@@ -300,7 +300,7 @@ function godevs_portfolio_get_demos(): array {
         }
 
         // Page-type suffixes that identify INNER PAGE patterns (not homepages).
-        // We only show homepage demos in the demo browser — inner pages are
+        // We only show homepage demos in the demo browser - inner pages are
         // accessed via the preview modal's page navigation.
         //
         // CRITICAL: this list MUST include every inner-page suffix used by
@@ -319,7 +319,7 @@ function godevs_portfolio_get_demos(): array {
                 '-journey', '-journeys', '-article', '-archive',
                 '-collection', '-collections', '-editorial', '-studio',
                 '-case-study',
-                // 404 page patterns — these are demo-specific error pages, not
+                // 404 page patterns - these are demo-specific error pages, not
                 // standalone demos.
                 '-404',
         );
@@ -328,7 +328,7 @@ function godevs_portfolio_get_demos(): array {
         foreach ( glob( $demos_dir . '/*.php' ) as $file ) {
                 $basename = basename( $file, '.php' );
 
-                // Skip inner-page patterns — only show homepage demos.
+                // Skip inner-page patterns - only show homepage demos.
                 $is_inner_page = false;
                 foreach ( $page_suffixes as $suffix ) {
                         // Check if the basename ENDS with a page suffix.
@@ -356,7 +356,7 @@ function godevs_portfolio_get_demos(): array {
         // Annotate each demo with its completion status.
         //
         // A demo is "complete" (shows in the Ready Demos section) ONLY when it
-        // is in the production-ready list — the 10 demos that have been fully
+        // is in the production-ready list - the 10 demos that have been fully
         // designed with real content on every page. Other demos may have inner
         // page pattern files (created as stubs) but are NOT considered complete
         // until their content is fully written and reviewed.
@@ -385,7 +385,7 @@ function godevs_portfolio_get_demos(): array {
 }
 
 /**
- * Check whether a demo is "complete" — i.e., all of its recommended pages
+ * Check whether a demo is "complete" - i.e., all of its recommended pages
  * exist as pattern files in patterns/demos/.
  *
  * A demo with only the homepage pattern file is considered incomplete (it
@@ -395,7 +395,7 @@ function godevs_portfolio_get_demos(): array {
  * @param string   $demo_id Demo ID (filename without .php).
  * @param string[] $pages   List of recommended page slugs (e.g., ['home','about','work','contact']).
  * @return bool True if every recommended page has a pattern file.
- * @since 2.4.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_is_demo_complete( string $demo_id, array $pages ): bool {
         if ( empty( $pages ) ) {
@@ -450,12 +450,12 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 return null;
         }
 
-        // Title format: "Demo — <Name> (<Category>)"
+        // Title format: "Demo - <Name> (<Category>)"
         // Extract name and category from the title.
         $title   = $meta['Title'];
         $name    = $title;
         $cat_raw = '';
-        if ( preg_match( '/^Demo\s+[-—]\s+(.+?)\s*\(([^)]+)\)\s*$/u', $title, $m ) ) {
+        if ( preg_match( '/^Demo\s+[--]\s+(.+?)\s*\(([^)]+)\)\s*$/u', $title, $m ) ) {
                 $name    = $m[1];
                 $cat_raw = $m[2];
         }
@@ -477,19 +477,19 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 }
         }
 
-        // Canonical category slug — derived from the title parenthetical.
+        // Canonical category slug - derived from the title parenthetical.
         // This drives both the admin filter dropdown and the recommended-pages
         // mapping. Falls back to 'specialized' if the label is unknown.
         $category_slug = $cat_raw ? godevs_portfolio_normalize_demo_category( $cat_raw ) : 'specialized';
 
-        // Recommended style variation — extract from Description suffix.
+        // Recommended style variation - extract from Description suffix.
         $description = $meta['Description'] ?? '';
         $style       = '';
         if ( preg_match( '/Recommended style variation:\s*([A-Za-z]+)\.?/i', $description, $m ) ) {
                 $style = ucfirst( strtolower( $m[1] ) );
         }
 
-        // Recommended pages — based on the canonical category slug,
+        // Recommended pages - based on the canonical category slug,
         // filtered down to the pages that actually have a pattern file
         // (patterns/demos/<demo>-<page>.php). This keeps the importer, the
         // preview navigation, and the filesystem in sync: a demo can never
@@ -504,7 +504,7 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 array_filter(
                         $pages,
                         static function ( string $page ) use ( $basename ) {
-                                // The homepage is the demo file itself — always present.
+                                // The homepage is the demo file itself - always present.
                                 if ( 'home' === $page ) {
                                         return true;
                                 }
@@ -516,7 +516,7 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
         // Append any inner-page pattern files that exist on disk but are not
         // part of the category's recommended set (e.g., a "work" page for a
         // demo whose category normally recommends "insights"). Files present
-        // in patterns/demos/ are intentional content — never orphan them.
+        // in patterns/demos/ are intentional content - never orphan them.
         foreach ( glob( get_template_directory() . '/patterns/demos/' . $basename . '-*.php' ) as $inner ) {
                 $page_slug = substr( basename( $inner, '.php' ), strlen( $basename ) + 1 );
                 if ( $page_slug && ! in_array( $page_slug, $pages, true ) ) {
@@ -530,10 +530,10 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 }
         }
 
-        // Preview URL — uses the WordPress pattern preview endpoint.
+        // Preview URL - uses the WordPress pattern preview endpoint.
         $slug = $meta['Slug'];
 
-        // Preview image — looks for a screenshot in assets/images/demo-previews/.
+        // Preview image - looks for a screenshot in assets/images/demo-previews/.
         // Priority: <demo-slug>.jpg → <demo-slug>.png → category-based preview → fallback.
         $preview_image    = '';
         $preview_image_uri = '';
@@ -600,17 +600,17 @@ function godevs_portfolio_parse_demo_file( string $file ): ?array {
                 }
         }
 
-        // Preview alt text — meaningful description of the demo's homepage.
+        // Preview alt text - meaningful description of the demo's homepage.
         $preview_alt = sprintf(
                 /* translators: %s: demo name. */
                 __( 'Homepage preview of the %s demo', 'godevs-portfolio' ),
                 $name
         );
 
-        // Page count — number of available pages for this demo.
+        // Page count - number of available pages for this demo.
         $page_count = count( $pages );
 
-        // Production-ready status — only these demos are fully designed and importable.
+        // Production-ready status - only these demos are fully designed and importable.
         // All other demos show "Coming Soon" in the demo browser.
         $ready_demos = array(
                 'nova',
@@ -680,7 +680,7 @@ function godevs_portfolio_get_demo( string $demo_id ): ?array {
  * @param string $page    Page slug (e.g., 'about', 'work', 'contact').
  *                       Use 'home' for the homepage.
  * @return string|null Absolute file path, or null if not found.
- * @since 1.2.0
+ * @since 1.0.0
  */
 function godevs_portfolio_get_demo_page_file( string $demo_id, string $page ): ?string {
         $demo_id = sanitize_file_name( $demo_id );
@@ -705,7 +705,7 @@ function godevs_portfolio_get_demo_page_file( string $demo_id, string $page ): ?
  *
  * @param string $demo_id Demo ID.
  * @return array<int,array> List of page definitions.
- * @since 1.2.0
+ * @since 1.0.0
  */
 function godevs_portfolio_get_demo_pages( string $demo_id ): array {
         $demo_id = sanitize_file_name( $demo_id );

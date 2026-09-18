@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Journal (Writing) — 404
+ * Title: Demo - Journal (Writing) - 404
  * Slug: godevs-portfolio/demo-journal-404
- * Description: JOURNAL 404 — editorial not-found. Recommended style variation: Journal.
+ * Description: JOURNAL 404 - editorial not-found. Recommended style variation: Journal.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, journal, 404, error
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-journal","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO ═══ -->
+	<!-- === 01 - HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|120","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--120);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Eyebrow -->
 			<!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Error 404</p>
+			<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Error 404</p>
 			<!-- /wp:paragraph -->
 
 			<!-- Display heading -->
@@ -38,26 +38,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — SUPPORTING COPY + NAV ═══ -->
+	<!-- === 02 - SUPPORTING COPY + NAV === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|140","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--140);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 
-			<!-- 30/70 columns — empty left, copy + nav right -->
+			<!-- 30/70 columns - empty left, copy + nav right -->
 			<!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}}} -->
 			<div class="wp-block-columns">
 				<!-- wp:column {"width":"30%"} -->
 				<div class="wp-block-column" style="flex-basis:30%">
 					<!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Not Found</p>
+					<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Not Found</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"70%"} -->
 				<div class="wp-block-column" style="flex-basis:70%">
 					<!-- wp:paragraph {"className":"jour-lead","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(1.375rem, 2.5vw, 1.75rem)","lineHeight":"1.5","letterSpacing":"-0.005em","fontWeight":"400"}}} -->
-					<p class="jour-lead" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.375rem, 2.5vw, 1.75rem);line-height:1.5;letter-spacing:-0.005em;font-weight:400;max-width:42ch">The page you're looking for isn't here — it may have been archived, renamed, or never written. Let's get you back to the reading.</p>
+					<p class="jour-lead" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(1.375rem, 2.5vw, 1.75rem);line-height:1.5;letter-spacing:-0.005em;font-weight:400;max-width:42ch">The page you're looking for isn't here - it may have been archived, renamed, or never written. Let's get you back to the reading.</p>
 					<!-- /wp:paragraph -->
 
 					<!-- Navigation buttons -->

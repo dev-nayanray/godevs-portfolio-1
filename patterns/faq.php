@@ -3,7 +3,7 @@
  * Title: FAQ
  * Slug: godevs-portfolio/faq
  * Categories: featured, godevs-portfolio-faq, text
- * Description: An editorial FAQ — mixed-serif heading, hairline-divided native core/details accordions with display-font summaries, and a closing contact link. No JS required.
+ * Description: An editorial FAQ - mixed-serif heading, hairline-divided native core/details accordions with display-font summaries, and a closing contact link. No JS required.
  * Keywords: faq, questions, answers, accordion, help, support
  * Viewport Width: 820
  */
@@ -38,7 +38,7 @@
 		<details class="wp-block-details">
 			<summary>Do you work with clients outside your timezone?</summary>
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}},"typography":{"fontSize":"var:preset|font-size|normal","lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--30)">Yes — most clients sit within five timezones of us, but we have shipped work nine away. One scheduled call anchors the week; everything else runs asynchronously with a written Friday update.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--normal);line-height:1.7;margin-top:var(--wp--preset--spacing--30)">Yes - most clients sit within five timezones of us, but we have shipped work nine away. One scheduled call anchors the week; everything else runs asynchronously with a written Friday update.</p>
 			<!-- /wp:paragraph -->
 		</details>
 		<!-- /wp:details -->

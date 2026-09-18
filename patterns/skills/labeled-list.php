@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Skills — Labeled List
+ * Title: Skills - Labeled List
  * Slug: godevs-portfolio/skills-labeled-list
  * Description: An annotated skills index with ghost mono numerals, hairline-separated rows, and display-font skill labels each paired with a one-line editorial description.
  * Categories: godevs-portfolio-skills
@@ -57,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65","fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Custom Gutenberg blocks, theme.json architecture, and hand-written front ends — never a page builder in sight.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Custom Gutenberg blocks, theme.json architecture, and hand-written front ends - never a page builder in sight.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -97,7 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65","fontSize":"var:preset|font-size|medium"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Retainers that keep Core, plugins, and content in shape — measured in uptime and Core Web Vitals, not billable hours.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Retainers that keep Core, plugins, and content in shape - measured in uptime and Core Web Vitals, not billable hours.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Education — Timeline
+ * Title: Education - Timeline
  * Slug: godevs-portfolio/education-timeline
- * Description: A muted-surface academic timeline in stacked bordered cards — ghost mono index numerals, pill chips for dates and location, display-font degrees, and institution micro-labels.
+ * Description: A muted-surface academic timeline in stacked bordered cards - ghost mono index numerals, pill chips for dates and location, display-font degrees, and institution micro-labels.
  * Categories: godevs-portfolio-education
  * Keywords: education, timeline, vertical, academic, modern, clean
  * Viewport Width: 1280
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-card-bordered","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"999px"}}} -->
-<p class="is-style-card-bordered" style="border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase">2010 — 2014</p>
+<p class="is-style-card-bordered" style="border-radius:999px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);font-family:var(--wp--preset--font-family--mono);font-size:var(--wp--preset--font-size--x-small);letter-spacing:0.1em;text-transform:uppercase">2010 - 2014</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-card-bordered","style":{"typography":{"fontFamily":"var:preset|font-family|mono","fontSize":"var:preset|font-size|x-small","letterSpacing":"0.1em","textTransform":"uppercase"},"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"999px"}}} -->
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">Four years of grids, ink, and crit. Thesis on reading rhythms in digital longform — the seed of everything the studio ships now.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">Four years of grids, ink, and crit. Thesis on reading rhythms in digital longform - the seed of everything the studio ships now.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -77,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">One semester of prototyping and hardware tinkering — where the decision to move from print to screens finally stuck.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">One semester of prototyping and hardware tinkering - where the decision to move from print to screens finally stuck.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -107,7 +107,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.65"},"color":{"text":"var:preset|color|muted"}}} -->
-<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">A contributor year spent in Gutenberg trac and docs — the ongoing education that turned into the theme you're reading.</p>
+<p class="has-text-color" style="color:var(--wp--preset--color--muted);line-height:1.65">A contributor year spent in Gutenberg trac and docs - the ongoing education that turned into the theme you're reading.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>

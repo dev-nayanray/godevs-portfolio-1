@@ -8,7 +8,7 @@
  *   - Quick-add buttons for each CPT
  *
  * @package GoDevs_Portfolio
- * @since   2.6.0
+ * @since 1.0.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,10 +33,10 @@ add_action( 'admin_menu', 'godevs_cpt_admin_register_page' );
  * Enqueue admin styles and scripts for the CPT manager.
  *
  * Styles:  assets/css/admin-cpt-manager.css
- * Scripts: assets/js/admin-cpt-manager.js — provides the delegated
+ * Scripts: assets/js/admin-cpt-manager.js - provides the delegated
  *          `data-confirm` confirmation dialog that replaces the previous
  *          inline `onclick="return confirm(...)"` attribute on the
- *          trash link (P1.16 — remove inline JS).
+ *          trash link (P1.16 - remove inline JS).
  *
  * Both are only loaded on the `appearance_page_godevs-portfolio-cpt-manager`
  * admin screen.
@@ -173,7 +173,7 @@ function godevs_cpt_admin_get_theme_cpts(): array {
                         'icon'         => 'dashicons-editor-help',
                         'edit_url'     => 'edit.php?post_type=godevs_faq',
                         'add_url'      => 'post-new.php?post_type=godevs_faq',
-                        'archive_url'  => '', // publicly_queryable=false — no archive.
+                        'archive_url'  => '', // publicly_queryable=false - no archive.
                         'settings_key' => '',
                         'module_key'   => 'faqs',
                 ),
@@ -183,7 +183,7 @@ function godevs_cpt_admin_get_theme_cpts(): array {
                         'icon'         => 'dashicons-calendar-alt',
                         'edit_url'     => 'edit.php?post_type=godevs_booking',
                         'add_url'      => '', // Bookings are submitted via front-end form, not manually added.
-                        'archive_url'  => '', // privately_queryable=false — no archive.
+                        'archive_url'  => '', // privately_queryable=false - no archive.
                         'settings_key' => '',
                         'module_key'   => 'bookings',
                 ),

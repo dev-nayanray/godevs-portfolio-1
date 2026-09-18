@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Hero — Image Focus
+ * Title: Hero - Image Focus
  * Description: A full-bleed cover hero with dimmed image ground, mixed-serif display headline, pill availability chip, outline CTA, and a mono meta row. For photographers and visual creators.
  * Slug: godevs-portfolio/hero-image-focus
  * Categories: godevs-portfolio-hero, godevs-portfolio-pages
@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"textColor":"contrast","style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-contrast-color has-text-color" style="font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">Editorial photography, series, and field work from the last several years — shot on assignment across four continents, printed where it matters.</p>
+			<p class="has-contrast-color has-text-color" style="font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">Editorial photography, series, and field work from the last several years - shot on assignment across four continents, printed where it matters.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->

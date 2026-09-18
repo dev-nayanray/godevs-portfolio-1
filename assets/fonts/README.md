@@ -31,7 +31,7 @@ newsreader-500-italic.woff2
 ## How to fetch the woff2 files
 
 The most reproducible way to fetch woff2 files licensed for redistribution is
-via the `@fontsource` packages — they bundle the same Google Fonts binaries
+via the `@fontsource` packages - they bundle the same Google Fonts binaries
 that ship under the SIL OFL.
 
 ```bash
@@ -50,14 +50,14 @@ downloaded with the modern User-Agent header (Chrome) which serves woff2.
 ## Why we do not use Google Fonts CDN
 
 Loading fonts from `fonts.googleapis.com` adds a third-party DNS lookup and a
-render-blocking stylesheet request — both hurt LCP and violate the
+render-blocking stylesheet request - both hurt LCP and violate the
 WordPress.org external-resources guideline for block themes. Bundling the
 woff2 files keeps everything self-hosted and compliant.
 
 ## Variable fonts?
 
 Inter and Newsreader both ship variable-font variants. We deliberately use
-static instances for v0.1 — static woff2 files are smaller per weight and
+static instances for v0.1 - static woff2 files are smaller per weight and
 avoid the CSS range-resolution complexity required by variable fonts. The
 font system can be upgraded to variable fonts in a later phase without
 breaking user content.

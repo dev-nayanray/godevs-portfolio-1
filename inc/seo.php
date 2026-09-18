@@ -1,6 +1,6 @@
 <?php
 /**
- * SEO Module — Meta tags, Open Graph, Twitter Cards, JSON-LD structured data.
+ * SEO Module - Meta tags, Open Graph, Twitter Cards, JSON-LD structured data.
  *
  * Emits SEO meta tags via `wp_head` hooks:
  *   - Meta description (from post excerpt, site tagline, or archive description)
@@ -18,16 +18,16 @@
  * wp_kses_post for descriptions, wp_json_encode for JSON-LD).
  *
  * @package GoDevs_Portfolio
- * @since   1.5.0
+ * @since 1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
         exit;
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // META DESCRIPTION
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Emit <meta name="description"> based on the current query.
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Priority 5 so it appears early in <head> (before OG/Twitter).
  *
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_meta_description(): void {
         $description = godevs_seo_get_description();
@@ -55,7 +55,7 @@ add_action( 'wp_head', 'godevs_seo_meta_description', 5 );
  * Resolve the meta description for the current query.
  *
  * @return string The description, or empty string if none found.
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_get_description(): string {
         if ( is_singular() ) {
@@ -102,9 +102,9 @@ function godevs_seo_get_description(): string {
         return '';
 }
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // CANONICAL URL
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Emit <link rel="canonical"> using WordPress core's canonical URL.
@@ -113,7 +113,7 @@ function godevs_seo_get_description(): string {
  * (SEO plugins do). This fills the gap.
  *
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_canonical_url(): void {
         $canonical = wp_get_canonical_url();
@@ -124,9 +124,9 @@ function godevs_seo_canonical_url(): void {
 }
 add_action( 'wp_head', 'godevs_seo_canonical_url', 5 );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // OPEN GRAPH + TWITTER CARDS
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Emit Open Graph + Twitter Card meta tags.
@@ -135,7 +135,7 @@ add_action( 'wp_head', 'godevs_seo_canonical_url', 5 );
  * og:locale from the current query (post data + featured image).
  *
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_open_graph_and_twitter(): void {
         if ( is_admin() ) {
@@ -206,9 +206,9 @@ function godevs_seo_open_graph_and_twitter(): void {
 }
 add_action( 'wp_head', 'godevs_seo_open_graph_and_twitter', 5 );
 
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 // JSON-LD STRUCTURED DATA
-// ════════════════════════════════════════════════════════════════════════════
+// ============================================================================
 
 /**
  * Emit JSON-LD structured data based on the current query.
@@ -219,14 +219,14 @@ add_action( 'wp_head', 'godevs_seo_open_graph_and_twitter', 5 );
  * schema on all non-front-page singular views.
  *
  * @return void
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_json_ld(): void {
         if ( is_admin() ) {
                 return;
         }
 
-        // WebSite schema — emit on the homepage only.
+        // WebSite schema - emit on the homepage only.
         if ( is_front_page() ) {
                 $website_schema = array(
                         '@context' => 'https://schema.org',
@@ -248,7 +248,7 @@ function godevs_seo_json_ld(): void {
                 echo '<script type="application/ld+json">' . wp_json_encode( $website_schema ) . '</script>' . "\n";
         }
 
-        // Organization schema — emit site-wide if a custom logo is set.
+        // Organization schema - emit site-wide if a custom logo is set.
         $logo_id = get_theme_mod( 'custom_logo' );
         if ( $logo_id ) {
                 $logo_url = wp_get_attachment_image_url( $logo_id, 'full' );
@@ -277,7 +277,7 @@ function godevs_seo_json_ld(): void {
                         echo '<script type="application/ld+json">' . wp_json_encode( $schema ) . '</script>' . "\n";
                 }
 
-                // BreadcrumbList schema — emit on every singular view except the homepage.
+                // BreadcrumbList schema - emit on every singular view except the homepage.
                 if ( ! is_front_page() ) {
                         $breadcrumb = godevs_seo_get_breadcrumb_schema();
                         if ( $breadcrumb ) {
@@ -293,7 +293,7 @@ add_action( 'wp_head', 'godevs_seo_json_ld', 10 );
  * Resolve the per-CPT schema for a singular view.
  *
  * @return array|null Schema array, or null if no schema applies.
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_get_singular_schema(): ?array {
         $post = get_post();
@@ -353,7 +353,7 @@ function godevs_seo_get_singular_schema(): ?array {
                         );
 
                 case 'godevs_team':
-                        // Team member — emit Person schema with job title + image.
+                        // Team member - emit Person schema with job title + image.
                         $job_title = get_post_meta( $post->ID, '_godevs_team_job_title', true );
                         return array(
                                 '@context'   => 'https://schema.org',
@@ -366,7 +366,7 @@ function godevs_seo_get_singular_schema(): ?array {
                         );
 
                 case 'godevs_testimonial':
-                        // Testimonial — emit Review schema.
+                        // Testimonial - emit Review schema.
                         $rating = get_post_meta( $post->ID, '_godevs_testimonial_rating', true );
                         $client_role = get_post_meta( $post->ID, '_godevs_testimonial_client_role', true );
                         return array(
@@ -406,7 +406,7 @@ function godevs_seo_get_singular_schema(): ?array {
                         );
 
                 case 'godevs_faq':
-                        // FAQ single — emit FAQPage with Question/Answer pairs.
+                        // FAQ single - emit FAQPage with Question/Answer pairs.
                         // The FAQ content is parsed from the post content (H3 = question, p = answer).
                         $questions = godevs_seo_parse_faq_questions( $post->post_content );
                         if ( empty( $questions ) ) {
@@ -439,7 +439,7 @@ function godevs_seo_get_singular_schema(): ?array {
  *
  * @param string $content Post content (HTML).
  * @return array<int,array> Array of Question schema arrays.
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_parse_faq_questions( string $content ): array {
         if ( ! preg_match_all( '/<h3[^>]*>(.+?)<\/h3>\s*<p[^>]*>(.+?)<\/p>/is', $content, $matches, PREG_SET_ORDER ) ) {
@@ -470,7 +470,7 @@ function godevs_seo_parse_faq_questions( string $content ): array {
  * Produces: Home → [CPT Archive] → Post Title
  *
  * @return array|null BreadcrumbList schema array, or null if not applicable.
- * @since 1.5.0
+ * @since 1.0.0
  */
 function godevs_seo_get_breadcrumb_schema(): ?array {
         $post = get_post();

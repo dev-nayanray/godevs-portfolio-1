@@ -1,8 +1,8 @@
-/* GoDevs Portfolio — Modern Settings Dashboard
- * v2.0.0 — Premium SaaS-style admin interface
+/* GoDevs Portfolio - Modern Settings Dashboard
+ * v2.0.0 - Premium SaaS-style admin interface
  */
 
-/* ═══ Container ═══ */
+/* === Container === */
 .godevs-settings-wrap {
 	max-width: 1400px;
 	margin: 0 auto;
@@ -10,7 +10,7 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* ═══ Header ═══ */
+/* === Header === */
 .godevs-settings-header {
 	display: flex;
 	justify-content: space-between;
@@ -82,7 +82,7 @@
 	min-width: 120px;
 }
 
-/* ═══ Body (2-column layout) ═══ */
+/* === Body (2-column layout) === */
 .godevs-settings-body {
 	display: flex;
 	gap: 0;
@@ -94,7 +94,7 @@
 	min-height: 600px;
 }
 
-/* ═══ Sidebar Nav ═══ */
+/* === Sidebar Nav === */
 .godevs-settings-nav {
 	width: 240px;
 	flex-shrink: 0;
@@ -152,7 +152,7 @@
 	flex-shrink: 0;
 }
 
-/* ═══ Content ═══ */
+/* === Content === */
 .godevs-settings-content {
 	flex: 1;
 	padding: 32px 40px;
@@ -160,7 +160,7 @@
 	max-height: calc(100vh - 200px);
 }
 
-/* ═══ Panels ═══ */
+/* === Panels === */
 .godevs-panel {
 	display: none;
 }
@@ -185,7 +185,7 @@
 	max-width: 600px;
 }
 
-/* ═══ Setting Groups ═══ */
+/* === Setting Groups === */
 .godevs-setting-group {
 	margin-top: 32px;
 	padding-top: 24px;
@@ -211,7 +211,7 @@
 	color: #8c8f94;
 }
 
-/* ═══ Setting Rows ═══ */
+/* === Setting Rows === */
 .godevs-setting-row {
 	display: flex;
 	justify-content: space-between;
@@ -250,7 +250,7 @@
 	text-align: right;
 }
 
-/* ═══ Inputs ═══ */
+/* === Inputs === */
 .godevs-input {
 	width: 200px;
 	height: 36px;
@@ -292,7 +292,7 @@
 	outline: none;
 }
 
-/* ═══ Toggle Switch ═══ */
+/* === Toggle Switch === */
 .godevs-toggle {
 	position: relative;
 	display: inline-block;
@@ -340,7 +340,7 @@
 	box-shadow: 0 0 0 3px rgba(232, 93, 64, 0.2);
 }
 
-/* ═══ Color Picker ═══ */
+/* === Color Picker === */
 .godevs-color-picker {
 	width: 120px !important;
 	height: 36px;
@@ -360,7 +360,7 @@
 	line-height: 34px;
 }
 
-/* ═══ Status Rows ═══ */
+/* === Status Rows === */
 .godevs-status-row {
 	display: flex;
 	justify-content: space-between;
@@ -379,7 +379,7 @@
 	font-weight: 600;
 }
 
-/* ═══ Responsive ═══ */
+/* === Responsive === */
 @media (max-width: 1024px) {
 	.godevs-settings-body {
 		flex-direction: column;
@@ -467,7 +467,7 @@
 	}
 }
 
-/* ═══ Reduced Motion ═══ */
+/* === Reduced Motion === */
 @media (prefers-reduced-motion: reduce) {
 	.godevs-toggle-track,
 	.godevs-toggle-thumb,
@@ -478,9 +478,9 @@
 	}
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * Per-Page Header/Footer Layout Meta Box (v2.4.1)
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 #godevs-hf-layout.postbox .inside {
 	padding: 12px 12px 16px;
@@ -522,7 +522,7 @@
 	color: #666;
 }
 
-/* ─── Settings Search (UX-B) ─── */
+/* --- Settings Search (UX-B) --- */
 .godevs-settings-search-wrap {
 	position: relative;
 	margin: 0 0 12px 0;
@@ -613,7 +613,7 @@
 	opacity: 1;
 }
 
-/* ─── Welcome Panel (UX-A) ─── */
+/* --- Welcome Panel (UX-A) --- */
 .godevs-welcome-panel {
 	background: linear-gradient(135deg, #f0f6ff 0%, #fafafa 100%);
 	border: 1px solid #c3d4f0;
@@ -628,7 +628,7 @@
 	transform: translateY(-1px);
 }
 
-/* ─── After-Import Notice ─── */
+/* --- After-Import Notice --- */
 .godevs-imported-notice {
 	border-left-color: #00a32a !important;
 	padding: 16px 20px !important;

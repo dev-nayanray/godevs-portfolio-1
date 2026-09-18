@@ -7,12 +7,12 @@
  *   - godevs_service  (Services)
  *   - godevs_team      (Team Members)
  *   - godevs_testimonial (Testimonials)
- *   - godevs_booking   (Bookings — private, not publicly queryable)
+ *   - godevs_booking   (Bookings - private, not publicly queryable)
  *   - godevs_experience (Experience)
  *   - godevs_education (Education)
  *   - godevs_faq       (FAQs)
  *
- * Each CPT respects the module visibility system — when a module is disabled,
+ * Each CPT respects the module visibility system - when a module is disabled,
  * the CPT is not registered, but existing content is preserved in the database.
  *
  * @package GoDevs_Portfolio
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * (enabled) in ALL of these cases:
  *   - The option does not exist (fresh install)
  *   - The option exists but the module key is not set
- *   - The module key is set to '' (empty string — from a stale save)
+ *   - The module key is set to '' (empty string - from a stale save)
  * Only returns FALSE when the module key is EXPLICITLY set to '0'.
  *
  * This defensive logic prevents a stale settings option (from a previous
@@ -75,7 +75,7 @@ function godevs_portfolio_module_enabled( string $module ): bool {
  */
 function godevs_portfolio_register_post_types(): void {
 
-        // ── Projects ──────────────────────────────────────────────
+        // -- Projects ----------------------------------------------
         if ( godevs_portfolio_module_enabled( 'projects' ) ) {
                 register_post_type(
                         'godevs_project',
@@ -107,7 +107,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Services ──────────────────────────────────────────────
+        // -- Services ----------------------------------------------
         if ( godevs_portfolio_module_enabled( 'services' ) ) {
                 register_post_type(
                         'godevs_service',
@@ -139,7 +139,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Team ──────────────────────────────────────────────────
+        // -- Team --------------------------------------------------
         if ( godevs_portfolio_module_enabled( 'team' ) ) {
                 register_post_type(
                         'godevs_team',
@@ -171,7 +171,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Testimonials ──────────────────────────────────────────
+        // -- Testimonials ------------------------------------------
         if ( godevs_portfolio_module_enabled( 'testimonials' ) ) {
                 register_post_type(
                         'godevs_testimonial',
@@ -203,7 +203,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Experience ───────────────────────────────────────────
+        // -- Experience -------------------------------------------
         if ( godevs_portfolio_module_enabled( 'experience' ) ) {
                 register_post_type(
                         'godevs_experience',
@@ -229,7 +229,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Education ────────────────────────────────────────────
+        // -- Education --------------------------------------------
         if ( godevs_portfolio_module_enabled( 'education' ) ) {
                 register_post_type(
                         'godevs_education',
@@ -255,7 +255,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── FAQs ──────────────────────────────────────────────────
+        // -- FAQs --------------------------------------------------
         if ( godevs_portfolio_module_enabled( 'faqs' ) ) {
                 register_post_type(
                         'godevs_faq',
@@ -282,7 +282,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Bookings (PRIVATE — not publicly queryable) ──────────
+        // -- Bookings (PRIVATE - not publicly queryable) ----------
         if ( godevs_portfolio_module_enabled( 'bookings' ) ) {
                 register_post_type(
                         'godevs_booking',
@@ -316,7 +316,7 @@ function godevs_portfolio_register_post_types(): void {
                 );
         }
 
-        // ── Proposals (PRIVATE — not publicly queryable) ─────────
+        // -- Proposals (PRIVATE - not publicly queryable) ---------
         if ( godevs_portfolio_module_enabled( 'proposals' ) ) {
                 register_post_type(
                         'godevs_proposal',
@@ -353,10 +353,10 @@ add_action( 'init', 'godevs_portfolio_register_post_types' );
 /**
  * Grant proposal capabilities to Administrators on theme activation.
  *
- * Mirrors godevs_portfolio_grant_booking_caps() — the proposal CPT uses
+ * Mirrors godevs_portfolio_grant_booking_caps() - the proposal CPT uses
  * `capability_type => 'proposal'`, so no role has the caps by default.
  *
- * @since 1.1.0
+ * @since 1.0.0
  */
 function godevs_portfolio_grant_proposal_caps(): void {
         $admin = get_role( 'administrator' );
@@ -393,7 +393,7 @@ add_action( 'admin_init', 'godevs_portfolio_grant_proposal_caps' );
  * it runs once on theme activation, and also to `admin_init` as a fallback
  * for sites that activated the theme via WP-CLI or other non-standard paths.
  *
- * @since 2.8.0
+ * @since 1.0.0.0
  */
 function godevs_portfolio_grant_booking_caps(): void {
         $admin = get_role( 'administrator' );

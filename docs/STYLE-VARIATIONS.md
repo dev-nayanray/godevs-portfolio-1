@@ -1,7 +1,7 @@
-# GoDevs Portfolio — Style Variations
+# GoDevs Portfolio - Style Variations
 
 **Document version:** 0.1.0
-**Phase:** 1 — Foundation
+**Phase:** 1 - Foundation
 
 This document defines the style variation system: what a variation is, how it differs from the default, the Phase 1 set, and the long-term expansion plan to 15+ variations.
 
@@ -27,7 +27,7 @@ A variation **cannot** change:
 
 ---
 
-## 2. Variation vs Color Swap — Critical Distinction
+## 2. Variation vs Color Swap - Critical Distinction
 
 A variation that only changes palette colors is a **color swap**, not a variation. Color swaps add no design value and inflate the variation count without adding capability.
 
@@ -35,13 +35,13 @@ A variation that only changes palette colors is a **color swap**, not a variatio
 
 Every style variation must change **at least three** of:
 
-1. **Primary font pairing** — at minimum the display font family
-2. **Color system** — background, surface, foreground, accent
-3. **Spacing density** — section padding, default gaps, card padding
-4. **Border radius default** — sharp vs. medium vs. pill
-5. **Default shadow level** — none vs. soft vs. dramatic
-6. **Section vertical rhythm** — compact vs. spacious
-7. **Type scale** — large display vs. modest display
+1. **Primary font pairing** - at minimum the display font family
+2. **Color system** - background, surface, foreground, accent
+3. **Spacing density** - section padding, default gaps, card padding
+4. **Border radius default** - sharp vs. medium vs. pill
+5. **Default shadow level** - none vs. soft vs. dramatic
+6. **Section vertical rhythm** - compact vs. spacious
+7. **Type scale** - large display vs. modest display
 
 A variation that changes only the palette is rejected at PR review.
 
@@ -81,13 +81,13 @@ The default style lives in `theme.json` directly. It is not duplicated in `style
 **Characterization:**
 - Same font pairing (sans-serif system)
 - Pure white background (`#FFFFFF`)
-- Single text color (`#111111`) — no muted variant
-- Black accent (no color — accent matches text)
+- Single text color (`#111111`) - no muted variant
+- Black accent (no color - accent matches text)
 - Compact spacing (section padding reduced)
 - Zero radius (sharp corners everywhere)
 - No shadows
 
-**Intent:** Ultra-minimalist portfolio — gallery-like presentation, no chrome.
+**Intent:** Ultra-minimalist portfolio - gallery-like presentation, no chrome.
 
 ### 3.3 Dark (`styles/dark.json`)
 
@@ -95,12 +95,12 @@ The default style lives in `theme.json` directly. It is not duplicated in `style
 - Same font pairing
 - Deep neutral background (`#0A0A0A`)
 - Off-white text (`#FAFAF7`)
-- Brighter accent (`#60A5FA` — accessible on dark)
+- Brighter accent (`#60A5FA` - accessible on dark)
 - Same spacing as default
 - Medium radii
 - Elevated shadows (deeper for dark mode legibility)
 
-**Intent:** Dark mode portfolio — favored by developers and design studios.
+**Intent:** Dark mode portfolio - favored by developers and design studios.
 
 ### 3.4 Editorial (`styles/editorial.json`)
 
@@ -114,7 +114,7 @@ The default style lives in `theme.json` directly. It is not duplicated in `style
 - Sharp corners (0 radius)
 - No shadows
 
-**Intent:** Magazine / publication portfolio — writers, journalists, essayists.
+**Intent:** Magazine / publication portfolio - writers, journalists, essayists.
 
 ---
 
@@ -245,12 +245,12 @@ The preview is auto-generated from the variation's palette + typography. The use
 
 Patterns must work in every variation. This is enforced by:
 
-1. **Patterns never hardcode colors** — always reference presets
-2. **Patterns never hardcode spacing** — always reference presets
-3. **Patterns never hardcode radii** — set via block attributes, but inherited from variation where possible
-4. **Patterns are tested in every variation before merge** — see `QA-CHECKLIST.md`
+1. **Patterns never hardcode colors** - always reference presets
+2. **Patterns never hardcode spacing** - always reference presets
+3. **Patterns never hardcode radii** - set via block attributes, but inherited from variation where possible
+4. **Patterns are tested in every variation before merge** - see `QA-CHECKLIST.md`
 
-If a pattern breaks in a specific variation, the variation is the source of the bug — not the pattern.
+If a pattern breaks in a specific variation, the variation is the source of the bug - not the pattern.
 
 ---
 

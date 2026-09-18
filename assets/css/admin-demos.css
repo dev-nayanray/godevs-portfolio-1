@@ -1,5 +1,5 @@
 /**
- * GoDevs Portfolio — Demo Library Admin Styles
+ * GoDevs Portfolio - Demo Library Admin Styles
  *
  * Premium, professional UI for the demo browser at:
  *   - Appearance → GoDevs Settings → Demo Library tab
@@ -7,7 +7,7 @@
  *
  * The UI is built as a single coherent style system on top of a small set of
  * preserved design tokens (§0). Every component below references those tokens
- * — never raw hex values — so the look stays consistent across light/dark
+ * - never raw hex values - so the look stays consistent across light/dark
  * admin themes and future palette tweaks.
  *
  * Layout: 3-column grid on wide (≥1280px), 2-column at tablet (768–1279px),
@@ -19,12 +19,12 @@
  * @since   3.0.0  Single coherent style system on top of preserved design tokens.
  */
 
-/* ═══════════════════════════════════════════════════════════════════
- * 0. CSS Custom Properties (Design Tokens) — preserved verbatim
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * 0. CSS Custom Properties (Design Tokens) - preserved verbatim
+ * =================================================================== */
 
 .godevs-demos-wrap {
-        /* Color palette — derived from theme.json */
+        /* Color palette - derived from theme.json */
         --gd-color-bg: #ffffff;
         --gd-color-surface: #ffffff;
         --gd-color-surface-muted: #f9fafb;
@@ -76,13 +76,13 @@
         --gd-font-mono: "SF Mono", Monaco, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * 0.1. Derived tokens — extensions built on top of the preserved palette.
+/* ===================================================================
+ * 0.1. Derived tokens - extensions built on top of the preserved palette.
  *     Kept in a separate block so the preserved block above stays verbatim.
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-wrap {
-        /* Editorial serif for demo titles — falls back to system serif then sans. */
+        /* Editorial serif for demo titles - falls back to system serif then sans. */
         --gd-font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
         /* Hairline borders used across cards + modal surfaces. */
@@ -110,18 +110,18 @@
         --gd-radius-card: 14px;
         --gd-radius-pill: 999px;
 
-        /* Focus ring — visible against both light and tinted surfaces. */
+        /* Focus ring - visible against both light and tinted surfaces. */
         --gd-focus-ring: 0 0 0 2px var(--gd-color-bg), 0 0 0 4px var(--gd-color-accent);
 
-        /* Hero gradient — dark surface used at the top of the page. */
+        /* Hero gradient - dark surface used at the top of the page. */
         --gd-hero-gradient: radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.18) 0%, transparent 55%),
                             radial-gradient(circle at 10% 90%, rgba(21, 128, 61, 0.10) 0%, transparent 50%),
                             linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 1. Base container & typography
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-wrap {
         font-family: var(--gd-font-sans);
@@ -145,9 +145,9 @@
 .godevs-demos-wrap a { color: var(--gd-color-accent); text-decoration: none; }
 .godevs-demos-wrap a:hover { color: var(--gd-color-accent-hover); text-decoration: underline; }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 2. Hero header
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-hero {
         position: relative;
@@ -257,9 +257,9 @@
         color: #94a3b8;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 3. Filter bar
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-filters {
         display: flex;
@@ -392,9 +392,9 @@
         white-space: nowrap;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 4. Section headers
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-section { margin-bottom: var(--gd-space-7); }
 .godevs-demos-section:last-of-type { margin-bottom: var(--gd-space-2); }
@@ -442,9 +442,9 @@
         color: var(--gd-color-text-muted);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * 5. Grids — 3 col on wide, 2 col tablet, 1 col mobile
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * 5. Grids - 3 col on wide, 2 col tablet, 1 col mobile
+ * =================================================================== */
 
 .godevs-demos-grid,
 .godevs-demos-wrap #godevs-demos-grid-ready,
@@ -475,9 +475,9 @@
         }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 6. Demo card
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demo-card {
         position: relative;
@@ -507,7 +507,7 @@
 
 .godevs-demo-card.is-hidden { display: none !important; }
 
-/* States — imported / importing / coming-soon / complete */
+/* States - imported / importing / coming-soon / complete */
 .godevs-demo-card.is-imported { border-color: var(--gd-color-success); }
 .godevs-demo-card.is-imported::after {
         content: '';
@@ -551,7 +551,7 @@
         box-shadow: inset 0 0 0 1px var(--gd-color-success-soft);
 }
 
-/* ─── Preview (browser frame + image) ──────────────────────────── */
+/* --- Preview (browser frame + image) ---------------------------- */
 
 .godevs-demo-card-preview {
         position: relative;
@@ -644,7 +644,7 @@
         letter-spacing: -0.01em;
 }
 
-/* ─── Hover overlay (Preview CTA) ──────────────────────────────── */
+/* --- Hover overlay (Preview CTA) -------------------------------- */
 
 .godevs-demo-card-hover-overlay {
         position: absolute;
@@ -692,7 +692,7 @@
         transform: translateY(-1px);
 }
 
-/* ─── Status / imported badges ─────────────────────────────────── */
+/* --- Status / imported badges ----------------------------------- */
 
 .godevs-demo-card-status-badge,
 .godevs-demo-card-imported-badge {
@@ -740,7 +740,7 @@
         border: 1px solid rgba(21, 128, 61, 0.45);
 }
 
-/* ─── Card body ────────────────────────────────────────────────── */
+/* --- Card body -------------------------------------------------- */
 
 .godevs-demo-card-body {
         display: flex;
@@ -841,9 +841,9 @@
         margin-top: var(--gd-space-2);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 7. Chips
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-chip-row {
         display: flex;
@@ -881,9 +881,9 @@
 
 .godevs-chip-features { margin-top: var(--gd-space-1); }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 8. Card buttons
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-wrap .godevs-demo-preview-btn,
 .godevs-demos-wrap .godevs-demo-import-btn,
@@ -956,9 +956,9 @@
         cursor: not-allowed;
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 9. Empty state
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-demos-empty,
 .godevs-demos-wrap #godevs-demos-empty {
@@ -1007,9 +1007,9 @@
 
 .godevs-demos-wrap #godevs-empty-reset:hover { background: var(--gd-color-accent-hover); }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 10. Preview modal
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-modal,
 .godevs-demos-wrap #godevs-modal {
@@ -1065,7 +1065,7 @@
         to   { opacity: 1; }
 }
 
-/* ─── Modal header ─────────────────────────────────────────────── */
+/* --- Modal header ----------------------------------------------- */
 
 .godevs-modal-header {
         display: flex;
@@ -1170,7 +1170,7 @@
         color: var(--gd-color-text);
 }
 
-/* ─── Modal body + viewport ────────────────────────────────────── */
+/* --- Modal body + viewport -------------------------------------- */
 
 .godevs-modal-body,
 .godevs-preview-body {
@@ -1243,7 +1243,7 @@
         background: var(--gd-color-surface);
 }
 
-/* ─── Modal footer ─────────────────────────────────────────────── */
+/* --- Modal footer ----------------------------------------------- */
 
 .godevs-modal-footer,
 .godevs-preview-footer {
@@ -1344,7 +1344,7 @@
         transform: translateY(-1px);
 }
 
-/* ─── Confirmation host (rendered inside the viewport) ──────────── */
+/* --- Confirmation host (rendered inside the viewport) ------------ */
 
 .godevs-demos-wrap #godevs-confirm-content {
         position: relative;
@@ -1398,9 +1398,9 @@
         transform: translateY(-1px);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 11. Progress overlay
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 .godevs-progress,
 .godevs-demos-wrap #godevs-progress {
@@ -1439,7 +1439,7 @@
         animation: godevs-modal-in var(--gd-transition-base);
 }
 
-/* ─── Hero image strip ─────────────────────────────────────────── */
+/* --- Hero image strip ------------------------------------------- */
 
 .godevs-progress-hero,
 .godevs-demos-wrap #godevs-progress-hero {
@@ -1477,7 +1477,7 @@
         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
-/* ─── Body (steps + result) ───────────────────────────────────── */
+/* --- Body (steps + result) ------------------------------------- */
 
 .godevs-progress-body {
         display: flex;
@@ -1532,7 +1532,7 @@
         box-shadow: 0 0 8px rgba(37, 99, 235, 0.35);
 }
 
-/* ─── Steps ────────────────────────────────────────────────────── */
+/* --- Steps ------------------------------------------------------ */
 
 .godevs-progress-steps,
 .godevs-demos-wrap #godevs-progress-steps {
@@ -1624,7 +1624,7 @@
         min-height: 1.2em;
 }
 
-/* ─── Result (success / error) ─────────────────────────────────── */
+/* --- Result (success / error) ----------------------------------- */
 
 .godevs-progress-result,
 .godevs-demos-wrap #godevs-progress-result {
@@ -1750,7 +1750,7 @@
 
 .godevs-warning strong { color: var(--gd-color-warning); }
 
-/* ─── Actions + close ──────────────────────────────────────────── */
+/* --- Actions + close -------------------------------------------- */
 
 .godevs-progress-actions,
 .godevs-demos-wrap #godevs-progress-actions {
@@ -1798,9 +1798,9 @@
         color: var(--gd-color-text);
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 12. Responsive
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 @media (max-width: 1279px) {
         .godevs-demos-hero {
@@ -1867,9 +1867,9 @@
         .godevs-ready-summary { grid-template-columns: 1fr; }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
- * 13. Reduced motion — disable non-essential animations + transitions
- * ═══════════════════════════════════════════════════════════════════ */
+/* ===================================================================
+ * 13. Reduced motion - disable non-essential animations + transitions
+ * =================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
         .godevs-demos-wrap *,
@@ -1887,12 +1887,12 @@
         .godevs-progress-bar-fill { transition: none !important; }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
+/* ===================================================================
  * 14. WordPress admin dark-mode parity (best-effort)
  *     WP admin dark mode sets `background: #1d2327` on `body`. We counter
  *     by pinning our surfaces to the token palette so the demo library
  *     stays light + legible regardless of the admin color scheme.
- * ═══════════════════════════════════════════════════════════════════ */
+ * =================================================================== */
 
 body.wp-admin.is-dark-mode .godevs-demos-wrap,
 .wrap.is-dark-mode .godevs-demos-wrap {

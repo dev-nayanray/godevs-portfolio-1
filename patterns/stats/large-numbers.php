@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Stats — Large Numbers
+ * Title: Stats - Large Numbers
  * Slug: godevs-portfolio/stats-large-numbers
  * Description: A two-up stat display with oversized clamp-scaled display numerals, mono micro-labels, and a hairline center divider. Distinct in its large-format typographic emphasis.
  * Categories: godevs-portfolio-stats
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}}} -->
-<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Projects shipped — independent practice and studio years combined, across SaaS, editorial, and commerce.</p>
+<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Projects shipped - independent practice and studio years combined, across SaaS, editorial, and commerce.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -47,7 +47,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"},"padding":{"top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}}} -->
-<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Years of practice across three studios and an independent practice — still shipping every week.</p>
+<p class="has-text-color" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;color:var(--wp--preset--color--secondary);padding-top:var(--wp--preset--spacing--40);margin-top:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.65">Years of practice across three studios and an independent practice - still shipping every week.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Journal (Writing) — Contact
+ * Title: Demo - Journal (Writing) - Contact
  * Slug: godevs-portfolio/demo-journal-contact
- * Description: JOURNAL contact — inquiry form, availability. Recommended style variation: Journal.
+ * Description: JOURNAL contact - inquiry form, availability. Recommended style variation: Journal.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, journal, contact, inquiry
  * Viewport Width: 1440
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Header -->
 	<!-- wp:template-part {"slug":"header-journal","theme":"godevs-portfolio","tagName":"header"} /-->
 
-	<!-- ═══ 01 — HERO ═══ -->
+	<!-- === 01 - HERO === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<!-- Eyebrow -->
 			<!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|accent"}}} -->
-			<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— Contact</p>
+			<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- Contact</p>
 			<!-- /wp:paragraph -->
 
 			<!-- Display heading -->
@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 02 — CONTACT INFO + INQUIRY FORM ═══ -->
+	<!-- === 02 - CONTACT INFO + INQUIRY FORM === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -52,24 +52,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- 40/60 split: contact info + form -->
 			<!-- wp:html -->
 			<div class="jour-contact-split" style="display:grid;grid-template-columns:1fr;gap:3rem;">
-				<!-- LEFT — contact info -->
+				<!-- LEFT - contact info -->
 				<div class="jour-contact-info" style="display:flex;flex-direction:column;gap:2.5rem;">
 
 					<!-- Email -->
 					<div>
-						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">— Email</p>
+						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">- Email</p>
 						<p style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-style:italic;font-size:1.25rem;letter-spacing:-0.01em;margin:0;"><a href="mailto:editor@journal.co" style="color:var(--jour-ink);text-decoration:none;border-bottom:1px solid var(--jour-line);padding-bottom:2px;">editor@journal.co</a></p>
 					</div>
 
 					<!-- Location -->
 					<div>
-						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">— Location</p>
+						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">- Location</p>
 						<p style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:1.25rem;letter-spacing:-0.01em;margin:0;line-height:1.4;">London / Dhaka<br><span style="font-style:italic;color:var(--jour-muted);font-size:1.0625rem;">GMT +6 · usually online</span></p>
 					</div>
 
 					<!-- Social -->
 					<div>
-						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">— Elsewhere</p>
+						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 0.6rem;">- Elsewhere</p>
 						<nav aria-label="Social profiles" style="display:flex;flex-wrap:wrap;gap:0.4rem 1.5rem;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;">
 							<a href="#" style="color:var(--jour-ink);border-bottom:1px solid var(--jour-line);padding-bottom:0.35rem;text-decoration:none;transition:color 0.3s ease,border-color 0.3s ease;">Twitter</a>
 							<a href="#" style="color:var(--jour-ink);border-bottom:1px solid var(--jour-line);padding-bottom:0.35rem;text-decoration:none;transition:color 0.3s ease,border-color 0.3s ease;">Instagram</a>
@@ -80,7 +80,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<!-- What happens next -->
 					<div style="border-top:1px solid var(--jour-line);padding-top:2rem;margin-top:0.5rem;">
-						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 1.25rem;">— What happens next</p>
+						<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);margin:0 0 1.25rem;">- What happens next</p>
 						<ol style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem;">
 							<li style="display:grid;grid-template-columns:2rem 1fr;gap:1rem;align-items:baseline;">
 								<span style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-accent);">01</span>
@@ -88,19 +88,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</li>
 							<li style="display:grid;grid-template-columns:2rem 1fr;gap:1rem;align-items:baseline;">
 								<span style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-accent);">02</span>
-								<span style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:1.0625rem;line-height:1.5;letter-spacing:-0.01em;">A brief conversation — by email or, if it helps, a call.</span>
+								<span style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:1.0625rem;line-height:1.5;letter-spacing:-0.01em;">A brief conversation - by email or, if it helps, a call.</span>
 							</li>
 							<li style="display:grid;grid-template-columns:2rem 1fr;gap:1rem;align-items:baseline;">
 								<span style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-accent);">03</span>
-								<span style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:1.0625rem;line-height:1.5;letter-spacing:-0.01em;">A considered response — scope, timeline, whether it fits.</span>
+								<span style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:1.0625rem;line-height:1.5;letter-spacing:-0.01em;">A considered response - scope, timeline, whether it fits.</span>
 							</li>
 						</ol>
 					</div>
 				</div>
 
-				<!-- RIGHT — inquiry form -->
+				<!-- RIGHT - inquiry form -->
 				<div class="jour-form-wrap" style="background:var(--jour-surface);border:1px solid var(--jour-line);padding:clamp(1.75rem, 4vw, 3rem);">
-					<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-accent);margin:0 0 0.5rem;">— Send a message</p>
+					<p class="is-style-jour-label" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-accent);margin:0 0 0.5rem;">- Send a message</p>
 					<p style="font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-style:italic;font-size:1.25rem;line-height:1.35;letter-spacing:-0.01em;margin:0 0 2rem;max-width:32ch;">Tell me what you're working on, and what you need.</p>
 
 					<form class="jour-form" action="#" method="post" style="display:flex;flex-direction:column;gap:1.5rem;">
@@ -133,7 +133,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<!-- Message -->
 						<div style="display:flex;flex-direction:column;gap:0.5rem;">
 							<label for="jour-message" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--jour-muted);">Message</label>
-							<textarea id="jour-message" name="jour-message" rows="6" placeholder="A few sentences — what you're working on, what you need, when." required style="border:1px solid var(--jour-line);border-radius:0;padding:0.85rem 1rem;background:transparent;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;color:var(--jour-ink);line-height:1.6;resize:vertical;transition:border-color 0.25s ease,box-shadow 0.25s ease;"></textarea>
+							<textarea id="jour-message" name="jour-message" rows="6" placeholder="A few sentences - what you're working on, what you need, when." required style="border:1px solid var(--jour-line);border-radius:0;padding:0.85rem 1rem;background:transparent;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;color:var(--jour-ink);line-height:1.6;resize:vertical;transition:border-color 0.25s ease,box-shadow 0.25s ease;"></textarea>
 						</div>
 
 						<!-- Submit -->
@@ -145,7 +145,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 
 						<!-- Demo note -->
-						<p style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--jour-muted);margin:0.5rem 0 0;line-height:1.6;">Demo form — connect a form plugin or the theme's front-forms feature.</p>
+						<p style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--jour-muted);margin:0.5rem 0 0;line-height:1.6;">Demo form - connect a form plugin or the theme's front-forms feature.</p>
 					</form>
 				</div>
 			</div>
@@ -190,19 +190,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</section>
 	<!-- /wp:group -->
 
-	<!-- ═══ 03 — FAQ ═══ -->
+	<!-- === 03 - FAQ === -->
 	<!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
 	<section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 
-			<!-- FAQ header — 30/70 -->
+			<!-- FAQ header - 30/70 -->
 			<!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|60","margin":{"bottom":"var:preset|spacing|50"}}}} -->
 			<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--50)">
 				<!-- wp:column {"width":"30%"} -->
 				<div class="wp-block-column" style="flex-basis:30%">
 					<!-- wp:paragraph {"className":"is-style-jour-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.18em","textTransform":"uppercase","fontWeight":"600"},"color":{"text":"var:preset|color|muted"}}} -->
-					<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">— FAQ</p>
+					<p class="is-style-jour-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600">- FAQ</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -224,21 +224,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<span>How quickly do you respond?</span>
 						<span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-muted);">+</span>
 					</summary>
-					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Usually within three working days. If the project is time-sensitive — a deadline within two weeks — say so in the subject line, and I'll reply sooner.</p>
+					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Usually within three working days. If the project is time-sensitive - a deadline within two weeks - say so in the subject line, and I'll reply sooner.</p>
 				</details>
 				<details class="jour-faq-item" style="border-top:1px solid var(--jour-line);padding:1.5rem 0;cursor:pointer;list-style:none;">
 					<summary style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;list-style:none;font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:clamp(1.125rem, 1.8vw, 1.375rem);font-weight:400;letter-spacing:-0.01em;color:var(--jour-ink);line-height:1.3;">
 						<span>Do you accept commissions?</span>
 						<span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-muted);">+</span>
 					</summary>
-					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Yes — selectively. I take on roughly one commission a month, usually essays, editorial work, or longer-form pieces that need time to breathe. Tell me the scope and I'll be honest about whether it's a fit.</p>
+					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Yes - selectively. I take on roughly one commission a month, usually essays, editorial work, or longer-form pieces that need time to breathe. Tell me the scope and I'll be honest about whether it's a fit.</p>
 				</details>
 				<details class="jour-faq-item" style="border-top:1px solid var(--jour-line);padding:1.5rem 0;cursor:pointer;list-style:none;">
 					<summary style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;list-style:none;font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:clamp(1.125rem, 1.8vw, 1.375rem);font-weight:400;letter-spacing:-0.01em;color:var(--jour-ink);line-height:1.3;">
 						<span>Do you write for publications?</span>
 						<span aria-hidden="true" style="font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.6875rem;font-weight:600;letter-spacing:0.14em;color:var(--jour-muted);">+</span>
 					</summary>
-					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Yes. I contribute to a small number of publications I respect — The Atlantic, Kinfolk, Aeon, Longreads, 3:AM Magazine — and I'm open to new ones, particularly those with patient editors and a long view.</p>
+					<p style="margin:0.85rem 0 0;font-family:var(--wp--preset--font-family--body,'Inter',sans-serif);font-size:0.9375rem;line-height:1.7;color:var(--jour-muted);max-width:50ch;">Yes. I contribute to a small number of publications I respect - The Atlantic, Kinfolk, Aeon, Longreads, 3:AM Magazine - and I'm open to new ones, particularly those with patient editors and a long view.</p>
 				</details>
 				<details class="jour-faq-item" style="border-top:1px solid var(--jour-line);border-bottom:1px solid var(--jour-line);padding:1.5rem 0;cursor:pointer;list-style:none;">
 					<summary style="display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;list-style:none;font-family:var(--wp--preset--font-family--display,'Newsreader',serif);font-size:clamp(1.125rem, 1.8vw, 1.375rem);font-weight:400;letter-spacing:-0.01em;color:var(--jour-ink);line-height:1.3;">
@@ -269,7 +269,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|muted"}},"className":"godevs-section-intro"} -->
-		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Commissions, speaking, editing or collaboration — tell me what you have in mind. Good ideas get a reply.</p>
+		<p class="godevs-section-intro has-text-color" style="color:var(--wp--preset--color--muted);max-width:60ch">Commissions, speaking, editing or collaboration - tell me what you have in mind. Good ideas get a reply.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:shortcode -->

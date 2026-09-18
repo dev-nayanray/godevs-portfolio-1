@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Demo — Noir (Film) — Films
+ * Title: Demo - Noir (Film) - Films
  * Slug: godevs-portfolio/demo-noir-films
- * Description: NOIR films archive — filterable cinematic film index. Recommended style variation: Noir.
+ * Description: NOIR films archive - filterable cinematic film index. Recommended style variation: Noir.
  * Categories: godevs-portfolio-demos
  * Keywords: demo, noir, films, archive, cinematic
  * Viewport Width: 1440
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <!-- Header (transparent over archive hero) -->
         <!-- wp:template-part {"slug":"header-noir","theme":"godevs-portfolio","tagName":"header"} /-->
 
-        <!-- ═══ 01 — ARCHIVE HEADER ═══ -->
+        <!-- === 01 - ARCHIVE HEADER === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
                         <!-- Eyebrow -->
                         <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Films</p>
+                        <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Films</p>
                         <!-- /wp:paragraph -->
 
                         <!-- H1 -->
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 02 — CATEGORY FILTER ═══ -->
+        <!-- === 02 - CATEGORY FILTER === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"bottom":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--line);border-bottom-style:solid;border-bottom-width:1px;padding-top:0;padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
@@ -64,7 +64,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 03 — FEATURED FILM: AFTERLIGHT ═══ -->
+        <!-- === 03 - FEATURED FILM: AFTERLIGHT === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -74,16 +74,16 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|40"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
                                 <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|accent"}}} -->
-                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Featured · 01</p>
+                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--accent);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Featured · 01</p>
                                 <!-- /wp:paragraph -->
                         </div>
                         <!-- /wp:group -->
 
                         <!-- Featured film card -->
                         <!-- wp:html -->
-                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View film — Afterlight">
+                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9;" aria-label="View film - Afterlight">
                                 <div class="noir-film-media">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.webp' ); ?>" alt="AFTERLIGHT — cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-featured.webp' ); ?>" alt="AFTERLIGHT - cinematic featured film still, close portrait in dramatic warm side light against deep black" loading="lazy">
                                         <span class="noir-play" aria-hidden="true">▶</span>
                                         <div class="noir-film-overlay">
                                                 <p class="noir-film-num">01</p>
@@ -99,7 +99,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 04 — RECENT FILMS GRID ═══ -->
+        <!-- === 04 - RECENT FILMS GRID === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
@@ -109,20 +109,20 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|40"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
                                 <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Recent Films · 05</p>
+                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Recent Films · 05</p>
                                 <!-- /wp:paragraph -->
                         </div>
                         <!-- /wp:group -->
 
-                        <!-- Films 02 + 03 — split portrait pair -->
+                        <!-- Films 02 + 03 - split portrait pair -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|40"}}}} -->
                         <div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--40)">
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film — The Last Summer">
+                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film - The Last Summer">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-2.webp' ); ?>" alt="THE LAST SUMMER — cinematic short film still, two figures silhouetted against a hazy sunset" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-2.webp' ); ?>" alt="THE LAST SUMMER - cinematic short film still, two figures silhouetted against a hazy sunset" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">02</p>
@@ -137,9 +137,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film — Monument">
+                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 3/4;" aria-label="View film - Monument">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-3.webp' ); ?>" alt="MONUMENT — cinematic brand film still, massive concrete structure at dusk with dramatic light" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-3.webp' ); ?>" alt="MONUMENT - cinematic brand film still, massive concrete structure at dusk with dramatic light" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">03</p>
@@ -154,11 +154,11 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         </div>
                         <!-- /wp:columns -->
 
-                        <!-- Film 04 — full-width landscape -->
+                        <!-- Film 04 - full-width landscape -->
                         <!-- wp:html -->
-                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9; margin-bottom: 2.5rem;" aria-label="View film — Nocturne">
+                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 21/9; margin-bottom: 2.5rem;" aria-label="View film - Nocturne">
                                 <div class="noir-film-media">
-                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-4.webp' ); ?>" alt="NOCTURNE — cinematic music video still, performer in dramatic colored light and shadow" loading="lazy">
+                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-4.webp' ); ?>" alt="NOCTURNE - cinematic music video still, performer in dramatic colored light and shadow" loading="lazy">
                                         <span class="noir-play" aria-hidden="true">▶</span>
                                         <div class="noir-film-overlay">
                                                 <p class="noir-film-num">04</p>
@@ -169,15 +169,15 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         </a>
                         <!-- /wp:html -->
 
-                        <!-- Films 05 + 06 — split landscape pair -->
+                        <!-- Films 05 + 06 - split landscape pair -->
                         <!-- wp:columns {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
                         <div class="wp-block-columns">
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film — Between Tides">
+                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film - Between Tides">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.webp' ); ?>" alt="BETWEEN TIDES — cinematic documentary still, vast ocean and sky at dawn with a distant figure" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-5.webp' ); ?>" alt="BETWEEN TIDES - cinematic documentary still, vast ocean and sky at dawn with a distant figure" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">05</p>
@@ -192,9 +192,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                                 <!-- wp:column -->
                                 <div class="wp-block-column">
                                         <!-- wp:html -->
-                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film — Form / Motion">
+                                        <a class="noir-film" href="#" style="display:block; aspect-ratio: 16/9;" aria-label="View film - Form / Motion">
                                                 <div class="noir-film-media">
-                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-6.webp' ); ?>" alt="FORM / MOTION — cinematic campaign still, abstract motion blur of a figure in motion" loading="lazy">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/noir/noir-film-6.webp' ); ?>" alt="FORM / MOTION - cinematic campaign still, abstract motion blur of a figure in motion" loading="lazy">
                                                         <span class="noir-play" aria-hidden="true">▶</span>
                                                         <div class="noir-film-overlay">
                                                                 <p class="noir-film-num">06</p>
@@ -214,7 +214,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 05 — CATALOG REGISTER (compact index) ═══ -->
+        <!-- === 05 - CATALOG REGISTER (compact index) === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
@@ -224,7 +224,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                         <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|50"}}}} -->
                         <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
                                 <!-- wp:paragraph {"className":"is-style-noir-label","style":{"typography":{"fontFamily":"var:preset|font-family|body","fontSize":"0.6875rem","letterSpacing":"0.22em","textTransform":"uppercase","fontWeight":"500"},"color":{"text":"var:preset|color|muted"}}} -->
-                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">— Catalog Register · 42 Films</p>
+                                <p class="is-style-noir-label has-text-color" style="color:var(--wp--preset--color--muted);font-family:var(--wp--preset--font-family--body);font-size:0.6875rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:500">- Catalog Register · 42 Films</p>
                                 <!-- /wp:paragraph -->
                                 <!-- wp:heading {"level":2,"className":"noir-display","style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"clamp(2.25rem, 5vw, 4rem)","lineHeight":"1.0","letterSpacing":"-0.03em","fontWeight":"700"}}} -->
                                 <h2 class="wp-block-heading noir-display" style="font-family:var(--wp--preset--font-family--display);font-size:clamp(2.25rem, 5vw, 4rem);line-height:1.0;letter-spacing:-0.03em;font-weight:700">All films, in order.</h2>
@@ -291,7 +291,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         </section>
         <!-- /wp:group -->
 
-        <!-- ═══ 06 — PAGINATION ═══ -->
+        <!-- === 06 - PAGINATION === -->
         <!-- wp:group {"tagName":"section","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|100","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
         <section class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--line);border-top-style:solid;border-top-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60)">
                 <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->

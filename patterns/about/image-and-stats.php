@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: About — Image and Stats
- * Description: A 40/60 about section — 4:5 portrait beside a mixed-serif headline, body copy, and a three-up stat row ruled by hairlines with mono ghost numerals. For studio and personal bios.
+ * Title: About - Image and Stats
+ * Description: A 40/60 about section - 4:5 portrait beside a mixed-serif headline, body copy, and a three-up stat row ruled by hairlines with mono ghost numerals. For studio and personal bios.
  * Slug: godevs-portfolio/about-image-and-stats
  * Categories: godevs-portfolio-about
  * Keywords: about, bio, stats, profile, intro
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|medium","lineHeight":"1.65"},"color":{"text":"var:preset|color|secondary"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">I work with founders and editorial teams to ship portfolio and product sites that feel considered — fast, accessible, and grounded in a real point of view. The work below spans the last several years and three continents.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);line-height:1.65;margin-top:var(--wp--preset--spacing--40)">I work with founders and editorial teams to ship portfolio and product sites that feel considered - fast, accessible, and grounded in a real point of view. The work below spans the last several years and three continents.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:columns {"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"},"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|40"}},"border":{"top":{"color":"var:preset|color|line","style":"solid","width":"1px"}}},"className":"godevs-reveal-stagger"} -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Portfolio — Hero + Grid Mix
+ * Title: Portfolio - Hero + Grid Mix
  * Slug: godevs-portfolio/large-showcase
- * Description: A stacked editorial mix — one cinematic 21/9 hover-reveal hero project above a hairline-framed 3-up grid of secondary work. Distinct from Featured's side-by-side 60/40 split.
+ * Description: A stacked editorial mix - one cinematic 21/9 hover-reveal hero project above a hairline-framed 3-up grid of secondary work. Distinct from Featured's side-by-side 60/40 split.
  * Categories: godevs-portfolio-portfolio
  * Keywords: portfolio, featured, hero, grid, mix, magazine, stacked, editorial
  * Viewport Width: 1280
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="wp-block-group godevs-hover-reveal is-style-card-media">
 				<!-- wp:image {"aspectRatio":"21/9","scale":"cover","style":{"border":{"radius":"var(--wp--custom--radius--lg, 12px)"}}} -->
 				<figure class="wp-block-image has-custom-border">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Featured project — cinematic full-width hero cover" style="aspect-ratio:21/9;object-fit:cover;border-radius:12px"/>
+					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-portrait.jpg' ); ?>" alt="Featured project - cinematic full-width hero cover" style="aspect-ratio:21/9;object-fit:cover;border-radius:12px"/>
 				</figure>
 				<!-- /wp:image -->
 			</div>
@@ -49,10 +49,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 			<!-- /wp:group -->
 			<!-- wp:heading {"level":3,"style":{"typography":{"fontFamily":"var:preset|font-family|display","fontSize":"var:preset|font-size|x-large","lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}}} -->
-			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Studio Field — full brand system</h3>
+			<h3 class="wp-block-heading" style="font-family:var(--wp--preset--font-family--display);font-size:var(--wp--preset--font-size--x-large);line-height:1.1;letter-spacing:-0.02em;font-weight:700">Studio Field - full brand system</h3>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"color":{"text":"var:preset|color|secondary"},"layout":{"selfStretch":"fit","flexSize":"640px"}}} -->
-			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7;max-width:640px">A complete identity system — wordmark, type pairing, editorial templates, and a block-native WordPress build. Six months, shipped on schedule.</p>
+			<p class="has-text-color" style="color:var(--wp--preset--color--secondary);line-height:1.7;max-width:640px">A complete identity system - wordmark, type pairing, editorial templates, and a block-native WordPress build. Six months, shipped on schedule.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

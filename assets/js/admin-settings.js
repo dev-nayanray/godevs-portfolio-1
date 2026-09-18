@@ -1,5 +1,5 @@
-/* GoDevs Portfolio — Modern Settings Dashboard JS
- * v2.0.0 — Tab switching, AJAX save, color picker
+/* GoDevs Portfolio - Modern Settings Dashboard JS
+ * v2.0.0 - Tab switching, AJAX save, color picker
  */
 ( function ( $ ) {
         'use strict';
@@ -10,7 +10,7 @@
         var indicator = $( '#godevs-save-indicator' );
         var form = $( '#godevs-settings-form' );
 
-        /* ─── Tab switching ─── */
+        /* --- Tab switching --- */
         $( '.godevs-settings-nav a' ).on( 'click', function ( e ) {
                 e.preventDefault();
                 var section = $( this ).data( 'section' );
@@ -24,7 +24,7 @@
                 $( '#panel-' + section ).addClass( 'is-active' );
         } );
 
-        /* ─── Color picker init ─── */
+        /* --- Color picker init --- */
         $( '.godevs-color-picker' ).wpColorPicker( {
                 change: function () {
                         markUnsaved();
@@ -34,7 +34,7 @@
                 }
         } );
 
-        /* ─── Mark unsaved changes ─── */
+        /* --- Mark unsaved changes --- */
         var hasUnsaved = false;
 
         function markUnsaved() {
@@ -46,7 +46,7 @@
                 markUnsaved();
         } );
 
-        /* ─── Save via AJAX ─── */
+        /* --- Save via AJAX --- */
         saveBtn.on( 'click', function () {
                 saveBtn.text( 'Saving…' ).prop( 'disabled', true );
 
@@ -65,7 +65,7 @@
                 } );
 
                 // Collect toggles (checkboxes).
-                // IMPORTANT: send an explicit '0' for unchecked boxes — NOT an empty
+                // IMPORTANT: send an explicit '0' for unchecked boxes - NOT an empty
                 // string. The PHP save handler treats '' (empty string) as
                 // "use the default value", which means toggles with a default of
                 // '1' could never be turned off (the empty string was silently
@@ -104,7 +104,7 @@
                         } );
         } );
 
-        /* ─── Reset via AJAX ─── */
+        /* --- Reset via AJAX --- */
         resetBtn.on( 'click', function () {
                 if ( ! confirm( api.i18n.resetConf ) ) {
                         return;
@@ -135,7 +135,7 @@
                         } );
         } );
 
-        /* ─── Show indicator ─── */
+        /* --- Show indicator --- */
         function showIndicator( message, isError ) {
                 indicator.text( message )
                         .removeClass( 'is-error' )
@@ -150,14 +150,14 @@
                 }, 3000 );
         }
 
-        /* ─── Warn on unsaved changes ─── */
+        /* --- Warn on unsaved changes --- */
         $( window ).on( 'beforeunload', function () {
                 if ( hasUnsaved ) {
                         return '';
                 }
         } );
 
-        /* ─── Settings Search ───
+        /* --- Settings Search ---
          * Filter the settings sidebar + visible panels by query.
          * Builds a search index once on page load by walking all label/desc/title text.
          */

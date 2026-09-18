@@ -1,4 +1,4 @@
-# WordPress.org Compliance — GoDevs Portfolio
+# WordPress.org Compliance - GoDevs Portfolio
 
 **Document version:** 1.5.0
 **Submission status:** Not yet submitted. v1.5.0 ships plugin-territory
@@ -6,11 +6,11 @@ features that must be extracted into a companion plugin before the
 theme can pass the WordPress.org Theme Review.
 
 This document tracks the WordPress.org Theme Review Guidelines
-compliance surface — what passes today, what fails today, and what the
+compliance surface - what passes today, what fails today, and what the
 plan is to get to a submittable theme.
 
 > Note: earlier drafts of this document claimed "No CPTs, taxonomies,
-> shortcodes, or settings pages" — that was true of an early prototype
+> shortcodes, or settings pages" - that was true of an early prototype
 > and is **not** true of v1.5.0. This rewrite is an honest pass/fail
 > against the real shipping code.
 
@@ -35,7 +35,7 @@ plan is to get to a submittable theme.
 | AJAX endpoints in the theme | ❌ FAIL | 20 AJAX endpoints (plugin territory) |
 
 **Bottom line:** the presentation side passes; the application side
-fails. The fix is Phase 2 of the v1.5.0 roadmap — extract the
+fails. The fix is Phase 2 of the v1.5.0 roadmap - extract the
 plugin-territory surface into the **GoDevs Core** companion plugin.
 
 ---
@@ -49,7 +49,7 @@ plugin-territory surface into the **GoDevs Core** companion plugin.
 - Site Editor is the primary customization surface for layout.
 - All chrome (header, footer, mobile menu) is in template parts.
 
-### 2.2 Required `add_theme_support()` declarations (PASS — P1.2 fix)
+### 2.2 Required `add_theme_support()` declarations (PASS - P1.2 fix)
 
 `functions.php`'s `godevs_portfolio_setup()` explicitly declares every
 `add_theme_support()` that Theme Check expects, even where block themes
@@ -68,14 +68,14 @@ add_theme_support( 'align-wide' );
 add_editor_style( 'assets/css/theme.css' );
 ```
 
-### 2.3 File reads via `WP_Filesystem` (PASS — P1.5 fix)
+### 2.3 File reads via `WP_Filesystem` (PASS - P1.5 fix)
 
 Pattern files under `patterns/demos/*.php` are read for the demo
 preview iframe via the WordPress `WP_Filesystem` abstraction rather
 than `file_get_contents()`. `file_exists()` is used only for existence
 checks before enqueuing (permitted).
 
-### 2.4 No inline JavaScript (PASS — P1.16 fix)
+### 2.4 No inline JavaScript (PASS - P1.16 fix)
 
 Every JS interaction is attached via `addEventListener()` in one of
 the 8 external scripts. The last three inline handlers were removed in
@@ -87,7 +87,7 @@ P1.16:
 | Inline `onclick="return confirm(...)"` on the CPT-manager trash link | `data-confirm="..."` attribute + delegated listener in `assets/js/admin-cpt-manager.js`, enqueued on the CPT-manager admin page |
 | Inline `onsubmit="return false"` on the HF newsletter form | Delegated submit listener in `assets/js/hf-frontend.js` (localized `GODEVS_HF` global) |
 
-### 2.5 `.pot` file shipped (PASS — P1.14 fix)
+### 2.5 `.pot` file shipped (PASS - P1.14 fix)
 
 `languages/godevs-portfolio.pot` exists and contains 715 unique
 translatable strings extracted from the theme's PHP source. Regenerate
@@ -95,7 +95,7 @@ with `python3 scripts/generate-pot.py` or
 `wp i18n make-pot . languages/godevs-portfolio.pot`. See
 [`INTERNATIONALIZATION.md`](INTERNATIONALIZATION.md).
 
-### 2.6 Version reconciliation (PASS — P1.1 fix)
+### 2.6 Version reconciliation (PASS - P1.1 fix)
 
 `style.css` header, `functions.php` (`GODEVS_PORTFOLIO_VERSION`), and
 `readme.txt` (`Stable tag`) all report `1.5.0`.
@@ -131,7 +131,7 @@ See [`SECURITY.md`](SECURITY.md) for the full model.
 
 The WordPress.org Theme Review Guidelines require that themes **do
 not** register CPTs, taxonomies, shortcodes, settings pages, REST
-routes, or AJAX endpoints — these belong in plugins. v1.5.0 ships all
+routes, or AJAX endpoints - these belong in plugins. v1.5.0 ships all
 of these in the theme so the user gets a working product from a single
 ZIP.
 
@@ -205,17 +205,17 @@ notice/management surfaces:
   `preview_demo_page`)
 - 1 in `inc/demo-renderer.php` (`render_demo_page`)
 - 2 in `inc/onboarding.php` (`dismiss`, `dismiss_imported`)
-- 2 in `inc/front-forms.php` (`submit_booking`, `submit_proposal` —
+- 2 in `inc/front-forms.php` (`submit_booking`, `submit_proposal` -
   both also exposed `nopriv` for logged-out users)
 
 All 20 are nonce-verified and capability-checked (see
-[`SECURITY.md`](SECURITY.md) §6–7) — so they are **secure**, just in
+[`SECURITY.md`](SECURITY.md) §6–7) - so they are **secure**, just in
 the wrong place per the Theme Review Guidelines.
 
 ### 3.6 Direct database writes
 
 The demo importer makes 3 `$wpdb->update()` calls against
-`$wpdb->posts` (justified — `wp_unslash()` corrupts JSON font stacks;
+`$wpdb->posts` (justified - `wp_unslash()` corrupts JSON font stacks;
 `$wpdb->update()` uses prepared statements internally, so it is
 SQL-injection-safe). This is documented and is unlikely to be flagged
 by a reviewer, but it is technically outside the "no direct DB access"
@@ -289,7 +289,7 @@ After the plugin extraction:
   + the HF Builder + the Demo Importer + onboarding.
 - The Theme Settings dashboard, HF Builder, and Demo Importer will
   still touch `wp_options`, theme mods, and `wp_insert_post()` for
-  pages — but these are within the WordPress.org-allowed theme surface
+  pages - but these are within the WordPress.org-allowed theme surface
   (a theme may create pages on activation, store theme mods, and
   register Settings API options for theme presentation).
 - The plugin will own all CPTs, taxonomies, shortcodes, post-meta,
@@ -303,7 +303,7 @@ At that point the theme will be WordPress.org-ready.
   `$wpdb->update()`. This is a deliberate workaround for
   `wp_unslash()` corrupting JSON font stacks. It is SQL-injection-safe
   (prepared statements) and is likely acceptable, but a reviewer may
-  ask about it — the inline code comment documents the justification.
+  ask about it - the inline code comment documents the justification.
 - The Theme Settings dashboard registers 75 settings via the Settings
   API. WordPress.org allows themes to register presentation-related
   settings (colors, layout, typography) via the Settings API; the

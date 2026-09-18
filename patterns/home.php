@@ -3,7 +3,7 @@
  * Title: Homepage
  * Slug: godevs-portfolio/home
  * Categories: featured
- * Description: A complete premium portfolio homepage — hero, stats, selected work, services, testimonials, and a closing call to action.
+ * Description: A complete premium portfolio homepage - hero, stats, selected work, services, testimonials, and a closing call to action.
  * Keywords: home, homepage, landing, portfolio, front page
  * Viewport Width: 1280
  */
