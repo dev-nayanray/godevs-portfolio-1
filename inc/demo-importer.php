@@ -547,6 +547,15 @@ function godevs_portfolio_ajax_import_demo(): void {
                         // wp_global_styles custom post type. We write to it directly.
                         $style_applied = godevs_portfolio_apply_style_variation( $style_lower );
 
+                        // The Theme Settings "dynamic CSS" (custom colors/fonts
+                        // saved in the settings screen) outputs AFTER global
+                        // styles and would override the demo's palette and
+                        // link colors with !important rules. A demo import
+                        // takes over the site's look, so drop the stale
+                        // override — it regenerates the next time the user
+                        // saves Theme Settings.
+                        delete_option( 'godevs_portfolio_dynamic_css' );
+
                         // Also store the user's choice via user meta (for reference).
                         $user_id = get_current_user_id();
                         update_user_meta( $user_id, 'godevs-portfolio-applied-style', $demo['style'] );
@@ -1035,6 +1044,10 @@ function godevs_portfolio_apply_style_variation( string $style_slug ): bool {
  */
 function godevs_portfolio_reset_style_variation(): bool {
         $stylesheet = get_stylesheet();
+
+        // Drop any Theme Settings CSS override along with the variation —
+        // see the import handler for the rationale.
+        delete_option( 'godevs_portfolio_dynamic_css' );
 
         $args = array(
                 'post_type'      => 'wp_global_styles',

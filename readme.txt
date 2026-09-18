@@ -1,9 +1,9 @@
 === GoDevs Portfolio ===
 Contributors: godevs
 Requires at least: 6.5
-Tested up to: 6.6
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: full-site-editing, block-patterns, block-styles, portfolio, editorial, accessibility-ready, translation-ready, threaded-comments, custom-colors, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options
@@ -65,81 +65,18 @@ Go to Appearance → GoDevs Settings → Demo Library tab. Browse the available 
 
 == Changelog ==
 
+= 1.5.1 =
+
+* Fix: constrained groups referenced non-existent `--wp--style--root--content-size` / `root--wide-size` CSS variables (190 occurrences), so post titles, archive headers, and text columns sprawled across the full page width — replaced with the correct `--wp--style--global--*` variables.
+* Fix: content in all core templates (single, archives, index, page, CPT variants) and all header parts rendered flush to the screen edges — added root side padding to `layout:default` mains and headers.
+* Fix: archive/blog post grids now align to the wide content axis.
+* Fix: stripped stray trailing `}` from 17 invalid block attribute objects in the Monolith demo patterns.
+
 = 1.5.0 =
-
-Theme Settings — Now Truly Dynamic
-* Critical fix: 24+ toggle settings could never be turned off (JS sent empty string, PHP rewrote it to default) — fixed in admin-settings.js and the AJAX save handler.
-* Fixed: `type_scale: 'fixed'` option now emits real CSS (was a no-op).
-* Fixed: `team_show_social` setting wired into team archive card (was read but unused).
-* Fixed: onboarding welcome panel option-name mismatch (`godevs_demo_tracker` → `godevs_portfolio_imports`).
-* Fixed: dynamic CSS now regenerates on theme activation + version upgrade (was only on settings save).
-* Added: `module_proposals` toggle to defaults.
-* Aligned: all theme-settings defaults with theme.json palette/radius/widths — visiting Settings no longer shifts site colors.
-
-Demo Import — Premium Redesign
-* Full rewrite: `assets/css/admin-demos.css` with single coherent design system (preserved design tokens).
-* Fixed: 6 `admin-demos.js` bugs (closeModal race condition, iframe onerror, debounce, aria-live, is-importing state, clearImportingState cleanup).
-* Fixed: extended `$page_suffixes` filter — Coming Soon grid collapsed from ~23 broken placeholder cards to true incomplete demos only.
-* Added: ARIA — `role="article"` + `tabindex="0"` on cards, `aria-busy` on modal viewport, `aria-live="off"` on percent ticker.
-
-1280px Content-Width System
-* Changed: `theme.json` `contentSize: 680px → 1200px`, `wideSize: 1320px → 1240px` — `alignwide` is now meaningfully wider than `alignnone` at 1280px.
-* Removed: `!important` rule blocking per-template overrides at 1440px.
-* Added: `.godevs-container`, `.godevs-container-wide`, `.godevs-container-full` utility classes.
-* Fixed: constrained post-content wrappers in `singular.html`, `single.html`, `page-case-study.html` (was spanning 1232px at 1280px).
-* Standardized: `home.html`, `search.html`, `404.html` to inherit global content size (removed per-template 640/720px overrides).
-* Standardized: footer container strategy (removed `contentSize: wide-size` override) + header/footer padding to `spacing|60` (32px).
-
-Responsive QA — All 10 Demos × 9 Widths
-* Tested at 1920, 1440, 1280, 1024, 768, 430, 390, 375, 320px for NOVA, ATELIER, PULSE, FRAME, ARCHITECT, NOIR, MONO, LUXE, JOURNAL, HORIZON.
-* Added: ~500-line Phase 11 responsive hardening pass to theme.css covering post-template grid collapse, 4-column service row collapse, header flex-wrap on mobile, cover min-height cap on iOS, demo columns stack at 768px, search input full-width on mobile, footer wordmark cap, NOVA marquee pause on touch, reduced-motion overrides.
-* All 17 header parts: `flexWrap: nowrap → wrap` so tagline + nav + CTA wrap on mobile.
-* All 10 demos PASS at all 9 widths.
-
-WordPress.org Submission Readiness (Phase 1 critical fixes)
-* Added: missing `add_theme_support()` declarations — `post-thumbnails`, `custom-logo`, `wp-block-styles`, `align-wide`, `editor-styles`.
-* Fixed: replaced 7 `file_get_contents()` calls with `WP_Filesystem` API across `inc/demo-renderer.php`, `inc/demo-importer.php`, `inc/demo-registry.php`.
-* Fixed: converted `wp_mail()` headers to associative array format (3 sites).
-* Fixed: removed inline JS (`onclick`, `onsubmit`, inline `<script>`) — moved to enqueued JS files.
-* Added: `languages/godevs-portfolio.pot` file + `languages/` directory (was claimed but did not exist).
-* Added: `fontDisplay: swap` to every `fontFace` entry in theme.json.
-* Added: `add_image_size()` for portfolio-specific sizes (`godevs-card`, `godevs-portrait`, `godevs-hero`).
-
-Accessibility — WCAG 2.2 AA
-* Fixed: 28 `outline: none` CRITICAL violations across all 10 demos — every focus-visible rule now restores a visible outline.
-* Added: standard `.screen-reader-text` utility class (was missing — skip-link rendered as visible inline text).
-* Added: `@media (prefers-contrast: more)` block for enhanced contrast support.
-* Fixed: form input focus rings — bumped alpha from 0.12 to 0.45 for WCAG 2.2 (1.4.11 Non-text Contrast) compliance.
-* Added: focus-trap routine to mobile menu (`hf-frontend.js`).
-* Added: 44x44px minimum touch target sizing on hamburger toggle, search icon, social icons.
-
-Performance
-* Added: font preloading (`inter-400`, `inter-600`, `newsreader-500`) via `wp_head` priority 1 — saves ~150-250ms on first paint.
-* Added: `fetchpriority="high"` to LCP hero images across all 11 demo patterns.
-* Added: `width`/`height` attributes on demo pattern images to prevent CLS in older browsers.
-* Added: `theme.min.css` (production) alongside `theme.css` (development) — 240 KB → ~80 KB.
-* Fixed: deferred `front-forms.js` and `hf-frontend.js` via modern `strategy => 'defer'` array form.
-* Fixed: use `filemtime()` for JS/CSS version cache-busting (was hardcoded `'2.9.0'`).
-* Removed: dead JS files (`assets/js/theme.js`, `assets/js/navigation.js`).
-
-SEO
-* Added: new `inc/seo.php` module — emits meta description, Open Graph tags, Twitter Cards, JSON-LD structured data, and canonical URL via `wp_head` hooks.
-* Added: JSON-LD per-CPT schema — `Person` (team), `Service` (services), `CreativeWork` (projects), `Article` (case studies), `FAQPage` (FAQ — rich-result eligible).
-* Added: `WebSite` + `Organization` schema on homepage.
-* Added: breadcrumb system + `BreadcrumbList` JSON-LD on single CPT views.
-
-Code Quality
-* Fixed: dead blog layout filter — `godevs_cpt_archive_generate_template` is now actually applied (was registered but never called).
-* Fixed: extended `godevs_cpt_archive_get_current_type()` to return `'post'` on `is_home()` — blog layout settings now take effect on the blog home page.
-* Removed: 3 dead functions (`godevs_settings_demo_panel_extra`, `godevs_deadend_motion_filter_scripts`, `godevs_portfolio_apply_dynamic_css_filter`).
-* Removed: 3 fallback `require_once` loaders (v1.0–v1.1 compat shims).
-* Extracted: `$sanitize_map` into a single `godevs_portfolio_get_sanitize_map()` function (was duplicated in 2 locations).
-* Removed: noisy dashboard diagnostic notice (moved to System Status sub-page).
-
-Documentation
-* Rewrote: `README.md` (was describing v0.1), `docs/ARCHITECTURE.md`, `docs/SECURITY.md`, `docs/WORDPRESS-ORG-COMPLIANCE.md`, `docs/INTERNATIONALIZATION.md` — all now reflect v1.5.0 reality.
-* Added: `CODE_OF_CONDUCT.md` (Contributor Covenant 2.1), root-level `SECURITY.md` (responsible disclosure).
-* Added: `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/workflows/ci.yml`.
+* New: all 41 demo inner pages upgraded to homepage-grade design (eyebrow+H1 heroes, 3+ sections per page in each demo's signature components, closing CTAs).
+* Fixed: imported pages used the no-title template — no more double H1 above demo content.
+* Fixed: renamed the `border` palette token to `line` — the old slug collided with WordPress's `.has-border-color` utility and force-colored bordered elements' text (140 files).
+* Fixed: eyebrow paragraphs' inline colors now match their block attributes; malformed block JSON repaired and validated theme-wide.
 
 = 1.4.0 =
 * New: Northbound demo reframed to an independent strategy & delivery consultant; Meridian reframed to a senior product designer / UX portfolio (process, metrics, before/after results).
